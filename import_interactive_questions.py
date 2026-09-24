@@ -25,12 +25,14 @@ def main(path):
 
     database = {}
     for page, entries in sorted(by_page.items()):
-        chapter = next((i for i, upper in enumerate((44, 90, 145, 190, 220, 999), 1) if page <= upper), 6)
+        chapter = (2 if any('القطع المكافئ' in str(q.get('question_text', '')) for q in entries)
+                   else next((i for i, upper in enumerate((44, 90, 145, 190, 220, 999), 1) if page <= upper), 6))
         filename = f'page_{page}.json'
         database[filename] = [normalize_question(q, filename, chapter, page, i)
                               for i, q in enumerate(entries, 1)]
         topics = CHAPTERS[chapter - 1][3]
-        topic_index = next((i for i, (_, upper) in enumerate(topics) if page <= upper), len(topics)-1)
+        topic_index = (0 if chapter == 2 and any('القطع المكافئ' in str(q.get('question_text', '')) for q in entries)
+                       else next((i for i, (_, upper) in enumerate(topics) if page <= upper), len(topics)-1))
         curriculum[chapter-1]['topics'][topic_index]['files'].append(filename)
 
     total_inputs = sum(len(s.get('inputs', [])) for q in questions for s in q.get('interactive_steps', []))
