@@ -1,0 +1,161 @@
+{
+  "files": 225,
+  "questions": 390,
+  "boxes": 1511,
+  "pages_without_interactive_questions": [
+    16,
+    21,
+    35,
+    55,
+    57,
+    60,
+    67,
+    68,
+    76,
+    99,
+    109,
+    113,
+    143,
+    153,
+    155,
+    190,
+    198,
+    201,
+    234
+  ],
+  "recovered": [
+    {
+      "file": "كامل/فصل ١/page_10.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ١/page_22.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ١/page_27.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ١/page_34.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ١/page_47.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٢/page_49.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٢/page_52.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٢/page_87.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_100.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_103.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_105.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_106.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_107.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_109.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_125.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_129.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_134.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٣/page_135.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٤/page_157.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٤/page_159.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٤/page_184.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٥/page_199.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٥/page_210.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_219.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_223.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_224.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_225.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_229.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_231.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_233.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_238.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_240.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    },
+    {
+      "file": "كامل/فصل ٦/page_242.json",
+      "note": "Discarded unmatched closing delimiters after complete JSON"
+    }
+  ],
+  "errors": []
+}
