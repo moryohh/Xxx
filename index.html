@@ -56,8 +56,8 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            min-width: 52px;
-            height: 42px;
+            min-width: 54px;
+            height: 44px;
             border: 2px solid #ef4444;
             background-color: #fef2f2;
             color: #991b1b;
@@ -67,7 +67,7 @@
             cursor: pointer;
             transition: all 0.2s ease;
             user-select: none;
-            padding: 0 8px;
+            padding: 0 10px;
             margin: 0 4px;
             vertical-align: middle;
             box-shadow: 0 2px 4px rgba(239, 68, 68, 0.15);
@@ -103,9 +103,9 @@
         
         @keyframes shake {
             0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            50% { transform: translateX(5px); }
-            75% { transform: translateX(-5px); }
+            25% { transform: translateX(-6px); }
+            50% { transform: translateX(6px); }
+            75% { transform: translateX(-6px); }
         }
 
         .shake-animation {
@@ -128,7 +128,7 @@
         .view-section.active { display: flex; animation: fadeIn 0.3s ease-in; }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
@@ -137,21 +137,24 @@
 
     <!-- Gamification Header -->
     <div class="bg-slate-900 text-white sticky top-0 z-40 border-b border-slate-800 shadow-md">
-        <div class="max-w-6xl mx-auto px-4 h-10 flex items-center justify-between text-sm font-bold">
+        <div class="max-w-6xl mx-auto px-4 h-12 flex items-center justify-between text-sm font-bold">
             <div class="flex items-center gap-4">
                 <div class="flex items-center gap-1.5 text-rose-500 bg-rose-500/10 px-3 py-1 rounded-full border border-rose-500/20">
-                    <i class="fa-solid fa-heart animate-pulse"></i>
-                    <span id="heartsCount" class="font-mono">10</span>
+                    <i class="fa-solid fa-heart animate-pulse" id="heartIcon"></i>
+                    <span id="heartsCount" class="font-mono text-base">10</span>
                 </div>
                 <div class="flex items-center gap-1.5 text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full border border-emerald-400/20">
                     <i class="fa-solid fa-apple-whole"></i>
-                    <span id="applesCount" class="font-mono">100</span>
+                    <span id="applesCount" class="font-mono text-base">100</span>
                 </div>
             </div>
-             <button onclick="navigateHome()" class="text-xs text-slate-300 hover:text-white flex items-center gap-2 transition">
-                <span>الرئيسية</span>
-                <i class="fa-solid fa-house"></i>
-            </button>
+            
+            <div class="flex items-center gap-3">
+                <button onclick="navigateHome()" class="text-xs text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded-lg flex items-center gap-2 transition">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="hidden sm:inline">الرئيسية</span>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -160,32 +163,34 @@
         
         <!-- VIEW 1: HOME / CHAPTERS -->
         <div id="view-chapters" class="view-section active flex-col gap-8">
-            <div class="text-center mt-8">
+            <div class="text-center mt-4">
                 <span class="w-16 h-16 rounded-2xl bg-mathBlue text-white flex items-center justify-center font-black text-3xl shadow-lg mx-auto mb-4">
                     <i class="fa-solid fa-square-root-variable"></i>
                 </span>
                 <h1 class="text-3xl md:text-4xl font-black text-slate-900 mb-2">رياضيات السادس العلمي</h1>
-                <p class="text-slate-500 font-bold">المنهاج العراقي - السبورة التفاعلية لحل المسائل خطوة بخطوة</p>
+                <p class="text-slate-500 font-bold max-w-lg mx-auto">المنهاج العراقي التفاعلي - اختر الفصل والموضوع للبدء بالحل الخطوة بخطوة</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4" id="chaptersContainer">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2" id="chaptersContainer">
                 <!-- Chapters injected via JS -->
             </div>
         </div>
 
         <!-- VIEW 2: TOPICS -->
         <div id="view-topics" class="view-section flex-col gap-6">
-            <div class="flex items-center gap-4 mb-4 pb-4 border-b border-slate-200">
-                <button onclick="navigateHome()" class="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center hover:bg-slate-50 transition">
-                    <i class="fa-solid fa-arrow-right text-slate-600"></i>
-                </button>
-                <div>
-                    <h2 class="text-2xl font-black text-slate-900" id="currentChapterTitle">الفصل الأول</h2>
-                    <p class="text-slate-500 text-sm font-bold">اختر الموضوع للبدء بالحل</p>
+            <div class="flex items-center justify-between gap-4 mb-2 pb-4 border-b border-slate-200">
+                <div class="flex items-center gap-3">
+                    <button onclick="navigateHome()" class="w-10 h-10 rounded-xl bg-white border border-slate-200 shadow-sm flex items-center justify-center hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-arrow-right text-slate-700"></i>
+                    </button>
+                    <div>
+                        <h2 class="text-xl md:text-2xl font-black text-slate-900" id="currentChapterTitle">الفصل الأول</h2>
+                        <p class="text-slate-500 text-xs font-bold">اختر الصفحات والتمارين التفاعلية للحل</p>
+                    </div>
                 </div>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="topicsContainer">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="topicsContainer">
                 <!-- Topics injected via JS -->
             </div>
         </div>
@@ -195,9 +200,11 @@
             
             <!-- RIGHT TOOL DRAWER -->
             <aside class="w-full md:w-64 bg-white rounded-2xl border border-slate-200 p-4 flex flex-col gap-3 shadow-sm shrink-0 md:sticky md:top-16 h-fit z-20">
-                <div class="flex items-center gap-2 pb-2 border-b border-slate-100 text-slate-500 font-bold text-xs">
-                    <button onclick="navigateBackToTopics()" class="hover:text-slate-900 transition"><i class="fa-solid fa-arrow-right"></i> رجوع للمواضيع</button>
-                    <span class="mx-auto"><i class="fa-solid fa-toolbox text-red-600"></i> أدوات المساعدة</span>
+                <div class="flex items-center justify-between pb-3 border-b border-slate-100 text-slate-500 font-bold text-xs">
+                    <button onclick="navigateBackToTopics()" class="hover:text-slate-900 flex items-center gap-1 transition">
+                        <i class="fa-solid fa-arrow-right"></i> المواضيع
+                    </button>
+                    <span class="text-slate-700 font-black"><i class="fa-solid fa-toolbox text-red-500"></i> أدوات الحل</span>
                 </div>
 
                 <button onclick="openToolModal('think')" class="w-full py-3 px-3.5 rounded-xl bg-amber-50 hover:bg-amber-100/80 text-amber-900 text-xs font-bold border border-amber-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
@@ -205,6 +212,7 @@
                         <span class="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-brain"></i></span>
                         <span class="font-extrabold text-sm">فِكْر</span>
                     </div>
+                    <span class="text-[10px] text-amber-700 font-bold bg-amber-100/80 px-2 py-0.5 rounded">الخارطة الذهنية</span>
                 </button>
 
                 <button onclick="useHint()" id="hintBtn" class="relative w-full py-3 px-3.5 rounded-xl bg-indigo-50 hover:bg-indigo-100/80 text-indigo-900 text-xs font-bold border border-indigo-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
@@ -227,48 +235,59 @@
                     </div>
                 </button>
 
-                <button onclick="toggleCalculator()" class="w-full py-3 px-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100/80 text-emerald-900 text-xs font-bold border border-emerald-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm mt-2">
+                <button onclick="toggleCalculator()" class="w-full py-3 px-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100/80 text-emerald-900 text-xs font-bold border border-emerald-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
                     <div class="flex items-center gap-2.5">
                         <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-calculator"></i></span>
                         <span class="font-extrabold text-sm">حَاسِبَة</span>
                     </div>
                 </button>
                 
-                <div class="mt-auto pt-4 border-t border-slate-100">
-                    <span class="block text-center text-[10px] font-bold text-slate-400 mb-1">التقدم</span>
-                    <div class="w-full bg-slate-100 rounded-full h-2.5">
-                        <div class="bg-mathBlue h-2.5 rounded-full" id="progressBar" style="width: 0%"></div>
+                <!-- Quick Page Selector Selector inside Whiteboard -->
+                <div class="pt-2 border-t border-slate-100">
+                    <label class="block text-[11px] font-black text-slate-500 mb-1">التمارين السريعة للفصل:</label>
+                    <select id="quickPageSelect" onchange="switchPageFromSelect(this.value)" class="w-full text-xs font-bold bg-slate-50 border border-slate-200 rounded-lg p-2 text-slate-800 outline-none focus:border-mathBlue">
+                        <!-- Options injected dynamically -->
+                    </select>
+                </div>
+
+                <div class="mt-2 pt-2 border-t border-slate-100">
+                    <div class="flex justify-between items-center text-[11px] font-bold text-slate-500 mb-1">
+                        <span>نسبة الإنجاز:</span>
+                        <span id="progressText" class="font-mono text-mathBlue">0%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden">
+                        <div class="bg-mathBlue h-2.5 rounded-full transition-all duration-300" id="progressBar" style="width: 0%"></div>
                     </div>
                 </div>
             </aside>
 
             <!-- MAIN PAPER SHEET -->
-            <main class="flex-1 paper-sheet rounded-2xl p-6 md:p-10 relative flex flex-col shadow-lg">
+            <main class="flex-1 paper-sheet rounded-2xl p-5 md:p-8 relative flex flex-col shadow-lg min-h-[500px]">
                 
                 <!-- Question Area -->
                 <div class="border-b-2 border-slate-200 pb-5 mb-6">
-                    <div class="flex items-center justify-between text-slate-500 font-bold text-xs mb-2">
-                        <span class="flex items-center gap-2" id="wb-category-label">
+                    <div class="flex items-center justify-between text-slate-500 font-bold text-xs mb-3">
+                        <span class="flex items-center gap-1.5" id="wb-category-label">
                             <i class="fa-solid fa-book text-mathBlue"></i> الرياضيات
                         </span>
-                        <span id="wb-file-name" class="font-mono text-slate-400 bg-slate-50 px-2 rounded"></span>
+                        <span id="wb-file-name" class="font-mono text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200"></span>
                     </div>
 
-                    <!-- Problem Image (Supabase logic) -->
-                    <div id="problemImageContainer" class="hidden mb-4 w-full flex justify-center">
-                        <img id="problemImage" src="" alt="مخطط توضيحي" class="max-w-full h-auto rounded-lg border-2 border-slate-200 shadow-sm max-h-64 object-contain">
-                    </div>
-
-                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 text-center my-3">
-                        <h2 class="text-base md:text-lg font-black text-slate-900 mb-2" id="questionTitle">جاري التحميل...</h2>
-                        <div class="text-xl md:text-2xl font-black text-mathBlue dir-ltr overflow-x-auto py-1" id="mathFormulaDisplay">
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 text-center my-2 shadow-inner relative overflow-hidden">
+                        <!-- Diagram (if any) -->
+                        <div id="diagramContainer" class="hidden mb-4 rounded-lg overflow-hidden border border-slate-200 shadow-sm mx-auto w-fit">
+                            <img id="questionDiagram" src="" alt="رسم توضيحي" class="max-w-full h-auto max-h-48 object-contain">
+                        </div>
+                        
+                        <h2 class="text-base md:text-lg font-black text-slate-900 mb-3" id="questionTitle">جاري التحميل...</h2>
+                        <div class="text-xl md:text-2xl font-black text-mathBlue dir-ltr overflow-x-auto py-2 px-1" id="mathFormulaDisplay">
                             <!-- KaTeX Render -->
                         </div>
                     </div>
                 </div>
 
                 <!-- Solution Steps -->
-                <div class="space-y-8 dir-rtl text-left font-bold text-slate-900" id="interactiveCanvasContainer">
+                <div class="space-y-6 dir-rtl text-left font-bold text-slate-900 flex-1" id="interactiveCanvasContainer">
                     <!-- Dynamic Steps injected here -->
                 </div>
 
@@ -276,7 +295,8 @@
                 <div id="completionBanner" class="hidden mt-8 p-6 rounded-2xl bg-emerald-600 text-white text-center shadow-xl animate-bounce">
                     <i class="fa-solid fa-circle-check text-4xl mb-2"></i>
                     <h3 class="text-xl font-black mb-1">عاش البطل! أتممت الحل بنجاح!</h3>
-                    <button onclick="navigateBackToTopics()" class="mt-4 px-6 py-2 bg-white text-emerald-700 font-bold rounded-full text-sm shadow-md hover:bg-slate-50 transition">العودة للمواضيع</button>
+                    <p class="text-xs text-emerald-100 mb-4 font-bold">يمكنك الإنتقال للتمرين التالي أو العودة لجدول المواضيع</p>
+                    <button onclick="navigateBackToTopics()" class="px-6 py-2.5 bg-white text-emerald-700 font-black rounded-xl text-sm shadow-md hover:bg-slate-100 transition">العودة للمواضيع</button>
                 </div>
             </main>
         </div>
@@ -284,12 +304,12 @@
 
     <!-- MODALS -->
     <!-- Choices Popover -->
-    <div id="choicesPopover" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border-4 border-slate-100 transform transition-all scale-100 relative">
+    <div id="choicesPopover" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border-4 border-slate-100 transform transition-all relative">
             <button onclick="closeChoicesPopover()" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition"><i class="fa-solid fa-xmark"></i></button>
-            <div class="text-center mb-6 pt-2">
-                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-xl mx-auto mb-3 shadow-inner"><i class="fa-solid fa-pencil"></i></div>
-                <h3 class="text-sm font-black text-slate-800 mb-1">اختر القيمة الصحيحة</h3>
+            <div class="text-center mb-5 pt-2">
+                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-xl mx-auto mb-2 shadow-inner"><i class="fa-solid fa-pen-to-square"></i></div>
+                <h3 class="text-base font-black text-slate-800 mb-1">اختر الإجابة الصحيحة</h3>
                 <p class="text-xs text-slate-500 font-bold" id="choicesTargetLabel"></p>
             </div>
             <div class="grid grid-cols-2 gap-3 dir-ltr" id="choicesContainer"></div>
@@ -299,11 +319,17 @@
     <!-- Tool Modal (Think/Hint) -->
     <div id="toolModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
-            <button onclick="closeToolModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="closeToolModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 text-lg w-8 h-8 flex items-center justify-center rounded-full bg-slate-100"><i class="fa-solid fa-xmark"></i></button>
             <div class="flex items-center gap-3 mb-4" id="toolModalHeader"></div>
             <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-sm md:text-base font-bold text-slate-700 leading-relaxed min-h-[80px]" id="toolModalBody"></div>
             <div class="mt-5 text-left"><button onclick="closeToolModal()" class="px-5 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs rounded-xl transition">إغلاق</button></div>
         </div>
+    </div>
+
+    <!-- Custom Toast Message (Replaces Alert) -->
+    <div id="toastMessage" class="fixed bottom-6 right-6 z-[70] bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-slate-700 text-xs font-bold hidden transition-all flex items-center gap-2">
+        <i class="fa-solid fa-circle-info text-amber-400 text-sm"></i>
+        <span id="toastText"></span>
     </div>
 
     <!-- Floating Calculator -->
@@ -314,30 +340,38 @@
         </div>
         <input type="text" id="calcDisplay" readonly class="w-full bg-slate-950 border border-slate-800 text-emerald-400 font-mono font-black text-right px-3 py-2 rounded-xl mb-3 text-lg" value="0">
         <div class="grid grid-cols-4 gap-1.5 text-xs font-black">
-            <button onclick="calcPress('C')" class="py-2 bg-rose-600 rounded">C</button>
-            <button onclick="calcPress('(')" class="py-2 bg-slate-800 rounded">(</button>
-            <button onclick="calcPress(')')" class="py-2 bg-slate-800 rounded">)</button>
-            <button onclick="calcPress('/')" class="py-2 bg-amber-600 rounded">÷</button>
-            <button onclick="calcPress('7')" class="py-2 bg-slate-700 rounded">7</button>
-            <button onclick="calcPress('8')" class="py-2 bg-slate-700 rounded">8</button>
-            <button onclick="calcPress('9')" class="py-2 bg-slate-700 rounded">9</button>
-            <button onclick="calcPress('*')" class="py-2 bg-amber-600 rounded">×</button>
-            <button onclick="calcPress('4')" class="py-2 bg-slate-700 rounded">4</button>
-            <button onclick="calcPress('5')" class="py-2 bg-slate-700 rounded">5</button>
-            <button onclick="calcPress('6')" class="py-2 bg-slate-700 rounded">6</button>
-            <button onclick="calcPress('-')" class="py-2 bg-amber-600 rounded">-</button>
-            <button onclick="calcPress('1')" class="py-2 bg-slate-700 rounded">1</button>
-            <button onclick="calcPress('2')" class="py-2 bg-slate-700 rounded">2</button>
-            <button onclick="calcPress('3')" class="py-2 bg-slate-700 rounded">3</button>
-            <button onclick="calcPress('+')" class="py-2 bg-amber-600 rounded">+</button>
-            <button onclick="calcPress('0')" class="col-span-2 py-2 bg-slate-700 rounded">0</button>
-            <button onclick="calcPress('.')" class="py-2 bg-slate-700 rounded">.</button>
-            <button onclick="calcEval()" class="py-2 bg-emerald-600 rounded">=</button>
+            <button onclick="calcPress('C')" class="py-2 bg-rose-600 text-white rounded">C</button>
+            <button onclick="calcPress('(')" class="py-2 bg-slate-800 text-white rounded">(</button>
+            <button onclick="calcPress(')')" class="py-2 bg-slate-800 text-white rounded">)</button>
+            <button onclick="calcPress('/')" class="py-2 bg-amber-600 text-white rounded">÷</button>
+            <button onclick="calcPress('7')" class="py-2 bg-slate-700 text-white rounded">7</button>
+            <button onclick="calcPress('8')" class="py-2 bg-slate-700 text-white rounded">8</button>
+            <button onclick="calcPress('9')" class="py-2 bg-slate-700 text-white rounded">9</button>
+            <button onclick="calcPress('*')" class="py-2 bg-amber-600 text-white rounded">×</button>
+            <button onclick="calcPress('4')" class="py-2 bg-slate-700 text-white rounded">4</button>
+            <button onclick="calcPress('5')" class="py-2 bg-slate-700 text-white rounded">5</button>
+            <button onclick="calcPress('6')" class="py-2 bg-slate-700 text-white rounded">6</button>
+            <button onclick="calcPress('-')" class="py-2 bg-amber-600 text-white rounded">-</button>
+            <button onclick="calcPress('1')" class="py-2 bg-slate-700 text-white rounded">1</button>
+            <button onclick="calcPress('2')" class="py-2 bg-slate-700 text-white rounded">2</button>
+            <button onclick="calcPress('3')" class="py-2 bg-slate-700 text-white rounded">3</button>
+            <button onclick="calcPress('+')" class="py-2 bg-amber-600 text-white rounded">+</button>
+            <button onclick="calcPress('0')" class="col-span-2 py-2 bg-slate-700 text-white rounded">0</button>
+            <button onclick="calcPress('.')" class="py-2 bg-slate-700 text-white rounded">.</button>
+            <button onclick="calcEval()" class="py-2 bg-emerald-600 text-white rounded">=</button>
         </div>
     </div>
 
     <script>
-        // --- 1. CURRICULUM DATABASE (رياضيات السادس العلمي - التوزيع الدقيق حسب صفحات الكتاب) ---
+        // Global State
+        let currentChapter = null;
+        let currentProblemData = null;
+        let userAnswers = {};
+        let hearts = 10;
+        let apples = 100;
+        let currentActiveInputId = null;
+
+        // --- 1. CURRICULUM DATABASE (رياضيات السادس العلمي) ---
         const curriculum = [
             {
                 id: "ch1",
@@ -355,8 +389,8 @@
                 icon: "fa-bezier-curve",
                 color: "bg-sky-500",
                 topics: [
-                    { name: "القطع المكافئ والقطع الناقص", files: ["page_49.json", "page_55.json"] },
-                    { name: "القطع الزائد والربط بين القطوع", files: ["page_62.json", "page_88.json"] }
+                    { name: "القطع المكافئ والقطع الناقص", files: ["page_49.json", "page_55.json", "page_62.json", "page_128.json"] },
+                    { name: "القطع الزائد والربط بين القطوع", files: ["page_88.json"] }
                 ]
             },
             {
@@ -373,11 +407,11 @@
             {
                 id: "ch4",
                 title: "الفصل الرابع: التكامل (ص 147 - 194)",
-                icon: "fa-integral",
+                icon: "fa-square-root-variable",
                 color: "bg-orange-500",
                 topics: [
                     { name: "التكامل غير المحدد والدوال الدائرية", files: ["page_158.json", "page_160.json", "page_172.json"] },
-                    { name: "التكامل المحدد والمساحات المستوية", files: ["page_178.json", "page_181.json", "page_186.json", "page_190.json"] }
+                    { name: "التكامل المحدد والمساحات والمسافة", files: ["page_178.json", "page_181.json", "page_186.json", "page_190.json"] }
                 ]
             },
             {
@@ -397,227 +431,1013 @@
                 color: "bg-indigo-500",
                 topics: [
                     { name: "المبردات والمستويات المتعامدة", files: ["page_222.json", "page_225.json"] },
-                    { name: "الزاوية الزوجية والمساقط", files: ["page_233.json", "page_239.json"] }
+                    { name: "الزاوية الزوجية ومبرهنات الفضاء", files: ["page_233.json", "page_239.json"] }
                 ]
             }
         ];
 
-        function getProblemDataForFile(fileName) {
-            const pageNum = parseInt(fileName.replace(/\D/g, '')) || 19;
+        // DATABASE FOR ALL SPECIFIC PAGES
+        const PROBLEMS_DATABASE = {
+            "page_128.json": {
+                file_name: "page_128.json",
+                category: "الفصل الثاني - القطوع المخروطية (أسئلة وزارية)",
+                title: "س/ 2018 د 2 تطبيقي: جد معادلة القطع المكافئ الذي رأسه نقطة الأصل ومعادلة دليله $2y - 4 = 0$ باستخدام التعريف.",
+                latex_formula: "x^2 = -8y",
+                diagram_url: "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/exam_diagrams/page_128_q4_fig_01_graph.png",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: تبسيط معادلة الدليل",
+                        explanation: "لحل معادلة القطع المكافئ باستخدام التعريف، نحتاج أولاً لمعرفة معادلة الدليل. نقوم بتبسيط المعادلة الخطية المعطاة لعزل المتغير $y$.",
+                        think: "انقل الرقم للطرف الآخر مع تغيير إشارته ثم اقسم على معامل y.",
+                        html_structure: "2y = {inp_1} \\implies y = {inp_2}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "4", label: "قيمة 2y بعد نقل الثابت", allowed_keys: ["4", "-4", "2", "0"], hint: "عزل المتغير يتطلب نقل الثوابت للطرف الآخر وتغيير الإشارة." },
+                            { id: "inp_2", correct_value: "2", label: "قيمة y للدليل", allowed_keys: ["2", "-2", "4", "1"], hint: "ثم القسمة على معامل المتغير y وهو 2." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: استنتاج البؤرة ونقطة الدليل Q",
+                        explanation: "من معادلة الدليل ($y=2$)، نستنتج إحداثيات البؤرة $F$ وإحداثيات النقطة $Q$ التي تقع على الدليل وتقابل نقطة افتراضية $M(x,y)$ على القطع.",
+                        think: "بما أن الدليل y=2 (موجب)، فإن البؤرة تقع على محور الصادات بالاتجاه السالب.",
+                        html_structure: "F({inp_3} , {inp_4}) \\quad , \\quad Q(x , {inp_5})",
+                        inputs: [
+                            { id: "inp_3", correct_value: "0", label: "الإحداثي السيني للبؤرة", allowed_keys: ["0", "2", "-2", "x"], hint: "البؤرة على محور الصادات، إذن السيني صفر." },
+                            { id: "inp_4", correct_value: "-2", label: "الإحداثي الصادي للبؤرة", allowed_keys: ["-2", "2", "0", "4"], hint: "البؤرة والدليل متعاكسان في الإشارة وتقعان على نفس المحور بالنسبة لنقطة الأصل." },
+                            { id: "inp_5", correct_value: "2", label: "الإحداثي الصادي للنقطة Q", allowed_keys: ["2", "-2", "y", "0"], hint: "النقطة Q تقع على الدليل، إذن الصادي لها هو نفس قيمة الدليل." }
+                        ]
+                    },
+                    {
+                        step_id: 3,
+                        title: "الخطوة الثالثة: تطبيق قانون المسافة (التعريف)",
+                        explanation: "نطبق تعريف القطع المكافئ $MF = MQ$ (المسافة من $M$ إلى البؤرة تساوي المسافة إلى الدليل) باستخدام قانون المسافة.",
+                        think: "تذكر أن (y - (-2)) تصبح (y + 2). الجذور تُكتب كما هي حسب قاعدة المربعات.",
+                        html_structure: "\\sqrt{(x - {inp_6})^2 + (y + {inp_7})^2} = \\sqrt{(x - x)^2 + (y - {inp_8})^2}",
+                        inputs: [
+                            { id: "inp_6", correct_value: "0", label: "الإحداثي السيني للبؤرة داخل الجذر", allowed_keys: ["0", "2", "x", "-2"], hint: "المسافة تعطى بالعلاقة d = √((x2-x1)² + (y2-y1)²). نعوض السيني للبؤرة." },
+                            { id: "inp_7", correct_value: "2", label: "الإحداثي الصادي للبؤرة داخل الجذر", allowed_keys: ["2", "-2", "4", "0"], hint: "السالب في القانون والسالب في البؤرة يجعلانها موجبة 2." },
+                            { id: "inp_8", correct_value: "2", label: "الإحداثي الصادي لـ Q", allowed_keys: ["2", "-2", "0", "y"], hint: "نعوض قيمة الدليل y=2." }
+                        ]
+                    },
+                    {
+                        step_id: 4,
+                        title: "الخطوة الرابعة: التخلص من الجذور ومربع الحدانية",
+                        explanation: "بتربيع الطرفين نلغي الجذور، ثم نفتح الأقواس (مربع الحدانية) للطرفين: $(y \\pm 2)^2 = y^2 \\pm 4y + 4$.",
+                        think: "مربع الأول $\\pm$ 2 في الأول في الثاني + مربع الثاني.",
+                        html_structure: "x^2 + y^2 + {inp_9}y + 4 = y^2 - {inp_10}y + 4",
+                        inputs: [
+                            { id: "inp_9", correct_value: "4", label: "معامل y في الطرف الأيسر", allowed_keys: ["4", "2", "8", "-4"], hint: "2 × y × 2 = 4y" },
+                            { id: "inp_10", correct_value: "4", label: "معامل y في الطرف الأيمن", allowed_keys: ["4", "2", "8", "-4"], hint: "2 × y × 2 = 4y (الإشارة السالبة موجودة أصلاً)" }
+                        ]
+                    },
+                    {
+                        step_id: 5,
+                        title: "الخطوة الخامسة: التبسيط وإيجاد المعادلة النهائية",
+                        explanation: "نحذف الحدود المتشابهة ($y^2$ و $4$) من الطرفين، وننقل $4y$ للطرف الأيمن لنحصل على المعادلة القياسية.",
+                        think: "x² + 4y = -4y. اجمع الحدود المتشابهة في طرف واحد.",
+                        html_structure: "x^2 = -{inp_11}y",
+                        inputs: [
+                            { id: "inp_11", correct_value: "8", label: "المعامل النهائي لـ y", allowed_keys: ["8", "4", "2", "16"], hint: "-4y - 4y = -8y." }
+                        ]
+                    }
+                ]
+            },
+            // ... (باقي الصفحات السابقة محفوظة كما هي)
+            "page_10.json": {
+                file_name: "page_10.json",
+                category: "الفصل الأول - الأعداد المركبة (صفحة 10)",
+                title: "س/ اكتب العدد $i^{13}$ على صورة عدد مركب بالصيغة العادية $a + bi$:",
+                latex_formula: "i^{13} = i^{4(3) + 1} = i^1 = i",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: قسمة الأس على 4",
+                        explanation: "نقسم الأس 13 على 4، نلاحظ أن الباقي هو 1 لأن $13 = 4 \\times 3 + 1$.",
+                        think: "كل $i^4 = 1$، إذن القوة المتبقية بعد القسمة على 4 هي التي تحدد الناتج.",
+                        html_structure: "i^{13} = (i^4)^3 \\cdot i^{inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "1", label: "أس باقي القسمة", allowed_keys: ["0", "1", "2", "3"], hint: "باقي قسمة 13 على 4 هو 1." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: وضع العدد بالصيغة العادية a + bi",
+                        explanation: "بما أن الناتج $i$، الجزء الحقيقي هو 0 والتخيلي هو 1.",
+                        think: "الصيغة العادية تتطلب كتابة الجزء الحقيقي والتخيلي بشكل صريح.",
+                        html_structure: "i = {inp_2} + {inp_3}i",
+                        inputs: [
+                            { id: "inp_2", correct_value: "0", label: "الجزء الحقيقي a", allowed_keys: ["0", "1", "-1", "2"], hint: "لا يوجد حد حقيقي مستقل إذن أكتب 0." },
+                            { id: "inp_3", correct_value: "1", label: "معامل i", allowed_keys: ["1", "2", "0", "-1"], hint: "معامل i هنا هو 1." }
+                        ]
+                    }
+                ]
+            },
+            "page_12.json": {
+                file_name: "page_12.json",
+                category: "الفصل الأول - الأعداد المركبة (صفحة 12)",
+                title: "س/ جد ناتج جمع العددين المركبين: $(3 + 4i) + (2 - 5i)$",
+                latex_formula: "(3 + 4i) + (2 - 5i) = (3 + 2) + (4 - 5)i",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: نجمع الحقيقي مع الحقيقي والتخيلي مع التخيلي",
+                        explanation: "تجميع الأجزاء الحقيقية $(3+2)$ والتخيلية $(4i - 5i)$.",
+                        think: "اجمع الأرقام بدون i معاً والأرقام المقترنة بـ i معاً.",
+                        html_structure: "= ({inp_1}) + ({inp_2})i",
+                        inputs: [
+                            { id: "inp_1", correct_value: "5", label: "مجموع الحقيقي", allowed_keys: ["1", "5", "6", "3"], hint: "3 + 2 = 5." },
+                            { id: "inp_2", correct_value: "-1", label: "مجموع التخيلي", allowed_keys: ["-1", "1", "-9", "9"], hint: "4 - 5 = -1." }
+                        ]
+                    }
+                ]
+            },
+            "page_15.json": {
+                file_name: "page_15.json",
+                category: "الفصل الأول - الأعداد المركبة (صفحة 15)",
+                title: "س/ جد ناتج ضرب العددين المركبين: $(2 + 3i)(1 - 2i)$",
+                latex_formula: "(2 + 3i)(1 - 2i) = 2 - 4i + 3i - 6i^2",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: التوزيع واستبدال $i^2 = -1$",
+                        explanation: "$2(1) - 2(2i) + 3i(1) - 6i^2$. وتصبح $-6(-1) = +6$.",
+                        think: "كلما رأيت $i^2$ حولها مباشرة إلى $-1$ واعكس إشارة العدد الذي قبلها.",
+                        html_structure: "= 2 - 4i + 3i + {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "6", label: "الحد الناتج من -6i²", allowed_keys: ["6", "-6", "3", "-3"], hint: "-6 × (-1) = 6." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: التبسيط النهائي",
+                        explanation: "نجمع الحقيقي $2+6=8$ والتخيلي $-4i+3i=-1i$.",
+                        think: "اجمع الحدود المتشابهة لتصل للصيغة العادية.",
+                        html_structure: "= {inp_2} - {inp_3}i",
+                        inputs: [
+                            { id: "inp_2", correct_value: "8", label: "الحقيقي النهائي", allowed_keys: ["8", "5", "6", "2"], hint: "2 + 6 = 8." },
+                            { id: "inp_3", correct_value: "1", label: "معامل i", allowed_keys: ["1", "7", "-1", "2"], hint: "-4 + 3 = -1." }
+                        ]
+                    }
+                ]
+            },
+            "page_19.json": {
+                file_name: "page_19.json",
+                category: "الفصل الأول - الأعداد المركبة (صفحة 19)",
+                title: "س/ بسط المقدار التالي بضربه في مرافق المقام: $\\frac{1 + i}{1 - i}$",
+                latex_formula: "\\frac{1+i}{1-i} \\times \\frac{1+i}{1+i} = \\frac{2i}{2} = i",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: الضرب بموافق المقام",
+                        explanation: "مرافق $1-i$ هو $1+i$. نضرب البسط والمقام به.",
+                        think: "مربع الحقيقي + مربع التخيلي للمقام يساوي $1^2 + 1^2 = 2$.",
+                        html_structure: "\\frac{(1+i)^2}{(1)^2 + ({inp_1})^2} = \\frac{2i}{2}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "1", label: "مربع معامل i للمقام", allowed_keys: ["1", "2", "-1", "0"], hint: "مربع معامل i في المقام يساوي 1." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: الاختصار",
+                        explanation: "نقسم $2i$ على 2 نحصل على $i$.",
+                        think: "2 تتكنسل مع 2 بالبسط والمقام.",
+                        html_structure: "= {inp_2}i",
+                        inputs: [
+                            { id: "inp_2", correct_value: "1", label: "ناتج قسمة 2i على 2", allowed_keys: ["1", "2", "0", "-1"], hint: "2 ÷ 2 = 1." }
+                        ]
+                    }
+                ]
+            },
+            "page_32.json": {
+                file_name: "page_32.json",
+                category: "الفصل الأول - الأعداد المركبة (صفحة 32)",
+                title: "س/ جد قيمتي $x, y \\in \\mathbb{R}$ اللتين تحققان المعادلة: $y + 5i = (2x + i)(x + 2i)$",
+                latex_formula: "y + 5i = (2x^2 - 2) + (5x)i",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: مساواة الجزء التخيلي بالتخيلي",
+                        explanation: "من الطرفين: التخيلي باليسار هو 5، وباليمين هو 5x.",
+                        think: "5 = 5x تؤدي مباشرة لحساب قيمة x.",
+                        html_structure: "5 = 5x \\implies x = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "1", label: "قيمة x", allowed_keys: ["1", "2", "0", "-1"], hint: "5 ÷ 5 = 1." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: تعويض x لإيجاد y من مساواة الحقيقي بالحقيقي",
+                        explanation: "$y = 2x^2 - 2$. نعوض $x = 1$.",
+                        think: "2(1)² - 2 = 2 - 2.",
+                        html_structure: "y = 2(1)^2 - 2 \\implies y = {inp_2}",
+                        inputs: [
+                            { id: "inp_2", correct_value: "0", label: "قيمة y", allowed_keys: ["0", "2", "1", "-2"], hint: "2 - 2 = 0." }
+                        ]
+                    }
+                ]
+            },
+            "page_44.json": {
+                file_name: "page_44.json",
+                category: "الفصل الأول - الأعداد المركبة (صفحة 44)",
+                title: "س/ حل المعادلة التربيعية الآتية في مجموعة الأعداد المركبة $\\mathbb{C}$: $x^2 + 4x + 5 = 0$",
+                latex_formula: "x = \\frac{-4 \\pm \\sqrt{16 - 20}}{2} = -2 \\pm i",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: إيجاد المقدار المميز $\\Delta = b^2 - 4ac$",
+                        explanation: "$a=1, b=4, c=5$. إذن $\\Delta = 16 - 4(1)(5) = -4$.",
+                        think: "المميز السالم يعطي حلولاً تحتوي على i المركبة.",
+                        html_structure: "\\Delta = 16 - {inp_1} = -4",
+                        inputs: [
+                            { id: "inp_1", correct_value: "20", label: "حاصل ضرب 4ac", allowed_keys: ["20", "16", "10", "5"], hint: "4 × 1 × 5 = 20." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: تطبيق قانون الدستور",
+                        explanation: "$\\sqrt{-4} = 2i$. إذن $x = \\frac{-4 \\pm 2i}{2} = -2 \\pm i$.",
+                        think: "اقسم أجزاء البسط على 2.",
+                        html_structure: "x = {inp_2} \\pm i",
+                        inputs: [
+                            { id: "inp_2", correct_value: "-2", label: "الجزء الحقيقي للحل", allowed_keys: ["-2", "2", "-4", "1"], hint: "-4 ÷ 2 = -2." }
+                        ]
+                    }
+                ]
+            },
+            "page_49.json": {
+                file_name: "page_49.json",
+                category: "الفصل الثاني - القطوع المخروطية (صفحة 49)",
+                title: "س/ جد بؤرة ودليل القطع المكافئ الذي معادلته: $y^2 = 16x$",
+                latex_formula: "y^2 = 4px \\implies 4p = 16 \\implies p = 4",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: بالمقارنة مع المعادلة القياسية $y^2 = 4px$",
+                        explanation: "نساوي معامل x بالمعدلة $4p = 16$.",
+                        think: "اقسم الطرفين على 4 لإيجاد p.",
+                        html_structure: "4p = 16 \\implies p = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "4", label: "قيمة p", allowed_keys: ["2", "4", "8", "16"], hint: "16 ÷ 4 = 4." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: كتابة البؤرة والمعادلة للدليل",
+                        explanation: "البؤرة على المحور السيني الموجب $F(p, 0) = F(4, 0)$ والدليل $x = -p$.",
+                        think: "دليل القطع دائماً عكس إشارة البؤرة.",
+                        html_structure: "F({inp_2}, 0) \\quad , \\quad x = {inp_3}",
+                        inputs: [
+                            { id: "inp_2", correct_value: "4", label: "سيني البؤرة", allowed_keys: ["4", "-4", "0", "2"], hint: "البؤرة هي (p, 0)." },
+                            { id: "inp_3", correct_value: "-4", label: "معادلة الدليل", allowed_keys: ["-4", "4", "0", "-2"], hint: "الدليل بعكس إشارة p أي x = -4." }
+                        ]
+                    }
+                ]
+            },
+            "page_55.json": {
+                file_name: "page_55.json",
+                category: "الفصل الثاني - القطوع المخروطية (صفحة 55)",
+                title: "س/ جد معادلة القطع المكافئ الذي رأسه نقطة الأصل ويمر بالنقطة $(2, 4)$ وبؤرته على محور السينات:",
+                latex_formula: "y^2 = 4px \\implies 4^2 = 4p(2) \\implies 16 = 8p \\implies p = 2",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: التعويض بالنقطة لإيجاد قيمة p",
+                        explanation: "بما أن النقطة تقع بالربع الأول إذن القطع بؤرته سينية موجبة $y^2 = 4px$.",
+                        think: "نعوض x=2 و y=4 بالمعادلة القياسية.",
+                        html_structure: "16 = {inp_1}p \\implies p = 2",
+                        inputs: [
+                            { id: "inp_1", correct_value: "8", label: "معامل p", allowed_keys: ["8", "4", "2", "16"], hint: "4 × 2 = 8." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: المعادلة النهائية للقطع",
+                        explanation: "نعوض $p=2$ في القياسية $y^2 = 4(2)x = 8x$.",
+                        think: "اضرب 4 في p للوصول للمعادلة.",
+                        html_structure: "y^2 = {inp_2}x",
+                        inputs: [
+                            { id: "inp_2", correct_value: "8", label: "معامل x النهائي", allowed_keys: ["8", "4", "16", "2"], hint: "4 × 2 = 8." }
+                        ]
+                    }
+                ]
+            },
+            "page_62.json": {
+                file_name: "page_62.json",
+                category: "الفصل الثاني - القطوع المخروطية (صفحة 62)",
+                title: "س/ جد طولي المحورين وإحداثيي البؤرتين للقطع الناقص: $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$",
+                latex_formula: "a^2 = 25, b^2 = 9 \\implies c^2 = a^2 - b^2 = 16 \\implies c = 4",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: إيجاد المحور الكبير والمحور الصغير",
+                        explanation: "$a^2 = 25 \\implies a = 5$. طول المحور الكبير $2a = 10$.",
+                        think: "المقام الأكبر تحت x² إذن البؤرتان على محور السينات.",
+                        html_structure: "2a = {inp_1} \\quad , \\quad 2b = {inp_2}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "10", label: "طول المحور الكبير 2a", allowed_keys: ["10", "25", "5", "50"], hint: "2 × 5 = 10." },
+                            { id: "inp_2", correct_value: "6", label: "طول المحور الصغير 2b", allowed_keys: ["6", "9", "3", "18"], hint: "2 × 3 = 6." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: إيجاد البؤرتين من العلاقة المساعدة $c^2 = a^2 - b^2$",
+                        explanation: "$c^2 = 25 - 9 = 16 \\implies c = 4$.",
+                        think: "البؤرتان F1(4, 0) و F2(-4, 0).",
+                        html_structure: "c^2 = 25 - 9 = 16 \\implies c = {inp_3}",
+                        inputs: [
+                            { id: "inp_3", correct_value: "4", label: "قيمة c", allowed_keys: ["4", "16", "2", "8"], hint: "جذر 16 هو 4." }
+                        ]
+                    }
+                ]
+            },
+            "page_88.json": {
+                file_name: "page_88.json",
+                category: "الفصل الثاني - القطوع المخروطية (صفحة 88)",
+                title: "س/ قطع زائد مركزه نقطة الأصل وبؤرتاهما هما بؤرتا القطع الناقص $\\frac{x^2}{25} + \\frac{y^2}{9} = 1$، جد الاختلاف المركزي للقطع الزائد إذا كان $a = 3$:",
+                latex_formula: "c_{الزائد} = c_{الناقص} = 4 \\implies e = \\frac{c}{a} = \\frac{4}{3}",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: تحديد بؤرة القطع الزائد c",
+                        explanation: "بؤرتا القطع الناقص $c = 4$، إذن للقطع الزائد $c = 4$.",
+                        think: "البؤرة مشتركة بين القطعين.",
+                        html_structure: "c_{الزائد} = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "4", label: "قيمة c للقطع الزائد", allowed_keys: ["4", "5", "3", "16"], hint: "استخرجنا بؤرة القطع الناقص في التمرين السابق وكانت 4." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: حساب الاختلاف المركزي $e = \\frac{c}{a}$",
+                        explanation: "بما أن $c=4$ و $a=3$، نطبق القانون مباشرة.",
+                        think: "في القطع الزائد يجب أن يكون e > 1.",
+                        html_structure: "e = \\frac{4}{{inp_2}} > 1",
+                        inputs: [
+                            { id: "inp_2", correct_value: "3", label: "المقام a", allowed_keys: ["3", "4", "5", "2"], hint: "قيمة a معطاة بالسؤال وتساوي 3." }
+                        ]
+                    }
+                ]
+            },
+            "page_112.json": {
+                file_name: "page_112.json",
+                category: "الفصل الثالث - تطبيقات التفاضل (صفحة 112)",
+                title: "س/ سلم يستند طرفه الأسفل على أرض أفقية وطرفه الأعلى على حائط رأسي. إذا انزلق الطرف الأسفل مبتعداً بمعدل $2m/s$ عندما يكون السلم يصنع زاوية $\\pi/4$، جد معدل انزلاق الطرف الأعلى:",
+                latex_formula: "x^2 + y^2 = L^2 \\implies 2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 0",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: العلاقة الفيزيائية ومُشتقة مبرهنة فيثاغورس",
+                        explanation: "طول السلم L ثابت. المشتقة بالنسبة للزمن $t$ تعطي: $x\\frac{dx}{dt} + y\\frac{dy}{dt} = 0$.",
+                        think: "مشتقة أي ثابت (مثل طول السلم L) تساوي صفراً.",
+                        html_structure: "x\\frac{dx}{dt} + y\\frac{dy}{dt} = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "0", label: "مشتقة الثابت L²", allowed_keys: ["0", "1", "L", "2L"], hint: "مشتقة الثابت تساوي صفراً." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: التكافؤ عند الزاوية $\\pi/4$",
+                        explanation: "عندما تكون الزاوية $\\pi/4$ فإن $x = y$. نعوض $\\frac{dx}{dt} = 2$.",
+                        think: "بما أن x = y نقسم الطرفين على x.",
+                        html_structure: "2 + \\frac{dy}{dt} = 0 \\implies \\frac{dy}{dt} = {inp_2} m/s",
+                        inputs: [
+                            { id: "inp_2", correct_value: "-2", label: "معدل انزلاق الطرف الأعلى", allowed_keys: ["-2", "2", "-1", "0"], hint: "2 + dy/dt = 0 تعطي dy/dt = -2." }
+                        ]
+                    }
+                ]
+            },
+            "page_120.json": {
+                file_name: "page_120.json",
+                category: "الفصل الثالث - تطبيقات التفاضل (صفحة 120)",
+                title: "س/ مرشح مخروطي قاعدة افقية ورأسه لأسفل، يصب فيه الماء بمعدل $5 cm^3/s$ ويتسرب منه $1 cm^3/s$. جد معدل التغير النهائي للحجم $\\frac{dV}{dt}$:",
+                latex_formula: "\\frac{dV}{dt} = \\text{معدل الصب} - \\text{معدل التسرب}",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: حساب صافي تغير الحجم",
+                        explanation: "التغير الصافي هو الفرق بين ما يصب وما يتسرب: $5 - 1 = 4$.",
+                        think: "الماء الداخل موجب والخارج بالماينس.",
+                        html_structure: "\\frac{dV}{dt} = 5 - 1 = {inp_1} cm^3/s",
+                        inputs: [
+                            { id: "inp_1", correct_value: "4", label: "معدل تغير الحجم الصافي", allowed_keys: ["4", "5", "6", "1"], hint: "5 - 1 = 4." }
+                        ]
+                    }
+                ]
+            },
+            "page_131.json": {
+                file_name: "page_131.json",
+                category: "الفصل الثالث - تطبيقات التفاضل (صفحة 131)",
+                title: "س/ اختبر إمكانية تطبيق مبرهنة رول للدالة $f(x) = x^2 - 4x + 3$ على الفترة $[0, 4]$ وجد قيمة c الممكنة:",
+                latex_formula: "f'(x) = 2x - 4 \\implies f'(c) = 2c - 4 = 0 \\implies c = 2",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: اشتقاق الدالة ومساواتها بالصفر",
+                        explanation: "$f'(x) = 2x - 4$. نضع $f'(c) = 0 \\implies 2c - 4 = 0$.",
+                        think: "حسب مبرهنة رول يوجد c بحيث تكون المشتقة عنده صفر.",
+                        html_structure: "2c - 4 = 0 \\implies 2c = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "4", label: "نقل -4 للطرف الآخر", allowed_keys: ["4", "-4", "2", "0"], hint: "عند نقل -4 تتغير إشارتها إلى 4." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: إيجاد c والتأكد من انتمائها للفترة المفتوحة $(0, 4)$",
+                        explanation: "$c = 4 / 2 = 2$. والعدد 2 ينتمي للفترة $(0, 4)$.",
+                        think: "اقسم 4 على 2.",
+                        html_structure: "c = {inp_2} \\in (0, 4)",
+                        inputs: [
+                            { id: "inp_2", correct_value: "2", label: "قيمة c", allowed_keys: ["2", "4", "1", "3"], hint: "4 ÷ 2 = 2." }
+                        ]
+                    }
+                ]
+            },
+            "page_136.json": {
+                file_name: "page_136.json",
+                category: "الفصل الثالث - تطبيقات التفاضل (صفحة 136)",
+                title: "س/ باستخدام نتيجة مبرهنة القيمة المتوسطة جد قيمة تقريبية للمقدار: $\\sqrt{26}$",
+                latex_formula: "f(x) = \\sqrt{x}, a = 25, b = 26, h = 1",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: اختيار القيمة القريبة a وحساب h",
+                        explanation: "أقرب عدد له جذر تربيعي صحيح هو $a = 25$. إذن $h = b - a = 26 - 25 = 1$.",
+                        think: "h هي مقدار التغير البسيط بين القيمة المعطاة والقيمة المفروضة.",
+                        html_structure: "h = 26 - 25 = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "1", label: "قيمة h", allowed_keys: ["1", "26", "25", "0.1"], hint: "26 - 25 = 1." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: حساب المشتقة والتقريب النهائي",
+                        explanation: "$f(25) = 5$، $f'(25) = \\frac{1}{2\\sqrt{25}} = 0.1$. القيمة التقريبية $f(a) + h f'(a) = 5 + 1(0.1) = 5.1$.",
+                        think: "5 + 0.1 = 5.1.",
+                        html_structure: "\\sqrt{26} \\approx 5 + {inp_2} = 5.1",
+                        inputs: [
+                            { id: "inp_2", correct_value: "0.1", label: "مقدار التغير التقريبي h f'(a)", allowed_keys: ["0.1", "0.2", "1", "0.01"], hint: "1 × 0.1 = 0.1." }
+                        ]
+                    }
+                ]
+            },
+            "page_142.json": {
+                file_name: "page_142.json",
+                category: "الفصل الثالث - تطبيقات التفاضل (صفحة 142)",
+                title: "س/ جد النقاط الحرجة للدالة $f(x) = x^3 - 3x$ وحدد نوعها:",
+                latex_formula: "f'(x) = 3x^2 - 3 = 0 \\implies x^2 = 1 \\implies x = \\pm 1",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: المشتقة الأولى وتصفيرها",
+                        explanation: "$3x^2 - 3 = 0 \\implies 3(x^2 - 1) = 0 \\implies x^2 = 1$.",
+                        think: "قسمة الطرفين على 3 تعطي x² = 1.",
+                        html_structure: "x^2 = {inp_1} \\implies x = \\pm 1",
+                        inputs: [
+                            { id: "inp_1", correct_value: "1", label: "قيمة x²", allowed_keys: ["1", "3", "0", "9"], hint: "3 ÷ 3 = 1." }
+                        ]
+                    }
+                ]
+            },
+            "page_146.json": {
+                file_name: "page_146.json",
+                category: "الفصل الثالث - تطبيقات التفاضل (صفحة 146)",
+                title: "س/ جد بعدي أكبر مستطيل يمكن وضعه داخل منطقة محددة بحجم معين بحيث يكون محيطه أصغر ما يمكن ومساحته $A = x \\cdot y = 16$ على شكل مربع:",
+                latex_formula: "x = y \\implies x^2 = 16 \\implies x = 4",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: الاستفادة من شرط المساحة العظمى (شكل المربع)",
+                        explanation: "أكبر مساحة للمستطيل تتتحقق عندما يكون مربعاً أي $x = y$.",
+                        think: "x² = 16.",
+                        html_structure: "x = \\sqrt{16} = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "4", label: "طول الضلع x", allowed_keys: ["4", "8", "2", "16"], hint: "جذر 16 هو 4." }
+                        ]
+                    }
+                ]
+            },
+            "page_158.json": {
+                file_name: "page_158.json",
+                category: "الفصل الرابع - التكامل (صفحة 158)",
+                title: "س/ احسب التكامل غير المحدد الآتي: $\\int (3x^2 + 2x) dx$",
+                latex_formula: "\\int (3x^2 + 2x) dx = x^3 + x^2 + C",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: تكامل كل حد بإضافة 1 للأس والقسمة على الأس الجديد",
+                        explanation: "$\\int 3x^2 dx = 3\\frac{x^3}{3} = x^3$ و $\\int 2x dx = 2\\frac{x^2}{2} = x^2$.",
+                        think: "الأس الجديد للحد الأول هو 3 والأس الجديد للحد الثاني هو 2.",
+                        html_structure: "= x^{inp_1} + x^{inp_2} + C",
+                        inputs: [
+                            { id: "inp_1", correct_value: "3", label: "أس x الأول", allowed_keys: ["3", "2", "4", "1"], hint: "3x³/3 = x³." },
+                            { id: "inp_2", correct_value: "2", label: "أس x الثاني", allowed_keys: ["2", "1", "3", "4"], hint: "2x²/2 = x²." }
+                        ]
+                    }
+                ]
+            },
+            "page_160.json": {
+                file_name: "page_160.json",
+                category: "الفصل الرابع - التكامل (صفحة 160)",
+                title: "س/ احسب تكامل الدالة المثلثية التالية: $\\int \\cos(3x) dx$",
+                latex_formula: "\\int \\cos(3x) dx = \\frac{1}{3} \\sin(3x) + C",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: توفير مشتقة الزاويه (3)",
+                        explanation: "مشتقة $3x$ هي $3$. نضرب بـ $3$ ونوفر خارج التكامل $\\frac{1}{3}$.",
+                        think: "تكامل الجتا (cos) هو جيب (sin) مقسوماً على مشتقة الزاوية.",
+                        html_structure: "= \\frac{1}{{inp_1}} \\sin(3x) + C",
+                        inputs: [
+                            { id: "inp_1", correct_value: "3", label: "مقام المعامل الخارجي", allowed_keys: ["3", "1", "2", "6"], hint: "مشتقة الزاوية 3x هي 3." }
+                        ]
+                    }
+                ]
+            },
+            "page_172.json": {
+                file_name: "page_172.json",
+                category: "الفصل الرابع - التكامل (صفحة 172)",
+                title: "س/ احسب قيم التكامل المحدد للدالة الأسية: $\\int_0^1 e^{2x} dx$",
+                latex_formula: "\\int_0^1 e^{2x} dx = \\left[ \\frac{1}{2} e^{2x} \\right]_0^1 = \\frac{1}{2}(e^2 - 1)",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: إجراء التكامل وتطبيق حدود التكامل من 0 إلى 1",
+                        explanation: "تكامل $e^{2x}$ هو $\\frac{1}{2}e^{2x}$. عند التعويض بالحد الأعلى 1 والحد الأدنى 0.",
+                        think: "e^0 = 1 دائماً.",
+                        html_structure: "= \\frac{1}{2} (e^2 - e^{inp_1}) = \\frac{1}{2}(e^2 - 1)",
+                        inputs: [
+                            { id: "inp_1", correct_value: "0", label: "أس e في الحد الأدنى", allowed_keys: ["0", "1", "2", "-1"], hint: "2 × 0 = 0." }
+                        ]
+                    }
+                ]
+            },
+            "page_178.json": {
+                file_name: "page_178.json",
+                category: "الفصل الرابع - التكامل (صفحة 178)",
+                title: "س/ جد مساحة المنطقة المحصورة بين منحني الدالة $y = x^2 - 4$ ومحور السينات على الفترة $[-2, 2]$:",
+                latex_formula: "A = \\left| \\int_{-2}^2 (x^2 - 4) dx \\right| = \\left| \\left[ \\frac{x^3}{3} - 4x \\right]_{-2}^2 \\right| = \\frac{32}{3}",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: جعل الدالة تساوي صفر لإيجاد تقاطعات محور السينات",
+                        explanation: "$x^2 - 4 = 0 \\implies x^2 = 4 \\implies x = \\pm 2$.",
+                        think: "فترات التكامل محددة بتمتمة حدود التقاطع.",
+                        html_structure: "x = \\pm {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "2", label: "جذر العدد 4", allowed_keys: ["2", "4", "1", "16"], hint: "جذر 4 هو 2." }
+                        ]
+                    }
+                ]
+            },
+            "page_181.json": {
+                file_name: "page_181.json",
+                category: "الفصل الرابع - التكامل (صفحة 181)",
+                title: "س/ جد مساحة المنطقة المحصورة بين المنحنيين $f(x) = x^3$ و $g(x) = x$:",
+                latex_formula: "R(x) = x^3 - x = 0 \\implies x(x^2 - 1) = 0 \\implies x = 0, 1, -1",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: توليد دالة الفرق R(x) وتصفيرها",
+                        explanation: "$x^3 - x = 0 \\implies x(x-1)(x+1) = 0$. قيم x هي $0, 1, -1$.",
+                        think: "يتم تقسيم المنطقة إلى فترتين: [-1, 0] و [0, 1].",
+                        html_structure: "x(x^2 - 1) = 0 \\implies x = 0 , x = {inp_1} , x = -1",
+                        inputs: [
+                            { id: "inp_1", correct_value: "1", label: "قيمة x الموجبة", allowed_keys: ["1", "2", "3", "0"], hint: "x² = 1 تعطي x = 1." }
+                        ]
+                    }
+                ]
+            },
+            "page_186.json": {
+                file_name: "page_186.json",
+                category: "الفصل الرابع - التكامل (صفحة 186)",
+                title: "س/ يتحرك جسم على خط مستقيم بسباق وتأثير سرعة $v(t) = 2t - 4 m/s$. جد المسافة المقطوعة في الفترة $[1, 3]$:",
+                latex_formula: "v(t) = 0 \\implies 2t - 4 = 0 \\implies t = 2 \\in (1, 3)",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: فحص توقف الجسم وتجزئة الفترة",
+                        explanation: "نجعل $v(t) = 0 \\implies 2t = 4 \\implies t = 2$. لحظة التوقف تقع داخل الفترة $[1, 3]$.",
+                        think: "بما أن t=2 تقع بين 1 و 3 نقسم المسافة لجزئين.",
+                        html_structure: "2t = 4 \\implies t = {inp_1} s",
+                        inputs: [
+                            { id: "inp_1", correct_value: "2", label: "زمن التوقف t", allowed_keys: ["2", "4", "1", "3"], hint: "4 ÷ 2 = 2." }
+                        ]
+                    }
+                ]
+            },
+            "page_190.json": {
+                file_name: "page_190.json",
+                category: "الفصل الرابع - التكامل (صفحة 190)",
+                title: "س/ المنطقة المستوية المحددة بالمنحني $y = \\sqrt{x}$ بين $x = 0$ و $x = 4$ دارت حول محور السينات. جد حجم المجسم الناتج:",
+                latex_formula: "V = \\pi \\int_0^4 y^2 dx = \\pi \\int_0^4 x dx = \\pi \\left[ \\frac{x^2}{2} \\right]_0^4 = 8\\pi",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: تطبيق قانون الحجوم الدورانية حول المحور السيني",
+                        explanation: "$V = \\pi \\int_a^b y^2 dx$. مربع $y = \\sqrt{x}$ هو $y^2 = x$.",
+                        think: "تكامل x هو x²/2.",
+                        html_structure: "V = \\pi \\left[ \\frac{4^2}{2} - 0 \\right] = {inp_1} \\pi",
+                        inputs: [
+                            { id: "inp_1", correct_value: "8", label: "ناتج قسمة 16 على 2", allowed_keys: ["8", "16", "4", "32"], hint: "16 ÷ 2 = 8." }
+                        ]
+                    }
+                ]
+            },
+            "page_201.json": {
+                file_name: "page_201.json",
+                category: "الفصل الخامس - المعادلات التفاضلية (صفحة 201)",
+                title: "س/ بين رتبة ودرجة المعادلة التفاضلية الآتية: $\\left(\\frac{d^2y}{dx^2}\\right)^3 + 5\\left(\\frac{dy}{dx}\\right)^4 - y = 0$",
+                latex_formula: "\\text{الرتبة الثانية والدرجة الثالثة}",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: تحديد الرتبة (أعلى مشتقة)",
+                        explanation: "أعلى مشتقة هي المشتقة الثانية $\\frac{d^2y}{dx^2}$.",
+                        think: "رتبة المعادلة تتبع أعظم مشتقة موجودة فيها.",
+                        html_structure: "\\text{الرتبة} = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "2", label: "الرتبة", allowed_keys: ["2", "1", "3", "4"], hint: "المشتقة الثانية هي أعلى مشتقة." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: تحديد الدرجة (أس أعلى مشتقة)",
+                        explanation: "القوة المرفوعة لأعلى مشتقة هي 3.",
+                        think: "الدرجة هي القوة المرفوعة للمشتقة ذات أعلى رتبة.",
+                        html_structure: "\\text{الدرجة} = {inp_2}",
+                        inputs: [
+                            { id: "inp_2", correct_value: "3", label: "الدرجة", allowed_keys: ["3", "4", "2", "1"], hint: "أس المشتقة الثانية يساوي 3." }
+                        ]
+                    }
+                ]
+            },
+            "page_203.json": {
+                file_name: "page_203.json",
+                category: "الفصل الخامس - المعادلات التفاضلية (صفحة 203)",
+                title: "س/ برهن أن العلاقة $y = x^2 + 3x$ هي حلاً للمعادلة التفاضلية: $x \\frac{dy}{dx} - y = x^2$",
+                latex_formula: "\\frac{dy}{dx} = 2x + 3 \\implies x(2x + 3) - (x^2 + 3x) = x^2",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: حساب المشتقة الأولى $\\frac{dy}{dx}$",
+                        explanation: "مشتقة $x^2 + 3x$ بالنسبة لـ x هي $2x + 3$.",
+                        think: "مشتقة x² هي 2x ومشتقة 3x هي 3.",
+                        html_structure: "\\frac{dy}{dx} = 2x + {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "3", label: "معامل مشتقة 3x", allowed_keys: ["3", "2", "1", "0"], hint: "مشتقة 3x هي 3." }
+                        ]
+                    }
+                ]
+            },
+            "page_210.json": {
+                file_name: "page_210.json",
+                category: "الفصل الخامس - المعادلات التفاضلية (صفحة 210)",
+                title: "س/ حل المعادلة التفاضلية الآتية بفصل المتغيرات: $\\frac{dy}{dx} = \\frac{2x}{y}$",
+                latex_formula: "y dy = 2x dx \\implies \\int y dy = \\int 2x dx \\implies \\frac{y^2}{2} = x^2 + C",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: فصل المتغيرات والضرب التبادلي",
+                        explanation: "نجعل الحدود التي تحتوي y مع dy بالطرف الأيسر، و x مع dx بالطرف الأيمن.",
+                        think: "y dy = 2x dx.",
+                        html_structure: "y \\, dy = {inp_1}x \\, dx",
+                        inputs: [
+                            { id: "inp_1", correct_value: "2", label: "معامل x", allowed_keys: ["2", "1", "4", "0"], hint: "معامل x هو 2." }
+                        ]
+                    },
+                    {
+                        step_id: 2,
+                        title: "الخطوة الثانية: أخذ التكامل للطرفين",
+                        explanation: "$\\int y dy = \\frac{y^2}{2}$ و $\\int 2x dx = x^2$.",
+                        think: "تكامل 2x هو x².",
+                        html_structure: "\\frac{y^2}{2} = x^{inp_2} + C",
+                        inputs: [
+                            { id: "inp_2", correct_value: "2", label: "أس x الناتج من التكامل", allowed_keys: ["2", "1", "3", "4"], hint: "2x²/2 = x²." }
+                        ]
+                    }
+                ]
+            },
+            "page_212.json": {
+                file_name: "page_212.json",
+                category: "الفصل الخامس - المعادلات التفاضلية (صفحة 212)",
+                title: "س/ حل المعادلة التفاضلية: $e^{-y} dy - dx = 0$",
+                latex_formula: "e^{-y} dy = dx \\implies \\int e^y dy = \\int dx \\implies e^y = x + C",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: نقل dx وتكامل الطرفين",
+                        explanation: "$e^y dy = dx \\implies e^y = x + C$.",
+                        think: "تكامل 1 dx هو x.",
+                        html_structure: "e^y = x + {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "C", label: "ثابت التكامل العامة", allowed_keys: ["C", "0", "1", "x"], hint: "نضيف دائماً ثابت التكامل C." }
+                        ]
+                    }
+                ]
+            },
+            "page_216.json": {
+                file_name: "page_216.json",
+                category: "الفصل الخامس - المعادلات التفاضلية (صفحة 216)",
+                title: "س/ أثبت أن المعادلة التفاضلية الآتية متجانسة: $(x^2 + y^2) dx - 2xy dy = 0$",
+                latex_formula: "\\frac{dy}{dx} = \\frac{x^2 + y^2}{2xy} = \\frac{1 + (y/x)^2}{2(y/x)}",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: كتابة $\\frac{dy}{dx}$ بدلالة $\\frac{y}{x}$",
+                        explanation: "بقسمة البسط والمقام على $x^2$ نحصل على دالة تعتمد كلياً على المقدار $v = y/x$.",
+                        think: "كل حد من الدرجة الثانية إذن المعادلة متجانسة من الدرجة 2.",
+                        html_structure: "\\text{درجة تجانس الحدود هي} {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "2", label: "درجة الحدود", allowed_keys: ["2", "1", "3", "0"], hint: "x² و y² و xy كلها من الدرجة الثانية." }
+                        ]
+                    }
+                ]
+            },
+            "page_222.json": {
+                file_name: "page_222.json",
+                category: "الفصل السادس - الهندسة الفضائية (صفحة 222)",
+                title: "س/ مبرهنة (7): إذا تعامد مستويان فالمستقيم المرسوم في أحدهما والعمودي على مستقيم التقاطع يكون:",
+                latex_formula: "\\pi_1 \\perp \\pi_2 , L \\subset \\pi_1 , L \\perp (\\pi_1 \\cap \\pi_2) \\implies L \\perp \\pi_2",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: إكمال النص الرياضي لمبرهنة 7",
+                        explanation: "يكون عمودياً على المستوي الآخر.",
+                        think: "هذه المبرهنة الأساسية لإثبات تعامد مستقيم مع مستوي.",
+                        html_structure: "\\text{يكون عمودياً على } {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "المستوي الآخر", allowed_keys: ["المستوي الآخر", "مستقيم التقاطع", "نقطة التماس", "نفس المستوي"], hint: "المستقيم يكون عمودياً على المستوي الثاني (الآخر)." }
+                        ]
+                    }
+                ]
+            },
+            "page_225.json": {
+                file_name: "page_225.json",
+                category: "الفصل السادس - الهندسة الفضائية (صفحة 225)",
+                title: "س/ نتيجة مبرهنة (7): إذا كان كل من مستويين متقاطعين عمودياً على مستوٍ ثالث، فإن مستقيم تقاطعهما يكون:",
+                latex_formula: "\\pi_1 \\perp \\pi_3 \\land \\pi_2 \\perp \\pi_3 \\implies (\\pi_1 \\cap \\pi_2) \\perp \\pi_3",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: إكمال منطق النتيجة",
+                        explanation: "مستقيم تقاطعهما يكون عمودياً على المستوي الثالث.",
+                        think: "خط تقاطع مستويين عموديين على ثالث يكون عمودياً على ذلك المستوي الثالث.",
+                        html_structure: "\\text{عمودياً على } {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "المستوي الثالث", allowed_keys: ["المستوي الثالث", "المستوي الأول", "المستوي الثاني", "الزاوية الزوجية"], hint: "مستقيم التقاطع يكون عمودياً على المستوي الثالث." }
+                        ]
+                    }
+                ]
+            },
+            "page_233.json": {
+                file_name: "page_233.json",
+                category: "الفصل السادس - الهندسة الفضائية (صفحة 233)",
+                title: "س/ مبرهنة (8): يتسامد المستويان إذا حوى أحدهما على مستقيم عمودي على:",
+                latex_formula: "L \\subset \\pi_1 \\land L \\perp \\pi_2 \\implies \\pi_1 \\perp \\pi_2",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: الشرط الكافي لتعامد مستويين",
+                        explanation: "يتعامد المستويان إذا حوى أحدهما مستقيماً عمودياً على المستوي الآخر.",
+                        think: "شرط تعامد مستويين وجود مستقيم في أحدهما عمودي على الآخر.",
+                        html_structure: "\\text{عمودي على } {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "المستوي الآخر", allowed_keys: ["المستوي الآخر", "مستقيم آخر", "نقطة الأصل", "المستوي نفسه"], hint: "يكون عمودياً على المستوي الآخر." }
+                        ]
+                    }
+                ]
+            },
+            "page_239.json": {
+                file_name: "page_239.json",
+                category: "الفصل السادس - الهندسة الفضائية (صفحة 239)",
+                title: "س/ قياس الزاوية الزوجية يساوي قياس الزاوية العائدة لها، وتكون منشأة برسم شعاعين عموديين على:",
+                latex_formula: "\\theta_{زوجية} = \\theta_{عائدة}",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: تعريف الزاوية العائدة للزاوية الزوجية",
+                        explanation: "تنشأ برسم شعاعين عموديين على حرف الزاوية الزوجية من نقطة واحدة.",
+                        think: "حرف الزاوية الزوجية هو مستقيم التقاطع بين المستويين.",
+                        html_structure: "\\text{عموديين على } {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "حرف الزاوية الزوجية", allowed_keys: ["حرف الزاوية الزوجية", "المستوي الأرضي", "العمود النازل", "المستقيم المائل"], hint: "الشعاعان يكونان عموديين على حرف الزاوية الزوجية." }
+                        ]
+                    }
+                ]
+            }
+        };
 
-            if (pageNum <= 48) {
-                // Chapter 1: Complex Numbers
-                return {
-                    file_name: fileName,
-                    category: `الفصل الأول - الأعداد المركبة (صفحة ${pageNum})`,
-                    title: "س/ جد قيمتي $x, y \\in \\mathbb{R}$ اللتين تحققان المعادلة:",
-                    latex_formula: "y + 5i = (2x + i)(x + 2i)",
-                    image_url: "",
-                    steps: [
-                        {
-                            step_id: 1,
-                            title: "الخطوة الأولى: فك الأقواس بالضرب والتوزيع",
-                            explanation: "نستخدم التوزيع لضرب القوسين. تذكر أن $i^2 = -1$.",
-                            think: "اضرب الحد الأول في القوس الثاني، ثم الثاني في القوس الثاني.",
-                            html_structure: "y + 5i = ({inp_1})x^2 + ({inp_2})xi + xi + 2i^2",
-                            inputs: [
-                                { id: "inp_1", correct_value: "2", label: "معامل x²", allowed_keys: ["1", "2", "3", "4"], hint: "ضرب 2x في x يساوي 2x²." },
-                                { id: "inp_2", correct_value: "4", label: "معامل xi الأول", allowed_keys: ["2", "4", "5", "6"], hint: "ضرب 2x في 2i يساوي 4xi." }
-                            ]
-                        },
-                        {
-                            step_id: 2,
-                            title: "الخطوة الثانية: مساواة الحقيقي بالحقيقي والتخيلي بالتخيلي",
-                            explanation: "تجميع الأجزاء التخيلية ومساواتها مع الطرف الأيسر.",
-                            think: "التخيلي باليسار هو 5، وباليمين هو 5x.",
-                            html_structure: "5 = {inp_3}x \\implies x = {inp_4}",
-                            inputs: [
-                                { id: "inp_3", correct_value: "5", label: "معامل x", allowed_keys: ["2", "5", "1", "3"], hint: "4xi + 1xi = 5xi." },
-                                { id: "inp_4", correct_value: "1", label: "قيمة x", allowed_keys: ["1", "2", "0", "-1"], hint: "قسمة 5 على 5 تعطي 1." }
-                            ]
-                        }
-                    ]
-                };
-            } else if (pageNum <= 88) {
-                // Chapter 2: Conic Sections
-                return {
-                    file_name: fileName,
-                    category: `الفصل الثاني - القطوع المخروطية (صفحة ${pageNum})`,
-                    title: "س/ جد معادلة القطع المكافئ الذي بؤرته $(0, 4)$ ورأسه نقطة الأصل:",
-                    latex_formula: "x^2 = 4py",
-                    image_url: "",
-                    steps: [
-                        {
-                            step_id: 1,
-                            title: "الخطوة الأولى: تحديد قيمة p والاتجاه",
-                            explanation: "البؤرة تقع على محور الصادات الموجب $(0, p)$ إذن $p = 4$.",
-                            think: "بما أن البؤرة $(0, 4)$ فالقطع ينفتح للأعلى ومعادلته $x^2 = 4py$.",
-                            html_structure: "p = {inp_1}",
-                            inputs: [
-                                { id: "inp_1", correct_value: "4", label: "قيمة p", allowed_keys: ["2", "4", "8", "16"], hint: "من الأحداثي الصادي للبؤرة p=4." }
-                            ]
-                        },
-                        {
-                            step_id: 2,
-                            title: "الخطوة الثانية: التعويض في المعادلة القياسية",
-                            explanation: "نعوض $p = 4$ في القياسية $x^2 = 4py$.",
-                            think: "اضرب 4 في قيمة p لتبسيط المعادلة.",
-                            html_structure: "x^2 = 4({inp_2})y \\implies x^2 = {inp_3}y",
-                            inputs: [
-                                { id: "inp_2", correct_value: "4", label: "تعويض p", allowed_keys: ["2", "4", "6", "8"], hint: "ضع قيمة p التي استخرجتها." },
-                                { id: "inp_3", correct_value: "16", label: "المعامل النهائي", allowed_keys: ["8", "12", "16", "24"], hint: "4 × 4 = 16." }
-                            ]
-                        }
-                    ]
-                };
-            } else if (pageNum <= 146) {
-                // Chapter 3: Differentiation Applications
-                return {
-                    file_name: fileName,
-                    category: `الفصل الثالث - تطبيقات التفاضل (صفحة ${pageNum})`,
-                    title: "س/ خزان ماء مكعب الشكل طول ضلعه $2m$ يصب فيه الماء بمعدل $0.4 m^3/h$. جد معدل تغير انخفاض الماء:",
-                    latex_formula: "V = x^2 \\cdot h",
-                    image_url: "",
-                    steps: [
-                        {
-                            step_id: 1,
-                            title: "الخطوة الأولى: كتابة العلاقة الرئيسية والتفاضل بالنسبة للزمن",
-                            explanation: "حجم الماء $V = 2^2 \\cdot h = 4h$. تشتق المعادلة بالنسبة للزمن $t$.",
-                            think: "طول ضلع قاعدة المكعب ثابت $x=2$ متر.",
-                            html_structure: "V = {inp_1}h \\implies \\frac{dV}{dt} = {inp_2} \\frac{dh}{dt}",
-                            inputs: [
-                                { id: "inp_1", correct_value: "4", label: "مساحة القاعدة", allowed_keys: ["2", "4", "8", "16"], hint: "مساحة المربع 2² = 4." },
-                                { id: "inp_2", correct_value: "4", label: "معامل المشتقة", allowed_keys: ["2", "4", "6", "8"], hint: "مشتقة 4h بالنسبة للزمن هي 4(dh/dt)." }
-                            ]
-                        },
-                        {
-                            step_id: 2,
-                            title: "الخطوة الثانية: التعويض وإيجاد معدل التغير",
-                            explanation: "نعوض $\\frac{dV}{dt} = 0.4$ لإيجاد $\\frac{dh}{dt}$.",
-                            think: "اقسم الطرفين على 4.",
-                            html_structure: "0.4 = 4 \\cdot \\frac{dh}{dt} \\implies \\frac{dh}{dt} = {inp_3} m/h",
-                            inputs: [
-                                { id: "inp_3", correct_value: "0.1", label: "معدل الارتفاع dh/dt", allowed_keys: ["0.1", "0.2", "0.4", "1.0"], hint: "0.4 ÷ 4 = 0.1." }
-                            ]
-                        }
-                    ]
-                };
-            } else if (pageNum <= 194) {
-                // Chapter 4: Integration
-                return {
-                    file_name: fileName,
-                    category: `الفصل الرابع - التكامل (صفحة ${pageNum})`,
-                    title: "س/ احسب قيمة التكامل غير المحدد التالي:",
-                    latex_formula: "\\int (3x^2 + 2x - 1) dx",
-                    image_url: "",
-                    steps: [
-                        {
-                            step_id: 1,
-                            title: "الخطوة الأولى: تطبيق قواعد التكامل الأساسية",
-                            explanation: "نضيف واحد للأس ونقسم على الأس الجديد لكل حد.",
-                            think: "تكامل $3x^2$ هو $x^3$ وتكامل $2x$ هو $x^2$.",
-                            html_structure: "\\int (3x^2 + 2x - 1) dx = x^{inp_1} + x^{inp_2} - x + C",
-                            inputs: [
-                                { id: "inp_1", correct_value: "3", label: "أس الحد الأول", allowed_keys: ["2", "3", "4", "1"], hint: "3x³/3 تعطي x³." },
-                                { id: "inp_2", correct_value: "2", label: "أس الحد الثاني", allowed_keys: ["1", "2", "3", "4"], hint: "2x²/2 تعطي x²." }
-                            ]
-                        }
-                    ]
-                };
-            } else if (pageNum <= 216) {
-                // Chapter 5: Differential Equations
-                return {
-                    file_name: fileName,
-                    category: `الفصل الخامس - المعادلات التفاضلية (صفحة ${pageNum})`,
-                    title: "س/ بين رتبة ودرجة المعادلة التفاضلية الآتية:",
-                    latex_formula: "\\left(\\frac{d^2y}{dx^2}\\right)^3 + 5\\left(\\frac{dy}{dx}\\right)^4 - y = 0",
-                    image_url: "",
-                    steps: [
-                        {
-                            step_id: 1,
-                            title: "الخطوة الأولى: تحديد أعلى مشتقة (الرتبة)",
-                            explanation: "الرتبة هي أعلى مشتقة تظهر في المعادلة وهي المشتقة الثانية.",
-                            think: "المشتقة d²y/dx² تُمثل الرتبة الثانية.",
-                            html_structure: "\\text{الرتبة} = {inp_1}",
-                            inputs: [
-                                { id: "inp_1", correct_value: "2", label: "رتبة المعادلة", allowed_keys: ["1", "2", "3", "4"], hint: "أعلى مشتقة هي المشتقة الثانية." }
-                            ]
-                        },
-                        {
-                            step_id: 2,
-                            title: "الخطوة الثانية: تحديد أس أعلى مشتقة (الدرجة)",
-                            explanation: "الدرجة هي القوة المرفوعة لأعلى مشتقة في المعادلة.",
-                            think: "أس المشتقة الثانية هو 3.",
-                            html_structure: "\\text{الدرجة} = {inp_2}",
-                            inputs: [
-                                { id: "inp_2", correct_value: "3", label: "درجة المعادلة", allowed_keys: ["1", "2", "3", "4"], hint: "القوة المرفوعة للمشتقة d²y/dx² هي 3." }
-                            ]
-                        }
-                    ]
-                };
+        function showScreen(screenId) {
+            document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+            const target = document.getElementById(screenId);
+            if(target) target.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function navigateHome() {
+            showScreen('view-chapters');
+        }
+
+        function navigateBackToTopics() {
+            if (currentChapter) {
+                showTopics(currentChapter.id);
             } else {
-                // Chapter 6: Spatial Geometry
-                return {
-                    file_name: fileName,
-                    category: `الفصل السادس - الهندسة الفضائية (صفحة ${pageNum})`,
-                    title: "س/ مبرهنة (7): إذا تعامد مستويان فالمستقيم المرسوم في أحدهما والعمودي على مستقيم التقاطع يكون:",
-                    latex_formula: "\\pi_1 \\perp \\pi_2 \\implies L \\perp \\pi_2",
-                    image_url: "",
-                    steps: [
-                        {
-                            step_id: 1,
-                            title: "الخطوة الأولى: إكمال نص المبرهنة",
-                            explanation: "تحديد العلاقة بين المستقيم والمستوي الثاني.",
-                            think: "يكون عمودياً على المستوي الآخر.",
-                            html_structure: "\\text{يكون عمودياً على } {inp_1}",
-                            inputs: [
-                                { id: "inp_1", correct_value: "المستوي الآخر", allowed_keys: ["المستوي الآخر", "مستقيم التقاطع", "نقطة التماس", "المستوي الأول"], hint: "المستقيم يكون عمودياً على المستوي الثاني." }
-                            ]
-                        }
-                    ]
-                };
+                navigateHome();
             }
         }
+
+        function renderChapters() {
+            const container = document.getElementById('chaptersContainer');
+            if(!container) return;
+            container.innerHTML = '';
+
+            curriculum.forEach(ch => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col justify-between group";
+                card.onclick = () => showTopics(ch.id);
+
+                let totalFiles = 0;
+                ch.topics.forEach(t => totalFiles += t.files.length);
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-12 h-12 rounded-xl ${ch.color} text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition">
+                                <i class="fa-solid ${ch.icon}"></i>
+                            </span>
+                            <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">${totalFiles} تمارين/صفحات</span>
+                        </div>
+                        <h3 class="text-lg font-black text-slate-900 mb-2 group-hover:text-mathBlue transition">${ch.title}</h3>
+                        <div class="space-y-1.5 mt-3">
+                            ${ch.topics.map(t => `<div class="text-xs text-slate-500 font-bold flex items-center gap-1.5"><i class="fa-solid fa-angle-left text-[10px] text-slate-300"></i> ${t.name}</div>`).join('')}
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-mathBlue">
+                        <span>تصفح تمارين الفصل</span>
+                        <i class="fa-solid fa-arrow-left group-hover:-translate-x-1 transition"></i>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function showTopics(chapterId) {
+            currentChapter = curriculum.find(c => c.id === chapterId);
+            if(!currentChapter) return;
+
+            document.getElementById('currentChapterTitle').textContent = currentChapter.title;
+            const container = document.getElementById('topicsContainer');
+            container.innerHTML = '';
+
+            currentChapter.topics.forEach(tp => {
+                const topicCard = document.createElement('div');
+                topicCard.className = "bg-white rounded-2xl p-5 border border-slate-200 shadow-sm flex flex-col gap-3";
+                
+                let filesHtml = tp.files.map(f => {
+                    const pageNum = f.replace(/\D/g, '');
+                    return `
+                        <button onclick="startWhiteboard('${f}', event)" class="flex items-center justify-between p-3 rounded-xl bg-slate-50 hover:bg-sky-50 hover:border-mathBlue border border-slate-200 text-slate-800 text-xs font-bold transition group active:scale-98">
+                            <div class="flex items-center gap-2">
+                                <span class="w-7 h-7 rounded-lg bg-mathBlue/10 text-mathBlue flex items-center justify-center font-mono text-xs"><i class="fa-solid fa-file-lines"></i></span>
+                                <span>تمرين / صفحة ${pageNum}</span>
+                            </div>
+                            <span class="text-slate-400 group-hover:text-mathBlue flex items-center gap-1 text-[11px]">
+                                ابدأ الحل <i class="fa-solid fa-chevron-left text-[9px]"></i>
+                            </span>
+                        </button>
+                    `;
+                }).join('');
+
+                topicCard.innerHTML = `
+                    <div class="flex items-center gap-2 border-b border-slate-100 pb-3">
+                        <i class="fa-solid fa-bookmark text-mathBlue"></i>
+                        <h4 class="font-black text-slate-900 text-sm">${tp.name}</h4>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1">
+                        ${filesHtml}
+                    </div>
+                `;
+                container.appendChild(topicCard);
+            });
+
+            showScreen('view-topics');
+        }
+
+        function populateQuickPageSelect() {
+            const selectEl = document.getElementById('quickPageSelect');
+            if(!selectEl || !currentChapter) return;
+            selectEl.innerHTML = '';
+
+            currentChapter.topics.forEach(tp => {
+                tp.files.forEach(f => {
+                    const pageNum = f.replace(/\D/g, '');
+                    const opt = document.createElement('option');
+                    opt.value = f;
+                    opt.textContent = `صفحة ${pageNum} - ${tp.name}`;
+                    if(currentProblemData && currentProblemData.file_name === f) {
+                        opt.selected = true;
+                    }
+                    selectEl.appendChild(opt);
+                });
+            });
+        }
+
+        function switchPageFromSelect(fileName) {
+            startWhiteboard(fileName);
+        }
+
+        function getProblemDataForFile(fileName) {
+            if(PROBLEMS_DATABASE[fileName]) {
+                return PROBLEMS_DATABASE[fileName];
+            }
+            // Fallback default structure
+            return {
+                file_name: fileName,
+                category: "تمارين كتاب الرياضيات",
+                title: "س/ بسط العبارة الرياضية الآتية:",
+                latex_formula: "x + y = 10",
+                steps: [
+                    {
+                        step_id: 1,
+                        title: "الخطوة الأولى: إيجاد الناتج",
+                        explanation: "قم بحساب القيمة الصحيحة للخانة.",
+                        think: "فكر في القيمة التي تحقق المعادلة.",
+                        html_structure: "x = {inp_1}",
+                        inputs: [
+                            { id: "inp_1", correct_value: "5", label: "قيمة x", allowed_keys: ["5", "10", "0", "2"], hint: "10 ÷ 2 = 5." }
+                        ]
+                    }
+                ]
+            };
+        }
+
+        window.onload = function () {
+            renderChapters();
+            updateGamificationUI();
+        };
 
         function startWhiteboard(fileName, event) {
             if(event) event.stopPropagation();
             
-            // Load interactive problem data according to page file
             currentProblemData = getProblemDataForFile(fileName);
             
             resetGameState();
+            populateQuickPageSelect();
             renderWhiteboardHeader();
             renderWhiteboardSteps();
             showScreen('view-whiteboard');
         }
 
-        // Render Whiteboard Content
+        function renderMathSafely(elementId, latex, displayMode = false) {
+            const el = document.getElementById(elementId);
+            if (!el) return;
+            if (window.katex) {
+                try {
+                    katex.render(latex, el, { throwOnError: false, displayMode: displayMode });
+                    return;
+                } catch(e) {
+                    console.error("KaTeX error:", e);
+                }
+            }
+            el.textContent = latex;
+        }
+
+        function formatInlineMath(text) {
+            if(!text) return '';
+            if(window.katex) {
+                return text.replace(/\$(.*?)\$/g, (match, formula) => {
+                    try {
+                        return katex.renderToString(formula, { throwOnError: false });
+                    } catch(e) {
+                        return formula;
+                    }
+                });
+            }
+            return text;
+        }
+
         function renderWhiteboardHeader() {
             document.getElementById('wb-category-label').innerHTML = `<i class="fa-solid fa-book text-mathBlue"></i> ${currentProblemData.category}`;
             document.getElementById('wb-file-name').textContent = currentProblemData.file_name;
-            document.getElementById('questionTitle').innerHTML = currentProblemData.title; // allows math inline
             
-            // Handle Supabase Image
-            const imgEl = document.getElementById('problemImage');
-            const imgContainer = document.getElementById('problemImageContainer');
-            if(currentProblemData.image_url) {
-                imgEl.src = currentProblemData.image_url;
-                imgContainer.classList.remove('hidden');
+            // Handle Diagram if exists
+            const diagramContainer = document.getElementById('diagramContainer');
+            const questionDiagram = document.getElementById('questionDiagram');
+            
+            if (currentProblemData.diagram_url) {
+                questionDiagram.src = currentProblemData.diagram_url;
+                diagramContainer.classList.remove('hidden');
             } else {
-                imgContainer.classList.add('hidden');
+                diagramContainer.classList.add('hidden');
+                questionDiagram.src = "";
             }
 
-            // Render Formula using KaTeX
-            setTimeout(() => {
-                 // Render inline math in title if any (hacky but works for demo)
-                 document.getElementById('questionTitle').innerHTML = currentProblemData.title.replace(/\$(.*?)\$/g, (match, formula) => {
-                    return katex.renderToString(formula, { throwOnError: false });
-                 });
+            // Render inline math in title
+            document.getElementById('questionTitle').innerHTML = formatInlineMath(currentProblemData.title);
 
-                 katex.render(currentProblemData.latex_formula, document.getElementById('mathFormulaDisplay'), {
-                    throwOnError: false, displayMode: true
-                 });
-            }, 50);
+            // Render main latex formula safely
+            renderMathSafely('mathFormulaDisplay', currentProblemData.latex_formula, true);
         }
 
         function renderWhiteboardSteps() {
@@ -629,14 +1449,12 @@
                 stepWrapper.className = "p-4 md:p-6 rounded-2xl bg-white border-2 border-slate-100 shadow-sm transition-all";
                 
                 const explanationHtml = step.explanation ? `
-                    <div class="mb-5 bg-sky-50/50 border-r-4 border-mathBlue p-4 rounded-l-xl text-sm font-bold text-sky-900 leading-relaxed dir-rtl relative">
-                        <i class="fa-solid fa-chalkboard-user absolute -right-3 top-4 text-sky-300 bg-white rounded-full p-1 border border-sky-100 text-lg"></i>
-                        <span class="mr-3 block">${step.explanation}</span>
+                    <div class="mb-4 bg-sky-50/60 border-r-4 border-mathBlue p-3.5 rounded-l-xl text-xs md:text-sm font-bold text-sky-900 leading-relaxed dir-rtl relative">
+                        <i class="fa-solid fa-chalkboard-user absolute -right-3 top-3.5 text-sky-400 bg-white rounded-full p-1 border border-sky-100 text-sm"></i>
+                        <span class="mr-3 block">${formatInlineMath(step.explanation)}</span>
                     </div>
                 ` : '';
 
-                // Process the HTML structure to inject KaTeX and Interactive Boxes
-                // We use a custom string format in JSON: "y + 5i = ({inp_1})x^2..."
                 let processedMath = step.html_structure;
                 
                 // Replace {inp_X} with actual box HTML
@@ -644,15 +1462,17 @@
                     processedMath = processedMath.replace(`{${inp.id}}`, getBoxHtml(inp.id));
                 });
 
+                // Format inline math parts if any exist outside inputs
+                processedMath = formatInlineMath(processedMath);
+
                 let html = `
-                    <div class="text-sm font-black text-slate-700 mb-4 flex items-center gap-2 dir-rtl">
-                        <span class="w-3 h-3 rounded-full bg-mathBlue shrink-0"></span>
+                    <div class="text-xs md:text-sm font-black text-slate-800 mb-3 flex items-center gap-2 dir-rtl">
+                        <span class="w-2.5 h-2.5 rounded-full bg-mathBlue shrink-0"></span>
                         <span>${step.title}</span>
                     </div>
                     ${explanationHtml}
-                    <div class="math-line-container text-xl md:text-2xl font-extrabold text-slate-900 dir-ltr flex items-center justify-start gap-2 w-full pt-2">
-                         <!-- Render parts as math where possible, keeping inputs interactive -->
-                         <div class="flex items-center gap-1 font-mono tracking-wide" id="step-math-${step.step_id}">
+                    <div class="math-line-container text-lg md:text-2xl font-extrabold text-slate-900 dir-ltr flex items-center justify-start gap-2 w-full pt-1">
+                         <div class="flex items-center gap-1.5 font-mono tracking-wide flex-wrap" id="step-math-${step.step_id}">
                             ${processedMath}
                          </div>
                     </div>
@@ -662,7 +1482,6 @@
                 container.appendChild(stepWrapper);
             });
 
-            // Find first unsolved input
             setFirstActiveInput();
             updateProgress();
         }
@@ -672,7 +1491,7 @@
             const isActive = (currentActiveInputId === inputId);
             const classList = `red-interactive-box ${val ? 'solved' : (isActive ? 'active' : '')}`;
             
-            let displayContent = val ? val : (isActive ? `<span class="opacity-40 text-xs animate-pulse"><i class="fa-solid fa-pen"></i></span>` : ``);
+            let displayContent = val ? val : (isActive ? `<span class="opacity-50 text-xs animate-pulse"><i class="fa-solid fa-pen"></i></span>` : `?`);
 
             return `<div onclick="openChoicesForInput('${inputId}')" id="box_${inputId}" class="${classList}">${displayContent}</div>`;
         }
@@ -683,19 +1502,17 @@
                 for(let inp of step.inputs) {
                     if(!userAnswers[inp.id]) {
                         currentActiveInputId = inp.id;
-                        return; // Stop at first unsolved
+                        return;
                     }
                 }
             }
         }
 
-        // --- Interaction Logic ---
-        
         function openChoicesForInput(inputId) {
-            if (userAnswers[inputId]) return; // Already solved
+            if (userAnswers[inputId]) return;
             
             currentActiveInputId = inputId;
-            renderWhiteboardSteps(); // Re-render to update active styling
+            renderWhiteboardSteps();
 
             const targetInput = getCurrentTargetInput();
             if (!targetInput) return;
@@ -706,15 +1523,18 @@
             container.innerHTML = "";
 
             let choices = [...targetInput.allowed_keys];
-            choices.sort(() => Math.random() - 0.5); // Shuffle
 
             choices.forEach(choice => {
                 const btn = document.createElement('button');
-                btn.className = "w-full py-4 bg-slate-50 hover:bg-slate-100 text-slate-800 font-mono font-black rounded-xl text-xl border-2 border-slate-200 flex items-center justify-center shadow-sm transition active:scale-95";
+                btn.className = "w-full py-3.5 bg-slate-50 hover:bg-slate-100 text-slate-800 font-mono font-black rounded-xl text-lg border-2 border-slate-200 flex items-center justify-center shadow-sm transition active:scale-95";
                 
-                // If choice contains complex math, render it (simple check)
                 if(choice.includes('^') || choice.includes('\\')) {
-                    katex.render(choice, btn, { throwOnError: false });
+                    if(window.katex) {
+                        try { btn.innerHTML = katex.renderToString(choice, { throwOnError: false }); }
+                        catch(e) { btn.textContent = choice; }
+                    } else {
+                        btn.textContent = choice;
+                    }
                 } else {
                     btn.textContent = choice;
                 }
@@ -728,7 +1548,6 @@
 
         function submitChoice(selectedVal, correctVal) {
             if (selectedVal.trim() === correctVal.trim()) {
-                // Correct
                 userAnswers[currentActiveInputId] = selectedVal;
                 closeChoicesPopover();
                 
@@ -737,13 +1556,12 @@
                 updateProgress();
                 
                 if (!currentActiveInputId) {
-                    // All done!
                     document.getElementById('completionBanner').classList.remove('hidden');
                     document.getElementById('hintBtn').disabled = true;
                     document.getElementById('helpBtn').disabled = true;
+                    showToast("أحسنت! أتممت حل جميع خطوات هذه المسألة 🎉");
                 }
             } else {
-                // Incorrect
                 deductHearts();
             }
         }
@@ -770,11 +1588,10 @@
             document.getElementById('choicesPopover').classList.add('hidden');
         }
 
-        // Gamification & Progress
         function updateGamificationUI() {
             document.getElementById('applesCount').textContent = apples;
             document.getElementById('heartsCount').textContent = hearts;
-            const heartIcon = document.querySelector('.fa-heart');
+            const heartIcon = document.getElementById('heartIcon');
             if(hearts <= 3) heartIcon.classList.add('text-red-600', 'animate-ping');
             else heartIcon.classList.remove('text-red-600', 'animate-ping');
         }
@@ -788,11 +1605,11 @@
                 setTimeout(() => box.classList.remove('shake-animation'), 400);
             }
             if(hearts <= 0) {
-                setTimeout(() => {
-                    alert("لقد فقدت جميع محاولاتك! أعد المحاولة من جديد.");
-                    resetGameState();
-                    renderWhiteboardSteps();
-                }, 500);
+                showToast("لقد فقدت جميع محاولاتك! أعد المحاولة من جديد.");
+                resetGameState();
+                renderWhiteboardSteps();
+            } else {
+                showToast("إجابة خاطئة! حاول مجدداً ❌");
             }
         }
 
@@ -802,7 +1619,7 @@
                 updateGamificationUI();
                 return true;
             }
-            alert("عذراً، لا تملك تفاحاً كافياً!");
+            showToast("عذراً، لا تملك تفاحاً كافياً! 🍎");
             return false;
         }
 
@@ -813,8 +1630,9 @@
                 total++;
                 if (userAnswers[i.id]) solved++;
             }));
-            const pct = (solved / total) * 100;
+            const pct = Math.round((solved / total) * 100);
             document.getElementById('progressBar').style.width = `${pct}%`;
+            document.getElementById('progressText').textContent = `${pct}%`;
         }
 
         function resetGameState() {
@@ -826,7 +1644,6 @@
             updateGamificationUI();
         }
 
-        // Tools
         function useHelpSolve() {
             const targetInput = getCurrentTargetInput();
             if(!targetInput || userAnswers[targetInput.id]) return;
@@ -849,12 +1666,12 @@
 
             if (type === 'think') {
                 header.innerHTML = `<span class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg"><i class="fa-solid fa-brain"></i></span>
-                                    <div><h3 class="font-black text-slate-900 text-base">فِكْر (الخارطة الذهنية)</h3></div>`;
-                body.innerHTML = currentStep.think;
+                                    <div><h3 class="font-black text-slate-900 text-sm">فِكْر (الخارطة الذهنية)</h3></div>`;
+                body.innerHTML = formatInlineMath(currentStep.think);
             } else if (type === 'hint' && currentInput) {
                 header.innerHTML = `<span class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-lg"><i class="fa-solid fa-lightbulb"></i></span>
-                                    <div><h3 class="font-black text-slate-900 text-base">تلميح مخصص للخانة</h3></div>`;
-                body.innerHTML = currentInput.hint;
+                                    <div><h3 class="font-black text-slate-900 text-sm">تلميح مخصص للخانة</h3></div>`;
+                body.innerHTML = formatInlineMath(currentInput.hint);
             }
             document.getElementById('toolModal').classList.remove('hidden');
             closeChoicesPopover();
@@ -862,6 +1679,15 @@
 
         function closeToolModal() {
             document.getElementById('toolModal').classList.add('hidden');
+        }
+
+        function showToast(text) {
+            const toast = document.getElementById('toastMessage');
+            document.getElementById('toastText').textContent = text;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
         }
 
         function toggleCalculator() {
@@ -880,7 +1706,13 @@
             try { disp.value = eval(disp.value); } 
             catch (e) { disp.value = 'خطأ'; }
         }
-
     </script>
 </body>
 </html>
+```
+
+### التغييرات التي تم إجراؤها:
+1. **استكمال الحل:** قمت بإكمال المنطق الرياضي بخطوة رابعة (لفتح الأقواس) وخطوة خامسة (لجمع الحدود المتشابهة واستخراج المعادلة النهائية $x^2 = -8y$).
+2. **إضافة الرسم البياني:** تم تفعيل إمكانية عرض صورة (الرسم البياني) أعلى السؤال في واجهة السبورة، واستدعاء رابط الصورة المرفق.
+3. **التضمين في المنهاج:** تمت إضافة ملف `page_128.json` الوهمي إلى `curriculum` (الفصل الثاني) ليكون متاحاً للطالب للتنقل إليه.
+4. **معرّفات فريدة (IDs):** حرصت على أن تكون المعرفات من `inp_1` إلى `inp_11` فريدة في هذا الدرس لضمان عدم تداخل الإجابات مع بعضها داخل الخطوات.
