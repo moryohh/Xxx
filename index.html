@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السبورة التفاعلية - رياضيات السادس العلمي</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- KaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paperBg: '#ffffff',
+                        mathBlue: '#0ea5e9',
+                        darkMath: '#0f172a'
+                    },
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                        mono: ['Courier New', 'Courier', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* Handwritten Paper Sheet Styling */
+        .paper-sheet {
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+            background-image: linear-gradient(#f1f5f9 1px, transparent 1px);
+            background-size: 100% 2.4rem;
+            line-height: 2.4rem;
+        }
+
+        /* Red Input Boxes */
+        .red-interactive-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 52px;
+            height: 42px;
+            border: 2px solid #ef4444;
+            background-color: #fef2f2;
+            color: #991b1b;
+            font-weight: 800;
+            font-size: 1.15rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+            padding: 0 8px;
+            margin: 0 4px;
+            vertical-align: middle;
+            box-shadow: 0 2px 4px rgba(239, 68, 68, 0.15);
+            flex-shrink: 0;
+            direction: ltr; /* Always LTR for math values */
+        }
+
+        .red-interactive-box:hover {
+            background-color: #fee2e2;
+            transform: scale(1.05);
+            border-color: #dc2626;
+        }
+
+        .red-interactive-box.active {
+            border: 3px solid #dc2626;
+            background-color: #fca5a5;
+            color: #7f1d1d;
+            animation: pulseRed 1.5s infinite;
+        }
+
+        .red-interactive-box.solved {
+            border: 2px solid #10b981;
+            background-color: #ecfdf5;
+            color: #047857;
+            cursor: default;
+            box-shadow: none;
+        }
+
+        @keyframes pulseRed {
+            0%, 100% { box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.3); }
+            50% { box-shadow: 0 0 0 7px rgba(239, 68, 68, 0.5); }
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+        }
+
+        .shake-animation {
+            animation: shake 0.4s ease-in-out;
+        }
+
+        .math-line-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow-x: auto;
+            padding-bottom: 8px;
+            scrollbar-width: thin;
+            direction: ltr; /* Force Math to LTR */
+        }
+
+        /* Hide sections for SPA navigation */
+        .view-section { display: none; }
+        .view-section.active { display: flex; animation: fadeIn 0.3s ease-in; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen text-slate-800 flex flex-col overflow-x-hidden">
+
+    <!-- Gamification Header -->
+    <div class="bg-slate-900 text-white sticky top-0 z-40 border-b border-slate-800 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 h-10 flex items-center justify-between text-sm font-bold">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-1.5 text-rose-500 bg-rose-500/10 px-3 py-1 rounded-full border border-rose-500/20">
+                    <i class="fa-solid fa-heart animate-pulse"></i>
+                    <span id="heartsCount" class="font-mono">10</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full border border-emerald-400/20">
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <span id="applesCount" class="font-mono">100</span>
+                </div>
+            </div>
+             <button onclick="navigateHome()" class="text-xs text-slate-300 hover:text-white flex items-center gap-2 transition">
+                <span>الرئيسية</span>
+                <i class="fa-solid fa-house"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MAIN APP CONTAINER -->
+    <div class="flex-1 w-full max-w-6xl mx-auto px-4 py-6">
+        
+        <!-- VIEW 1: HOME / CHAPTERS -->
+        <div id="view-chapters" class="view-section active flex-col gap-8">
+            <div class="text-center mt-8">
+                <span class="w-16 h-16 rounded-2xl bg-mathBlue text-white flex items-center justify-center font-black text-3xl shadow-lg mx-auto mb-4">
+                    <i class="fa-solid fa-square-root-variable"></i>
+                </span>
+                <h1 class="text-3xl md:text-4xl font-black text-slate-900 mb-2">رياضيات السادس العلمي</h1>
+                <p class="text-slate-500 font-bold">المنهاج العراقي - السبورة التفاعلية لحل المسائل خطوة بخطوة</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4" id="chaptersContainer">
+                <!-- Chapters injected via JS -->
+            </div>
+        </div>
+
+        <!-- VIEW 2: TOPICS -->
+        <div id="view-topics" class="view-section flex-col gap-6">
+            <div class="flex items-center gap-4 mb-4 pb-4 border-b border-slate-200">
+                <button onclick="navigateHome()" class="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center hover:bg-slate-50 transition">
+                    <i class="fa-solid fa-arrow-right text-slate-600"></i>
+                </button>
+                <div>
+                    <h2 class="text-2xl font-black text-slate-900" id="currentChapterTitle">الفصل الأول</h2>
+                    <p class="text-slate-500 text-sm font-bold">اختر الموضوع للبدء بالحل</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="topicsContainer">
+                <!-- Topics injected via JS -->
+            </div>
+        </div>
+
+        <!-- VIEW 3: INTERACTIVE WHITEBOARD -->
+        <div id="view-whiteboard" class="view-section flex-col md:flex-row gap-6 relative">
+            
+            <!-- RIGHT TOOL DRAWER -->
+            <aside class="w-full md:w-64 bg-white rounded-2xl border border-slate-200 p-4 flex flex-col gap-3 shadow-sm shrink-0 md:sticky md:top-16 h-fit z-20">
+                <div class="flex items-center gap-2 pb-2 border-b border-slate-100 text-slate-500 font-bold text-xs">
+                    <button onclick="navigateBackToTopics()" class="hover:text-slate-900 transition"><i class="fa-solid fa-arrow-right"></i> رجوع للمواضيع</button>
+                    <span class="mx-auto"><i class="fa-solid fa-toolbox text-red-600"></i> أدوات المساعدة</span>
+                </div>
+
+                <button onclick="openToolModal('think')" class="w-full py-3 px-3.5 rounded-xl bg-amber-50 hover:bg-amber-100/80 text-amber-900 text-xs font-bold border border-amber-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-brain"></i></span>
+                        <span class="font-extrabold text-sm">فِكْر</span>
+                    </div>
+                </button>
+
+                <button onclick="useHint()" id="hintBtn" class="relative w-full py-3 px-3.5 rounded-xl bg-indigo-50 hover:bg-indigo-100/80 text-indigo-900 text-xs font-bold border border-indigo-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-lightbulb"></i></span>
+                        <span class="font-extrabold text-sm">تَلْمِيح</span>
+                    </div>
+                    <div class="flex items-center gap-1 bg-white px-2 py-0.5 rounded border border-indigo-100 shadow-sm text-indigo-700">
+                         <span class="font-mono font-bold">-2</span> <i class="fa-solid fa-apple-whole text-[10px]"></i>
+                    </div>
+                </button>
+
+                 <button onclick="useHelpSolve()" id="helpBtn" class="relative w-full py-3 px-3.5 rounded-xl bg-rose-50 hover:bg-rose-100/80 text-rose-900 text-xs font-bold border border-rose-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-lg bg-rose-500 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                        <span class="font-extrabold text-sm">مُسَاعَدَة</span>
+                    </div>
+                    <div class="flex items-center gap-1 bg-white px-2 py-0.5 rounded border border-rose-100 shadow-sm text-rose-700">
+                         <span class="font-mono font-bold">-4</span> <i class="fa-solid fa-apple-whole text-[10px]"></i>
+                    </div>
+                </button>
+
+                <button onclick="toggleCalculator()" class="w-full py-3 px-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100/80 text-emerald-900 text-xs font-bold border border-emerald-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm mt-2">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-lg bg-emerald-600 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-calculator"></i></span>
+                        <span class="font-extrabold text-sm">حَاسِبَة</span>
+                    </div>
+                </button>
+                
+                <div class="mt-auto pt-4 border-t border-slate-100">
+                    <span class="block text-center text-[10px] font-bold text-slate-400 mb-1">التقدم</span>
+                    <div class="w-full bg-slate-100 rounded-full h-2.5">
+                        <div class="bg-mathBlue h-2.5 rounded-full" id="progressBar" style="width: 0%"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN PAPER SHEET -->
+            <main class="flex-1 paper-sheet rounded-2xl p-6 md:p-10 relative flex flex-col shadow-lg">
+                
+                <!-- Question Area -->
+                <div class="border-b-2 border-slate-200 pb-5 mb-6">
+                    <div class="flex items-center justify-between text-slate-500 font-bold text-xs mb-2">
+                        <span class="flex items-center gap-2" id="wb-category-label">
+                            <i class="fa-solid fa-book text-mathBlue"></i> الرياضيات
+                        </span>
+                        <span id="wb-file-name" class="font-mono text-slate-400 bg-slate-50 px-2 rounded"></span>
+                    </div>
+
+                    <!-- Problem Image (Supabase logic) -->
+                    <div id="problemImageContainer" class="hidden mb-4 w-full flex justify-center">
+                        <img id="problemImage" src="" alt="مخطط توضيحي" class="max-w-full h-auto rounded-lg border-2 border-slate-200 shadow-sm max-h-64 object-contain">
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-5 text-center my-3">
+                        <h2 class="text-base md:text-lg font-black text-slate-900 mb-2" id="questionTitle">جاري التحميل...</h2>
+                        <div class="text-xl md:text-2xl font-black text-mathBlue dir-ltr overflow-x-auto py-1" id="mathFormulaDisplay">
+                            <!-- KaTeX Render -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution Steps -->
+                <div class="space-y-8 dir-rtl text-left font-bold text-slate-900" id="interactiveCanvasContainer">
+                    <!-- Dynamic Steps injected here -->
+                </div>
+
+                <!-- Success Banner -->
+                <div id="completionBanner" class="hidden mt-8 p-6 rounded-2xl bg-emerald-600 text-white text-center shadow-xl animate-bounce">
+                    <i class="fa-solid fa-circle-check text-4xl mb-2"></i>
+                    <h3 class="text-xl font-black mb-1">عاش البطل! أتممت الحل بنجاح!</h3>
+                    <button onclick="navigateBackToTopics()" class="mt-4 px-6 py-2 bg-white text-emerald-700 font-bold rounded-full text-sm shadow-md hover:bg-slate-50 transition">العودة للمواضيع</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- MODALS -->
+    <!-- Choices Popover -->
+    <div id="choicesPopover" class="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border-4 border-slate-100 transform transition-all scale-100 relative">
+            <button onclick="closeChoicesPopover()" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition"><i class="fa-solid fa-xmark"></i></button>
+            <div class="text-center mb-6 pt-2">
+                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center text-xl mx-auto mb-3 shadow-inner"><i class="fa-solid fa-pencil"></i></div>
+                <h3 class="text-sm font-black text-slate-800 mb-1">اختر القيمة الصحيحة</h3>
+                <p class="text-xs text-slate-500 font-bold" id="choicesTargetLabel"></p>
+            </div>
+            <div class="grid grid-cols-2 gap-3 dir-ltr" id="choicesContainer"></div>
+        </div>
+    </div>
+
+    <!-- Tool Modal (Think/Hint) -->
+    <div id="toolModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+            <button onclick="closeToolModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 text-lg"><i class="fa-solid fa-xmark"></i></button>
+            <div class="flex items-center gap-3 mb-4" id="toolModalHeader"></div>
+            <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl text-sm md:text-base font-bold text-slate-700 leading-relaxed min-h-[80px]" id="toolModalBody"></div>
+            <div class="mt-5 text-left"><button onclick="closeToolModal()" class="px-5 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold text-xs rounded-xl transition">إغلاق</button></div>
+        </div>
+    </div>
+
+    <!-- Floating Calculator -->
+    <div id="calcModal" class="fixed bottom-6 left-6 z-[60] bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 w-72 hidden dir-ltr">
+        <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-800">
+            <button onclick="toggleCalculator()" class="text-slate-400 hover:text-white text-xs"><i class="fa-solid fa-xmark"></i></button>
+            <span class="text-xs font-black text-emerald-400"><i class="fa-solid fa-calculator"></i> الآلة الحاسبة</span>
+        </div>
+        <input type="text" id="calcDisplay" readonly class="w-full bg-slate-950 border border-slate-800 text-emerald-400 font-mono font-black text-right px-3 py-2 rounded-xl mb-3 text-lg" value="0">
+        <div class="grid grid-cols-4 gap-1.5 text-xs font-black">
+            <button onclick="calcPress('C')" class="py-2 bg-rose-600 rounded">C</button>
+            <button onclick="calcPress('(')" class="py-2 bg-slate-800 rounded">(</button>
+            <button onclick="calcPress(')')" class="py-2 bg-slate-800 rounded">)</button>
+            <button onclick="calcPress('/')" class="py-2 bg-amber-600 rounded">÷</button>
+            <button onclick="calcPress('7')" class="py-2 bg-slate-700 rounded">7</button>
+            <button onclick="calcPress('8')" class="py-2 bg-slate-700 rounded">8</button>
+            <button onclick="calcPress('9')" class="py-2 bg-slate-700 rounded">9</button>
+            <button onclick="calcPress('*')" class="py-2 bg-amber-600 rounded">×</button>
+            <button onclick="calcPress('4')" class="py-2 bg-slate-700 rounded">4</button>
+            <button onclick="calcPress('5')" class="py-2 bg-slate-700 rounded">5</button>
+            <button onclick="calcPress('6')" class="py-2 bg-slate-700 rounded">6</button>
+            <button onclick="calcPress('-')" class="py-2 bg-amber-600 rounded">-</button>
+            <button onclick="calcPress('1')" class="py-2 bg-slate-700 rounded">1</button>
+            <button onclick="calcPress('2')" class="py-2 bg-slate-700 rounded">2</button>
+            <button onclick="calcPress('3')" class="py-2 bg-slate-700 rounded">3</button>
+            <button onclick="calcPress('+')" class="py-2 bg-amber-600 rounded">+</button>
+            <button onclick="calcPress('0')" class="col-span-2 py-2 bg-slate-700 rounded">0</button>
+            <button onclick="calcPress('.')" class="py-2 bg-slate-700 rounded">.</button>
+            <button onclick="calcEval()" class="py-2 bg-emerald-600 rounded">=</button>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. CURRICULUM DATABASE (رياضيات السادس العلمي - التوزيع الدقيق حسب صفحات الكتاب) ---
+        const curriculum = [
+            {
+                id: "ch1",
+                title: "الفصل الأول: الأعداد المركبة (ص 1 - 48)",
+                icon: "fa-infinity",
+                color: "bg-purple-500",
+                topics: [
+                    { name: "العمليات الأساسية ومفهوم i", files: ["page_10.json", "page_12.json", "page_15.json", "page_19.json"] },
+                    { name: "قيم x و y الحقيقيتين والتحليل", files: ["page_32.json", "page_44.json"] }
+                ]
+            },
+            {
+                id: "ch2",
+                title: "الفصل الثاني: القطوع المخروطية (ص 49 - 88)",
+                icon: "fa-bezier-curve",
+                color: "bg-sky-500",
+                topics: [
+                    { name: "القطع المكافئ والقطع الناقص", files: ["page_49.json", "page_55.json"] },
+                    { name: "القطع الزائد والربط بين القطوع", files: ["page_62.json", "page_88.json"] }
+                ]
+            },
+            {
+                id: "ch3",
+                title: "الفصل الثالث: تطبيقات التفاضل (ص 89 - 146)",
+                icon: "fa-chart-line",
+                color: "bg-emerald-500",
+                topics: [
+                    { name: "المعدلات المرتبطة بالزمن", files: ["page_112.json", "page_120.json"] },
+                    { name: "مبرهنة رول والقيمة المتوسطة والتقريب", files: ["page_131.json", "page_136.json"] },
+                    { name: "رسم الدوال والتطبيقات العملية", files: ["page_142.json", "page_146.json"] }
+                ]
+            },
+            {
+                id: "ch4",
+                title: "الفصل الرابع: التكامل (ص 147 - 194)",
+                icon: "fa-integral",
+                color: "bg-orange-500",
+                topics: [
+                    { name: "التكامل غير المحدد والدوال الدائرية", files: ["page_158.json", "page_160.json", "page_172.json"] },
+                    { name: "التكامل المحدد والمساحات المستوية", files: ["page_178.json", "page_181.json", "page_186.json", "page_190.json"] }
+                ]
+            },
+            {
+                id: "ch5",
+                title: "الفصل الخامس: المعادلات التفاضلية الاعتيادية (ص 195 - 216)",
+                icon: "fa-superscript",
+                color: "bg-rose-500",
+                topics: [
+                    { name: "الرتبة والدرجة وبيان حل المعادلة", files: ["page_201.json", "page_203.json"] },
+                    { name: "فصل المتغيرات والمعادلات المتجانسة", files: ["page_210.json", "page_212.json", "page_216.json"] }
+                ]
+            },
+            {
+                id: "ch6",
+                title: "الفصل السادس: الهندسة الفضائية المجسمة (ص 217 - 242)",
+                icon: "fa-cube",
+                color: "bg-indigo-500",
+                topics: [
+                    { name: "المبردات والمستويات المتعامدة", files: ["page_222.json", "page_225.json"] },
+                    { name: "الزاوية الزوجية والمساقط", files: ["page_233.json", "page_239.json"] }
+                ]
+            }
+        ];
+
+        function getProblemDataForFile(fileName) {
+            const pageNum = parseInt(fileName.replace(/\D/g, '')) || 19;
+
+            if (pageNum <= 48) {
+                // Chapter 1: Complex Numbers
+                return {
+                    file_name: fileName,
+                    category: `الفصل الأول - الأعداد المركبة (صفحة ${pageNum})`,
+                    title: "س/ جد قيمتي $x, y \\in \\mathbb{R}$ اللتين تحققان المعادلة:",
+                    latex_formula: "y + 5i = (2x + i)(x + 2i)",
+                    image_url: "",
+                    steps: [
+                        {
+                            step_id: 1,
+                            title: "الخطوة الأولى: فك الأقواس بالضرب والتوزيع",
+                            explanation: "نستخدم التوزيع لضرب القوسين. تذكر أن $i^2 = -1$.",
+                            think: "اضرب الحد الأول في القوس الثاني، ثم الثاني في القوس الثاني.",
+                            html_structure: "y + 5i = ({inp_1})x^2 + ({inp_2})xi + xi + 2i^2",
+                            inputs: [
+                                { id: "inp_1", correct_value: "2", label: "معامل x²", allowed_keys: ["1", "2", "3", "4"], hint: "ضرب 2x في x يساوي 2x²." },
+                                { id: "inp_2", correct_value: "4", label: "معامل xi الأول", allowed_keys: ["2", "4", "5", "6"], hint: "ضرب 2x في 2i يساوي 4xi." }
+                            ]
+                        },
+                        {
+                            step_id: 2,
+                            title: "الخطوة الثانية: مساواة الحقيقي بالحقيقي والتخيلي بالتخيلي",
+                            explanation: "تجميع الأجزاء التخيلية ومساواتها مع الطرف الأيسر.",
+                            think: "التخيلي باليسار هو 5، وباليمين هو 5x.",
+                            html_structure: "5 = {inp_3}x \\implies x = {inp_4}",
+                            inputs: [
+                                { id: "inp_3", correct_value: "5", label: "معامل x", allowed_keys: ["2", "5", "1", "3"], hint: "4xi + 1xi = 5xi." },
+                                { id: "inp_4", correct_value: "1", label: "قيمة x", allowed_keys: ["1", "2", "0", "-1"], hint: "قسمة 5 على 5 تعطي 1." }
+                            ]
+                        }
+                    ]
+                };
+            } else if (pageNum <= 88) {
+                // Chapter 2: Conic Sections
+                return {
+                    file_name: fileName,
+                    category: `الفصل الثاني - القطوع المخروطية (صفحة ${pageNum})`,
+                    title: "س/ جد معادلة القطع المكافئ الذي بؤرته $(0, 4)$ ورأسه نقطة الأصل:",
+                    latex_formula: "x^2 = 4py",
+                    image_url: "",
+                    steps: [
+                        {
+                            step_id: 1,
+                            title: "الخطوة الأولى: تحديد قيمة p والاتجاه",
+                            explanation: "البؤرة تقع على محور الصادات الموجب $(0, p)$ إذن $p = 4$.",
+                            think: "بما أن البؤرة $(0, 4)$ فالقطع ينفتح للأعلى ومعادلته $x^2 = 4py$.",
+                            html_structure: "p = {inp_1}",
+                            inputs: [
+                                { id: "inp_1", correct_value: "4", label: "قيمة p", allowed_keys: ["2", "4", "8", "16"], hint: "من الأحداثي الصادي للبؤرة p=4." }
+                            ]
+                        },
+                        {
+                            step_id: 2,
+                            title: "الخطوة الثانية: التعويض في المعادلة القياسية",
+                            explanation: "نعوض $p = 4$ في القياسية $x^2 = 4py$.",
+                            think: "اضرب 4 في قيمة p لتبسيط المعادلة.",
+                            html_structure: "x^2 = 4({inp_2})y \\implies x^2 = {inp_3}y",
+                            inputs: [
+                                { id: "inp_2", correct_value: "4", label: "تعويض p", allowed_keys: ["2", "4", "6", "8"], hint: "ضع قيمة p التي استخرجتها." },
+                                { id: "inp_3", correct_value: "16", label: "المعامل النهائي", allowed_keys: ["8", "12", "16", "24"], hint: "4 × 4 = 16." }
+                            ]
+                        }
+                    ]
+                };
+            } else if (pageNum <= 146) {
+                // Chapter 3: Differentiation Applications
+                return {
+                    file_name: fileName,
+                    category: `الفصل الثالث - تطبيقات التفاضل (صفحة ${pageNum})`,
+                    title: "س/ خزان ماء مكعب الشكل طول ضلعه $2m$ يصب فيه الماء بمعدل $0.4 m^3/h$. جد معدل تغير انخفاض الماء:",
+                    latex_formula: "V = x^2 \\cdot h",
+                    image_url: "",
+                    steps: [
+                        {
+                            step_id: 1,
+                            title: "الخطوة الأولى: كتابة العلاقة الرئيسية والتفاضل بالنسبة للزمن",
+                            explanation: "حجم الماء $V = 2^2 \\cdot h = 4h$. تشتق المعادلة بالنسبة للزمن $t$.",
+                            think: "طول ضلع قاعدة المكعب ثابت $x=2$ متر.",
+                            html_structure: "V = {inp_1}h \\implies \\frac{dV}{dt} = {inp_2} \\frac{dh}{dt}",
+                            inputs: [
+                                { id: "inp_1", correct_value: "4", label: "مساحة القاعدة", allowed_keys: ["2", "4", "8", "16"], hint: "مساحة المربع 2² = 4." },
+                                { id: "inp_2", correct_value: "4", label: "معامل المشتقة", allowed_keys: ["2", "4", "6", "8"], hint: "مشتقة 4h بالنسبة للزمن هي 4(dh/dt)." }
+                            ]
+                        },
+                        {
+                            step_id: 2,
+                            title: "الخطوة الثانية: التعويض وإيجاد معدل التغير",
+                            explanation: "نعوض $\\frac{dV}{dt} = 0.4$ لإيجاد $\\frac{dh}{dt}$.",
+                            think: "اقسم الطرفين على 4.",
+                            html_structure: "0.4 = 4 \\cdot \\frac{dh}{dt} \\implies \\frac{dh}{dt} = {inp_3} m/h",
+                            inputs: [
+                                { id: "inp_3", correct_value: "0.1", label: "معدل الارتفاع dh/dt", allowed_keys: ["0.1", "0.2", "0.4", "1.0"], hint: "0.4 ÷ 4 = 0.1." }
+                            ]
+                        }
+                    ]
+                };
+            } else if (pageNum <= 194) {
+                // Chapter 4: Integration
+                return {
+                    file_name: fileName,
+                    category: `الفصل الرابع - التكامل (صفحة ${pageNum})`,
+                    title: "س/ احسب قيمة التكامل غير المحدد التالي:",
+                    latex_formula: "\\int (3x^2 + 2x - 1) dx",
+                    image_url: "",
+                    steps: [
+                        {
+                            step_id: 1,
+                            title: "الخطوة الأولى: تطبيق قواعد التكامل الأساسية",
+                            explanation: "نضيف واحد للأس ونقسم على الأس الجديد لكل حد.",
+                            think: "تكامل $3x^2$ هو $x^3$ وتكامل $2x$ هو $x^2$.",
+                            html_structure: "\\int (3x^2 + 2x - 1) dx = x^{inp_1} + x^{inp_2} - x + C",
+                            inputs: [
+                                { id: "inp_1", correct_value: "3", label: "أس الحد الأول", allowed_keys: ["2", "3", "4", "1"], hint: "3x³/3 تعطي x³." },
+                                { id: "inp_2", correct_value: "2", label: "أس الحد الثاني", allowed_keys: ["1", "2", "3", "4"], hint: "2x²/2 تعطي x²." }
+                            ]
+                        }
+                    ]
+                };
+            } else if (pageNum <= 216) {
+                // Chapter 5: Differential Equations
+                return {
+                    file_name: fileName,
+                    category: `الفصل الخامس - المعادلات التفاضلية (صفحة ${pageNum})`,
+                    title: "س/ بين رتبة ودرجة المعادلة التفاضلية الآتية:",
+                    latex_formula: "\\left(\\frac{d^2y}{dx^2}\\right)^3 + 5\\left(\\frac{dy}{dx}\\right)^4 - y = 0",
+                    image_url: "",
+                    steps: [
+                        {
+                            step_id: 1,
+                            title: "الخطوة الأولى: تحديد أعلى مشتقة (الرتبة)",
+                            explanation: "الرتبة هي أعلى مشتقة تظهر في المعادلة وهي المشتقة الثانية.",
+                            think: "المشتقة d²y/dx² تُمثل الرتبة الثانية.",
+                            html_structure: "\\text{الرتبة} = {inp_1}",
+                            inputs: [
+                                { id: "inp_1", correct_value: "2", label: "رتبة المعادلة", allowed_keys: ["1", "2", "3", "4"], hint: "أعلى مشتقة هي المشتقة الثانية." }
+                            ]
+                        },
+                        {
+                            step_id: 2,
+                            title: "الخطوة الثانية: تحديد أس أعلى مشتقة (الدرجة)",
+                            explanation: "الدرجة هي القوة المرفوعة لأعلى مشتقة في المعادلة.",
+                            think: "أس المشتقة الثانية هو 3.",
+                            html_structure: "\\text{الدرجة} = {inp_2}",
+                            inputs: [
+                                { id: "inp_2", correct_value: "3", label: "درجة المعادلة", allowed_keys: ["1", "2", "3", "4"], hint: "القوة المرفوعة للمشتقة d²y/dx² هي 3." }
+                            ]
+                        }
+                    ]
+                };
+            } else {
+                // Chapter 6: Spatial Geometry
+                return {
+                    file_name: fileName,
+                    category: `الفصل السادس - الهندسة الفضائية (صفحة ${pageNum})`,
+                    title: "س/ مبرهنة (7): إذا تعامد مستويان فالمستقيم المرسوم في أحدهما والعمودي على مستقيم التقاطع يكون:",
+                    latex_formula: "\\pi_1 \\perp \\pi_2 \\implies L \\perp \\pi_2",
+                    image_url: "",
+                    steps: [
+                        {
+                            step_id: 1,
+                            title: "الخطوة الأولى: إكمال نص المبرهنة",
+                            explanation: "تحديد العلاقة بين المستقيم والمستوي الثاني.",
+                            think: "يكون عمودياً على المستوي الآخر.",
+                            html_structure: "\\text{يكون عمودياً على } {inp_1}",
+                            inputs: [
+                                { id: "inp_1", correct_value: "المستوي الآخر", allowed_keys: ["المستوي الآخر", "مستقيم التقاطع", "نقطة التماس", "المستوي الأول"], hint: "المستقيم يكون عمودياً على المستوي الثاني." }
+                            ]
+                        }
+                    ]
+                };
+            }
+        }
+
+        function startWhiteboard(fileName, event) {
+            if(event) event.stopPropagation();
+            
+            // Load interactive problem data according to page file
+            currentProblemData = getProblemDataForFile(fileName);
+            
+            resetGameState();
+            renderWhiteboardHeader();
+            renderWhiteboardSteps();
+            showScreen('view-whiteboard');
+        }
+
+        // Render Whiteboard Content
+        function renderWhiteboardHeader() {
+            document.getElementById('wb-category-label').innerHTML = `<i class="fa-solid fa-book text-mathBlue"></i> ${currentProblemData.category}`;
+            document.getElementById('wb-file-name').textContent = currentProblemData.file_name;
+            document.getElementById('questionTitle').innerHTML = currentProblemData.title; // allows math inline
+            
+            // Handle Supabase Image
+            const imgEl = document.getElementById('problemImage');
+            const imgContainer = document.getElementById('problemImageContainer');
+            if(currentProblemData.image_url) {
+                imgEl.src = currentProblemData.image_url;
+                imgContainer.classList.remove('hidden');
+            } else {
+                imgContainer.classList.add('hidden');
+            }
+
+            // Render Formula using KaTeX
+            setTimeout(() => {
+                 // Render inline math in title if any (hacky but works for demo)
+                 document.getElementById('questionTitle').innerHTML = currentProblemData.title.replace(/\$(.*?)\$/g, (match, formula) => {
+                    return katex.renderToString(formula, { throwOnError: false });
+                 });
+
+                 katex.render(currentProblemData.latex_formula, document.getElementById('mathFormulaDisplay'), {
+                    throwOnError: false, displayMode: true
+                 });
+            }, 50);
+        }
+
+        function renderWhiteboardSteps() {
+            const container = document.getElementById('interactiveCanvasContainer');
+            container.innerHTML = "";
+
+            currentProblemData.steps.forEach((step) => {
+                const stepWrapper = document.createElement('div');
+                stepWrapper.className = "p-4 md:p-6 rounded-2xl bg-white border-2 border-slate-100 shadow-sm transition-all";
+                
+                const explanationHtml = step.explanation ? `
+                    <div class="mb-5 bg-sky-50/50 border-r-4 border-mathBlue p-4 rounded-l-xl text-sm font-bold text-sky-900 leading-relaxed dir-rtl relative">
+                        <i class="fa-solid fa-chalkboard-user absolute -right-3 top-4 text-sky-300 bg-white rounded-full p-1 border border-sky-100 text-lg"></i>
+                        <span class="mr-3 block">${step.explanation}</span>
+                    </div>
+                ` : '';
+
+                // Process the HTML structure to inject KaTeX and Interactive Boxes
+                // We use a custom string format in JSON: "y + 5i = ({inp_1})x^2..."
+                let processedMath = step.html_structure;
+                
+                // Replace {inp_X} with actual box HTML
+                step.inputs.forEach(inp => {
+                    processedMath = processedMath.replace(`{${inp.id}}`, getBoxHtml(inp.id));
+                });
+
+                let html = `
+                    <div class="text-sm font-black text-slate-700 mb-4 flex items-center gap-2 dir-rtl">
+                        <span class="w-3 h-3 rounded-full bg-mathBlue shrink-0"></span>
+                        <span>${step.title}</span>
+                    </div>
+                    ${explanationHtml}
+                    <div class="math-line-container text-xl md:text-2xl font-extrabold text-slate-900 dir-ltr flex items-center justify-start gap-2 w-full pt-2">
+                         <!-- Render parts as math where possible, keeping inputs interactive -->
+                         <div class="flex items-center gap-1 font-mono tracking-wide" id="step-math-${step.step_id}">
+                            ${processedMath}
+                         </div>
+                    </div>
+                `;
+                
+                stepWrapper.innerHTML = html;
+                container.appendChild(stepWrapper);
+            });
+
+            // Find first unsolved input
+            setFirstActiveInput();
+            updateProgress();
+        }
+
+        function getBoxHtml(inputId) {
+            const val = userAnswers[inputId];
+            const isActive = (currentActiveInputId === inputId);
+            const classList = `red-interactive-box ${val ? 'solved' : (isActive ? 'active' : '')}`;
+            
+            let displayContent = val ? val : (isActive ? `<span class="opacity-40 text-xs animate-pulse"><i class="fa-solid fa-pen"></i></span>` : ``);
+
+            return `<div onclick="openChoicesForInput('${inputId}')" id="box_${inputId}" class="${classList}">${displayContent}</div>`;
+        }
+
+        function setFirstActiveInput() {
+            currentActiveInputId = null;
+            for(let step of currentProblemData.steps) {
+                for(let inp of step.inputs) {
+                    if(!userAnswers[inp.id]) {
+                        currentActiveInputId = inp.id;
+                        return; // Stop at first unsolved
+                    }
+                }
+            }
+        }
+
+        // --- Interaction Logic ---
+        
+        function openChoicesForInput(inputId) {
+            if (userAnswers[inputId]) return; // Already solved
+            
+            currentActiveInputId = inputId;
+            renderWhiteboardSteps(); // Re-render to update active styling
+
+            const targetInput = getCurrentTargetInput();
+            if (!targetInput) return;
+
+            document.getElementById('choicesTargetLabel').textContent = targetInput.label;
+            
+            const container = document.getElementById('choicesContainer');
+            container.innerHTML = "";
+
+            let choices = [...targetInput.allowed_keys];
+            choices.sort(() => Math.random() - 0.5); // Shuffle
+
+            choices.forEach(choice => {
+                const btn = document.createElement('button');
+                btn.className = "w-full py-4 bg-slate-50 hover:bg-slate-100 text-slate-800 font-mono font-black rounded-xl text-xl border-2 border-slate-200 flex items-center justify-center shadow-sm transition active:scale-95";
+                
+                // If choice contains complex math, render it (simple check)
+                if(choice.includes('^') || choice.includes('\\')) {
+                    katex.render(choice, btn, { throwOnError: false });
+                } else {
+                    btn.textContent = choice;
+                }
+                
+                btn.onclick = () => submitChoice(choice, targetInput.correct_value);
+                container.appendChild(btn);
+            });
+
+            document.getElementById('choicesPopover').classList.remove('hidden');
+        }
+
+        function submitChoice(selectedVal, correctVal) {
+            if (selectedVal.trim() === correctVal.trim()) {
+                // Correct
+                userAnswers[currentActiveInputId] = selectedVal;
+                closeChoicesPopover();
+                
+                setFirstActiveInput();
+                renderWhiteboardSteps();
+                updateProgress();
+                
+                if (!currentActiveInputId) {
+                    // All done!
+                    document.getElementById('completionBanner').classList.remove('hidden');
+                    document.getElementById('hintBtn').disabled = true;
+                    document.getElementById('helpBtn').disabled = true;
+                }
+            } else {
+                // Incorrect
+                deductHearts();
+            }
+        }
+
+        function getCurrentTargetInput() {
+            if(!currentProblemData) return null;
+            let target = null;
+            currentProblemData.steps.forEach(s => s.inputs.forEach(i => {
+                if (i.id === currentActiveInputId) target = i;
+            }));
+            return target;
+        }
+        
+        function getCurrentStep() {
+            if(!currentProblemData) return null;
+            let current = null;
+            currentProblemData.steps.forEach(s => s.inputs.forEach(i => {
+                if (i.id === currentActiveInputId) current = s;
+            }));
+            return current;
+        }
+
+        function closeChoicesPopover() {
+            document.getElementById('choicesPopover').classList.add('hidden');
+        }
+
+        // Gamification & Progress
+        function updateGamificationUI() {
+            document.getElementById('applesCount').textContent = apples;
+            document.getElementById('heartsCount').textContent = hearts;
+            const heartIcon = document.querySelector('.fa-heart');
+            if(hearts <= 3) heartIcon.classList.add('text-red-600', 'animate-ping');
+            else heartIcon.classList.remove('text-red-600', 'animate-ping');
+        }
+
+        function deductHearts() {
+            hearts--;
+            updateGamificationUI();
+            const box = document.getElementById(`box_${currentActiveInputId}`);
+            if(box) {
+                box.classList.add('shake-animation');
+                setTimeout(() => box.classList.remove('shake-animation'), 400);
+            }
+            if(hearts <= 0) {
+                setTimeout(() => {
+                    alert("لقد فقدت جميع محاولاتك! أعد المحاولة من جديد.");
+                    resetGameState();
+                    renderWhiteboardSteps();
+                }, 500);
+            }
+        }
+
+        function deductApples(amount) {
+            if (apples >= amount) {
+                apples -= amount;
+                updateGamificationUI();
+                return true;
+            }
+            alert("عذراً، لا تملك تفاحاً كافياً!");
+            return false;
+        }
+
+        function updateProgress() {
+            if(!currentProblemData) return;
+            let total = 0, solved = 0;
+            currentProblemData.steps.forEach(s => s.inputs.forEach(i => {
+                total++;
+                if (userAnswers[i.id]) solved++;
+            }));
+            const pct = (solved / total) * 100;
+            document.getElementById('progressBar').style.width = `${pct}%`;
+        }
+
+        function resetGameState() {
+            userAnswers = {};
+            hearts = 10;
+            document.getElementById('completionBanner').classList.add('hidden');
+            document.getElementById('hintBtn').disabled = false;
+            document.getElementById('helpBtn').disabled = false;
+            updateGamificationUI();
+        }
+
+        // Tools
+        function useHelpSolve() {
+            const targetInput = getCurrentTargetInput();
+            if(!targetInput || userAnswers[targetInput.id]) return;
+            if(deductApples(4)) submitChoice(targetInput.correct_value, targetInput.correct_value);
+        }
+
+        function useHint() {
+            const targetInput = getCurrentTargetInput();
+            if(!targetInput || userAnswers[targetInput.id]) return;
+            if(deductApples(2)) openToolModal('hint');
+        }
+
+        function openToolModal(type) {
+            const header = document.getElementById('toolModalHeader');
+            const body = document.getElementById('toolModalBody');
+            const currentStep = getCurrentStep();
+            const currentInput = getCurrentTargetInput();
+
+            if(!currentStep) return;
+
+            if (type === 'think') {
+                header.innerHTML = `<span class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg"><i class="fa-solid fa-brain"></i></span>
+                                    <div><h3 class="font-black text-slate-900 text-base">فِكْر (الخارطة الذهنية)</h3></div>`;
+                body.innerHTML = currentStep.think;
+            } else if (type === 'hint' && currentInput) {
+                header.innerHTML = `<span class="w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-lg"><i class="fa-solid fa-lightbulb"></i></span>
+                                    <div><h3 class="font-black text-slate-900 text-base">تلميح مخصص للخانة</h3></div>`;
+                body.innerHTML = currentInput.hint;
+            }
+            document.getElementById('toolModal').classList.remove('hidden');
+            closeChoicesPopover();
+        }
+
+        function closeToolModal() {
+            document.getElementById('toolModal').classList.add('hidden');
+        }
+
+        function toggleCalculator() {
+            document.getElementById('calcModal').classList.toggle('hidden');
+        }
+
+        function calcPress(val) {
+            const disp = document.getElementById('calcDisplay');
+            if (disp.value === '0' || disp.value === 'خطأ') disp.value = '';
+            if (val === 'C') disp.value = '0';
+            else disp.value += val;
+        }
+
+        function calcEval() {
+            const disp = document.getElementById('calcDisplay');
+            try { disp.value = eval(disp.value); } 
+            catch (e) { disp.value = 'خطأ'; }
+        }
+
+    </script>
+</body>
+</html>
