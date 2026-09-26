@@ -132,16 +132,10 @@ def build(archive):
         title = re.sub(r'\s+', '', str(question.get('question_text') or ''))
         identity = (page, title)
         if identity in seen:
-            # A repeated question from two exports is one student exercise.
-            old_source, old_question = seen[identity]
-            if len(question.get('interactive_steps') or []) > len(old_question.get('interactive_steps') or []):
-                seen[identity] = (source, question)
-                duplicates.append({'page': page, 'discarded': old_source, 'kept': source})
-            else:
-                duplicates.append({'page': page, 'discarded': source, 'kept': old_source})
+            duplicates.append({'page': page, 'first_source': seen[identity],
+                               'repeated_source': source, 'both_retained': True})
         else:
-            seen[identity] = (source, question)
-    for (page, _), (_, question) in seen.items():
+            seen[identity] = source
         chapter, topic = topic_for(page, question)
         grouped[(chapter, topic, page)].append(question)
 
@@ -177,7 +171,8 @@ def build(archive):
     (ROOT / 'index.html').write_text(raw, encoding='utf-8')
     report = {
         'source_files': len(source_report), 'parsed_files': sum(x['status'] != 'error' for x in source_report),
-        'questions_in_sources': len(candidates), 'unique_questions': len(seen),
+        'questions_in_sources': len(candidates), 'published_questions': len(candidates),
+        'unique_question_texts': len(seen),
         'duplicate_questions': duplicates, 'steps': total_steps, 'boxes': total_inputs,
         'pages': len({key[2] for key in grouped}), 'lesson_files': len(grouped),
         'questions_per_chapter': {str(i): sum(len(v) for (ch, _, _), v in grouped.items() if ch == i)

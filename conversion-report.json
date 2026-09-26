@@ -2,31 +2,35 @@
   "source_files": 170,
   "parsed_files": 170,
   "questions_in_sources": 549,
-  "unique_questions": 546,
+  "published_questions": 549,
+  "unique_question_texts": 546,
   "duplicate_questions": [
     {
       "page": 105,
-      "discarded": "161/gemini-code-1790373464753.json",
-      "kept": "161/gemini-code-1790373451150.json"
+      "first_source": "161/gemini-code-1790373451150.json",
+      "repeated_source": "161/gemini-code-1790373464753.json",
+      "both_retained": true
     },
     {
       "page": 159,
-      "discarded": "161/gemini-code-1790377891767.json",
-      "kept": "161/gemini-code-1790377805974.json"
+      "first_source": "161/gemini-code-1790377805974.json",
+      "repeated_source": "161/gemini-code-1790377891767.json",
+      "both_retained": true
     },
     {
       "page": 159,
-      "discarded": "161/gemini-code-1790377891767.json",
-      "kept": "161/gemini-code-1790377805974.json"
+      "first_source": "161/gemini-code-1790377805974.json",
+      "repeated_source": "161/gemini-code-1790377891767.json",
+      "both_retained": true
     }
   ],
-  "steps": 4740,
-  "boxes": 8444,
+  "steps": 4764,
+  "boxes": 8484,
   "pages": 224,
   "lesson_files": 237,
   "questions_per_chapter": {
-    "1": 309,
-    "2": 206,
+    "1": 310,
+    "2": 208,
     "3": 0,
     "4": 0,
     "5": 0,
