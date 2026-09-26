@@ -1,9 +1,887 @@
 {
-  "questions": 1,
-  "pages": 1,
-  "steps": 7,
-  "boxes": 9,
-  "page_numbers": [
-    130
+  "source_files": 170,
+  "parsed_files": 170,
+  "questions_in_sources": 549,
+  "unique_questions": 546,
+  "duplicate_questions": [
+    {
+      "page": 105,
+      "discarded": "161/gemini-code-1790373464753.json",
+      "kept": "161/gemini-code-1790373451150.json"
+    },
+    {
+      "page": 159,
+      "discarded": "161/gemini-code-1790377891767.json",
+      "kept": "161/gemini-code-1790377805974.json"
+    },
+    {
+      "page": 159,
+      "discarded": "161/gemini-code-1790377891767.json",
+      "kept": "161/gemini-code-1790377805974.json"
+    }
+  ],
+  "steps": 4740,
+  "boxes": 8444,
+  "pages": 224,
+  "lesson_files": 237,
+  "questions_per_chapter": {
+    "1": 309,
+    "2": 206,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 31
+  },
+  "sources": [
+    {
+      "file": "161/gemini-code-1790386125588.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/pages_70_74_interactive.json",
+      "status": "parsed",
+      "questions": 9
+    },
+    {
+      "file": "161/gemini-code-1790375563849.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790373729314.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790375799917.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790294571499.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/page_101_interactive.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790374295265.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/gemini-code-1790295173351.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/page_60_processed.json",
+      "status": "parsed",
+      "questions": 10
+    },
+    {
+      "file": "161/gemini-code-1790385650732.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790294546618.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790376664368.json",
+      "status": "recovered nested JSON",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790386649952.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377701075.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/New Text Document.txt",
+      "status": "parsed",
+      "questions": 8
+    },
+    {
+      "file": "161/gemini-code-1790386473469.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_55_processed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790295723667.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/page_32_processed.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/steps_page_4.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790375081345.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_170_detailed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790376775712.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790294864301.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790385456456.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790386564623.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/conic_interactive_steps_p174_177.json",
+      "status": "parsed",
+      "questions": 7
+    },
+    {
+      "file": "161/processed_questions_pages_38_41.json",
+      "status": "parsed",
+      "questions": 6
+    },
+    {
+      "file": "161/gemini-code-1790376041950.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_61_processed.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/page_98_interactive.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790375946052.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790376136960.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377316149.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790294994769.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790385769888.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790294234816.json",
+      "status": "parsed",
+      "questions": 6
+    },
+    {
+      "file": "161/gemini-code-1790373249116.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/demov_interactive_steps_pages_92-97.json",
+      "status": "parsed",
+      "questions": 9
+    },
+    {
+      "file": "161/page_59_processed.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/hyperbola_interactive_steps.json",
+      "status": "parsed",
+      "questions": 7
+    },
+    {
+      "file": "161/page_58_processed.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/page_34_processed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790377490513.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377127276.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790295534613.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790294991364.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790294153604.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/interactive_steps_pages_188_191.json",
+      "status": "parsed",
+      "questions": 7
+    },
+    {
+      "file": "161/gemini-code-1790384875558.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/ئ.txt",
+      "status": "parsed",
+      "questions": 7
+    },
+    {
+      "file": "161/gemini-code-1790375184969.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_33_processed.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790385943284.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_31_processed.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/steps_page_5.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790294285435.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/gemini-code-1790377573288.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/steps_page_6.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/page_82_interactive.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790377252036.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790384756560.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790375688651.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_53_processed.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790386052273.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790373451150.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/processed_pages_47_51.json",
+      "status": "parsed",
+      "questions": 16
+    },
+    {
+      "file": "161/gemini-code-1790377546436.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_54_processed.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790375926469.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790376063954.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/page_99_interactive.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377695854.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790375367477.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790295609156.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790294007457.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/interactive_steps_all_questions_p200_203.json",
+      "status": "parsed",
+      "questions": 6
+    },
+    {
+      "file": "161/gemini-code-1790373771187.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790386984579.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377317865.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_36_processed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790386330826.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790376799145.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790385109719.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790374260614.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/gemini-code-1790373964975.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790376374677.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790294316314.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/gemini-code-1790294072194.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790375206583.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790375461142.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790374529934.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/page_52_processed.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790374018402.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790386422202.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_100_interactive.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790387100521.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_172_detailed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790295400433.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790386135909.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790376726543.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790385311318.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_84_interactive.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790385679732.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790386788590.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790373846865.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790376879357.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790377139871.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790295516729.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790385545103.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790385747289.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790386233736.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790386960701.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_85_interactive.json",
+      "status": "parsed",
+      "questions": 5
+    },
+    {
+      "file": "161/page_62_processed.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790386391619.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_102_interactive.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790384830956.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790384711662.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790294703558.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790376593114.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790373464753.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377229680.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/deepseek_json_20260925_da9735.json",
+      "status": "parsed",
+      "questions": 20
+    },
+    {
+      "file": "161/gemini-code-1790387080048.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/page_37_processed.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/hh.txt",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790377805974.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790378143053.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790384979697.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_35_processed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790385111313.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_83_interactive.json",
+      "status": "parsed",
+      "questions": 8
+    },
+    {
+      "file": "161/gemini-code-1790377636741.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/٧٧٧٧٧.txt",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790375328299.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790386513227.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/ellipse_questions_q15_q23.json",
+      "status": "parsed",
+      "questions": 9
+    },
+    {
+      "file": "161/Newcument.txt",
+      "status": "parsed",
+      "questions": 8
+    },
+    {
+      "file": "161/page_30_processed.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790385550222.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790385206537.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/interactive_steps_pages_76_80.json",
+      "status": "parsed",
+      "questions": 13
+    },
+    {
+      "file": "161/gemini-code-1790385005393.json",
+      "status": "parsed",
+      "questions": 6
+    },
+    {
+      "file": "161/gemini-code-1790373441623.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790376881296.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/interactive_steps_pages_42_46.json",
+      "status": "parsed",
+      "questions": 17
+    },
+    {
+      "file": "161/gemini-code-1790375069215.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/page_171_detailed.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790385852456.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790377891767.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_57_processed.json",
+      "status": "parsed",
+      "questions": 14
+    },
+    {
+      "file": "161/gemini-code-1790376198727.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/demov_interactive_steps_pages_87_91.json",
+      "status": "parsed",
+      "questions": 10
+    },
+    {
+      "file": "161/questions_q6_q14_interactive_steps.json",
+      "status": "parsed",
+      "questions": 9
+    },
+    {
+      "file": "161/gemini-code-1790295139791.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790294660291.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/page_56_processed.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790294830714.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/gemini-code-1790376408427.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790377424692.json",
+      "status": "parsed",
+      "questions": 1
+    },
+    {
+      "file": "161/gemini-code-1790375802338.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790377007336.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/interactive_questions_p196_199.json",
+      "status": "parsed",
+      "questions": 8
+    },
+    {
+      "file": "161/Next Document.تسخى",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790294436899.json",
+      "status": "parsed",
+      "questions": 4
+    },
+    {
+      "file": "161/gemini-code-1790378045865.json",
+      "status": "parsed",
+      "questions": 2
+    },
+    {
+      "file": "161/page_169_detailed.json",
+      "status": "parsed",
+      "questions": 3
+    },
+    {
+      "file": "161/gemini-code-1790374466348.json",
+      "status": "parsed",
+      "questions": 4
+    }
   ]
 }
