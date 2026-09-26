@@ -594,18 +594,50 @@
         }
 
         function formatWorksheetMath(text) {
-            return formatInlineMath(text)
+            function group(source, start) {
+                if (source[start] !== '{') return null;
+                let depth = 0;
+                for (let index = start; index < source.length; index++) {
+                    if (source[index] === '{') depth++;
+                    if (source[index] === '}' && --depth === 0) {
+                        return {value: source.slice(start + 1, index), end: index + 1};
+                    }
+                }
+                return null;
+            }
+            let math = text;
+            let cursor = 0;
+            let at = math.search(/\\(?:dfrac|tfrac|frac)\{/);
+            while (at >= 0) {
+                const command = math.slice(at).match(/^\\(?:dfrac|tfrac|frac)/)[0];
+                const numerator = group(math, at + command.length);
+                const denominator = numerator && group(math, numerator.end);
+                if (!denominator) break;
+                const html = `<span class="inline-flex flex-col align-middle text-center leading-tight mx-1"><span class="px-1">${numerator.value}</span><span class="border-t border-current px-1">${denominator.value}</span></span>`;
+                math = math.slice(0, at) + html + math.slice(denominator.end);
+                cursor = at + html.length;
+                at = math.slice(cursor).search(/\\(?:dfrac|tfrac|frac)\{/);
+                if (at >= 0) at += cursor;
+            }
+            return formatInlineMath(math)
                 .replace(/\\\(|\\\)/g, '')
                 .replace(/\\Rightarrow|\\implies/g, '⇒')
+                .replace(/\\neq|\\ne/g, '≠').replace(/\\approx/g, '≈')
+                .replace(/\\perp/g, '⊥').replace(/\\parallel/g, '∥')
+                .replace(/\\in(?![a-z])/g, '∈').replace(/\\angle/g, '∠')
                 .replace(/\\pm/g, '±').replace(/\\times|\\cdot/g, '×')
                 .replace(/\\infty/g, '∞').replace(/\\leq/g, '≤').replace(/\\geq/g, '≥')
+                .replace(/\\pi/g, 'π').replace(/\\theta/g, 'θ').replace(/\\alpha/g, 'α').replace(/\\beta/g, 'β')
+                .replace(/\\mathbb\{([RCNZ])\}/g, (_m, c) => ({R:'ℝ',C:'ℂ',N:'ℕ',Z:'ℤ'}[c]))
                 .replace(/\\quad|\\,|\\;/g, ' ')
                 .replace(/\\text\{([^{}]*)\}/g, '$1')
                 .replace(/\\sqrt\{([^{}]*)\}/g, '√($1)')
                 .replace(/\\sqrt/g, '√')
                 .replace(/\\left|\\right/g, '')
                 .replace(/\\\{|\\\}/g, m => m.slice(1))
-                .replace(/\^\{([^{}]*)\}|\^([0-9]+)/g, (_m, group, digits) => `<sup>${group ?? digits}</sup>`);
+                .replace(/\\ +/g, ' ')
+                .replace(/\^\{([^{}]*)\}|\^([0-9]+)/g, (_m, group, digits) => `<sup>${group ?? digits}</sup>`)
+                .replace(/_\{([^{}]*)\}|_([0-9]+)/g, (_m, group, digits) => `<sub>${group ?? digits}</sub>`);
         }
 
         function renderWhiteboardHeader() {
