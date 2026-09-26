@@ -582,20 +582,35 @@
         function formatInlineMath(text) {
             if(!text) return '';
             if(window.katex) {
-                return text.replace(/\$(.*?)\$/g, (match, formula) => {
+                return text.replace(/\\\((.*?)\\\)|\$(.*?)\$/gs, (match, inline, dollar) => {
                     try {
-                        return katex.renderToString(formula, { throwOnError: false });
+                        return katex.renderToString(inline ?? dollar, { throwOnError: false });
                     } catch(e) {
-                        return formula;
+                        return match;
                     }
                 });
             }
             return text;
         }
 
+        function formatWorksheetMath(text) {
+            return formatInlineMath(text)
+                .replace(/\\\(|\\\)/g, '')
+                .replace(/\\Rightarrow|\\implies/g, '⇒')
+                .replace(/\\pm/g, '±').replace(/\\times|\\cdot/g, '×')
+                .replace(/\\infty/g, '∞').replace(/\\leq/g, '≤').replace(/\\geq/g, '≥')
+                .replace(/\\quad|\\,|\\;/g, ' ')
+                .replace(/\\text\{([^{}]*)\}/g, '$1')
+                .replace(/\\sqrt\{([^{}]*)\}/g, '√($1)')
+                .replace(/\\sqrt/g, '√')
+                .replace(/\\left|\\right/g, '')
+                .replace(/\\\{|\\\}/g, m => m.slice(1))
+                .replace(/\^\{([^{}]*)\}|\^([0-9]+)/g, (_m, group, digits) => `<sup>${group ?? digits}</sup>`);
+        }
+
         function renderWhiteboardHeader() {
             document.getElementById('wb-category-label').innerHTML = `<i class="fa-solid fa-book text-mathBlue"></i> ${currentProblemData.category}`;
-            document.getElementById('wb-file-name').textContent = currentProblemData.file_name;
+            document.getElementById('wb-file-name').textContent = `صفحة ${currentProblemData.file_name.match(/^page_(\d+)/)?.[1] || '؟'}`;
             
             // Handle Diagram if exists
             const diagramContainer = document.getElementById('diagramContainer');
@@ -649,7 +664,7 @@
                 });
 
                 // Format inline math parts if any exist outside inputs
-                processedMath = formatInlineMath(processedMath);
+                processedMath = formatWorksheetMath(processedMath);
 
                 let html = `
                     <div class="text-xs md:text-sm font-black text-slate-800 mb-3 flex items-center gap-2 dir-rtl">
