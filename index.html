@@ -118,9 +118,51 @@
             flex-wrap: nowrap;
             white-space: nowrap;
             overflow-x: auto;
-            padding-bottom: 8px;
+            padding: 0.35rem 0 0.65rem;
             scrollbar-width: thin;
             direction: ltr; /* Force Math to LTR */
+        }
+
+        .math-line-container sup,
+        .math-line-container sub {
+            font-size: 0.68em;
+            line-height: 0;
+            position: relative;
+        }
+
+        .math-line-container sup { top: -0.55em; }
+        .math-line-container sub { bottom: -0.2em; }
+
+        .math-radical {
+            display: inline-flex;
+            align-items: flex-start;
+            vertical-align: middle;
+            direction: ltr;
+            margin: 0 0.12em;
+        }
+
+        .math-radical-symbol {
+            font-family: "Times New Roman", serif;
+            font-size: 1.75em;
+            font-weight: 400;
+            line-height: 0.9;
+            margin-right: -0.08em;
+            transform: scaleX(0.9);
+            transform-origin: right center;
+        }
+
+        .math-radicand {
+            display: inline-flex;
+            align-items: center;
+            min-height: 1.25em;
+            padding: 0.12em 0.16em 0;
+            border-top: 2px solid currentColor;
+            line-height: 1;
+        }
+
+        .math-radicand .red-interactive-box {
+            margin-top: 0.1em;
+            margin-bottom: 0;
         }
 
         /* Hide sections for SPA navigation */
@@ -600,44 +642,69 @@
                 for (let index = start; index < source.length; index++) {
                     if (source[index] === '{') depth++;
                     if (source[index] === '}' && --depth === 0) {
-                        return {value: source.slice(start + 1, index), end: index + 1};
+                        return { value: source.slice(start + 1, index), end: index + 1 };
                     }
                 }
                 return null;
             }
-            let math = text;
-            let cursor = 0;
-            let at = math.search(/\\(?:dfrac|tfrac|frac)\{/);
-            while (at >= 0) {
-                const command = math.slice(at).match(/^\\(?:dfrac|tfrac|frac)/)[0];
-                const numerator = group(math, at + command.length);
-                const denominator = numerator && group(math, numerator.end);
-                if (!denominator) break;
-                const html = `<span class="inline-flex flex-col align-middle text-center leading-tight mx-1"><span class="px-1">${numerator.value}</span><span class="border-t border-current px-1">${denominator.value}</span></span>`;
-                math = math.slice(0, at) + html + math.slice(denominator.end);
-                cursor = at + html.length;
-                at = math.slice(cursor).search(/\\(?:dfrac|tfrac|frac)\{/);
-                if (at >= 0) at += cursor;
+
+            function replaceFractions(source) {
+                let math = source;
+                let cursor = 0;
+                let at = math.search(/\\(?:dfrac|tfrac|frac)\{/);
+                while (at >= 0) {
+                    const command = math.slice(at).match(/^\\(?:dfrac|tfrac|frac)/)[0];
+                    const numerator = group(math, at + command.length);
+                    const denominator = numerator && group(math, numerator.end);
+                    if (!denominator) break;
+                    const html = `<span class="inline-flex flex-col align-middle text-center leading-tight mx-1"><span class="px-1">${numerator.value}</span><span class="border-t-2 border-current px-1">${denominator.value}</span></span>`;
+                    math = math.slice(0, at) + html + math.slice(denominator.end);
+                    cursor = at + html.length;
+                    const next = math.slice(cursor).search(/\\(?:dfrac|tfrac|frac)\{/);
+                    at = next < 0 ? -1 : cursor + next;
+                }
+                return math;
             }
-            return formatInlineMath(math)
-                .replace(/\\\(|\\\)/g, '')
+
+            function replaceRadicals(source) {
+                let math = source;
+                let cursor = 0;
+                let at = math.indexOf('\\sqrt{');
+                while (at >= 0) {
+                    const radicand = group(math, at + 5);
+                    if (!radicand) break;
+                    const html = `<span class="math-radical"><span class="math-radical-symbol">√</span><span class="math-radicand">${radicand.value}</span></span>`;
+                    math = math.slice(0, at) + html + math.slice(radicand.end);
+                    cursor = at + html.length;
+                    at = math.indexOf('\\sqrt{', cursor);
+                }
+                return math.replace(/\\sqrt/g, '<span class="math-radical-symbol">√</span>');
+            }
+
+            let math = text
+                .replace(/\\\(|\\\)|\$/g, '')
+                .replace(/\\left|\\right/g, '');
+
+            math = replaceFractions(math);
+            math = replaceRadicals(math);
+
+            return math
                 .replace(/\\Rightarrow|\\implies/g, '⇒')
                 .replace(/\\neq|\\ne/g, '≠').replace(/\\approx/g, '≈')
                 .replace(/\\perp/g, '⊥').replace(/\\parallel/g, '∥')
+                .replace(/\\subseteq/g, '⊆').replace(/\\subset/g, '⊂')
+                .replace(/\\cup/g, '∪').replace(/\\cap/g, '∩')
                 .replace(/\\in(?![a-z])/g, '∈').replace(/\\angle/g, '∠')
                 .replace(/\\pm/g, '±').replace(/\\times|\\cdot/g, '×')
                 .replace(/\\infty/g, '∞').replace(/\\leq/g, '≤').replace(/\\geq/g, '≥')
                 .replace(/\\pi/g, 'π').replace(/\\theta/g, 'θ').replace(/\\alpha/g, 'α').replace(/\\beta/g, 'β')
-                .replace(/\\mathbb\{([RCNZ])\}/g, (_m, c) => ({R:'ℝ',C:'ℂ',N:'ℕ',Z:'ℤ'}[c]))
+                .replace(/\\mathbb\{([RCNZ])\}/g, (_m, letter) => ({R:'ℝ',C:'ℂ',N:'ℕ',Z:'ℤ'}[letter]))
                 .replace(/\\quad|\\,|\\;/g, ' ')
                 .replace(/\\text\{([^{}]*)\}/g, '$1')
-                .replace(/\\sqrt\{([^{}]*)\}/g, '√($1)')
-                .replace(/\\sqrt/g, '√')
-                .replace(/\\left|\\right/g, '')
-                .replace(/\\\{|\\\}/g, m => m.slice(1))
+                .replace(/\\\{|\\\}/g, match => match.slice(1))
                 .replace(/\\ +/g, ' ')
-                .replace(/\^\{([^{}]*)\}|\^([0-9]+)/g, (_m, group, digits) => `<sup>${group ?? digits}</sup>`)
-                .replace(/_\{([^{}]*)\}|_([0-9]+)/g, (_m, group, digits) => `<sub>${group ?? digits}</sub>`);
+                .replace(/\^\{([^{}]*)\}|\^([0-9]+)/g, (_m, grouped, digits) => `<sup>${grouped ?? digits}</sup>`)
+                .replace(/_\{([^{}]*)\}|_([0-9]+)/g, (_m, grouped, digits) => `<sub>${grouped ?? digits}</sub>`);
         }
 
         function renderWhiteboardHeader() {
