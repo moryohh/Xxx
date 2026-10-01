@@ -165,6 +165,45 @@
             margin-bottom: 0;
         }
 
+        /* A completed step becomes a clean, typeset solution line. */
+        .completed-step .math-line-container {
+            justify-content: center;
+            overflow-x: visible;
+            padding-top: 0.55rem;
+            padding-bottom: 0.35rem;
+        }
+
+        .completed-step .math-line-container > div {
+            justify-content: center;
+            column-gap: 0.28em;
+            row-gap: 0.35em;
+            font-family: KaTeX_Main, "Times New Roman", serif;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        .solved-math-value {
+            display: inline-flex;
+            align-items: baseline;
+            color: inherit;
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            min-width: 0;
+            height: auto;
+            padding: 0;
+            margin: 0 0.08em;
+            font: inherit;
+            line-height: inherit;
+            direction: ltr;
+            vertical-align: baseline;
+        }
+
+        .completed-step .math-radicand .solved-math-value {
+            margin: 0;
+        }
+
         /* Hide sections for SPA navigation */
         .view-section { display: none; }
         .view-section.active { display: flex; animation: fadeIn 0.3s ease-in; }
@@ -762,10 +801,11 @@
                 if (stepIndex > lastVisibleStepIndex) return;
 
                 const stepWrapper = document.createElement('div');
-                stepWrapper.className = "p-4 md:p-6 rounded-2xl bg-white border-2 border-slate-100 shadow-sm transition-all";
                 
                 const isStepComplete = step.inputs.length > 0
                     && step.inputs.every(input => Boolean(userAnswers[input.id]));
+
+                stepWrapper.className = `p-4 md:p-6 rounded-2xl bg-white border-2 border-slate-100 shadow-sm transition-all ${isStepComplete ? 'completed-step' : ''}`;
 
                 const explanationHtml = step.explanation && !isStepComplete ? `
                     <div class="mb-4 bg-sky-50/60 border-r-4 border-mathBlue p-3.5 rounded-l-xl text-xs md:text-sm font-bold text-sky-900 leading-relaxed dir-rtl relative">
@@ -776,9 +816,13 @@
 
                 let processedMath = step.html_structure;
                 
-                // Replace {inp_X} with actual box HTML
+                // Keep boxes only while solving. Once the whole step is correct,
+                // merge every value into the equation as clean mathematical text.
                 step.inputs.forEach(inp => {
-                    processedMath = processedMath.replace(`{${inp.id}}`, getBoxHtml(inp.id));
+                    const replacement = isStepComplete
+                        ? `<span class="solved-math-value">${userAnswers[inp.id]}</span>`
+                        : getBoxHtml(inp.id);
+                    processedMath = processedMath.replaceAll(`{${inp.id}}`, replacement);
                 });
 
                 // Format inline math parts if any exist outside inputs
