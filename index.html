@@ -663,6 +663,18 @@
             renderMathSafely('mathFormulaDisplay', currentProblemData.latex_formula, true);
         }
 
+        function getLastVisibleStepIndex() {
+            if (!currentProblemData || !currentProblemData.steps.length) return -1;
+
+            const firstUnfinishedIndex = currentProblemData.steps.findIndex(step => {
+                return step.inputs.length > 0 && step.inputs.some(input => !userAnswers[input.id]);
+            });
+
+            return firstUnfinishedIndex === -1
+                ? currentProblemData.steps.length - 1
+                : firstUnfinishedIndex;
+        }
+
         function renderWhiteboardSteps() {
             const container = document.getElementById('interactiveCanvasContainer');
             container.innerHTML = "";
@@ -677,7 +689,11 @@
                 document.getElementById('helpBtn').disabled = true;
             }
 
-            currentProblemData.steps.forEach((step) => {
+            const lastVisibleStepIndex = getLastVisibleStepIndex();
+
+            currentProblemData.steps.forEach((step, stepIndex) => {
+                if (stepIndex > lastVisibleStepIndex) return;
+
                 const stepWrapper = document.createElement('div');
                 stepWrapper.className = "p-4 md:p-6 rounded-2xl bg-white border-2 border-slate-100 shadow-sm transition-all";
                 
