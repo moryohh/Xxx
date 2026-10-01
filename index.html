@@ -697,7 +697,10 @@
                 const stepWrapper = document.createElement('div');
                 stepWrapper.className = "p-4 md:p-6 rounded-2xl bg-white border-2 border-slate-100 shadow-sm transition-all";
                 
-                const explanationHtml = step.explanation ? `
+                const isStepComplete = step.inputs.length > 0
+                    && step.inputs.every(input => Boolean(userAnswers[input.id]));
+
+                const explanationHtml = step.explanation && !isStepComplete ? `
                     <div class="mb-4 bg-sky-50/60 border-r-4 border-mathBlue p-3.5 rounded-l-xl text-xs md:text-sm font-bold text-sky-900 leading-relaxed dir-rtl relative">
                         <i class="fa-solid fa-chalkboard-user absolute -right-3 top-3.5 text-sky-400 bg-white rounded-full p-1 border border-sky-100 text-sm"></i>
                         <span class="mr-3 block">${formatInlineMath(step.explanation)}</span>
