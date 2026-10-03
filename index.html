@@ -276,25 +276,24 @@
 
         .scratch-step-card {
             position: absolute;
-            top: 13%;
+            top: 5%;
             left: 50%;
             transform: translateX(-50%);
             z-index: 4;
-            width: min(88%, 720px);
+            width: min(94%, 820px);
             text-align: center;
             pointer-events: none;
-            background: rgba(255, 255, 255, 0.93);
-            border: 1px solid #cbd5e1;
-            border-radius: 1rem;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.09);
-            padding: 0.65rem 1rem;
-            backdrop-filter: blur(5px);
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0.2rem;
         }
 
         .scratch-current-step-math {
             direction: ltr;
             font-family: KaTeX_Main, "Times New Roman", serif;
-            font-size: clamp(1.05rem, 3.8vw, 1.45rem);
+            font-size: clamp(1.55rem, 5.7vw, 2.2rem);
             font-weight: 700;
             color: #0f172a;
             white-space: nowrap;
@@ -328,9 +327,44 @@
         @media (max-width: 640px) {
             .scratch-board-tools-wrap {
                 order: 3;
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 0.45rem;
+                overflow: visible;
+                padding: 0.55rem;
                 border-top: 1px solid #e2e8f0;
                 border-bottom: 0;
             }
+
+            .scratch-board-tools-wrap .scratch-tool-btn {
+                width: 100%;
+                min-width: 0;
+                padding-inline: 0.35rem;
+            }
+
+            .scratch-color-picker {
+                min-width: 0;
+                width: 100%;
+            }
+
+            .scratch-color-picker > .scratch-tool-btn {
+                width: 100%;
+            }
+
+            .scratch-size-control {
+                grid-column: 1 / -1;
+                width: 100%;
+                justify-content: center;
+                padding: 0.1rem 0.5rem;
+            }
+
+            .scratch-size-control input[type="range"] {
+                flex: 1;
+                width: auto;
+                min-width: 0;
+                max-width: 280px;
+            }
+
             .scratch-board-modal { padding-bottom: env(safe-area-inset-bottom); }
         }
 
@@ -572,7 +606,7 @@
             <button id="scratchPenBtn" onclick="selectScratchPen()" class="scratch-tool-btn active"><i class="fa-solid fa-pen ml-1"></i> قلم</button>
             <button id="scratchEraserBtn" onclick="selectScratchEraser()" class="scratch-tool-btn"><i class="fa-solid fa-eraser ml-1"></i> ممحاة</button>
 
-            <div class="flex items-center gap-2 relative">
+            <div class="scratch-color-picker flex items-center gap-2 relative">
                 <button id="scratchPaletteBtn" onclick="toggleScratchColors()" class="scratch-tool-btn" aria-label="اختيار اللون">
                     <i class="fa-solid fa-palette ml-1"></i> اللون
                     <span id="scratchColorPreview" class="inline-block w-4 h-4 rounded-full bg-slate-900 align-middle mr-1 border border-white shadow"></span>
@@ -585,9 +619,9 @@
                 </div>
             </div>
 
-            <label class="flex items-center gap-2 text-xs font-black text-slate-600 whitespace-nowrap px-1">
-                السُمك
-                <input id="scratchBoardSize" type="range" min="2" max="18" value="4" class="w-24 accent-sky-500">
+            <label class="scratch-size-control flex items-center gap-3 text-xs font-black text-slate-600 whitespace-nowrap px-1">
+                <span>السُمك</span>
+                <input id="scratchBoardSize" type="range" min="2" max="18" value="4" class="w-32 accent-sky-500">
             </label>
             <button onclick="undoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-left ml-1"></i> تراجع</button>
             <button onclick="redoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-right ml-1"></i> إعادة</button>
@@ -596,7 +630,7 @@
 
         <div class="scratch-board-surface">
             <div class="scratch-step-card">
-                <div id="scratchBoardCurrentStepTitle" class="text-xs font-black text-amber-600 mb-1"></div>
+                <div id="scratchBoardCurrentStepTitle" class="hidden"></div>
                 <div id="scratchBoardCurrentStepMath" class="scratch-current-step-math"></div>
             </div>
             <canvas id="scratchBoardCanvas"></canvas>
