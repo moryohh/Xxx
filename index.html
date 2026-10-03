@@ -204,6 +204,90 @@
             margin: 0;
         }
 
+        /* Full-screen scratch whiteboard */
+        .scratch-board-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            background: #f8fafc;
+        }
+
+        .scratch-board-modal.hidden { display: none; }
+
+        .scratch-board-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            overflow-x: auto;
+            padding: 0.65rem;
+            scrollbar-width: thin;
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            flex-shrink: 0;
+        }
+
+        .scratch-tool-btn {
+            min-height: 40px;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.75rem;
+            border: 1px solid #cbd5e1;
+            background: #fff;
+            color: #334155;
+            font-size: 0.75rem;
+            font-weight: 800;
+            white-space: nowrap;
+            transition: 0.15s ease;
+        }
+
+        .scratch-tool-btn:active { transform: scale(0.96); }
+        .scratch-tool-btn.active {
+            color: #fff;
+            background: #0f172a;
+            border-color: #0f172a;
+        }
+
+        .scratch-color {
+            width: 34px;
+            height: 34px;
+            border-radius: 999px;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 1px #cbd5e1;
+            flex: 0 0 auto;
+        }
+
+        .scratch-color.active { box-shadow: 0 0 0 3px #38bdf8; }
+
+        .scratch-board-surface {
+            flex: 1;
+            min-height: 0;
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            background-image:
+                linear-gradient(#e2e8f0 1px, transparent 1px),
+                linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+
+        #scratchBoardCanvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+            cursor: crosshair;
+        }
+
+        @media (max-width: 640px) {
+            .scratch-board-tools-wrap {
+                order: 3;
+                border-top: 1px solid #e2e8f0;
+                border-bottom: 0;
+            }
+            .scratch-board-modal { padding-bottom: env(safe-area-inset-bottom); }
+        }
+
         /* Hide sections for SPA navigation */
         .view-section { display: none; }
         .view-section.active { display: flex; animation: fadeIn 0.3s ease-in; }
@@ -322,6 +406,13 @@
                         <span class="font-extrabold text-sm">حَاسِبَة</span>
                     </div>
                 </button>
+
+                <button onclick="openScratchBoard()" class="w-full py-3 px-3.5 rounded-xl bg-amber-50 hover:bg-amber-100/80 text-amber-950 text-xs font-bold border border-amber-200/80 flex items-center justify-between transition group active:scale-95 shadow-sm">
+                    <div class="flex items-center gap-2.5">
+                        <span class="w-7 h-7 rounded-lg bg-amber-500 text-white flex items-center justify-center text-xs shadow-sm"><i class="fa-solid fa-chalkboard"></i></span>
+                        <span class="font-extrabold text-sm">سَبُّورَة</span>
+                    </div>
+                </button>
                 
                 <!-- Quick Page Selector Selector inside Whiteboard -->
                 <div class="pt-2 border-t border-slate-100">
@@ -415,6 +506,38 @@
     <div id="toastMessage" class="fixed bottom-6 right-6 z-[70] bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-slate-700 text-xs font-bold hidden transition-all flex items-center gap-2">
         <i class="fa-solid fa-circle-info text-amber-400 text-sm"></i>
         <span id="toastText"></span>
+    </div>
+
+    <!-- Full-screen Scratch Whiteboard -->
+    <div id="scratchBoardModal" class="scratch-board-modal hidden" aria-hidden="true">
+        <div class="bg-slate-900 text-white px-3 py-2.5 flex items-center justify-between gap-3 flex-shrink-0">
+            <div class="min-w-0">
+                <div class="font-black text-sm flex items-center gap-2"><i class="fa-solid fa-chalkboard text-amber-400"></i> السبورة التفاعلية</div>
+                <div id="scratchBoardQuestion" class="text-[10px] text-slate-300 truncate mt-0.5"></div>
+            </div>
+            <button onclick="closeScratchBoard()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-black whitespace-nowrap">
+                <i class="fa-solid fa-arrow-right ml-1"></i> العودة للسؤال
+            </button>
+        </div>
+
+        <div class="scratch-board-toolbar scratch-board-tools-wrap" dir="rtl">
+            <button class="scratch-color active" data-board-color="#111827" style="background:#111827" aria-label="أسود"></button>
+            <button class="scratch-color" data-board-color="#2563eb" style="background:#2563eb" aria-label="أزرق"></button>
+            <button class="scratch-color" data-board-color="#dc2626" style="background:#dc2626" aria-label="أحمر"></button>
+            <button class="scratch-color" data-board-color="#16a34a" style="background:#16a34a" aria-label="أخضر"></button>
+            <label class="flex items-center gap-2 text-xs font-black text-slate-600 whitespace-nowrap px-1">
+                السُمك
+                <input id="scratchBoardSize" type="range" min="2" max="18" value="4" class="w-24 accent-sky-500">
+            </label>
+            <button id="scratchEraserBtn" onclick="toggleScratchEraser()" class="scratch-tool-btn"><i class="fa-solid fa-eraser ml-1"></i> ممحاة</button>
+            <button onclick="undoScratchBoard()" class="scratch-tool-btn" title="تراجع"><i class="fa-solid fa-rotate-left"></i></button>
+            <button onclick="redoScratchBoard()" class="scratch-tool-btn" title="إعادة"><i class="fa-solid fa-rotate-right"></i></button>
+            <button onclick="clearScratchBoard()" class="scratch-tool-btn text-rose-700 border-rose-200"><i class="fa-solid fa-trash ml-1"></i> مسح الكل</button>
+        </div>
+
+        <div class="scratch-board-surface">
+            <canvas id="scratchBoardCanvas"></canvas>
+        </div>
     </div>
 
     <!-- Floating Calculator -->
@@ -1051,6 +1174,219 @@
             setTimeout(() => {
                 toast.classList.add('hidden');
             }, 3000);
+        }
+
+
+        // Scratch whiteboard: one saved board per question.
+        const scratchBoard = {
+            canvas: null,
+            ctx: null,
+            strokes: [],
+            undo: [],
+            redo: [],
+            drawing: false,
+            activeStroke: null,
+            beforeStroke: null,
+            color: '#111827',
+            size: 4,
+            eraser: false,
+            resizeObserver: null
+        };
+
+        function scratchBoardStorageKey() {
+            const page = (currentPageFile && (currentPageFile.file_name || currentPageFile.page_id)) || currentPageFile || 'page';
+            const question = (currentProblemData && (currentProblemData.question_number || currentProblemData.id || currentProblemData.title)) || 'question';
+            return 'xxx_scratch_board_' + encodeURIComponent(String(page) + '_' + String(question));
+        }
+
+        function openScratchBoard() {
+            const modal = document.getElementById('scratchBoardModal');
+            scratchBoard.canvas = document.getElementById('scratchBoardCanvas');
+            scratchBoard.ctx = scratchBoard.canvas.getContext('2d');
+            document.getElementById('scratchBoardQuestion').textContent =
+                document.getElementById('questionTitle')?.innerText?.trim() || 'مساحة حرة للحل';
+            loadScratchBoard();
+            modal.classList.remove('hidden');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+            requestAnimationFrame(resizeScratchBoard);
+
+            if (!scratchBoard.resizeObserver) {
+                scratchBoard.resizeObserver = new ResizeObserver(resizeScratchBoard);
+                scratchBoard.resizeObserver.observe(scratchBoard.canvas.parentElement);
+                setupScratchBoardEvents();
+            }
+        }
+
+        function closeScratchBoard() {
+            saveScratchBoard();
+            document.getElementById('scratchBoardModal').classList.add('hidden');
+            document.getElementById('scratchBoardModal').setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        function setupScratchBoardEvents() {
+            const canvas = scratchBoard.canvas;
+            canvas.addEventListener('pointerdown', startScratchStroke);
+            canvas.addEventListener('pointermove', moveScratchStroke);
+            canvas.addEventListener('pointerup', endScratchStroke);
+            canvas.addEventListener('pointercancel', endScratchStroke);
+            document.querySelectorAll('[data-board-color]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    scratchBoard.color = btn.dataset.boardColor;
+                    scratchBoard.eraser = false;
+                    document.getElementById('scratchEraserBtn').classList.remove('active');
+                    document.querySelectorAll('[data-board-color]').forEach(item => item.classList.toggle('active', item === btn));
+                });
+            });
+            document.getElementById('scratchBoardSize').addEventListener('input', event => {
+                scratchBoard.size = Number(event.target.value);
+            });
+        }
+
+        function resizeScratchBoard() {
+            if (!scratchBoard.canvas || !scratchBoard.ctx) return;
+            const rect = scratchBoard.canvas.getBoundingClientRect();
+            if (!rect.width || !rect.height) return;
+            const ratio = Math.max(1, Math.min(window.devicePixelRatio || 1, 2));
+            scratchBoard.canvas.width = Math.round(rect.width * ratio);
+            scratchBoard.canvas.height = Math.round(rect.height * ratio);
+            scratchBoard.ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+            redrawScratchBoard();
+        }
+
+        function scratchPoint(event) {
+            const rect = scratchBoard.canvas.getBoundingClientRect();
+            return {
+                x: (event.clientX - rect.left) / rect.width,
+                y: (event.clientY - rect.top) / rect.height
+            };
+        }
+
+        function startScratchStroke(event) {
+            if (event.pointerType === 'mouse' && event.button !== 0) return;
+            event.preventDefault();
+            scratchBoard.canvas.setPointerCapture(event.pointerId);
+            scratchBoard.beforeStroke = scratchBoard.strokes.slice();
+            scratchBoard.activeStroke = {
+                color: scratchBoard.color,
+                size: scratchBoard.size,
+                eraser: scratchBoard.eraser,
+                points: [scratchPoint(event)]
+            };
+            scratchBoard.strokes.push(scratchBoard.activeStroke);
+            scratchBoard.drawing = true;
+            redrawScratchBoard();
+        }
+
+        function moveScratchStroke(event) {
+            if (!scratchBoard.drawing || !scratchBoard.activeStroke) return;
+            event.preventDefault();
+            scratchBoard.activeStroke.points.push(scratchPoint(event));
+            redrawScratchBoard();
+        }
+
+        function endScratchStroke(event) {
+            if (!scratchBoard.drawing) return;
+            event.preventDefault();
+            scratchBoard.drawing = false;
+            scratchBoard.undo.push(scratchBoard.beforeStroke || []);
+            scratchBoard.redo = [];
+            scratchBoard.activeStroke = null;
+            scratchBoard.beforeStroke = null;
+            saveScratchBoard();
+        }
+
+        function redrawScratchBoard() {
+            const canvas = scratchBoard.canvas;
+            const ctx = scratchBoard.ctx;
+            if (!canvas || !ctx) return;
+            const rect = canvas.getBoundingClientRect();
+            ctx.clearRect(0, 0, rect.width, rect.height);
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+
+            scratchBoard.strokes.forEach(stroke => {
+                if (!stroke.points.length) return;
+                ctx.save();
+                ctx.globalCompositeOperation = stroke.eraser ? 'destination-out' : 'source-over';
+                ctx.strokeStyle = stroke.eraser ? 'rgba(0,0,0,1)' : stroke.color;
+                ctx.fillStyle = stroke.eraser ? 'rgba(0,0,0,1)' : stroke.color;
+                ctx.lineWidth = stroke.size;
+                const points = stroke.points.map(point => ({x: point.x * rect.width, y: point.y * rect.height}));
+                if (points.length === 1) {
+                    ctx.beginPath();
+                    ctx.arc(points[0].x, points[0].y, Math.max(1, stroke.size / 2), 0, Math.PI * 2);
+                    ctx.fill();
+                } else {
+                    ctx.beginPath();
+                    ctx.moveTo(points[0].x, points[0].y);
+                    for (let i = 1; i < points.length - 1; i++) {
+                        const midX = (points[i].x + points[i + 1].x) / 2;
+                        const midY = (points[i].y + points[i + 1].y) / 2;
+                        ctx.quadraticCurveTo(points[i].x, points[i].y, midX, midY);
+                    }
+                    const last = points[points.length - 1];
+                    ctx.lineTo(last.x, last.y);
+                    ctx.stroke();
+                }
+                ctx.restore();
+            });
+        }
+
+        function toggleScratchEraser() {
+            scratchBoard.eraser = !scratchBoard.eraser;
+            document.getElementById('scratchEraserBtn').classList.toggle('active', scratchBoard.eraser);
+            if (scratchBoard.eraser) {
+                document.querySelectorAll('[data-board-color]').forEach(item => item.classList.remove('active'));
+            } else {
+                document.querySelector('[data-board-color="' + scratchBoard.color + '"]')?.classList.add('active');
+            }
+        }
+
+        function undoScratchBoard() {
+            if (!scratchBoard.undo.length) return;
+            scratchBoard.redo.push(scratchBoard.strokes.slice());
+            scratchBoard.strokes = scratchBoard.undo.pop();
+            redrawScratchBoard();
+            saveScratchBoard();
+        }
+
+        function redoScratchBoard() {
+            if (!scratchBoard.redo.length) return;
+            scratchBoard.undo.push(scratchBoard.strokes.slice());
+            scratchBoard.strokes = scratchBoard.redo.pop();
+            redrawScratchBoard();
+            saveScratchBoard();
+        }
+
+        function clearScratchBoard() {
+            if (!scratchBoard.strokes.length) return;
+            if (!confirm('هل تريد مسح جميع ما كتبته على السبورة؟')) return;
+            scratchBoard.undo.push(scratchBoard.strokes.slice());
+            scratchBoard.redo = [];
+            scratchBoard.strokes = [];
+            redrawScratchBoard();
+            saveScratchBoard();
+        }
+
+        function saveScratchBoard() {
+            try {
+                localStorage.setItem(scratchBoardStorageKey(), JSON.stringify(scratchBoard.strokes));
+            } catch (error) {
+                console.warn('Could not save scratch board', error);
+            }
+        }
+
+        function loadScratchBoard() {
+            try {
+                scratchBoard.strokes = JSON.parse(localStorage.getItem(scratchBoardStorageKey()) || '[]');
+                if (!Array.isArray(scratchBoard.strokes)) scratchBoard.strokes = [];
+            } catch (error) {
+                scratchBoard.strokes = [];
+            }
+            scratchBoard.undo = [];
+            scratchBoard.redo = [];
         }
 
         function toggleCalculator() {
