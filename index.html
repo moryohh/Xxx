@@ -259,6 +259,37 @@
 
         .scratch-color.active { box-shadow: 0 0 0 3px #38bdf8; }
 
+        .scratch-color-strip {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.25rem 0.45rem;
+            border-radius: 999px;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            animation: fadeIn 0.15s ease;
+        }
+
+        .scratch-current-step {
+            min-width: 0;
+            text-align: center;
+            line-height: 1.25;
+        }
+
+        .scratch-current-step-math {
+            direction: ltr;
+            font-family: KaTeX_Main, "Times New Roman", serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #f8fafc;
+            white-space: nowrap;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding: 0.1rem 0.5rem;
+        }
+
+        .scratch-current-step-math::-webkit-scrollbar { display: none; }
+
         .scratch-board-surface {
             flex: 1;
             min-height: 0;
@@ -510,10 +541,11 @@
 
     <!-- Full-screen Scratch Whiteboard -->
     <div id="scratchBoardModal" class="scratch-board-modal hidden" aria-hidden="true">
-        <div class="bg-slate-900 text-white px-3 py-2.5 flex items-center justify-between gap-3 flex-shrink-0">
-            <div class="min-w-0">
-                <div class="font-black text-sm flex items-center gap-2"><i class="fa-solid fa-chalkboard text-amber-400"></i> السبورة التفاعلية</div>
-                <div id="scratchBoardQuestion" class="text-[10px] text-slate-300 truncate mt-0.5"></div>
+        <div class="bg-slate-900 text-white px-3 py-2.5 grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 flex-shrink-0">
+            <div class="font-black text-sm items-center gap-2 hidden sm:flex"><i class="fa-solid fa-chalkboard text-amber-400"></i> السبورة</div>
+            <div class="scratch-current-step">
+                <div id="scratchBoardCurrentStepTitle" class="text-[11px] font-black text-amber-300"></div>
+                <div id="scratchBoardCurrentStepMath" class="scratch-current-step-math"></div>
             </div>
             <button onclick="closeScratchBoard()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-black whitespace-nowrap">
                 <i class="fa-solid fa-arrow-right ml-1"></i> العودة للسؤال
@@ -521,17 +553,28 @@
         </div>
 
         <div class="scratch-board-toolbar scratch-board-tools-wrap" dir="rtl">
-            <button class="scratch-color active" data-board-color="#111827" style="background:#111827" aria-label="أسود"></button>
-            <button class="scratch-color" data-board-color="#2563eb" style="background:#2563eb" aria-label="أزرق"></button>
-            <button class="scratch-color" data-board-color="#dc2626" style="background:#dc2626" aria-label="أحمر"></button>
-            <button class="scratch-color" data-board-color="#16a34a" style="background:#16a34a" aria-label="أخضر"></button>
+            <button id="scratchPenBtn" onclick="selectScratchPen()" class="scratch-tool-btn active"><i class="fa-solid fa-pen ml-1"></i> قلم</button>
+            <button id="scratchEraserBtn" onclick="selectScratchEraser()" class="scratch-tool-btn"><i class="fa-solid fa-eraser ml-1"></i> ممحاة</button>
+
+            <div class="flex items-center gap-2">
+                <button id="scratchPaletteBtn" onclick="toggleScratchColors()" class="scratch-tool-btn" aria-label="اختيار اللون">
+                    <i class="fa-solid fa-palette ml-1"></i> اللون
+                    <span id="scratchColorPreview" class="inline-block w-4 h-4 rounded-full bg-slate-900 align-middle mr-1 border border-white shadow"></span>
+                </button>
+                <div id="scratchColorStrip" class="scratch-color-strip hidden">
+                    <button class="scratch-color active" data-board-color="#111827" style="background:#111827" aria-label="أسود"></button>
+                    <button class="scratch-color" data-board-color="#2563eb" style="background:#2563eb" aria-label="أزرق"></button>
+                    <button class="scratch-color" data-board-color="#dc2626" style="background:#dc2626" aria-label="أحمر"></button>
+                    <button class="scratch-color" data-board-color="#16a34a" style="background:#16a34a" aria-label="أخضر"></button>
+                </div>
+            </div>
+
             <label class="flex items-center gap-2 text-xs font-black text-slate-600 whitespace-nowrap px-1">
                 السُمك
                 <input id="scratchBoardSize" type="range" min="2" max="18" value="4" class="w-24 accent-sky-500">
             </label>
-            <button id="scratchEraserBtn" onclick="toggleScratchEraser()" class="scratch-tool-btn"><i class="fa-solid fa-eraser ml-1"></i> ممحاة</button>
-            <button onclick="undoScratchBoard()" class="scratch-tool-btn" title="تراجع"><i class="fa-solid fa-rotate-left"></i></button>
-            <button onclick="redoScratchBoard()" class="scratch-tool-btn" title="إعادة"><i class="fa-solid fa-rotate-right"></i></button>
+            <button onclick="undoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-left ml-1"></i> تراجع</button>
+            <button onclick="redoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-right ml-1"></i> إعادة</button>
             <button onclick="clearScratchBoard()" class="scratch-tool-btn text-rose-700 border-rose-200"><i class="fa-solid fa-trash ml-1"></i> مسح الكل</button>
         </div>
 
@@ -970,6 +1013,7 @@
 
             setFirstActiveInput();
             updateProgress();
+            updateScratchBoardCurrentStep();
         }
 
         function getBoxHtml(inputId) {
@@ -1203,8 +1247,7 @@
             const modal = document.getElementById('scratchBoardModal');
             scratchBoard.canvas = document.getElementById('scratchBoardCanvas');
             scratchBoard.ctx = scratchBoard.canvas.getContext('2d');
-            document.getElementById('scratchBoardQuestion').textContent =
-                document.getElementById('questionTitle')?.innerText?.trim() || 'مساحة حرة للحل';
+            updateScratchBoardCurrentStep();
             loadScratchBoard();
             modal.classList.remove('hidden');
             modal.setAttribute('aria-hidden', 'false');
@@ -1234,9 +1277,10 @@
             document.querySelectorAll('[data-board-color]').forEach(btn => {
                 btn.addEventListener('click', () => {
                     scratchBoard.color = btn.dataset.boardColor;
-                    scratchBoard.eraser = false;
-                    document.getElementById('scratchEraserBtn').classList.remove('active');
+                    selectScratchPen();
+                    document.getElementById('scratchColorPreview').style.backgroundColor = scratchBoard.color;
                     document.querySelectorAll('[data-board-color]').forEach(item => item.classList.toggle('active', item === btn));
+                    document.getElementById('scratchColorStrip').classList.add('hidden');
                 });
             });
             document.getElementById('scratchBoardSize').addEventListener('input', event => {
@@ -1270,7 +1314,7 @@
             scratchBoard.beforeStroke = scratchBoard.strokes.slice();
             scratchBoard.activeStroke = {
                 color: scratchBoard.color,
-                size: scratchBoard.size,
+                size: scratchBoard.eraser ? scratchBoard.size * 2 : scratchBoard.size,
                 eraser: scratchBoard.eraser,
                 points: [scratchPoint(event)]
             };
@@ -1334,14 +1378,37 @@
             });
         }
 
-        function toggleScratchEraser() {
-            scratchBoard.eraser = !scratchBoard.eraser;
-            document.getElementById('scratchEraserBtn').classList.toggle('active', scratchBoard.eraser);
-            if (scratchBoard.eraser) {
-                document.querySelectorAll('[data-board-color]').forEach(item => item.classList.remove('active'));
-            } else {
-                document.querySelector('[data-board-color="' + scratchBoard.color + '"]')?.classList.add('active');
-            }
+        function updateScratchBoardCurrentStep() {
+            const titleEl = document.getElementById('scratchBoardCurrentStepTitle');
+            const mathEl = document.getElementById('scratchBoardCurrentStepMath');
+            if (!titleEl || !mathEl || !currentProblemData?.steps?.length) return;
+
+            const stepIndex = Math.max(0, getLastVisibleStepIndex());
+            const step = currentProblemData.steps[stepIndex];
+            titleEl.textContent = step.title || ('الخطوة ' + (stepIndex + 1));
+
+            let currentMath = step.html_structure || '';
+            step.inputs.forEach(input => {
+                const value = userAnswers[input.id] || '□';
+                currentMath = currentMath.replaceAll('{' + input.id + '}', value);
+            });
+            mathEl.innerHTML = formatWorksheetMath(currentMath);
+        }
+
+        function toggleScratchColors() {
+            document.getElementById('scratchColorStrip').classList.toggle('hidden');
+        }
+
+        function selectScratchPen() {
+            scratchBoard.eraser = false;
+            document.getElementById('scratchPenBtn').classList.add('active');
+            document.getElementById('scratchEraserBtn').classList.remove('active');
+        }
+
+        function selectScratchEraser() {
+            scratchBoard.eraser = true;
+            document.getElementById('scratchPenBtn').classList.remove('active');
+            document.getElementById('scratchEraserBtn').classList.add('active');
         }
 
         function undoScratchBoard() {
