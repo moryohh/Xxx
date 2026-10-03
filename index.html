@@ -302,6 +302,47 @@
             padding: 0.2rem 0;
         }
 
+        .scratch-current-step-math .red-interactive-box {
+            pointer-events: auto;
+            cursor: pointer;
+            min-width: 2.6rem;
+            min-height: 2.6rem;
+            font-size: 0.8em;
+            vertical-align: middle;
+        }
+
+        .scratch-step-hint {
+            pointer-events: auto;
+            direction: rtl;
+            width: min(92%, 620px);
+            margin: 0.65rem auto 0;
+            padding: 0.7rem 0.85rem;
+            border-radius: 0.85rem;
+            border-right: 4px solid #6366f1;
+            background: rgba(238, 242, 255, 0.96);
+            color: #3730a3;
+            font-family: inherit;
+            font-size: 0.82rem;
+            font-weight: 800;
+            line-height: 1.8;
+            text-align: right;
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+        }
+
+        .scratch-header-menu {
+            position: absolute;
+            top: calc(100% + 0.45rem);
+            left: 0;
+            z-index: 125;
+            width: 180px;
+            padding: 0.45rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.9rem;
+            background: #fff;
+            color: #0f172a;
+            box-shadow: 0 14px 35px rgba(15, 23, 42, 0.24);
+        }
+
         .scratch-current-step-math::-webkit-scrollbar { display: none; }
 
         .scratch-board-surface {
@@ -560,7 +601,7 @@
 
     <!-- MODALS -->
     <!-- Choices Popover -->
-    <div id="choicesPopover" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div id="choicesPopover" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-[130] flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border-4 border-slate-100 transform transition-all relative">
             <button onclick="closeChoicesPopover()" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition"><i class="fa-solid fa-xmark"></i></button>
             <div class="text-center mb-5 pt-2">
@@ -573,7 +614,7 @@
     </div>
 
     <!-- Tool Modal (Think/Hint) -->
-    <div id="toolModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+    <div id="toolModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs z-[130] flex items-center justify-center p-4 hidden">
         <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
             <button onclick="closeToolModal()" class="absolute top-4 left-4 text-slate-400 hover:text-slate-600 text-lg w-8 h-8 flex items-center justify-center rounded-full bg-slate-100"><i class="fa-solid fa-xmark"></i></button>
             <div class="flex items-center gap-3 mb-4" id="toolModalHeader"></div>
@@ -593,10 +634,30 @@
         <div class="bg-slate-900 text-white px-3 py-2.5 flex items-center justify-between gap-3 flex-shrink-0">
             <div class="font-black text-sm flex items-center gap-2"><i class="fa-solid fa-chalkboard text-amber-400"></i> السبورة</div>
             <div class="flex items-center gap-2">
+                <div class="h-10 px-3 rounded-xl bg-emerald-400/10 border border-emerald-400/25 text-emerald-400 flex items-center gap-1.5 font-black" title="رصيد التفاحات">
+                    <i class="fa-solid fa-apple-whole"></i>
+                    <span id="scratchApplesCount" class="font-mono">100</span>
+                </div>
+                <div class="relative">
+                    <button onclick="toggleScratchTools()" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center" aria-label="أدوات الحل" title="الأدوات">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </button>
+                    <div id="scratchToolsMenu" class="scratch-header-menu hidden" dir="rtl">
+                        <button onclick="showScratchHint()" class="w-full px-3 py-2.5 rounded-lg hover:bg-indigo-50 text-indigo-700 flex items-center justify-between font-black text-xs">
+                            <span><i class="fa-solid fa-lightbulb ml-2"></i>تلميح</span><span>-2 🍎</span>
+                        </button>
+                        <button onclick="useScratchHelp()" class="w-full px-3 py-2.5 rounded-lg hover:bg-rose-50 text-rose-700 flex items-center justify-between font-black text-xs">
+                            <span><i class="fa-solid fa-wand-magic-sparkles ml-2"></i>مساعدة</span><span>-4 🍎</span>
+                        </button>
+                    </div>
+                </div>
+                <button onclick="toggleCalculator()" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center" aria-label="فتح الحاسبة" title="الحاسبة">
+                    <i class="fa-solid fa-calculator"></i>
+                </button>
                 <button onclick="shareScratchBoard()" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center" aria-label="مشاركة السبورة" title="مشاركة">
                     <i class="fa-solid fa-share-nodes"></i>
                 </button>
-                <button onclick="closeScratchBoard()" class="w-10 h-10 rounded-xl bg-rose-500 text-white hover:bg-rose-600 flex items-center justify-center shadow" aria-label="الخروج من السبورة" title="خروج">
+                <button onclick="confirmExitScratchBoard()" class="w-10 h-10 rounded-xl bg-rose-500 text-white hover:bg-rose-600 flex items-center justify-center shadow" aria-label="الخروج من السبورة" title="خروج">
                     <i class="fa-solid fa-xmark text-lg"></i>
                 </button>
             </div>
@@ -624,7 +685,7 @@
                 <input id="scratchBoardSize" type="range" min="2" max="18" value="4" class="w-32 accent-sky-500">
             </label>
             <button onclick="undoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-left ml-1"></i> تراجع</button>
-            <button onclick="redoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-right ml-1"></i> إعادة</button>
+            <button onclick="redoScratchBoard()" class="scratch-tool-btn"><i class="fa-solid fa-rotate-right ml-1"></i> الأمام</button>
             <button onclick="clearScratchBoard()" class="scratch-tool-btn text-rose-700 border-rose-200"><i class="fa-solid fa-trash ml-1"></i> مسح الكل</button>
         </div>
 
@@ -632,13 +693,14 @@
             <div class="scratch-step-card">
                 <div id="scratchBoardCurrentStepTitle" class="hidden"></div>
                 <div id="scratchBoardCurrentStepMath" class="scratch-current-step-math"></div>
+                <div id="scratchBoardHint" class="scratch-step-hint hidden"></div>
             </div>
             <canvas id="scratchBoardCanvas"></canvas>
         </div>
     </div>
 
     <!-- Floating Calculator -->
-    <div id="calcModal" class="fixed bottom-6 left-6 z-[60] bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 w-72 hidden dir-ltr">
+    <div id="calcModal" class="fixed bottom-6 left-6 z-[130] bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 w-72 hidden dir-ltr">
         <div class="flex items-center justify-between pb-2 mb-2 border-b border-slate-800">
             <button onclick="toggleCalculator()" class="text-slate-400 hover:text-white text-xs"><i class="fa-solid fa-xmark"></i></button>
             <span class="text-xs font-black text-emerald-400"><i class="fa-solid fa-calculator"></i> الآلة الحاسبة</span>
@@ -1174,6 +1236,8 @@
 
         function updateGamificationUI() {
             document.getElementById('applesCount').textContent = apples;
+            const scratchApples = document.getElementById('scratchApplesCount');
+            if (scratchApples) scratchApples.textContent = apples;
             document.getElementById('heartsCount').textContent = hearts;
             const heartIcon = document.getElementById('heartIcon');
             if(hearts <= 3) heartIcon.classList.add('text-red-600', 'animate-ping');
@@ -1306,6 +1370,8 @@
             modal.classList.remove('hidden');
             modal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
+            document.getElementById('scratchApplesCount').textContent = apples;
+            document.getElementById('scratchBoardHint').classList.add('hidden');
             requestAnimationFrame(resizeScratchBoard);
 
             if (!scratchBoard.resizeObserver) {
@@ -1320,6 +1386,26 @@
             document.getElementById('scratchBoardModal').classList.add('hidden');
             document.getElementById('scratchBoardModal').setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
+        }
+
+        function confirmExitScratchBoard() {
+            const approved = confirm('هل تريد الخروج؟ ستُحذف إجابات ورسومات هذه المسألة وستبدأ من الصفر.');
+            if (!approved) return;
+
+            try { localStorage.removeItem(scratchBoardStorageKey()); } catch (error) {}
+            scratchBoard.strokes = [];
+            scratchBoard.undo = [];
+            scratchBoard.redo = [];
+            userAnswers = {};
+            currentActiveInputId = null;
+            document.getElementById('completionBanner').classList.add('hidden');
+            document.getElementById('hintBtn').disabled = false;
+            document.getElementById('helpBtn').disabled = false;
+            document.getElementById('scratchToolsMenu').classList.add('hidden');
+            document.getElementById('scratchBoardHint').classList.add('hidden');
+            redrawScratchBoard();
+            closeScratchBoard();
+            renderWhiteboardSteps();
         }
 
         function setupScratchBoardEvents() {
@@ -1435,6 +1521,7 @@
         function updateScratchBoardCurrentStep() {
             const titleEl = document.getElementById('scratchBoardCurrentStepTitle');
             const mathEl = document.getElementById('scratchBoardCurrentStepMath');
+            const hintEl = document.getElementById('scratchBoardHint');
             if (!titleEl || !mathEl || !currentProblemData?.steps?.length) return;
 
             const stepIndex = Math.max(0, getLastVisibleStepIndex());
@@ -1443,10 +1530,43 @@
 
             let currentMath = step.html_structure || '';
             step.inputs.forEach(input => {
-                const value = userAnswers[input.id] || '□';
+                const value = userAnswers[input.id]
+                    ? `<span class="solved-math-value">${userAnswers[input.id]}</span>`
+                    : getScratchBoxHtml(input.id);
                 currentMath = currentMath.replaceAll('{' + input.id + '}', value);
             });
             mathEl.innerHTML = formatWorksheetMath(currentMath);
+            if (hintEl) hintEl.classList.add('hidden');
+        }
+
+        function getScratchBoxHtml(inputId) {
+            const isActive = currentActiveInputId === inputId;
+            const content = isActive
+                ? `<span class="opacity-60 text-xs animate-pulse"><i class="fa-solid fa-pen"></i></span>`
+                : '?';
+            return `<span onclick="openChoicesForInput('${inputId}')" class="red-interactive-box ${isActive ? 'active' : ''}" role="button" tabindex="0">${content}</span>`;
+        }
+
+        function toggleScratchTools() {
+            document.getElementById('scratchToolsMenu').classList.toggle('hidden');
+        }
+
+        function showScratchHint() {
+            const input = getCurrentTargetInput();
+            if (!input || userAnswers[input.id]) {
+                showToast('لا توجد خانة حالية تحتاج إلى تلميح');
+                return;
+            }
+            if (!deductApples(2)) return;
+            const hint = document.getElementById('scratchBoardHint');
+            hint.innerHTML = `<i class="fa-solid fa-lightbulb ml-2"></i>${formatInlineMath(input.hint || 'ركّز في العملية المطلوبة في هذه الخطوة.')}`;
+            hint.classList.remove('hidden');
+            document.getElementById('scratchToolsMenu').classList.add('hidden');
+        }
+
+        function useScratchHelp() {
+            document.getElementById('scratchToolsMenu').classList.add('hidden');
+            useHelpSolve();
         }
 
         function toggleScratchColors() {
