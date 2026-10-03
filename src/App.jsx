@@ -111,26 +111,17 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
     document.body.style.overflow='hidden'
     document.documentElement.style.overscrollBehaviorY='none'
     let startY=0
-    const keepInside=()=>{
-      if(!el)return
-      const max=Math.max(2,el.scrollHeight-el.clientHeight)
-      if(el.scrollTop<=0)el.scrollTop=1
-      else if(el.scrollTop>=max)el.scrollTop=max-1
-    }
-    el.scrollTop=1
-    const start=e=>{startY=e.touches?.[0]?.clientY||0;keepInside()}
+    const start=e=>{startY=e.touches?.[0]?.clientY||0}
     const move=e=>{
       if(!el||!e.touches?.length)return
       const delta=e.touches[0].clientY-startY
-      const atTop=el.scrollTop<=1
-      const atBottom=Math.ceil(el.scrollTop+el.clientHeight)>=el.scrollHeight-1
-      if((atTop&&delta>0)||(atBottom&&delta<0)){e.preventDefault();e.stopPropagation();keepInside()}
+      const atTop=el.scrollTop<=0
+      const atBottom=Math.ceil(el.scrollTop+el.clientHeight)>=el.scrollHeight
+      if((atTop&&delta>0)||(atBottom&&delta<0))e.preventDefault()
     }
-    const scroll=()=>keepInside()
     el?.addEventListener('touchstart',start,{passive:true})
     el?.addEventListener('touchmove',move,{passive:false})
-    el?.addEventListener('scroll',scroll,{passive:true})
-    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);el?.removeEventListener('scroll',scroll);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
+    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
   },[])
   const undo=()=>{if(!history.length)return;setFuture(v=>[...v,strokes]);setStrokes(history.at(-1));setHistory(v=>v.slice(0,-1))}
   const redo=()=>{if(!future.length)return;setHistory(v=>[...v,strokes]);setStrokes(future.at(-1));setFuture(v=>v.slice(0,-1))}
