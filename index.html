@@ -1053,6 +1053,20 @@
             return text;
         }
 
+        function formatBoardFormula(latex) {
+            if (!latex) return '';
+            const clean = String(latex).trim()
+                .replace(/^\$\$|\$\$$/g, '')
+                .replace(/^\$|\$$/g, '')
+                .replace(/^\\\[|\\\]$/g, '')
+                .replace(/^\\\(|\\\)$/g, '');
+            if (window.katex) {
+                try { return katex.renderToString(clean, { throwOnError: false, displayMode: false }); }
+                catch (error) {}
+            }
+            return clean;
+        }
+
         function formatWorksheetMath(text) {
             function group(source, start) {
                 if (source[start] !== '{') return null;
@@ -1630,7 +1644,7 @@
 
             questionEl.innerHTML = formatInlineMath(currentProblemData.title || '')
                 + (currentProblemData.latex_formula
-                    ? `<div class="mt-1 dir-ltr">${formatInlineMath('$' + currentProblemData.latex_formula + '$')}</div>`
+                    ? `<div class="mt-1 dir-ltr">${formatBoardFormula(currentProblemData.latex_formula)}</div>`
                     : '');
 
             stepsEl.innerHTML = currentProblemData.steps.slice(0, stepIndex + 1).map((visibleStep, index) => {
