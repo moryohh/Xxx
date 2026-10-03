@@ -98,11 +98,12 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
   const currentIndex = problem.steps.findIndex(s => s.inputs.some(i => !answers[i.id]))
   const index = currentIndex < 0 ? problem.steps.length - 1 : currentIndex
   const current = problem.steps[index]
-  const activeInput = current?.inputs.find(i => i.id === activeId) || current?.inputs.find(i => !answers[i.id])
+  const activeInput = current?.inputs.find(i => !answers[i.id]) || current?.inputs.find(i => i.id === activeId)
   const [tool,setTool]=useState('pen'), [color,setColor]=useState('#111827'), [size,setSize]=useState(4)
   const [strokes,setStrokes]=useState([]), [history,setHistory]=useState([]), [future,setFuture]=useState([])
   const [bubble,setBubble]=useState(null), [calculator,setCalculator]=useState(false)
   const canvasRef=useRef(null), scrollRef=useRef(null)
+  useEffect(()=>setBubble(null),[activeId,index])
   useEffect(()=>{
     const el=scrollRef.current
     const previousOverflow=document.body.style.overflow
@@ -110,31 +111,40 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
     document.body.style.overflow='hidden'
     document.documentElement.style.overscrollBehaviorY='none'
     let startY=0
-    const start=e=>{startY=e.touches?.[0]?.clientY||0}
+    const keepInside=()=>{
+      if(!el)return
+      const max=Math.max(2,el.scrollHeight-el.clientHeight)
+      if(el.scrollTop<=0)el.scrollTop=1
+      else if(el.scrollTop>=max)el.scrollTop=max-1
+    }
+    el.scrollTop=1
+    const start=e=>{startY=e.touches?.[0]?.clientY||0;keepInside()}
     const move=e=>{
       if(!el||!e.touches?.length)return
       const delta=e.touches[0].clientY-startY
-      const atTop=el.scrollTop<=0
-      const atBottom=Math.ceil(el.scrollTop+el.clientHeight)>=el.scrollHeight
-      if((atTop&&delta>0)||(atBottom&&delta<0))e.preventDefault()
+      const atTop=el.scrollTop<=1
+      const atBottom=Math.ceil(el.scrollTop+el.clientHeight)>=el.scrollHeight-1
+      if((atTop&&delta>0)||(atBottom&&delta<0)){e.preventDefault();e.stopPropagation();keepInside()}
     }
+    const scroll=()=>keepInside()
     el?.addEventListener('touchstart',start,{passive:true})
     el?.addEventListener('touchmove',move,{passive:false})
-    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
+    el?.addEventListener('scroll',scroll,{passive:true})
+    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);el?.removeEventListener('scroll',scroll);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
   },[])
   const undo=()=>{if(!history.length)return;setFuture(v=>[...v,strokes]);setStrokes(history.at(-1));setHistory(v=>v.slice(0,-1))}
   const redo=()=>{if(!future.length)return;setHistory(v=>[...v,strokes]);setStrokes(future.at(-1));setFuture(v=>v.slice(0,-1))}
   const hint=()=>{if(!activeInput)return;if(apples<2)return alert('لا تملك تفاحًا كافيًا');setApples(v=>v-2);setBubble(activeInput.hint)}
   const exit=()=>{if(confirm('هل تريد الخروج؟ ستبدأ هذه المحاولة من الصفر.'))onExit()}
   return <div className="board-modal">
-    <div className="board-head"><div className="board-actions"><button className="exit" onClick={exit}><X/></button><button onClick={()=>navigator.share?.({title:'السبورة'})}><Share2/></button><button className="calc" onClick={()=>setCalculator(true)}><Calculator/></button><button className="named-tool hint-tool" onClick={hint}><Lightbulb/><span>تلميح</span></button><button className="named-tool help-tool" onClick={help}><Sparkles/><span>مساعدة</span></button></div><span className="pill apple"><Apple size={17} fill="currentColor"/>{apples}</span></div>
-    <div className="board-scroll" ref={scrollRef}>
+    <div className="board-head"><div className="board-actions"><button className="exit" onClick={exit}><X/></button><button onClick={()=>navigator.share?.({title:'السبورة'})}><Share2/></button><button className="calc" onClick={()=>setCalculator(true)}><Calculator/></button><button className="named-tool hint-tool" onClick={hint}><Lightbulb/><span>تلميح</span></button><button className="named-tool help-tool" onClick={help}><HelpCircle/><span>مساعدة</span></button></div><span className="pill apple"><Apple size={17} fill="currentColor"/>{apples}</span></div>
+    <div className="board-workspace"><div className="board-scroll" ref={scrollRef}>
       <div className="board-flow"><div className="board-question"><MathText>{problem.title}</MathText></div>{problem.steps.slice(0,index).map((s,i)=><div className="board-step" key={s.step_id}><small>{s.title}</small><Equation step={s} answers={answers} solved/></div>)}</div>
       <div className="pinned-step"><div className="board-step current"><small>{current.title}</small><Equation step={current} answers={answers} activeId={activeId} onBlank={onBlank}/></div></div>
       {bubble && <div className="teacher-bubble"><div className="teacher">🧑‍🏫</div><div><button onClick={()=>setBubble(null)}><X size={16}/></button><MathText>{bubble}</MathText></div></div>}
       <div className="drawing-area"><DrawingCanvas {...{tool,color,size,strokes,setStrokes,history,setHistory,future,setFuture,canvasRef}}/></div>
       <button className="explain" onClick={()=>setBubble(current.explanation)}><span>شرح</span><b>🧑‍🏫</b></button>
-    </div>
+    </div></div>
     <div className="draw-tools"><button className={tool==='pen'?'selected':''} onClick={()=>setTool('pen')}><Pen/>قلم</button><button className={tool==='eraser'?'selected':''} onClick={()=>setTool('eraser')}><Eraser/>ممحاة</button><label><Palette/>اللون<input type="color" value={color} onChange={e=>setColor(e.target.value)}/></label><label className="range">السُمك<input type="range" min="2" max="18" value={size} onChange={e=>setSize(+e.target.value)}/></label><button onClick={undo}><Undo2/>تراجع</button><button onClick={redo}><Redo2/>الأمام</button><button className="danger" onClick={()=>confirm('مسح كل الرسم؟')&&setStrokes([])}><Trash2/>مسح الكل</button></div>
     {calculator && <CalculatorModal onClose={()=>setCalculator(false)}/>} 
   </div>
@@ -160,7 +170,7 @@ function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts
   const activeIndex=problem.steps.indexOf(currentStep)
   const allInputs=problem.steps.flatMap(s=>s.inputs), solvedCount=allInputs.filter(i=>answers[i.id]).length, progress=allInputs.length?Math.round(solvedCount/allInputs.length*100):0
   const chapterFiles=chapter.topics.flatMap(t=>t.files)
-  return <main className="solver"><aside><button onClick={onBack}><ArrowRight/>المواضيع</button><button onClick={()=>{const i=inputById(activeId);if(i&&apples>=2){setApples(v=>v-2);alert(i.hint)}}}><Lightbulb/>تلميح <small>-2 🍎</small></button><button onClick={help}><Sparkles/>مساعدة <small>-4 🍎</small></button><button onClick={()=>setBoard(true)}><Pen/>الصبورة</button></aside>
+  return <main className="solver"><aside><button onClick={onBack}><ArrowRight/>المواضيع</button><button onClick={()=>{const i=inputById(activeId);if(i&&apples>=2){setApples(v=>v-2);alert(i.hint)}}}><Lightbulb/>تلميح <small>-2 🍎</small></button><button onClick={help}><HelpCircle/>مساعدة <small>-4 🍎</small></button><button onClick={()=>setBoard(true)}><Pen/>الصبورة</button></aside>
     <div className="solution-shell"><div className="solver-nav"><label>الصفحة<select value={file} onChange={e=>onFileChange(e.target.value)}>{chapterFiles.map(f=><option key={f} value={f}>صفحة {f.match(/^page_(\d+)/)?.[1]}</option>)}</select></label>{questions.length>1&&<label>السؤال<select value={questionIndex} onChange={e=>{setQuestionIndex(+e.target.value);setAnswers({})}}>{questions.map((q,i)=><option key={i} value={i}>السؤال {q.number||i+1} من {questions.length}</option>)}</select></label>}<div className="progress"><span style={{width:`${progress}%`}}/><b>{progress}%</b></div></div>
     <section className="solution"><div className="problem-card"><h1><MathText>{problem.title}</MathText></h1>{problem.image_url&&<img src={problem.image_url}/>}</div>{problem.steps.slice(0,activeIndex+1).map((step,i)=>{const done=step.inputs.every(x=>answers[x.id]);return <div className={`solution-step ${done?'done':''}`} key={step.step_id}><h3>{step.title}</h3>{!done&&<p><MathText>{step.explanation}</MathText></p>}<Equation step={step} answers={answers} activeId={activeId} onBlank={open} solved={done}/></div>})}</section>
     {progress===100&&<div className="complete"><strong>أحسنت! أتممت الحل بنجاح 🎉</strong></div>}</div>
