@@ -260,32 +260,47 @@
         .scratch-color.active { box-shadow: 0 0 0 3px #38bdf8; }
 
         .scratch-color-strip {
+            position: fixed;
+            z-index: 110;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 0.45rem;
-            padding: 0.25rem 0.45rem;
+            gap: 0.55rem;
+            padding: 0.55rem;
             border-radius: 999px;
-            background: #f1f5f9;
-            border: 1px solid #e2e8f0;
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2);
             animation: fadeIn 0.15s ease;
         }
 
-        .scratch-current-step {
-            min-width: 0;
+        .scratch-step-card {
+            position: absolute;
+            top: 13%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 4;
+            width: min(88%, 720px);
             text-align: center;
-            line-height: 1.25;
+            pointer-events: none;
+            background: rgba(255, 255, 255, 0.93);
+            border: 1px solid #cbd5e1;
+            border-radius: 1rem;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.09);
+            padding: 0.65rem 1rem;
+            backdrop-filter: blur(5px);
         }
 
         .scratch-current-step-math {
             direction: ltr;
             font-family: KaTeX_Main, "Times New Roman", serif;
-            font-size: 1.05rem;
+            font-size: clamp(1.05rem, 3.8vw, 1.45rem);
             font-weight: 700;
-            color: #f8fafc;
+            color: #0f172a;
             white-space: nowrap;
             overflow-x: auto;
             scrollbar-width: none;
-            padding: 0.1rem 0.5rem;
+            padding: 0.2rem 0;
         }
 
         .scratch-current-step-math::-webkit-scrollbar { display: none; }
@@ -541,22 +556,23 @@
 
     <!-- Full-screen Scratch Whiteboard -->
     <div id="scratchBoardModal" class="scratch-board-modal hidden" aria-hidden="true">
-        <div class="bg-slate-900 text-white px-3 py-2.5 grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 flex-shrink-0">
-            <div class="font-black text-sm items-center gap-2 hidden sm:flex"><i class="fa-solid fa-chalkboard text-amber-400"></i> السبورة</div>
-            <div class="scratch-current-step">
-                <div id="scratchBoardCurrentStepTitle" class="text-[11px] font-black text-amber-300"></div>
-                <div id="scratchBoardCurrentStepMath" class="scratch-current-step-math"></div>
+        <div class="bg-slate-900 text-white px-3 py-2.5 flex items-center justify-between gap-3 flex-shrink-0">
+            <div class="font-black text-sm flex items-center gap-2"><i class="fa-solid fa-chalkboard text-amber-400"></i> السبورة</div>
+            <div class="flex items-center gap-2">
+                <button onclick="shareScratchBoard()" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center" aria-label="مشاركة السبورة" title="مشاركة">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
+                <button onclick="closeScratchBoard()" class="w-10 h-10 rounded-xl bg-rose-500 text-white hover:bg-rose-600 flex items-center justify-center shadow" aria-label="الخروج من السبورة" title="خروج">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
             </div>
-            <button onclick="closeScratchBoard()" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs font-black whitespace-nowrap">
-                <i class="fa-solid fa-arrow-right ml-1"></i> العودة للسؤال
-            </button>
         </div>
 
         <div class="scratch-board-toolbar scratch-board-tools-wrap" dir="rtl">
             <button id="scratchPenBtn" onclick="selectScratchPen()" class="scratch-tool-btn active"><i class="fa-solid fa-pen ml-1"></i> قلم</button>
             <button id="scratchEraserBtn" onclick="selectScratchEraser()" class="scratch-tool-btn"><i class="fa-solid fa-eraser ml-1"></i> ممحاة</button>
 
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 relative">
                 <button id="scratchPaletteBtn" onclick="toggleScratchColors()" class="scratch-tool-btn" aria-label="اختيار اللون">
                     <i class="fa-solid fa-palette ml-1"></i> اللون
                     <span id="scratchColorPreview" class="inline-block w-4 h-4 rounded-full bg-slate-900 align-middle mr-1 border border-white shadow"></span>
@@ -579,6 +595,10 @@
         </div>
 
         <div class="scratch-board-surface">
+            <div class="scratch-step-card">
+                <div id="scratchBoardCurrentStepTitle" class="text-xs font-black text-amber-600 mb-1"></div>
+                <div id="scratchBoardCurrentStepMath" class="scratch-current-step-math"></div>
+            </div>
             <canvas id="scratchBoardCanvas"></canvas>
         </div>
     </div>
@@ -1396,7 +1416,22 @@
         }
 
         function toggleScratchColors() {
-            document.getElementById('scratchColorStrip').classList.toggle('hidden');
+            const strip = document.getElementById('scratchColorStrip');
+            const button = document.getElementById('scratchPaletteBtn');
+            const willOpen = strip.classList.contains('hidden');
+
+            strip.classList.toggle('hidden');
+            if (!willOpen) return;
+
+            requestAnimationFrame(() => {
+                const buttonRect = button.getBoundingClientRect();
+                const stripRect = strip.getBoundingClientRect();
+                const left = Math.max(8, Math.min(window.innerWidth - stripRect.width - 8,
+                    buttonRect.left + (buttonRect.width - stripRect.width) / 2));
+                const top = Math.max(8, buttonRect.top - stripRect.height - 10);
+                strip.style.left = left + 'px';
+                strip.style.top = top + 'px';
+            });
         }
 
         function selectScratchPen() {
@@ -1425,6 +1460,32 @@
             scratchBoard.strokes = scratchBoard.redo.pop();
             redrawScratchBoard();
             saveScratchBoard();
+        }
+
+        function shareScratchBoard() {
+            if (!scratchBoard.canvas) return;
+            scratchBoard.canvas.toBlob(async blob => {
+                if (!blob) return;
+                const file = new File([blob], 'سبورتي.png', { type: 'image/png' });
+                try {
+                    if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [file] }))) {
+                        await navigator.share({
+                            title: 'السبورة التفاعلية',
+                            text: document.getElementById('scratchBoardCurrentStepTitle')?.textContent || '',
+                            files: [file]
+                        });
+                    } else {
+                        const link = document.createElement('a');
+                        link.href = URL.createObjectURL(blob);
+                        link.download = 'سبورتي.png';
+                        link.click();
+                        setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+                        showToast('تم حفظ صورة السبورة');
+                    }
+                } catch (error) {
+                    if (error?.name !== 'AbortError') showToast('تعذر مشاركة السبورة');
+                }
+            }, 'image/png');
         }
 
         function clearScratchBoard() {
