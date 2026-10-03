@@ -81,8 +81,11 @@ function DrawingCanvas({ tool, color, size, strokes, setStrokes, history, setHis
     const canvas = canvasRef.current
     if (!canvas) return
     const rect = canvas.getBoundingClientRect(); const ratio = Math.min(devicePixelRatio || 1, 2)
+    if (rect.width < 1 || rect.height < 1) return
     if (canvas.width !== Math.round(rect.width * ratio) || canvas.height !== Math.round(rect.height * ratio)) { canvas.width = Math.round(rect.width * ratio); canvas.height = Math.round(rect.height * ratio) }
-    const ctx = canvas.getContext('2d'); ctx.setTransform(ratio,0,0,ratio,0,0); ctx.clearRect(0,0,rect.width,rect.height); ctx.lineCap='round'; ctx.lineJoin='round'
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
+    ctx.setTransform(ratio,0,0,ratio,0,0); ctx.clearRect(0,0,rect.width,rect.height); ctx.lineCap='round'; ctx.lineJoin='round'
     strokes.forEach(s => { if (!s.points.length) return; ctx.save(); ctx.globalCompositeOperation=s.erase?'destination-out':'source-over'; ctx.strokeStyle=s.color; ctx.lineWidth=s.width; ctx.beginPath(); const pts=s.points.map(p=>({x:p.x*rect.width,y:p.y*rect.height})); ctx.moveTo(pts[0].x,pts[0].y); pts.slice(1).forEach(p=>ctx.lineTo(p.x,p.y)); ctx.stroke(); ctx.restore() })
   }
   useEffect(redraw, [strokes])
@@ -102,7 +105,7 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
   const [tool,setTool]=useState('pen'), [color,setColor]=useState('#111827'), [size,setSize]=useState(4)
   const [strokes,setStrokes]=useState([]), [history,setHistory]=useState([]), [future,setFuture]=useState([])
   const [bubble,setBubble]=useState(null), [calculator,setCalculator]=useState(false)
-  const canvasRef=useRef(null), scrollRef=useRef(null)
+  const canvasRef=useRef(null), scrollRef=useRef(null), pinnedRef=useRef(null)
   useEffect(()=>setBubble(null),[activeId,index])
   useEffect(()=>{
     const el=scrollRef.current
@@ -110,18 +113,25 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
     const previousOverscroll=document.documentElement.style.overscrollBehaviorY
     document.body.style.overflow='hidden'
     document.documentElement.style.overscrollBehaviorY='none'
-    let startY=0
-    const start=e=>{startY=e.touches?.[0]?.clientY||0}
+    let startY=0, startScroll=0, clamping=false
+    const maxScroll=()=>Math.max(0,pinnedRef.current?.offsetTop||0)
+    const clamp=()=>{
+      if(!el||clamping)return
+      const max=maxScroll()
+      if(el.scrollTop>max){clamping=true;el.scrollTop=max;requestAnimationFrame(()=>{clamping=false})}
+    }
+    const start=e=>{startY=e.touches?.[0]?.clientY||0;startScroll=el?.scrollTop||0}
     const move=e=>{
       if(!el||!e.touches?.length)return
       const delta=e.touches[0].clientY-startY
       const atTop=el.scrollTop<=0
-      const atBottom=Math.ceil(el.scrollTop+el.clientHeight)>=el.scrollHeight
-      if((atTop&&delta>0)||(atBottom&&delta<0))e.preventDefault()
+      const pastLastStep=startScroll-delta>maxScroll()
+      if((atTop&&delta>0)||pastLastStep)e.preventDefault()
     }
     el?.addEventListener('touchstart',start,{passive:true})
     el?.addEventListener('touchmove',move,{passive:false})
-    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
+    el?.addEventListener('scroll',clamp,{passive:true})
+    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);el?.removeEventListener('scroll',clamp);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
   },[])
   const undo=()=>{if(!history.length)return;setFuture(v=>[...v,strokes]);setStrokes(history.at(-1));setHistory(v=>v.slice(0,-1))}
   const redo=()=>{if(!future.length)return;setHistory(v=>[...v,strokes]);setStrokes(future.at(-1));setFuture(v=>v.slice(0,-1))}
@@ -131,7 +141,7 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
     <div className="board-head"><div className="board-actions"><button className="exit" onClick={exit}><X/></button><button onClick={()=>navigator.share?.({title:'السبورة'})}><Share2/></button><button className="calc" onClick={()=>setCalculator(true)}><Calculator/></button><button className="named-tool hint-tool" onClick={hint}><Lightbulb/><span>تلميح</span></button><button className="named-tool help-tool" onClick={help}><HelpCircle/><span>مساعدة</span></button></div><span className="pill apple"><Apple size={17} fill="currentColor"/>{apples}</span></div>
     <div className="board-workspace"><div className="board-scroll" ref={scrollRef}>
       <div className="board-flow"><div className="board-question"><MathText>{problem.title}</MathText></div>{problem.steps.slice(0,index).map((s,i)=><div className="board-step" key={s.step_id}><small>{s.title}</small><Equation step={s} answers={answers} solved/></div>)}</div>
-      <div className="pinned-step"><div className="board-step current"><small>{current.title}</small><Equation step={current} answers={answers} activeId={activeId} onBlank={onBlank}/></div></div>
+      <div className="pinned-step" ref={pinnedRef}><div className="board-step current"><small>{current.title}</small><Equation step={current} answers={answers} activeId={activeId} onBlank={onBlank}/></div></div>
       {bubble && <div className="teacher-bubble"><div className="teacher">🧑‍🏫</div><div><button onClick={()=>setBubble(null)}><X size={16}/></button><MathText>{bubble}</MathText></div></div>}
       <div className="drawing-area"><DrawingCanvas {...{tool,color,size,strokes,setStrokes,history,setHistory,future,setFuture,canvasRef}}/></div>
       <button className="explain" onClick={()=>setBubble(current.explanation)}><span>شرح</span><b>🧑‍🏫</b></button>
