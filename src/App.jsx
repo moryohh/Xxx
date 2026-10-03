@@ -102,14 +102,33 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
   const [tool,setTool]=useState('pen'), [color,setColor]=useState('#111827'), [size,setSize]=useState(4)
   const [strokes,setStrokes]=useState([]), [history,setHistory]=useState([]), [future,setFuture]=useState([])
   const [bubble,setBubble]=useState(null), [calculator,setCalculator]=useState(false)
-  const canvasRef=useRef(null)
+  const canvasRef=useRef(null), scrollRef=useRef(null)
+  useEffect(()=>{
+    const el=scrollRef.current
+    const previousOverflow=document.body.style.overflow
+    const previousOverscroll=document.documentElement.style.overscrollBehaviorY
+    document.body.style.overflow='hidden'
+    document.documentElement.style.overscrollBehaviorY='none'
+    let startY=0
+    const start=e=>{startY=e.touches?.[0]?.clientY||0}
+    const move=e=>{
+      if(!el||!e.touches?.length)return
+      const delta=e.touches[0].clientY-startY
+      const atTop=el.scrollTop<=0
+      const atBottom=Math.ceil(el.scrollTop+el.clientHeight)>=el.scrollHeight
+      if((atTop&&delta>0)||(atBottom&&delta<0))e.preventDefault()
+    }
+    el?.addEventListener('touchstart',start,{passive:true})
+    el?.addEventListener('touchmove',move,{passive:false})
+    return()=>{el?.removeEventListener('touchstart',start);el?.removeEventListener('touchmove',move);document.body.style.overflow=previousOverflow;document.documentElement.style.overscrollBehaviorY=previousOverscroll}
+  },[])
   const undo=()=>{if(!history.length)return;setFuture(v=>[...v,strokes]);setStrokes(history.at(-1));setHistory(v=>v.slice(0,-1))}
   const redo=()=>{if(!future.length)return;setHistory(v=>[...v,strokes]);setStrokes(future.at(-1));setFuture(v=>v.slice(0,-1))}
   const hint=()=>{if(!activeInput)return;if(apples<2)return alert('لا تملك تفاحًا كافيًا');setApples(v=>v-2);setBubble(activeInput.hint)}
   const exit=()=>{if(confirm('هل تريد الخروج؟ ستبدأ هذه المحاولة من الصفر.'))onExit()}
   return <div className="board-modal">
-    <div className="board-head"><div className="board-actions"><button className="exit" onClick={exit}><X/></button><button onClick={()=>navigator.share?.({title:'السبورة'})}><Share2/></button><button className="calc" onClick={()=>setCalculator(true)}><Calculator/></button><button onClick={hint}><Lightbulb/></button><button onClick={help}><Sparkles/></button></div><span className="pill apple"><Apple size={17} fill="currentColor"/>{apples}</span></div>
-    <div className="board-scroll">
+    <div className="board-head"><div className="board-actions"><button className="exit" onClick={exit}><X/></button><button onClick={()=>navigator.share?.({title:'السبورة'})}><Share2/></button><button className="calc" onClick={()=>setCalculator(true)}><Calculator/></button><button className="named-tool hint-tool" onClick={hint}><Lightbulb/><span>تلميح</span></button><button className="named-tool help-tool" onClick={help}><Sparkles/><span>مساعدة</span></button></div><span className="pill apple"><Apple size={17} fill="currentColor"/>{apples}</span></div>
+    <div className="board-scroll" ref={scrollRef}>
       <div className="board-flow"><div className="board-question"><MathText>{problem.title}</MathText></div>{problem.steps.slice(0,index).map((s,i)=><div className="board-step" key={s.step_id}><small>{s.title}</small><Equation step={s} answers={answers} solved/></div>)}</div>
       <div className="pinned-step"><div className="board-step current"><small>{current.title}</small><Equation step={current} answers={answers} activeId={activeId} onBlank={onBlank}/></div></div>
       {bubble && <div className="teacher-bubble"><div className="teacher">🧑‍🏫</div><div><button onClick={()=>setBubble(null)}><X size={16}/></button><MathText>{bubble}</MathText></div></div>}
@@ -123,7 +142,13 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
 
 function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts, setHearts }) {
   const [questions,setQuestions]=useState([]), [questionIndex,setQuestionIndex]=useState(0), [answers,setAnswers]=useState({}), [activeId,setActiveId]=useState(null), [choice,setChoice]=useState(null), [board,setBoard]=useState(false)
-  useEffect(()=>{fetch(`./data/${file}`).then(r=>r.json()).then(data=>{setQuestions(data);setQuestionIndex(0);setAnswers({})})},[file])
+  useEffect(()=>{fetch(`./data/${file}`).then(r=>r.json()).then(data=>{setQuestions(data);setQuestionIndex(0)})},[file])
+  useEffect(()=>{
+    try{setAnswers(JSON.parse(localStorage.getItem(`xxx_react_progress_${file}_${questionIndex}`)||'{}'))}catch{setAnswers({})}
+  },[file,questionIndex])
+  useEffect(()=>{
+    if(questions.length)localStorage.setItem(`xxx_react_progress_${file}_${questionIndex}`,JSON.stringify(answers))
+  },[answers,file,questionIndex,questions.length])
   const problem=questions[questionIndex]
   const currentStep=useMemo(()=>problem?.steps.find(s=>s.inputs.some(i=>!answers[i.id])) || problem?.steps.at(-1),[problem,answers])
   useEffect(()=>{setActiveId(currentStep?.inputs.find(i=>!answers[i.id])?.id||null)},[currentStep,answers])
