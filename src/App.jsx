@@ -11,6 +11,7 @@ const mathHtml = value => {
   const clean = String(value)
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
     .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
+    .replace(/\*\*(.+?)\*\*/gs, '<strong>$1</strong>')
     .replace(/\s{2,}/g, ' ')
   return clean.replace(/\\\((.*?)\\\)|\\\[(.*?)\\\]|\$\$(.*?)\$\$|\$(.*?)\$/gs, (_, a, b, c, d) => {
     const formula = a ?? b ?? c ?? d
@@ -23,24 +24,28 @@ function MathText({ children, className = '' }) {
 }
 
 function Equation({ step, answers, activeId, onBlank, solved = false }) {
-  const parts = String(step?.html_structure || '').split(/(\{q[^{}]+\})/g)
-  let raised = false
-  return <div className="equation" dir="ltr">{parts.map((rawPart, index) => {
-    let part = rawPart.replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '').replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
-    const match = part.match(/^\{(q[^{}]+)\}$/)
-    if (!match) {
-      raised = /\^\s*$/.test(part)
-      if (raised) part = part.replace(/\^\s*$/, '')
-      try { return <span key={index} dangerouslySetInnerHTML={{ __html: katex.renderToString(part, { throwOnError: false, strict: false }) }} /> }
-      catch { return <span key={index}>{part}</span> }
-    }
-    const id = match[1]
+  const idMap = {}
+  const source = String(step?.html_structure || '')
+    .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
+    .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
+  const formula = source.replace(/\{(q[^{}]+)\}/g, (_, id) => {
     const value = answers[id]
-    const exponent = raised
-    raised = false
-    if (value || solved) return <span key={id} className={`answer-inline ${exponent?'answer-power':''}`} dangerouslySetInnerHTML={{__html:katex.renderToString(String(value || '?'),{throwOnError:false,strict:false})}}/>
-    return <button key={id} className={`answer-box ${exponent?'answer-power-box':''} ${activeId === id ? 'active' : ''}`} onClick={() => onBlank(id)}>{activeId === id ? <Pen size={18}/> : '?'}</button>
-  })}</div>
+    if (value || solved) return `{${String(value || '?')}}`
+    const safe = id.replace(/[^a-zA-Z0-9_-]/g, '_')
+    idMap[safe] = id
+    const stateClass = activeId === id ? 'answer-placeholder active' : 'answer-placeholder'
+    return `\\htmlId{ans-${safe}}{\\htmlClass{${stateClass}}{?}}`
+  })
+  let html
+  try { html = katex.renderToString(formula, { throwOnError: false, strict: false, trust: true }) }
+  catch { html = formula }
+  const chooseBlank = event => {
+    const target = event.target.closest?.('[id^="ans-"]')
+    if (!target || !onBlank) return
+    const id = idMap[target.id.slice(4)]
+    if (id) onBlank(id)
+  }
+  return <div className="equation" dir="ltr" onClick={chooseBlank} dangerouslySetInnerHTML={{__html:html}}/>
 }
 
 function Header({ apples, hearts, onHome }) {
@@ -104,7 +109,7 @@ function DrawingCanvas({ tool, color, size, strokes, setStrokes, history, setHis
   }
   useEffect(redraw, [strokes])
   const point = event => { const r=canvasRef.current?.getBoundingClientRect(); if(!r||r.width<1||r.height<1)return null; return {x:Math.max(0,Math.min(1,(event.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(event.clientY-r.top)/r.height))} }
-  const down = event => { try{event.preventDefault();const first=point(event);if(!first)return;setHistory(h=>[...h,strokes]);setFuture([]);const s={erase:tool==='eraser',color,width:tool==='eraser'?size*3:size,points:[first]};drawing.current=s;setStrokes(v=>[...v,s])}catch(error){drawing.current=null;console.warn('Pointer start ignored safely:',error)} }
+  const down = event => { try{event.preventDefault();const first=point(event);if(!first)return;setHistory(h=>[...h,strokes]);setFuture([]);const s={erase:tool==='eraser',color,width:tool==='eraser'?54:size,points:[first]};drawing.current=s;setStrokes(v=>[...v,s])}catch(error){drawing.current=null;console.warn('Pointer start ignored safely:',error)} }
   const move = event => { if(!drawing.current)return;try{event.preventDefault();const next=point(event);if(!next)return;const updatedStroke={...drawing.current,points:[...drawing.current.points,next]};drawing.current=updatedStroke;setStrokes(v=>[...v.slice(0,-1),updatedStroke])}catch(error){drawing.current=null;console.warn('Pointer move ignored safely:',error)} }
   const up = () => { drawing.current=null }
   return <canvas ref={canvasRef} className="draw-canvas" onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} onPointerLeave={up}/>
