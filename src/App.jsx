@@ -58,29 +58,21 @@ function spaceFractionBlanks(root, selector) {
     const line = frac.querySelector('.frac-line')
     const vlist = line?.parentElement?.parentElement
     if (!line || !vlist?.classList.contains('vlist')) return
-    const blanks = [...frac.querySelectorAll(selector)]
-    if (blanks.length < 2) return
-    const wrapperFor = blank => {
-      let node = blank
-      while (node.parentElement && node.parentElement !== vlist) node = node.parentElement
-      return node.parentElement === vlist ? node : null
-    }
-    const wrappers = blanks.map(wrapperFor)
-    wrappers.forEach(wrapper => { if (wrapper) wrapper.style.transform = '' })
-    const byWrapper = new Map()
-    blanks.forEach((blank, index) => {
-      const wrapper = wrappers[index]
-      if (wrapper && !byWrapper.has(wrapper)) byWrapper.set(wrapper, { blank, wrapper, rect: blank.getBoundingClientRect() })
-    })
-    const ordered = [...byWrapper.values()].sort((a, b) => a.rect.top - b.rect.top)
-    // Only adjust a genuine numerator/denominator pair. Multiple blanks in
-    // the same half of a fraction must remain on their original baseline.
-    if (ordered.length !== 2) return
+    const branches = [...vlist.children]
+    const lineIndex = branches.indexOf(line.parentElement)
+    const lowerWrapper = branches[lineIndex - 1]
+    const upperWrapper = branches[lineIndex + 1]
+    if (!upperWrapper || !lowerWrapper) return
+    upperWrapper.style.transform = ''
+    lowerWrapper.style.transform = ''
+    const upperContent = upperWrapper.lastElementChild
+    const lowerContent = lowerWrapper.lastElementChild
+    if (!upperContent || !lowerContent) return
     const lineRect = line.getBoundingClientRect()
-    const upper = ordered[0]
-    const lower = ordered[ordered.length - 1]
-    upper.wrapper.style.transform = `translateY(${lineRect.top - 3 - upper.rect.bottom}px)`
-    lower.wrapper.style.transform = `translateY(${lineRect.bottom + 3 - lower.rect.top}px)`
+    const upperRect = upperContent.getBoundingClientRect()
+    const lowerRect = lowerContent.getBoundingClientRect()
+    upperWrapper.style.transform = `translateY(${lineRect.top - 3 - upperRect.bottom}px)`
+    lowerWrapper.style.transform = `translateY(${lineRect.bottom + 3 - lowerRect.top}px)`
   })
 }
 
