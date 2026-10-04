@@ -51,7 +51,35 @@ function ChoiceText({ children }) {
   return <span className="choice-text choice-math" dir="ltr" dangerouslySetInnerHTML={{__html:renderFormula(value)}} />
 }
 
+function spaceFractionBlanks(root, selector) {
+  if (!root) return
+  const fractions = new Set([...root.querySelectorAll(selector)].map(blank => blank.closest('.mfrac')).filter(Boolean))
+  fractions.forEach(frac => {
+    const line = frac.querySelector('.frac-line')
+    const vlist = line?.parentElement?.parentElement
+    if (!line || !vlist?.classList.contains('vlist')) return
+    const blanks = [...frac.querySelectorAll(selector)]
+    if (blanks.length < 2) return
+    const wrapperFor = blank => {
+      let node = blank
+      while (node.parentElement && node.parentElement !== vlist) node = node.parentElement
+      return node.parentElement === vlist ? node : null
+    }
+    const wrappers = blanks.map(wrapperFor)
+    wrappers.forEach(wrapper => { if (wrapper) wrapper.style.transform = '' })
+    const ordered = blanks.map((blank, index) => ({ blank, wrapper: wrappers[index], rect: blank.getBoundingClientRect() }))
+      .filter(item => item.wrapper).sort((a, b) => a.rect.top - b.rect.top)
+    if (ordered.length < 2) return
+    const lineRect = line.getBoundingClientRect()
+    const upper = ordered[0]
+    const lower = ordered[ordered.length - 1]
+    upper.wrapper.style.transform = `translateY(${lineRect.top - 3 - upper.rect.bottom}px)`
+    lower.wrapper.style.transform = `translateY(${lineRect.bottom + 3 - lower.rect.top}px)`
+  })
+}
+
 function Equation({ step, answers, activeId, onBlank, solved = false }) {
+  const equationRef = useRef(null)
   const idMap = {}
   const source = normalizeLatex(step?.html_structure)
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
@@ -66,13 +94,14 @@ function Equation({ step, answers, activeId, onBlank, solved = false }) {
   })
   let html
   html = renderFormula(formula)
+  useEffect(() => { spaceFractionBlanks(equationRef.current, '.answer-placeholder') }, [html])
   const chooseBlank = event => {
     const target = event.target.closest?.('[id^="ans-"]')
     if (!target || !onBlank) return
     const id = idMap[target.id.slice(4)]
     if (id) onBlank(id)
   }
-  return <div className="equation" dir="ltr" onClick={chooseBlank} dangerouslySetInnerHTML={{__html:html}}/>
+  return <div className="equation" ref={equationRef} dir="ltr" onClick={chooseBlank} dangerouslySetInnerHTML={{__html:html}}/>
 }
 
 function PracticeEquation({ step }) {
@@ -95,6 +124,7 @@ function PracticeEquation({ step }) {
           const host = hostRef.current
           const content = contentRef.current
           if (!host || !content) return
+          spaceFractionBlanks(content, '.practice-blank')
           const available = Math.max(1, host.clientWidth - 12)
           const lines = [...content.querySelectorAll('.practice-equation-line')]
           const natural = Math.max(1, ...lines.map(line => line.scrollWidth))
