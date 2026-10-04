@@ -6,16 +6,37 @@ import {
   Trash2, Undo2, X
 } from 'lucide-react'
 
+// Some converted lesson files contain JSON-escaped LaTeX twice (for example
+// `\\\\frac` after parsing becomes `\\\\frac` instead of `\\frac`).  Collapse
+// repeated slashes only when they introduce a LaTeX command or delimiter;
+// ordinary text and legitimate matrix row separators are left alone.
+const normalizeLatex = value => String(value || '')
+  .replace(/\u000c(?=rac\b)/g, '\\f')
+  .replace(/&(?:amp;)?lt;/gi, '<')
+  .replace(/&(?:amp;)?gt;/gi, '>')
+  .replace(/&(?:amp;)?#x27;|&#39;|&apos;/gi, "'")
+  .replace(/&amp;/gi, '&')
+  .replace(/\\{2,}(?=[()[\]A-Za-z])/g, '\\')
+  .replace(/\\+\s+(?=[()[\]])/g, '\\')
+
+const renderFormula = value => {
+  const formula = normalizeLatex(value).replace(/\\[()[\]]/g, '').trim()
+  try {
+    return katex.renderToString(formula, { throwOnError: false, strict: false, trust: true })
+  } catch {
+    return formula
+  }
+}
+
 const mathHtml = value => {
   if (!value) return ''
-  const clean = String(value)
+  const clean = normalizeLatex(value)
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
     .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
     .replace(/\*\*(.+?)\*\*/gs, '<strong>$1</strong>')
     .replace(/\s{2,}/g, ' ')
   return clean.replace(/\\\((.*?)\\\)|\\\[(.*?)\\\]|\$\$(.*?)\$\$|\$(.*?)\$/gs, (_, a, b, c, d) => {
-    const formula = a ?? b ?? c ?? d
-    try { return katex.renderToString(formula, { throwOnError: false, strict: false }) } catch { return formula }
+    return renderFormula(a ?? b ?? c ?? d)
   })
 }
 
@@ -25,7 +46,7 @@ function MathText({ children, className = '' }) {
 
 function Equation({ step, answers, activeId, onBlank, solved = false }) {
   const idMap = {}
-  const source = String(step?.html_structure || '')
+  const source = normalizeLatex(step?.html_structure)
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
     .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
   const formula = source.replace(/\{(q[^{}]+)\}/g, (_, id) => {
@@ -37,8 +58,7 @@ function Equation({ step, answers, activeId, onBlank, solved = false }) {
     return `\\htmlId{ans-${safe}}{\\htmlClass{${stateClass}}{?}}`
   })
   let html
-  try { html = katex.renderToString(formula, { throwOnError: false, strict: false, trust: true }) }
-  catch { html = formula }
+  html = renderFormula(formula)
   const chooseBlank = event => {
     const target = event.target.closest?.('[id^="ans-"]')
     if (!target || !onBlank) return
