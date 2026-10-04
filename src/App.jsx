@@ -68,6 +68,14 @@ function Equation({ step, answers, activeId, onBlank, solved = false }) {
   return <div className="equation" dir="ltr" onClick={chooseBlank} dangerouslySetInnerHTML={{__html:html}}/>
 }
 
+function PracticeEquation({ step }) {
+  const source = normalizeLatex(step?.html_structure)
+    .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
+    .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
+  const formula = source.replace(/\{q[^{}]+\}/g, '\\htmlClass{practice-blank}{\\phantom{00}}')
+  return <div className="practice-equation" dir="ltr" dangerouslySetInnerHTML={{__html:renderFormula(formula)}} />
+}
+
 function Header({ apples, hearts, onHome }) {
   return <header className="game-header">
     <div className="score"><span className="pill heart"><Heart size={17} fill="currentColor"/>{hearts}</span><span className="pill apple"><Apple size={17} fill="currentColor"/>{apples}</span></div>
@@ -189,7 +197,7 @@ function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, he
   </div>
 }
 
-function InlineBoard({ anchorRef, onHint, onHelp }) {
+function InlineBoard({ anchorRef, onHint, onHelp, step }) {
   const [tool,setTool]=useState('pen'), [color,setColor]=useState('#111827'), [size,setSize]=useState(4)
   const [strokes,setStrokes]=useState([]), [history,setHistory]=useState([]), [future,setFuture]=useState([])
   const [hintText,setHintText]=useState(null), [calculator,setCalculator]=useState(false)
@@ -201,7 +209,7 @@ function InlineBoard({ anchorRef, onHint, onHelp }) {
       <button className="hint" onClick={hint}><Lightbulb/><span>تلميح</span></button>
       <button className="calc" onClick={()=>setCalculator(true)}><Calculator/><span>حاسبة</span></button>
     </div>
-    <div className="inline-canvas"><DrawingCanvas {...{tool,color,size,strokes,setStrokes,history,setHistory,future,setFuture,canvasRef}}/>{hintText&&<div className="inline-hint-bubble"><button onClick={()=>setHintText(null)}><X size={15}/></button><MathText>{hintText}</MathText></div>}</div>
+    <div className="inline-canvas"><DrawingCanvas {...{tool,color,size,strokes,setStrokes,history,setHistory,future,setFuture,canvasRef}}/><PracticeEquation step={step}/>{hintText&&<div className="inline-hint-bubble"><button onClick={()=>setHintText(null)}><X size={15}/></button><MathText>{hintText}</MathText></div>}</div>
     <div className="inline-tools">
       <button className={tool==='pen'?'selected':''} onClick={()=>setTool('pen')}><Pen/>قلم</button>
       <button className={tool==='eraser'?'selected':''} onClick={()=>setTool('eraser')}><Eraser/>ممحاة</button>
@@ -237,7 +245,7 @@ function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts
   const chapterFiles=chapter.topics.flatMap(t=>t.files)
   return <main className="solver"><aside><button onClick={onBack}><ArrowRight/>المواضيع</button></aside>
     <div className="solution-shell"><div className="solver-nav"><label>الصفحة<select value={file} onChange={e=>onFileChange(e.target.value)}>{chapterFiles.map(f=><option key={f} value={f}>صفحة {f.match(/^page_(\d+)/)?.[1]}</option>)}</select></label>{questions.length>1&&<label>السؤال<select value={questionIndex} onChange={e=>{setQuestionIndex(+e.target.value);setAnswers({})}}>{questions.map((q,i)=><option key={i} value={i}>السؤال {q.number||i+1} من {questions.length}</option>)}</select></label>}<div className="progress"><span style={{width:`${progress}%`}}/><b>{progress}%</b></div></div>
-    <section className="solution"><div className="problem-card"><h1><MathText>{problem.title}</MathText></h1>{problem.image_url&&<img src={problem.image_url}/>}</div>{problem.steps.slice(0,activeIndex+1).map((step,i)=>{const done=step.inputs.every(x=>answers[x.id]);return <div className={`solution-step ${done?'done':''}`} key={step.step_id}><h3>{step.title}</h3>{!done&&<p><MathText>{step.explanation}</MathText></p>}<Equation step={step} answers={answers} activeId={activeId} onBlank={open} solved={done}/>{i===activeIndex&&<InlineBoard key={step.step_id} anchorRef={boardRef} onHint={boardHint} onHelp={help}/>}</div>})}</section>
+    <section className="solution"><div className="problem-card"><h1><MathText>{problem.title}</MathText></h1>{problem.image_url&&<img src={problem.image_url}/>}</div>{problem.steps.slice(0,activeIndex+1).map((step,i)=>{const done=step.inputs.every(x=>answers[x.id]);return <div className={`solution-step ${done?'done':''}`} key={step.step_id}><h3>{step.title}</h3>{!done&&<p><MathText>{step.explanation}</MathText></p>}<Equation step={step} answers={answers} activeId={activeId} onBlank={open} solved={done}/>{i===activeIndex&&<InlineBoard key={step.step_id} step={step} anchorRef={boardRef} onHint={boardHint} onHelp={help}/>}</div>})}</section>
     {progress===100&&<div className="complete"><strong>أحسنت! أتممت الحل بنجاح 🎉</strong></div>}</div>
     <Choices input={choice} onChoose={choose} onClose={()=>setChoice(null)}/>
   </main>
