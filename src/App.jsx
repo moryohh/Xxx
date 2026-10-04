@@ -136,6 +136,10 @@ function PracticeEquation({ step }) {
     window.addEventListener('resize', fit)
     return () => { cancelAnimationFrame(firstFrame); cancelAnimationFrame(secondFrame); window.removeEventListener('resize', fit) }
   }, [formulaKey])
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => spaceFractionBlanks(contentRef.current, '.practice-blank'))
+    return () => cancelAnimationFrame(frame)
+  }, [fontSize, formulaKey])
   return <div className="practice-equation" ref={hostRef} dir="ltr"><div className="practice-equation-content" ref={contentRef} style={{fontSize}}>{formulas.map((formula, index) => <div className="practice-equation-line" key={`${index}-${formula}`} dangerouslySetInnerHTML={{__html:renderFormula(formula)}} />)}</div></div>
 }
 
