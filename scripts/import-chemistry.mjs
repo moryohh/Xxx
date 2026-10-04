@@ -41,6 +41,9 @@ for (const filePath of walk(sourceRoot)) {
           hint: step.hint || 'راجع شرح الخطوة ثم حاول مرة أخرى.'
         }))
         let structure = String(step.equation_template || '')
+          .replaceAll('NH_3_{', 'NH_{3')
+          .replaceAll('\\text{NH_3}', '\\mathrm{NH_3}')
+          .replaceAll('\\text{H_2O}', '\\mathrm{H_2O}')
         inputs.forEach((input, inputIndex) => { structure = structure.replaceAll(`{input_${inputIndex + 1}}`, `{${input.id}}`) })
         return { step_id: `chem_${questionKey}_step_${stepIndex + 1}`, title: `الخطوة ${arabicNumber(step.step_number || stepIndex + 1)}`, explanation: step.step_explanation || '', think: step.hint || '', html_structure: structure, inputs }
       })

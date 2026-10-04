@@ -163,7 +163,7 @@ function Chapters({ curriculum, subject, onOpen }) {
     <div className="chapter-grid">{curriculum.map(ch => {
       const count = ch.topics.reduce((n, topic) => n + topic.files.length, 0)
       return <button className="chapter-card" key={ch.id} onClick={() => onOpen(ch)}>
-        <div className="card-top"><span className="chapter-symbol"><BookOpen/></span><span className="count">{count} صفحة</span></div>
+        <div className="card-top"><span className="chapter-symbol"><BookOpen/></span><span className="count">{count} {subject.id === 'chemistry' ? 'درس' : 'صفحة'}</span></div>
         <h2>{ch.title}</h2>{ch.topics.map(t => <p key={t.name}>‹ {t.name}</p>)}<strong>تصفح تمارين الفصل ←</strong>
       </button>
     })}</div>
