@@ -78,23 +78,25 @@ function CalculatorModal({ onClose }) {
 function DrawingCanvas({ tool, color, size, strokes, setStrokes, history, setHistory, future, setFuture, canvasRef }) {
   const drawing = useRef(null)
   const redraw = () => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const rect = canvas.getBoundingClientRect(); const ratio = Math.min(devicePixelRatio || 1, 2)
-    if (rect.width < 1 || rect.height < 1) return
-    if (canvas.width !== Math.round(rect.width * ratio) || canvas.height !== Math.round(rect.height * ratio)) { canvas.width = Math.round(rect.width * ratio); canvas.height = Math.round(rect.height * ratio) }
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
-    ctx.setTransform(ratio,0,0,ratio,0,0); ctx.clearRect(0,0,rect.width,rect.height); ctx.lineCap='round'; ctx.lineJoin='round'
-    strokes.forEach(s => { if (!s.points.length) return; ctx.save(); ctx.globalCompositeOperation=s.erase?'destination-out':'source-over'; ctx.strokeStyle=s.color; ctx.lineWidth=s.width; ctx.beginPath(); const pts=s.points.map(p=>({x:p.x*rect.width,y:p.y*rect.height})); ctx.moveTo(pts[0].x,pts[0].y); pts.slice(1).forEach(p=>ctx.lineTo(p.x,p.y)); ctx.stroke(); ctx.restore() })
+    try {
+      const canvas = canvasRef.current
+      if (!canvas) return
+      const rect = canvas.getBoundingClientRect(); const ratio = Math.min(window.devicePixelRatio || 1, 2)
+      if (rect.width < 1 || rect.height < 1) return
+      const width=Math.round(rect.width*ratio), height=Math.round(rect.height*ratio)
+      if(canvas.width!==width||canvas.height!==height){canvas.width=width;canvas.height=height}
+      const ctx = canvas.getContext('2d')
+      if (!ctx) return
+      ctx.setTransform(ratio,0,0,ratio,0,0); ctx.clearRect(0,0,rect.width,rect.height); ctx.lineCap='round'; ctx.lineJoin='round'
+      strokes.forEach(s => { if (!s?.points?.length) return; ctx.save(); ctx.globalCompositeOperation=s.erase?'destination-out':'source-over'; ctx.strokeStyle=s.color||'#111827'; ctx.lineWidth=Number(s.width)||4; ctx.beginPath(); const pts=s.points.map(p=>({x:p.x*rect.width,y:p.y*rect.height})); ctx.moveTo(pts[0].x,pts[0].y); if(pts.length===1)ctx.lineTo(pts[0].x+.01,pts[0].y+.01);else pts.slice(1).forEach(p=>ctx.lineTo(p.x,p.y)); ctx.stroke(); ctx.restore() })
+    } catch (error) { console.warn('Drawing skipped safely:',error) }
   }
   useEffect(redraw, [strokes])
-  useEffect(() => { const fn=()=>redraw(); addEventListener('resize',fn); return()=>removeEventListener('resize',fn) }, [strokes])
-  const point = event => { const r=canvasRef.current.getBoundingClientRect(); return {x:(event.clientX-r.left)/r.width,y:(event.clientY-r.top)/r.height} }
-  const down = event => { event.preventDefault(); canvasRef.current.setPointerCapture(event.pointerId); setHistory(h=>[...h,strokes]); setFuture([]); const s={erase:tool==='eraser',color,width:tool==='eraser'?size*2:size,points:[point(event)]}; drawing.current=s; setStrokes(v=>[...v,s]) }
-  const move = event => { if(!drawing.current)return; event.preventDefault(); drawing.current.points.push(point(event)); setStrokes(v=>[...v.slice(0,-1),{...drawing.current,points:[...drawing.current.points]}]) }
+  const point = event => { const r=canvasRef.current?.getBoundingClientRect(); if(!r||r.width<1||r.height<1)return null; return {x:Math.max(0,Math.min(1,(event.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(event.clientY-r.top)/r.height))} }
+  const down = event => { try{event.preventDefault();const first=point(event);if(!first)return;setHistory(h=>[...h,strokes]);setFuture([]);const s={erase:tool==='eraser',color,width:tool==='eraser'?size*2:size,points:[first]};drawing.current=s;setStrokes(v=>[...v,s])}catch(error){drawing.current=null;console.warn('Pointer start ignored safely:',error)} }
+  const move = event => { if(!drawing.current)return;try{event.preventDefault();const next=point(event);if(!next)return;drawing.current={...drawing.current,points:[...drawing.current.points,next]};setStrokes(v=>[...v.slice(0,-1),drawing.current])}catch(error){drawing.current=null;console.warn('Pointer move ignored safely:',error)} }
   const up = () => { drawing.current=null }
-  return <canvas ref={canvasRef} className="draw-canvas" onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}/>
+  return <canvas ref={canvasRef} className="draw-canvas" onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} onPointerLeave={up}/>
 }
 
 function Whiteboard({ problem, answers, activeId, onBlank, apples, setApples, help, onExit }) {
