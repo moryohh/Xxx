@@ -150,12 +150,13 @@ function Header({ apples, hearts, onHome }) {
 
 const subjects = [
   { id: 'math', title: 'الرياضيات', subtitle: 'رياضيات السادس العلمي', icon: '√x', curriculum: './curriculum.json' },
-  { id: 'chemistry', title: 'الكيمياء', subtitle: 'كيمياء السادس العلمي', icon: '⚗', curriculum: './chemistry-curriculum.json' }
+  { id: 'chemistry', title: 'الكيمياء', subtitle: 'كيمياء السادس العلمي', icon: '⚗', curriculum: './chemistry-curriculum.json' },
+  { id: 'physics', title: 'الفيزياء', subtitle: 'فيزياء السادس العلمي', icon: '⚛', curriculum: './physics-curriculum.json' }
 ]
 const fileInfo = item => typeof item === 'string' ? { file: item, label: `صفحة ${item.match(/^page_(\d+)/)?.[1] || '?'}` } : item
 
 function SubjectPicker({ onChoose }) {
-  return <main className="page subjects-page"><section className="hero"><h1>اختر المادة</h1><p>اختر المادة التي تريد التدريب عليها خطوة بخطوة</p></section><div className="subject-grid">{subjects.map(subject => <button className={`subject-card ${subject.id}`} key={subject.id} onClick={() => onChoose(subject)}><span className="subject-icon">{subject.icon}</span><div><h2>{subject.title}</h2><p>{subject.subtitle}</p></div><ChevronLeft/></button>)}</div><p className="future-subject">الفيزياء ستُضاف مستقبلًا</p></main>
+  return <main className="page subjects-page"><section className="hero"><h1>اختر المادة</h1><p>اختر المادة التي تريد التدريب عليها خطوة بخطوة</p></section><div className="subject-grid">{subjects.map(subject => <button className={`subject-card ${subject.id}`} key={subject.id} onClick={() => onChoose(subject)}><span className="subject-icon">{subject.icon}</span><div><h2>{subject.title}</h2><p>{subject.subtitle}</p></div><ChevronLeft/></button>)}</div></main>
 }
 
 function Chapters({ curriculum, subject, onOpen }) {
@@ -163,7 +164,7 @@ function Chapters({ curriculum, subject, onOpen }) {
     <div className="chapter-grid">{curriculum.map(ch => {
       const count = ch.topics.reduce((n, topic) => n + topic.files.length, 0)
       return <button className="chapter-card" key={ch.id} onClick={() => onOpen(ch)}>
-        <div className="card-top"><span className="chapter-symbol"><BookOpen/></span><span className="count">{count} {subject.id === 'chemistry' ? 'درس' : 'صفحة'}</span></div>
+        <div className="card-top"><span className="chapter-symbol"><BookOpen/></span><span className="count">{count} {subject.id === 'math' ? 'صفحة' : 'درس'}</span></div>
         <h2>{ch.title}</h2>{ch.topics.map(t => <p key={t.name}>‹ {t.name}</p>)}<strong>تصفح تمارين الفصل ←</strong>
       </button>
     })}</div>
