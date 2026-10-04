@@ -91,7 +91,7 @@ function Equation({ step, answers, activeId, onBlank, solved = false }) {
     return `{\\htmlId{ans-${safe}}{\\htmlClass{${stateClass}}{?}}}`
   })
   let html
-  html = renderFormula(formula)
+  html = renderFormula(solved ? `\\displaystyle ${formula}` : formula)
   useEffect(() => { spaceFractionBlanks(equationRef.current, '.answer-placeholder') }, [html])
   const chooseBlank = event => {
     const target = event.target.closest?.('[id^="ans-"]')
