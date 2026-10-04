@@ -22,9 +22,9 @@ const normalizeLatex = value => String(value || '')
 const renderFormula = value => {
   const formula = normalizeLatex(value).replace(/\\[()[\]]/g, '').trim()
   try {
-    return katex.renderToString(formula, { throwOnError: false, strict: false, trust: true })
+    return katex.renderToString(formula, { throwOnError: true, strict: false, trust: true })
   } catch {
-    return formula
+    return '<span class="math-fallback" dir="rtl">تعذّر عرض الصيغة الرياضية</span>'
   }
 }
 
@@ -62,7 +62,7 @@ function Equation({ step, answers, activeId, onBlank, solved = false }) {
     const safe = id.replace(/[^a-zA-Z0-9_-]/g, '_')
     idMap[safe] = id
     const stateClass = activeId === id ? 'answer-placeholder active' : 'answer-placeholder'
-    return `\\htmlId{ans-${safe}}{\\htmlClass{${stateClass}}{?}}`
+    return `{\\htmlId{ans-${safe}}{\\htmlClass{${stateClass}}{?}}}`
   })
   let html
   html = renderFormula(formula)
@@ -79,7 +79,7 @@ function PracticeEquation({ step }) {
   const source = normalizeLatex(step?.html_structure)
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
     .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
-  const formula = source.replace(/\{q[^{}]+\}/g, '\\htmlClass{practice-blank}{\\phantom{00}}')
+  const formula = source.replace(/\{q[^{}]+\}/g, '{\\htmlClass{practice-blank}{\\phantom{00}}}')
   return <div className="practice-equation" dir="ltr" dangerouslySetInnerHTML={{__html:renderFormula(formula)}} />
 }
 

@@ -48,6 +48,10 @@ for (const name of fs.readdirSync(root).filter(name => name.endsWith('.json')).s
     for (const [stepIndex, step] of question.steps.entries()) {
       const formula = normalize(step.html_structure).replace(/\{q[^{}]+\}/g, '1')
       render(formula, `${name} q${questionIndex + 1} steps[${stepIndex}].html_structure`)
+      const interactiveFormula = normalize(step.html_structure).replace(/\{(q[^{}]+)\}/g, (_, id) => `{\\htmlId{ans-${id}}{\\htmlClass{answer-placeholder active}{?}}}`)
+      render(interactiveFormula, `${name} q${questionIndex + 1} steps[${stepIndex}].interactive_structure`)
+      const practiceFormula = normalize(step.html_structure).replace(/\{q[^{}]+\}/g, '{\\htmlClass{practice-blank}{\\phantom{00}}}')
+      render(practiceFormula, `${name} q${questionIndex + 1} steps[${stepIndex}].practice_structure`)
       for (const [inputIndex, input] of step.inputs.entries()) {
         for (const [optionIndex, option] of input.allowed_keys.entries()) {
           if (!/[\u0600-\u06ff]/.test(String(option))) {
