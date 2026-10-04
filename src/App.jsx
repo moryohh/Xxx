@@ -94,7 +94,7 @@ function DrawingCanvas({ tool, color, size, strokes, setStrokes, history, setHis
   useEffect(redraw, [strokes])
   const point = event => { const r=canvasRef.current?.getBoundingClientRect(); if(!r||r.width<1||r.height<1)return null; return {x:Math.max(0,Math.min(1,(event.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(event.clientY-r.top)/r.height))} }
   const down = event => { try{event.preventDefault();const first=point(event);if(!first)return;setHistory(h=>[...h,strokes]);setFuture([]);const s={erase:tool==='eraser',color,width:tool==='eraser'?size*2:size,points:[first]};drawing.current=s;setStrokes(v=>[...v,s])}catch(error){drawing.current=null;console.warn('Pointer start ignored safely:',error)} }
-  const move = event => { if(!drawing.current)return;try{event.preventDefault();const next=point(event);if(!next)return;drawing.current={...drawing.current,points:[...drawing.current.points,next]};setStrokes(v=>[...v.slice(0,-1),drawing.current])}catch(error){drawing.current=null;console.warn('Pointer move ignored safely:',error)} }
+  const move = event => { if(!drawing.current)return;try{event.preventDefault();const next=point(event);if(!next)return;const updatedStroke={...drawing.current,points:[...drawing.current.points,next]};drawing.current=updatedStroke;setStrokes(v=>[...v.slice(0,-1),updatedStroke])}catch(error){drawing.current=null;console.warn('Pointer move ignored safely:',error)} }
   const up = () => { drawing.current=null }
   return <canvas ref={canvasRef} className="draw-canvas" onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up} onPointerLeave={up}/>
 }
