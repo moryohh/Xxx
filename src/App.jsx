@@ -148,8 +148,18 @@ function Header({ apples, hearts, onHome }) {
   </header>
 }
 
-function Chapters({ curriculum, onOpen }) {
-  return <main className="page"><section className="hero"><div className="hero-icon">√x</div><h1>رياضيات السادس العلمي</h1><p>المنهاج العراقي التفاعلي — حل خطوة بخطوة</p></section>
+const subjects = [
+  { id: 'math', title: 'الرياضيات', subtitle: 'رياضيات السادس العلمي', icon: '√x', curriculum: './curriculum.json' },
+  { id: 'chemistry', title: 'الكيمياء', subtitle: 'كيمياء السادس العلمي', icon: '⚗', curriculum: './chemistry-curriculum.json' }
+]
+const fileInfo = item => typeof item === 'string' ? { file: item, label: `صفحة ${item.match(/^page_(\d+)/)?.[1] || '?'}` } : item
+
+function SubjectPicker({ onChoose }) {
+  return <main className="page subjects-page"><section className="hero"><h1>اختر المادة</h1><p>اختر المادة التي تريد التدريب عليها خطوة بخطوة</p></section><div className="subject-grid">{subjects.map(subject => <button className={`subject-card ${subject.id}`} key={subject.id} onClick={() => onChoose(subject)}><span className="subject-icon">{subject.icon}</span><div><h2>{subject.title}</h2><p>{subject.subtitle}</p></div><ChevronLeft/></button>)}</div><p className="future-subject">الفيزياء ستُضاف مستقبلًا</p></main>
+}
+
+function Chapters({ curriculum, subject, onOpen }) {
+  return <main className="page"><section className="hero"><div className={`hero-icon ${subject.id}`}>{subject.icon}</div><h1>{subject.subtitle}</h1><p>المنهاج العراقي التفاعلي — حل خطوة بخطوة</p></section>
     <div className="chapter-grid">{curriculum.map(ch => {
       const count = ch.topics.reduce((n, topic) => n + topic.files.length, 0)
       return <button className="chapter-card" key={ch.id} onClick={() => onOpen(ch)}>
@@ -162,9 +172,9 @@ function Chapters({ curriculum, onOpen }) {
 
 function Topics({ chapter, onBack, onOpen }) {
   return <main className="page"><div className="title-row"><button className="icon-button" onClick={onBack}><ArrowRight/></button><h1>{chapter.title}</h1></div>
-    <div className="topic-grid">{chapter.topics.map(topic => <section className="topic-card" key={topic.name}><h2><BookOpen size={18}/>{topic.name}</h2><div className="file-grid">{topic.files.map(file => {
-      const page = file.match(/^page_(\d+)/)?.[1] || '?'
-      return <button key={file} onClick={() => onOpen(file)}><span>صفحة {page}</span><ChevronLeft size={16}/></button>
+    <div className="topic-grid">{chapter.topics.map(topic => <section className="topic-card" key={topic.name}><h2><BookOpen size={18}/>{topic.name}</h2><div className="file-grid">{topic.files.map(item => {
+      const { file, label } = fileInfo(item)
+      return <button key={file} onClick={() => onOpen(file)}><span>{label}</span><ChevronLeft size={16}/></button>
     })}</div></section>)}</div>
   </main>
 }
@@ -307,9 +317,9 @@ function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts
   const boardHint=()=>{const input=inputById(activeId);if(!input)return null;if(apples<2){alert('لا تملك تفاحًا كافيًا');return null}setApples(v=>v-2);return input.hint}
   const activeIndex=problem.steps.indexOf(currentStep)
   const allInputs=problem.steps.flatMap(s=>s.inputs), solvedCount=allInputs.filter(i=>answers[i.id]).length, progress=allInputs.length?Math.round(solvedCount/allInputs.length*100):0
-  const chapterFiles=chapter.topics.flatMap(t=>t.files)
+  const chapterFiles=chapter.topics.flatMap(t=>t.files).map(fileInfo)
   return <main className="solver"><aside><button onClick={onBack}><ArrowRight/>المواضيع</button></aside>
-    <div className="solution-shell"><div className="solver-nav"><label>الصفحة<select value={file} onChange={e=>onFileChange(e.target.value)}>{chapterFiles.map(f=><option key={f} value={f}>صفحة {f.match(/^page_(\d+)/)?.[1]}</option>)}</select></label>{questions.length>1&&<label>السؤال<select value={questionIndex} onChange={e=>{setQuestionIndex(+e.target.value);setAnswers({})}}>{questions.map((q,i)=><option key={i} value={i}>السؤال {q.number||i+1} من {questions.length}</option>)}</select></label>}<div className="progress"><span style={{width:`${progress}%`}}/><b>{progress}%</b></div></div>
+    <div className="solution-shell"><div className="solver-nav"><label>المحتوى<select value={file} onChange={e=>onFileChange(e.target.value)}>{chapterFiles.map(item=><option key={item.file} value={item.file}>{item.label}</option>)}</select></label>{questions.length>1&&<label>السؤال<select value={questionIndex} onChange={e=>{setQuestionIndex(+e.target.value);setAnswers({})}}>{questions.map((q,i)=><option key={i} value={i}>السؤال {q.number||i+1} من {questions.length}</option>)}</select></label>}<div className="progress"><span style={{width:`${progress}%`}}/><b>{progress}%</b></div></div>
     <section className="solution"><div className="problem-card"><h1><MathText>{problem.title}</MathText></h1>{problem.image_url&&<img src={problem.image_url}/>}</div>{problem.steps.slice(0,activeIndex+1).map((step,i)=>{const done=step.inputs.every(x=>answers[x.id]);return <div className={`solution-step ${done?'done':''}`} key={step.step_id}><h3>{step.title}</h3>{!done&&<p><MathText>{step.explanation}</MathText></p>}<Equation step={step} answers={answers} activeId={activeId} onBlank={open} solved={done}/>{i===activeIndex&&<InlineBoard key={step.step_id} step={step} anchorRef={boardRef} onHint={boardHint} onHelp={help}/>}</div>})}</section>
     {progress===100&&<div className="complete"><strong>أحسنت! أتممت الحل بنجاح 🎉</strong></div>}</div>
     <Choices input={choice} onChoose={choose} onClose={()=>setChoice(null)}/>
@@ -317,8 +327,8 @@ function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts
 }
 
 export default function App(){
-  const [curriculum,setCurriculum]=useState([]),[view,setView]=useState('chapters'),[chapter,setChapter]=useState(null),[file,setFile]=useState(null),[apples,setApples]=useState(100),[hearts,setHearts]=useState(10)
-  useEffect(()=>{fetch('./curriculum.json').then(r=>r.json()).then(setCurriculum)},[])
-  const home=()=>{setView('chapters');setChapter(null);setFile(null)}
-  return <><Header {...{apples,hearts}} onHome={home}/>{view==='chapters'&&<Chapters curriculum={curriculum} onOpen={ch=>{setChapter(ch);setView('topics')}}/>}{view==='topics'&&<Topics chapter={chapter} onBack={home} onOpen={f=>{setFile(f);setView('solver')}}/>}{view==='solver'&&<Solver {...{chapter,file,apples,setApples,hearts,setHearts}} onFileChange={setFile} onBack={()=>setView('topics')}/>}</>
+  const [curriculum,setCurriculum]=useState([]),[subject,setSubject]=useState(null),[view,setView]=useState('subjects'),[chapter,setChapter]=useState(null),[file,setFile]=useState(null),[apples,setApples]=useState(100),[hearts,setHearts]=useState(10)
+  const chooseSubject=selected=>{setSubject(selected);setCurriculum([]);fetch(selected.curriculum).then(r=>r.json()).then(data=>{setCurriculum(data);setView('chapters')})}
+  const home=()=>{setView('subjects');setSubject(null);setChapter(null);setFile(null)}
+  return <><Header {...{apples,hearts}} onHome={home}/>{view==='subjects'&&<SubjectPicker onChoose={chooseSubject}/>} {view==='chapters'&&subject&&<Chapters curriculum={curriculum} subject={subject} onOpen={ch=>{setChapter(ch);setView('topics')}}/>}{view==='topics'&&<Topics chapter={chapter} onBack={()=>setView('chapters')} onOpen={f=>{setFile(f);setView('solver')}}/>}{view==='solver'&&<Solver {...{chapter,file,apples,setApples,hearts,setHearts}} onFileChange={setFile} onBack={()=>setView('topics')}/>}</>
 }

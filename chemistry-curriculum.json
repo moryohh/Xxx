@@ -1,0 +1,1004 @@
+[
+  {
+    "id": "chem-ch1",
+    "title": "الفصل ١",
+    "topics": [
+      {
+        "name": "الدرس ٣",
+        "files": [
+          {
+            "file": "chem_ch1_lesson3.json",
+            "label": "الدرس ٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٥",
+        "files": [
+          {
+            "file": "chem_ch1_lesson5.json",
+            "label": "الدرس ٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٦",
+        "files": [
+          {
+            "file": "chem_ch1_lesson6.json",
+            "label": "الدرس ٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١١",
+        "files": [
+          {
+            "file": "chem_ch1_lesson11.json",
+            "label": "الدرس ١١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٢",
+        "files": [
+          {
+            "file": "chem_ch1_lesson12.json",
+            "label": "الدرس ١٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٣",
+        "files": [
+          {
+            "file": "chem_ch1_lesson13.json",
+            "label": "الدرس ١٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٤",
+        "files": [
+          {
+            "file": "chem_ch1_lesson14.json",
+            "label": "الدرس ١٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٥",
+        "files": [
+          {
+            "file": "chem_ch1_lesson15.json",
+            "label": "الدرس ١٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٨",
+        "files": [
+          {
+            "file": "chem_ch1_lesson18.json",
+            "label": "الدرس ١٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٢",
+        "files": [
+          {
+            "file": "chem_ch1_lesson22.json",
+            "label": "الدرس ٢٢"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch2",
+    "title": "الفصل ٢",
+    "topics": [
+      {
+        "name": "الدرس ٢",
+        "files": [
+          {
+            "file": "chem_ch2_lesson2.json",
+            "label": "الدرس ٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤",
+        "files": [
+          {
+            "file": "chem_ch2_lesson4.json",
+            "label": "الدرس ٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٦",
+        "files": [
+          {
+            "file": "chem_ch2_lesson6.json",
+            "label": "الدرس ٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٧",
+        "files": [
+          {
+            "file": "chem_ch2_lesson7.json",
+            "label": "الدرس ٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٨",
+        "files": [
+          {
+            "file": "chem_ch2_lesson8.json",
+            "label": "الدرس ٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٩",
+        "files": [
+          {
+            "file": "chem_ch2_lesson9.json",
+            "label": "الدرس ٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٠",
+        "files": [
+          {
+            "file": "chem_ch2_lesson10.json",
+            "label": "الدرس ١٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١١",
+        "files": [
+          {
+            "file": "chem_ch2_lesson11.json",
+            "label": "الدرس ١١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٣",
+        "files": [
+          {
+            "file": "chem_ch2_lesson13.json",
+            "label": "الدرس ١٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٤",
+        "files": [
+          {
+            "file": "chem_ch2_lesson14.json",
+            "label": "الدرس ١٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٥",
+        "files": [
+          {
+            "file": "chem_ch2_lesson15.json",
+            "label": "الدرس ١٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٦",
+        "files": [
+          {
+            "file": "chem_ch2_lesson16.json",
+            "label": "الدرس ١٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٧",
+        "files": [
+          {
+            "file": "chem_ch2_lesson17.json",
+            "label": "الدرس ١٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٨",
+        "files": [
+          {
+            "file": "chem_ch2_lesson18.json",
+            "label": "الدرس ١٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢١",
+        "files": [
+          {
+            "file": "chem_ch2_lesson21.json",
+            "label": "الدرس ٢١"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch3",
+    "title": "الفصل ٣",
+    "topics": [
+      {
+        "name": "الدرس ٢",
+        "files": [
+          {
+            "file": "chem_ch3_lesson2.json",
+            "label": "الدرس ٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣",
+        "files": [
+          {
+            "file": "chem_ch3_lesson3.json",
+            "label": "الدرس ٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٨",
+        "files": [
+          {
+            "file": "chem_ch3_lesson8.json",
+            "label": "الدرس ٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٠",
+        "files": [
+          {
+            "file": "chem_ch3_lesson10.json",
+            "label": "الدرس ١٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٢",
+        "files": [
+          {
+            "file": "chem_ch3_lesson12.json",
+            "label": "الدرس ١٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٤",
+        "files": [
+          {
+            "file": "chem_ch3_lesson14.json",
+            "label": "الدرس ١٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٧",
+        "files": [
+          {
+            "file": "chem_ch3_lesson17.json",
+            "label": "الدرس ١٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٩",
+        "files": [
+          {
+            "file": "chem_ch3_lesson19.json",
+            "label": "الدرس ١٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٠",
+        "files": [
+          {
+            "file": "chem_ch3_lesson20.json",
+            "label": "الدرس ٢٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢١",
+        "files": [
+          {
+            "file": "chem_ch3_lesson21.json",
+            "label": "الدرس ٢١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٢",
+        "files": [
+          {
+            "file": "chem_ch3_lesson22.json",
+            "label": "الدرس ٢٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٦",
+        "files": [
+          {
+            "file": "chem_ch3_lesson26.json",
+            "label": "الدرس ٢٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٧",
+        "files": [
+          {
+            "file": "chem_ch3_lesson27.json",
+            "label": "الدرس ٢٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٩",
+        "files": [
+          {
+            "file": "chem_ch3_lesson29.json",
+            "label": "الدرس ٢٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣٠",
+        "files": [
+          {
+            "file": "chem_ch3_lesson30.json",
+            "label": "الدرس ٣٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣١",
+        "files": [
+          {
+            "file": "chem_ch3_lesson31.json",
+            "label": "الدرس ٣١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣٨",
+        "files": [
+          {
+            "file": "chem_ch3_lesson38.json",
+            "label": "الدرس ٣٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣٩",
+        "files": [
+          {
+            "file": "chem_ch3_lesson39.json",
+            "label": "الدرس ٣٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤٠",
+        "files": [
+          {
+            "file": "chem_ch3_lesson40.json",
+            "label": "الدرس ٤٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤١",
+        "files": [
+          {
+            "file": "chem_ch3_lesson41.json",
+            "label": "الدرس ٤١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤٢",
+        "files": [
+          {
+            "file": "chem_ch3_lesson42.json",
+            "label": "الدرس ٤٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤٣",
+        "files": [
+          {
+            "file": "chem_ch3_lesson43.json",
+            "label": "الدرس ٤٣"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch4",
+    "title": "الفصل ٤",
+    "topics": [
+      {
+        "name": "الدرس ١",
+        "files": [
+          {
+            "file": "chem_ch4_lesson1.json",
+            "label": "الدرس ١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢",
+        "files": [
+          {
+            "file": "chem_ch4_lesson2.json",
+            "label": "الدرس ٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣",
+        "files": [
+          {
+            "file": "chem_ch4_lesson3.json",
+            "label": "الدرس ٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤",
+        "files": [
+          {
+            "file": "chem_ch4_lesson4.json",
+            "label": "الدرس ٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٥",
+        "files": [
+          {
+            "file": "chem_ch4_lesson5.json",
+            "label": "الدرس ٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٦",
+        "files": [
+          {
+            "file": "chem_ch4_lesson6.json",
+            "label": "الدرس ٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٨",
+        "files": [
+          {
+            "file": "chem_ch4_lesson8.json",
+            "label": "الدرس ٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٩",
+        "files": [
+          {
+            "file": "chem_ch4_lesson9.json",
+            "label": "الدرس ٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٠",
+        "files": [
+          {
+            "file": "chem_ch4_lesson10.json",
+            "label": "الدرس ١٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١١",
+        "files": [
+          {
+            "file": "chem_ch4_lesson11.json",
+            "label": "الدرس ١١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٢",
+        "files": [
+          {
+            "file": "chem_ch4_lesson12.json",
+            "label": "الدرس ١٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٣",
+        "files": [
+          {
+            "file": "chem_ch4_lesson13.json",
+            "label": "الدرس ١٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٤",
+        "files": [
+          {
+            "file": "chem_ch4_lesson14.json",
+            "label": "الدرس ١٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٥",
+        "files": [
+          {
+            "file": "chem_ch4_lesson15.json",
+            "label": "الدرس ١٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٦",
+        "files": [
+          {
+            "file": "chem_ch4_lesson16.json",
+            "label": "الدرس ١٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٨",
+        "files": [
+          {
+            "file": "chem_ch4_lesson18.json",
+            "label": "الدرس ١٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٩",
+        "files": [
+          {
+            "file": "chem_ch4_lesson19.json",
+            "label": "الدرس ١٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٠",
+        "files": [
+          {
+            "file": "chem_ch4_lesson20.json",
+            "label": "الدرس ٢٠"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch5",
+    "title": "الفصل ٥",
+    "topics": [
+      {
+        "name": "الدرس ٣",
+        "files": [
+          {
+            "file": "chem_ch5_lesson3.json",
+            "label": "الدرس ٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤",
+        "files": [
+          {
+            "file": "chem_ch5_lesson4.json",
+            "label": "الدرس ٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٥",
+        "files": [
+          {
+            "file": "chem_ch5_lesson5.json",
+            "label": "الدرس ٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٦",
+        "files": [
+          {
+            "file": "chem_ch5_lesson6.json",
+            "label": "الدرس ٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٧",
+        "files": [
+          {
+            "file": "chem_ch5_lesson7.json",
+            "label": "الدرس ٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٨",
+        "files": [
+          {
+            "file": "chem_ch5_lesson8.json",
+            "label": "الدرس ٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٠",
+        "files": [
+          {
+            "file": "chem_ch5_lesson10.json",
+            "label": "الدرس ١٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٢",
+        "files": [
+          {
+            "file": "chem_ch5_lesson12.json",
+            "label": "الدرس ١٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٣",
+        "files": [
+          {
+            "file": "chem_ch5_lesson13.json",
+            "label": "الدرس ١٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٤",
+        "files": [
+          {
+            "file": "chem_ch5_lesson14.json",
+            "label": "الدرس ١٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٥",
+        "files": [
+          {
+            "file": "chem_ch5_lesson15.json",
+            "label": "الدرس ١٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٦",
+        "files": [
+          {
+            "file": "chem_ch5_lesson16.json",
+            "label": "الدرس ١٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٧",
+        "files": [
+          {
+            "file": "chem_ch5_lesson17.json",
+            "label": "الدرس ١٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٠",
+        "files": [
+          {
+            "file": "chem_ch5_lesson20.json",
+            "label": "الدرس ٢٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢١",
+        "files": [
+          {
+            "file": "chem_ch5_lesson21.json",
+            "label": "الدرس ٢١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٢",
+        "files": [
+          {
+            "file": "chem_ch5_lesson22.json",
+            "label": "الدرس ٢٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٣",
+        "files": [
+          {
+            "file": "chem_ch5_lesson23.json",
+            "label": "الدرس ٢٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٤",
+        "files": [
+          {
+            "file": "chem_ch5_lesson24.json",
+            "label": "الدرس ٢٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢٥",
+        "files": [
+          {
+            "file": "chem_ch5_lesson25.json",
+            "label": "الدرس ٢٥"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch6",
+    "title": "الفصل ٦",
+    "topics": [
+      {
+        "name": "الدرس ٢",
+        "files": [
+          {
+            "file": "chem_ch6_lesson2.json",
+            "label": "الدرس ٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣",
+        "files": [
+          {
+            "file": "chem_ch6_lesson3.json",
+            "label": "الدرس ٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤",
+        "files": [
+          {
+            "file": "chem_ch6_lesson4.json",
+            "label": "الدرس ٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٧",
+        "files": [
+          {
+            "file": "chem_ch6_lesson7.json",
+            "label": "الدرس ٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٩",
+        "files": [
+          {
+            "file": "chem_ch6_lesson9.json",
+            "label": "الدرس ٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٠",
+        "files": [
+          {
+            "file": "chem_ch6_lesson10.json",
+            "label": "الدرس ١٠"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٢",
+        "files": [
+          {
+            "file": "chem_ch6_lesson12.json",
+            "label": "الدرس ١٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٣",
+        "files": [
+          {
+            "file": "chem_ch6_lesson13.json",
+            "label": "الدرس ١٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٤",
+        "files": [
+          {
+            "file": "chem_ch6_lesson14.json",
+            "label": "الدرس ١٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٥",
+        "files": [
+          {
+            "file": "chem_ch6_lesson15.json",
+            "label": "الدرس ١٥"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch7",
+    "title": "الفصل ٧",
+    "topics": [
+      {
+        "name": "الدرس ١",
+        "files": [
+          {
+            "file": "chem_ch7_lesson1.json",
+            "label": "الدرس ١"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٢",
+        "files": [
+          {
+            "file": "chem_ch7_lesson2.json",
+            "label": "الدرس ٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٣",
+        "files": [
+          {
+            "file": "chem_ch7_lesson3.json",
+            "label": "الدرس ٣"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٤",
+        "files": [
+          {
+            "file": "chem_ch7_lesson4.json",
+            "label": "الدرس ٤"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٥",
+        "files": [
+          {
+            "file": "chem_ch7_lesson5.json",
+            "label": "الدرس ٥"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٦",
+        "files": [
+          {
+            "file": "chem_ch7_lesson6.json",
+            "label": "الدرس ٦"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٧",
+        "files": [
+          {
+            "file": "chem_ch7_lesson7.json",
+            "label": "الدرس ٧"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٨",
+        "files": [
+          {
+            "file": "chem_ch7_lesson8.json",
+            "label": "الدرس ٨"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٩",
+        "files": [
+          {
+            "file": "chem_ch7_lesson9.json",
+            "label": "الدرس ٩"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ١٠",
+        "files": [
+          {
+            "file": "chem_ch7_lesson10.json",
+            "label": "الدرس ١٠"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chem-ch8",
+    "title": "الفصل ٨",
+    "topics": [
+      {
+        "name": "الدرس ٢",
+        "files": [
+          {
+            "file": "chem_ch8_lesson2.json",
+            "label": "الدرس ٢"
+          }
+        ]
+      },
+      {
+        "name": "الدرس ٦",
+        "files": [
+          {
+            "file": "chem_ch8_lesson6.json",
+            "label": "الدرس ٦"
+          }
+        ]
+      }
+    ]
+  }
+]
