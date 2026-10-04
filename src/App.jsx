@@ -67,9 +67,15 @@ function spaceFractionBlanks(root, selector) {
     }
     const wrappers = blanks.map(wrapperFor)
     wrappers.forEach(wrapper => { if (wrapper) wrapper.style.transform = '' })
-    const ordered = blanks.map((blank, index) => ({ blank, wrapper: wrappers[index], rect: blank.getBoundingClientRect() }))
-      .filter(item => item.wrapper).sort((a, b) => a.rect.top - b.rect.top)
-    if (ordered.length < 2) return
+    const byWrapper = new Map()
+    blanks.forEach((blank, index) => {
+      const wrapper = wrappers[index]
+      if (wrapper && !byWrapper.has(wrapper)) byWrapper.set(wrapper, { blank, wrapper, rect: blank.getBoundingClientRect() })
+    })
+    const ordered = [...byWrapper.values()].sort((a, b) => a.rect.top - b.rect.top)
+    // Only adjust a genuine numerator/denominator pair. Multiple blanks in
+    // the same half of a fraction must remain on their original baseline.
+    if (ordered.length !== 2) return
     const lineRect = line.getBoundingClientRect()
     const upper = ordered[0]
     const lower = ordered[ordered.length - 1]
