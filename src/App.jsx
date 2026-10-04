@@ -44,6 +44,13 @@ function MathText({ children, className = '' }) {
   return <span className={className} dangerouslySetInnerHTML={{ __html: mathHtml(children) }} />
 }
 
+function ChoiceText({ children }) {
+  const value = normalizeLatex(children).trim()
+  const hasArabic = /[\u0600-\u06ff]/.test(value)
+  if (hasArabic) return <MathText className="choice-text">{value}</MathText>
+  return <span className="choice-text choice-math" dir="ltr" dangerouslySetInnerHTML={{__html:renderFormula(value)}} />
+}
+
 function Equation({ step, answers, activeId, onBlank, solved = false }) {
   const idMap = {}
   const source = normalizeLatex(step?.html_structure)
@@ -106,7 +113,7 @@ function Topics({ chapter, onBack, onOpen }) {
 
 function Choices({ input, onChoose, onClose }) {
   if (!input) return null
-  return <div className="modal-shade"><div className="choices-card"><button className="modal-x" onClick={onClose}><X/></button><h2>اختر الإجابة الصحيحة</h2><p>{input.label}</p><div className="choice-grid">{input.allowed_keys.map(value => <button key={value} onClick={() => onChoose(value)}>{value}</button>)}</div></div></div>
+  return <div className="modal-shade"><div className="choices-card"><button className="modal-x" onClick={onClose}><X/></button><h2>اختر الإجابة الصحيحة</h2><p><MathText>{input.label}</MathText></p><div className="choice-grid">{input.allowed_keys.map(value => <button key={value} onClick={() => onChoose(value)}><ChoiceText>{value}</ChoiceText></button>)}</div></div></div>
 }
 
 function CalculatorModal({ onClose }) {

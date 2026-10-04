@@ -48,6 +48,13 @@ for (const name of fs.readdirSync(root).filter(name => name.endsWith('.json')).s
     for (const [stepIndex, step] of question.steps.entries()) {
       const formula = normalize(step.html_structure).replace(/\{q[^{}]+\}/g, '1')
       render(formula, `${name} q${questionIndex + 1} steps[${stepIndex}].html_structure`)
+      for (const [inputIndex, input] of step.inputs.entries()) {
+        for (const [optionIndex, option] of input.allowed_keys.entries()) {
+          if (!/[\u0600-\u06ff]/.test(String(option))) {
+            render(option, `${name} q${questionIndex + 1} steps[${stepIndex}].inputs[${inputIndex}].allowed_keys[${optionIndex}]`)
+          }
+        }
+      }
     }
   }
 }
