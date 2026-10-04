@@ -79,7 +79,10 @@ function PracticeEquation({ step }) {
   const source = normalizeLatex(step?.html_structure)
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
     .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
-  const formula = source.replace(/\{q[^{}]+\}/g, '{\\htmlClass{practice-blank}{\\phantom{00}}}')
+  const formulas = source.split(/\s*[;؛]\s*/).filter(Boolean).map(part =>
+    part.replace(/\{q[^{}]+\}/g, '{\\htmlClass{practice-blank}{\\phantom{00}}}')
+  )
+  const formulaKey = formulas.join(';;')
   const hostRef = useRef(null)
   const contentRef = useRef(null)
   const [fontSize, setFontSize] = useState(32.5)
@@ -93,16 +96,17 @@ function PracticeEquation({ step }) {
           const content = contentRef.current
           if (!host || !content) return
           const available = Math.max(1, host.clientWidth - 12)
-          const natural = Math.max(1, content.scrollWidth)
-          setFontSize(Math.max(17, Math.min(32.5, 32.5 * available / natural)))
+          const lines = [...content.querySelectorAll('.practice-equation-line')]
+          const natural = Math.max(1, ...lines.map(line => line.scrollWidth))
+          setFontSize(Math.max(15, Math.min(32.5, 32.5 * available / natural)))
         })
       })
     }
     fit()
     window.addEventListener('resize', fit)
     return () => { cancelAnimationFrame(firstFrame); cancelAnimationFrame(secondFrame); window.removeEventListener('resize', fit) }
-  }, [formula])
-  return <div className="practice-equation" ref={hostRef} dir="ltr"><div className="practice-equation-content" ref={contentRef} style={{fontSize}} dangerouslySetInnerHTML={{__html:renderFormula(formula)}} /></div>
+  }, [formulaKey])
+  return <div className="practice-equation" ref={hostRef} dir="ltr"><div className="practice-equation-content" ref={contentRef} style={{fontSize}}>{formulas.map((formula, index) => <div className="practice-equation-line" key={`${index}-${formula}`} dangerouslySetInnerHTML={{__html:renderFormula(formula)}} />)}</div></div>
 }
 
 function Header({ apples, hearts, onHome }) {
