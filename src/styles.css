@@ -13,4 +13,5 @@ html,body{overscroll-behavior-y:none}
 .practice-equation .mfrac .practice-blank{min-width:1.16em;height:.65em;margin:0 .05em;border-width:1.5px;border-radius:.22em;vertical-align:baseline}
 .choice-text{display:inline-flex;align-items:center;justify-content:center;max-width:100%;overflow-wrap:anywhere}.choice-math{font-size:20px;direction:ltr}.choice-math .katex{font-size:1.18em}.choice-grid button{min-height:64px;overflow:hidden}
 .math-fallback{display:inline-block;padding:6px 10px;border-radius:8px;background:#fff7ed;color:#9a3412;font-family:Cairo,sans-serif;font-size:14px;font-weight:800}
+.problem-card h1 .katex,.board-question .katex{display:inline-block;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
 @media(max-width:430px){.inline-board-actions{gap:5px;padding-inline:6px}.inline-board-actions button{min-width:0;flex:1;padding-inline:7px;font-size:12px}.inline-board-actions svg{width:20px;height:20px}}
