@@ -80,7 +80,29 @@ function PracticeEquation({ step }) {
     .replace(/\[\s*cite\s*:\s*[^\]]+\]/gi, '')
     .replace(/\\cite(?:p|t)?\s*\{[^}]*\}/gi, '')
   const formula = source.replace(/\{q[^{}]+\}/g, '{\\htmlClass{practice-blank}{\\phantom{00}}}')
-  return <div className="practice-equation" dir="ltr" dangerouslySetInnerHTML={{__html:renderFormula(formula)}} />
+  const hostRef = useRef(null)
+  const contentRef = useRef(null)
+  const [fontSize, setFontSize] = useState(32.5)
+  useEffect(() => {
+    let firstFrame, secondFrame
+    const fit = () => {
+      setFontSize(32.5)
+      firstFrame = requestAnimationFrame(() => {
+        secondFrame = requestAnimationFrame(() => {
+          const host = hostRef.current
+          const content = contentRef.current
+          if (!host || !content) return
+          const available = Math.max(1, host.clientWidth - 12)
+          const natural = Math.max(1, content.scrollWidth)
+          setFontSize(Math.max(17, Math.min(32.5, 32.5 * available / natural)))
+        })
+      })
+    }
+    fit()
+    window.addEventListener('resize', fit)
+    return () => { cancelAnimationFrame(firstFrame); cancelAnimationFrame(secondFrame); window.removeEventListener('resize', fit) }
+  }, [formula])
+  return <div className="practice-equation" ref={hostRef} dir="ltr"><div className="practice-equation-content" ref={contentRef} style={{fontSize}} dangerouslySetInnerHTML={{__html:renderFormula(formula)}} /></div>
 }
 
 function Header({ apples, hearts, onHome }) {
