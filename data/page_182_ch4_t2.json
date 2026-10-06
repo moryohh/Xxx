@@ -1,0 +1,653 @@
+[
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\cot^3 5x\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_1_182_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنجزّئ الأس \\( 3 \\). الطريقة: اكتب \\( \\cot^3 5x = \\cot^2 5x \\cdot \\cot 5x \\). السبب: لأن \\( \\cot^2 \\) له متطابقة تحوّله إلى \\( \\csc^2 \\).",
+        "think": "الأس \\( 3 \\) ننقص منه \\( 1 \\).",
+        "html_structure": "\\cot^3 5x = \\cot^{{q_4_1_182_1_s1_i1}} 5x \\cdot \\cot 5x",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s1_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "hint": "الأس \\( 3 \\) ننقص منه \\( 1 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنحوّل \\( \\cot^2 5x \\). الطريقة: استعمل \\( \\cot^2 y = \\csc^2 y - 1 \\). السبب: لأن \\( \\cot\\cdot\\csc^2 \\) صيغة (قوس × مشتقة).",
+        "think": "الدالة المقابلة لـ \\( \\cot \\) في المتطابقة.",
+        "html_structure": "\\cot^2 5x = {q_4_1_182_1_s2_i1}^2 5x - 1",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s2_i1",
+            "correct_value": "csc",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "sin",
+              "sec",
+              "tan",
+              "csc"
+            ],
+            "hint": "الدالة المقابلة لـ \\( \\cot \\) في المتطابقة."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنوزّع \\( \\cot 5x \\). الطريقة: اضرب \\( \\cot 5x \\) في القوس. السبب: لنفصل الحدين.",
+        "think": "الحد الثاني هو \\( \\cot 5x \\) فقط.",
+        "html_structure": "\\int(\\cot 5x\\csc^2 5x - {q_4_1_182_1_s3_i1})\\,dx",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s3_i1",
+            "correct_value": "cot 5x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cot 5x",
+              "1",
+              "csc^2 5x",
+              "csc 5x"
+            ],
+            "hint": "الحد الثاني هو \\( \\cot 5x \\) فقط."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنوزّع التكامل على الحدّين. الطريقة: اكتب تكاملاً لكل حد. السبب: لكل حد طريقة.",
+        "think": "الحد المطروح \\( \\cot 5x \\).",
+        "html_structure": "\\int \\cot 5x\\csc^2 5x\\,dx - \\int {q_4_1_182_1_s4_i1}\\,dx",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s4_i1",
+            "correct_value": "cot 5x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "csc 5x",
+              "csc^2 5x",
+              "cot 5x",
+              "1"
+            ],
+            "hint": "الحد المطروح \\( \\cot 5x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنشتق \\( \\cot 5x \\) للحد الأول. الطريقة: مشتقة \\( \\cot \\) سالب \\( \\csc^2 \\) ونضرب في مشتقة الزاوية \\( 5 \\). السبب: قاعدة السلسلة.",
+        "think": "\\( -1\\times5 \\).",
+        "html_structure": "(\\cot 5x)' = {q_4_1_182_1_s5_i1}\\csc^2 5x",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s5_i1",
+            "correct_value": "-5",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "5",
+              "-1",
+              "-5",
+              "1/5"
+            ],
+            "hint": "\\( -1\\times5 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنوفّر المشتقة \\( -5\\csc^2 5x \\). الطريقة: اضرب داخلاً في \\( -5 \\) وخارجاً في \\( -\\frac15 \\). السبب: حتى لا تتغير القيمة.",
+        "think": "اكتب \\( 5 \\) في الفراغين.",
+        "html_structure": "-\\frac{1}{{q_4_1_182_1_s6_i1}}\\int \\cot 5x(-{q_4_1_182_1_s6_i2}\\csc^2 5x)\\,dx",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s6_i1",
+            "correct_value": "5",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "5",
+              "-5",
+              "1",
+              "10"
+            ],
+            "hint": "اكتب \\( 5 \\) في الفراغين."
+          },
+          {
+            "id": "q_4_1_182_1_s6_i2",
+            "correct_value": "5",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "5",
+              "1",
+              "10",
+              "-5"
+            ],
+            "hint": "اكتب \\( 5 \\) في الفراغين."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنكامل الحد الأول. الطريقة: ارفع \\( \\cot \\) من الأس \\( 1 \\) إلى \\( 2 \\) واقسم على \\( 2 \\). السبب: قاعدة القوة.",
+        "think": "أضف \\( 1 \\) للأس.",
+        "html_structure": "-\\frac15\\cdot\\frac{\\cot^{{q_4_1_182_1_s7_i1}}5x}{{q_4_1_182_1_s7_i2}}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s7_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "hint": "أضف \\( 1 \\) للأس."
+          },
+          {
+            "id": "q_4_1_182_1_s7_i2",
+            "correct_value": "2",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "hint": "أضف \\( 1 \\) للأس."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنضرب الثوابت. الطريقة: \\( \\frac15\\times\\frac12 \\). السبب: لنحصل على معامل واحد.",
+        "think": "\\( 5\\times2 \\).",
+        "html_structure": "-\\frac15\\cdot\\frac12 = -\\frac{1}{{q_4_1_182_1_s8_i1}}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s8_i1",
+            "correct_value": "10",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "7",
+              "5",
+              "10"
+            ],
+            "hint": "\\( 5\\times2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: سنجهّز الحد الثاني: نكتب \\( \\cot \\) كنسبة. الطريقة: \\( \\cot 5x = \\frac{\\cos 5x}{\\sin 5x} \\). السبب: لنستعمل قانون \\( \\ln \\).",
+        "think": "البسط جيب التمام.",
+        "html_structure": "\\cot 5x = \\frac{{q_4_1_182_1_s9_i1}}{\\sin 5x}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s9_i1",
+            "correct_value": "cos 5x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "tan 5x",
+              "sin 5x",
+              "csc 5x",
+              "cos 5x"
+            ],
+            "hint": "البسط جيب التمام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: سنشتق المقام \\( \\sin 5x \\). الطريقة: مشتقته \\( \\cos 5x \\) مضروبة في \\( 5 \\). السبب: لنوفّر المشتقة في البسط.",
+        "think": "مشتقة الزاوية \\( 5x \\).",
+        "html_structure": "(\\sin 5x)' = {q_4_1_182_1_s10_i1}\\cos 5x",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s10_i1",
+            "correct_value": "5",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-5",
+              "1",
+              "1/5",
+              "5"
+            ],
+            "hint": "مشتقة الزاوية \\( 5x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: سنكامل الحد الثاني بقانون \\( \\ln \\). الطريقة: اضرب داخلاً في \\( 5 \\) وخارجاً في \\( \\frac15 \\) ثم \\( \\int\\frac{u'}{u} = \\ln|u| \\). السبب: المشتقة صارت في البسط.",
+        "think": "المعامل \\( \\frac15 \\) واللوغاريتم للمقام.",
+        "html_structure": "\\int\\cot 5x\\,dx = \\frac{1}{{q_4_1_182_1_s11_i1}}\\ln|{q_4_1_182_1_s11_i2}|",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s11_i1",
+            "correct_value": "5",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-5",
+              "1",
+              "10",
+              "5"
+            ],
+            "hint": "المعامل \\( \\frac15 \\) واللوغاريتم للمقام."
+          },
+          {
+            "id": "q_4_1_182_1_s11_i2",
+            "correct_value": "sin 5x",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "tan 5x",
+              "cos 5x",
+              "sin 5x",
+              "5x"
+            ],
+            "hint": "المعامل \\( \\frac15 \\) واللوغاريتم للمقام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: سنجمع الحدّين مع إشارة الطرح. الطريقة: الحد الثاني كان مطروحاً. السبب: لهذا تبقى الإشارة سالبة.",
+        "think": "إشارة الطرح من الخطوة 4.",
+        "html_structure": "-\\frac{1}{10}\\cot^2 5x {q_4_1_182_1_s12_i1} \\frac15\\ln|\\sin 5x| + c",
+        "inputs": [
+          {
+            "id": "q_4_1_182_1_s12_i1",
+            "correct_value": "-",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "+",
+              "÷",
+              "-",
+              "×"
+            ],
+            "hint": "إشارة الطرح من الخطوة 4."
+          }
+        ]
+      }
+    ],
+    "model_solution": "cot^3 5x = cot 5x (csc^2 5x - 1)، فالناتج -1/10 cot^2 5x - 1/5 ln|sin 5x| + c",
+    "number": "14",
+    "page_number": 182,
+    "image_url": null
+  },
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\tan x\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_1_182_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنكتب \\( \\tan x \\) كنسبة. الطريقة: \\( \\tan x = \\frac{\\sin x}{\\cos x} \\). السبب: لأن تكامل الكسر له قانون \\( \\ln \\).",
+        "think": "المقام جيب التمام.",
+        "html_structure": "\\tan x = \\frac{\\sin x}{{q_4_1_182_2_s1_i1}}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s1_i1",
+            "correct_value": "cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cos x",
+              "cot x",
+              "sin x",
+              "sec x"
+            ],
+            "hint": "المقام جيب التمام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنحدد المقام \\( u \\). الطريقة: اجعل \\( u=\\cos x \\). السبب: لنشتقه.",
+        "think": "المقام.",
+        "html_structure": "u = {q_4_1_182_2_s2_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s2_i1",
+            "correct_value": "cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "sin x",
+              "sec x",
+              "cos x",
+              "tan x"
+            ],
+            "hint": "المقام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق \\( u \\). الطريقة: مشتقة \\( \\cos x \\) هي \\( -\\sin x \\). السبب: لنقارنها بالبسط.",
+        "think": "سالب جيب الزاوية.",
+        "html_structure": "(\\cos x)' = {q_4_1_182_2_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s3_i1",
+            "correct_value": "-sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "-sin x"
+            ],
+            "hint": "سالب جيب الزاوية."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنوفّر الإشارة السالبة. الطريقة: البسط \\( \\sin x \\) ونريد \\( -\\sin x \\)، فنضرب داخلاً وخارجاً في \\( -1 \\). السبب: لتصبح المشتقة موجودة.",
+        "think": "المعامل \\( -1 \\).",
+        "html_structure": "\\int\\frac{\\sin x}{\\cos x}dx = {q_4_1_182_2_s4_i1}\\int\\frac{-\\sin x}{\\cos x}dx",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s4_i1",
+            "correct_value": "-1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "-2",
+              "2",
+              "-1"
+            ],
+            "hint": "المعامل \\( -1 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنطبّق قانون \\( \\ln \\). الطريقة: \\( \\int\\frac{u'}{u}dx = \\ln|u| \\). السبب: المشتقة في البسط والدالة في المقام.",
+        "think": "اللوغاريتم لمقام الكسر.",
+        "html_structure": "-\\int\\frac{-\\sin x}{\\cos x}dx = -{q_4_1_182_2_s5_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s5_i1",
+            "correct_value": "ln|cos x|",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cos x",
+              "ln|sec x|",
+              "ln|cos x|",
+              "ln|sin x|"
+            ],
+            "hint": "اللوغاريتم لمقام الكسر."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنحوّل السالب إلى مقلوب. الطريقة: \\( -\\ln A = \\ln\\frac1A \\). السبب: خاصية اللوغاريتم.",
+        "think": "الداخل نفسه.",
+        "html_structure": "-\\ln|\\cos x| = \\ln\\left|\\frac{1}{{q_4_1_182_2_s6_i1}}\\right|",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s6_i1",
+            "correct_value": "cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "tan x",
+              "sec x",
+              "cos x",
+              "sin x"
+            ],
+            "hint": "الداخل نفسه."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنبسّط المقلوب. الطريقة: \\( \\frac{1}{\\cos x} \\) تسمى \\( \\sec x \\). السبب: تعريف القاطع.",
+        "think": "مقلوب جيب التمام.",
+        "html_structure": "\\frac{1}{\\cos x} = {q_4_1_182_2_s7_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s7_i1",
+            "correct_value": "sec x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cot x",
+              "csc x",
+              "tan x",
+              "sec x"
+            ],
+            "hint": "مقلوب جيب التمام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنكتب الجواب. الطريقة: ضع القاطع داخل \\( \\ln \\) وأضف \\( c \\). السبب: النهاية.",
+        "think": "القاطع.",
+        "html_structure": "\\int\\tan x\\,dx = \\ln|{q_4_1_182_2_s8_i1}| + c",
+        "inputs": [
+          {
+            "id": "q_4_1_182_2_s8_i1",
+            "correct_value": "sec x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "tan x",
+              "csc x",
+              "sec x",
+              "cos x"
+            ],
+            "hint": "القاطع."
+          }
+        ]
+      }
+    ],
+    "model_solution": "tan x = sin x/cos x، ∫ = -ln|cos x| + c = ln|sec x| + c",
+    "number": "15",
+    "page_number": 182,
+    "image_url": null
+  },
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\cot x\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_1_182_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنكتب \\( \\cot x \\) كنسبة. الطريقة: \\( \\cot x = \\frac{\\cos x}{\\sin x} \\). السبب: لنطبق قانون \\( \\ln \\).",
+        "think": "المقام جيب الزاوية.",
+        "html_structure": "\\cot x = \\frac{\\cos x}{{q_4_1_182_3_s1_i1}}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s1_i1",
+            "correct_value": "sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "tan x",
+              "csc x",
+              "cos x",
+              "sin x"
+            ],
+            "hint": "المقام جيب الزاوية."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنحدد المقام \\( u \\). الطريقة: اجعل \\( u=\\sin x \\). السبب: لنشتقه.",
+        "think": "المقام.",
+        "html_structure": "u = {q_4_1_182_3_s2_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s2_i1",
+            "correct_value": "sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cos x",
+              "csc x",
+              "sin x",
+              "tan x"
+            ],
+            "hint": "المقام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق \\( u \\). الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\). السبب: لنقارنها بالبسط.",
+        "think": "جيب التمام.",
+        "html_structure": "(\\sin x)' = {q_4_1_182_3_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s3_i1",
+            "correct_value": "cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-sin x",
+              "sin x",
+              "-cos x",
+              "cos x"
+            ],
+            "hint": "جيب التمام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنفحص المعامل المطلوب. الطريقة: البسط يطابق المشتقة تماماً. السبب: فلا نضرب بشيء.",
+        "think": "متطابقان.",
+        "html_structure": "\\text{المعامل} = {q_4_1_182_3_s4_i1}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s4_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "0",
+              "-1",
+              "1",
+              "2"
+            ],
+            "hint": "متطابقان."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنطبّق قانون \\( \\ln \\). الطريقة: \\( \\int\\frac{u'}{u}dx = \\ln|u| \\). السبب: المشتقة في البسط والدالة في المقام.",
+        "think": "المقام.",
+        "html_structure": "\\int\\frac{\\cos x}{\\sin x}dx = \\ln|{q_4_1_182_3_s5_i1}|",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s5_i1",
+            "correct_value": "sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "sin x",
+              "tan x",
+              "csc x",
+              "cos x"
+            ],
+            "hint": "المقام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنتحقق بالاشتقاق. الطريقة: اشتق \\( \\ln|\\sin x| \\): المشتقة على الدالة. السبب: للتأكد.",
+        "think": "مشتقة \\( \\sin x \\).",
+        "html_structure": "(\\ln|\\sin x|)' = \\frac{{q_4_1_182_3_s6_i1}}{\\sin x}",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s6_i1",
+            "correct_value": "cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "sin x",
+              "-cos x",
+              "1",
+              "cos x"
+            ],
+            "hint": "مشتقة \\( \\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنتحقق عددياً عند \\( x=\\frac\\pi2 \\). الطريقة: \\( \\cos\\frac\\pi2=0 \\) و\\( \\sin\\frac\\pi2=1 \\). السبب: فالنتيجة \\( 0 \\) كما \\( \\cot\\frac\\pi2=0 \\).",
+        "think": "\\( \\sin\\frac\\pi2 \\).",
+        "html_structure": "\\frac{0}{{q_4_1_182_3_s7_i1}} = 0",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s7_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "0",
+              "2",
+              "1",
+              "-1"
+            ],
+            "hint": "\\( \\sin\\frac\\pi2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_1_182_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنكتب الجواب. الطريقة: أضف \\( c \\). السبب: النهاية.",
+        "think": "المقام.",
+        "html_structure": "\\int\\cot x\\,dx = \\ln|{q_4_1_182_3_s8_i1}| + c",
+        "inputs": [
+          {
+            "id": "q_4_1_182_3_s8_i1",
+            "correct_value": "sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "cos x",
+              "csc x",
+              "tan x",
+              "sin x"
+            ],
+            "hint": "المقام."
+          }
+        ]
+      }
+    ],
+    "model_solution": "cot x = cos x/sin x، ∫ = ln|sin x| + c",
+    "number": "16",
+    "page_number": 182,
+    "image_url": null
+  }
+]

@@ -1,0 +1,1196 @@
+[
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\cos^2 2x \\cdot \\sin x\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_0_170_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب \\( \\cos 2x \\) بدلالة \\( \\cos x \\). الطريقة: استخدم القانون \\( \\cos 2x = 2\\cos^2 x - 1 \\). السبب: لأن الدالة المشتقة \\( \\sin x \\) مرتبطة بـ \\( \\cos x \\) وليس بـ \\( \\cos 2x \\).",
+        "think": "اكتب \\( 1 \\).",
+        "html_structure": "\\cos 2x = 2\\cos^2 x - {q_4_0_170_1_s1_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s1_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "hint": "اكتب \\( 1 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نعوّض في السؤال. الطريقة: استبدل \\( \\cos 2x \\) بالمقدار الجديد وارفعه للتربيع. السبب: لأن السؤال يحوي \\( \\cos^2 2x \\).",
+        "think": "الأس هو \\( 2 \\).",
+        "html_structure": "\\cos^2 2x\\sin x = (2\\cos^2 x - 1)^{ {q_4_0_170_1_s2_i1} }\\sin x",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s2_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "الأس هو \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نفتح التربيع. الطريقة: استخدم \\( (A-B)^2 = A^2 - 2AB + B^2 \\) مع \\( A = 2\\cos^2 x \\) و \\( B = 1 \\). السبب: لنتخلص من القوس ونتعامل مع حدود بسيطة.",
+        "think": "\\( (2\\cos^2 x)^2 = 4\\cos^4 x \\) و \\( 2 \\times 2 \\times 1 = 4 \\).",
+        "html_structure": "(2\\cos^2 x - 1)^2 = 4\\cos^{ {q_4_0_170_1_s3_i1} } x - {q_4_0_170_1_s3_i2}\\cos^2 x + 1",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s3_i1",
+            "correct_value": "4",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "4",
+              "5",
+              "3",
+              "-4"
+            ],
+            "hint": "\\( (2\\cos^2 x)^2 = 4\\cos^4 x \\) و \\( 2 \\times 2 \\times 1 = 4 \\)."
+          },
+          {
+            "id": "q_4_0_170_1_s3_i2",
+            "correct_value": "4",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "4",
+              "5",
+              "3",
+              "-4"
+            ],
+            "hint": "\\( (2\\cos^2 x)^2 = 4\\cos^4 x \\) و \\( 2 \\times 2 \\times 1 = 4 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نوزع التكامل على الحدود الثلاثة. الطريقة: اضرب كل حد في \\( \\sin x \\) واكتب تكاملاً لكل حد. السبب: لأن كل حد يمكن تكامله بقاعدة (قوس × مشتقة).",
+        "think": "الحد الثاني \\( \\cos^2 x \\sin x \\) والثالث \\( \\sin x \\).",
+        "html_structure": "4\\int\\cos^4 x\\sin x\\,dx - 4\\int {q_4_0_170_1_s4_i1}\\,dx + \\int {q_4_0_170_1_s4_i2}\\,dx",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s4_i1",
+            "correct_value": "\\cos^2 x\\sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos^2 x\\sin x",
+              "\\cos^2 x",
+              "\\cos x\\sin x",
+              "\\sin^2 x"
+            ],
+            "hint": "الحد الثاني \\( \\cos^2 x \\sin x \\) والثالث \\( \\sin x \\)."
+          },
+          {
+            "id": "q_4_0_170_1_s4_i2",
+            "correct_value": "\\sin x",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "\\sin x",
+              "\\cos x",
+              "-\\sin x",
+              "1"
+            ],
+            "hint": "الحد الثاني \\( \\cos^2 x \\sin x \\) والثالث \\( \\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نشتق القوس \\( \\cos x \\). الطريقة: مشتقة \\( \\cos x \\) تساوي ما في الفراغ. السبب: لنرى علاقتها بـ \\( \\sin x \\) الموجودة.",
+        "think": "اكتب \\( -\\sin x \\).",
+        "html_structure": "\\frac{d}{dx}\\cos x = {q_4_0_170_1_s5_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s5_i1",
+            "correct_value": "-\\sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\sin x",
+              "\\sin x",
+              "\\cos x",
+              "-\\cos x"
+            ],
+            "hint": "اكتب \\( -\\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعدّل الإشارة. الطريقة: المطلوب \\( -\\sin x \\) والموجود \\( \\sin x \\)، فنخرج إشارة سالب خارج التكامل. السبب: لأن \\( \\sin x = (-1)(-\\sin x) \\).",
+        "think": "اكتب \\( -\\sin x \\).",
+        "html_structure": "\\sin x = (-1)\\cdot( {q_4_0_170_1_s6_i1} )",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s6_i1",
+            "correct_value": "-\\sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\sin x",
+              "\\sin x",
+              "\\cos x",
+              "-\\cos x"
+            ],
+            "hint": "اكتب \\( -\\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكامل الحد الأول. الطريقة: \\( 4 \\) في \\( \\cos^4 x\\sin x \\): الأس الجديد \\( 5 \\) وتخرج إشارة سالب. السبب: لأن قانون القوة يزيد الأس ويقسم عليه.",
+        "think": "اكتب \\( 5 \\) في الفراغين.",
+        "html_structure": "4\\int\\cos^4 x\\sin x\\,dx = -4\\cdot\\frac{\\cos^{ {q_4_0_170_1_s7_i1} } x}{ {q_4_0_170_1_s7_i2} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s7_i1",
+            "correct_value": "5",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "5",
+              "6",
+              "4",
+              "-5"
+            ],
+            "hint": "اكتب \\( 5 \\) في الفراغين."
+          },
+          {
+            "id": "q_4_0_170_1_s7_i2",
+            "correct_value": "5",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "5",
+              "6",
+              "4",
+              "-5"
+            ],
+            "hint": "اكتب \\( 5 \\) في الفراغين."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكامل الحد الثاني. الطريقة: \\( -4 \\) في \\( \\cos^2 x\\sin x \\): الأس الجديد \\( 3 \\) وإشارة السالب تُقلب. السبب: لأن السالب في السالب يعطي موجباً.",
+        "think": "اكتب \\( 3 \\) في الفراغين.",
+        "html_structure": "-4\\int\\cos^2 x\\sin x\\,dx = +4\\cdot\\frac{\\cos^{ {q_4_0_170_1_s8_i1} } x}{ {q_4_0_170_1_s8_i2} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s8_i1",
+            "correct_value": "3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "-3"
+            ],
+            "hint": "اكتب \\( 3 \\) في الفراغين."
+          },
+          {
+            "id": "q_4_0_170_1_s8_i2",
+            "correct_value": "3",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "-3"
+            ],
+            "hint": "اكتب \\( 3 \\) في الفراغين."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكامل الحد الثالث. الطريقة: تكامل \\( \\sin x \\) هو \\( -\\cos x \\). السبب: لأن مشتقة \\( -\\cos x \\) هي \\( \\sin x \\).",
+        "think": "اكتب \\( -\\cos x \\).",
+        "html_structure": "\\int\\sin x\\,dx = {q_4_0_170_1_s9_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s9_i1",
+            "correct_value": "-\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\cos x",
+              "\\cos x",
+              "\\sin x",
+              "-\\sin x"
+            ],
+            "hint": "اكتب \\( -\\cos x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نجمع النواتج. الطريقة: اكتب الحدود الثلاثة بإشاراتها. السبب: لنحصل على التكامل كاملاً.",
+        "think": "مقام الحد الثاني هو الأس الجديد \\( 3 \\).",
+        "html_structure": "-\\frac{4}{5}\\cos^5 x + \\frac{4}{ {q_4_0_170_1_s10_i1} }\\cos^3 x - \\cos x",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s10_i1",
+            "correct_value": "3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "-3"
+            ],
+            "hint": "مقام الحد الثاني هو الأس الجديد \\( 3 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: أكمل الحد الأخير وثابت التكامل. السبب: لأن التكامل غير المحدد يحتاج ثابتاً.",
+        "think": "الأول \\( \\cos x \\) والثاني \\( c \\).",
+        "html_structure": "-\\frac{4}{5}\\cos^5 x + \\frac{4}{3}\\cos^3 x - {q_4_0_170_1_s11_i1} + {q_4_0_170_1_s11_i2}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_1_s11_i1",
+            "correct_value": "\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos x",
+              "\\sin x",
+              "\\cos 2x",
+              "x"
+            ],
+            "hint": "الأول \\( \\cos x \\) والثاني \\( c \\)."
+          },
+          {
+            "id": "q_4_0_170_1_s11_i2",
+            "correct_value": "c",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "الأول \\( \\cos x \\) والثاني \\( c \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "∫cos²2x sin x dx = −(4/5)cos⁵x + (4/3)cos³x − cos x + c",
+    "number": "31",
+    "page_number": 170,
+    "image_url": null
+  },
+  {
+    "title": "احسب: \\( \\int \\sqrt{1 - \\sin 2x}\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_0_170_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب العدد \\( 1 \\) بمتطابقة. الطريقة: \\( \\sin^2 x + \\cos^2 x = 1 \\)، فنستبدل \\( 1 \\) بها. السبب: لنكوّن مربعاً كاملاً تحت الجذر.",
+        "think": "اكتب \\( \\cos^2 x \\).",
+        "html_structure": "1 = \\sin^2 x + {q_4_0_170_2_s1_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s1_i1",
+            "correct_value": "\\cos^2 x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos^2 x",
+              "\\cos x",
+              "\\sin^2 x",
+              "\\tan^2 x"
+            ],
+            "hint": "اكتب \\( \\cos^2 x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نفتح \\( \\sin 2x \\). الطريقة: استخدم \\( \\sin 2x = 2\\sin x\\cos x \\). السبب: لتصبح كل الحدود بالزاوية \\( x \\).",
+        "think": "اكتب \\( 2 \\).",
+        "html_structure": "\\sin 2x = {q_4_0_170_2_s2_i1}\\sin x\\cos x",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s2_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "اكتب \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعيد كتابة ما تحت الجذر. الطريقة: عوّض عن \\( 1 \\) وعن \\( \\sin 2x \\) واطرح. السبب: لنحصل على ثلاثة حدود.",
+        "think": "اكتب \\( 2\\sin x\\cos x \\).",
+        "html_structure": "1 - \\sin 2x = \\sin^2 x + \\cos^2 x - {q_4_0_170_2_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s3_i1",
+            "correct_value": "2\\sin x\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2\\sin x\\cos x",
+              "\\sin x\\cos x",
+              "\\sin 2x\\cos x",
+              "2\\sin x"
+            ],
+            "hint": "اكتب \\( 2\\sin x\\cos x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتبها كمربع كامل. الطريقة: \\( A^2 - 2AB + B^2 = (A-B)^2 \\) مع \\( A = \\sin x \\) و \\( B = \\cos x \\). السبب: لنتخلص من الجذر.",
+        "think": "الأس \\( 2 \\).",
+        "html_structure": "\\sin^2 x - 2\\sin x\\cos x + \\cos^2 x = (\\sin x - \\cos x)^{ {q_4_0_170_2_s4_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s4_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "الأس \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نأخذ الجذر. الطريقة: الجذر التربيعي للمربع هو القيمة المطلقة للقوس. السبب: لأن \\( \\sqrt{a^2} = |a| \\).",
+        "think": "اكتب القوس نفسه.",
+        "html_structure": "\\sqrt{(\\sin x - \\cos x)^2} = |{q_4_0_170_2_s5_i1}|",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s5_i1",
+            "correct_value": "\\sin x - \\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin x - \\cos x",
+              "\\sin x + \\cos x",
+              "\\cos x - \\sin x",
+              "\\sin x\\cos x"
+            ],
+            "hint": "اكتب القوس نفسه."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نزيل المطلق. الطريقة: نفترض \\( \\sin x \\ge \\cos x \\) فيبقى القوس كما هو (وإذا كان العكس تنقلب الإشارة النهائية). السبب: لأن المطلق لا يغيّر العدد الموجب.",
+        "think": "اكتب \\( \\sin x - \\cos x \\).",
+        "html_structure": "|\\sin x - \\cos x| = {q_4_0_170_2_s6_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s6_i1",
+            "correct_value": "\\sin x - \\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin x - \\cos x",
+              "\\cos x - \\sin x",
+              "\\sin x + \\cos x",
+              "0"
+            ],
+            "hint": "اكتب \\( \\sin x - \\cos x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكامل الحدين. الطريقة: تكامل \\( \\sin x \\) هو \\( -\\cos x \\) وتكامل \\( \\cos x \\) هو \\( \\sin x \\). السبب: حسب جدول التكامل.",
+        "think": "الأول \\( -\\cos x \\) والثاني \\( \\sin x \\).",
+        "html_structure": "\\int(\\sin x - \\cos x)dx = {q_4_0_170_2_s7_i1} - {q_4_0_170_2_s7_i2}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s7_i1",
+            "correct_value": "-\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\cos x",
+              "\\cos x",
+              "\\sin x",
+              "-\\sin x"
+            ],
+            "hint": "الأول \\( -\\cos x \\) والثاني \\( \\sin x \\)."
+          },
+          {
+            "id": "q_4_0_170_2_s7_i2",
+            "correct_value": "\\sin x",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "\\sin x",
+              "\\cos x",
+              "-\\sin x",
+              "-\\cos x"
+            ],
+            "hint": "الأول \\( -\\cos x \\) والثاني \\( \\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نبسّط الناتج. الطريقة: أخرج إشارة سالب مشتركة. السبب: لتبسيط الشكل.",
+        "think": "اكتب \\( \\cos x + \\sin x \\).",
+        "html_structure": "-\\cos x - \\sin x = -( {q_4_0_170_2_s8_i1} )",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s8_i1",
+            "correct_value": "\\cos x + \\sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos x + \\sin x",
+              "\\cos x - \\sin x",
+              "\\sin x - \\cos x",
+              "\\sin x\\cos x"
+            ],
+            "hint": "اكتب \\( \\cos x + \\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: اشتق \\( -\\cos x - \\sin x \\). السبب: لنتأكد أن الناتج يعيدنا إلى \\( \\sin x - \\cos x \\).",
+        "think": "مشتقة \\( -\\cos x \\) هي \\( \\sin x \\) ومشتقة \\( -\\sin x \\) هي \\( -\\cos x \\).",
+        "html_structure": "\\frac{d}{dx}(-\\cos x - \\sin x) = {q_4_0_170_2_s9_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s9_i1",
+            "correct_value": "\\sin x - \\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin x - \\cos x",
+              "\\cos x - \\sin x",
+              "\\sin x + \\cos x",
+              "-\\sin x - \\cos x"
+            ],
+            "hint": "مشتقة \\( -\\cos x \\) هي \\( \\sin x \\) ومشتقة \\( -\\sin x \\) هي \\( -\\cos x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: اكتب الثابت (وفي حالة \\( \\sin x < \\cos x \\) تنقلب إشارة الجواب كله). السبب: لأن المطلق يغيّر الإشارة حسب موقع x.",
+        "think": "اكتب \\( c \\).",
+        "html_structure": "-(\\cos x + \\sin x) + {q_4_0_170_2_s10_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_2_s10_i1",
+            "correct_value": "c",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "اكتب \\( c \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "1 − sin2x = (sin x − cos x)² ⇒ ∫|sin x − cos x|dx = ±(−cos x − sin x) + c (الإشارة حسب إشارة sin x − cos x)",
+    "number": "32",
+    "page_number": 170,
+    "image_url": null
+  },
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\frac{\\cos\\sqrt{1-x}}{\\sqrt{1-x}}\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_0_170_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الزاوية داخل \\( \\cos \\). الطريقة: الزاوية هي \\( \\sqrt{1-x} \\) ونريد مشتقتها. السبب: لأن مشتقة الزاوية يجب أن تظهر خارج \\( \\cos \\).",
+        "think": "اكتب ما تحت الجذر.",
+        "html_structure": "u = \\sqrt{ {q_4_0_170_3_s1_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s1_i1",
+            "correct_value": "1-x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1-x",
+              "x",
+              "1+x",
+              "x-1"
+            ],
+            "hint": "اكتب ما تحت الجذر."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحوّل الجذر لأس. الطريقة: الجذر التربيعي هو أس \\( \\frac12 \\). السبب: لنستعمل قانون القوة في الاشتقاق.",
+        "think": "اكتب \\( \\frac12 \\).",
+        "html_structure": "\\sqrt{1-x} = (1-x)^{ {q_4_0_170_3_s2_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s2_i1",
+            "correct_value": "\\frac12",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\frac12",
+              "2",
+              "-\\frac12",
+              "1"
+            ],
+            "hint": "اكتب \\( \\frac12 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق. الطريقة: أنزل الأس \\( \\frac12 \\)، قلّل الأس بواحد، وضرب في مشتقة \\( 1-x \\) وهي \\( -1 \\). السبب: هذه قاعدة السلسلة.",
+        "think": "\\( \\frac12 - 1 = -\\frac12 \\).",
+        "html_structure": "\\frac{d}{dx}(1-x)^{1/2} = \\frac12(1-x)^{ {q_4_0_170_3_s3_i1} }\\cdot(-1)",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s3_i1",
+            "correct_value": "-\\frac12",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\frac12",
+              "\\frac12",
+              "\\frac32",
+              "1"
+            ],
+            "hint": "\\( \\frac12 - 1 = -\\frac12 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب المشتقة بشكل جذر. الطريقة: الأس \\( -\\frac12 \\) يعني مقلوب الجذر. السبب: لنقارنها بالموجود في السؤال.",
+        "think": "\\( \\frac12 \\) في المقام تصبح \\( 2 \\).",
+        "html_structure": "\\frac{d}{dx}\\sqrt{1-x} = -\\frac{1}{ {q_4_0_170_3_s4_i1} \\sqrt{1-x}}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s4_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "\\( \\frac12 \\) في المقام تصبح \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعدّل المعامل. الطريقة: المطلوب \\( -\\frac{1}{2\\sqrt{1-x}} \\) والموجود \\( \\frac{1}{\\sqrt{1-x}} \\)، فنكتب الموجود \\( = -2 \\times \\) المطلوب. السبب: لنطابق المشتقة.",
+        "think": "اكتب \\( -2 \\).",
+        "html_structure": "\\frac{1}{\\sqrt{1-x}} = {q_4_0_170_3_s5_i1}\\cdot\\left(-\\frac{1}{2\\sqrt{1-x}}\\right)",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s5_i1",
+            "correct_value": "-2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-2",
+              "-1",
+              "-3",
+              "2"
+            ],
+            "hint": "اكتب \\( -2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( \\cos \\). الطريقة: تكامل \\( \\cos u \\) مع مشتقة \\( u \\) هو \\( \\sin u \\). السبب: لأن مشتقة \\( \\sin u \\) هي \\( \\cos u \\cdot u' \\).",
+        "think": "اكتب \\( \\sin\\sqrt{1-x} \\).",
+        "html_structure": "-2\\int\\cos\\sqrt{1-x}\\cdot\\left(-\\frac{1}{2\\sqrt{1-x}}\\right)dx = -2\\,{q_4_0_170_3_s6_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s6_i1",
+            "correct_value": "\\sin\\sqrt{1-x}",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin\\sqrt{1-x}",
+              "\\cos\\sqrt{1-x}",
+              "-\\sin\\sqrt{1-x}",
+              "\\sin(1-x)"
+            ],
+            "hint": "اكتب \\( \\sin\\sqrt{1-x} \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: اشتق \\( -2\\sin\\sqrt{1-x} \\): \\( \\cos \\) مضروبة في مشتقة الزاوية. السبب: لنتأكد من الجواب.",
+        "think": "اكتب مشتقة الزاوية.",
+        "html_structure": "\\frac{d}{dx}(-2\\sin\\sqrt{1-x}) = -2\\cos\\sqrt{1-x}\\cdot( {q_4_0_170_3_s7_i1} )",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s7_i1",
+            "correct_value": "-\\frac{1}{2\\sqrt{1-x}}",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\frac{1}{2\\sqrt{1-x}}",
+              "\\frac{1}{2\\sqrt{1-x}}",
+              "-\\frac{1}{\\sqrt{1-x}}",
+              "2\\sqrt{1-x}"
+            ],
+            "hint": "اكتب مشتقة الزاوية."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نبسّط الضرب. الطريقة: \\( -2 \\times -\\frac{1}{2\\sqrt{1-x}} \\) يعطي موجباً. السبب: فنرجع للدالة الأصلية.",
+        "think": "\\( 2 \\) تلغي \\( 2 \\).",
+        "html_structure": "-2\\cdot\\left(-\\frac{1}{2\\sqrt{1-x}}\\right) = \\frac{ {q_4_0_170_3_s8_i1} }{\\sqrt{1-x}}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s8_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "hint": "\\( 2 \\) تلغي \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: اكتب المعامل والثابت. السبب: لأن التكامل غير المحدد يحتاج ثابتاً.",
+        "think": "الأول \\( 2 \\) والثاني \\( c \\).",
+        "html_structure": "-{q_4_0_170_3_s9_i1}\\sin\\sqrt{1-x} + {q_4_0_170_3_s9_i2}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_3_s9_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "الأول \\( 2 \\) والثاني \\( c \\)."
+          },
+          {
+            "id": "q_4_0_170_3_s9_i2",
+            "correct_value": "c",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "الأول \\( 2 \\) والثاني \\( c \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "∫ cos√(1−x)/√(1−x) dx = −2 sin√(1−x) + c",
+    "number": "33",
+    "page_number": 170,
+    "image_url": null
+  },
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\left(\\sqrt{x} + x\\sec^2 x^2\\right)dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_0_170_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نوزع التكامل. الطريقة: اكتب تكامل \\( \\sqrt{x} \\) وتكامل الحد الثاني منفصلين. السبب: لأن لكل حد طريقة مختلفة.",
+        "think": "انقل الحد الثاني كما هو.",
+        "html_structure": "\\int\\sqrt{x}\\,dx + \\int {q_4_0_170_4_s1_i1}\\,dx",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s1_i1",
+            "correct_value": "x\\sec^2 x^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "x\\sec^2 x^2",
+              "\\sec^2 x^2",
+              "x\\tan x^2",
+              "2x\\sec^2 x^2"
+            ],
+            "hint": "انقل الحد الثاني كما هو."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحوّل الجذر لأس. الطريقة: \\( \\sqrt{x} = x^{1/2} \\). السبب: لنطبق قانون القوة.",
+        "think": "اكتب \\( \\frac12 \\).",
+        "html_structure": "\\sqrt{x} = x^{ {q_4_0_170_4_s2_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s2_i1",
+            "correct_value": "\\frac12",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\frac12",
+              "2",
+              "-\\frac12",
+              "1"
+            ],
+            "hint": "اكتب \\( \\frac12 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب الأس الجديد. الطريقة: اجمع \\( 1 \\) إلى \\( \\frac12 \\). السبب: قانون القوة.",
+        "think": "\\( \\frac12 + \\frac22 \\).",
+        "html_structure": "\\frac12 + 1 = {q_4_0_170_4_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s3_i1",
+            "correct_value": "\\frac32",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\frac32",
+              "\\frac12",
+              "2",
+              "-\\frac12"
+            ],
+            "hint": "\\( \\frac12 + \\frac22 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق القانون. الطريقة: ضع الأس الجديد فوق \\( x \\) وفي المقام. السبب: لأن التكامل هو الأس الجديد ومقسوم عليه.",
+        "think": "اكتب \\( \\frac32 \\) في الفراغين.",
+        "html_structure": "\\int x^{1/2}dx = \\frac{x^{ {q_4_0_170_4_s4_i1} }}{ {q_4_0_170_4_s4_i2} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s4_i1",
+            "correct_value": "\\frac32",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\frac32",
+              "\\frac12",
+              "2",
+              "3"
+            ],
+            "hint": "اكتب \\( \\frac32 \\) في الفراغين."
+          },
+          {
+            "id": "q_4_0_170_4_s4_i2",
+            "correct_value": "\\frac32",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "\\frac32",
+              "\\frac12",
+              "2",
+              "3"
+            ],
+            "hint": "اكتب \\( \\frac32 \\) في الفراغين."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نبسّط القسمة على الكسر. الطريقة: القسمة على \\( \\frac32 \\) هي الضرب في \\( \\frac23 \\). السبب: لنكتب بشكل مرتب.",
+        "think": "اضرب في \\( \\frac23 \\) فيصير البسط \\( 2 \\).",
+        "html_structure": "\\frac{x^{3/2}}{3/2} = \\frac{ {q_4_0_170_4_s5_i1} }{3}x^{3/2}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s5_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "اضرب في \\( \\frac23 \\) فيصير البسط \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نشتق الزاوية في الحد الثاني. الطريقة: الزاوية هي \\( x^2 \\)، فاشتقها. السبب: لأن \\( \\sec^2 \\) تحتاج مشتقة الزاوية.",
+        "think": "اكتب \\( 2x \\).",
+        "html_structure": "\\frac{d}{dx}(x^2) = {q_4_0_170_4_s6_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s6_i1",
+            "correct_value": "2x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "x^2",
+              "2"
+            ],
+            "hint": "اكتب \\( 2x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعدّل المعامل. الطريقة: الموجود \\( x \\) والمطلوب \\( 2x \\)، فنكتب \\( x = \\frac12\\cdot 2x \\). السبب: لنطابق المشتقة.",
+        "think": "اكتب \\( 2 \\).",
+        "html_structure": "x = \\frac{1}{ {q_4_0_170_4_s7_i1} }\\cdot 2x",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s7_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "hint": "اكتب \\( 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكامل الحد الثاني. الطريقة: تكامل \\( \\sec^2 \\) هو \\( \\tan \\) لنفس الزاوية. السبب: لأن مشتقة \\( \\tan \\) هي \\( \\sec^2 \\).",
+        "think": "اكتب \\( \\tan x^2 \\).",
+        "html_structure": "\\frac12\\int\\sec^2 x^2\\cdot 2x\\,dx = \\frac12 {q_4_0_170_4_s8_i1}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s8_i1",
+            "correct_value": "\\tan x^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\tan x^2",
+              "\\sec x^2",
+              "\\tan x",
+              "\\cot x^2"
+            ],
+            "hint": "اكتب \\( \\tan x^2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكتب القوة الكسرية كجذر. الطريقة: \\( x^{3/2} = \\sqrt{x^3} \\). السبب: للصيغة المعتادة.",
+        "think": "اكتب \\( x^3 \\).",
+        "html_structure": "x^{3/2} = \\sqrt{ {q_4_0_170_4_s9_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s9_i1",
+            "correct_value": "x^3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "x^3",
+              "x^2",
+              "x",
+              "x^{3/2}"
+            ],
+            "hint": "اكتب \\( x^3 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_4_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: أكمل الدالة والثابت. السبب: لأن التكامل غير المحدد يحتاج ثابتاً.",
+        "think": "الأول \\( \\tan x^2 \\) والثاني \\( c \\).",
+        "html_structure": "\\frac23\\sqrt{x^3} + \\frac12 {q_4_0_170_4_s10_i1} + {q_4_0_170_4_s10_i2}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_4_s10_i1",
+            "correct_value": "\\tan x^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\tan x^2",
+              "\\sec x^2",
+              "\\tan x",
+              "\\cot x^2"
+            ],
+            "hint": "الأول \\( \\tan x^2 \\) والثاني \\( c \\)."
+          },
+          {
+            "id": "q_4_0_170_4_s10_i2",
+            "correct_value": "c",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "الأول \\( \\tan x^2 \\) والثاني \\( c \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "∫√x dx + ½∫2x sec²x² dx = (2/3)√x³ + ½ tan x² + c",
+    "number": "34",
+    "page_number": 170,
+    "image_url": null
+  },
+  {
+    "title": "جد قيمة التكامل: \\( \\int \\frac{2\\sin\\sqrt[3]{x}}{\\sqrt[3]{x^2}}\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_4_0_170_5_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب الجذر التكعيبي كأس. الطريقة: \\( \\sqrt[3]{x} = x^{1/3} \\). السبب: لنشتقه بقانون القوة.",
+        "think": "اكتب \\( \\frac13 \\).",
+        "html_structure": "\\sqrt[3]{x} = x^{ {q_4_0_170_5_s1_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s1_i1",
+            "correct_value": "\\frac13",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\frac13",
+              "3",
+              "-\\frac13",
+              "\\frac23"
+            ],
+            "hint": "اكتب \\( \\frac13 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق الزاوية. الطريقة: أنزل \\( \\frac13 \\) وقلّل الأس بواحد. السبب: لأن المشتقة يجب أن تظهر في التكامل.",
+        "think": "\\( \\frac13 - 1 = -\\frac23 \\).",
+        "html_structure": "\\frac{d}{dx}x^{1/3} = \\frac13 x^{ {q_4_0_170_5_s2_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s2_i1",
+            "correct_value": "-\\frac23",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\frac23",
+              "\\frac23",
+              "-\\frac13",
+              "\\frac43"
+            ],
+            "hint": "\\( \\frac13 - 1 = -\\frac23 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب الأس السالب كجذر. الطريقة: \\( x^{-2/3} \\) هي مقلوب \\( \\sqrt[3]{x^2} \\). السبب: للمقارنة بالمقام في السؤال.",
+        "think": "اكتب \\( x^2 \\).",
+        "html_structure": "x^{-2/3} = \\frac{1}{\\sqrt[3]{ {q_4_0_170_5_s3_i1} }}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s3_i1",
+            "correct_value": "x^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "x^2",
+              "x",
+              "x^3",
+              "x^{2/3}"
+            ],
+            "hint": "اكتب \\( x^2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب المشتقة كاملة. الطريقة: المشتقة \\( \\frac13 \\cdot\\frac{1}{\\sqrt[3]{x^2}} \\). السبب: لنراها في التكامل.",
+        "think": "اكتب \\( 3 \\).",
+        "html_structure": "\\frac{d}{dx}\\sqrt[3]{x} = \\frac{1}{ {q_4_0_170_5_s4_i1} \\sqrt[3]{x^2}}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s4_i1",
+            "correct_value": "3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "-3"
+            ],
+            "hint": "اكتب \\( 3 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعدّل المعامل. الطريقة: الموجود \\( \\frac{2}{\\sqrt[3]{x^2}} \\) والمطلوب \\( \\frac{1}{3\\sqrt[3]{x^2}} \\)، فالموجود \\( = 6 \\times \\) المطلوب. السبب: لنطابق المشتقة.",
+        "think": "\\( \\frac{2}{1/3} = 6 \\).",
+        "html_structure": "\\frac{2}{\\sqrt[3]{x^2}} = {q_4_0_170_5_s5_i1}\\cdot\\frac{1}{3\\sqrt[3]{x^2}}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s5_i1",
+            "correct_value": "6",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "6",
+              "7",
+              "5",
+              "-6"
+            ],
+            "hint": "\\( \\frac{2}{1/3} = 6 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( \\sin \\). الطريقة: تكامل \\( \\sin u\\cdot u' \\) هو \\( -\\cos u \\). السبب: لأن مشتقة \\( -\\cos u \\) هي \\( \\sin u \\cdot u' \\).",
+        "think": "اكتب \\( -\\cos\\sqrt[3]{x} \\).",
+        "html_structure": "6\\int\\sin\\sqrt[3]{x}\\cdot\\frac{1}{3\\sqrt[3]{x^2}}dx = 6\\cdot( {q_4_0_170_5_s6_i1} )",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s6_i1",
+            "correct_value": "-\\cos\\sqrt[3]{x}",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\cos\\sqrt[3]{x}",
+              "\\cos\\sqrt[3]{x}",
+              "\\sin\\sqrt[3]{x}",
+              "-\\sin\\sqrt[3]{x}"
+            ],
+            "hint": "اكتب \\( -\\cos\\sqrt[3]{x} \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نضرب في \\( 6 \\). الطريقة: اضرب \\( 6 \\) في \\( -\\cos\\sqrt[3]{x} \\). السبب: لنوحّد المعامل.",
+        "think": "اكتب \\( -6 \\).",
+        "html_structure": "6\\cdot(-\\cos\\sqrt[3]{x}) = {q_4_0_170_5_s7_i1}\\cos\\sqrt[3]{x}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s7_i1",
+            "correct_value": "-6",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-6",
+              "-5",
+              "-7",
+              "6"
+            ],
+            "hint": "اكتب \\( -6 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: اشتق \\( -6\\cos\\sqrt[3]{x} \\). السبب: للتأكد من الجواب.",
+        "think": "اكتب \\( 3\\sqrt[3]{x^2} \\).",
+        "html_structure": "\\frac{d}{dx}(-6\\cos\\sqrt[3]{x}) = 6\\sin\\sqrt[3]{x}\\cdot\\frac{1}{ {q_4_0_170_5_s8_i1} }",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s8_i1",
+            "correct_value": "3\\sqrt[3]{x^2}",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3\\sqrt[3]{x^2}",
+              "\\sqrt[3]{x^2}",
+              "3\\sqrt[3]{x}",
+              "2\\sqrt[3]{x^2}"
+            ],
+            "hint": "اكتب \\( 3\\sqrt[3]{x^2} \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_4_0_170_5_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: اكتب المعامل والثابت. السبب: لأن التكامل غير المحدد يحتاج ثابتاً.",
+        "think": "الأول \\( -6 \\) والثاني \\( c \\).",
+        "html_structure": "{q_4_0_170_5_s9_i1}\\cos\\sqrt[3]{x} + {q_4_0_170_5_s9_i2}",
+        "inputs": [
+          {
+            "id": "q_4_0_170_5_s9_i1",
+            "correct_value": "-6",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-6",
+              "-5",
+              "-7",
+              "6"
+            ],
+            "hint": "الأول \\( -6 \\) والثاني \\( c \\)."
+          },
+          {
+            "id": "q_4_0_170_5_s9_i2",
+            "correct_value": "c",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "الأول \\( -6 \\) والثاني \\( c \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "مشتقة ∛x = 1/(3∛x²) ⇒ التكامل = 6∫sin∛x·(1/(3∛x²))dx = −6 cos ∛x + c",
+    "number": "35",
+    "page_number": 170,
+    "image_url": null
+  }
+]

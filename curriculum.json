@@ -319,15 +319,123 @@
     "topics": [
       {
         "name": "المعدلات المرتبطة",
-        "files": []
+        "files": [
+          "page_6_ch3_t1.json",
+          "page_13_ch3_t1.json",
+          "page_14_ch3_t1.json",
+          "page_15_ch3_t1.json",
+          "page_16_ch3_t1.json",
+          "page_17_ch3_t1.json",
+          "page_18_ch3_t1.json",
+          "page_19_ch3_t1.json",
+          "page_20_ch3_t1.json",
+          "page_21_ch3_t1.json",
+          "page_22_ch3_t1.json",
+          "page_23_ch3_t1.json",
+          "page_24_ch3_t1.json",
+          "page_25_ch3_t1.json",
+          "page_26_ch3_t1.json",
+          "page_27_ch3_t1.json",
+          "page_28_ch3_t1.json",
+          "page_29_ch3_t1.json"
+        ]
       },
       {
         "name": "مبرهنتا رول والقيمة المتوسطة",
-        "files": []
+        "files": [
+          "page_31_ch3_t2.json",
+          "page_32_ch3_t2.json",
+          "page_33_ch3_t2.json",
+          "page_34_ch3_t2.json",
+          "page_35_ch3_t2.json",
+          "page_36_ch3_t2.json",
+          "page_37_ch3_t2.json",
+          "page_38_ch3_t2.json",
+          "page_39_ch3_t2.json",
+          "page_40_ch3_t2.json",
+          "page_42_ch3_t2.json",
+          "page_43_ch3_t2.json",
+          "page_44_ch3_t2.json",
+          "page_45_ch3_t2.json",
+          "page_46_ch3_t2.json",
+          "page_47_ch3_t2.json",
+          "page_48_ch3_t2.json",
+          "page_49_ch3_t2.json",
+          "page_50_ch3_t2.json",
+          "page_52_ch3_t2.json",
+          "page_53_ch3_t2.json",
+          "page_54_ch3_t2.json",
+          "page_55_ch3_t2.json",
+          "page_56_ch3_t2.json",
+          "page_57_ch3_t2.json",
+          "page_60_ch3_t2.json",
+          "page_61_ch3_t2.json",
+          "page_62_ch3_t2.json",
+          "page_63_ch3_t2.json",
+          "page_65_ch3_t2.json"
+        ]
       },
       {
         "name": "رسم الدوال والقيم العظمى والصغرى",
-        "files": []
+        "files": [
+          "page_6_ch3_t3.json",
+          "page_7_ch3_t3.json",
+          "page_8_ch3_t3.json",
+          "page_9_ch3_t3.json",
+          "page_10_ch3_t3.json",
+          "page_64_ch3_t3.json",
+          "page_65_ch3_t3.json",
+          "page_66_ch3_t3.json",
+          "page_68_ch3_t3.json",
+          "page_69_ch3_t3.json",
+          "page_70_ch3_t3.json",
+          "page_71_ch3_t3.json",
+          "page_72_ch3_t3.json",
+          "page_74_ch3_t3.json",
+          "page_75_ch3_t3.json",
+          "page_76_ch3_t3.json",
+          "page_77_ch3_t3.json",
+          "page_78_ch3_t3.json",
+          "page_79_ch3_t3.json",
+          "page_82_ch3_t3.json",
+          "page_83_ch3_t3.json",
+          "page_84_ch3_t3.json",
+          "page_85_ch3_t3.json",
+          "page_86_ch3_t3.json",
+          "page_87_ch3_t3.json",
+          "page_88_ch3_t3.json",
+          "page_89_ch3_t3.json",
+          "page_90_ch3_t3.json",
+          "page_91_ch3_t3.json",
+          "page_92_ch3_t3.json",
+          "page_93_ch3_t3.json",
+          "page_94_ch3_t3.json",
+          "page_95_ch3_t3.json",
+          "page_96_ch3_t3.json",
+          "page_97_ch3_t3.json",
+          "page_98_ch3_t3.json",
+          "page_99_ch3_t3.json",
+          "page_100_ch3_t3.json",
+          "page_101_ch3_t3.json",
+          "page_102_ch3_t3.json",
+          "page_104_ch3_t3.json",
+          "page_105_ch3_t3.json",
+          "page_106_ch3_t3.json",
+          "page_107_ch3_t3.json",
+          "page_109_ch3_t3.json",
+          "page_110_ch3_t3.json",
+          "page_119_ch3_t3.json",
+          "page_121_ch3_t3.json",
+          "page_126_ch3_t3.json",
+          "page_127_ch3_t3.json",
+          "page_128_ch3_t3.json",
+          "page_129_ch3_t3.json",
+          "page_131_ch3_t3.json",
+          "page_133_ch3_t3.json",
+          "page_134_ch3_t3.json",
+          "page_137_ch3_t3.json",
+          "page_139_ch3_t3.json"
+        ]
       }
     ]
   },
@@ -339,15 +447,101 @@
     "topics": [
       {
         "name": "التكامل المحدد",
-        "files": []
+        "files": [
+          "page_2_ch4_t1.json",
+          "page_3_ch4_t1.json",
+          "page_4_ch4_t1.json",
+          "page_14_ch4_t1.json",
+          "page_60_ch4_t1.json",
+          "page_61_ch4_t1.json",
+          "page_62_ch4_t1.json",
+          "page_72_ch4_t1.json",
+          "page_73_ch4_t1.json",
+          "page_145_ch4_t1.json",
+          "page_146_ch4_t1.json",
+          "page_147_ch4_t1.json",
+          "page_148_ch4_t1.json",
+          "page_149_ch4_t1.json",
+          "page_150_ch4_t1.json",
+          "page_151_ch4_t1.json",
+          "page_152_ch4_t1.json",
+          "page_157_ch4_t1.json",
+          "page_159_ch4_t1.json",
+          "page_160_ch4_t1.json",
+          "page_161_ch4_t1.json",
+          "page_162_ch4_t1.json",
+          "page_163_ch4_t1.json",
+          "page_164_ch4_t1.json",
+          "page_165_ch4_t1.json",
+          "page_167_ch4_t1.json",
+          "page_168_ch4_t1.json",
+          "page_169_ch4_t1.json",
+          "page_170_ch4_t1.json",
+          "page_171_ch4_t1.json",
+          "page_172_ch4_t1.json",
+          "page_173_ch4_t1.json",
+          "page_174_ch4_t1.json",
+          "page_175_ch4_t1.json",
+          "page_177_ch4_t1.json",
+          "page_179_ch4_t1.json",
+          "page_180_ch4_t1.json",
+          "page_182_ch4_t1.json",
+          "page_208_ch4_t1.json",
+          "page_209_ch4_t1.json",
+          "page_210_ch4_t1.json",
+          "page_211_ch4_t1.json"
+        ]
       },
       {
         "name": "التكامل غير المحدد",
-        "files": []
+        "files": [
+          "page_3_ch4_t2.json",
+          "page_13_ch4_t2.json",
+          "page_15_ch4_t2.json",
+          "page_16_ch4_t2.json",
+          "page_50_ch4_t2.json",
+          "page_63_ch4_t2.json",
+          "page_77_ch4_t2.json",
+          "page_78_ch4_t2.json",
+          "page_150_ch4_t2.json",
+          "page_151_ch4_t2.json",
+          "page_159_ch4_t2.json",
+          "page_160_ch4_t2.json",
+          "page_163_ch4_t2.json",
+          "page_165_ch4_t2.json",
+          "page_166_ch4_t2.json",
+          "page_176_ch4_t2.json",
+          "page_177_ch4_t2.json",
+          "page_178_ch4_t2.json",
+          "page_182_ch4_t2.json"
+        ]
       },
       {
         "name": "المساحات والحجوم الدورانية",
-        "files": []
+        "files": [
+          "page_49_ch4_t3.json",
+          "page_56_ch4_t3.json",
+          "page_57_ch4_t3.json",
+          "page_74_ch4_t3.json",
+          "page_75_ch4_t3.json",
+          "page_76_ch4_t3.json",
+          "page_79_ch4_t3.json",
+          "page_152_ch4_t3.json",
+          "page_173_ch4_t3.json",
+          "page_183_ch4_t3.json",
+          "page_184_ch4_t3.json",
+          "page_185_ch4_t3.json",
+          "page_186_ch4_t3.json",
+          "page_187_ch4_t3.json",
+          "page_192_ch4_t3.json",
+          "page_193_ch4_t3.json",
+          "page_194_ch4_t3.json",
+          "page_195_ch4_t3.json",
+          "page_205_ch4_t3.json",
+          "page_206_ch4_t3.json",
+          "page_207_ch4_t3.json",
+          "page_220_ch4_t3.json"
+        ]
       }
     ]
   },
@@ -359,11 +553,23 @@
     "topics": [
       {
         "name": "مقدمة وحل المعادلات التفاضلية",
-        "files": []
+        "files": [
+          "page_227_ch5_t1.json",
+          "page_228_ch5_t1.json"
+        ]
       },
       {
         "name": "المعادلات التفاضلية من المرتبة الأولى",
-        "files": []
+        "files": [
+          "page_229_ch5_t2.json",
+          "page_230_ch5_t2.json",
+          "page_231_ch5_t2.json",
+          "page_232_ch5_t2.json",
+          "page_233_ch5_t2.json",
+          "page_234_ch5_t2.json",
+          "page_235_ch5_t2.json",
+          "page_236_ch5_t2.json"
+        ]
       }
     ]
   },

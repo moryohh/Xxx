@@ -1,0 +1,641 @@
+[
+  {
+    "title": "حل المعادلة التفاضلية بطريقة فصل المتغيرات \\( y'\\cos^3x=\\sin x \\)",
+    "steps": [
+      {
+        "step_id": "math_5_1_233_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعزل \\( dy \\). الطريقة: اقسم على \\( \\cos^3x \\) وانقل \\( dx \\). السبب: لنفصل المتغيرين.",
+        "think": "المقسوم عليه ما كان بجانب \\( y' \\).",
+        "html_structure": "dy=\\frac{\\sin x}{{q_5_1_233_1_s1_i1}}dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s1_i1",
+            "correct_value": "\\cos^3x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos^3x",
+              "\\cos x",
+              "\\sin x",
+              "\\cos^2x"
+            ],
+            "hint": "المقسوم عليه ما كان بجانب \\( y' \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحوّل لأس سالب. الطريقة: \\( \\frac{1}{\\cos^3x}=(\\cos x)^{-3} \\). السبب: لنستخدم التعويض.",
+        "think": "أس سالب بنفس الرقم 3.",
+        "html_structure": "\\int dy=\\int\\sin x(\\cos x)^{{q_5_1_233_1_s2_i1}}dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s2_i1",
+            "correct_value": "-3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-2",
+              "-1"
+            ],
+            "hint": "أس سالب بنفس الرقم 3."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نختار التعويض. الطريقة: ضع \\( u=\\cos x \\) فيكون \\( du=-\\sin x\\,dx \\). السبب: لأن \\( \\sin x \\) مشتقة \\( \\cos x \\) بإشارة.",
+        "think": "مشتقة \\( \\cos x \\).",
+        "html_structure": "u={q_5_1_233_1_s3_i1},\\ du={q_5_1_233_1_s3_i2}\\,dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s3_i1",
+            "correct_value": "\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos x",
+              "\\sin x",
+              "x",
+              "\\tan x"
+            ],
+            "hint": "مشتقة \\( \\cos x \\)."
+          },
+          {
+            "id": "q_5_1_233_1_s3_i2",
+            "correct_value": "-\\sin x",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "-\\sin x",
+              "\\sin x",
+              "-\\cos x",
+              "\\cos x"
+            ],
+            "hint": "مشتقة \\( \\cos x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نعبر عن \\( \\sin x\\,dx \\). الطريقة: اضرب \\( du \\) في \\( -1 \\). السبب: لنعوضها.",
+        "think": "عكس الإشارة.",
+        "html_structure": "\\sin x\\,dx={q_5_1_233_1_s4_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s4_i1",
+            "correct_value": "-du",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-du",
+              "du",
+              "-2du",
+              "u\\,du"
+            ],
+            "hint": "عكس الإشارة."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب التكامل بدلالة \\( u \\). الطريقة: استبدل بـ \\( u \\) مع الإشارة. السبب: لتبسيط التكامل.",
+        "think": "الأس السالب نفسه.",
+        "html_structure": "y=-\\int u^{{q_5_1_233_1_s5_i1}}du",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s5_i1",
+            "correct_value": "-3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-2",
+              "-1"
+            ],
+            "hint": "الأس السالب نفسه."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل القوة. الطريقة: زد الأس 1 واقسم على الجديد. السبب: قاعدة القوة.",
+        "think": "\\( -3+1=-2 \\).",
+        "html_structure": "-\\frac{u^{{q_5_1_233_1_s6_i1}}}{{q_5_1_233_1_s6_i2}}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s6_i1",
+            "correct_value": "-2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-2",
+              "-3",
+              "2",
+              "-4"
+            ],
+            "hint": "\\( -3+1=-2 \\)."
+          },
+          {
+            "id": "q_5_1_233_1_s6_i2",
+            "correct_value": "-2",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "-2",
+              "-3",
+              "2",
+              "-4"
+            ],
+            "hint": "\\( -3+1=-2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نبسط الإشارات. الطريقة: سالب مقسوم على سالب موجب. السبب: لنتخلص من الأس السالب.",
+        "think": "المقام العدد 2.",
+        "html_structure": "y=\\frac{1}{{q_5_1_233_1_s7_i1}u^2}+c",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s7_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "3"
+            ],
+            "hint": "المقام العدد 2."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعيد \\( u \\). الطريقة: \\( u=\\cos x \\). السبب: للعودة إلى \\( x \\).",
+        "think": "تربيع \\( \\cos x \\).",
+        "html_structure": "y=\\frac{1}{2\\cos^{{q_5_1_233_1_s8_i1}}x}+c",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s8_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "-2"
+            ],
+            "hint": "تربيع \\( \\cos x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحوّل إلى القاطع. الطريقة: \\( \\frac{1}{\\cos^2x}=\\sec^2x \\). السبب: للصيغة النهائية.",
+        "think": "الأس نفسه 2.",
+        "html_structure": "y=\\frac12\\sec^{{q_5_1_233_1_s9_i1}}x+c",
+        "inputs": [
+          {
+            "id": "q_5_1_233_1_s9_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "-1"
+            ],
+            "hint": "الأس نفسه 2."
+          }
+        ]
+      }
+    ],
+    "model_solution": "dy=sin x/cos^3x dx → y=1/(2cos^2x)+c=(1/2)sec^2x+c. (نص المصدر ينقصه الشرطة في y').",
+    "number": "13",
+    "page_number": 233,
+    "image_url": null
+  },
+  {
+    "title": "حل المعادلة التفاضلية \\( \\frac{dy}{dx}=\\frac{\\cos x}{3y^2+e^y} \\)",
+    "steps": [
+      {
+        "step_id": "math_5_1_233_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نضرب في المقام. الطريقة: اضرب الطرفين في \\( 3y^2+e^y \\) و\\( dx \\). السبب: لفصل \\( y \\).",
+        "think": "المقدار الذي كان في المقام.",
+        "html_structure": "({q_5_1_233_2_s1_i1})dy=\\cos x\\,dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s1_i1",
+            "correct_value": "3y^2+e^y",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3y^2+e^y",
+              "3y^2",
+              "e^y",
+              "\\cos x"
+            ],
+            "hint": "المقدار الذي كان في المقام."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نضع التكامل. الطريقة: كامل الطرفين. السبب: للحل.",
+        "think": "الطرف الأيمن.",
+        "html_structure": "\\int(3y^2+e^y)dy=\\int{q_5_1_233_2_s2_i1}dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s2_i1",
+            "correct_value": "\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos x",
+              "\\sin x",
+              "-\\sin x",
+              "x"
+            ],
+            "hint": "الطرف الأيمن."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكامل الحد الأول. الطريقة: زد الأس واقسم على 3 وانتبه للمعامل. السبب: قاعدة القوة.",
+        "think": "\\( 3\\cdot\\frac{y^3}{3} \\).",
+        "html_structure": "\\int3y^2dy={q_5_1_233_2_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s3_i1",
+            "correct_value": "y^3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "y^3",
+              "y^2",
+              "3y^3",
+              "6y"
+            ],
+            "hint": "\\( 3\\cdot\\frac{y^3}{3} \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل الحد الثاني. الطريقة: الأسية تبقى. السبب: قاعدة الأسية.",
+        "think": "لا تتغير.",
+        "html_structure": "\\int e^ydy={q_5_1_233_2_s4_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s4_i1",
+            "correct_value": "e^y",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "e^y",
+              "ye^y",
+              "e^{y+1}",
+              "1"
+            ],
+            "hint": "لا تتغير."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكامل الطرف الأيمن. الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\). السبب: عكس المشتقة.",
+        "think": "الجيب.",
+        "html_structure": "\\int\\cos x\\,dx={q_5_1_233_2_s5_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s5_i1",
+            "correct_value": "\\sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin x",
+              "-\\sin x",
+              "\\cos x",
+              "-\\cos x"
+            ],
+            "hint": "الجيب."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجمع. الطريقة: ضع ثابتاً واحداً. السبب: ثابت واحد يكفي.",
+        "think": "الثابت.",
+        "html_structure": "y^3+e^y=\\sin x+{q_5_1_233_2_s6_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s6_i1",
+            "correct_value": "c",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "الثابت."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعدّ الثوابت. الطريقة: نكتب ثابتاً واحداً. السبب: الثوابت المتعددة تُدمج.",
+        "think": "ثابت واحد.",
+        "html_structure": "\\text{عدد الثوابت}={q_5_1_233_2_s7_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s7_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "hint": "ثابت واحد."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: اشتق الطرفين بالنسبة لـ \\( x \\). السبب: للتأكد.",
+        "think": "مشتقة \\( \\sin x \\).",
+        "html_structure": "(3y^2+e^y)y'={q_5_1_233_2_s8_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_2_s8_i1",
+            "correct_value": "\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos x",
+              "\\sin x",
+              "-\\cos x",
+              "1"
+            ],
+            "hint": "مشتقة \\( \\sin x \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "(3y^2+e^y)dy=cos x dx → y^3+e^y=sin x+c.",
+    "number": "14",
+    "page_number": 233,
+    "image_url": null
+  },
+  {
+    "title": "جد الحل العام للمعادلة التفاضلية \\( \\tan^2y\\,dy=\\sin^3x\\,dx \\)",
+    "steps": [
+      {
+        "step_id": "math_5_1_233_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحوّل \\( \\tan^2y \\). الطريقة: استعمل \\( \\tan^2y=\\sec^2y-1 \\). السبب: لأن تكامل \\( \\tan^2 \\) لا يُحسب مباشرة.",
+        "think": "المتطابقة المعروفة.",
+        "html_structure": "\\tan^2y=\\sec^2y-{q_5_1_233_3_s1_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s1_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "\\tan y"
+            ],
+            "hint": "المتطابقة المعروفة."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نجزّئ \\( \\sin^3x \\). الطريقة: اكتب \\( \\sin^3x=\\sin^2x\\cdot\\sin x \\). السبب: لنحوّل \\( \\sin^2 \\).",
+        "think": "3 = 2 + 1.",
+        "html_structure": "\\sin^3x=\\sin^{{q_5_1_233_3_s2_i1}}x\\cdot\\sin x",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s2_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "hint": "3 = 2 + 1."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحوّل \\( \\sin^2x \\). الطريقة: \\( \\sin^2x=1-\\cos^2x \\). السبب: لنستعمل التعويض.",
+        "think": "المتطابقة الأساسية.",
+        "html_structure": "\\sin^2x=1-{q_5_1_233_3_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s3_i1",
+            "correct_value": "\\cos^2x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\cos^2x",
+              "\\cos x",
+              "\\sin x",
+              "\\tan^2x"
+            ],
+            "hint": "المتطابقة الأساسية."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب التكامل. الطريقة: ضع القيمتين. السبب: للحل.",
+        "think": "العامل المتبقي \\( \\sin x \\).",
+        "html_structure": "\\int(\\sec^2y-1)dy=\\int(1-\\cos^2x)\\,{q_5_1_233_3_s4_i1}\\,dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s4_i1",
+            "correct_value": "\\sin x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin x",
+              "\\cos x",
+              "\\sin^2x",
+              "x"
+            ],
+            "hint": "العامل المتبقي \\( \\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكامل الأيسر. الطريقة: \\( \\int\\sec^2y\\,dy=\\tan y \\) و\\( \\int dy \\) ماذا؟ السبب: قواعد التكامل.",
+        "think": "تكامل 1.",
+        "html_structure": "\\int dy={q_5_1_233_3_s5_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s5_i1",
+            "correct_value": "y",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "y",
+              "1",
+              "0",
+              "dy"
+            ],
+            "hint": "تكامل 1."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجمع الأيسر. الطريقة: طرح \\( y \\) من \\( \\tan y \\). السبب: تكامل الفرق.",
+        "think": "الذي ينقص.",
+        "html_structure": "\\tan y-{q_5_1_233_3_s6_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s6_i1",
+            "correct_value": "y",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "y",
+              "1",
+              "c",
+              "x"
+            ],
+            "hint": "الذي ينقص."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نوزّع الأيمن. الطريقة: وزّع \\( \\sin x \\) على القوس. السبب: لنفصل التكاملين.",
+        "think": "الحد الثاني مضروب بـ \\( \\sin x \\).",
+        "html_structure": "\\int\\sin x\\,dx-\\int{q_5_1_233_3_s7_i1}dx",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s7_i1",
+            "correct_value": "\\sin x\\cos^2x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin x\\cos^2x",
+              "\\cos^2x",
+              "\\sin^2x",
+              "\\cos x"
+            ],
+            "hint": "الحد الثاني مضروب بـ \\( \\sin x \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكامل \\( \\sin x \\). الطريقة: التكامل سالب جيب التمام. السبب: مشتقة \\( \\cos x \\) سالبة.",
+        "think": "إشارة سالبة.",
+        "html_structure": "\\int\\sin x\\,dx={q_5_1_233_3_s8_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s8_i1",
+            "correct_value": "-\\cos x",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "-\\cos x",
+              "\\cos x",
+              "\\sin x",
+              "-\\sin x"
+            ],
+            "hint": "إشارة سالبة."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكامل \\( \\sin x\\cos^2x \\). الطريقة: u=\\cos x، فالتكامل يعطي \\( -\\frac{u^3}{3} \\). السبب: مشتقة \\( \\cos x \\) هي \\( -\\sin x \\).",
+        "think": "الأس يزيد 1.",
+        "html_structure": "\\int\\sin x\\cos^2x\\,dx=-\\frac{\\cos^{{q_5_1_233_3_s9_i1}}x}{3}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s9_i1",
+            "correct_value": "3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "hint": "الأس يزيد 1."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نجمع الأيمن. الطريقة: اطرح التكامل الثاني: السالب مع السالب يصبح موجباً. السبب: قاعدة الإشارات.",
+        "think": "عكس إشارة \\( -\\frac{\\cos^3x}{3} \\).",
+        "html_structure": "-\\cos x+{q_5_1_233_3_s10_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s10_i1",
+            "correct_value": "\\frac{\\cos^3x}{3}",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\frac{\\cos^3x}{3}",
+              "-\\frac{\\cos^3x}{3}",
+              "\\cos^3x",
+              "\\frac{\\cos^2x}{3}"
+            ],
+            "hint": "عكس إشارة \\( -\\frac{\\cos^3x}{3} \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "math_5_1_233_3_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نكتب الحل. الطريقة: أضف \\( c \\). السبب: التكامل غير محدد.",
+        "think": "الثابت.",
+        "html_structure": "\\tan y-y=-\\cos x+\\frac{\\cos^3x}{3}+{q_5_1_233_3_s11_i1}",
+        "inputs": [
+          {
+            "id": "q_5_1_233_3_s11_i1",
+            "correct_value": "c",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "hint": "الثابت."
+          }
+        ]
+      }
+    ],
+    "model_solution": "∫(sec^2y-1)dy=∫(1-cos^2x)sin x dx → tan y-y=-cos x+cos^3x/3+c.",
+    "number": "15",
+    "page_number": 233,
+    "image_url": null
+  }
+]
