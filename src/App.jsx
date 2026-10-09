@@ -181,8 +181,16 @@ function Topics({ chapter, onBack, onOpen }) {
 }
 
 function Choices({ input, onChoose, onClose }) {
+  const shuffledChoices = useMemo(() => {
+    const choices = [...(input?.allowed_keys || [])]
+    for (let index = choices.length - 1; index > 0; index -= 1) {
+      const randomIndex = Math.floor(Math.random() * (index + 1))
+      ;[choices[index], choices[randomIndex]] = [choices[randomIndex], choices[index]]
+    }
+    return choices
+  }, [input])
   if (!input) return null
-  return <div className="modal-shade"><div className="choices-card"><button className="modal-x" onClick={onClose}><X/></button><h2>اختر الإجابة الصحيحة</h2><p><MathText>{input.label}</MathText></p><div className="choice-grid">{input.allowed_keys.map(value => <button key={value} onClick={() => onChoose(value)}><ChoiceText>{value}</ChoiceText></button>)}</div></div></div>
+  return <div className="modal-shade"><div className="choices-card"><button className="modal-x" onClick={onClose}><X/></button><h2>اختر الإجابة الصحيحة</h2><p><MathText>{input.label}</MathText></p><div className="choice-grid">{shuffledChoices.map((value, index) => <button key={`${value}-${index}`} onClick={() => onChoose(value)}><ChoiceText>{value}</ChoiceText></button>)}</div></div></div>
 }
 
 function CalculatorModal({ onClose }) {
