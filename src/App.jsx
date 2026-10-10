@@ -19,8 +19,20 @@ const normalizeLatex = value => String(value || '')
   .replace(/\\{2,}(?=[()[\]A-Za-z])/g, '\\')
   .replace(/\\+\s+(?=[()[\]])/g, '\\')
 
+// KaTeX treats ordinary Arabic inside formulas as math symbols and removes
+// normal word spaces. Convert Arabic runs to text atoms separated by explicit
+// TeX spaces so every physics lesson keeps readable Arabic wording.
+const preserveArabicFormulaSpacing = value => normalizeLatex(value)
+  .replace(/\\text\{([^{}]*[\u0600-\u06ff][^{}]*)\}/gu, '$1')
+  .replace(/[\u0600-\u06ff][\u0600-\u06ff\s،؛:؟.-]*/gu, run => {
+    const leading = /^\s/u.test(run) ? '\\ ' : ''
+    const trailing = /\s$/u.test(run) ? '\\ ' : ''
+    const words = run.trim().split(/\s+/u).filter(Boolean)
+    return words.length ? `${leading}${words.map(word => `\\text{${word}}`).join('\\ ')}${trailing}` : run
+  })
+
 const renderFormula = value => {
-  const formula = normalizeLatex(value).replace(/\\[()[\]]/g, '').trim()
+  const formula = preserveArabicFormulaSpacing(value).replace(/\\[()[\]]/g, '').trim()
   try {
     return katex.renderToString(formula, { throwOnError: true, strict: false, trust: true })
   } catch {
