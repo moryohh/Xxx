@@ -1,0 +1,203 @@
+[
+  {
+    "title": "في حيود الضوء من شق واحد، اثبت أن شرط تكون الهدب المضيء الأول (\\( m=1 \\)، غير المركزي) هو أن يكون عرض الشق \\( L = \\frac{3\\lambda}{2\\sin\\theta} \\).",
+    "steps": [
+      {
+        "step_id": "physics_5_3_1_step_1",
+        "title": "الخطوة ١",
+        "explanation": "الهدف: نكتب شرط الهدب المضيء. الطريقة: \\( L\\sin\\theta = (m + \\frac{1}{2})\\lambda \\). السبب: هذا هو الشرط المعطى للهدب المضيء في الحيود.",
+        "think": "اضرب القوس في الطول الموجي.",
+        "html_structure": "L \\sin\\theta = (m + \\frac{1}{2}){q_5_3_1_s1_i1}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s1_i1",
+            "correct_value": "\\lambda",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "L",
+              "d",
+              "\\lambda",
+              "\\theta"
+            ],
+            "hint": "اضرب القوس في الطول الموجي."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_2",
+        "title": "الخطوة ٢",
+        "explanation": "الهدف: نعزل \\( L \\). الطريقة: نقسم الطرفين على \\( \\sin\\theta \\). السبب: المطلوب عرض الشق.",
+        "think": "ما كان يضرب \\( L \\) ينتقل للمقام.",
+        "html_structure": "L = \\frac{(m+\\frac{1}{2})\\lambda}{{q_5_3_1_s2_i1}}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s2_i1",
+            "correct_value": "\\sin\\theta",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin\\theta",
+              "\\lambda",
+              "\\cos\\theta",
+              "m"
+            ],
+            "hint": "ما كان يضرب \\( L \\) ينتقل للمقام."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_3",
+        "title": "الخطوة ٣",
+        "explanation": "الهدف: نحدد قيمة \\( m \\). الطريقة: الهدب المضيء الأول غير المركزي يقابل \\( m = 1 \\). السبب: السؤال يحدد المرتبة الأولى.",
+        "think": "أول هدب مضيء بعد المركزي.",
+        "html_structure": "m = {q_5_3_1_s3_i1}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s3_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "hint": "أول هدب مضيء بعد المركزي."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_4",
+        "title": "الخطوة ٤",
+        "explanation": "الهدف: نعوّض \\( m \\). الطريقة: نضع \\( 1 \\) مكان \\( m \\). السبب: لنتخلص من المتغير.",
+        "think": "ضع قيمة \\( m \\).",
+        "html_structure": "L = \\frac{({q_5_3_1_s4_i1} + \\frac{1}{2})\\lambda}{\\sin\\theta}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s4_i1",
+            "correct_value": "1",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "0",
+              "2"
+            ],
+            "hint": "ضع قيمة \\( m \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_5",
+        "title": "الخطوة ٥",
+        "explanation": "الهدف: نجمع داخل القوس. الطريقة: \\( 1 + \\frac{1}{2} = \\frac{2}{2} + \\frac{1}{2} \\). السبب: توحيد المقامات.",
+        "think": "حوّل \\( 1 \\) إلى \\( \\frac{2}{2} \\) ثم اجمع.",
+        "html_structure": "1 + \\frac{1}{2} = \\frac{{q_5_3_1_s5_i1}}{{q_5_3_1_s5_i2}}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s5_i1",
+            "correct_value": "3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "hint": "حوّل \\( 1 \\) إلى \\( \\frac{2}{2} \\) ثم اجمع."
+          },
+          {
+            "id": "q_5_3_1_s5_i2",
+            "correct_value": "2",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "hint": "حوّل \\( 1 \\) إلى \\( \\frac{2}{2} \\) ثم اجمع."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_6",
+        "title": "الخطوة ٦",
+        "explanation": "الهدف: نعيد كتابة المعادلة. الطريقة: نضع \\( \\frac{3}{2} \\) مكان القوس. السبب: للتبسيط.",
+        "think": "المقام لم يتغير.",
+        "html_structure": "L = \\frac{\\frac{3}{2}\\lambda}{{q_5_3_1_s6_i1}}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s6_i1",
+            "correct_value": "\\sin\\theta",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\sin\\theta",
+              "2",
+              "\\lambda",
+              "\\cos\\theta"
+            ],
+            "hint": "المقام لم يتغير."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_7",
+        "title": "الخطوة ٧",
+        "explanation": "الهدف: نفكك الكسر. الطريقة: \\( \\frac{\\frac{3}{2}\\lambda}{\\sin\\theta} = \\frac{3}{2}\\lambda\\times\\frac{1}{\\sin\\theta} \\). السبب: لنوحد الكسور.",
+        "think": "القسمة على \\( \\sin\\theta \\) هي الضرب في \\( \\frac{1}{\\sin\\theta} \\).",
+        "html_structure": "L = \\frac{3}{2}\\lambda \\times \\frac{1}{{q_5_3_1_s7_i1}}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s7_i1",
+            "correct_value": "\\sin\\theta",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "\\lambda",
+              "2",
+              "\\sin\\theta",
+              "\\cos\\theta"
+            ],
+            "hint": "القسمة على \\( \\sin\\theta \\) هي الضرب في \\( \\frac{1}{\\sin\\theta} \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_5_3_1_step_8",
+        "title": "الخطوة ٨",
+        "explanation": "الهدف: نكتب الصيغة النهائية. الطريقة: نضرب البسطين ونضرب المقامين. السبب: هذا هو المطلوب إثباته.",
+        "think": "البسط \\( 3\\lambda \\) والمقام \\( 2\\sin\\theta \\).",
+        "html_structure": "L = \\frac{{q_5_3_1_s8_i1}\\lambda}{{q_5_3_1_s8_i2}\\sin\\theta}",
+        "inputs": [
+          {
+            "id": "q_5_3_1_s8_i1",
+            "correct_value": "3",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "1"
+            ],
+            "hint": "البسط \\( 3\\lambda \\) والمقام \\( 2\\sin\\theta \\)."
+          },
+          {
+            "id": "q_5_3_1_s8_i2",
+            "correct_value": "2",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "hint": "البسط \\( 3\\lambda \\) والمقام \\( 2\\sin\\theta \\)."
+          }
+        ]
+      }
+    ],
+    "model_solution": "\\( L\\sin\\theta = (m+\\frac{1}{2})\\lambda \\Rightarrow L = \\frac{(1+\\frac12)\\lambda}{\\sin\\theta} = \\frac{\\frac32\\lambda}{\\sin\\theta} = \\frac{3\\lambda}{2\\sin\\theta} \\)",
+    "number": "حيود شق واحد",
+    "page_number": 39,
+    "image_url": null
+  }
+]
