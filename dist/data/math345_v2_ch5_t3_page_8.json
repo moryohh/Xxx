@@ -1,0 +1,888 @@
+[
+  {
+    "id_number": "q4_p8",
+    "page_number": 8,
+    "question_number": "4",
+    "question_text": "حل المعادلة \\( y' = 4(1+y^2)^{\\frac{3}{2}} \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_008_diag_q4_diagram.png"
+    ],
+    "full_model_solution": "dy/(1+y²)^(3/2)=4dx ⇒ y/√(1+y²)=4x+c",
+    "source_file": "رياضيات5/part3_page_008_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 8,
+      "pdf_page_number": 230
+    },
+    "chapter": 5,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_008_diag_q4_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_008_diag_q4_diagram.png",
+    "title": "حل المعادلة \\( y' = 4(1+y^2)^{\\frac{3}{2}} \\)",
+    "number": "4",
+    "model_solution": "dy/(1+y²)^(3/2)=4dx ⇒ y/√(1+y²)=4x+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب \\( y' \\) بصيغة تفاضلية. الطريقة: \\( y' \\) تعني مشتقة \\( y \\) بالنسبة إلى \\( x \\). السبب: لنفصل المتغيرات.",
+        "equation_template": "y' = \\frac{d{input_1}}{d{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "x",
+              "t",
+              "c"
+            ],
+            "id": "q_5_3_8_1_s1_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "x",
+              "t",
+              "c"
+            ],
+            "label": "القيمة 1",
+            "hint": "المتغير التابع في البسط والمستقل في المقام."
+          },
+          {
+            "input_id": "step1_b",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "c"
+            ],
+            "id": "q_5_3_8_1_s1_i2",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "c"
+            ],
+            "label": "القيمة 2",
+            "hint": "المتغير التابع في البسط والمستقل في المقام."
+          }
+        ],
+        "hint": "المتغير التابع في البسط والمستقل في المقام.",
+        "related_topics": [
+          "الصيغة التفاضلية"
+        ],
+        "step_id": "math345_5_3_8_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب \\( y' \\) بصيغة تفاضلية. الطريقة: \\( y' \\) تعني مشتقة \\( y \\) بالنسبة إلى \\( x \\). السبب: لنفصل المتغيرات.",
+        "think": "المتغير التابع في البسط والمستقل في المقام.",
+        "html_structure": "y' = \\frac{d{q_5_3_8_1_s1_i1}}{d{q_5_3_8_1_s1_i2}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نفصل المتغيرات. الطريقة: نقسم الطرفين على \\( (1+y^2)^{\\frac{3}{2}} \\) ونضرب في \\( dx \\) فنحصل على \\( \\frac{dy}{(1+y^2)^{3/2}} = 4dx \\). السبب: لنضع حدود \\( y \\) في طرف وحدود \\( x \\) في طرف.",
+        "equation_template": "\\frac{dy}{(1+y^2)^{{input_1}}} = 4\\,{input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_c",
+            "correct_answer": "3/2",
+            "options": [
+              "3/2",
+              "1/2",
+              "-3/2",
+              "2/3"
+            ],
+            "id": "q_5_3_8_1_s2_i1",
+            "correct_value": "3/2",
+            "allowed_keys": [
+              "3/2",
+              "1/2",
+              "-3/2",
+              "2/3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( \\frac{3}{2} \\) ينتقل إلى المقام كما هو."
+          },
+          {
+            "input_id": "step2_d",
+            "correct_answer": "dx",
+            "options": [
+              "dx",
+              "dy",
+              "x",
+              "4"
+            ],
+            "id": "q_5_3_8_1_s2_i2",
+            "correct_value": "dx",
+            "allowed_keys": [
+              "dx",
+              "dy",
+              "x",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( \\frac{3}{2} \\) ينتقل إلى المقام كما هو."
+          }
+        ],
+        "hint": "الأس \\( \\frac{3}{2} \\) ينتقل إلى المقام كما هو.",
+        "related_topics": [
+          "فصل المتغيرات"
+        ],
+        "step_id": "math345_5_3_8_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نفصل المتغيرات. الطريقة: نقسم الطرفين على \\( (1+y^2)^{\\frac{3}{2}} \\) ونضرب في \\( dx \\) فنحصل على \\( \\frac{dy}{(1+y^2)^{3/2}} = 4dx \\). السبب: لنضع حدود \\( y \\) في طرف وحدود \\( x \\) في طرف.",
+        "think": "الأس \\( \\frac{3}{2} \\) ينتقل إلى المقام كما هو.",
+        "html_structure": "\\frac{dy}{(1+y^2)^{{q_5_3_8_1_s2_i1}}} = 4\\,{q_5_3_8_1_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب الطرف الأيسر بأس سالب. الطريقة: نقل القوس من المقام للبسط يعكس إشارة الأس. السبب: لنكتب التكامل بصيغة قوى.",
+        "equation_template": "\\frac{1}{(1+y^2)^{3/2}} = (1+y^2)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_e",
+            "correct_answer": "-3/2",
+            "options": [
+              "-3/2",
+              "3/2",
+              "-1/2",
+              "-2/3"
+            ],
+            "id": "q_5_3_8_1_s3_i1",
+            "correct_value": "-3/2",
+            "allowed_keys": [
+              "-3/2",
+              "3/2",
+              "-1/2",
+              "-2/3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب الأس \\( \\frac{3}{2} \\) بإشارة سالبة."
+          }
+        ],
+        "hint": "اكتب الأس \\( \\frac{3}{2} \\) بإشارة سالبة.",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_5_3_8_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب الطرف الأيسر بأس سالب. الطريقة: نقل القوس من المقام للبسط يعكس إشارة الأس. السبب: لنكتب التكامل بصيغة قوى.",
+        "think": "اكتب الأس \\( \\frac{3}{2} \\) بإشارة سالبة.",
+        "html_structure": "\\frac{1}{(1+y^2)^{3/2}} = (1+y^2)^{{q_5_3_8_1_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل الطرف الأيمن. الطريقة: تكامل الثابت \\( 4 \\) بالنسبة إلى \\( x \\) هو \\( 4x \\). السبب: قاعدة تكامل الثابت.",
+        "equation_template": "\\int 4\\,dx = {input_1}x + c",
+        "inputs": [
+          {
+            "input_id": "step4_f",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "1",
+              "0",
+              "x"
+            ],
+            "id": "q_5_3_8_1_s4_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "1",
+              "0",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب الثابت نفسه."
+          }
+        ],
+        "hint": "اكتب الثابت نفسه.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_5_3_8_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل الطرف الأيمن. الطريقة: تكامل الثابت \\( 4 \\) بالنسبة إلى \\( x \\) هو \\( 4x \\). السبب: قاعدة تكامل الثابت.",
+        "think": "اكتب الثابت نفسه.",
+        "html_structure": "\\int 4\\,dx = {q_5_3_8_1_s4_i1}x + c"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نستخدم نتيجة تكامل \\( (1+y^2)^{-3/2} \\). الطريقة: هذا التكامل لا يحلّ بقاعدة القوى المباشرة (لأن مشتقة القوس \\( 2y \\) غير موجودة)، والكتاب يعطي ناتجه \\( \\frac{y}{\\sqrt{1+y^2}} \\)، وسنتحقق منه بالاشتقاق في الخطوات التالية. السبب: لنتأكد من صحة الناتج قبل اعتماده.",
+        "equation_template": "\\int (1+y^2)^{-3/2}dy = \\frac{y}{\\sqrt{{input_1}}}",
+        "inputs": [
+          {
+            "input_id": "step5_g",
+            "correct_answer": "1+y^2",
+            "options": [
+              "1+y^2",
+              "1-y^2",
+              "y^2",
+              "1+y"
+            ],
+            "id": "q_5_3_8_1_s5_i1",
+            "correct_value": "1+y^2",
+            "allowed_keys": [
+              "1+y^2",
+              "1-y^2",
+              "y^2",
+              "1+y"
+            ],
+            "label": "القيمة 1",
+            "hint": "داخل الجذر نفس القوس الأصلي."
+          }
+        ],
+        "hint": "داخل الجذر نفس القوس الأصلي.",
+        "related_topics": [
+          "اشتقاق للتحقق"
+        ],
+        "step_id": "math345_5_3_8_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نستخدم نتيجة تكامل \\( (1+y^2)^{-3/2} \\). الطريقة: هذا التكامل لا يحلّ بقاعدة القوى المباشرة (لأن مشتقة القوس \\( 2y \\) غير موجودة)، والكتاب يعطي ناتجه \\( \\frac{y}{\\sqrt{1+y^2}} \\)، وسنتحقق منه بالاشتقاق في الخطوات التالية. السبب: لنتأكد من صحة الناتج قبل اعتماده.",
+        "think": "داخل الجذر نفس القوس الأصلي.",
+        "html_structure": "\\int (1+y^2)^{-3/2}dy = \\frac{y}{\\sqrt{{q_5_3_8_1_s5_i1}}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نتحقق: نشتق \\( y(1+y^2)^{-1/2} \\) بقاعدة الضرب. الطريقة: مشتقة \\( y \\) مضروبة في القوس، زائد \\( y \\) مضروبة في مشتقة القوس: \\( y\\cdot(-\\frac{1}{2})(1+y^2)^{-3/2}\\cdot 2y \\). السبب: اشتقاق الناتج يجب أن يعيدنا للدالة تحت التكامل.",
+        "equation_template": "(1+y^2)^{-1/2} + y\\left(-\\frac{1}{2}\\right)(1+y^2)^{-3/2}\\cdot{input_1}y",
+        "inputs": [
+          {
+            "input_id": "step6_h",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "y",
+              "4"
+            ],
+            "id": "q_5_3_8_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "y",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 1+y^2 \\) هي \\( 2y \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 1+y^2 \\) هي \\( 2y \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_5_3_8_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نتحقق: نشتق \\( y(1+y^2)^{-1/2} \\) بقاعدة الضرب. الطريقة: مشتقة \\( y \\) مضروبة في القوس، زائد \\( y \\) مضروبة في مشتقة القوس: \\( y\\cdot(-\\frac{1}{2})(1+y^2)^{-3/2}\\cdot 2y \\). السبب: اشتقاق الناتج يجب أن يعيدنا للدالة تحت التكامل.",
+        "think": "مشتقة \\( 1+y^2 \\) هي \\( 2y \\).",
+        "html_structure": "(1+y^2)^{-1/2} + y\\left(-\\frac{1}{2}\\right)(1+y^2)^{-3/2}\\cdot{q_5_3_8_1_s6_i1}y"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نبسط الحد الثاني. الطريقة: \\( y\\times(-\\frac{1}{2})\\times 2y = -y^2 \\). السبب: لنجمع الحدين.",
+        "equation_template": "y\\left(-\\frac{1}{2}\\right)(2y) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_i",
+            "correct_answer": "-y^2",
+            "options": [
+              "-y^2",
+              "y^2",
+              "-2y",
+              "-y"
+            ],
+            "id": "q_5_3_8_1_s7_i1",
+            "correct_value": "-y^2",
+            "allowed_keys": [
+              "-y^2",
+              "y^2",
+              "-2y",
+              "-y"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( -\\frac{1}{2}\\times2=-1 \\) ثم \\( y\\times y \\)."
+          }
+        ],
+        "hint": "اضرب \\( -\\frac{1}{2}\\times2=-1 \\) ثم \\( y\\times y \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_3_8_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نبسط الحد الثاني. الطريقة: \\( y\\times(-\\frac{1}{2})\\times 2y = -y^2 \\). السبب: لنجمع الحدين.",
+        "think": "اضرب \\( -\\frac{1}{2}\\times2=-1 \\) ثم \\( y\\times y \\).",
+        "html_structure": "y\\left(-\\frac{1}{2}\\right)(2y) = {q_5_3_8_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نوحد الأسس. الطريقة: نكتب \\( (1+y^2)^{-1/2} = (1+y^2)\\cdot(1+y^2)^{-3/2} \\) لأن \\( 1 + (-\\frac{3}{2}) = -\\frac{1}{2} \\). السبب: لنخرج عاملاً مشتركاً.",
+        "equation_template": "(1+y^2)^{-1/2} = (1+y^2)(1+y^2)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step8_j",
+            "correct_answer": "-3/2",
+            "options": [
+              "-3/2",
+              "-1/2",
+              "3/2",
+              "-2/3"
+            ],
+            "id": "q_5_3_8_1_s8_i1",
+            "correct_value": "-3/2",
+            "allowed_keys": [
+              "-3/2",
+              "-1/2",
+              "3/2",
+              "-2/3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس الذي في الطرف الآخر من التكامل."
+          }
+        ],
+        "hint": "الأس الذي في الطرف الآخر من التكامل.",
+        "related_topics": [
+          "جمع الأسس"
+        ],
+        "step_id": "math345_5_3_8_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نوحد الأسس. الطريقة: نكتب \\( (1+y^2)^{-1/2} = (1+y^2)\\cdot(1+y^2)^{-3/2} \\) لأن \\( 1 + (-\\frac{3}{2}) = -\\frac{1}{2} \\). السبب: لنخرج عاملاً مشتركاً.",
+        "think": "الأس الذي في الطرف الآخر من التكامل.",
+        "html_structure": "(1+y^2)^{-1/2} = (1+y^2)(1+y^2)^{{q_5_3_8_1_s8_i1}}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نبسط داخل القوس. الطريقة: نجمع \\( (1+y^2) - y^2 \\) فيبقى \\( 1 \\). السبب: فيرجع الناتج إلى \\( (1+y^2)^{-3/2} \\) كما نريد.",
+        "equation_template": "(1+y^2) - y^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_k",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "y^2",
+              "2"
+            ],
+            "id": "q_5_3_8_1_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "y^2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "احذف \\( y^2 \\) مع \\( -y^2 \\)."
+          }
+        ],
+        "hint": "احذف \\( y^2 \\) مع \\( -y^2 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_3_8_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نبسط داخل القوس. الطريقة: نجمع \\( (1+y^2) - y^2 \\) فيبقى \\( 1 \\). السبب: فيرجع الناتج إلى \\( (1+y^2)^{-3/2} \\) كما نريد.",
+        "think": "احذف \\( y^2 \\) مع \\( -y^2 \\).",
+        "html_structure": "(1+y^2) - y^2 = {q_5_3_8_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نكتب الحل العام. الطريقة: نجمع التكاملين: \\( \\frac{y}{\\sqrt{1+y^2}} = 4x + c \\). السبب: هذا هو الحل العام للمعادلة.",
+        "equation_template": "\\frac{y}{\\sqrt{1+y^2}} = 4x + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_l",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_5_3_8_1_s10_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "رمز ثابت التكامل."
+          }
+        ],
+        "hint": "رمز ثابت التكامل.",
+        "related_topics": [
+          "الحل العام"
+        ],
+        "step_id": "math345_5_3_8_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نكتب الحل العام. الطريقة: نجمع التكاملين: \\( \\frac{y}{\\sqrt{1+y^2}} = 4x + c \\). السبب: هذا هو الحل العام للمعادلة.",
+        "think": "رمز ثابت التكامل.",
+        "html_structure": "\\frac{y}{\\sqrt{1+y^2}} = 4x + {q_5_3_8_1_s10_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q5_p8",
+    "page_number": 8,
+    "question_number": "5",
+    "question_text": "أوجد حل المعادلة التفاضلية \\( y' - x\\sqrt{y} = 0 \\) عندما \\( x = 2 , y = 9 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_008_diag_q5_diagram.png"
+    ],
+    "full_model_solution": "2√y = x²/2 + c ، c=4 ⇒ y=(x²/4+2)²",
+    "source_file": "رياضيات5/part3_page_008_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 8,
+      "pdf_page_number": 230
+    },
+    "chapter": 5,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_008_diag_q5_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_008_diag_q5_diagram.png",
+    "title": "أوجد حل المعادلة التفاضلية \\( y' - x\\sqrt{y} = 0 \\) عندما \\( x = 2 , y = 9 \\)",
+    "number": "5",
+    "model_solution": "2√y = x²/2 + c ، c=4 ⇒ y=(x²/4+2)²",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعزل \\( y' \\). الطريقة: ننقل \\( x\\sqrt{y} \\) إلى الطرف الأيمن فنحصل على \\( y' = x\\sqrt{y} \\). السبب: لنفصل المتغيرات.",
+        "equation_template": "y' = {input_1}\\cdot\\sqrt{y}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "2x",
+              "1"
+            ],
+            "id": "q_5_3_8_2_s1_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "2x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الذي كان مطروحاً مع \\( \\sqrt{y} \\)."
+          }
+        ],
+        "hint": "الحد الذي كان مطروحاً مع \\( \\sqrt{y} \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_5_3_8_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعزل \\( y' \\). الطريقة: ننقل \\( x\\sqrt{y} \\) إلى الطرف الأيمن فنحصل على \\( y' = x\\sqrt{y} \\). السبب: لنفصل المتغيرات.",
+        "think": "الحد الذي كان مطروحاً مع \\( \\sqrt{y} \\).",
+        "html_structure": "y' = {q_5_3_8_2_s1_i1}\\cdot\\sqrt{y}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب الجذر كأس. الطريقة: \\( y' = \\frac{dy}{dx} \\) و \\( \\sqrt{y} = y^{\\frac{1}{2}} \\). السبب: لنطبق قاعدة القوى.",
+        "equation_template": "\\frac{dy}{dx} = x\\,y^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "2",
+              "-1/2",
+              "3/2"
+            ],
+            "id": "q_5_3_8_2_s2_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "2",
+              "-1/2",
+              "3/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر التربيعي أسه \\( \\frac{1}{2} \\)."
+          }
+        ],
+        "hint": "الجذر التربيعي أسه \\( \\frac{1}{2} \\).",
+        "related_topics": [
+          "الجذور والأسس"
+        ],
+        "step_id": "math345_5_3_8_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب الجذر كأس. الطريقة: \\( y' = \\frac{dy}{dx} \\) و \\( \\sqrt{y} = y^{\\frac{1}{2}} \\). السبب: لنطبق قاعدة القوى.",
+        "think": "الجذر التربيعي أسه \\( \\frac{1}{2} \\).",
+        "html_structure": "\\frac{dy}{dx} = x\\,y^{{q_5_3_8_2_s2_i1}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نفصل المتغيرات. الطريقة: نقسم على \\( y^{\\frac{1}{2}} \\) فينتقل إلى الطرف الآخر بأس سالب، ونضرب في \\( dx \\). السبب: لنضع حدود \\( y \\) مع \\( dy \\) وحدود \\( x \\) مع \\( dx \\).",
+        "equation_template": "y^{{input_1}}\\,dy = x\\,dx",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "-1/2",
+            "options": [
+              "-1/2",
+              "1/2",
+              "-2",
+              "-3/2"
+            ],
+            "id": "q_5_3_8_2_s3_i1",
+            "correct_value": "-1/2",
+            "allowed_keys": [
+              "-1/2",
+              "1/2",
+              "-2",
+              "-3/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل الأس \\( \\frac{1}{2} \\) إلى الطرف الآخر بإشارة سالبة."
+          }
+        ],
+        "hint": "انقل الأس \\( \\frac{1}{2} \\) إلى الطرف الآخر بإشارة سالبة.",
+        "related_topics": [
+          "فصل المتغيرات"
+        ],
+        "step_id": "math345_5_3_8_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نفصل المتغيرات. الطريقة: نقسم على \\( y^{\\frac{1}{2}} \\) فينتقل إلى الطرف الآخر بأس سالب، ونضرب في \\( dx \\). السبب: لنضع حدود \\( y \\) مع \\( dy \\) وحدود \\( x \\) مع \\( dx \\).",
+        "think": "انقل الأس \\( \\frac{1}{2} \\) إلى الطرف الآخر بإشارة سالبة.",
+        "html_structure": "y^{{q_5_3_8_2_s3_i1}}\\,dy = x\\,dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نريد حساب الأس الجديد للحد \\( y^{-\\frac{1}{2}} \\). الطريقة: الأس الحالي هو \\( -\\frac{1}{2} \\)، فنضيف إليه \\( 1 \\) ونحسب الناتج (إذا كان الأس كسراً نكتب \\( 1 \\) بنفس المقام ثم نجمع). السبب: قاعدة تكامل القوى ترفع الأس دائماً بمقدار واحد.",
+        "equation_template": "(-\\frac{1}{2}) + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_t_newexp",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "-1/2",
+              "-3/2",
+              "2"
+            ],
+            "id": "q_5_3_8_2_s4_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "-1/2",
+              "-3/2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( -\\frac{1}{2} + 1 \\). وبما أن الأس كسر فحوّل \\( 1 \\) إلى كسر له نفس المقام ثم اجمع البسطين فقط."
+          }
+        ],
+        "hint": "احسب \\( -\\frac{1}{2} + 1 \\). وبما أن الأس كسر فحوّل \\( 1 \\) إلى كسر له نفس المقام ثم اجمع البسطين فقط.",
+        "related_topics": [
+          "تكامل x^n"
+        ],
+        "step_id": "math345_5_3_8_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نريد حساب الأس الجديد للحد \\( y^{-\\frac{1}{2}} \\). الطريقة: الأس الحالي هو \\( -\\frac{1}{2} \\)، فنضيف إليه \\( 1 \\) ونحسب الناتج (إذا كان الأس كسراً نكتب \\( 1 \\) بنفس المقام ثم نجمع). السبب: قاعدة تكامل القوى ترفع الأس دائماً بمقدار واحد.",
+        "think": "احسب \\( -\\frac{1}{2} + 1 \\). وبما أن الأس كسر فحوّل \\( 1 \\) إلى كسر له نفس المقام ثم اجمع البسطين فقط.",
+        "html_structure": "(-\\frac{1}{2}) + 1 = {q_5_3_8_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد مقلوب الأس الجديد \\( \\frac{1}{2} \\). الطريقة: القسمة على \\( \\frac{1}{2} \\) تعني الضرب في مقلوبه، فنكتب \\( 1 \\) على \\( \\frac{1}{2} \\) (وإذا كان كسراً نقلب بسطه ومقامه). السبب: هكذا نتجنب القسمة على كسر ونحولها إلى ضرب أسهل.",
+        "equation_template": "\\frac{1}{\\frac{1}{2}} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_t_recip",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1/2",
+              "-2",
+              "3"
+            ],
+            "id": "q_5_3_8_2_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1/2",
+              "-2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقلب العدد \\( \\frac{1}{2} \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه)."
+          }
+        ],
+        "hint": "اقلب العدد \\( \\frac{1}{2} \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه).",
+        "related_topics": [
+          "المقلوب"
+        ],
+        "step_id": "math345_5_3_8_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد مقلوب الأس الجديد \\( \\frac{1}{2} \\). الطريقة: القسمة على \\( \\frac{1}{2} \\) تعني الضرب في مقلوبه، فنكتب \\( 1 \\) على \\( \\frac{1}{2} \\) (وإذا كان كسراً نقلب بسطه ومقامه). السبب: هكذا نتجنب القسمة على كسر ونحولها إلى ضرب أسهل.",
+        "think": "اقلب العدد \\( \\frac{1}{2} \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه).",
+        "html_structure": "\\frac{1}{\\frac{1}{2}} = {q_5_3_8_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب معامل الحد بعد التكامل. الطريقة: نضرب المعامل الأصلي \\( 1 \\) في المقلوب \\( 2 \\) (البسط في البسط والمقام في المقام ثم نختصر). السبب: قاعدة التكامل تقسم على الأس الجديد، أي تضرب المعامل في مقلوبه.",
+        "equation_template": "1 \\times 2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_t_coef",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "1/2"
+            ],
+            "id": "q_5_3_8_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "1/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 1 \\times 2 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج."
+          }
+        ],
+        "hint": "اضرب \\( 1 \\times 2 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_5_3_8_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب معامل الحد بعد التكامل. الطريقة: نضرب المعامل الأصلي \\( 1 \\) في المقلوب \\( 2 \\) (البسط في البسط والمقام في المقام ثم نختصر). السبب: قاعدة التكامل تقسم على الأس الجديد، أي تضرب المعامل في مقلوبه.",
+        "think": "اضرب \\( 1 \\times 2 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج.",
+        "html_structure": "1 \\times 2 = {q_5_3_8_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكامل \\( x \\). الطريقة: تكامل \\( x \\) هو \\( \\frac{x^2}{2} \\). السبب: قاعدة القوى.",
+        "equation_template": "\\int x\\,dx = \\frac{x^{{input_1}}}{2}",
+        "inputs": [
+          {
+            "input_id": "step7_d",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "id": "q_5_3_8_2_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أضف \\( 1 \\) للأس \\( 1 \\)."
+          }
+        ],
+        "hint": "أضف \\( 1 \\) للأس \\( 1 \\).",
+        "related_topics": [
+          "تكامل x^n"
+        ],
+        "step_id": "math345_5_3_8_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكامل \\( x \\). الطريقة: تكامل \\( x \\) هو \\( \\frac{x^2}{2} \\). السبب: قاعدة القوى.",
+        "think": "أضف \\( 1 \\) للأس \\( 1 \\).",
+        "html_structure": "\\int x\\,dx = \\frac{x^{{q_5_3_8_2_s7_i1}}}{2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحل العام. الطريقة: الطرف الأيسر \\( 2y^{\\frac{1}{2}} \\) والأيمن \\( \\frac{x^2}{2} \\) ثم نضيف \\( c \\). السبب: ثابت واحد يكفي.",
+        "equation_template": "2y^{1/2} = \\frac{x^2}{2} + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_e",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_5_3_8_2_s8_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "رمز ثابت التكامل."
+          }
+        ],
+        "hint": "رمز ثابت التكامل.",
+        "related_topics": [
+          "الحل العام"
+        ],
+        "step_id": "math345_5_3_8_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحل العام. الطريقة: الطرف الأيسر \\( 2y^{\\frac{1}{2}} \\) والأيمن \\( \\frac{x^2}{2} \\) ثم نضيف \\( c \\). السبب: ثابت واحد يكفي.",
+        "think": "رمز ثابت التكامل.",
+        "html_structure": "2y^{1/2} = \\frac{x^2}{2} + {q_5_3_8_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نعوض الشرط \\( x=2 , y=9 \\). الطريقة: نضع \\( 9 \\) مكان \\( y \\) و \\( 2 \\) مكان \\( x \\): \\( 2\\sqrt{9} = 6 \\) و \\( \\frac{2^2}{2} = 2 \\). السبب: لنحسب قيمة \\( c \\).",
+        "equation_template": "2\\sqrt{9} = \\frac{2^2}{2} + c \\Rightarrow {input_1} = 2 + c",
+        "inputs": [
+          {
+            "input_id": "step9_f",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "9",
+              "4"
+            ],
+            "id": "q_5_3_8_2_s9_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "9",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر التربيعي لـ \\( 9 \\) هو \\( 3 \\) ثم اضرب في \\( 2 \\)."
+          }
+        ],
+        "hint": "الجذر التربيعي لـ \\( 9 \\) هو \\( 3 \\) ثم اضرب في \\( 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_3_8_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نعوض الشرط \\( x=2 , y=9 \\). الطريقة: نضع \\( 9 \\) مكان \\( y \\) و \\( 2 \\) مكان \\( x \\): \\( 2\\sqrt{9} = 6 \\) و \\( \\frac{2^2}{2} = 2 \\). السبب: لنحسب قيمة \\( c \\).",
+        "think": "الجذر التربيعي لـ \\( 9 \\) هو \\( 3 \\) ثم اضرب في \\( 2 \\).",
+        "html_structure": "2\\sqrt{9} = \\frac{2^2}{2} + c \\Rightarrow {q_5_3_8_2_s9_i1} = 2 + c"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحل لإيجاد \\( c \\). الطريقة: نطرح \\( 2 \\) من \\( 6 \\). السبب: لنحصل على قيمة الثابت.",
+        "equation_template": "c = 6 - 2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_g",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "8",
+              "3",
+              "2"
+            ],
+            "id": "q_5_3_8_2_s10_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "8",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 2 \\) من \\( 6 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 2 \\) من \\( 6 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_5_3_8_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحل لإيجاد \\( c \\). الطريقة: نطرح \\( 2 \\) من \\( 6 \\). السبب: لنحصل على قيمة الثابت.",
+        "think": "اطرح \\( 2 \\) من \\( 6 \\).",
+        "html_structure": "c = 6 - 2 = {q_5_3_8_2_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نعزل \\( \\sqrt{y} \\). الطريقة: نقسم الطرفين على \\( 2 \\): \\( \\sqrt{y} = \\frac{x^2}{4} + 2 \\). السبب: لنتخلص من الجذر.",
+        "equation_template": "\\sqrt{y} = \\frac{x^2}{4} + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step11_h",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "8",
+              "1"
+            ],
+            "id": "q_5_3_8_2_s11_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "8",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 4 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 4 \\) على \\( 2 \\).",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_5_3_8_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نعزل \\( \\sqrt{y} \\). الطريقة: نقسم الطرفين على \\( 2 \\): \\( \\sqrt{y} = \\frac{x^2}{4} + 2 \\). السبب: لنتخلص من الجذر.",
+        "think": "اقسم \\( 4 \\) على \\( 2 \\).",
+        "html_structure": "\\sqrt{y} = \\frac{x^2}{4} + {q_5_3_8_2_s11_i1}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نربع الطرفين. الطريقة: نربع الطرفين لنتخلص من الجذر فنحصل على الحل الخاص. السبب: التربيع يلغي الجذر.",
+        "equation_template": "y = \\left(\\frac{x^2}{4} + 2\\right)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step12_i",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_3_8_2_s12_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "التربيع يعني الأس \\( 2 \\)."
+          }
+        ],
+        "hint": "التربيع يعني الأس \\( 2 \\).",
+        "related_topics": [
+          "الجذور والأسس"
+        ],
+        "step_id": "math345_5_3_8_2_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نربع الطرفين. الطريقة: نربع الطرفين لنتخلص من الجذر فنحصل على الحل الخاص. السبب: التربيع يلغي الجذر.",
+        "think": "التربيع يعني الأس \\( 2 \\).",
+        "html_structure": "y = \\left(\\frac{x^2}{4} + 2\\right)^{{q_5_3_8_2_s12_i1}}"
+      }
+    ]
+  }
+]

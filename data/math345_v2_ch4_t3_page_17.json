@@ -1,0 +1,486 @@
+[
+  {
+    "id_number": "q30_p17",
+    "page_number": 17,
+    "question_number": "30",
+    "question_text": "جد \\( \\int_{0}^{\\frac13}x^4\\left(\\frac1x+3\\right)^4dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_017_diag_laws_1_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_017_diag_q30_solution_diagram.png"
+    ],
+    "full_model_solution": "(x(1/x+3))⁴ = (1+3x)⁴ ⇒ [(1+3x)⁵/15] من 0 إلى 1/3 = 32/15 - 1/15 = 31/15",
+    "source_file": "رياضيلت 4/page_017_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 17
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_017_diag_laws_1_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_017_diag_q30_solution_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_017_diag_laws_1_diagram.png",
+    "title": "جد \\( \\int_{0}^{\\frac13}x^4\\left(\\frac1x+3\\right)^4dx \\)",
+    "number": "30",
+    "model_solution": "(x(1/x+3))⁴ = (1+3x)⁴ ⇒ [(1+3x)⁵/15] من 0 إلى 1/3 = 32/15 - 1/15 = 31/15",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: دمج \\( x^4 \\) داخل القوس. الطريقة: الأس الخارجي للقوس \\( 4 \\) ونفس أس \\( x \\)، فنكتب \\( x^4A^4 = (xA)^4 \\). السبب: لنتخلص من الكسر \\( \\frac1x \\).",
+        "equation_template": "x^4\\left(\\frac1x+3\\right)^4 = \\left(x\\left(\\frac1x+3\\right)\\right)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s1_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "5",
+              "1"
+            ],
+            "id": "q_4_3_17_1_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "5",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس نفسه \\( 4 \\)."
+          }
+        ],
+        "hint": "الأس نفسه \\( 4 \\).",
+        "related_topics": [
+          "دمج الأسس"
+        ],
+        "step_id": "math345_4_3_17_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: دمج \\( x^4 \\) داخل القوس. الطريقة: الأس الخارجي للقوس \\( 4 \\) ونفس أس \\( x \\)، فنكتب \\( x^4A^4 = (xA)^4 \\). السبب: لنتخلص من الكسر \\( \\frac1x \\).",
+        "think": "الأس نفسه \\( 4 \\).",
+        "html_structure": "x^4\\left(\\frac1x+3\\right)^4 = \\left(x\\left(\\frac1x+3\\right)\\right)^{{q_4_3_17_1_s1_i1}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: توزيع \\( x \\) داخل القوس. الطريقة: \\( x \\cdot \\frac1x = 1 \\) و\\( x \\cdot 3 = 3x \\). السبب: لنحصل على قوس بسيط.",
+        "equation_template": "x\\left(\\frac1x + 3\\right) = {input_1} + {input_2}x",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s2_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "x"
+            ],
+            "id": "q_4_3_17_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( x \\times \\frac1x = 1 \\)."
+          },
+          {
+            "input_id": "q30_p17_s2_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "id": "q_4_3_17_1_s2_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( x \\times \\frac1x = 1 \\)."
+          }
+        ],
+        "hint": "\\( x \\times \\frac1x = 1 \\).",
+        "related_topics": [
+          "التوزيع"
+        ],
+        "step_id": "math345_4_3_17_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: توزيع \\( x \\) داخل القوس. الطريقة: \\( x \\cdot \\frac1x = 1 \\) و\\( x \\cdot 3 = 3x \\). السبب: لنحصل على قوس بسيط.",
+        "think": "\\( x \\times \\frac1x = 1 \\).",
+        "html_structure": "x\\left(\\frac1x + 3\\right) = {q_4_3_17_1_s2_i1} + {q_4_3_17_1_s2_i2}x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: كتابة التكامل الجديد. الطريقة: نستبدل الدالة بالقوس المدموج. السبب: أصبحت دالة قوس مرفوع لقوة.",
+        "equation_template": "\\int_0^{1/3}(1+3x)^{{input_1}}dx",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s3_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "5",
+              "1"
+            ],
+            "id": "q_4_3_17_1_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "5",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 4 \\) بقي."
+          }
+        ],
+        "hint": "الأس \\( 4 \\) بقي.",
+        "related_topics": [
+          "القوس المرفوع لقوة"
+        ],
+        "step_id": "math345_4_3_17_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: كتابة التكامل الجديد. الطريقة: نستبدل الدالة بالقوس المدموج. السبب: أصبحت دالة قوس مرفوع لقوة.",
+        "think": "الأس \\( 4 \\) بقي.",
+        "html_structure": "\\int_0^{1/3}(1+3x)^{{q_4_3_17_1_s3_i1}}dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( 1+3x \\). السبب: مشتقة داخل القوس",
+        "equation_template": "(1+3x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s4_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_4_3_17_1_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x \\) هي \\( 3 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x \\) هي \\( 3 \\).",
+        "related_topics": [
+          "مشتقة داخل القوس"
+        ],
+        "step_id": "math345_4_3_17_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( 1+3x \\). السبب: مشتقة داخل القوس",
+        "think": "مشتقة \\( 3x \\) هي \\( 3 \\).",
+        "html_structure": "(1+3x)' = {q_4_3_17_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: توفير الثابت. الطريقة: نضرب داخل التكامل في \\( 3 \\) وخارجه في \\( \\frac13 \\). السبب: لأن المشتقة \\( 3 \\) غير موجودة.",
+        "equation_template": "\\frac{1}{{input_1}}\\int ({input_2})(1+3x)^4dx",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s5_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "5"
+            ],
+            "id": "q_4_3_17_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 3 \\) في الموضعين."
+          },
+          {
+            "input_id": "q30_p17_s5_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "5"
+            ],
+            "id": "q_4_3_17_1_s5_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 3 \\) في الموضعين."
+          }
+        ],
+        "hint": "ضع \\( 3 \\) في الموضعين.",
+        "related_topics": [
+          "توفير الثابت"
+        ],
+        "step_id": "math345_4_3_17_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: توفير الثابت. الطريقة: نضرب داخل التكامل في \\( 3 \\) وخارجه في \\( \\frac13 \\). السبب: لأن المشتقة \\( 3 \\) غير موجودة.",
+        "think": "ضع \\( 3 \\) في الموضعين.",
+        "html_structure": "\\frac{1}{{q_4_3_17_1_s5_i1}}\\int ({q_4_3_17_1_s5_i2})(1+3x)^4dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل القوس. الطريقة: الأس الجديد \\( 5 \\) ونقسم عليه. السبب: قاعدة القوة",
+        "equation_template": "\\frac{(1+3x)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s6_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "id": "q_4_3_17_1_s6_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4+1=5 \\)."
+          },
+          {
+            "input_id": "q30_p17_s6_2",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "id": "q_4_3_17_1_s6_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4+1=5 \\)."
+          }
+        ],
+        "hint": "\\( 4+1=5 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_17_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل القوس. الطريقة: الأس الجديد \\( 5 \\) ونقسم عليه. السبب: قاعدة القوة",
+        "think": "\\( 4+1=5 \\).",
+        "html_structure": "\\frac{(1+3x)^{{q_4_3_17_1_s6_i1}}}{{q_4_3_17_1_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: الدالة الأصلية بعد ضرب \\( \\frac13 \\). الطريقة: \\( \\frac13 \\times \\frac15 = \\frac1{15} \\). السبب: للتعويض.",
+        "equation_template": "F(x) = \\frac{(1+3x)^5}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s7_1",
+            "correct_answer": "15",
+            "options": [
+              "15",
+              "8",
+              "10",
+              "20"
+            ],
+            "id": "q_4_3_17_1_s7_i1",
+            "correct_value": "15",
+            "allowed_keys": [
+              "15",
+              "8",
+              "10",
+              "20"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب المقامين \\( 3 \\times 5 \\)."
+          }
+        ],
+        "hint": "اضرب المقامين \\( 3 \\times 5 \\).",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_3_17_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: الدالة الأصلية بعد ضرب \\( \\frac13 \\). الطريقة: \\( \\frac13 \\times \\frac15 = \\frac1{15} \\). السبب: للتعويض.",
+        "think": "اضرب المقامين \\( 3 \\times 5 \\).",
+        "html_structure": "F(x) = \\frac{(1+3x)^5}{{q_4_3_17_1_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نحسب القوس عند \\( x=\\frac13 \\). السبب: \\( F(b) \\).",
+        "equation_template": "1 + 3\\left(\\frac13\\right) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s8_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_17_1_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3 \\times \\frac13 = 1 \\) ثم \\( 1+1 \\)."
+          }
+        ],
+        "hint": "\\( 3 \\times \\frac13 = 1 \\) ثم \\( 1+1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_17_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نحسب القوس عند \\( x=\\frac13 \\). السبب: \\( F(b) \\).",
+        "think": "\\( 3 \\times \\frac13 = 1 \\) ثم \\( 1+1 \\).",
+        "html_structure": "1 + 3\\left(\\frac13\\right) = {q_4_3_17_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: إكمال \\( F(\\frac13) \\). الطريقة: \\( 2^5 = 32 \\). السبب: قيمة الحد الأعلى.",
+        "equation_template": "F\\left(\\frac13\\right) = \\frac{2^5}{15} = \\frac{{input_1}}{15}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s9_1",
+            "correct_answer": "32",
+            "options": [
+              "32",
+              "10",
+              "16",
+              "64"
+            ],
+            "id": "q_4_3_17_1_s9_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "32",
+              "10",
+              "16",
+              "64"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2\\times2\\times2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2\\times2\\times2\\times2 \\).",
+        "related_topics": [
+          "القوى"
+        ],
+        "step_id": "math345_4_3_17_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: إكمال \\( F(\\frac13) \\). الطريقة: \\( 2^5 = 32 \\). السبب: قيمة الحد الأعلى.",
+        "think": "\\( 2\\times2\\times2\\times2\\times2 \\).",
+        "html_structure": "F\\left(\\frac13\\right) = \\frac{2^5}{15} = \\frac{{q_4_3_17_1_s9_i1}}{15}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: التعويض بالحد \\( 0 \\). الطريقة: القوس عند \\( 0 \\) يساوي \\( 1 \\) وأي قوة للواحد تساوي \\( 1 \\). السبب: \\( F(a) \\).",
+        "equation_template": "F(0) = \\frac{1^5}{15} = \\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s10_1",
+            "correct_answer": "15",
+            "options": [
+              "15",
+              "5",
+              "1",
+              "3"
+            ],
+            "id": "q_4_3_17_1_s10_i1",
+            "correct_value": "15",
+            "allowed_keys": [
+              "15",
+              "5",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام يبقى \\( 15 \\)."
+          }
+        ],
+        "hint": "المقام يبقى \\( 15 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_17_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: التعويض بالحد \\( 0 \\). الطريقة: القوس عند \\( 0 \\) يساوي \\( 1 \\) وأي قوة للواحد تساوي \\( 1 \\). السبب: \\( F(a) \\).",
+        "think": "المقام يبقى \\( 15 \\).",
+        "html_structure": "F(0) = \\frac{1^5}{15} = \\frac{1}{{q_4_3_17_1_s10_i1}}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: الطرح. الطريقة: \\( \\frac{32}{15} - \\frac{1}{15} \\). السبب: قانون التكامل المحدد.",
+        "equation_template": "\\frac{32}{15} - \\frac{1}{15} = \\frac{{input_1}}{15}",
+        "inputs": [
+          {
+            "input_id": "q30_p17_s11_1",
+            "correct_answer": "31",
+            "options": [
+              "31",
+              "33",
+              "30",
+              "32"
+            ],
+            "id": "q_4_3_17_1_s11_i1",
+            "correct_value": "31",
+            "allowed_keys": [
+              "31",
+              "33",
+              "30",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 32 - 1 \\)."
+          }
+        ],
+        "hint": "\\( 32 - 1 \\).",
+        "related_topics": [
+          "طرح الكسور"
+        ],
+        "step_id": "math345_4_3_17_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: الطرح. الطريقة: \\( \\frac{32}{15} - \\frac{1}{15} \\). السبب: قانون التكامل المحدد.",
+        "think": "\\( 32 - 1 \\).",
+        "html_structure": "\\frac{32}{15} - \\frac{1}{15} = \\frac{{q_4_3_17_1_s11_i1}}{15}"
+      }
+    ]
+  }
+]

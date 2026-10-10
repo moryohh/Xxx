@@ -1,0 +1,613 @@
+[
+  {
+    "id_number": "q6_p87",
+    "page_number": 87,
+    "question_number": "6",
+    "question_text": "إذا كانت \\( g(x)=1-12x,\\ f(x)=ax^3+bx^2+cx \\) وكان لكل من \\( f \\) و\\( g \\) مماس مشترك عند \\( x=1 \\) ونقطة انقلاب \\( f \\) هي \\( (1,-11) \\)، جد قيم الثوابت \\( a,b,c \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_087_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( a+b+c=-11,\\ 3a+2b+c=-12,\\ 3a+b=0 \\) فـ \\( a=1,\\ b=-3,\\ c=-9 \\).",
+    "source_file": "رياضيات 3/page_087_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 87
+    },
+    "chapter": 3,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_087_diag_1_drawing.png",
+    "title": "إذا كانت \\( g(x)=1-12x,\\ f(x)=ax^3+bx^2+cx \\) وكان لكل من \\( f \\) و\\( g \\) مماس مشترك عند \\( x=1 \\) ونقطة انقلاب \\( f \\) هي \\( (1,-11) \\)، جد قيم الثوابت \\( a,b,c \\).",
+    "number": "6",
+    "model_solution": "\\( a+b+c=-11,\\ 3a+2b+c=-12,\\ 3a+b=0 \\) فـ \\( a=1,\\ b=-3,\\ c=-9 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعوّض نقطة الانقلاب \\( (1,-11) \\) في \\( f \\). الطريقة: ضع \\( x=1 \\) عند كل حد. السبب: لأن نقطة الانقلاب تقع على المنحنى.",
+        "equation_template": "a({input_1})^3+b({input_2})^2+c({input_3})=-11",
+        "inputs": [
+          {
+            "input_id": "s1_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "11",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "11",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( x \\) بـ \\( 1 \\)."
+          },
+          {
+            "input_id": "s1_b",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "11",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s1_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "11",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "استبدل \\( x \\) بـ \\( 1 \\)."
+          },
+          {
+            "input_id": "s1_c",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "11",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s1_i3",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "11",
+              "0"
+            ],
+            "label": "القيمة 3",
+            "hint": "استبدل \\( x \\) بـ \\( 1 \\)."
+          }
+        ],
+        "hint": "استبدل \\( x \\) بـ \\( 1 \\).",
+        "related_topics": [
+          "تعويض نقطة"
+        ],
+        "step_id": "math345_3_8_87_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعوّض نقطة الانقلاب \\( (1,-11) \\) في \\( f \\). الطريقة: ضع \\( x=1 \\) عند كل حد. السبب: لأن نقطة الانقلاب تقع على المنحنى.",
+        "think": "استبدل \\( x \\) بـ \\( 1 \\).",
+        "html_structure": "a({q_3_8_87_1_s1_i1})^3+b({q_3_8_87_1_s1_i2})^2+c({q_3_8_87_1_s1_i3})=-11"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبسط. الطريقة: قوى \\( 1 \\) كلها \\( 1 \\). السبب: نحصل على المعادلة (1).",
+        "equation_template": "a+b+c={input_1}\\ \\ (1)",
+        "inputs": [
+          {
+            "input_id": "s2_v",
+            "correct_answer": "-11",
+            "options": [
+              "-11",
+              "11",
+              "1",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s2_i1",
+            "correct_value": "-11",
+            "allowed_keys": [
+              "-11",
+              "11",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرف الأيمن كما هو."
+          }
+        ],
+        "hint": "الطرف الأيمن كما هو.",
+        "related_topics": [
+          "تعويض نقطة"
+        ],
+        "step_id": "math345_3_8_87_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبسط. الطريقة: قوى \\( 1 \\) كلها \\( 1 \\). السبب: نحصل على المعادلة (1).",
+        "think": "الطرف الأيمن كما هو.",
+        "html_structure": "a+b+c={q_3_8_87_1_s2_i1}\\ \\ (1)"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب ميل \\( g \\). الطريقة: اشتق \\( g(x)=1-12x \\). السبب: لأن المماس المشترك له ميل \\( g \\).",
+        "equation_template": "g'(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_g",
+            "correct_answer": "-12",
+            "options": [
+              "-12",
+              "12",
+              "1",
+              "-11"
+            ],
+            "id": "q_3_8_87_1_s3_i1",
+            "correct_value": "-12",
+            "allowed_keys": [
+              "-12",
+              "12",
+              "1",
+              "-11"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 1 \\) صفر ومشتقة \\( -12x \\) هي \\( -12 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 1 \\) صفر ومشتقة \\( -12x \\) هي \\( -12 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_87_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب ميل \\( g \\). الطريقة: اشتق \\( g(x)=1-12x \\). السبب: لأن المماس المشترك له ميل \\( g \\).",
+        "think": "مشتقة \\( 1 \\) صفر ومشتقة \\( -12x \\) هي \\( -12 \\).",
+        "html_structure": "g'(x)={q_3_8_87_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق \\( f \\). الطريقة: اشتق كل حد. السبب: لنربط الميل بالثوابت.",
+        "equation_template": "f'(x)={input_1}ax^2+{input_2}bx+c",
+        "inputs": [
+          {
+            "input_id": "s4_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_3_8_87_1_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأسين."
+          },
+          {
+            "input_id": "s4_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "id": "q_3_8_87_1_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "أنزل الأسين."
+          }
+        ],
+        "hint": "أنزل الأسين.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_87_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق \\( f \\). الطريقة: اشتق كل حد. السبب: لنربط الميل بالثوابت.",
+        "think": "أنزل الأسين.",
+        "html_structure": "f'(x)={q_3_8_87_1_s4_i1}ax^2+{q_3_8_87_1_s4_i2}bx+c"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نستخدم التماس عند \\( x=1 \\). الطريقة: التماس يعني تساوي الميلين: \\( f'(1)=g'(1) \\). السبب: لأن للمنحنيين مماساً مشتركاً هناك.",
+        "equation_template": "f'(1)=g'(1)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s5_v",
+            "correct_answer": "-12",
+            "options": [
+              "-12",
+              "12",
+              "1",
+              "-11"
+            ],
+            "id": "q_3_8_87_1_s5_i1",
+            "correct_value": "-12",
+            "allowed_keys": [
+              "-12",
+              "12",
+              "1",
+              "-11"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمة \\( g'(1) \\) من الخطوة 3."
+          }
+        ],
+        "hint": "قيمة \\( g'(1) \\) من الخطوة 3.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_87_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نستخدم التماس عند \\( x=1 \\). الطريقة: التماس يعني تساوي الميلين: \\( f'(1)=g'(1) \\). السبب: لأن للمنحنيين مماساً مشتركاً هناك.",
+        "think": "قيمة \\( g'(1) \\) من الخطوة 3.",
+        "html_structure": "f'(1)=g'(1)={q_3_8_87_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب المعادلة (2). الطريقة: عوّض \\( x=1 \\) في \\( f'(x) \\). السبب: لأن \\( 1^2=1 \\).",
+        "equation_template": "3a+2b+c={input_1}\\ \\ (2)",
+        "inputs": [
+          {
+            "input_id": "s6_v",
+            "correct_answer": "-12",
+            "options": [
+              "-12",
+              "12",
+              "-11",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s6_i1",
+            "correct_value": "-12",
+            "allowed_keys": [
+              "-12",
+              "12",
+              "-11",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرف الأيمن \\( -12 \\)."
+          }
+        ],
+        "hint": "الطرف الأيمن \\( -12 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_87_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب المعادلة (2). الطريقة: عوّض \\( x=1 \\) في \\( f'(x) \\). السبب: لأن \\( 1^2=1 \\).",
+        "think": "الطرف الأيمن \\( -12 \\).",
+        "html_structure": "3a+2b+c={q_3_8_87_1_s6_i1}\\ \\ (2)"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نشتق \\( f \\) ثانية. الطريقة: اشتق \\( 3ax^2+2bx+c \\). السبب: لنستعمل شرط الانقلاب.",
+        "equation_template": "f''(x)={input_1}ax+{input_2}b",
+        "inputs": [
+          {
+            "input_id": "s7_a",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "id": "q_3_8_87_1_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times2=6 \\)."
+          },
+          {
+            "input_id": "s7_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "6",
+              "3",
+              "1"
+            ],
+            "id": "q_3_8_87_1_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "6",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times2=6 \\)."
+          }
+        ],
+        "hint": "\\( 3\\times2=6 \\).",
+        "related_topics": [
+          "نقطة الانقلاب"
+        ],
+        "step_id": "math345_3_8_87_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نشتق \\( f \\) ثانية. الطريقة: اشتق \\( 3ax^2+2bx+c \\). السبب: لنستعمل شرط الانقلاب.",
+        "think": "\\( 3\\times2=6 \\).",
+        "html_structure": "f''(x)={q_3_8_87_1_s7_i1}ax+{q_3_8_87_1_s7_i2}b"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نطبق شرط الانقلاب عند \\( x=1 \\). الطريقة: \\( 6a+2b=0 \\) ثم اقسم على \\( 2 \\). السبب: لأن \\( f''(1)=0 \\).",
+        "equation_template": "3a+b={input_1}\\ \\ (3)",
+        "inputs": [
+          {
+            "input_id": "s8_v",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "3",
+              "6",
+              "1"
+            ],
+            "id": "q_3_8_87_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "3",
+              "6",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الصفر على \\( 2 \\) صفر."
+          }
+        ],
+        "hint": "الصفر على \\( 2 \\) صفر.",
+        "related_topics": [
+          "نقطة الانقلاب"
+        ],
+        "step_id": "math345_3_8_87_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نطبق شرط الانقلاب عند \\( x=1 \\). الطريقة: \\( 6a+2b=0 \\) ثم اقسم على \\( 2 \\). السبب: لأن \\( f''(1)=0 \\).",
+        "think": "الصفر على \\( 2 \\) صفر.",
+        "html_structure": "3a+b={q_3_8_87_1_s8_i1}\\ \\ (3)"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحذف \\( c \\) بطرح (1) من (2). الطريقة: اطرح الطرفين: \\( 3a-a \\) و\\( 2b-b \\) و\\( -12-(-11) \\). السبب: لنتخلص من \\( c \\).",
+        "equation_template": "{input_1}a+b={input_2}\\ \\ (4)",
+        "inputs": [
+          {
+            "input_id": "s9_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_3_8_87_1_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -12+11=-1 \\)."
+          },
+          {
+            "input_id": "s9_v",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-23",
+              "23"
+            ],
+            "id": "q_3_8_87_1_s9_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-23",
+              "23"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -12+11=-1 \\)."
+          }
+        ],
+        "hint": "\\( -12+11=-1 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_87_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحذف \\( c \\) بطرح (1) من (2). الطريقة: اطرح الطرفين: \\( 3a-a \\) و\\( 2b-b \\) و\\( -12-(-11) \\). السبب: لنتخلص من \\( c \\).",
+        "think": "\\( -12+11=-1 \\).",
+        "html_structure": "{q_3_8_87_1_s9_i1}a+b={q_3_8_87_1_s9_i2}\\ \\ (4)"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نطرح (3) من (4) لنحذف \\( b \\). الطريقة: \\( (2a+b)-(3a+b)=-1-0 \\). السبب: لنحصل على \\( a \\).",
+        "equation_template": "-a={input_1}",
+        "inputs": [
+          {
+            "input_id": "s10_v",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-2",
+              "5"
+            ],
+            "id": "q_3_8_87_1_s10_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-2",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2a-3a=-a \\)."
+          }
+        ],
+        "hint": "\\( 2a-3a=-a \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_87_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نطرح (3) من (4) لنحذف \\( b \\). الطريقة: \\( (2a+b)-(3a+b)=-1-0 \\). السبب: لنحصل على \\( a \\).",
+        "think": "\\( 2a-3a=-a \\).",
+        "html_structure": "-a={q_3_8_87_1_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نحل لـ \\( a \\). الطريقة: اضرب الطرفين في \\( -1 \\). السبب: لنعزل \\( a \\).",
+        "equation_template": "a={input_1}",
+        "inputs": [
+          {
+            "input_id": "s11_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s11_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "غيّر إشارة الطرفين فيصبح \\( a=1 \\)."
+          }
+        ],
+        "hint": "غيّر إشارة الطرفين فيصبح \\( a=1 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_87_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نحل لـ \\( a \\). الطريقة: اضرب الطرفين في \\( -1 \\). السبب: لنعزل \\( a \\).",
+        "think": "غيّر إشارة الطرفين فيصبح \\( a=1 \\).",
+        "html_structure": "a={q_3_8_87_1_s11_i1}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نجد \\( b \\). الطريقة: في (3): \\( 3(1)+b=0 \\). السبب: لأن (3) تعطي \\( b \\).",
+        "equation_template": "3({input_1})+b=0\\Rightarrow b={input_2}",
+        "inputs": [
+          {
+            "input_id": "s12_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "0"
+            ],
+            "id": "q_3_8_87_1_s12_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( b=-3 \\)."
+          },
+          {
+            "input_id": "s12_b",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "id": "q_3_8_87_1_s12_i2",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( b=-3 \\)."
+          }
+        ],
+        "hint": "\\( b=-3 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_87_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نجد \\( b \\). الطريقة: في (3): \\( 3(1)+b=0 \\). السبب: لأن (3) تعطي \\( b \\).",
+        "think": "\\( b=-3 \\).",
+        "html_structure": "3({q_3_8_87_1_s12_i1})+b=0\\Rightarrow b={q_3_8_87_1_s12_i2}"
+      },
+      {
+        "step_number": 13,
+        "step_explanation": "الهدف: نجد \\( c \\) من (1). الطريقة: عوّض \\( a=1 \\) و\\( b=-3 \\): \\( 1-3+c=-11 \\). السبب: آخر قيمة مجهولة.",
+        "equation_template": "-2+c=-11\\Rightarrow c={input_1}",
+        "inputs": [
+          {
+            "input_id": "s13_c",
+            "correct_answer": "-9",
+            "options": [
+              "-9",
+              "9",
+              "-13",
+              "13"
+            ],
+            "id": "q_3_8_87_1_s13_i1",
+            "correct_value": "-9",
+            "allowed_keys": [
+              "-9",
+              "9",
+              "-13",
+              "13"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( c=-11+2 \\)."
+          }
+        ],
+        "hint": "\\( c=-11+2 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_87_1_step_13",
+        "title": "الخطوة 13",
+        "explanation": "الهدف: نجد \\( c \\) من (1). الطريقة: عوّض \\( a=1 \\) و\\( b=-3 \\): \\( 1-3+c=-11 \\). السبب: آخر قيمة مجهولة.",
+        "think": "\\( c=-11+2 \\).",
+        "html_structure": "-2+c=-11\\Rightarrow c={q_3_8_87_1_s13_i1}"
+      }
+    ]
+  }
+]

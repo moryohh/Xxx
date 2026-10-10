@@ -1,0 +1,876 @@
+[
+  {
+    "id_number": "q2_p46",
+    "page_number": 46,
+    "question_number": "2",
+    "question_text": "جد المساحة المحددة بالدالة \\( f(x)=x^2-4 \\) ومحور السينات على الفترة \\( [-3,4] \\).",
+    "question_images": [
+      {
+        "id": "diag_q2",
+        "type": "رسم بياني",
+        "desc": "مخطط بياني يوضح تجزئة الفترة [-3,4] عند النقطتين x=-2 و x=2 مع تظليل المناطق الممثلة بالمساحات A1, A2, A3.",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_046_diag_q2_drawing_byany.png"
+      }
+    ],
+    "full_model_solution": "x^2-4=0 فـx=±2 داخل الفترة. A1=\\frac73، A2=-\\frac{32}{3}، A3=\\frac{32}{3}، A=\\frac{71}{3} وحدة مربعة.",
+    "source_file": "رياضيلت 4/p046_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 46,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_046_diag_q2_drawing_byany.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_046_diag_q2_drawing_byany.png",
+    "title": "جد المساحة المحددة بالدالة \\( f(x)=x^2-4 \\) ومحور السينات على الفترة \\( [-3,4] \\).",
+    "number": "2",
+    "model_solution": "x^2-4=0 فـx=±2 داخل الفترة. A1=\\frac73، A2=-\\frac{32}{3}، A3=\\frac{32}{3}، A=\\frac{71}{3} وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنجد نقاط التقاطع مع محور السينات. الطريقة: ضع \\( f(x)=0 \\): \\( x^2-4=0 \\). انقل \\( 4 \\) للطرف الآخر. السبب: لنعرف هل تقع الجذور داخل الفترة.",
+        "equation_template": "x^2-4=0\\Rightarrow x^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "4",
+            "options": [
+              "16",
+              "-4",
+              "2",
+              "4"
+            ],
+            "id": "q_4_4_46_1_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "16",
+              "-4",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "أضف \\( 4 \\) إلى الطرفين."
+          }
+        ],
+        "hint": "أضف \\( 4 \\) إلى الطرفين.",
+        "related_topics": [
+          "المساحة بالتكامل"
+        ],
+        "step_id": "math345_4_4_46_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنجد نقاط التقاطع مع محور السينات. الطريقة: ضع \\( f(x)=0 \\): \\( x^2-4=0 \\). انقل \\( 4 \\) للطرف الآخر. السبب: لنعرف هل تقع الجذور داخل الفترة.",
+        "think": "أضف \\( 4 \\) إلى الطرفين.",
+        "html_structure": "x^2-4=0\\Rightarrow x^2={q_4_4_46_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنأخذ الجذر التربيعي. الطريقة: \\( \\sqrt4=2 \\) بالإشارتين الموجبة والسالبة. السبب: لأن \\( (-2)^2 \\) و\\( 2^2 \\) كلاهما \\( 4 \\).",
+        "equation_template": "x=\\pm{input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "8",
+              "4",
+              "2"
+            ],
+            "id": "q_4_4_46_1_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "8",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر العدد \\( 4 \\)."
+          }
+        ],
+        "hint": "جذر العدد \\( 4 \\).",
+        "related_topics": [
+          "جذور كثيرة الحدود"
+        ],
+        "step_id": "math345_4_4_46_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنأخذ الجذر التربيعي. الطريقة: \\( \\sqrt4=2 \\) بالإشارتين الموجبة والسالبة. السبب: لأن \\( (-2)^2 \\) و\\( 2^2 \\) كلاهما \\( 4 \\).",
+        "think": "جذر العدد \\( 4 \\).",
+        "html_structure": "x=\\pm{q_4_4_46_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنقسم الفترة \\( [-3,4] \\). الطريقة: \\( -2 \\) و\\( 2 \\) كلاهما بين \\( -3 \\) و\\( 4 \\) فنقسم عندهما إلى ثلاث فترات. السبب: لأن الجذر داخل الفترة يغيّر إشارة الدالة (انظر الرسم).",
+        "equation_template": "[-3,{input_1}]\\cup[-2,{input_2}]\\cup[{input_3},4]",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "-2",
+            "options": [
+              "0",
+              "2",
+              "-2",
+              "-3"
+            ],
+            "id": "q_4_4_46_1_s3_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "0",
+              "2",
+              "-2",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحدود هي الجذران \\( -2 \\) ثم \\( 2 \\) ثم \\( 2 \\)."
+          },
+          {
+            "input_id": "s3_i2",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "2",
+              "4",
+              "-2"
+            ],
+            "id": "q_4_4_46_1_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "2",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحدود هي الجذران \\( -2 \\) ثم \\( 2 \\) ثم \\( 2 \\)."
+          },
+          {
+            "input_id": "s3_i3",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "2",
+              "3",
+              "-2"
+            ],
+            "id": "q_4_4_46_1_s3_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "2",
+              "3",
+              "-2"
+            ],
+            "label": "القيمة 3",
+            "hint": "الحدود هي الجذران \\( -2 \\) ثم \\( 2 \\) ثم \\( 2 \\)."
+          }
+        ],
+        "hint": "الحدود هي الجذران \\( -2 \\) ثم \\( 2 \\) ثم \\( 2 \\).",
+        "related_topics": [
+          "تجزئة فترة التكامل"
+        ],
+        "step_id": "math345_4_4_46_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنقسم الفترة \\( [-3,4] \\). الطريقة: \\( -2 \\) و\\( 2 \\) كلاهما بين \\( -3 \\) و\\( 4 \\) فنقسم عندهما إلى ثلاث فترات. السبب: لأن الجذر داخل الفترة يغيّر إشارة الدالة (انظر الرسم).",
+        "think": "الحدود هي الجذران \\( -2 \\) ثم \\( 2 \\) ثم \\( 2 \\).",
+        "html_structure": "[-3,{q_4_4_46_1_s3_i1}]\\cup[-2,{q_4_4_46_1_s3_i2}]\\cup[{q_4_4_46_1_s3_i3},4]"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنجد \\( F(x) \\). الطريقة: \\( x^2\\to\\frac{x^3}{3} \\) و\\( -4\\to-4x \\). السبب: لنحسب كل مساحة بفرق قيمتي \\( F \\).",
+        "equation_template": "F(x)=\\frac{x^{input_1}}{3}-{input_2}x",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "id": "q_4_4_46_1_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوة \\( 2+1 \\) والثابت \\( 4 \\)."
+          },
+          {
+            "input_id": "s4_i2",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "1",
+              "8",
+              "4"
+            ],
+            "id": "q_4_4_46_1_s4_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "1",
+              "8",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "القوة \\( 2+1 \\) والثابت \\( 4 \\)."
+          }
+        ],
+        "hint": "القوة \\( 2+1 \\) والثابت \\( 4 \\).",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_4_46_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنجد \\( F(x) \\). الطريقة: \\( x^2\\to\\frac{x^3}{3} \\) و\\( -4\\to-4x \\). السبب: لنحسب كل مساحة بفرق قيمتي \\( F \\).",
+        "think": "القوة \\( 2+1 \\) والثابت \\( 4 \\).",
+        "html_structure": "F(x)=\\frac{x^{q_4_4_46_1_s4_i1}}{3}-{q_4_4_46_1_s4_i2}x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنحسب \\( F(-3) \\) و\\( F(-2) \\). الطريقة: \\( F(-3)=\\frac{-27}{3}+12=3 \\). و\\( F(-2)=\\frac{-8}{3}+8=\\frac{16}{3} \\). السبب: لأن الفترة الأولى تبدأ بـ\\( -3 \\) وتنتهي بـ\\( -2 \\).",
+        "equation_template": "F(-3)=-9+12={input_1},\\quad F(-2)=-\\frac{8}{3}+8=\\frac{{input_2}}{3}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "3",
+            "options": [
+              "-3",
+              "3",
+              "21",
+              "9"
+            ],
+            "id": "q_4_4_46_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "21",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "للثاني: \\( 8=\\frac{24}{3} \\) ثم \\( 24-8 \\)."
+          },
+          {
+            "input_id": "s5_i2",
+            "correct_answer": "16",
+            "options": [
+              "32",
+              "16",
+              "8",
+              "-16"
+            ],
+            "id": "q_4_4_46_1_s5_i2",
+            "correct_value": "16",
+            "allowed_keys": [
+              "32",
+              "16",
+              "8",
+              "-16"
+            ],
+            "label": "القيمة 2",
+            "hint": "للثاني: \\( 8=\\frac{24}{3} \\) ثم \\( 24-8 \\)."
+          }
+        ],
+        "hint": "للثاني: \\( 8=\\frac{24}{3} \\) ثم \\( 24-8 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنحسب \\( F(-3) \\) و\\( F(-2) \\). الطريقة: \\( F(-3)=\\frac{-27}{3}+12=3 \\). و\\( F(-2)=\\frac{-8}{3}+8=\\frac{16}{3} \\). السبب: لأن الفترة الأولى تبدأ بـ\\( -3 \\) وتنتهي بـ\\( -2 \\).",
+        "think": "للثاني: \\( 8=\\frac{24}{3} \\) ثم \\( 24-8 \\).",
+        "html_structure": "F(-3)=-9+12={q_4_4_46_1_s5_i1},\\quad F(-2)=-\\frac{8}{3}+8=\\frac{{q_4_4_46_1_s5_i2}}{3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنحسب \\( F(2) \\) و\\( F(4) \\). الطريقة: \\( F(2)=\\frac83-8=-\\frac{16}{3} \\). و\\( F(4)=\\frac{64}{3}-16=\\frac{16}{3} \\). السبب: لأن الفترتين الباقيتين تعتمدان على هاتين القيمتين.",
+        "equation_template": "F(2)=\\frac83-8=-\\frac{{input_1}}{3},\\quad F(4)=\\frac{64}{3}-16=\\frac{{input_2}}{3}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "16",
+            "options": [
+              "24",
+              "8",
+              "16",
+              "32"
+            ],
+            "id": "q_4_4_46_1_s6_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "24",
+              "8",
+              "16",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "حوّل \\( 8 \\) إلى \\( \\frac{24}{3} \\) و\\( 16 \\) إلى \\( \\frac{48}{3} \\)."
+          },
+          {
+            "input_id": "s6_i2",
+            "correct_answer": "16",
+            "options": [
+              "8",
+              "24",
+              "16",
+              "32"
+            ],
+            "id": "q_4_4_46_1_s6_i2",
+            "correct_value": "16",
+            "allowed_keys": [
+              "8",
+              "24",
+              "16",
+              "32"
+            ],
+            "label": "القيمة 2",
+            "hint": "حوّل \\( 8 \\) إلى \\( \\frac{24}{3} \\) و\\( 16 \\) إلى \\( \\frac{48}{3} \\)."
+          }
+        ],
+        "hint": "حوّل \\( 8 \\) إلى \\( \\frac{24}{3} \\) و\\( 16 \\) إلى \\( \\frac{48}{3} \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنحسب \\( F(2) \\) و\\( F(4) \\). الطريقة: \\( F(2)=\\frac83-8=-\\frac{16}{3} \\). و\\( F(4)=\\frac{64}{3}-16=\\frac{16}{3} \\). السبب: لأن الفترتين الباقيتين تعتمدان على هاتين القيمتين.",
+        "think": "حوّل \\( 8 \\) إلى \\( \\frac{24}{3} \\) و\\( 16 \\) إلى \\( \\frac{48}{3} \\).",
+        "html_structure": "F(2)=\\frac83-8=-\\frac{{q_4_4_46_1_s6_i1}}{3},\\quad F(4)=\\frac{64}{3}-16=\\frac{{q_4_4_46_1_s6_i2}}{3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنحسب \\( A_1 \\) للفترة \\( [-3,-2] \\). الطريقة: \\( A_1=F(-2)-F(-3)=\\frac{16}{3}-3=\\frac{16-9}{3} \\). السبب: فرق \\( F \\) بين النهاية والبداية.",
+        "equation_template": "A_1=\\frac{16}{3}-3=\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "7",
+            "options": [
+              "9",
+              "5",
+              "25",
+              "7"
+            ],
+            "id": "q_4_4_46_1_s7_i1",
+            "correct_value": "7",
+            "allowed_keys": [
+              "9",
+              "5",
+              "25",
+              "7"
+            ],
+            "label": "القيمة 1",
+            "hint": "حوّل \\( 3 \\) إلى \\( \\frac{9}{3} \\) ثم اطرح."
+          }
+        ],
+        "hint": "حوّل \\( 3 \\) إلى \\( \\frac{9}{3} \\) ثم اطرح.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنحسب \\( A_1 \\) للفترة \\( [-3,-2] \\). الطريقة: \\( A_1=F(-2)-F(-3)=\\frac{16}{3}-3=\\frac{16-9}{3} \\). السبب: فرق \\( F \\) بين النهاية والبداية.",
+        "think": "حوّل \\( 3 \\) إلى \\( \\frac{9}{3} \\) ثم اطرح.",
+        "html_structure": "A_1=\\frac{16}{3}-3=\\frac{{q_4_4_46_1_s7_i1}}{3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنحسب \\( A_2 \\) للفترة \\( [-2,2] \\). الطريقة: \\( A_2=F(2)-F(-2)=-\\frac{16}{3}-\\frac{16}{3} \\). الناتج سالب لأن المنحني تحت المحور هنا. السبب: لأننا نطرح عدداً موجباً من سالب.",
+        "equation_template": "A_2=-\\frac{16}{3}-\\frac{16}{3}=-\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "32",
+            "options": [
+              "16",
+              "8",
+              "32",
+              "0"
+            ],
+            "id": "q_4_4_46_1_s8_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "16",
+              "8",
+              "32",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 16+16 \\) واترك الإشارة السالبة."
+          }
+        ],
+        "hint": "اجمع \\( 16+16 \\) واترك الإشارة السالبة.",
+        "related_topics": [
+          "المساحة تحت المحور"
+        ],
+        "step_id": "math345_4_4_46_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنحسب \\( A_2 \\) للفترة \\( [-2,2] \\). الطريقة: \\( A_2=F(2)-F(-2)=-\\frac{16}{3}-\\frac{16}{3} \\). الناتج سالب لأن المنحني تحت المحور هنا. السبب: لأننا نطرح عدداً موجباً من سالب.",
+        "think": "اجمع \\( 16+16 \\) واترك الإشارة السالبة.",
+        "html_structure": "A_2=-\\frac{16}{3}-\\frac{16}{3}=-\\frac{{q_4_4_46_1_s8_i1}}{3}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: سنحسب \\( A_3 \\) للفترة \\( [2,4] \\). الطريقة: \\( A_3=F(4)-F(2)=\\frac{16}{3}+\\frac{16}{3} \\). السبب: طرح السالب يصبح جمعاً.",
+        "equation_template": "A_3=\\frac{16}{3}-\\left(-\\frac{16}{3}\\right)=\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "s9_i1",
+            "correct_answer": "32",
+            "options": [
+              "0",
+              "8",
+              "16",
+              "32"
+            ],
+            "id": "q_4_4_46_1_s9_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "0",
+              "8",
+              "16",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 16+16 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 16+16 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: سنحسب \\( A_3 \\) للفترة \\( [2,4] \\). الطريقة: \\( A_3=F(4)-F(2)=\\frac{16}{3}+\\frac{16}{3} \\). السبب: طرح السالب يصبح جمعاً.",
+        "think": "اجمع \\( 16+16 \\).",
+        "html_structure": "A_3=\\frac{16}{3}-\\left(-\\frac{16}{3}\\right)=\\frac{{q_4_4_46_1_s9_i1}}{3}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: سنجمع المساحات الثلاث بقيمها المطلقة. الطريقة: \\( |A_1|+|A_2|+|A_3|=\\frac73+\\frac{32}{3}+\\frac{32}{3} \\). اجمع البسوط. السبب: لأن المساحة الكلية مجموع المساحات الموجبة.",
+        "equation_template": "A=\\frac73+\\frac{32}{3}+\\frac{32}{3}=\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "s10_i1",
+            "correct_answer": "71",
+            "options": [
+              "71",
+              "61",
+              "64",
+              "81"
+            ],
+            "id": "q_4_4_46_1_s10_i1",
+            "correct_value": "71",
+            "allowed_keys": [
+              "71",
+              "61",
+              "64",
+              "81"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 7+32+32 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 7+32+32 \\).",
+        "related_topics": [
+          "المساحة الكلية"
+        ],
+        "step_id": "math345_4_4_46_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: سنجمع المساحات الثلاث بقيمها المطلقة. الطريقة: \\( |A_1|+|A_2|+|A_3|=\\frac73+\\frac{32}{3}+\\frac{32}{3} \\). اجمع البسوط. السبب: لأن المساحة الكلية مجموع المساحات الموجبة.",
+        "think": "اجمع \\( 7+32+32 \\).",
+        "html_structure": "A=\\frac73+\\frac{32}{3}+\\frac{32}{3}=\\frac{{q_4_4_46_1_s10_i1}}{3}"
+      }
+    ]
+  },
+  {
+    "id_number": "q7_p46",
+    "page_number": 46,
+    "question_number": "7",
+    "question_text": "جد المساحة المحددة بالدالة \\( f(x)=x^2 \\) ومحور السينات على الفترة \\( [-1,1] \\).",
+    "question_images": [
+      {
+        "id": "diag_q7",
+        "type": "رسم بياني",
+        "desc": "مخطط بياني يوضح تجزئة الفترة [-1,1] عند x=0 مع تظليل المساحات A1, A2.",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_046_diag_q7_drawing_byany.png"
+      }
+    ],
+    "full_model_solution": "x^2=0 فـx=0 داخل الفترة. A1=A2=\\frac13 فالمساحة \\frac23 وحدة مربعة.",
+    "source_file": "رياضيلت 4/p046_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 46,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_046_diag_q7_drawing_byany.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_046_diag_q7_drawing_byany.png",
+    "title": "جد المساحة المحددة بالدالة \\( f(x)=x^2 \\) ومحور السينات على الفترة \\( [-1,1] \\).",
+    "number": "7",
+    "model_solution": "x^2=0 فـx=0 داخل الفترة. A1=A2=\\frac13 فالمساحة \\frac23 وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنجد نقطة التقاطع مع محور السينات. الطريقة: ضع \\( x^2=0 \\) فنأخذ الجذر. السبب: لنعرف هل تقع داخل الفترة.",
+        "equation_template": "x^2=0\\Rightarrow x={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "1",
+              "2",
+              "0"
+            ],
+            "id": "q_4_4_46_2_s1_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر الصفر هو الصفر."
+          }
+        ],
+        "hint": "جذر الصفر هو الصفر.",
+        "related_topics": [
+          "المساحة بالتكامل"
+        ],
+        "step_id": "math345_4_4_46_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنجد نقطة التقاطع مع محور السينات. الطريقة: ضع \\( x^2=0 \\) فنأخذ الجذر. السبب: لنعرف هل تقع داخل الفترة.",
+        "think": "جذر الصفر هو الصفر.",
+        "html_structure": "x^2=0\\Rightarrow x={q_4_4_46_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنقسم الفترة. الطريقة: الجذر \\( 0 \\) بين \\( -1 \\) و\\( 1 \\) فنجعله حداً مشتركاً بين فترتين. السبب: لأن الجذر داخل الفترة (انظر الرسم).",
+        "equation_template": "[-1,{input_1}]\\cup[{input_2},1]",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "2",
+              "-1",
+              "0"
+            ],
+            "id": "q_4_4_46_2_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "2",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 0 \\) في الفراغين."
+          },
+          {
+            "input_id": "s2_i2",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "0",
+              "2",
+              "1"
+            ],
+            "id": "q_4_4_46_2_s2_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 0 \\) في الفراغين."
+          }
+        ],
+        "hint": "ضع \\( 0 \\) في الفراغين.",
+        "related_topics": [
+          "تجزئة فترة التكامل"
+        ],
+        "step_id": "math345_4_4_46_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنقسم الفترة. الطريقة: الجذر \\( 0 \\) بين \\( -1 \\) و\\( 1 \\) فنجعله حداً مشتركاً بين فترتين. السبب: لأن الجذر داخل الفترة (انظر الرسم).",
+        "think": "ضع \\( 0 \\) في الفراغين.",
+        "html_structure": "[-1,{q_4_4_46_2_s2_i1}]\\cup[{q_4_4_46_2_s2_i2},1]"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنجد \\( F(x) \\). الطريقة: \\( x^2\\to\\frac{x^3}{3} \\). السبب: لنحسب بها المساحتين.",
+        "equation_template": "F(x)=\\frac{x^{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "id": "q_4_4_46_2_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوة \\( 2+1 \\) والمقام نفسها."
+          },
+          {
+            "input_id": "s3_i2",
+            "correct_answer": "3",
+            "options": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_46_2_s3_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "القوة \\( 2+1 \\) والمقام نفسها."
+          }
+        ],
+        "hint": "القوة \\( 2+1 \\) والمقام نفسها.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_4_46_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنجد \\( F(x) \\). الطريقة: \\( x^2\\to\\frac{x^3}{3} \\). السبب: لنحسب بها المساحتين.",
+        "think": "القوة \\( 2+1 \\) والمقام نفسها.",
+        "html_structure": "F(x)=\\frac{x^{q_4_4_46_2_s3_i1}}{{q_4_4_46_2_s3_i2}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنحسب \\( F(-1) \\). الطريقة: \\( \\frac{(-1)^3}{3}=-\\frac13 \\). السبب: لأن \\( (-1)^3=-1 \\).",
+        "equation_template": "F(-1)=\\frac{(-1)^3}{3}={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "-\\frac{1}{3}",
+            "options": [
+              "-\\frac{1}{3}",
+              "-1",
+              "\\frac13",
+              "-3"
+            ],
+            "id": "q_4_4_46_2_s4_i1",
+            "correct_value": "-\\frac{1}{3}",
+            "allowed_keys": [
+              "-\\frac{1}{3}",
+              "-1",
+              "\\frac13",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "مكعب \\( -1 \\) هو \\( -1 \\) ثم نقسم على \\( 3 \\)."
+          }
+        ],
+        "hint": "مكعب \\( -1 \\) هو \\( -1 \\) ثم نقسم على \\( 3 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنحسب \\( F(-1) \\). الطريقة: \\( \\frac{(-1)^3}{3}=-\\frac13 \\). السبب: لأن \\( (-1)^3=-1 \\).",
+        "think": "مكعب \\( -1 \\) هو \\( -1 \\) ثم نقسم على \\( 3 \\).",
+        "html_structure": "F(-1)=\\frac{(-1)^3}{3}={q_4_4_46_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنحسب \\( F(0) \\) و\\( F(1) \\). الطريقة: \\( F(0)=0 \\) و\\( F(1)=\\frac13 \\). السبب: هذه حدود الفترتين.",
+        "equation_template": "F(0)={input_1},\\quad F(1)=\\frac{{input_2}}{3}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "0",
+            "options": [
+              "3",
+              "1",
+              "-1",
+              "0"
+            ],
+            "id": "q_4_4_46_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "3",
+              "1",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "عوّض \\( 0 \\) ثم \\( 1 \\)."
+          },
+          {
+            "input_id": "s5_i2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_4_46_2_s5_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "عوّض \\( 0 \\) ثم \\( 1 \\)."
+          }
+        ],
+        "hint": "عوّض \\( 0 \\) ثم \\( 1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنحسب \\( F(0) \\) و\\( F(1) \\). الطريقة: \\( F(0)=0 \\) و\\( F(1)=\\frac13 \\). السبب: هذه حدود الفترتين.",
+        "think": "عوّض \\( 0 \\) ثم \\( 1 \\).",
+        "html_structure": "F(0)={q_4_4_46_2_s5_i1},\\quad F(1)=\\frac{{q_4_4_46_2_s5_i2}}{3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنحسب \\( A_1 \\). الطريقة: \\( A_1=F(0)-F(-1)=0-\\left(-\\frac13\\right) \\). السبب: طرح السالب جمع.",
+        "equation_template": "A_1=0-\\left(-\\frac13\\right)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "\\frac13",
+            "options": [
+              "-\\frac13",
+              "\\frac13",
+              "1",
+              "\\frac23"
+            ],
+            "id": "q_4_4_46_2_s6_i1",
+            "correct_value": "\\frac13",
+            "allowed_keys": [
+              "-\\frac13",
+              "\\frac13",
+              "1",
+              "\\frac23"
+            ],
+            "label": "القيمة 1",
+            "hint": "الصفر ناقص سالب ثلث يساوي موجب ثلث."
+          }
+        ],
+        "hint": "الصفر ناقص سالب ثلث يساوي موجب ثلث.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنحسب \\( A_1 \\). الطريقة: \\( A_1=F(0)-F(-1)=0-\\left(-\\frac13\\right) \\). السبب: طرح السالب جمع.",
+        "think": "الصفر ناقص سالب ثلث يساوي موجب ثلث.",
+        "html_structure": "A_1=0-\\left(-\\frac13\\right)={q_4_4_46_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنحسب \\( A_2 \\). الطريقة: \\( A_2=F(1)-F(0)=\\frac13-0 \\). السبب: لأن \\( F(0)=0 \\).",
+        "equation_template": "A_2=\\frac13-0={input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\frac13",
+            "options": [
+              "\\frac13",
+              "-\\frac13",
+              "0",
+              "1"
+            ],
+            "id": "q_4_4_46_2_s7_i1",
+            "correct_value": "\\frac13",
+            "allowed_keys": [
+              "\\frac13",
+              "-\\frac13",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح الصفر."
+          }
+        ],
+        "hint": "اطرح الصفر.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_46_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنحسب \\( A_2 \\). الطريقة: \\( A_2=F(1)-F(0)=\\frac13-0 \\). السبب: لأن \\( F(0)=0 \\).",
+        "think": "اطرح الصفر.",
+        "html_structure": "A_2=\\frac13-0={q_4_4_46_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنجمع المساحتين. الطريقة: \\( \\frac13+\\frac13 \\). السبب: المساحة الكلية مجموع الجزأين.",
+        "equation_template": "A=\\frac13+\\frac13=\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "2",
+              "3",
+              "1"
+            ],
+            "id": "q_4_4_46_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "2",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع البسطين \\( 1+1 \\)."
+          }
+        ],
+        "hint": "اجمع البسطين \\( 1+1 \\).",
+        "related_topics": [
+          "المساحة الكلية"
+        ],
+        "step_id": "math345_4_4_46_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنجمع المساحتين. الطريقة: \\( \\frac13+\\frac13 \\). السبب: المساحة الكلية مجموع الجزأين.",
+        "think": "اجمع البسطين \\( 1+1 \\).",
+        "html_structure": "A=\\frac13+\\frac13=\\frac{{q_4_4_46_2_s8_i1}}{3}"
+      }
+    ]
+  }
+]

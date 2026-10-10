@@ -1,0 +1,983 @@
+[
+  {
+    "id_number": "q7_p129",
+    "page_number": 129,
+    "question_number": "7",
+    "question_text": "جد بعدي أكبر مستطيل يوضع داخل نصف دائرة نصف قطرها \\( 4\\sqrt{2} \\) cm.",
+    "question_image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q7_drawing_hndsy.png",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q7_drawing_hndsy.png"
+    ],
+    "full_model_solution": "x^2+y^2=32، A=2xy=2x√(32-x^2)، A'=(64-4x^2)/√(32-x^2)=0 فـ x=4 و y=4، البعدان 8cm و4cm.",
+    "source_file": "رياضيات 3/page_129_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": 129,
+      "page_number": 129,
+      "pdf_page_number": 131
+    },
+    "chapter": 3,
+    "topic_index": 9,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q7_drawing_hndsy.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q7_drawing_hndsy.png",
+    "title": "جد بعدي أكبر مستطيل يوضع داخل نصف دائرة نصف قطرها \\( 4\\sqrt{2} \\) cm.",
+    "number": "7",
+    "model_solution": "x^2+y^2=32، A=2xy=2x√(32-x^2)، A'=(64-4x^2)/√(32-x^2)=0 فـ x=4 و y=4، البعدان 8cm و4cm.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنربط أبعاد المستطيل بنصف قطر نصف الدائرة. الطريقة: ضع المستطيل قاعدته \\( 2x \\) على القطر وارتفاعه \\( y \\). الرأس العلوي نقطة على الدائرة، فمسافته عن المركز تساوي نصف القطر: \\( x^2+y^2=(4\\sqrt{2})^2 \\). احسب \\( 16\\times2 \\). السبب: لأن الرأس يقع على محيط الدائرة فتربط فيثاغورس بين \\( x \\) و\\( y \\).",
+        "equation_template": "x^2 + y^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "u1",
+            "correct_answer": "32",
+            "options": [
+              "32",
+              "16",
+              "8",
+              "64"
+            ],
+            "id": "q_3_10_129_1_s1_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "32",
+              "16",
+              "8",
+              "64"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\times4=16 \\) و\\( \\sqrt{2}\\times\\sqrt{2}=2 \\)، ثم \\( 16\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 4\\times4=16 \\) و\\( \\sqrt{2}\\times\\sqrt{2}=2 \\)، ثم \\( 16\\times2 \\).",
+        "related_topics": [
+          "نظرية فيثاغورس",
+          "الدائرة"
+        ],
+        "step_id": "math345_3_10_129_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنربط أبعاد المستطيل بنصف قطر نصف الدائرة. الطريقة: ضع المستطيل قاعدته \\( 2x \\) على القطر وارتفاعه \\( y \\). الرأس العلوي نقطة على الدائرة، فمسافته عن المركز تساوي نصف القطر: \\( x^2+y^2=(4\\sqrt{2})^2 \\). احسب \\( 16\\times2 \\). السبب: لأن الرأس يقع على محيط الدائرة فتربط فيثاغورس بين \\( x \\) و\\( y \\).",
+        "think": "\\( 4\\times4=16 \\) و\\( \\sqrt{2}\\times\\sqrt{2}=2 \\)، ثم \\( 16\\times2 \\).",
+        "html_structure": "x^2 + y^2 = {q_3_10_129_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنعبّر عن \\( y \\) بدلالة \\( x \\). الطريقة: انقل \\( x^2 \\) للطرف الآخر ثم خذ الجذر. السبب: لنحوّل المساحة لدالة بمتغير واحد.",
+        "equation_template": "y = \\sqrt{{input_1} - x^2}",
+        "inputs": [
+          {
+            "input_id": "u2",
+            "correct_answer": "32",
+            "options": [
+              "32",
+              "16",
+              "4",
+              "64"
+            ],
+            "id": "q_3_10_129_1_s2_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "32",
+              "16",
+              "4",
+              "64"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 32 \\) تحت الجذر قبل \\( -x^2 \\)."
+          }
+        ],
+        "hint": "ضع \\( 32 \\) تحت الجذر قبل \\( -x^2 \\).",
+        "related_topics": [
+          "علاقة فيثاغورس"
+        ],
+        "step_id": "math345_3_10_129_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنعبّر عن \\( y \\) بدلالة \\( x \\). الطريقة: انقل \\( x^2 \\) للطرف الآخر ثم خذ الجذر. السبب: لنحوّل المساحة لدالة بمتغير واحد.",
+        "think": "ضع \\( 32 \\) تحت الجذر قبل \\( -x^2 \\).",
+        "html_structure": "y = \\sqrt{{q_3_10_129_1_s2_i1} - x^2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنكتب دالة المساحة. الطريقة: مساحة المستطيل \\( =\\) القاعدة \\( \\times \\) الارتفاع \\( =2x\\times y \\). عوّض عن \\( y \\). السبب: لنشتق دالة بمتغير واحد.",
+        "equation_template": "A = {input_1}\\sqrt{32 - x^2}",
+        "inputs": [
+          {
+            "input_id": "u3",
+            "correct_answer": "2x",
+            "options": [
+              "2x",
+              "x",
+              "4x",
+              "2"
+            ],
+            "id": "q_3_10_129_1_s3_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "4x",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "القاعدة هي \\( 2x \\)، ضعها أمام الجذر."
+          }
+        ],
+        "hint": "القاعدة هي \\( 2x \\)، ضعها أمام الجذر.",
+        "related_topics": [
+          "مساحة المستطيل"
+        ],
+        "step_id": "math345_3_10_129_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنكتب دالة المساحة. الطريقة: مساحة المستطيل \\( =\\) القاعدة \\( \\times \\) الارتفاع \\( =2x\\times y \\). عوّض عن \\( y \\). السبب: لنشتق دالة بمتغير واحد.",
+        "think": "القاعدة هي \\( 2x \\)، ضعها أمام الجذر.",
+        "html_structure": "A = {q_3_10_129_1_s3_i1}\\sqrt{32 - x^2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنشتق بقاعدة ضرب دالتين. الطريقة: مشتقة \\( 2x \\) هي \\( 2 \\)، ومشتقة \\( \\sqrt{32-x^2} \\) هي \\( \\frac{-2x}{2\\sqrt{32-x^2}} \\). السبب: لأن \\( x \\) في الدالة مضروب في جذر يحتوي \\( x \\).",
+        "equation_template": "A' = 2\\sqrt{32-x^2} + 2x\\cdot\\frac{{input_1}}{2\\sqrt{32-x^2}}",
+        "inputs": [
+          {
+            "input_id": "u4",
+            "correct_answer": "-2x",
+            "options": [
+              "-2x",
+              "2x",
+              "-x",
+              "x"
+            ],
+            "id": "q_3_10_129_1_s4_i1",
+            "correct_value": "-2x",
+            "allowed_keys": [
+              "-2x",
+              "2x",
+              "-x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 32-x^2 \\) هي \\( -2x \\). ضعها في البسط."
+          }
+        ],
+        "hint": "مشتقة \\( 32-x^2 \\) هي \\( -2x \\). ضعها في البسط.",
+        "related_topics": [
+          "قاعدة الضرب",
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_3_10_129_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنشتق بقاعدة ضرب دالتين. الطريقة: مشتقة \\( 2x \\) هي \\( 2 \\)، ومشتقة \\( \\sqrt{32-x^2} \\) هي \\( \\frac{-2x}{2\\sqrt{32-x^2}} \\). السبب: لأن \\( x \\) في الدالة مضروب في جذر يحتوي \\( x \\).",
+        "think": "مشتقة \\( 32-x^2 \\) هي \\( -2x \\). ضعها في البسط.",
+        "html_structure": "A' = 2\\sqrt{32-x^2} + 2x\\cdot\\frac{{q_3_10_129_1_s4_i1}}{2\\sqrt{32-x^2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنبسّط المشتقة. الطريقة: اضرب الحد الأول بسطاً ومقاماً في الجذر فيصبح \\( 2(32-x^2)=64-2x^2 \\). والحد الثاني \\( -2x^2 \\). اجمع \\( -2x^2-2x^2 \\). السبب: لنساوي البسط بالصفر.",
+        "equation_template": "A' = \\frac{{input_1} - {input_2}x^2}{\\sqrt{32-x^2}}",
+        "inputs": [
+          {
+            "input_id": "u5a",
+            "correct_answer": "64",
+            "options": [
+              "64",
+              "32",
+              "16",
+              "128"
+            ],
+            "id": "q_3_10_129_1_s5_i1",
+            "correct_value": "64",
+            "allowed_keys": [
+              "64",
+              "32",
+              "16",
+              "128"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times32=64 \\)، وعدد \\( x^2 \\) بعد الجمع هو \\( 2+2 \\)."
+          },
+          {
+            "input_id": "u5b",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_3_10_129_1_s5_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times32=64 \\)، وعدد \\( x^2 \\) بعد الجمع هو \\( 2+2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times32=64 \\)، وعدد \\( x^2 \\) بعد الجمع هو \\( 2+2 \\).",
+        "related_topics": [
+          "تبسيط الكسور الجبرية"
+        ],
+        "step_id": "math345_3_10_129_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنبسّط المشتقة. الطريقة: اضرب الحد الأول بسطاً ومقاماً في الجذر فيصبح \\( 2(32-x^2)=64-2x^2 \\). والحد الثاني \\( -2x^2 \\). اجمع \\( -2x^2-2x^2 \\). السبب: لنساوي البسط بالصفر.",
+        "think": "\\( 2\\times32=64 \\)، وعدد \\( x^2 \\) بعد الجمع هو \\( 2+2 \\).",
+        "html_structure": "A' = \\frac{{q_3_10_129_1_s5_i1} - {q_3_10_129_1_s5_i2}x^2}{\\sqrt{32-x^2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنساوي البسط بالصفر. الطريقة: \\( 64-4x^2=0 \\). انقل \\( 4x^2 \\) ثم اقسم \\( 64 \\) على \\( 4 \\). السبب: لأن المشتقة تنعدم عند النهاية العظمى.",
+        "equation_template": "x^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "u6",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "32",
+              "64",
+              "4"
+            ],
+            "id": "q_3_10_129_1_s6_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "32",
+              "64",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 64\\div4 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 64\\div4 \\).",
+        "related_topics": [
+          "النقاط الحرجة"
+        ],
+        "step_id": "math345_3_10_129_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنساوي البسط بالصفر. الطريقة: \\( 64-4x^2=0 \\). انقل \\( 4x^2 \\) ثم اقسم \\( 64 \\) على \\( 4 \\). السبب: لأن المشتقة تنعدم عند النهاية العظمى.",
+        "think": "اقسم \\( 64\\div4 \\).",
+        "html_structure": "x^2 = {q_3_10_129_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنأخذ الجذر لإيجاد \\( x \\). الطريقة: جذر \\( 16 \\) هو \\( 4 \\). نهمل \\( -4 \\). السبب: لأن \\( x \\) طول.",
+        "equation_template": "x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "u7",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "-4",
+              "16",
+              "8"
+            ],
+            "id": "q_3_10_129_1_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "-4",
+              "16",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما العدد الموجب الذي مربعه \\( 16 \\)؟"
+          }
+        ],
+        "hint": "ما العدد الموجب الذي مربعه \\( 16 \\)؟",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_3_10_129_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنأخذ الجذر لإيجاد \\( x \\). الطريقة: جذر \\( 16 \\) هو \\( 4 \\). نهمل \\( -4 \\). السبب: لأن \\( x \\) طول.",
+        "think": "ما العدد الموجب الذي مربعه \\( 16 \\)؟",
+        "html_structure": "x = {q_3_10_129_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنحسب \\( y \\). الطريقة: عوّض في \\( y=\\sqrt{32-x^2} \\) و\\( x^2=16 \\). السبب: لنعرف الارتفاع.",
+        "equation_template": "y = \\sqrt{32 - {input_1}} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "u8a",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "4",
+              "32",
+              "8"
+            ],
+            "id": "q_3_10_129_1_s8_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "4",
+              "32",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 32-16=16 \\) ثم الجذر."
+          },
+          {
+            "input_id": "u8b",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "16",
+              "8",
+              "2"
+            ],
+            "id": "q_3_10_129_1_s8_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "16",
+              "8",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 32-16=16 \\) ثم الجذر."
+          }
+        ],
+        "hint": "\\( 32-16=16 \\) ثم الجذر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_10_129_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنحسب \\( y \\). الطريقة: عوّض في \\( y=\\sqrt{32-x^2} \\) و\\( x^2=16 \\). السبب: لنعرف الارتفاع.",
+        "think": "\\( 32-16=16 \\) ثم الجذر.",
+        "html_structure": "y = \\sqrt{32 - {q_3_10_129_1_s8_i1}} = {q_3_10_129_1_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: سنكتب بعدي المستطيل المطلوبين. الطريقة: القاعدة هي \\( 2x \\) وليست \\( x \\). اضرب \\( 2\\times4 \\). والارتفاع هو \\( y \\). السبب: لأن السؤال يطلب البعدين الفعليين وليس \\( x \\).",
+        "equation_template": "\\text{القاعدة} = 2x = {input_1} \\quad , \\quad \\text{الارتفاع} = y = {input_2}",
+        "inputs": [
+          {
+            "input_id": "u9a",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "4",
+              "16",
+              "32"
+            ],
+            "id": "q_3_10_129_1_s9_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "4",
+              "16",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "القاعدة: ضاعف \\( 4 \\). الارتفاع: نفس قيمة \\( y \\) من الخطوة السابقة."
+          },
+          {
+            "input_id": "u9b",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "id": "q_3_10_129_1_s9_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "القاعدة: ضاعف \\( 4 \\). الارتفاع: نفس قيمة \\( y \\) من الخطوة السابقة."
+          }
+        ],
+        "hint": "القاعدة: ضاعف \\( 4 \\). الارتفاع: نفس قيمة \\( y \\) من الخطوة السابقة.",
+        "related_topics": [
+          "أبعاد المستطيل"
+        ],
+        "step_id": "math345_3_10_129_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: سنكتب بعدي المستطيل المطلوبين. الطريقة: القاعدة هي \\( 2x \\) وليست \\( x \\). اضرب \\( 2\\times4 \\). والارتفاع هو \\( y \\). السبب: لأن السؤال يطلب البعدين الفعليين وليس \\( x \\).",
+        "think": "القاعدة: ضاعف \\( 4 \\). الارتفاع: نفس قيمة \\( y \\) من الخطوة السابقة.",
+        "html_structure": "\\text{القاعدة} = 2x = {q_3_10_129_1_s9_i1} \\quad , \\quad \\text{الارتفاع} = y = {q_3_10_129_1_s9_i2}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: سنتحقق من الجواب بحساب المساحة. الطريقة: اضرب القاعدة في الارتفاع. تجد \\( 32 \\)، وهي أكبر من مساحة أي مستطيل آخر، فمثلاً عند \\( x=2 \\) المساحة تقارب \\( 21.2 \\) فقط. السبب: لأن المراجعة تؤكد أننا وجدنا النهاية العظمى.",
+        "equation_template": "A = {input_1}\\times{input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "u10a",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "4",
+              "16",
+              "2"
+            ],
+            "id": "q_3_10_129_1_s10_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "4",
+              "16",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 8\\times4 \\)."
+          },
+          {
+            "input_id": "u10b",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "id": "q_3_10_129_1_s10_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 8\\times4 \\)."
+          },
+          {
+            "input_id": "u10c",
+            "correct_answer": "32",
+            "options": [
+              "32",
+              "16",
+              "64",
+              "12"
+            ],
+            "id": "q_3_10_129_1_s10_i3",
+            "correct_value": "32",
+            "allowed_keys": [
+              "32",
+              "16",
+              "64",
+              "12"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 8\\times4 \\)."
+          }
+        ],
+        "hint": "\\( 8\\times4 \\).",
+        "related_topics": [
+          "مراجعة الحل"
+        ],
+        "step_id": "math345_3_10_129_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: سنتحقق من الجواب بحساب المساحة. الطريقة: اضرب القاعدة في الارتفاع. تجد \\( 32 \\)، وهي أكبر من مساحة أي مستطيل آخر، فمثلاً عند \\( x=2 \\) المساحة تقارب \\( 21.2 \\) فقط. السبب: لأن المراجعة تؤكد أننا وجدنا النهاية العظمى.",
+        "think": "\\( 8\\times4 \\).",
+        "html_structure": "A = {q_3_10_129_1_s10_i1}\\times{q_3_10_129_1_s10_i2} = {q_3_10_129_1_s10_i3}"
+      }
+    ]
+  },
+  {
+    "id_number": "q8_p129",
+    "page_number": 129,
+    "question_number": "8",
+    "question_text": "جد ارتفاع أكبر أسطوانة دائرية قائمة توضع داخل كرة نصف قطرها \\( 4\\sqrt{3} \\) cm.",
+    "question_image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q8_model.png",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q8_model.png"
+    ],
+    "full_model_solution": "r^2+h^2=48، V=2πh(48-h^2)=96πh-2πh^3، V'=96π-6πh^2=0 فـ h=4، الارتفاع 2h=8cm.",
+    "source_file": "رياضيات 3/page_129_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": 129,
+      "page_number": 129,
+      "pdf_page_number": 131
+    },
+    "chapter": 3,
+    "topic_index": 9,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q8_model.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_129_diag_q8_model.png",
+    "title": "جد ارتفاع أكبر أسطوانة دائرية قائمة توضع داخل كرة نصف قطرها \\( 4\\sqrt{3} \\) cm.",
+    "number": "8",
+    "model_solution": "r^2+h^2=48، V=2πh(48-h^2)=96πh-2πh^3، V'=96π-6πh^2=0 فـ h=4، الارتفاع 2h=8cm.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنربط أبعاد الأسطوانة بنصف قطر الكرة \\( R=4\\sqrt{3} \\). لنفرض نصف قطر الأسطوانة \\( r \\) وارتفاعها \\( 2h \\). الطريقة: في المثلث القائم داخل الكرة: ضلعاه \\( r \\) و\\( h \\) ووتره نصف قطر الكرة. فيكون \\( r^2+h^2=(4\\sqrt{3})^2 \\). احسب \\( 16\\times3 \\). السبب: لأن مركز الكرة في منتصف الأسطوانة، فنصف الارتفاع \\( h \\) هو الضلع الآخر.",
+        "equation_template": "r^2 + h^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "v1",
+            "correct_answer": "48",
+            "options": [
+              "48",
+              "12",
+              "16",
+              "144"
+            ],
+            "id": "q_3_10_129_2_s1_i1",
+            "correct_value": "48",
+            "allowed_keys": [
+              "48",
+              "12",
+              "16",
+              "144"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\times4=16 \\) و\\( \\sqrt{3}\\times\\sqrt{3}=3 \\)، ثم \\( 16\\times3 \\)."
+          }
+        ],
+        "hint": "\\( 4\\times4=16 \\) و\\( \\sqrt{3}\\times\\sqrt{3}=3 \\)، ثم \\( 16\\times3 \\).",
+        "related_topics": [
+          "نظرية فيثاغورس",
+          "الكرة"
+        ],
+        "step_id": "math345_3_10_129_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنربط أبعاد الأسطوانة بنصف قطر الكرة \\( R=4\\sqrt{3} \\). لنفرض نصف قطر الأسطوانة \\( r \\) وارتفاعها \\( 2h \\). الطريقة: في المثلث القائم داخل الكرة: ضلعاه \\( r \\) و\\( h \\) ووتره نصف قطر الكرة. فيكون \\( r^2+h^2=(4\\sqrt{3})^2 \\). احسب \\( 16\\times3 \\). السبب: لأن مركز الكرة في منتصف الأسطوانة، فنصف الارتفاع \\( h \\) هو الضلع الآخر.",
+        "think": "\\( 4\\times4=16 \\) و\\( \\sqrt{3}\\times\\sqrt{3}=3 \\)، ثم \\( 16\\times3 \\).",
+        "html_structure": "r^2 + h^2 = {q_3_10_129_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنجعل \\( r^2 \\) بدلالة \\( h \\). الطريقة: انقل \\( h^2 \\) للطرف الآخر. السبب: لأن قانون الحجم يحتوي \\( r^2 \\).",
+        "equation_template": "r^2 = {input_1} - h^2",
+        "inputs": [
+          {
+            "input_id": "v2",
+            "correct_answer": "48",
+            "options": [
+              "48",
+              "16",
+              "12",
+              "32"
+            ],
+            "id": "q_3_10_129_2_s2_i1",
+            "correct_value": "48",
+            "allowed_keys": [
+              "48",
+              "16",
+              "12",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 48 \\) قبل \\( h^2 \\)."
+          }
+        ],
+        "hint": "ضع \\( 48 \\) قبل \\( h^2 \\).",
+        "related_topics": [
+          "علاقة فيثاغورس"
+        ],
+        "step_id": "math345_3_10_129_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنجعل \\( r^2 \\) بدلالة \\( h \\). الطريقة: انقل \\( h^2 \\) للطرف الآخر. السبب: لأن قانون الحجم يحتوي \\( r^2 \\).",
+        "think": "ضع \\( 48 \\) قبل \\( h^2 \\).",
+        "html_structure": "r^2 = {q_3_10_129_2_s2_i1} - h^2"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنكتب حجم الأسطوانة. الطريقة: الحجم \\( =\\pi r^2 \\times \\) الارتفاع، والارتفاع \\( 2h \\). استبدل \\( r^2 \\) بالقوس. السبب: لنحصل على دالة بمتغير واحد.",
+        "equation_template": "V = \\pi(48 - h^2)\\times {input_1}",
+        "inputs": [
+          {
+            "input_id": "v3",
+            "correct_answer": "2h",
+            "options": [
+              "2h",
+              "h",
+              "4h",
+              "2"
+            ],
+            "id": "q_3_10_129_2_s3_i1",
+            "correct_value": "2h",
+            "allowed_keys": [
+              "2h",
+              "h",
+              "4h",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الارتفاع الكلي للأسطوانة هو \\( 2h \\) وليس \\( h \\)."
+          }
+        ],
+        "hint": "الارتفاع الكلي للأسطوانة هو \\( 2h \\) وليس \\( h \\).",
+        "related_topics": [
+          "حجم الأسطوانة"
+        ],
+        "step_id": "math345_3_10_129_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنكتب حجم الأسطوانة. الطريقة: الحجم \\( =\\pi r^2 \\times \\) الارتفاع، والارتفاع \\( 2h \\). استبدل \\( r^2 \\) بالقوس. السبب: لنحصل على دالة بمتغير واحد.",
+        "think": "الارتفاع الكلي للأسطوانة هو \\( 2h \\) وليس \\( h \\).",
+        "html_structure": "V = \\pi(48 - h^2)\\times {q_3_10_129_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنفتح القوس. الطريقة: اضرب \\( 2h \\) في \\( 48 \\) ثم في \\( h^2 \\). السبب: لتسهيل الاشتقاق.",
+        "equation_template": "V = {input_1}\\pi h - {input_2}\\pi h^3",
+        "inputs": [
+          {
+            "input_id": "v4a",
+            "correct_answer": "96",
+            "options": [
+              "96",
+              "48",
+              "24",
+              "192"
+            ],
+            "id": "q_3_10_129_2_s4_i1",
+            "correct_value": "96",
+            "allowed_keys": [
+              "96",
+              "48",
+              "24",
+              "192"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times48 \\) للحد الأول، و\\( 2\\times1 \\) للحد الثاني."
+          },
+          {
+            "input_id": "v4b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "48"
+            ],
+            "id": "q_3_10_129_2_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "48"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times48 \\) للحد الأول، و\\( 2\\times1 \\) للحد الثاني."
+          }
+        ],
+        "hint": "\\( 2\\times48 \\) للحد الأول، و\\( 2\\times1 \\) للحد الثاني.",
+        "related_topics": [
+          "التوزيع"
+        ],
+        "step_id": "math345_3_10_129_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنفتح القوس. الطريقة: اضرب \\( 2h \\) في \\( 48 \\) ثم في \\( h^2 \\). السبب: لتسهيل الاشتقاق.",
+        "think": "\\( 2\\times48 \\) للحد الأول، و\\( 2\\times1 \\) للحد الثاني.",
+        "html_structure": "V = {q_3_10_129_2_s4_i1}\\pi h - {q_3_10_129_2_s4_i2}\\pi h^3"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنشتق دالة الحجم. الطريقة: مشتقة \\( 96\\pi h \\) هي \\( 96\\pi \\). ومشتقة \\( 2\\pi h^3 \\) هي \\( 6\\pi h^2 \\) (أنزل الأس \\( 3 \\) واضربه في \\( 2 \\)). السبب: لأن النهاية العظمى عند انعدام المشتقة.",
+        "equation_template": "V' = {input_1}\\pi - {input_2}\\pi h^2",
+        "inputs": [
+          {
+            "input_id": "v5a",
+            "correct_answer": "96",
+            "options": [
+              "96",
+              "48",
+              "192",
+              "2"
+            ],
+            "id": "q_3_10_129_2_s5_i1",
+            "correct_value": "96",
+            "allowed_keys": [
+              "96",
+              "48",
+              "192",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times2 \\)."
+          },
+          {
+            "input_id": "v5b",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_3_10_129_2_s5_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 3\\times2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_3_10_129_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنشتق دالة الحجم. الطريقة: مشتقة \\( 96\\pi h \\) هي \\( 96\\pi \\). ومشتقة \\( 2\\pi h^3 \\) هي \\( 6\\pi h^2 \\) (أنزل الأس \\( 3 \\) واضربه في \\( 2 \\)). السبب: لأن النهاية العظمى عند انعدام المشتقة.",
+        "think": "\\( 3\\times2 \\).",
+        "html_structure": "V' = {q_3_10_129_2_s5_i1}\\pi - {q_3_10_129_2_s5_i2}\\pi h^2"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنساوي المشتقة بالصفر. الطريقة: \\( 96\\pi-6\\pi h^2=0 \\). اقسم الطرفين على \\( 6\\pi \\): \\( 96\\div6 \\). السبب: لإيجاد القيمة الحرجة.",
+        "equation_template": "h^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "v6",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "48",
+              "12",
+              "8"
+            ],
+            "id": "q_3_10_129_2_s6_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "48",
+              "12",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 96\\div6 \\)."
+          }
+        ],
+        "hint": "\\( 96\\div6 \\).",
+        "related_topics": [
+          "النقاط الحرجة"
+        ],
+        "step_id": "math345_3_10_129_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنساوي المشتقة بالصفر. الطريقة: \\( 96\\pi-6\\pi h^2=0 \\). اقسم الطرفين على \\( 6\\pi \\): \\( 96\\div6 \\). السبب: لإيجاد القيمة الحرجة.",
+        "think": "\\( 96\\div6 \\).",
+        "html_structure": "h^2 = {q_3_10_129_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنأخذ الجذر. الطريقة: جذر \\( 16 \\) هو \\( 4 \\). نهمل \\( -4 \\). السبب: لأن \\( h \\) طول.",
+        "equation_template": "h = {input_1}",
+        "inputs": [
+          {
+            "input_id": "v7",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "-4",
+              "16",
+              "8"
+            ],
+            "id": "q_3_10_129_2_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "-4",
+              "16",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما العدد الموجب الذي مربعه \\( 16 \\)؟"
+          }
+        ],
+        "hint": "ما العدد الموجب الذي مربعه \\( 16 \\)؟",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_3_10_129_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنأخذ الجذر. الطريقة: جذر \\( 16 \\) هو \\( 4 \\). نهمل \\( -4 \\). السبب: لأن \\( h \\) طول.",
+        "think": "ما العدد الموجب الذي مربعه \\( 16 \\)؟",
+        "html_structure": "h = {q_3_10_129_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنحسب \\( r^2 \\) المقابل. الطريقة: عوّض في \\( r^2=48-h^2 \\). السبب: للتأكد أن الأبعاد منطقية.",
+        "equation_template": "r^2 = 48 - {input_1} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "v8a",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "4",
+              "12",
+              "32"
+            ],
+            "id": "q_3_10_129_2_s8_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "4",
+              "12",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( h^2 \\) هو \\( 16 \\). ثم \\( 48-16 \\)."
+          },
+          {
+            "input_id": "v8b",
+            "correct_answer": "32",
+            "options": [
+              "32",
+              "64",
+              "12",
+              "44"
+            ],
+            "id": "q_3_10_129_2_s8_i2",
+            "correct_value": "32",
+            "allowed_keys": [
+              "32",
+              "64",
+              "12",
+              "44"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( h^2 \\) هو \\( 16 \\). ثم \\( 48-16 \\)."
+          }
+        ],
+        "hint": "\\( h^2 \\) هو \\( 16 \\). ثم \\( 48-16 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_10_129_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنحسب \\( r^2 \\) المقابل. الطريقة: عوّض في \\( r^2=48-h^2 \\). السبب: للتأكد أن الأبعاد منطقية.",
+        "think": "\\( h^2 \\) هو \\( 16 \\). ثم \\( 48-16 \\).",
+        "html_structure": "r^2 = 48 - {q_3_10_129_2_s8_i1} = {q_3_10_129_2_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: سنتحقق أنها نهاية عظمى. الطريقة: اشتق مرة ثانية: \\( V''=-12\\pi h \\). عند \\( h=4 \\) انظر لإشارة الناتج. السبب: المشتقة الثانية السالبة تعني نهاية عظمى.",
+        "equation_template": "V'' = -{input_1}\\pi h \\Rightarrow \\text{الإشارة: } {input_2}",
+        "inputs": [
+          {
+            "input_id": "v9a",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "6",
+              "96",
+              "2"
+            ],
+            "id": "q_3_10_129_2_s9_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "6",
+              "96",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( -6\\pi h^2 \\) هي \\( -12\\pi h \\)، وهي سالبة عند \\( h=4 \\)."
+          },
+          {
+            "input_id": "v9b",
+            "correct_answer": "سالبة",
+            "options": [
+              "سالبة",
+              "موجبة",
+              "صفر",
+              "غير معرفة"
+            ],
+            "id": "q_3_10_129_2_s9_i2",
+            "correct_value": "سالبة",
+            "allowed_keys": [
+              "سالبة",
+              "موجبة",
+              "صفر",
+              "غير معرفة"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( -6\\pi h^2 \\) هي \\( -12\\pi h \\)، وهي سالبة عند \\( h=4 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( -6\\pi h^2 \\) هي \\( -12\\pi h \\)، وهي سالبة عند \\( h=4 \\).",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_10_129_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: سنتحقق أنها نهاية عظمى. الطريقة: اشتق مرة ثانية: \\( V''=-12\\pi h \\). عند \\( h=4 \\) انظر لإشارة الناتج. السبب: المشتقة الثانية السالبة تعني نهاية عظمى.",
+        "think": "مشتقة \\( -6\\pi h^2 \\) هي \\( -12\\pi h \\)، وهي سالبة عند \\( h=4 \\).",
+        "html_structure": "V'' = -{q_3_10_129_2_s9_i1}\\pi h \\Rightarrow \\text{الإشارة: } {q_3_10_129_2_s9_i2}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: سنحسب ارتفاع الأسطوانة المطلوب. الطريقة: الارتفاع الكلي \\( 2h \\). اضرب \\( 2\\times4 \\). السبب: لأن \\( h \\) نصف الارتفاع فقط، والسؤال يطلب الارتفاع كله.",
+        "equation_template": "2h = 2\\times{input_1} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "v10a",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "id": "q_3_10_129_2_s10_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 4 \\) في الفراغ الأول. ثم ضاعفه. والوحدة \\( cm \\)."
+          },
+          {
+            "input_id": "v10b",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "4",
+              "16",
+              "12"
+            ],
+            "id": "q_3_10_129_2_s10_i2",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "4",
+              "16",
+              "12"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 4 \\) في الفراغ الأول. ثم ضاعفه. والوحدة \\( cm \\)."
+          }
+        ],
+        "hint": "ضع \\( 4 \\) في الفراغ الأول. ثم ضاعفه. والوحدة \\( cm \\).",
+        "related_topics": [
+          "ارتفاع الأسطوانة"
+        ],
+        "step_id": "math345_3_10_129_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: سنحسب ارتفاع الأسطوانة المطلوب. الطريقة: الارتفاع الكلي \\( 2h \\). اضرب \\( 2\\times4 \\). السبب: لأن \\( h \\) نصف الارتفاع فقط، والسؤال يطلب الارتفاع كله.",
+        "think": "ضع \\( 4 \\) في الفراغ الأول. ثم ضاعفه. والوحدة \\( cm \\).",
+        "html_structure": "2h = 2\\times{q_3_10_129_2_s10_i1} = {q_3_10_129_2_s10_i2}"
+      }
+    ]
+  }
+]

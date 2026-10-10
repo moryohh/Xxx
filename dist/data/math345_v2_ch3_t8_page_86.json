@@ -1,0 +1,633 @@
+[
+  {
+    "id_number": "q59_p86",
+    "page_number": 86,
+    "question_number": "59",
+    "question_text": "إذا كانت \\( f(x)=ax^3+bx^2+cx \\) وكانت \\( f \\) محدبة في \\( x<1 \\) ومقعرة في \\( x>1 \\) وللدالة نهاية عظمى محلية \\( (-1,5) \\) فجد قيم \\( a,b,c \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_086_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( -a+b-c=5,\\ 3a-2b+c=0,\\ 3a+b=0 \\) فـ \\( a=1,\\ b=-3,\\ c=-9 \\).",
+    "source_file": "رياضيات 3/page_086_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 86
+    },
+    "chapter": 3,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_086_diag_1_drawing.png",
+    "title": "إذا كانت \\( f(x)=ax^3+bx^2+cx \\) وكانت \\( f \\) محدبة في \\( x<1 \\) ومقعرة في \\( x>1 \\) وللدالة نهاية عظمى محلية \\( (-1,5) \\) فجد قيم \\( a,b,c \\).",
+    "number": "59",
+    "model_solution": "\\( -a+b-c=5,\\ 3a-2b+c=0,\\ 3a+b=0 \\) فـ \\( a=1,\\ b=-3,\\ c=-9 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعوّض النقطة \\( (-1,5) \\) في \\( f(x)=ax^3+bx^2+cx \\). الطريقة: ضع \\( x=-1 \\) عند كل حد. السبب: لأن النقطة على المنحنى.",
+        "equation_template": "a({input_1})^3+b({input_2})^2+c({input_3})=5",
+        "inputs": [
+          {
+            "input_id": "s1_a",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "5",
+              "0"
+            ],
+            "id": "q_3_8_86_1_s1_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( x \\) بـ \\( -1 \\)."
+          },
+          {
+            "input_id": "s1_b",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "5",
+              "0"
+            ],
+            "id": "q_3_8_86_1_s1_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "استبدل \\( x \\) بـ \\( -1 \\)."
+          },
+          {
+            "input_id": "s1_c",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "5",
+              "0"
+            ],
+            "id": "q_3_8_86_1_s1_i3",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 3",
+            "hint": "استبدل \\( x \\) بـ \\( -1 \\)."
+          }
+        ],
+        "hint": "استبدل \\( x \\) بـ \\( -1 \\).",
+        "related_topics": [
+          "تعويض نقطة"
+        ],
+        "step_id": "math345_3_8_86_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعوّض النقطة \\( (-1,5) \\) في \\( f(x)=ax^3+bx^2+cx \\). الطريقة: ضع \\( x=-1 \\) عند كل حد. السبب: لأن النقطة على المنحنى.",
+        "think": "استبدل \\( x \\) بـ \\( -1 \\).",
+        "html_structure": "a({q_3_8_86_1_s1_i1})^3+b({q_3_8_86_1_s1_i2})^2+c({q_3_8_86_1_s1_i3})=5"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبسط المعادلة. الطريقة: \\( (-1)^3=-1 \\) و\\( (-1)^2=1 \\) و\\( c\\times(-1)=-c \\). اكتب الحد الأوسط. السبب: نحصل على المعادلة (1).",
+        "equation_template": "-a+{input_1}-c=5\\ \\ (1)",
+        "inputs": [
+          {
+            "input_id": "s2_b",
+            "correct_answer": "b",
+            "options": [
+              "b",
+              "-b",
+              "a",
+              "c"
+            ],
+            "id": "q_3_8_86_1_s2_i1",
+            "correct_value": "b",
+            "allowed_keys": [
+              "b",
+              "-b",
+              "a",
+              "c"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( (-1)^2=1 \\) فيبقى \\( b \\)."
+          }
+        ],
+        "hint": "\\( (-1)^2=1 \\) فيبقى \\( b \\).",
+        "related_topics": [
+          "تعويض نقطة"
+        ],
+        "step_id": "math345_3_8_86_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبسط المعادلة. الطريقة: \\( (-1)^3=-1 \\) و\\( (-1)^2=1 \\) و\\( c\\times(-1)=-c \\). اكتب الحد الأوسط. السبب: نحصل على المعادلة (1).",
+        "think": "\\( (-1)^2=1 \\) فيبقى \\( b \\).",
+        "html_structure": "-a+{q_3_8_86_1_s2_i1}-c=5\\ \\ (1)"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق \\( f(x) \\). الطريقة: اشتق كل حد. السبب: لأن النهاية العظمى تعني \\( f'=0 \\).",
+        "equation_template": "f'(x)=3ax^2+{input_1}bx+{input_2}",
+        "inputs": [
+          {
+            "input_id": "s3_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "id": "q_3_8_86_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( bx^2\\to2bx \\) و\\( cx\\to c \\)."
+          },
+          {
+            "input_id": "s3_b",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "b"
+            ],
+            "id": "q_3_8_86_1_s3_i2",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "b"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( bx^2\\to2bx \\) و\\( cx\\to c \\)."
+          }
+        ],
+        "hint": "\\( bx^2\\to2bx \\) و\\( cx\\to c \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_86_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق \\( f(x) \\). الطريقة: اشتق كل حد. السبب: لأن النهاية العظمى تعني \\( f'=0 \\).",
+        "think": "\\( bx^2\\to2bx \\) و\\( cx\\to c \\).",
+        "html_structure": "f'(x)=3ax^2+{q_3_8_86_1_s3_i1}bx+{q_3_8_86_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضع \\( f'(-1)=0 \\) لأن \\( (-1,5) \\) نهاية عظمى. الطريقة: عوّض \\( x=-1 \\) في المشتقة. السبب: لأن المشتقة تنعدم عند النهاية.",
+        "equation_template": "3a({input_1})^2+2b({input_2})+c=0",
+        "inputs": [
+          {
+            "input_id": "s4_a",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "5"
+            ],
+            "id": "q_3_8_86_1_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( x \\) بـ \\( -1 \\)."
+          },
+          {
+            "input_id": "s4_b",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "5"
+            ],
+            "id": "q_3_8_86_1_s4_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "استبدل \\( x \\) بـ \\( -1 \\)."
+          }
+        ],
+        "hint": "استبدل \\( x \\) بـ \\( -1 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_86_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضع \\( f'(-1)=0 \\) لأن \\( (-1,5) \\) نهاية عظمى. الطريقة: عوّض \\( x=-1 \\) في المشتقة. السبب: لأن المشتقة تنعدم عند النهاية.",
+        "think": "استبدل \\( x \\) بـ \\( -1 \\).",
+        "html_structure": "3a({q_3_8_86_1_s4_i1})^2+2b({q_3_8_86_1_s4_i2})+c=0"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نبسط المعادلة (2). الطريقة: \\( (-1)^2=1 \\) فيبقى \\( 3a \\) و\\( 2b\\times(-1)=-2b \\). السبب: للحل الآني.",
+        "equation_template": "{input_1}a-{input_2}b+c=0\\ \\ (2)",
+        "inputs": [
+          {
+            "input_id": "s5_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "1",
+              "6"
+            ],
+            "id": "q_3_8_86_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times1=3 \\)."
+          },
+          {
+            "input_id": "s5_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "id": "q_3_8_86_1_s5_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times1=3 \\)."
+          }
+        ],
+        "hint": "\\( 3\\times1=3 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_86_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نبسط المعادلة (2). الطريقة: \\( (-1)^2=1 \\) فيبقى \\( 3a \\) و\\( 2b\\times(-1)=-2b \\). السبب: للحل الآني.",
+        "think": "\\( 3\\times1=3 \\).",
+        "html_structure": "{q_3_8_86_1_s5_i1}a-{q_3_8_86_1_s5_i2}b+c=0\\ \\ (2)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نشتق ثانية. الطريقة: اشتق \\( 3ax^2+2bx+c \\). السبب: لأن نقطة الانقلاب من \\( f''=0 \\).",
+        "equation_template": "f''(x)={input_1}ax+{input_2}b",
+        "inputs": [
+          {
+            "input_id": "s6_a",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "id": "q_3_8_86_1_s6_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times2=6 \\)."
+          },
+          {
+            "input_id": "s6_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "6",
+              "3",
+              "1"
+            ],
+            "id": "q_3_8_86_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "6",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times2=6 \\)."
+          }
+        ],
+        "hint": "\\( 3\\times2=6 \\).",
+        "related_topics": [
+          "نقطة الانقلاب"
+        ],
+        "step_id": "math345_3_8_86_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نشتق ثانية. الطريقة: اشتق \\( 3ax^2+2bx+c \\). السبب: لأن نقطة الانقلاب من \\( f''=0 \\).",
+        "think": "\\( 3\\times2=6 \\).",
+        "html_structure": "f''(x)={q_3_8_86_1_s6_i1}ax+{q_3_8_86_1_s6_i2}b"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نستخدم أن الانقلاب عند \\( x=1 \\). الطريقة: ضع \\( f''(1)=0 \\): \\( 6a+2b=0 \\) ثم اقسم على \\( 2 \\). السبب: لأن \\( f'' \\) تنعدم عند الانقلاب.",
+        "equation_template": "6a+2b=0\\Rightarrow 3a+b={input_1}\\ \\ (3)",
+        "inputs": [
+          {
+            "input_id": "s7_v",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "3",
+              "1",
+              "6"
+            ],
+            "id": "q_3_8_86_1_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "3",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "الصفر على \\( 2 \\) صفر."
+          }
+        ],
+        "hint": "الصفر على \\( 2 \\) صفر.",
+        "related_topics": [
+          "نقطة الانقلاب"
+        ],
+        "step_id": "math345_3_8_86_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نستخدم أن الانقلاب عند \\( x=1 \\). الطريقة: ضع \\( f''(1)=0 \\): \\( 6a+2b=0 \\) ثم اقسم على \\( 2 \\). السبب: لأن \\( f'' \\) تنعدم عند الانقلاب.",
+        "think": "الصفر على \\( 2 \\) صفر.",
+        "html_structure": "6a+2b=0\\Rightarrow 3a+b={q_3_8_86_1_s7_i1}\\ \\ (3)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحذف \\( c \\) بجمع (1) و(2). الطريقة: اجمع الطرفين: \\( -a+3a \\) و\\( b-2b \\) و\\( -c+c \\). السبب: لنتخلص من \\( c \\).",
+        "equation_template": "{input_1}a-b=5\\ \\ (4)",
+        "inputs": [
+          {
+            "input_id": "s8_v",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "-2",
+              "1"
+            ],
+            "id": "q_3_8_86_1_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1+3=2 \\) و\\( 1-2=-1 \\)."
+          }
+        ],
+        "hint": "\\( -1+3=2 \\) و\\( 1-2=-1 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_86_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحذف \\( c \\) بجمع (1) و(2). الطريقة: اجمع الطرفين: \\( -a+3a \\) و\\( b-2b \\) و\\( -c+c \\). السبب: لنتخلص من \\( c \\).",
+        "think": "\\( -1+3=2 \\) و\\( 1-2=-1 \\).",
+        "html_structure": "{q_3_8_86_1_s8_i1}a-b=5\\ \\ (4)"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نجمع (3) و(4) لنحذف \\( b \\). الطريقة: اجمع \\( 3a+b \\) مع \\( 2a-b \\) واكتب معامل \\( a \\). السبب: لأن \\( b \\) تلغي \\( -b \\).",
+        "equation_template": "{input_1}a=5",
+        "inputs": [
+          {
+            "input_id": "s9_v",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "1",
+              "6",
+              "3"
+            ],
+            "id": "q_3_8_86_1_s9_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "1",
+              "6",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3+2=5 \\)."
+          }
+        ],
+        "hint": "\\( 3+2=5 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_86_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نجمع (3) و(4) لنحذف \\( b \\). الطريقة: اجمع \\( 3a+b \\) مع \\( 2a-b \\) واكتب معامل \\( a \\). السبب: لأن \\( b \\) تلغي \\( -b \\).",
+        "think": "\\( 3+2=5 \\).",
+        "html_structure": "{q_3_8_86_1_s9_i1}a=5"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحل لـ \\( a \\). الطريقة: اقسم الطرفين على \\( 5 \\). السبب: لنعزل \\( a \\).",
+        "equation_template": "a={input_1}",
+        "inputs": [
+          {
+            "input_id": "s10_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "5",
+              "-1",
+              "0"
+            ],
+            "id": "q_3_8_86_1_s10_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "5",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5\\div5=1 \\)."
+          }
+        ],
+        "hint": "\\( 5\\div5=1 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_86_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحل لـ \\( a \\). الطريقة: اقسم الطرفين على \\( 5 \\). السبب: لنعزل \\( a \\).",
+        "think": "\\( 5\\div5=1 \\).",
+        "html_structure": "a={q_3_8_86_1_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجد \\( b \\). الطريقة: من (3): \\( b=-3a \\) فعوّض \\( a=1 \\). السبب: لأن (3) تعطي \\( b \\) مباشرة.",
+        "equation_template": "b=-3({input_1})={input_2}",
+        "inputs": [
+          {
+            "input_id": "s11_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "5"
+            ],
+            "id": "q_3_8_86_1_s11_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -3\\times1=-3 \\)."
+          },
+          {
+            "input_id": "s11_b",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "id": "q_3_8_86_1_s11_i2",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -3\\times1=-3 \\)."
+          }
+        ],
+        "hint": "\\( -3\\times1=-3 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_86_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجد \\( b \\). الطريقة: من (3): \\( b=-3a \\) فعوّض \\( a=1 \\). السبب: لأن (3) تعطي \\( b \\) مباشرة.",
+        "think": "\\( -3\\times1=-3 \\).",
+        "html_structure": "b=-3({q_3_8_86_1_s11_i1})={q_3_8_86_1_s11_i2}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نجد \\( c \\) من المعادلة (1). الطريقة: عوّض \\( a=1 \\) و\\( b=-3 \\): \\( -1-3-c=5 \\). السبب: هذه آخر قيمة.",
+        "equation_template": "-4-c=5\\Rightarrow c={input_1}",
+        "inputs": [
+          {
+            "input_id": "s12_c",
+            "correct_answer": "-9",
+            "options": [
+              "-9",
+              "9",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_8_86_1_s12_i1",
+            "correct_value": "-9",
+            "allowed_keys": [
+              "-9",
+              "9",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( -4 \\) إلى الطرف الأيمن: \\( -c=9 \\)."
+          }
+        ],
+        "hint": "انقل \\( -4 \\) إلى الطرف الأيمن: \\( -c=9 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_86_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نجد \\( c \\) من المعادلة (1). الطريقة: عوّض \\( a=1 \\) و\\( b=-3 \\): \\( -1-3-c=5 \\). السبب: هذه آخر قيمة.",
+        "think": "انقل \\( -4 \\) إلى الطرف الأيمن: \\( -c=9 \\).",
+        "html_structure": "-4-c=5\\Rightarrow c={q_3_8_86_1_s12_i1}"
+      },
+      {
+        "step_number": 13,
+        "step_explanation": "الهدف: نتحقق من الحل. الطريقة: عوّض \\( x=-1 \\) في \\( x^3-3x^2-9x \\). السبب: لنتأكد أن \\( f(-1)=5 \\).",
+        "equation_template": "f(-1)=-1-3+9={input_1}",
+        "inputs": [
+          {
+            "input_id": "s13_v",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "-5",
+              "7",
+              "11"
+            ],
+            "id": "q_3_8_86_1_s13_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "-5",
+              "7",
+              "11"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1-3=-4 \\) ثم \\( -4+9 \\)."
+          }
+        ],
+        "hint": "\\( -1-3=-4 \\) ثم \\( -4+9 \\).",
+        "related_topics": [
+          "مراجعة الحل"
+        ],
+        "step_id": "math345_3_8_86_1_step_13",
+        "title": "الخطوة 13",
+        "explanation": "الهدف: نتحقق من الحل. الطريقة: عوّض \\( x=-1 \\) في \\( x^3-3x^2-9x \\). السبب: لنتأكد أن \\( f(-1)=5 \\).",
+        "think": "\\( -1-3=-4 \\) ثم \\( -4+9 \\).",
+        "html_structure": "f(-1)=-1-3+9={q_3_8_86_1_s13_i1}"
+      }
+    ]
+  }
+]

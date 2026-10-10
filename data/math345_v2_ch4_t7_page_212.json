@@ -1,0 +1,1263 @@
+[
+  {
+    "id_number": "q1_p212",
+    "page_number": 212,
+    "question_number": "1",
+    "question_text": "أثبت فيما إذا كانت \\( F:[1,3]\\to\\mathbb{R} \\) حيث \\( F(x)=x^3+2 \\) هي دالة مقابلة للدالة \\( f(x)=3x^2 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_072_diag_1_drawing.png"
+    ],
+    "full_model_solution": "F كثيرة حدود فهي مستمرة على [1,3] وقابلة للاشتقاق على (1,3) . F'(x)=3x²=f(x) إذن F دالة مقابلة لـ f",
+    "source_file": "رياضيلت 4/page_072.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 72,
+      "pdf_page_number": 212,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 6,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_072_diag_1_drawing.png",
+    "title": "أثبت فيما إذا كانت \\( F:[1,3]\\to\\mathbb{R} \\) حيث \\( F(x)=x^3+2 \\) هي دالة مقابلة للدالة \\( f(x)=3x^2 \\).",
+    "number": "1",
+    "model_solution": "F كثيرة حدود فهي مستمرة على [1,3] وقابلة للاشتقاق على (1,3) . F'(x)=3x²=f(x) إذن F دالة مقابلة لـ f",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "لإثبات أن \\( F \\) دالة مقابلة للدالة \\( f \\) نتبع خطوتين: نثبت أولاً أن \\( F \\) مستمرة وقابلة للاشتقاق، ثم نشتقها ونقارن الناتج مع \\( f \\). الهدف: الاستمرارية. الطريقة: \\( F(x)=x^3+2 \\) كثيرة حدود، وكثيرات الحدود مستمرة على كل الأعداد. السبب: هذا شرط تعريف الدالة المقابلة.",
+        "equation_template": "F(x) \\text{ مستمرة على } [{input_1}, {input_2}]",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_4_7_212_1_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "حدا الفترة المعطاة في السؤال هما \\( 1 \\) و \\( 3 \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "4",
+              "5",
+              "3"
+            ],
+            "id": "q_4_7_212_1_s1_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "4",
+              "5",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "حدا الفترة المعطاة في السؤال هما \\( 1 \\) و \\( 3 \\)."
+          }
+        ],
+        "hint": "حدا الفترة المعطاة في السؤال هما \\( 1 \\) و \\( 3 \\).",
+        "related_topics": [
+          "الاستمرارية"
+        ],
+        "step_id": "math345_4_7_212_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "لإثبات أن \\( F \\) دالة مقابلة للدالة \\( f \\) نتبع خطوتين: نثبت أولاً أن \\( F \\) مستمرة وقابلة للاشتقاق، ثم نشتقها ونقارن الناتج مع \\( f \\). الهدف: الاستمرارية. الطريقة: \\( F(x)=x^3+2 \\) كثيرة حدود، وكثيرات الحدود مستمرة على كل الأعداد. السبب: هذا شرط تعريف الدالة المقابلة.",
+        "think": "حدا الفترة المعطاة في السؤال هما \\( 1 \\) و \\( 3 \\).",
+        "html_structure": "F(x) \\text{ مستمرة على } [{q_4_7_212_1_s1_i1}, {q_4_7_212_1_s1_i2}]"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نثبت قابلية الاشتقاق. الهدف: التأكد أن \\( F \\) قابلة للاشتقاق على الفترة المفتوحة. الطريقة: كثيرة الحدود قابلة للاشتقاق عند كل نقطة، ومنها نقاط الفترة المفتوحة \\( (1,3) \\). السبب: هذا الشرط الثاني.",
+        "equation_template": "F(x) \\text{ قابلة للاشتقاق على } ({input_1}, {input_2})",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_7_212_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الفترة المفتوحة لها نفس حدي الفترة المغلقة."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "3",
+            "options": [
+              "5",
+              "4",
+              "3",
+              "2"
+            ],
+            "id": "q_4_7_212_1_s2_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "5",
+              "4",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الفترة المفتوحة لها نفس حدي الفترة المغلقة."
+          }
+        ],
+        "hint": "الفترة المفتوحة لها نفس حدي الفترة المغلقة.",
+        "related_topics": [
+          "قابلية الاشتقاق"
+        ],
+        "step_id": "math345_4_7_212_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نثبت قابلية الاشتقاق. الهدف: التأكد أن \\( F \\) قابلة للاشتقاق على الفترة المفتوحة. الطريقة: كثيرة الحدود قابلة للاشتقاق عند كل نقطة، ومنها نقاط الفترة المفتوحة \\( (1,3) \\). السبب: هذا الشرط الثاني.",
+        "think": "الفترة المفتوحة لها نفس حدي الفترة المغلقة.",
+        "html_structure": "F(x) \\text{ قابلة للاشتقاق على } ({q_4_7_212_1_s2_i1}, {q_4_7_212_1_s2_i2})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نبدأ الاشتقاق. الهدف: مشتقة \\( x^3 \\). الطريقة: نُنزل الأس \\( 3 \\) كمعامل وننقص الأس بمقدار \\( 1 \\). السبب: قاعدة اشتقاق القوة.",
+        "equation_template": "\\frac{d}{dx}(x^3) = {input_1}x^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_4_7_212_1_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 3 \\) ينزل أمام \\( x \\) والأس الجديد \\( 3-1 \\)."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "id": "q_4_7_212_1_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 3 \\) ينزل أمام \\( x \\) والأس الجديد \\( 3-1 \\)."
+          }
+        ],
+        "hint": "الأس \\( 3 \\) ينزل أمام \\( x \\) والأس الجديد \\( 3-1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_7_212_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نبدأ الاشتقاق. الهدف: مشتقة \\( x^3 \\). الطريقة: نُنزل الأس \\( 3 \\) كمعامل وننقص الأس بمقدار \\( 1 \\). السبب: قاعدة اشتقاق القوة.",
+        "think": "الأس \\( 3 \\) ينزل أمام \\( x \\) والأس الجديد \\( 3-1 \\).",
+        "html_structure": "\\frac{d}{dx}(x^3) = {q_4_7_212_1_s3_i1}x^{{q_4_7_212_1_s3_i2}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نشتق الحد الثابت. الهدف: مشتقة العدد \\( 2 \\). الطريقة: مشتقة أي عدد ثابت صفر. السبب: الثابت لا يتغير مهما تغيرت \\( x \\).",
+        "equation_template": "\\frac{d}{dx}(2) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "0",
+            "options": [
+              "2",
+              "x",
+              "1",
+              "0"
+            ],
+            "id": "q_4_7_212_1_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "2",
+              "x",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "العدد الثابت لا يتغير فمشتقته صفر."
+          }
+        ],
+        "hint": "العدد الثابت لا يتغير فمشتقته صفر.",
+        "related_topics": [
+          "مشتقة الثابت"
+        ],
+        "step_id": "math345_4_7_212_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نشتق الحد الثابت. الهدف: مشتقة العدد \\( 2 \\). الطريقة: مشتقة أي عدد ثابت صفر. السبب: الثابت لا يتغير مهما تغيرت \\( x \\).",
+        "think": "العدد الثابت لا يتغير فمشتقته صفر.",
+        "html_structure": "\\frac{d}{dx}(2) = {q_4_7_212_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نجمع المشتقتين. الهدف: كتابة \\( F'(x) \\).",
+        "equation_template": "F'(x) = {input_1}x^2 + {input_2} = {input_3}x^2",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "3",
+            "options": [
+              "6",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_7_212_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "6",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3x^2+0 \\) تساوي \\( 3x^2 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "0",
+            "options": [
+              "2",
+              "3",
+              "0",
+              "1"
+            ],
+            "id": "q_4_7_212_1_s5_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "2",
+              "3",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3x^2+0 \\) تساوي \\( 3x^2 \\)."
+          },
+          {
+            "input_id": "step5_in3",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "3"
+            ],
+            "id": "q_4_7_212_1_s5_i3",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 3x^2+0 \\) تساوي \\( 3x^2 \\)."
+          }
+        ],
+        "hint": "\\( 3x^2+0 \\) تساوي \\( 3x^2 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_7_212_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نجمع المشتقتين. الهدف: كتابة \\( F'(x) \\).",
+        "think": "\\( 3x^2+0 \\) تساوي \\( 3x^2 \\).",
+        "html_structure": "F'(x) = {q_4_7_212_1_s5_i1}x^2 + {q_4_7_212_1_s5_i2} = {q_4_7_212_1_s5_i3}x^2"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نقارن مع \\( f \\). الهدف: التحقق من شرط الدالة المقابلة. الطريقة: \\( f(x)=3x^2 \\) ونتيجة المشتقة \\( 3x^2 \\) أيضاً.",
+        "equation_template": "F'(x) = {input_1} = f(x)",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "3x^2",
+            "options": [
+              "3x",
+              "3x^2",
+              "x^3",
+              "6x"
+            ],
+            "id": "q_4_7_212_1_s6_i1",
+            "correct_value": "3x^2",
+            "allowed_keys": [
+              "3x",
+              "3x^2",
+              "x^3",
+              "6x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب نتيجة المشتقة التي حصلنا عليها."
+          }
+        ],
+        "hint": "اكتب نتيجة المشتقة التي حصلنا عليها.",
+        "related_topics": [
+          "الدالة المقابلة"
+        ],
+        "step_id": "math345_4_7_212_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نقارن مع \\( f \\). الهدف: التحقق من شرط الدالة المقابلة. الطريقة: \\( f(x)=3x^2 \\) ونتيجة المشتقة \\( 3x^2 \\) أيضاً.",
+        "think": "اكتب نتيجة المشتقة التي حصلنا عليها.",
+        "html_structure": "F'(x) = {q_4_7_212_1_s6_i1} = f(x)"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نكتب الاستنتاج. بما أن \\( F \\) مستمرة على \\( [1,3] \\) وقابلة للاشتقاق على \\( (1,3) \\) و \\( F'(x)=f(x) \\) فإن \\( F \\) دالة مقابلة للدالة \\( f \\). نتحقق بحساب تكامل \\( f \\) من \\( 1 \\) إلى \\( 3 \\) بدلالة \\( F(3)-F(1) \\) ونبدأ بـ \\( F(3) \\).",
+        "equation_template": "F(3) = 3^3 + 2 = {input_1} + 2 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "27",
+            "options": [
+              "3",
+              "9",
+              "8",
+              "27"
+            ],
+            "id": "q_4_7_212_1_s7_i1",
+            "correct_value": "27",
+            "allowed_keys": [
+              "3",
+              "9",
+              "8",
+              "27"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times3\\times3=27 \\) ثم أضف \\( 2 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "29",
+            "options": [
+              "30",
+              "10",
+              "29",
+              "11"
+            ],
+            "id": "q_4_7_212_1_s7_i2",
+            "correct_value": "29",
+            "allowed_keys": [
+              "30",
+              "10",
+              "29",
+              "11"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times3\\times3=27 \\) ثم أضف \\( 2 \\)."
+          }
+        ],
+        "hint": "\\( 3\\times3\\times3=27 \\) ثم أضف \\( 2 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_7_212_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نكتب الاستنتاج. بما أن \\( F \\) مستمرة على \\( [1,3] \\) وقابلة للاشتقاق على \\( (1,3) \\) و \\( F'(x)=f(x) \\) فإن \\( F \\) دالة مقابلة للدالة \\( f \\). نتحقق بحساب تكامل \\( f \\) من \\( 1 \\) إلى \\( 3 \\) بدلالة \\( F(3)-F(1) \\) ونبدأ بـ \\( F(3) \\).",
+        "think": "\\( 3\\times3\\times3=27 \\) ثم أضف \\( 2 \\).",
+        "html_structure": "F(3) = 3^3 + 2 = {q_4_7_212_1_s7_i1} + 2 = {q_4_7_212_1_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نحسب \\( F(1) \\) ثم الفرق.",
+        "equation_template": "F(1) = 1 + 2 = {input_1}, \\quad \\int_{1}^{3} f\\,dx = 29 - {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "5",
+              "3",
+              "1"
+            ],
+            "id": "q_4_7_212_1_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "5",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+2=3 \\) ثم \\( 29-3 \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "5",
+              "1",
+              "3"
+            ],
+            "id": "q_4_7_212_1_s8_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "5",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+2=3 \\) ثم \\( 29-3 \\)."
+          },
+          {
+            "input_id": "step8_in3",
+            "correct_answer": "26",
+            "options": [
+              "26",
+              "32",
+              "24",
+              "28"
+            ],
+            "id": "q_4_7_212_1_s8_i3",
+            "correct_value": "26",
+            "allowed_keys": [
+              "26",
+              "32",
+              "24",
+              "28"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 1+2=3 \\) ثم \\( 29-3 \\)."
+          }
+        ],
+        "hint": "\\( 1+2=3 \\) ثم \\( 29-3 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_7_212_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نحسب \\( F(1) \\) ثم الفرق.",
+        "think": "\\( 1+2=3 \\) ثم \\( 29-3 \\).",
+        "html_structure": "F(1) = 1 + 2 = {q_4_7_212_1_s8_i1}, \\quad \\int_{1}^{3} f\\,dx = 29 - {q_4_7_212_1_s8_i2} = {q_4_7_212_1_s8_i3}"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p212",
+    "page_number": 212,
+    "question_number": "2",
+    "question_text": "أثبت أن الدالة \\( F:\\mathbb{R}\\to\\mathbb{R} \\) حيث \\( F(x)=\\frac{1}{2}\\sin 2x \\) هي دالة مقابلة للدالة \\( f:\\mathbb{R}\\to\\mathbb{R} \\) حيث \\( f(x)=\\cos 2x \\) ثم أوجد \\( \\int_{0}^{\\frac{\\pi}{4}}\\cos 2x\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_072_diag_1_drawing.png"
+    ],
+    "full_model_solution": "F'(x)=½·cos2x·2=cos2x=f(x) . ∫₀^{π/4}cos2x dx = F(π/4)-F(0) = ½·1-0 = ½",
+    "source_file": "رياضيلت 4/page_072.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 72,
+      "pdf_page_number": 212,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 6,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_072_diag_1_drawing.png",
+    "title": "أثبت أن الدالة \\( F:\\mathbb{R}\\to\\mathbb{R} \\) حيث \\( F(x)=\\frac{1}{2}\\sin 2x \\) هي دالة مقابلة للدالة \\( f:\\mathbb{R}\\to\\mathbb{R} \\) حيث \\( f(x)=\\cos 2x \\) ثم أوجد \\( \\int_{0}^{\\frac{\\pi}{4}}\\cos 2x\\,dx \\)",
+    "number": "2",
+    "model_solution": "F'(x)=½·cos2x·2=cos2x=f(x) . ∫₀^{π/4}cos2x dx = F(π/4)-F(0) = ½·1-0 = ½",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نثبت الاستمرارية والاشتقاق. الهدف: التأكد من الشرطين. الطريقة: \\( \\sin 2x \\) مستمرة وقابلة للاشتقاق على كل الأعداد الحقيقية. السبب: وهذا يغطي أي فترة نختارها.",
+        "equation_template": "F(x) = \\frac{1}{2}\\sin({input_1}x) \\text{ مستمرة وقابلة للاشتقاق على } \\mathbb{R}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "\\frac{1}{2}",
+              "1",
+              "4"
+            ],
+            "id": "q_4_7_212_2_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "\\frac{1}{2}",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الذي يضرب \\( x \\) داخل الجيب هو \\( 2 \\)."
+          }
+        ],
+        "hint": "الرقم الذي يضرب \\( x \\) داخل الجيب هو \\( 2 \\).",
+        "related_topics": [
+          "الاستمرارية"
+        ],
+        "step_id": "math345_4_7_212_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نثبت الاستمرارية والاشتقاق. الهدف: التأكد من الشرطين. الطريقة: \\( \\sin 2x \\) مستمرة وقابلة للاشتقاق على كل الأعداد الحقيقية. السبب: وهذا يغطي أي فترة نختارها.",
+        "think": "الرقم الذي يضرب \\( x \\) داخل الجيب هو \\( 2 \\).",
+        "html_structure": "F(x) = \\frac{1}{2}\\sin({q_4_7_212_2_s1_i1}x) \\text{ مستمرة وقابلة للاشتقاق على } \\mathbb{R}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نشتق باستخدام قاعدة السلسلة. الهدف: مشتقة \\( \\sin 2x \\). الطريقة: مشتقة \\( \\sin \\) هي \\( \\cos \\) ونكتب الزاوية نفسها \\( 2x \\) ثم نضرب بمشتقة الزاوية الداخلية. السبب: الزاوية ليست \\( x \\) وحدها.",
+        "equation_template": "\\frac{d}{dx}\\sin 2x = \\cos 2x \\times {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "2",
+            "options": [
+              "\\cos x",
+              "2",
+              "1",
+              "\\frac{1}{2}"
+            ],
+            "id": "q_4_7_212_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "\\cos x",
+              "2",
+              "1",
+              "\\frac{1}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 2x \\) هي \\( 2 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 2x \\) هي \\( 2 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_4_7_212_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نشتق باستخدام قاعدة السلسلة. الهدف: مشتقة \\( \\sin 2x \\). الطريقة: مشتقة \\( \\sin \\) هي \\( \\cos \\) ونكتب الزاوية نفسها \\( 2x \\) ثم نضرب بمشتقة الزاوية الداخلية. السبب: الزاوية ليست \\( x \\) وحدها.",
+        "think": "مشتقة \\( 2x \\) هي \\( 2 \\).",
+        "html_structure": "\\frac{d}{dx}\\sin 2x = \\cos 2x \\times {q_4_7_212_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نضرب في المعامل \\( \\frac{1}{2} \\). الهدف: كتابة \\( F'(x) \\) كاملة.",
+        "equation_template": "F'(x) = \\frac{1}{2} \\times {input_1} \\times \\cos 2x",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "2",
+              "\\frac{1}{2}",
+              "1"
+            ],
+            "id": "q_4_7_212_2_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "2",
+              "\\frac{1}{2}",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل الخارجي \\( \\frac{1}{2} \\) يضرب في ناتج مشتقة الزاوية الداخلية."
+          }
+        ],
+        "hint": "المعامل الخارجي \\( \\frac{1}{2} \\) يضرب في ناتج مشتقة الزاوية الداخلية.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_7_212_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نضرب في المعامل \\( \\frac{1}{2} \\). الهدف: كتابة \\( F'(x) \\) كاملة.",
+        "think": "المعامل الخارجي \\( \\frac{1}{2} \\) يضرب في ناتج مشتقة الزاوية الداخلية.",
+        "html_structure": "F'(x) = \\frac{1}{2} \\times {q_4_7_212_2_s3_i1} \\times \\cos 2x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نبسّط. الهدف: \\( \\frac{1}{2}\\times2=1 \\). السبب: لنقارن مع \\( f \\).",
+        "equation_template": "F'(x) = {input_1} = f(x)",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "\\cos 2x",
+            "options": [
+              "\\frac{1}{2}\\cos 2x",
+              "\\sin 2x",
+              "2\\cos 2x",
+              "\\cos 2x"
+            ],
+            "id": "q_4_7_212_2_s4_i1",
+            "correct_value": "\\cos 2x",
+            "allowed_keys": [
+              "\\frac{1}{2}\\cos 2x",
+              "\\sin 2x",
+              "2\\cos 2x",
+              "\\cos 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{1}{2}\\times2 \\) تساوي \\( 1 \\) فيبقى \\( \\cos 2x \\) فقط."
+          }
+        ],
+        "hint": "\\( \\frac{1}{2}\\times2 \\) تساوي \\( 1 \\) فيبقى \\( \\cos 2x \\) فقط.",
+        "related_topics": [
+          "الدالة المقابلة"
+        ],
+        "step_id": "math345_4_7_212_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نبسّط. الهدف: \\( \\frac{1}{2}\\times2=1 \\). السبب: لنقارن مع \\( f \\).",
+        "think": "\\( \\frac{1}{2}\\times2 \\) تساوي \\( 1 \\) فيبقى \\( \\cos 2x \\) فقط.",
+        "html_structure": "F'(x) = {q_4_7_212_2_s4_i1} = f(x)"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الاستنتاج: \\( F'(x)=f(x) \\) فالدالة \\( F \\) مقابلة لـ \\( f \\). ننتقل للتكامل. الهدف: كتابة القانون. الطريقة: \\( \\int_a^b f=F(b)-F(a) \\) مع \\( a=0 \\) و \\( b=\\frac{\\pi}{4} \\).",
+        "equation_template": "\\int_{0}^{\\frac{\\pi}{4}} \\cos 2x\\,dx = F\\left(\\frac{\\pi}{4}\\right) - F({input_1})",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "\\frac{\\pi}{4}",
+              "1",
+              "\\pi"
+            ],
+            "id": "q_4_7_212_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "\\frac{\\pi}{4}",
+              "1",
+              "\\pi"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد السفلي للتكامل هو \\( 0 \\)."
+          }
+        ],
+        "hint": "الحد السفلي للتكامل هو \\( 0 \\).",
+        "related_topics": [
+          "النظرية الأساسية للتكامل"
+        ],
+        "step_id": "math345_4_7_212_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الاستنتاج: \\( F'(x)=f(x) \\) فالدالة \\( F \\) مقابلة لـ \\( f \\). ننتقل للتكامل. الهدف: كتابة القانون. الطريقة: \\( \\int_a^b f=F(b)-F(a) \\) مع \\( a=0 \\) و \\( b=\\frac{\\pi}{4} \\).",
+        "think": "الحد السفلي للتكامل هو \\( 0 \\).",
+        "html_structure": "\\int_{0}^{\\frac{\\pi}{4}} \\cos 2x\\,dx = F\\left(\\frac{\\pi}{4}\\right) - F({q_4_7_212_2_s5_i1})"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نعوّض \\( x=\\frac{\\pi}{4} \\) في \\( F \\). الطريقة: \\( 2\\times\\frac{\\pi}{4}=\\frac{\\pi}{2} \\).",
+        "equation_template": "F\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{2}\\sin\\left({input_1}\\right)",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "\\frac{\\pi}{2}",
+            "options": [
+              "\\frac{\\pi}{4}",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{8}",
+              "\\pi"
+            ],
+            "id": "q_4_7_212_2_s6_i1",
+            "correct_value": "\\frac{\\pi}{2}",
+            "allowed_keys": [
+              "\\frac{\\pi}{4}",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{8}",
+              "\\pi"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2 \\) في \\( \\frac{\\pi}{4} \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2 \\) في \\( \\frac{\\pi}{4} \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_212_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نعوّض \\( x=\\frac{\\pi}{4} \\) في \\( F \\). الطريقة: \\( 2\\times\\frac{\\pi}{4}=\\frac{\\pi}{2} \\).",
+        "think": "اضرب \\( 2 \\) في \\( \\frac{\\pi}{4} \\).",
+        "html_structure": "F\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{2}\\sin\\left({q_4_7_212_2_s6_i1}\\right)"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نحسب جيب الزاوية. الهدف: \\( \\sin\\frac{\\pi}{2} \\) (أي \\( 90 \\) درجة).",
+        "equation_template": "F\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{2}({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "1",
+            "options": [
+              "\\frac{1}{2}",
+              "0",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_7_212_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "\\frac{1}{2}",
+              "0",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب \\( 90 \\) درجة يساوي \\( 1 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "\\frac{1}{2}",
+            "options": [
+              "0",
+              "\\frac{1}{2}",
+              "2",
+              "1"
+            ],
+            "id": "q_4_7_212_2_s7_i2",
+            "correct_value": "\\frac{1}{2}",
+            "allowed_keys": [
+              "0",
+              "\\frac{1}{2}",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "جيب \\( 90 \\) درجة يساوي \\( 1 \\)."
+          }
+        ],
+        "hint": "جيب \\( 90 \\) درجة يساوي \\( 1 \\).",
+        "related_topics": [
+          "قيم الدوال المثلثية"
+        ],
+        "step_id": "math345_4_7_212_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نحسب جيب الزاوية. الهدف: \\( \\sin\\frac{\\pi}{2} \\) (أي \\( 90 \\) درجة).",
+        "think": "جيب \\( 90 \\) درجة يساوي \\( 1 \\).",
+        "html_structure": "F\\left(\\frac{\\pi}{4}\\right) = \\frac{1}{2}({q_4_7_212_2_s7_i1}) = {q_4_7_212_2_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نحسب \\( F(0) \\). الطريقة: \\( \\sin 0=0 \\).",
+        "equation_template": "F(0) = \\frac{1}{2}\\sin(0) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "0",
+            "options": [
+              "\\frac{1}{2}",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_4_7_212_2_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "\\frac{1}{2}",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب الصفر يساوي صفراً."
+          }
+        ],
+        "hint": "جيب الصفر يساوي صفراً.",
+        "related_topics": [
+          "قيم الدوال المثلثية"
+        ],
+        "step_id": "math345_4_7_212_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نحسب \\( F(0) \\). الطريقة: \\( \\sin 0=0 \\).",
+        "think": "جيب الصفر يساوي صفراً.",
+        "html_structure": "F(0) = \\frac{1}{2}\\sin(0) = {q_4_7_212_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "نطرح للحصول على قيمة التكامل.",
+        "equation_template": "\\int_{0}^{\\frac{\\pi}{4}} \\cos 2x\\,dx = \\frac{1}{2} - {input_1} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "1",
+              "\\frac{1}{2}",
+              "0"
+            ],
+            "id": "q_4_7_212_2_s9_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "\\frac{1}{2}",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( F(0) \\) التي حسبناها من \\( F(\\frac{\\pi}{4}) \\)."
+          },
+          {
+            "input_id": "step9_in2",
+            "correct_answer": "\\frac{1}{2}",
+            "options": [
+              "\\frac{1}{2}",
+              "1",
+              "\\frac{3}{2}",
+              "0"
+            ],
+            "id": "q_4_7_212_2_s9_i2",
+            "correct_value": "\\frac{1}{2}",
+            "allowed_keys": [
+              "\\frac{1}{2}",
+              "1",
+              "\\frac{3}{2}",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "اطرح \\( F(0) \\) التي حسبناها من \\( F(\\frac{\\pi}{4}) \\)."
+          }
+        ],
+        "hint": "اطرح \\( F(0) \\) التي حسبناها من \\( F(\\frac{\\pi}{4}) \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_7_212_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "نطرح للحصول على قيمة التكامل.",
+        "think": "اطرح \\( F(0) \\) التي حسبناها من \\( F(\\frac{\\pi}{4}) \\).",
+        "html_structure": "\\int_{0}^{\\frac{\\pi}{4}} \\cos 2x\\,dx = \\frac{1}{2} - {q_4_7_212_2_s9_i1} = {q_4_7_212_2_s9_i2}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p212",
+    "page_number": 212,
+    "question_number": "3",
+    "question_text": "أثبت أن \\( F(x)=\\sin x + x \\) مقابلة للدالة \\( f(x)=1+\\cos x \\) على الفترة \\( [0,\\frac{\\pi}{6}] \\) ثم احسب \\( \\int_{0}^{\\frac{\\pi}{6}}(1+\\cos x)\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_072_diag_1_drawing.png"
+    ],
+    "full_model_solution": "F'(x)=cosx+1=f(x) . ∫₀^{π/6}(1+cosx)dx = [x+sinx] = π/6+1/2",
+    "source_file": "رياضيلت 4/page_072.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 72,
+      "pdf_page_number": 212,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 6,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_072_diag_1_drawing.png",
+    "title": "أثبت أن \\( F(x)=\\sin x + x \\) مقابلة للدالة \\( f(x)=1+\\cos x \\) على الفترة \\( [0,\\frac{\\pi}{6}] \\) ثم احسب \\( \\int_{0}^{\\frac{\\pi}{6}}(1+\\cos x)\\,dx \\)",
+    "number": "3",
+    "model_solution": "F'(x)=cosx+1=f(x) . ∫₀^{π/6}(1+cosx)dx = [x+sinx] = π/6+1/2",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نثبت الاستمرارية والقابلية للاشتقاق على \\( [0,\\frac{\\pi}{6}] \\). الطريقة: \\( \\sin x \\) و \\( x \\) دالتان مستمرتان وقابلتان للاشتقاق دائماً ومجموعهما كذلك. السبب: شرط الدالة المقابلة.",
+        "equation_template": "F(x) = \\sin x + {input_1} \\text{ مستمرة وقابلة للاشتقاق}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "1",
+              "\\cos x",
+              "2x"
+            ],
+            "id": "q_4_7_212_3_s1_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "1",
+              "\\cos x",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثاني في \\( F \\) هو المتغير \\( x \\)."
+          }
+        ],
+        "hint": "الحد الثاني في \\( F \\) هو المتغير \\( x \\).",
+        "related_topics": [
+          "الاستمرارية"
+        ],
+        "step_id": "math345_4_7_212_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نثبت الاستمرارية والقابلية للاشتقاق على \\( [0,\\frac{\\pi}{6}] \\). الطريقة: \\( \\sin x \\) و \\( x \\) دالتان مستمرتان وقابلتان للاشتقاق دائماً ومجموعهما كذلك. السبب: شرط الدالة المقابلة.",
+        "think": "الحد الثاني في \\( F \\) هو المتغير \\( x \\).",
+        "html_structure": "F(x) = \\sin x + {q_4_7_212_3_s1_i1} \\text{ مستمرة وقابلة للاشتقاق}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نشتق. الهدف: \\( F'(x) \\). الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\) ومشتقة \\( x \\) هي \\( 1 \\).",
+        "equation_template": "F'(x) = {input_1} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\cos x",
+            "options": [
+              "-\\cos x",
+              "\\sin x",
+              "x",
+              "\\cos x"
+            ],
+            "id": "q_4_7_212_3_s2_i1",
+            "correct_value": "\\cos x",
+            "allowed_keys": [
+              "-\\cos x",
+              "\\sin x",
+              "x",
+              "\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة الجيب جيب التمام ومشتقة \\( x \\) تساوي \\( 1 \\)."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "1",
+            "options": [
+              "x",
+              "1",
+              "0",
+              "-1"
+            ],
+            "id": "q_4_7_212_3_s2_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "x",
+              "1",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة الجيب جيب التمام ومشتقة \\( x \\) تساوي \\( 1 \\)."
+          }
+        ],
+        "hint": "مشتقة الجيب جيب التمام ومشتقة \\( x \\) تساوي \\( 1 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_7_212_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نشتق. الهدف: \\( F'(x) \\). الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\) ومشتقة \\( x \\) هي \\( 1 \\).",
+        "think": "مشتقة الجيب جيب التمام ومشتقة \\( x \\) تساوي \\( 1 \\).",
+        "html_structure": "F'(x) = {q_4_7_212_3_s2_i1} + {q_4_7_212_3_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نقارن مع \\( f \\). الهدف: تحقق الشرط. الطريقة: \\( f(x)=1+\\cos x \\) وهي نفس الناتج بترتيب مختلف. السبب: الجمع إبدالي.",
+        "equation_template": "F'(x) = {input_1} + \\cos x = f(x)",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "0",
+              "x",
+              "1"
+            ],
+            "id": "q_4_7_212_3_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "0",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الرقم الذي يظهر في \\( f \\) بجانب \\( \\cos x \\)."
+          }
+        ],
+        "hint": "ضع الرقم الذي يظهر في \\( f \\) بجانب \\( \\cos x \\).",
+        "related_topics": [
+          "الدالة المقابلة"
+        ],
+        "step_id": "math345_4_7_212_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نقارن مع \\( f \\). الهدف: تحقق الشرط. الطريقة: \\( f(x)=1+\\cos x \\) وهي نفس الناتج بترتيب مختلف. السبب: الجمع إبدالي.",
+        "think": "ضع الرقم الذي يظهر في \\( f \\) بجانب \\( \\cos x \\).",
+        "html_structure": "F'(x) = {q_4_7_212_3_s3_i1} + \\cos x = f(x)"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الاستنتاج: \\( F \\) مقابلة لـ \\( f \\). نحسب التكامل بـ \\( F(\\frac{\\pi}{6})-F(0) \\). نبدأ بقيمة الجيب.",
+        "equation_template": "\\sin\\frac{\\pi}{6} = \\frac{{input_1}}{2}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "\\sqrt{3}",
+              "0"
+            ],
+            "id": "q_4_7_212_3_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "\\sqrt{3}",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب \\( 30 \\) درجة (أي \\( \\frac{\\pi}{6} \\)) يساوي نصفاً."
+          }
+        ],
+        "hint": "جيب \\( 30 \\) درجة (أي \\( \\frac{\\pi}{6} \\)) يساوي نصفاً.",
+        "related_topics": [
+          "قيم الدوال المثلثية"
+        ],
+        "step_id": "math345_4_7_212_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الاستنتاج: \\( F \\) مقابلة لـ \\( f \\). نحسب التكامل بـ \\( F(\\frac{\\pi}{6})-F(0) \\). نبدأ بقيمة الجيب.",
+        "think": "جيب \\( 30 \\) درجة (أي \\( \\frac{\\pi}{6} \\)) يساوي نصفاً.",
+        "html_structure": "\\sin\\frac{\\pi}{6} = \\frac{{q_4_7_212_3_s4_i1}}{2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب \\( F(\\frac{\\pi}{6}) \\).",
+        "equation_template": "F\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{{input_1}} + \\frac{\\pi}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_4_7_212_3_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب \\( \\frac{\\pi}{6} \\) هو \\( \\frac{1}{2} \\) والحد الثاني \\( x=\\frac{\\pi}{6} \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "6",
+            "options": [
+              "3",
+              "4",
+              "6",
+              "2"
+            ],
+            "id": "q_4_7_212_3_s5_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "3",
+              "4",
+              "6",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "جيب \\( \\frac{\\pi}{6} \\) هو \\( \\frac{1}{2} \\) والحد الثاني \\( x=\\frac{\\pi}{6} \\)."
+          }
+        ],
+        "hint": "جيب \\( \\frac{\\pi}{6} \\) هو \\( \\frac{1}{2} \\) والحد الثاني \\( x=\\frac{\\pi}{6} \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_212_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب \\( F(\\frac{\\pi}{6}) \\).",
+        "think": "جيب \\( \\frac{\\pi}{6} \\) هو \\( \\frac{1}{2} \\) والحد الثاني \\( x=\\frac{\\pi}{6} \\).",
+        "html_structure": "F\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{{q_4_7_212_3_s5_i1}} + \\frac{\\pi}{{q_4_7_212_3_s5_i2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نحسب \\( F(0) \\).",
+        "equation_template": "F(0) = \\sin 0 + 0 = {input_1} + 0 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "-1",
+              "0",
+              "\\pi"
+            ],
+            "id": "q_4_7_212_3_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "0",
+              "\\pi"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب الصفر يساوي صفراً."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "\\pi"
+            ],
+            "id": "q_4_7_212_3_s6_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "\\pi"
+            ],
+            "label": "القيمة 2",
+            "hint": "جيب الصفر يساوي صفراً."
+          }
+        ],
+        "hint": "جيب الصفر يساوي صفراً.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_212_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نحسب \\( F(0) \\).",
+        "think": "جيب الصفر يساوي صفراً.",
+        "html_structure": "F(0) = \\sin 0 + 0 = {q_4_7_212_3_s6_i1} + 0 = {q_4_7_212_3_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نطرح. الهدف: قيمة التكامل.",
+        "equation_template": "\\int_{0}^{\\frac{\\pi}{6}} (1+\\cos x)\\,dx = \\frac{\\pi}{{input_1}} + \\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "2",
+              "3",
+              "12"
+            ],
+            "id": "q_4_7_212_3_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "2",
+              "3",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج هو \\( F(\\frac{\\pi}{6})-0 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "2",
+            "options": [
+              "6",
+              "3",
+              "4",
+              "2"
+            ],
+            "id": "q_4_7_212_3_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "6",
+              "3",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الناتج هو \\( F(\\frac{\\pi}{6})-0 \\)."
+          }
+        ],
+        "hint": "الناتج هو \\( F(\\frac{\\pi}{6})-0 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_7_212_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نطرح. الهدف: قيمة التكامل.",
+        "think": "الناتج هو \\( F(\\frac{\\pi}{6})-0 \\).",
+        "html_structure": "\\int_{0}^{\\frac{\\pi}{6}} (1+\\cos x)\\,dx = \\frac{\\pi}{{q_4_7_212_3_s7_i1}} + \\frac{1}{{q_4_7_212_3_s7_i2}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نكتب القيمة العددية التقريبية للتحقق: \\( \\frac{\\pi}{6}\\approx0.5236 \\).",
+        "equation_template": "0.5236 + 0.5 \\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "1.02",
+            "options": [
+              "1.02",
+              "0.02",
+              "1.52",
+              "0.52"
+            ],
+            "id": "q_4_7_212_3_s8_i1",
+            "correct_value": "1.02",
+            "allowed_keys": [
+              "1.02",
+              "0.02",
+              "1.52",
+              "0.52"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 0.5236+0.5 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 0.5236+0.5 \\).",
+        "related_topics": [
+          "مراجعة النتيجة"
+        ],
+        "step_id": "math345_4_7_212_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نكتب القيمة العددية التقريبية للتحقق: \\( \\frac{\\pi}{6}\\approx0.5236 \\).",
+        "think": "اجمع \\( 0.5236+0.5 \\).",
+        "html_structure": "0.5236 + 0.5 \\approx {q_4_7_212_3_s8_i1}"
+      }
+    ]
+  }
+]

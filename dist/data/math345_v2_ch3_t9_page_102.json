@@ -1,0 +1,1199 @@
+[
+  {
+    "id_number": "q2_p102",
+    "page_number": 102,
+    "question_number": "مثال 2",
+    "question_text": "جد المحاذيات للدالة \\( f(x) = \\frac{x-3}{x-2} \\)",
+    "question_images": [
+      {
+        "id": "diag_example_2",
+        "type": "شكل توضيحي",
+        "desc": "جدول عرض خطوات إيجاد المحاذيات للدالة الكسرية f(x) = (x-3)/(x-2)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_2_diagram.png"
+      }
+    ],
+    "full_model_solution": "الشاقولي: x-2=0 → x=2. الأفقي: y=1/1=1.",
+    "source_file": "رياضيات 3/page_102_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 102,
+      "pdf_page_number": 104,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_2_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_2_diagram.png",
+    "title": "جد المحاذيات للدالة \\( f(x) = \\frac{x-3}{x-2} \\)",
+    "number": "مثال 2",
+    "model_solution": "الشاقولي: x-2=0 → x=2. الأفقي: y=1/1=1.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد المقام. الطريقة: المقام هو ما تحت خط الكسر. السبب: لأن المحاذي الشاقولي يُستخرج منه.",
+        "equation_template": "المقام = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step1_1",
+            "correct_answer": "x-2",
+            "options": [
+              "x-2",
+              "x+2",
+              "x",
+              "1"
+            ],
+            "id": "q_3_9_102_1_s1_i1",
+            "correct_value": "x-2",
+            "allowed_keys": [
+              "x-2",
+              "x+2",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى الأسفل في \\( \\frac{x-3}{x-2} \\)."
+          }
+        ],
+        "hint": "انظر إلى الأسفل في \\( \\frac{x-3}{x-2} \\).",
+        "related_topics": [
+          "المحاذيات"
+        ],
+        "step_id": "math345_3_9_102_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد المقام. الطريقة: المقام هو ما تحت خط الكسر. السبب: لأن المحاذي الشاقولي يُستخرج منه.",
+        "think": "انظر إلى الأسفل في \\( \\frac{x-3}{x-2} \\).",
+        "html_structure": "المقام = {q_3_9_102_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي المقام بالصفر. الطريقة: اكتب المقام يساوي صفراً. السبب: لأن عندها لا تُعرّف الدالة.",
+        "equation_template": "x-2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step2_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_3_9_102_1_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب صفراً."
+          }
+        ],
+        "hint": "اكتب صفراً.",
+        "related_topics": [
+          "المحاذي الشاقولي"
+        ],
+        "step_id": "math345_3_9_102_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي المقام بالصفر. الطريقة: اكتب المقام يساوي صفراً. السبب: لأن عندها لا تُعرّف الدالة.",
+        "think": "اكتب صفراً.",
+        "html_structure": "x-2 = {q_3_9_102_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحل المعادلة. الطريقة: انقل الحد الثابت بإشارة معاكسة. السبب: لنجد قيمة \\( x \\).",
+        "equation_template": "x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "0",
+              "3"
+            ],
+            "id": "q_3_9_102_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( -2 \\) فيصبح \\( +2 \\)."
+          }
+        ],
+        "hint": "انقل \\( -2 \\) فيصبح \\( +2 \\).",
+        "related_topics": [
+          "حل معادلة خطية"
+        ],
+        "step_id": "math345_3_9_102_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحل المعادلة. الطريقة: انقل الحد الثابت بإشارة معاكسة. السبب: لنجد قيمة \\( x \\).",
+        "think": "انقل \\( -2 \\) فيصبح \\( +2 \\).",
+        "html_structure": "x = {q_3_9_102_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب المحاذي الشاقولي. الطريقة: هو الخط \\( x = \\) القيمة التي وجدناها. السبب: لأنه خط عمودي يقترب منه المنحنى.",
+        "equation_template": "المحاذي الشاقولي: x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step4_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "0",
+              "3"
+            ],
+            "id": "q_3_9_102_1_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ القيمة السابقة."
+          }
+        ],
+        "hint": "انسخ القيمة السابقة.",
+        "related_topics": [
+          "المحاذي الشاقولي"
+        ],
+        "step_id": "math345_3_9_102_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب المحاذي الشاقولي. الطريقة: هو الخط \\( x = \\) القيمة التي وجدناها. السبب: لأنه خط عمودي يقترب منه المنحنى.",
+        "think": "انسخ القيمة السابقة.",
+        "html_structure": "المحاذي الشاقولي: x = {q_3_9_102_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نشتق البسط. الطريقة: نشتق البسط \\( x-3 \\). السبب: لأن المحاذي الأفقي يُحسب بنسبة المشتقتين حسب طريقة الكتاب.",
+        "equation_template": "مشتقة البسط = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step5_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x-3 \\) هي \\( 1 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( x-3 \\) هي \\( 1 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_9_102_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نشتق البسط. الطريقة: نشتق البسط \\( x-3 \\). السبب: لأن المحاذي الأفقي يُحسب بنسبة المشتقتين حسب طريقة الكتاب.",
+        "think": "مشتقة \\( x-3 \\) هي \\( 1 \\).",
+        "html_structure": "مشتقة البسط = {q_3_9_102_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نشتق المقام. الطريقة: نشتق المقام \\( x-2 \\). السبب: لنكوّن النسبة.",
+        "equation_template": "مشتقة المقام = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step6_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_9_102_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نشتق المقام. الطريقة: نشتق المقام \\( x-2 \\). السبب: لنكوّن النسبة.",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي.",
+        "html_structure": "مشتقة المقام = {q_3_9_102_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب المحاذي الأفقي. الطريقة: اقسم مشتقة البسط على مشتقة المقام. السبب: لأن \\( y \\) تساوي هذه النسبة.",
+        "equation_template": "y = \\frac{{input_1}}{{input_2}} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q2_step7_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          },
+          {
+            "input_id": "q2_step7_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s7_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          },
+          {
+            "input_id": "q2_step7_3",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s7_i3",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 3",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          }
+        ],
+        "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج.",
+        "related_topics": [
+          "المحاذي الأفقي"
+        ],
+        "step_id": "math345_3_9_102_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب المحاذي الأفقي. الطريقة: اقسم مشتقة البسط على مشتقة المقام. السبب: لأن \\( y \\) تساوي هذه النسبة.",
+        "think": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج.",
+        "html_structure": "y = \\frac{{q_3_9_102_1_s7_i1}}{{q_3_9_102_1_s7_i2}} = {q_3_9_102_1_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب المحاذي الأفقي. الطريقة: الخط \\( y = \\) الناتج. السبب: لأنه خط أفقي يقترب منه المنحنى.",
+        "equation_template": "المحاذي الأفقي: y = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step8_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s8_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الناتج."
+          }
+        ],
+        "hint": "انسخ الناتج.",
+        "related_topics": [
+          "المحاذي الأفقي"
+        ],
+        "step_id": "math345_3_9_102_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب المحاذي الأفقي. الطريقة: الخط \\( y = \\) الناتج. السبب: لأنه خط أفقي يقترب منه المنحنى.",
+        "think": "انسخ الناتج.",
+        "html_structure": "المحاذي الأفقي: y = {q_3_9_102_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بتعويض عدد كبير. الطريقة: عوّض \\( x=100 \\): \\( \\frac{97}{98} \\). السبب: لنرى أن الدالة تقترب من المحاذي الأفقي.",
+        "equation_template": "f(100) \\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_step9_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_1_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( 97 \\div 98 \\) قريب من واحد."
+          }
+        ],
+        "hint": "احسب \\( 97 \\div 98 \\) قريب من واحد.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_102_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بتعويض عدد كبير. الطريقة: عوّض \\( x=100 \\): \\( \\frac{97}{98} \\). السبب: لنرى أن الدالة تقترب من المحاذي الأفقي.",
+        "think": "احسب \\( 97 \\div 98 \\) قريب من واحد.",
+        "html_structure": "f(100) \\approx {q_3_9_102_1_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p102",
+    "page_number": 102,
+    "question_number": "مثال 3",
+    "question_text": "جد المحاذيات للدالة \\( f(x) = \\frac{3}{x+1} \\)",
+    "question_images": [
+      {
+        "id": "diag_example_3_4",
+        "type": "شكل توضيحي",
+        "desc": "جدول عرض خطوات إيجاد المحاذيات للدالة f(x) = 3/(x+1) و f(x) = (3x-1)/(x+1)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_3_4_diagram.png"
+      }
+    ],
+    "full_model_solution": "الشاقولي: x+1=0 → x=-1. الأفقي: y=0/1=0.",
+    "source_file": "رياضيات 3/page_102_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 102,
+      "pdf_page_number": 104,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_3_4_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_3_4_diagram.png",
+    "title": "جد المحاذيات للدالة \\( f(x) = \\frac{3}{x+1} \\)",
+    "number": "مثال 3",
+    "model_solution": "الشاقولي: x+1=0 → x=-1. الأفقي: y=0/1=0.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد المقام. الطريقة: المقام هو ما تحت خط الكسر. السبب: لأن المحاذي الشاقولي يُستخرج منه.",
+        "equation_template": "المقام = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step1_1",
+            "correct_answer": "x+1",
+            "options": [
+              "x+1",
+              "x-1",
+              "x",
+              "1"
+            ],
+            "id": "q_3_9_102_2_s1_i1",
+            "correct_value": "x+1",
+            "allowed_keys": [
+              "x+1",
+              "x-1",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى الأسفل في \\( \\frac{3}{x+1} \\)."
+          }
+        ],
+        "hint": "انظر إلى الأسفل في \\( \\frac{3}{x+1} \\).",
+        "related_topics": [
+          "المحاذيات"
+        ],
+        "step_id": "math345_3_9_102_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد المقام. الطريقة: المقام هو ما تحت خط الكسر. السبب: لأن المحاذي الشاقولي يُستخرج منه.",
+        "think": "انظر إلى الأسفل في \\( \\frac{3}{x+1} \\).",
+        "html_structure": "المقام = {q_3_9_102_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي المقام بالصفر. الطريقة: اكتب المقام يساوي صفراً. السبب: لأن عندها لا تُعرّف الدالة.",
+        "equation_template": "x+1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step2_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_3_9_102_2_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب صفراً."
+          }
+        ],
+        "hint": "اكتب صفراً.",
+        "related_topics": [
+          "المحاذي الشاقولي"
+        ],
+        "step_id": "math345_3_9_102_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي المقام بالصفر. الطريقة: اكتب المقام يساوي صفراً. السبب: لأن عندها لا تُعرّف الدالة.",
+        "think": "اكتب صفراً.",
+        "html_structure": "x+1 = {q_3_9_102_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحل المعادلة. الطريقة: انقل الحد الثابت بإشارة معاكسة. السبب: لنجد قيمة \\( x \\).",
+        "equation_template": "x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step3_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "id": "q_3_9_102_2_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( +1 \\) فيصبح \\( -1 \\)."
+          }
+        ],
+        "hint": "انقل \\( +1 \\) فيصبح \\( -1 \\).",
+        "related_topics": [
+          "حل معادلة خطية"
+        ],
+        "step_id": "math345_3_9_102_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحل المعادلة. الطريقة: انقل الحد الثابت بإشارة معاكسة. السبب: لنجد قيمة \\( x \\).",
+        "think": "انقل \\( +1 \\) فيصبح \\( -1 \\).",
+        "html_structure": "x = {q_3_9_102_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب المحاذي الشاقولي. الطريقة: هو الخط \\( x = \\) القيمة التي وجدناها. السبب: لأنه خط عمودي يقترب منه المنحنى.",
+        "equation_template": "المحاذي الشاقولي: x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step4_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "id": "q_3_9_102_2_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ القيمة السابقة."
+          }
+        ],
+        "hint": "انسخ القيمة السابقة.",
+        "related_topics": [
+          "المحاذي الشاقولي"
+        ],
+        "step_id": "math345_3_9_102_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب المحاذي الشاقولي. الطريقة: هو الخط \\( x = \\) القيمة التي وجدناها. السبب: لأنه خط عمودي يقترب منه المنحنى.",
+        "think": "انسخ القيمة السابقة.",
+        "html_structure": "المحاذي الشاقولي: x = {q_3_9_102_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نشتق البسط. الطريقة: نشتق البسط \\( 3 \\). السبب: لأن المحاذي الأفقي يُحسب بنسبة المشتقتين حسب طريقة الكتاب.",
+        "equation_template": "مشتقة البسط = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step5_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة العدد الثابت \\( 3 \\) هي صفر."
+          }
+        ],
+        "hint": "مشتقة العدد الثابت \\( 3 \\) هي صفر.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_9_102_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نشتق البسط. الطريقة: نشتق البسط \\( 3 \\). السبب: لأن المحاذي الأفقي يُحسب بنسبة المشتقتين حسب طريقة الكتاب.",
+        "think": "مشتقة العدد الثابت \\( 3 \\) هي صفر.",
+        "html_structure": "مشتقة البسط = {q_3_9_102_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نشتق المقام. الطريقة: نشتق المقام \\( x+1 \\). السبب: لنكوّن النسبة.",
+        "equation_template": "مشتقة المقام = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step6_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_9_102_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نشتق المقام. الطريقة: نشتق المقام \\( x+1 \\). السبب: لنكوّن النسبة.",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي.",
+        "html_structure": "مشتقة المقام = {q_3_9_102_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب المحاذي الأفقي. الطريقة: اقسم مشتقة البسط على مشتقة المقام. السبب: لأن \\( y \\) تساوي هذه النسبة.",
+        "equation_template": "y = \\frac{{input_1}}{{input_2}} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q3_step7_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          },
+          {
+            "input_id": "q3_step7_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s7_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          },
+          {
+            "input_id": "q3_step7_3",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s7_i3",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 3",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          }
+        ],
+        "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج.",
+        "related_topics": [
+          "المحاذي الأفقي"
+        ],
+        "step_id": "math345_3_9_102_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب المحاذي الأفقي. الطريقة: اقسم مشتقة البسط على مشتقة المقام. السبب: لأن \\( y \\) تساوي هذه النسبة.",
+        "think": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج.",
+        "html_structure": "y = \\frac{{q_3_9_102_2_s7_i1}}{{q_3_9_102_2_s7_i2}} = {q_3_9_102_2_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب المحاذي الأفقي. الطريقة: الخط \\( y = \\) الناتج. السبب: لأنه خط أفقي يقترب منه المنحنى.",
+        "equation_template": "المحاذي الأفقي: y = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step8_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الناتج."
+          }
+        ],
+        "hint": "انسخ الناتج.",
+        "related_topics": [
+          "المحاذي الأفقي"
+        ],
+        "step_id": "math345_3_9_102_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب المحاذي الأفقي. الطريقة: الخط \\( y = \\) الناتج. السبب: لأنه خط أفقي يقترب منه المنحنى.",
+        "think": "انسخ الناتج.",
+        "html_structure": "المحاذي الأفقي: y = {q_3_9_102_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بتعويض عدد كبير. الطريقة: عوّض \\( x=100 \\): \\( \\frac{3}{101} \\). السبب: لنرى أن الدالة تقترب من المحاذي الأفقي.",
+        "equation_template": "f(100) \\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_step9_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_9_102_2_s9_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3 \\div 101 \\) قريب من صفر."
+          }
+        ],
+        "hint": "\\( 3 \\div 101 \\) قريب من صفر.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_102_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بتعويض عدد كبير. الطريقة: عوّض \\( x=100 \\): \\( \\frac{3}{101} \\). السبب: لنرى أن الدالة تقترب من المحاذي الأفقي.",
+        "think": "\\( 3 \\div 101 \\) قريب من صفر.",
+        "html_structure": "f(100) \\approx {q_3_9_102_2_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_p102",
+    "page_number": 102,
+    "question_number": "مثال 4",
+    "question_text": "جد المحاذيات للدالة \\( f(x) = \\frac{3x-1}{x+1} \\)",
+    "question_images": [
+      {
+        "id": "diag_example_3_4",
+        "type": "شكل توضيحي",
+        "desc": "جدول عرض خطوات إيجاد المحاذيات للدالة f(x) = 3/(x+1) و f(x) = (3x-1)/(x+1)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_3_4_diagram.png"
+      }
+    ],
+    "full_model_solution": "الشاقولي: x+1=0 → x=-1. الأفقي: y=3/1=3.",
+    "source_file": "رياضيات 3/page_102_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 102,
+      "pdf_page_number": 104,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_3_4_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_102_diag_example_3_4_diagram.png",
+    "title": "جد المحاذيات للدالة \\( f(x) = \\frac{3x-1}{x+1} \\)",
+    "number": "مثال 4",
+    "model_solution": "الشاقولي: x+1=0 → x=-1. الأفقي: y=3/1=3.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد المقام. الطريقة: المقام هو ما تحت خط الكسر. السبب: لأن المحاذي الشاقولي يُستخرج منه.",
+        "equation_template": "المقام = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step1_1",
+            "correct_answer": "x+1",
+            "options": [
+              "x+1",
+              "x-1",
+              "x",
+              "1"
+            ],
+            "id": "q_3_9_102_3_s1_i1",
+            "correct_value": "x+1",
+            "allowed_keys": [
+              "x+1",
+              "x-1",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى الأسفل في \\( \\frac{3x-1}{x+1} \\)."
+          }
+        ],
+        "hint": "انظر إلى الأسفل في \\( \\frac{3x-1}{x+1} \\).",
+        "related_topics": [
+          "المحاذيات"
+        ],
+        "step_id": "math345_3_9_102_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد المقام. الطريقة: المقام هو ما تحت خط الكسر. السبب: لأن المحاذي الشاقولي يُستخرج منه.",
+        "think": "انظر إلى الأسفل في \\( \\frac{3x-1}{x+1} \\).",
+        "html_structure": "المقام = {q_3_9_102_3_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي المقام بالصفر. الطريقة: اكتب المقام يساوي صفراً. السبب: لأن عندها لا تُعرّف الدالة.",
+        "equation_template": "x+1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step2_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_3_9_102_3_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب صفراً."
+          }
+        ],
+        "hint": "اكتب صفراً.",
+        "related_topics": [
+          "المحاذي الشاقولي"
+        ],
+        "step_id": "math345_3_9_102_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي المقام بالصفر. الطريقة: اكتب المقام يساوي صفراً. السبب: لأن عندها لا تُعرّف الدالة.",
+        "think": "اكتب صفراً.",
+        "html_structure": "x+1 = {q_3_9_102_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحل المعادلة. الطريقة: انقل الحد الثابت بإشارة معاكسة. السبب: لنجد قيمة \\( x \\).",
+        "equation_template": "x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step3_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "id": "q_3_9_102_3_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( +1 \\) فيصبح \\( -1 \\)."
+          }
+        ],
+        "hint": "انقل \\( +1 \\) فيصبح \\( -1 \\).",
+        "related_topics": [
+          "حل معادلة خطية"
+        ],
+        "step_id": "math345_3_9_102_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحل المعادلة. الطريقة: انقل الحد الثابت بإشارة معاكسة. السبب: لنجد قيمة \\( x \\).",
+        "think": "انقل \\( +1 \\) فيصبح \\( -1 \\).",
+        "html_structure": "x = {q_3_9_102_3_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب المحاذي الشاقولي. الطريقة: هو الخط \\( x = \\) القيمة التي وجدناها. السبب: لأنه خط عمودي يقترب منه المنحنى.",
+        "equation_template": "المحاذي الشاقولي: x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step4_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "id": "q_3_9_102_3_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ القيمة السابقة."
+          }
+        ],
+        "hint": "انسخ القيمة السابقة.",
+        "related_topics": [
+          "المحاذي الشاقولي"
+        ],
+        "step_id": "math345_3_9_102_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب المحاذي الشاقولي. الطريقة: هو الخط \\( x = \\) القيمة التي وجدناها. السبب: لأنه خط عمودي يقترب منه المنحنى.",
+        "think": "انسخ القيمة السابقة.",
+        "html_structure": "المحاذي الشاقولي: x = {q_3_9_102_3_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نشتق البسط. الطريقة: نشتق البسط \\( 3x-1 \\). السبب: لأن المحاذي الأفقي يُحسب بنسبة المشتقتين حسب طريقة الكتاب.",
+        "equation_template": "مشتقة البسط = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step5_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x-1 \\) هي \\( 3 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x-1 \\) هي \\( 3 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_9_102_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نشتق البسط. الطريقة: نشتق البسط \\( 3x-1 \\). السبب: لأن المحاذي الأفقي يُحسب بنسبة المشتقتين حسب طريقة الكتاب.",
+        "think": "مشتقة \\( 3x-1 \\) هي \\( 3 \\).",
+        "html_structure": "مشتقة البسط = {q_3_9_102_3_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نشتق المقام. الطريقة: نشتق المقام \\( x+1 \\). السبب: لنكوّن النسبة.",
+        "equation_template": "مشتقة المقام = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step6_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_9_102_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نشتق المقام. الطريقة: نشتق المقام \\( x+1 \\). السبب: لنكوّن النسبة.",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) والثابت يختفي.",
+        "html_structure": "مشتقة المقام = {q_3_9_102_3_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب المحاذي الأفقي. الطريقة: اقسم مشتقة البسط على مشتقة المقام. السبب: لأن \\( y \\) تساوي هذه النسبة.",
+        "equation_template": "y = \\frac{{input_1}}{{input_2}} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q4_step7_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          },
+          {
+            "input_id": "q4_step7_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s7_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          },
+          {
+            "input_id": "q4_step7_3",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s7_i3",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 3",
+            "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج."
+          }
+        ],
+        "hint": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج.",
+        "related_topics": [
+          "المحاذي الأفقي"
+        ],
+        "step_id": "math345_3_9_102_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب المحاذي الأفقي. الطريقة: اقسم مشتقة البسط على مشتقة المقام. السبب: لأن \\( y \\) تساوي هذه النسبة.",
+        "think": "ضع مشتقة البسط ثم مشتقة المقام ثم الناتج.",
+        "html_structure": "y = \\frac{{q_3_9_102_3_s7_i1}}{{q_3_9_102_3_s7_i2}} = {q_3_9_102_3_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب المحاذي الأفقي. الطريقة: الخط \\( y = \\) الناتج. السبب: لأنه خط أفقي يقترب منه المنحنى.",
+        "equation_template": "المحاذي الأفقي: y = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step8_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الناتج."
+          }
+        ],
+        "hint": "انسخ الناتج.",
+        "related_topics": [
+          "المحاذي الأفقي"
+        ],
+        "step_id": "math345_3_9_102_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب المحاذي الأفقي. الطريقة: الخط \\( y = \\) الناتج. السبب: لأنه خط أفقي يقترب منه المنحنى.",
+        "think": "انسخ الناتج.",
+        "html_structure": "المحاذي الأفقي: y = {q_3_9_102_3_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بتعويض عدد كبير. الطريقة: عوّض \\( x=100 \\): \\( \\frac{299}{101} \\). السبب: لنرى أن الدالة تقترب من المحاذي الأفقي.",
+        "equation_template": "f(100) \\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_step9_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_102_3_s9_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 299 \\div 101 \\) قريب من ثلاثة."
+          }
+        ],
+        "hint": "\\( 299 \\div 101 \\) قريب من ثلاثة.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_102_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بتعويض عدد كبير. الطريقة: عوّض \\( x=100 \\): \\( \\frac{299}{101} \\). السبب: لنرى أن الدالة تقترب من المحاذي الأفقي.",
+        "think": "\\( 299 \\div 101 \\) قريب من ثلاثة.",
+        "html_structure": "f(100) \\approx {q_3_9_102_3_s9_i1}"
+      }
+    ]
+  }
+]

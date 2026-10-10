@@ -1,0 +1,1152 @@
+[
+  {
+    "id_number": "q17_p12",
+    "page_number": 12,
+    "question_number": "17",
+    "question_text": "جد \\( \\int_{3}^{8}\\frac{x}{\\sqrt{x^3+x^2}}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_012_diag_1_drawing.png"
+    ],
+    "full_model_solution": "√(x²(x+1)) = x√(x+1) ⇒ x/(x√(x+1)) = (x+1)^(-1/2) ⇒ [2√(x+1)] من 3 إلى 8 = 6 - 4 = 2",
+    "source_file": "رياضيلت 4/page_012_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 12
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_012_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_012_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_012_interactive.json"
+    ],
+    "title": "جد \\( \\int_{3}^{8}\\frac{x}{\\sqrt{x^3+x^2}}\\,dx \\)",
+    "number": "17",
+    "model_solution": "√(x²(x+1)) = x√(x+1) ⇒ x/(x√(x+1)) = (x+1)^(-1/2) ⇒ [2√(x+1)] من 3 إلى 8 = 6 - 4 = 2",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: إخراج عامل مشترك تحت الجذر. الطريقة: \\( x^3 + x^2 = x^2(x+1) \\). السبب: لنخرج \\( x^2 \\) خارج الجذر.",
+        "equation_template": "x^3 + x^2 = x^2(x + {input_1})",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s1_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "x"
+            ],
+            "id": "q_4_3_12_1_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أخرج \\( x^2 \\) فيبقى \\( x \\) و\\( 1 \\)."
+          }
+        ],
+        "hint": "أخرج \\( x^2 \\) فيبقى \\( x \\) و\\( 1 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_3_12_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: إخراج عامل مشترك تحت الجذر. الطريقة: \\( x^3 + x^2 = x^2(x+1) \\). السبب: لنخرج \\( x^2 \\) خارج الجذر.",
+        "think": "أخرج \\( x^2 \\) فيبقى \\( x \\) و\\( 1 \\).",
+        "html_structure": "x^3 + x^2 = x^2(x + {q_4_3_12_1_s1_i1})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: إخراج \\( x^2 \\) من الجذر. الطريقة: \\( \\sqrt{x^2} = x \\) لأن \\( x \\) موجبة (من \\( 3 \\) إلى \\( 8 \\)). السبب: الجذر التربيعي لمربع يعطي القيمة نفسها.",
+        "equation_template": "\\sqrt{x^2(x+1)} = {input_1}\\sqrt{x+1}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s2_1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "x^2",
+              "2x",
+              "1"
+            ],
+            "id": "q_4_3_12_1_s2_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "x^2",
+              "2x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر \\( x^2 \\) هو \\( x \\)."
+          }
+        ],
+        "hint": "جذر \\( x^2 \\) هو \\( x \\).",
+        "related_topics": [
+          "الجذور"
+        ],
+        "step_id": "math345_4_3_12_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: إخراج \\( x^2 \\) من الجذر. الطريقة: \\( \\sqrt{x^2} = x \\) لأن \\( x \\) موجبة (من \\( 3 \\) إلى \\( 8 \\)). السبب: الجذر التربيعي لمربع يعطي القيمة نفسها.",
+        "think": "جذر \\( x^2 \\) هو \\( x \\).",
+        "html_structure": "\\sqrt{x^2(x+1)} = {q_4_3_12_1_s2_i1}\\sqrt{x+1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: الاختصار. الطريقة: نشطب \\( x \\) من البسط والمقام. السبب: لنبسط الدالة.",
+        "equation_template": "\\frac{x}{x\\sqrt{x+1}} = \\frac{1}{\\sqrt{{input_1}}}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s3_1",
+            "correct_answer": "x+1",
+            "options": [
+              "x+1",
+              "x",
+              "x^2",
+              "1"
+            ],
+            "id": "q_4_3_12_1_s3_i1",
+            "correct_value": "x+1",
+            "allowed_keys": [
+              "x+1",
+              "x",
+              "x^2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "يبقى \\( \\sqrt{x+1} \\) في المقام."
+          }
+        ],
+        "hint": "يبقى \\( \\sqrt{x+1} \\) في المقام.",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_3_12_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: الاختصار. الطريقة: نشطب \\( x \\) من البسط والمقام. السبب: لنبسط الدالة.",
+        "think": "يبقى \\( \\sqrt{x+1} \\) في المقام.",
+        "html_structure": "\\frac{x}{x\\sqrt{x+1}} = \\frac{1}{\\sqrt{{q_4_3_12_1_s3_i1}}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: تحويل الجذر إلى أس. الطريقة: \\( \\frac{1}{\\sqrt{x+1}} = (x+1)^{-1/2} \\). السبب: لنطبق قاعدة القوة.",
+        "equation_template": "\\frac{1}{\\sqrt{x+1}} = (x+1)^{-\\frac{{input_1}}{{input_2}}}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s4_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_12_1_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر هو الأس \\( \\frac12 \\) ونقله للبسط يعكس إشارته."
+          },
+          {
+            "input_id": "q17_p12_s4_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_12_1_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الجذر هو الأس \\( \\frac12 \\) ونقله للبسط يعكس إشارته."
+          }
+        ],
+        "hint": "الجذر هو الأس \\( \\frac12 \\) ونقله للبسط يعكس إشارته.",
+        "related_topics": [
+          "الأسس الكسرية"
+        ],
+        "step_id": "math345_4_3_12_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: تحويل الجذر إلى أس. الطريقة: \\( \\frac{1}{\\sqrt{x+1}} = (x+1)^{-1/2} \\). السبب: لنطبق قاعدة القوة.",
+        "think": "الجذر هو الأس \\( \\frac12 \\) ونقله للبسط يعكس إشارته.",
+        "html_structure": "\\frac{1}{\\sqrt{x+1}} = (x+1)^{-\\frac{{q_4_3_12_1_s4_i1}}{{q_4_3_12_1_s4_i2}}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( x+1 \\). السبب: لنعرف إن كنا بحاجة لتوفير ثابت.",
+        "equation_template": "(x+1)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s5_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "x"
+            ],
+            "id": "q_4_3_12_1_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) فلا حاجة لتوفير شيء."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) فلا حاجة لتوفير شيء.",
+        "related_topics": [
+          "مشتقة كثيرة الحدود"
+        ],
+        "step_id": "math345_4_3_12_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( x+1 \\). السبب: لنعرف إن كنا بحاجة لتوفير ثابت.",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) فلا حاجة لتوفير شيء.",
+        "html_structure": "(x+1)' = {q_4_3_12_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل القوس. الطريقة: الأس الجديد \\( \\frac12 \\) ونقسم عليه. السبب: قاعدة القوة",
+        "equation_template": "\\int (x+1)^{-\\frac12}dx = \\frac{(x+1)^{\\frac{{input_1}}{2}}}{\\frac{{input_2}}{2}}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s6_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "2"
+            ],
+            "id": "q_4_3_12_1_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -\\frac12 + 1 = \\frac12 \\)."
+          },
+          {
+            "input_id": "q17_p12_s6_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "2"
+            ],
+            "id": "q_4_3_12_1_s6_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -\\frac12 + 1 = \\frac12 \\)."
+          }
+        ],
+        "hint": "\\( -\\frac12 + 1 = \\frac12 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_12_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل القوس. الطريقة: الأس الجديد \\( \\frac12 \\) ونقسم عليه. السبب: قاعدة القوة",
+        "think": "\\( -\\frac12 + 1 = \\frac12 \\).",
+        "html_structure": "\\int (x+1)^{-\\frac12}dx = \\frac{(x+1)^{\\frac{{q_4_3_12_1_s6_i1}}{2}}}{\\frac{{q_4_3_12_1_s6_i2}}{2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: تبسيط الدالة الأصلية. الطريقة: القسمة على \\( \\frac12 \\) تعني الضرب في \\( 2 \\). السبب: لنحصل على صيغة بسيطة.",
+        "equation_template": "F(x) = {input_1}\\sqrt{x+1}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s7_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "\\frac12"
+            ],
+            "id": "q_4_3_12_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقلب \\( \\frac12 \\) فتصبح \\( 2 \\)."
+          }
+        ],
+        "hint": "اقلب \\( \\frac12 \\) فتصبح \\( 2 \\).",
+        "related_topics": [
+          "قسمة الكسور"
+        ],
+        "step_id": "math345_4_3_12_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: تبسيط الدالة الأصلية. الطريقة: القسمة على \\( \\frac12 \\) تعني الضرب في \\( 2 \\). السبب: لنحصل على صيغة بسيطة.",
+        "think": "اقلب \\( \\frac12 \\) فتصبح \\( 2 \\).",
+        "html_structure": "F(x) = {q_4_3_12_1_s7_i1}\\sqrt{x+1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التعويض بالحد \\( 8 \\). الطريقة: \\( 8+1 = 9 \\) وجذرها \\( 3 \\). السبب: \\( F(b) \\).",
+        "equation_template": "F(8) = 2\\sqrt{8+{input_1}} = 2({input_2}) = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s8_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_12_1_s8_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\sqrt{9} = 3 \\) ثم \\( 2 \\times 3 \\)."
+          },
+          {
+            "input_id": "q17_p12_s8_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "9",
+              "4",
+              "2"
+            ],
+            "id": "q_4_3_12_1_s8_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "9",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\sqrt{9} = 3 \\) ثم \\( 2 \\times 3 \\)."
+          },
+          {
+            "input_id": "q17_p12_s8_3",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "9",
+              "3",
+              "18"
+            ],
+            "id": "q_4_3_12_1_s8_i3",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "9",
+              "3",
+              "18"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( \\sqrt{9} = 3 \\) ثم \\( 2 \\times 3 \\)."
+          }
+        ],
+        "hint": "\\( \\sqrt{9} = 3 \\) ثم \\( 2 \\times 3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_12_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التعويض بالحد \\( 8 \\). الطريقة: \\( 8+1 = 9 \\) وجذرها \\( 3 \\). السبب: \\( F(b) \\).",
+        "think": "\\( \\sqrt{9} = 3 \\) ثم \\( 2 \\times 3 \\).",
+        "html_structure": "F(8) = 2\\sqrt{8+{q_4_3_12_1_s8_i1}} = 2({q_4_3_12_1_s8_i2}) = {q_4_3_12_1_s8_i3}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: التعويض بالحد \\( 3 \\). الطريقة: \\( 3+1 = 4 \\) وجذرها \\( 2 \\). السبب: \\( F(a) \\).",
+        "equation_template": "F(3) = 2\\sqrt{3+{input_1}} = 2({input_2}) = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s9_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_12_1_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\sqrt{4} = 2 \\) ثم \\( 2 \\times 2 \\)."
+          },
+          {
+            "input_id": "q17_p12_s9_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_3_12_1_s9_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\sqrt{4} = 2 \\) ثم \\( 2 \\times 2 \\)."
+          },
+          {
+            "input_id": "q17_p12_s9_3",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "8",
+              "2",
+              "6"
+            ],
+            "id": "q_4_3_12_1_s9_i3",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "8",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( \\sqrt{4} = 2 \\) ثم \\( 2 \\times 2 \\)."
+          }
+        ],
+        "hint": "\\( \\sqrt{4} = 2 \\) ثم \\( 2 \\times 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_12_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: التعويض بالحد \\( 3 \\). الطريقة: \\( 3+1 = 4 \\) وجذرها \\( 2 \\). السبب: \\( F(a) \\).",
+        "think": "\\( \\sqrt{4} = 2 \\) ثم \\( 2 \\times 2 \\).",
+        "html_structure": "F(3) = 2\\sqrt{3+{q_4_3_12_1_s9_i1}} = 2({q_4_3_12_1_s9_i2}) = {q_4_3_12_1_s9_i3}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: الطرح. الطريقة: نطرح \\( F(3) \\) من \\( F(8) \\). السبب: قانون التكامل المحدد.",
+        "equation_template": "{input_1} - {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q17_p12_s10_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "4",
+              "3",
+              "9"
+            ],
+            "id": "q_4_3_12_1_s10_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "4",
+              "3",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6 - 4 \\)."
+          },
+          {
+            "input_id": "q17_p12_s10_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "6",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_12_1_s10_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "6",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 6 - 4 \\)."
+          },
+          {
+            "input_id": "q17_p12_s10_3",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "10",
+              "4",
+              "1"
+            ],
+            "id": "q_4_3_12_1_s10_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "10",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 6 - 4 \\)."
+          }
+        ],
+        "hint": "\\( 6 - 4 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_12_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: الطرح. الطريقة: نطرح \\( F(3) \\) من \\( F(8) \\). السبب: قانون التكامل المحدد.",
+        "think": "\\( 6 - 4 \\).",
+        "html_structure": "{q_4_3_12_1_s10_i1} - {q_4_3_12_1_s10_i2} = {q_4_3_12_1_s10_i3}"
+      }
+    ]
+  },
+  {
+    "id_number": "q18_p12",
+    "page_number": 12,
+    "question_number": "18",
+    "question_text": "جد \\( \\int_{-1}^{1}\\sqrt[3]{3x^3-2x^5}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_012_diag_1_drawing.png"
+    ],
+    "full_model_solution": "∛(x³(3-2x²)) = x(3-2x²)^(1/3) ⇒ -1/4 ∫(-4x)(3-2x²)^(1/3)dx = -3/16 (3-2x²)^(4/3) ⇒ F(1)-F(-1) = 0",
+    "source_file": "رياضيلت 4/page_012_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 12
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_012_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_012_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_012_interactive.json"
+    ],
+    "title": "جد \\( \\int_{-1}^{1}\\sqrt[3]{3x^3-2x^5}\\,dx \\)",
+    "number": "18",
+    "model_solution": "∛(x³(3-2x²)) = x(3-2x²)^(1/3) ⇒ -1/4 ∫(-4x)(3-2x²)^(1/3)dx = -3/16 (3-2x²)^(4/3) ⇒ F(1)-F(-1) = 0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: إخراج عامل مشترك تحت الجذر. الطريقة: العامل المشترك الأكبر لـ \\( 3x^3 \\) و\\( -2x^5 \\) هو \\( x^3 \\). السبب: لنخرجه من الجذر التكعيبي.",
+        "equation_template": "3x^3 - 2x^5 = x^3(3 - {input_1}x^2)",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s1_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "5",
+              "1"
+            ],
+            "id": "q_4_3_12_2_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "5",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( -2x^5 \\) على \\( x^3 \\) فيبقى \\( x^2 \\) بمعامل \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم \\( -2x^5 \\) على \\( x^3 \\) فيبقى \\( x^2 \\) بمعامل \\( 2 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_3_12_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: إخراج عامل مشترك تحت الجذر. الطريقة: العامل المشترك الأكبر لـ \\( 3x^3 \\) و\\( -2x^5 \\) هو \\( x^3 \\). السبب: لنخرجه من الجذر التكعيبي.",
+        "think": "اقسم \\( -2x^5 \\) على \\( x^3 \\) فيبقى \\( x^2 \\) بمعامل \\( 2 \\).",
+        "html_structure": "3x^3 - 2x^5 = x^3(3 - {q_4_3_12_2_s1_i1}x^2)"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: إخراج \\( x^3 \\) من الجذر التكعيبي. الطريقة: \\( \\sqrt[3]{x^3} = x \\) (حتى للقيم السالبة). السبب: الجذر التكعيبي يلغي الأس \\( 3 \\).",
+        "equation_template": "\\sqrt[3]{x^3(3-2x^2)} = {input_1}\\sqrt[3]{3-2x^2}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s2_1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "x^3",
+              "3x",
+              "1"
+            ],
+            "id": "q_4_3_12_2_s2_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "x^3",
+              "3x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر التكعيبي لـ \\( x^3 \\) هو \\( x \\)."
+          }
+        ],
+        "hint": "الجذر التكعيبي لـ \\( x^3 \\) هو \\( x \\).",
+        "related_topics": [
+          "الجذور"
+        ],
+        "step_id": "math345_4_3_12_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: إخراج \\( x^3 \\) من الجذر التكعيبي. الطريقة: \\( \\sqrt[3]{x^3} = x \\) (حتى للقيم السالبة). السبب: الجذر التكعيبي يلغي الأس \\( 3 \\).",
+        "think": "الجذر التكعيبي لـ \\( x^3 \\) هو \\( x \\).",
+        "html_structure": "\\sqrt[3]{x^3(3-2x^2)} = {q_4_3_12_2_s2_i1}\\sqrt[3]{3-2x^2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: تحويل الجذر إلى أس. الطريقة: الجذر التكعيبي هو الأس \\( \\frac13 \\). السبب: لنطبق قاعدة القوس.",
+        "equation_template": "\\sqrt[3]{3-2x^2} = (3-2x^2)^{\\frac{{input_1}}{{input_2}}}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s3_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_12_2_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر التكعيبي = أس \\( \\frac13 \\)."
+          },
+          {
+            "input_id": "q18_p12_s3_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            "id": "q_4_3_12_2_s3_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الجذر التكعيبي = أس \\( \\frac13 \\)."
+          }
+        ],
+        "hint": "الجذر التكعيبي = أس \\( \\frac13 \\).",
+        "related_topics": [
+          "الأسس الكسرية"
+        ],
+        "step_id": "math345_4_3_12_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: تحويل الجذر إلى أس. الطريقة: الجذر التكعيبي هو الأس \\( \\frac13 \\). السبب: لنطبق قاعدة القوس.",
+        "think": "الجذر التكعيبي = أس \\( \\frac13 \\).",
+        "html_structure": "\\sqrt[3]{3-2x^2} = (3-2x^2)^{\\frac{{q_4_3_12_2_s3_i1}}{{q_4_3_12_2_s3_i2}}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( 3-2x^2 \\). السبب: لنعرف الثابت المطلوب.",
+        "equation_template": "(3 - 2x^2)' = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s4_1",
+            "correct_answer": "-4",
+            "options": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_3_12_2_s4_i1",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( -2x^2 \\) هي \\( -4x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( -2x^2 \\) هي \\( -4x \\).",
+        "related_topics": [
+          "مشتقة كثيرة الحدود"
+        ],
+        "step_id": "math345_4_3_12_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( 3-2x^2 \\). السبب: لنعرف الثابت المطلوب.",
+        "think": "مشتقة \\( -2x^2 \\) هي \\( -4x \\).",
+        "html_structure": "(3 - 2x^2)' = {q_4_3_12_2_s4_i1}x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: توفير الثابت. الطريقة: الموجود \\( x \\) والمطلوب \\( -4x \\): نضرب داخل التكامل في \\( -4 \\) وخارجه في \\( \\frac{1}{-4} \\). السبب: حتى لا تتغير القيمة.",
+        "equation_template": "\\int x(3-2x^2)^{\\frac13}dx = \\frac{1}{{input_1}}\\int ({input_2}x)(3-2x^2)^{\\frac13}dx",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s5_1",
+            "correct_answer": "-4",
+            "options": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_3_12_2_s5_i1",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -4 \\) في الموضعين."
+          },
+          {
+            "input_id": "q18_p12_s5_2",
+            "correct_answer": "-4",
+            "options": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_3_12_2_s5_i2",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -4 \\) في الموضعين."
+          }
+        ],
+        "hint": "ضع \\( -4 \\) في الموضعين.",
+        "related_topics": [
+          "توفير الثابت"
+        ],
+        "step_id": "math345_4_3_12_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: توفير الثابت. الطريقة: الموجود \\( x \\) والمطلوب \\( -4x \\): نضرب داخل التكامل في \\( -4 \\) وخارجه في \\( \\frac{1}{-4} \\). السبب: حتى لا تتغير القيمة.",
+        "think": "ضع \\( -4 \\) في الموضعين.",
+        "html_structure": "\\int x(3-2x^2)^{\\frac13}dx = \\frac{1}{{q_4_3_12_2_s5_i1}}\\int ({q_4_3_12_2_s5_i2}x)(3-2x^2)^{\\frac13}dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: الأس الجديد. الطريقة: نجمع \\( 1 \\) إلى \\( \\frac13 \\). السبب: قاعدة القوة.",
+        "equation_template": "\\frac13 + 1 = \\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s6_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "1"
+            ],
+            "id": "q_4_3_12_2_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac13+\\frac33 \\)."
+          }
+        ],
+        "hint": "\\( \\frac13+\\frac33 \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_3_12_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: الأس الجديد. الطريقة: نجمع \\( 1 \\) إلى \\( \\frac13 \\). السبب: قاعدة القوة.",
+        "think": "\\( \\frac13+\\frac33 \\).",
+        "html_structure": "\\frac13 + 1 = \\frac{{q_4_3_12_2_s6_i1}}{3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: تكامل القوس. الطريقة: نرفع إلى \\( \\frac43 \\) ونقسم على \\( \\frac43 \\). السبب: قاعدة القوة",
+        "equation_template": "\\int -4x(3-2x^2)^{\\frac13}dx = \\frac{(3-2x^2)^{\\frac{{input_1}}{3}}}{\\frac{{input_2}}{3}}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s7_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "1",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_12_2_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس والمقام \\( \\frac43 \\)."
+          },
+          {
+            "input_id": "q18_p12_s7_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "1",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_12_2_s7_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس والمقام \\( \\frac43 \\)."
+          }
+        ],
+        "hint": "الأس والمقام \\( \\frac43 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_12_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: تكامل القوس. الطريقة: نرفع إلى \\( \\frac43 \\) ونقسم على \\( \\frac43 \\). السبب: قاعدة القوة",
+        "think": "الأس والمقام \\( \\frac43 \\).",
+        "html_structure": "\\int -4x(3-2x^2)^{\\frac13}dx = \\frac{(3-2x^2)^{\\frac{{q_4_3_12_2_s7_i1}}{3}}}{\\frac{{q_4_3_12_2_s7_i2}}{3}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: كتابة الدالة الأصلية. الطريقة: \\( \\frac{1}{-4} \\times \\frac{3}{4} = -\\frac{3}{16} \\). السبب: القسمة على \\( \\frac43 \\) ضرب في \\( \\frac34 \\).",
+        "equation_template": "F(x) = -\\frac{{input_1}}{16}(3-2x^2)^{\\frac43}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s8_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "4",
+              "1",
+              "16"
+            ],
+            "id": "q_4_3_12_2_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "4",
+              "1",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 \\times 3 = 3 \\) و\\( 4 \\times 4 = 16 \\)."
+          }
+        ],
+        "hint": "\\( 1 \\times 3 = 3 \\) و\\( 4 \\times 4 = 16 \\).",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_3_12_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: كتابة الدالة الأصلية. الطريقة: \\( \\frac{1}{-4} \\times \\frac{3}{4} = -\\frac{3}{16} \\). السبب: القسمة على \\( \\frac43 \\) ضرب في \\( \\frac34 \\).",
+        "think": "\\( 1 \\times 3 = 3 \\) و\\( 4 \\times 4 = 16 \\).",
+        "html_structure": "F(x) = -\\frac{{q_4_3_12_2_s8_i1}}{16}(3-2x^2)^{\\frac43}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( 3 - 2(1)^2 = 1 \\) وأي قوة للواحد تساوي \\( 1 \\). السبب: \\( F(b) \\).",
+        "equation_template": "3-2(1)^2 = {input_1},\\; F(1) = -\\frac{3}{16}\\times {input_2}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s9_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "5"
+            ],
+            "id": "q_4_3_12_2_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3-2=1 \\) ثم \\( 1^{4/3}=1 \\)."
+          },
+          {
+            "input_id": "q18_p12_s9_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_12_2_s9_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3-2=1 \\) ثم \\( 1^{4/3}=1 \\)."
+          }
+        ],
+        "hint": "\\( 3-2=1 \\) ثم \\( 1^{4/3}=1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_12_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( 3 - 2(1)^2 = 1 \\) وأي قوة للواحد تساوي \\( 1 \\). السبب: \\( F(b) \\).",
+        "think": "\\( 3-2=1 \\) ثم \\( 1^{4/3}=1 \\).",
+        "html_structure": "3-2(1)^2 = {q_4_3_12_2_s9_i1},\\; F(1) = -\\frac{3}{16}\\times {q_4_3_12_2_s9_i2}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: التعويض بالحد \\( -1 \\). الطريقة: \\( (-1)^2 = 1 \\) فيتكرر نفس الناتج. السبب: \\( F(a) \\).",
+        "equation_template": "3-2(-1)^2 = {input_1},\\; F(-1) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s10_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "5",
+              "-1"
+            ],
+            "id": "q_4_3_12_2_s10_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "5",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مربع السالب موجب."
+          },
+          {
+            "input_id": "q18_p12_s10_2",
+            "correct_answer": "-3/16",
+            "options": [
+              "-3/16",
+              "3/16",
+              "-3",
+              "0"
+            ],
+            "id": "q_4_3_12_2_s10_i2",
+            "correct_value": "-3/16",
+            "allowed_keys": [
+              "-3/16",
+              "3/16",
+              "-3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "مربع السالب موجب."
+          }
+        ],
+        "hint": "مربع السالب موجب.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_12_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: التعويض بالحد \\( -1 \\). الطريقة: \\( (-1)^2 = 1 \\) فيتكرر نفس الناتج. السبب: \\( F(a) \\).",
+        "think": "مربع السالب موجب.",
+        "html_structure": "3-2(-1)^2 = {q_4_3_12_2_s10_i1},\\; F(-1) = {q_4_3_12_2_s10_i2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: الطرح. الطريقة: نطرح \\( F(-1) \\) من \\( F(1) \\). السبب: قانون التكامل المحدد.",
+        "equation_template": "F(1) - F(-1) = -\\frac{3}{16} - \\left({input_1}\\right) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s11_1",
+            "correct_answer": "-3/16",
+            "options": [
+              "-3/16",
+              "3/16",
+              "-3",
+              "0"
+            ],
+            "id": "q_4_3_12_2_s11_i1",
+            "correct_value": "-3/16",
+            "allowed_keys": [
+              "-3/16",
+              "3/16",
+              "-3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح عددين متساويين."
+          },
+          {
+            "input_id": "q18_p12_s11_2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "-3/8",
+              "3/8",
+              "1"
+            ],
+            "id": "q_4_3_12_2_s11_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "-3/8",
+              "3/8",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "اطرح عددين متساويين."
+          }
+        ],
+        "hint": "اطرح عددين متساويين.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_12_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: الطرح. الطريقة: نطرح \\( F(-1) \\) من \\( F(1) \\). السبب: قانون التكامل المحدد.",
+        "think": "اطرح عددين متساويين.",
+        "html_structure": "F(1) - F(-1) = -\\frac{3}{16} - \\left({q_4_3_12_2_s11_i1}\\right) = {q_4_3_12_2_s11_i2}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: تفسير النتيجة. الطريقة: الدالة \\( f(x) = x\\sqrt[3]{3-2x^2} \\) فردية لأن \\( f(-x) = -f(x) \\)، وتكامل الفردية على فترة متماثلة صفر. السبب: فالمساحتان تلغيان بعضهما.",
+        "equation_template": "f(-x) = {input_1} f(x) \\Rightarrow \\int_{-1}^{1} f = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q18_p12_s12_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_3_12_2_s12_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( x \\) بـ \\( -x \\) فتتغير الإشارة."
+          },
+          {
+            "input_id": "q18_p12_s12_2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_3_12_2_s12_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "استبدل \\( x \\) بـ \\( -x \\) فتتغير الإشارة."
+          }
+        ],
+        "hint": "استبدل \\( x \\) بـ \\( -x \\) فتتغير الإشارة.",
+        "related_topics": [
+          "الدوال الفردية"
+        ],
+        "step_id": "math345_4_3_12_2_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: تفسير النتيجة. الطريقة: الدالة \\( f(x) = x\\sqrt[3]{3-2x^2} \\) فردية لأن \\( f(-x) = -f(x) \\)، وتكامل الفردية على فترة متماثلة صفر. السبب: فالمساحتان تلغيان بعضهما.",
+        "think": "استبدل \\( x \\) بـ \\( -x \\) فتتغير الإشارة.",
+        "html_structure": "f(-x) = {q_4_3_12_2_s12_i1} f(x) \\Rightarrow \\int_{-1}^{1} f = {q_4_3_12_2_s12_i2}"
+      }
+    ]
+  }
+]

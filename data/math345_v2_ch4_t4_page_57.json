@@ -1,0 +1,824 @@
+[
+  {
+    "id_number": "q18_p57",
+    "page_number": 57,
+    "question_number": "18",
+    "question_text": "جد المساحة المحددة بالدالتين \\( g(x)=\\sin x \\) و \\( f(x)=2\\sin x+1 \\) حيث \\( x\\in\\left[0,\\frac{3\\pi}{2}\\right] \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_057_diag_1_drawing.png"
+    ],
+    "full_model_solution": "التقاطع عند \\( \\sin x=-1 \\) أي \\( x=\\frac{3\\pi}{2} \\) (نهاية الفترة). \\( A=\\int_0^{3\\pi/2}(\\sin x+1)dx=\\left[-\\cos x+x\\right]_0^{3\\pi/2}=\\frac{3\\pi}{2}+1 \\) وحدة مربعة.",
+    "source_file": "رياضيلت 4/page_057_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 57
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_057_diag_1_drawing.png",
+    "title": "جد المساحة المحددة بالدالتين \\( g(x)=\\sin x \\) و \\( f(x)=2\\sin x+1 \\) حيث \\( x\\in\\left[0,\\frac{3\\pi}{2}\\right] \\).",
+    "number": "18",
+    "model_solution": "التقاطع عند \\( \\sin x=-1 \\) أي \\( x=\\frac{3\\pi}{2} \\) (نهاية الفترة). \\( A=\\int_0^{3\\pi/2}(\\sin x+1)dx=\\left[-\\cos x+x\\right]_0^{3\\pi/2}=\\frac{3\\pi}{2}+1 \\) وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد نقطة التقاطع. الطريقة: نساوي \\( \\sin x=2\\sin x+1 \\) وننقل \\( 2\\sin x \\) فنحصل على \\( -\\sin x=1 \\). السبب: لنعرف هل تتقاطع الدالتان داخل الفترة.",
+        "equation_template": "\\sin x={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "-1",
+            "options": [
+              "0",
+              "\\frac12",
+              "1",
+              "-1"
+            ],
+            "id": "q_4_4_57_1_s1_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "0",
+              "\\frac12",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم الطرفين على \\( -1 \\)."
+          }
+        ],
+        "hint": "اقسم الطرفين على \\( -1 \\).",
+        "related_topics": [
+          "نقاط التقاطع"
+        ],
+        "step_id": "math345_4_4_57_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد نقطة التقاطع. الطريقة: نساوي \\( \\sin x=2\\sin x+1 \\) وننقل \\( 2\\sin x \\) فنحصل على \\( -\\sin x=1 \\). السبب: لنعرف هل تتقاطع الدالتان داخل الفترة.",
+        "think": "اقسم الطرفين على \\( -1 \\).",
+        "html_structure": "\\sin x={q_4_4_57_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد قيمة \\( x \\). الطريقة: الجيب يساوي \\( -1 \\) عند \\( \\frac{3\\pi}{2} \\). السبب: من الدائرة المثلثية.",
+        "equation_template": "x=\\frac{{input_1}\\pi}{2}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_4_4_57_1_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الزاوية \\( 270^\\circ \\)."
+          }
+        ],
+        "hint": "الزاوية \\( 270^\\circ \\).",
+        "related_topics": [
+          "المعادلات المثلثية"
+        ],
+        "step_id": "math345_4_4_57_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد قيمة \\( x \\). الطريقة: الجيب يساوي \\( -1 \\) عند \\( \\frac{3\\pi}{2} \\). السبب: من الدائرة المثلثية.",
+        "think": "الزاوية \\( 270^\\circ \\).",
+        "html_structure": "x=\\frac{{q_4_4_57_1_s2_i1}\\pi}{2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نقرر هل نجزئ الفترة. الطريقة: \\( \\frac{3\\pi}{2} \\) هي نهاية الفترة نفسها، فلا تقع داخلها. السبب: فلا حاجة للتجزئة وعدد الأجزاء واحد.",
+        "equation_template": "\\text{pieces}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_4_57_1_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "النقطة على الحد وليست بداخله."
+          }
+        ],
+        "hint": "النقطة على الحد وليست بداخله.",
+        "related_topics": [
+          "تجزئة الفترة"
+        ],
+        "step_id": "math345_4_4_57_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نقرر هل نجزئ الفترة. الطريقة: \\( \\frac{3\\pi}{2} \\) هي نهاية الفترة نفسها، فلا تقع داخلها. السبب: فلا حاجة للتجزئة وعدد الأجزاء واحد.",
+        "think": "النقطة على الحد وليست بداخله.",
+        "html_structure": "\\text{pieces}={q_4_4_57_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحدد الدالة العليا. الطريقة: نأخذ \\( x=0 \\): \\( f(0)=2\\sin0+1=1 \\) و \\( g(0)=0 \\). السبب: لنعرف ترتيب الدالتين.",
+        "equation_template": "f(0)={input_1}>g(0)=0",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "0",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_4_57_1_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "0",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times0+1 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times0+1 \\).",
+        "related_topics": [
+          "الدالة العليا"
+        ],
+        "step_id": "math345_4_4_57_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحدد الدالة العليا. الطريقة: نأخذ \\( x=0 \\): \\( f(0)=2\\sin0+1=1 \\) و \\( g(0)=0 \\). السبب: لنعرف ترتيب الدالتين.",
+        "think": "\\( 2\\times0+1 \\).",
+        "html_structure": "f(0)={q_4_4_57_1_s4_i1}>g(0)=0"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب تكامل المساحة. الطريقة: العليا \\( f \\) ناقص السفلى \\( g \\). السبب: للمساحة.",
+        "equation_template": "A=\\int_0^{3\\pi/2}(2\\sin x+1-{input_1})dx",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\sin x",
+            "options": [
+              "1",
+              "\\cos x",
+              "\\sin x",
+              "2\\sin x"
+            ],
+            "id": "q_4_4_57_1_s5_i1",
+            "correct_value": "\\sin x",
+            "allowed_keys": [
+              "1",
+              "\\cos x",
+              "\\sin x",
+              "2\\sin x"
+            ],
+            "label": "القيمة 1",
+            "hint": "السفلى هي \\( g \\)."
+          }
+        ],
+        "hint": "السفلى هي \\( g \\).",
+        "related_topics": [
+          "المساحة بين منحنيين"
+        ],
+        "step_id": "math345_4_4_57_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب تكامل المساحة. الطريقة: العليا \\( f \\) ناقص السفلى \\( g \\). السبب: للمساحة.",
+        "think": "السفلى هي \\( g \\).",
+        "html_structure": "A=\\int_0^{3\\pi/2}(2\\sin x+1-{q_4_4_57_1_s5_i1})dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نبسط الدالة. الطريقة: \\( 2\\sin x-\\sin x=\\sin x \\). السبب: لنكامل دالة أبسط.",
+        "equation_template": "h(x)=\\sin x+{input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "0",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_4_57_1_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "0",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت يبقى \\( 1 \\)."
+          }
+        ],
+        "hint": "الثابت يبقى \\( 1 \\).",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_4_57_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نبسط الدالة. الطريقة: \\( 2\\sin x-\\sin x=\\sin x \\). السبب: لنكامل دالة أبسط.",
+        "think": "الثابت يبقى \\( 1 \\).",
+        "html_structure": "h(x)=\\sin x+{q_4_4_57_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int\\sin x\\,dx=-\\cos x \\) و \\( \\int1\\,dx=x \\). السبب: قواعد التكامل.",
+        "equation_template": "H(x)=-\\cos x+{input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "0",
+              "1",
+              "\\sin x"
+            ],
+            "id": "q_4_4_57_1_s7_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "0",
+              "1",
+              "\\sin x"
+            ],
+            "label": "القيمة 1",
+            "hint": "تكامل \\( 1 \\)."
+          }
+        ],
+        "hint": "تكامل \\( 1 \\).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_4_4_57_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int\\sin x\\,dx=-\\cos x \\) و \\( \\int1\\,dx=x \\). السبب: قواعد التكامل.",
+        "think": "تكامل \\( 1 \\).",
+        "html_structure": "H(x)=-\\cos x+{q_4_4_57_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( \\cos\\frac{3\\pi}{2}=0 \\). السبب: من الدائرة المثلثية.",
+        "equation_template": "H\\left(\\tfrac{3\\pi}{2}\\right)=-\\cos\\tfrac{3\\pi}{2}+\\tfrac{3\\pi}{2}={input_1}+\\tfrac{3\\pi}{2}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "\\pi",
+              "1",
+              "-1"
+            ],
+            "id": "q_4_4_57_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "\\pi",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب التمام عند \\( 270^\\circ \\) صفر."
+          }
+        ],
+        "hint": "جيب التمام عند \\( 270^\\circ \\) صفر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_57_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( \\cos\\frac{3\\pi}{2}=0 \\). السبب: من الدائرة المثلثية.",
+        "think": "جيب التمام عند \\( 270^\\circ \\) صفر.",
+        "html_structure": "H\\left(\\tfrac{3\\pi}{2}\\right)=-\\cos\\tfrac{3\\pi}{2}+\\tfrac{3\\pi}{2}={q_4_4_57_1_s8_i1}+\\tfrac{3\\pi}{2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( -\\cos0+0=-1 \\). السبب: \\( \\cos0=1 \\).",
+        "equation_template": "H(0)=-\\cos0+0={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_57_1_s9_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مع \\( 1 \\)."
+          }
+        ],
+        "hint": "السالب مع \\( 1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_57_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( -\\cos0+0=-1 \\). السبب: \\( \\cos0=1 \\).",
+        "think": "السالب مع \\( 1 \\).",
+        "html_structure": "H(0)=-\\cos0+0={q_4_4_57_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نطرح. الطريقة: \\( \\frac{3\\pi}{2}-(-1) \\). السبب: العليا ناقص السفلى.",
+        "equation_template": "A=\\frac{3\\pi}{2}-(-1)=\\frac{3\\pi}{2}+{input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "2",
+              "0",
+              "1"
+            ],
+            "id": "q_4_4_57_1_s10_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "2",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مع السالب."
+          }
+        ],
+        "hint": "السالب مع السالب.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_4_57_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نطرح. الطريقة: \\( \\frac{3\\pi}{2}-(-1) \\). السبب: العليا ناقص السفلى.",
+        "think": "السالب مع السالب.",
+        "html_structure": "A=\\frac{3\\pi}{2}-(-1)=\\frac{3\\pi}{2}+{q_4_4_57_1_s10_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q19_p57",
+    "page_number": 57,
+    "question_number": "19",
+    "question_text": "جد مساحة المنطقة المحددة بالمنحنيين \\( g(x)=\\sin x \\) و \\( f(x)=\\cos x \\) وعلى الفترة \\( \\left[-\\frac\\pi2,\\frac\\pi2\\right] \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_057_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( \\tan x=1 \\) فـ \\( x=\\frac\\pi4 \\). \\( A_1=\\sqrt2+1 \\) و \\( A_2=1-\\sqrt2 \\) فالمساحة \\( A=2\\sqrt2 \\) وحدة مربعة.",
+    "source_file": "رياضيلت 4/page_057_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 57
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_057_diag_1_drawing.png",
+    "title": "جد مساحة المنطقة المحددة بالمنحنيين \\( g(x)=\\sin x \\) و \\( f(x)=\\cos x \\) وعلى الفترة \\( \\left[-\\frac\\pi2,\\frac\\pi2\\right] \\).",
+    "number": "19",
+    "model_solution": "\\( \\tan x=1 \\) فـ \\( x=\\frac\\pi4 \\). \\( A_1=\\sqrt2+1 \\) و \\( A_2=1-\\sqrt2 \\) فالمساحة \\( A=2\\sqrt2 \\) وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد نقطة التقاطع. الطريقة: نساوي \\( \\sin x=\\cos x \\) ثم نقسم على \\( \\cos x \\). السبب: لنحصل على الظل.",
+        "equation_template": "\\tan x={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "\\sqrt3"
+            ],
+            "id": "q_4_4_57_2_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "\\sqrt3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{\\sin x}{\\cos x}=1 \\)."
+          }
+        ],
+        "hint": "\\( \\frac{\\sin x}{\\cos x}=1 \\).",
+        "related_topics": [
+          "نقاط التقاطع"
+        ],
+        "step_id": "math345_4_4_57_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد نقطة التقاطع. الطريقة: نساوي \\( \\sin x=\\cos x \\) ثم نقسم على \\( \\cos x \\). السبب: لنحصل على الظل.",
+        "think": "\\( \\frac{\\sin x}{\\cos x}=1 \\).",
+        "html_structure": "\\tan x={q_4_4_57_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد الزاوية. الطريقة: \\( \\tan x=1 \\) عند \\( \\frac\\pi4 \\) داخل الفترة (والزاوية الأخرى \\( -\\frac{3\\pi}{4} \\) خارجها). السبب: نأخذ ما يقع داخل الفترة فقط.",
+        "equation_template": "x=\\frac{\\pi}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "id": "q_4_4_57_2_s2_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 45^\\circ \\)."
+          }
+        ],
+        "hint": "\\( 45^\\circ \\).",
+        "related_topics": [
+          "المعادلات المثلثية"
+        ],
+        "step_id": "math345_4_4_57_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد الزاوية. الطريقة: \\( \\tan x=1 \\) عند \\( \\frac\\pi4 \\) داخل الفترة (والزاوية الأخرى \\( -\\frac{3\\pi}{4} \\) خارجها). السبب: نأخذ ما يقع داخل الفترة فقط.",
+        "think": "\\( 45^\\circ \\).",
+        "html_structure": "x=\\frac{\\pi}{{q_4_4_57_2_s2_i1}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نجزئ الفترة. الطريقة: نقسمها عند \\( \\frac\\pi4 \\). السبب: لأن الدالتين تتبادلان الموقع.",
+        "equation_template": "\\left[-\\tfrac\\pi2,{input_1}\\right],\\;\\left[{input_2},\\tfrac\\pi2\\right]",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "\\frac\\pi4",
+            "options": [
+              "\\frac\\pi2",
+              "0",
+              "\\frac\\pi3",
+              "\\frac\\pi4"
+            ],
+            "id": "q_4_4_57_2_s3_i1",
+            "correct_value": "\\frac\\pi4",
+            "allowed_keys": [
+              "\\frac\\pi2",
+              "0",
+              "\\frac\\pi3",
+              "\\frac\\pi4"
+            ],
+            "label": "القيمة 1",
+            "hint": "النقطة نفسها في الفترتين."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "\\frac\\pi4",
+            "options": [
+              "\\frac\\pi2",
+              "0",
+              "\\frac\\pi3",
+              "\\frac\\pi4"
+            ],
+            "id": "q_4_4_57_2_s3_i2",
+            "correct_value": "\\frac\\pi4",
+            "allowed_keys": [
+              "\\frac\\pi2",
+              "0",
+              "\\frac\\pi3",
+              "\\frac\\pi4"
+            ],
+            "label": "القيمة 2",
+            "hint": "النقطة نفسها في الفترتين."
+          }
+        ],
+        "hint": "النقطة نفسها في الفترتين.",
+        "related_topics": [
+          "تجزئة الفترة"
+        ],
+        "step_id": "math345_4_4_57_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نجزئ الفترة. الطريقة: نقسمها عند \\( \\frac\\pi4 \\). السبب: لأن الدالتين تتبادلان الموقع.",
+        "think": "النقطة نفسها في الفترتين.",
+        "html_structure": "\\left[-\\tfrac\\pi2,{q_4_4_57_2_s3_i1}\\right],\\;\\left[{q_4_4_57_2_s3_i2},\\tfrac\\pi2\\right]"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحدد الدالة العليا. الطريقة: نأخذ \\( x=0 \\): \\( \\cos0=1>\\sin0=0 \\). السبب: في الجزء الأول \\( \\cos \\) أعلى.",
+        "equation_template": "\\cos0={input_1}>\\sin0=0",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "id": "q_4_4_57_2_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0^\\circ \\)."
+          }
+        ],
+        "hint": "\\( 0^\\circ \\).",
+        "related_topics": [
+          "الدالة العليا"
+        ],
+        "step_id": "math345_4_4_57_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحدد الدالة العليا. الطريقة: نأخذ \\( x=0 \\): \\( \\cos0=1>\\sin0=0 \\). السبب: في الجزء الأول \\( \\cos \\) أعلى.",
+        "think": "\\( 0^\\circ \\).",
+        "html_structure": "\\cos0={q_4_4_57_2_s4_i1}>\\sin0=0"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد دالة الفرق وأصليتها. الطريقة: \\( h=\\cos x-\\sin x \\) فتكون \\( \\int h=\\sin x+\\cos x \\). السبب: \\( \\int-\\sin x=+\\cos x \\).",
+        "equation_template": "H(x)=\\sin x+{input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\cos x",
+            "options": [
+              "\\cos x",
+              "x",
+              "\\sin x",
+              "-\\cos x"
+            ],
+            "id": "q_4_4_57_2_s5_i1",
+            "correct_value": "\\cos x",
+            "allowed_keys": [
+              "\\cos x",
+              "x",
+              "\\sin x",
+              "-\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "تكامل \\( -\\sin x \\)."
+          }
+        ],
+        "hint": "تكامل \\( -\\sin x \\).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_4_4_57_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد دالة الفرق وأصليتها. الطريقة: \\( h=\\cos x-\\sin x \\) فتكون \\( \\int h=\\sin x+\\cos x \\). السبب: \\( \\int-\\sin x=+\\cos x \\).",
+        "think": "تكامل \\( -\\sin x \\).",
+        "html_structure": "H(x)=\\sin x+{q_4_4_57_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( H\\left(-\\frac\\pi2\\right) \\). الطريقة: \\( \\sin\\left(-\\frac\\pi2\\right)=-1 \\) و \\( \\cos\\left(-\\frac\\pi2\\right)=0 \\). السبب: الحد السفلي.",
+        "equation_template": "H\\left(-\\tfrac\\pi2\\right)=-1+{input_1}=-1",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "2",
+              "-1",
+              "0"
+            ],
+            "id": "q_4_4_57_2_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "2",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب التمام صفر."
+          }
+        ],
+        "hint": "جيب التمام صفر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_57_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( H\\left(-\\frac\\pi2\\right) \\). الطريقة: \\( \\sin\\left(-\\frac\\pi2\\right)=-1 \\) و \\( \\cos\\left(-\\frac\\pi2\\right)=0 \\). السبب: الحد السفلي.",
+        "think": "جيب التمام صفر.",
+        "html_structure": "H\\left(-\\tfrac\\pi2\\right)=-1+{q_4_4_57_2_s6_i1}=-1"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب \\( H\\left(\\frac\\pi4\\right) \\). الطريقة: \\( \\frac{\\sqrt2}{2}+\\frac{\\sqrt2}{2} \\). السبب: قيمتا الجيب وجيب التمام متساويتان.",
+        "equation_template": "H\\left(\\tfrac\\pi4\\right)={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\sqrt2",
+            "options": [
+              "1",
+              "\\sqrt2",
+              "2",
+              "\\frac{\\sqrt2}{2}"
+            ],
+            "id": "q_4_4_57_2_s7_i1",
+            "correct_value": "\\sqrt2",
+            "allowed_keys": [
+              "1",
+              "\\sqrt2",
+              "2",
+              "\\frac{\\sqrt2}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع نصفين."
+          }
+        ],
+        "hint": "اجمع نصفين.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_57_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب \\( H\\left(\\frac\\pi4\\right) \\). الطريقة: \\( \\frac{\\sqrt2}{2}+\\frac{\\sqrt2}{2} \\). السبب: قيمتا الجيب وجيب التمام متساويتان.",
+        "think": "اجمع نصفين.",
+        "html_structure": "H\\left(\\tfrac\\pi4\\right)={q_4_4_57_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب \\( H\\left(\\frac\\pi2\\right) \\). الطريقة: \\( \\sin\\frac\\pi2=1 \\) و \\( \\cos\\frac\\pi2=0 \\). السبب: الحد العلوي.",
+        "equation_template": "H\\left(\\tfrac\\pi2\\right)=1+{input_1}=1",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "-1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_4_57_2_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب التمام صفر."
+          }
+        ],
+        "hint": "جيب التمام صفر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_57_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب \\( H\\left(\\frac\\pi2\\right) \\). الطريقة: \\( \\sin\\frac\\pi2=1 \\) و \\( \\cos\\frac\\pi2=0 \\). السبب: الحد العلوي.",
+        "think": "جيب التمام صفر.",
+        "html_structure": "H\\left(\\tfrac\\pi2\\right)=1+{q_4_4_57_2_s8_i1}=1"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( A_1 \\). الطريقة: \\( H\\left(\\frac\\pi4\\right)-H\\left(-\\frac\\pi2\\right)=\\sqrt2-(-1) \\). السبب: العليا ناقص السفلى.",
+        "equation_template": "A_1=\\sqrt2+{input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "id": "q_4_4_57_2_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مع السالب."
+          }
+        ],
+        "hint": "السالب مع السالب.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_57_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( A_1 \\). الطريقة: \\( H\\left(\\frac\\pi4\\right)-H\\left(-\\frac\\pi2\\right)=\\sqrt2-(-1) \\). السبب: العليا ناقص السفلى.",
+        "think": "السالب مع السالب.",
+        "html_structure": "A_1=\\sqrt2+{q_4_4_57_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحسب \\( A_2 \\). الطريقة: \\( 1-\\sqrt2 \\) وهو سالب لأن \\( \\sqrt2>1 \\). السبب: في الجزء الثاني الدالة \\( \\sin \\) أعلى.",
+        "equation_template": "A_2=1-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "\\sqrt2",
+            "options": [
+              "\\frac{\\sqrt2}{2}",
+              "0",
+              "\\sqrt2",
+              "1"
+            ],
+            "id": "q_4_4_57_2_s10_i1",
+            "correct_value": "\\sqrt2",
+            "allowed_keys": [
+              "\\frac{\\sqrt2}{2}",
+              "0",
+              "\\sqrt2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( H(\\frac\\pi2)-H(\\frac\\pi4)=1-\\sqrt2 \\)."
+          }
+        ],
+        "hint": "\\( H(\\frac\\pi2)-H(\\frac\\pi4)=1-\\sqrt2 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_57_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحسب \\( A_2 \\). الطريقة: \\( 1-\\sqrt2 \\) وهو سالب لأن \\( \\sqrt2>1 \\). السبب: في الجزء الثاني الدالة \\( \\sin \\) أعلى.",
+        "think": "\\( H(\\frac\\pi2)-H(\\frac\\pi4)=1-\\sqrt2 \\).",
+        "html_structure": "A_2=1-{q_4_4_57_2_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجمع المساحات بالمطلق. الطريقة: \\( |A_2|=\\sqrt2-1 \\). السبب: فيصير الجمع \\( (\\sqrt2+1)+(\\sqrt2-1) \\).",
+        "equation_template": "A=(\\sqrt2+1)+({input_1}-1)=2\\sqrt2",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "\\sqrt2",
+            "options": [
+              "\\frac{\\sqrt2}{2}",
+              "1",
+              "2",
+              "\\sqrt2"
+            ],
+            "id": "q_4_4_57_2_s11_i1",
+            "correct_value": "\\sqrt2",
+            "allowed_keys": [
+              "\\frac{\\sqrt2}{2}",
+              "1",
+              "2",
+              "\\sqrt2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المطلق يقلب إشارة \\( 1-\\sqrt2 \\)."
+          }
+        ],
+        "hint": "المطلق يقلب إشارة \\( 1-\\sqrt2 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_4_57_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجمع المساحات بالمطلق. الطريقة: \\( |A_2|=\\sqrt2-1 \\). السبب: فيصير الجمع \\( (\\sqrt2+1)+(\\sqrt2-1) \\).",
+        "think": "المطلق يقلب إشارة \\( 1-\\sqrt2 \\).",
+        "html_structure": "A=(\\sqrt2+1)+({q_4_4_57_2_s11_i1}-1)=2\\sqrt2"
+      }
+    ]
+  }
+]

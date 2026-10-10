@@ -1,0 +1,1837 @@
+[
+  {
+    "id_number": "q6_p231",
+    "page_number": 231,
+    "question_number": "6",
+    "question_text": "حل المعادلة التفاضلية \\( y' = 2e^x y^3 \\) بطريقة فصل المتغيرات عندما \\( x = 0, y = \\frac12 \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "الحل: \\( y = \\frac{1}{\\sqrt{8-4e^x}} \\) (اختير الموجب لأن y(0)=1/2>0؛ المصدر كتب ±).",
+    "source_file": "رياضيات5/page_009_p231.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": 231,
+      "page_number": 231,
+      "file_page_number": 9,
+      "part_number": 1
+    },
+    "chapter": 5,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png",
+    "title": "حل المعادلة التفاضلية \\( y' = 2e^x y^3 \\) بطريقة فصل المتغيرات عندما \\( x = 0, y = \\frac12 \\)",
+    "number": "6",
+    "model_solution": "الحل: \\( y = \\frac{1}{\\sqrt{8-4e^x}} \\) (اختير الموجب لأن y(0)=1/2>0؛ المصدر كتب ±).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحوّل المشتقة إلى صورة تفاضلات. الطريقة: اضرب الطرفين في \\( dx \\) فيصبح \\( dy \\) وحده في طرف. السبب: لأن فصل المتغيرات يبدأ بتحريك \\( dx \\) و \\( dy \\) إلى الطرفين.",
+        "equation_template": "dy = {input_1} \\, {input_2}",
+        "inputs": [
+          {
+            "input_id": "q6_s1_1",
+            "correct_answer": "2e^x y^3",
+            "options": [
+              "2e^x y^3",
+              "2e^x y",
+              "e^x y^3",
+              "2y^3"
+            ],
+            "id": "q_5_3_231_1_s1_i1",
+            "correct_value": "2e^x y^3",
+            "allowed_keys": [
+              "2e^x y^3",
+              "2e^x y",
+              "e^x y^3",
+              "2y^3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب الطرف الأيمن كما هو \\( 2e^x y^3 \\) ثم اضرب بـ \\( dx \\)."
+          },
+          {
+            "input_id": "q6_s1_2",
+            "correct_answer": "dx",
+            "options": [
+              "dx",
+              "dy",
+              "x",
+              "y"
+            ],
+            "id": "q_5_3_231_1_s1_i2",
+            "correct_value": "dx",
+            "allowed_keys": [
+              "dx",
+              "dy",
+              "x",
+              "y"
+            ],
+            "label": "القيمة 2",
+            "hint": "اكتب الطرف الأيمن كما هو \\( 2e^x y^3 \\) ثم اضرب بـ \\( dx \\)."
+          }
+        ],
+        "hint": "اكتب الطرف الأيمن كما هو \\( 2e^x y^3 \\) ثم اضرب بـ \\( dx \\).",
+        "related_topics": [
+          "تفاضلات"
+        ],
+        "step_id": "math345_5_3_231_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحوّل المشتقة إلى صورة تفاضلات. الطريقة: اضرب الطرفين في \\( dx \\) فيصبح \\( dy \\) وحده في طرف. السبب: لأن فصل المتغيرات يبدأ بتحريك \\( dx \\) و \\( dy \\) إلى الطرفين.",
+        "think": "اكتب الطرف الأيمن كما هو \\( 2e^x y^3 \\) ثم اضرب بـ \\( dx \\).",
+        "html_structure": "dy = {q_5_3_231_1_s1_i1} \\, {q_5_3_231_1_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نفصل المتغيرات: كل \\( y \\) مع \\( dy \\) وكل \\( x \\) مع \\( dx \\). الطريقة: اقسم الطرفين على \\( y^3 \\) لأنه يحتوي \\( y \\) وهو غير مرغوب في طرف \\( dx \\). السبب: القسمة تُبعد \\( y \\) عن طرف \\( x \\).",
+        "equation_template": "\\frac{dy}{{input_1}} = {input_2} \\, dx",
+        "inputs": [
+          {
+            "input_id": "q6_s2_1",
+            "correct_answer": "y^3",
+            "options": [
+              "y^3",
+              "y",
+              "y^2",
+              "2y^3"
+            ],
+            "id": "q_5_3_231_1_s2_i1",
+            "correct_value": "y^3",
+            "allowed_keys": [
+              "y^3",
+              "y",
+              "y^2",
+              "2y^3"
+            ],
+            "label": "القيمة 1",
+            "hint": "القاسم هو \\( y^3 \\) الذي قسمنا عليه، وما يتبقى مع \\( dx \\) هو \\( 2e^x \\)."
+          },
+          {
+            "input_id": "q6_s2_2",
+            "correct_answer": "2e^x",
+            "options": [
+              "2e^x",
+              "2e^x y^3",
+              "e^x",
+              "2"
+            ],
+            "id": "q_5_3_231_1_s2_i2",
+            "correct_value": "2e^x",
+            "allowed_keys": [
+              "2e^x",
+              "2e^x y^3",
+              "e^x",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "القاسم هو \\( y^3 \\) الذي قسمنا عليه، وما يتبقى مع \\( dx \\) هو \\( 2e^x \\)."
+          }
+        ],
+        "hint": "القاسم هو \\( y^3 \\) الذي قسمنا عليه، وما يتبقى مع \\( dx \\) هو \\( 2e^x \\).",
+        "related_topics": [
+          "فصل المتغيرات"
+        ],
+        "step_id": "math345_5_3_231_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نفصل المتغيرات: كل \\( y \\) مع \\( dy \\) وكل \\( x \\) مع \\( dx \\). الطريقة: اقسم الطرفين على \\( y^3 \\) لأنه يحتوي \\( y \\) وهو غير مرغوب في طرف \\( dx \\). السبب: القسمة تُبعد \\( y \\) عن طرف \\( x \\).",
+        "think": "القاسم هو \\( y^3 \\) الذي قسمنا عليه، وما يتبقى مع \\( dx \\) هو \\( 2e^x \\).",
+        "html_structure": "\\frac{dy}{{q_5_3_231_1_s2_i1}} = {q_5_3_231_1_s2_i2} \\, dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب الكسر بصورة أس سالب لنتمكن من التكامل. الطريقة: تذكّر أن \\( \\frac{1}{y^3} = y^{-3} \\). السبب: التكامل بقاعدة القوة يحتاج الأس ظاهراً.",
+        "equation_template": "{input_1} \\, dy = {input_2} \\, dx",
+        "inputs": [
+          {
+            "input_id": "q6_s3_1",
+            "correct_answer": "y^{-3}",
+            "options": [
+              "y^{-3}",
+              "y^{3}",
+              "y^{-2}",
+              "-3y"
+            ],
+            "id": "q_5_3_231_1_s3_i1",
+            "correct_value": "y^{-3}",
+            "allowed_keys": [
+              "y^{-3}",
+              "y^{3}",
+              "y^{-2}",
+              "-3y"
+            ],
+            "label": "القيمة 1",
+            "hint": "حرّك \\( y^3 \\) من المقام إلى البسط فتتغير إشارة الأس إلى سالب."
+          },
+          {
+            "input_id": "q6_s3_2",
+            "correct_answer": "2e^x",
+            "options": [
+              "2e^x",
+              "e^x",
+              "2e^{-x}",
+              "2x"
+            ],
+            "id": "q_5_3_231_1_s3_i2",
+            "correct_value": "2e^x",
+            "allowed_keys": [
+              "2e^x",
+              "e^x",
+              "2e^{-x}",
+              "2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "حرّك \\( y^3 \\) من المقام إلى البسط فتتغير إشارة الأس إلى سالب."
+          }
+        ],
+        "hint": "حرّك \\( y^3 \\) من المقام إلى البسط فتتغير إشارة الأس إلى سالب.",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_5_3_231_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب الكسر بصورة أس سالب لنتمكن من التكامل. الطريقة: تذكّر أن \\( \\frac{1}{y^3} = y^{-3} \\). السبب: التكامل بقاعدة القوة يحتاج الأس ظاهراً.",
+        "think": "حرّك \\( y^3 \\) من المقام إلى البسط فتتغير إشارة الأس إلى سالب.",
+        "html_structure": "{q_5_3_231_1_s3_i1} \\, dy = {q_5_3_231_1_s3_i2} \\, dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نُدخل علامة التكامل على الطرفين. الطريقة: ضع \\( \\int \\) أمام كل طرف، وأخرج العدد \\( 2 \\) خارج تكامل \\( e^x \\). السبب: لأن تكامل طرفين متساويين يعطي طرفين متساويين.",
+        "equation_template": "\\int {input_1} \\, dy = 2 \\int {input_2} \\, dx",
+        "inputs": [
+          {
+            "input_id": "q6_s4_1",
+            "correct_answer": "y^{-3}",
+            "options": [
+              "y^{-3}",
+              "y^3",
+              "y^{-2}",
+              "y"
+            ],
+            "id": "q_5_3_231_1_s4_i1",
+            "correct_value": "y^{-3}",
+            "allowed_keys": [
+              "y^{-3}",
+              "y^3",
+              "y^{-2}",
+              "y"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرف الأيسر يحمل \\( y^{-3} \\) والأيمن يحمل \\( e^x \\) فقط (الرقم 2 خرج)."
+          },
+          {
+            "input_id": "q6_s4_2",
+            "correct_answer": "e^x",
+            "options": [
+              "e^x",
+              "e^{2x}",
+              "x",
+              "e"
+            ],
+            "id": "q_5_3_231_1_s4_i2",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "e^x",
+              "e^{2x}",
+              "x",
+              "e"
+            ],
+            "label": "القيمة 2",
+            "hint": "الطرف الأيسر يحمل \\( y^{-3} \\) والأيمن يحمل \\( e^x \\) فقط (الرقم 2 خرج)."
+          }
+        ],
+        "hint": "الطرف الأيسر يحمل \\( y^{-3} \\) والأيمن يحمل \\( e^x \\) فقط (الرقم 2 خرج).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نُدخل علامة التكامل على الطرفين. الطريقة: ضع \\( \\int \\) أمام كل طرف، وأخرج العدد \\( 2 \\) خارج تكامل \\( e^x \\). السبب: لأن تكامل طرفين متساويين يعطي طرفين متساويين.",
+        "think": "الطرف الأيسر يحمل \\( y^{-3} \\) والأيمن يحمل \\( e^x \\) فقط (الرقم 2 خرج).",
+        "html_structure": "\\int {q_5_3_231_1_s4_i1} \\, dy = 2 \\int {q_5_3_231_1_s4_i2} \\, dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب تكامل الطرف الأيسر. الطريقة: القاعدة: أضف \\( 1 \\) للأس واقسم على الأس الجديد: \\( -3+1=-2 \\). السبب: هذه قاعدة تكامل القوى.",
+        "equation_template": "\\int y^{-3} dy = \\frac{y^{-2}}{{input_1}} = -\\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q6_s5_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-3",
+              "3"
+            ],
+            "id": "q_5_3_231_1_s5_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-3",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس الجديد \\( -2 \\) فاقسم عليه، ثم \\( y^{-2} = \\frac{1}{y^2} \\) والإشارة سالبة."
+          },
+          {
+            "input_id": "q6_s5_2",
+            "correct_answer": "2y^2",
+            "options": [
+              "2y^2",
+              "y^2",
+              "2y",
+              "-2y^2"
+            ],
+            "id": "q_5_3_231_1_s5_i2",
+            "correct_value": "2y^2",
+            "allowed_keys": [
+              "2y^2",
+              "y^2",
+              "2y",
+              "-2y^2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس الجديد \\( -2 \\) فاقسم عليه، ثم \\( y^{-2} = \\frac{1}{y^2} \\) والإشارة سالبة."
+          }
+        ],
+        "hint": "الأس الجديد \\( -2 \\) فاقسم عليه، ثم \\( y^{-2} = \\frac{1}{y^2} \\) والإشارة سالبة.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب تكامل الطرف الأيسر. الطريقة: القاعدة: أضف \\( 1 \\) للأس واقسم على الأس الجديد: \\( -3+1=-2 \\). السبب: هذه قاعدة تكامل القوى.",
+        "think": "الأس الجديد \\( -2 \\) فاقسم عليه، ثم \\( y^{-2} = \\frac{1}{y^2} \\) والإشارة سالبة.",
+        "html_structure": "\\int y^{-3} dy = \\frac{y^{-2}}{{q_5_3_231_1_s5_i1}} = -\\frac{1}{{q_5_3_231_1_s5_i2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب تكامل الطرف الأيمن. الطريقة: تكامل \\( e^x \\) هو \\( e^x \\) نفسه، فنضرب في العدد \\( 2 \\) ونضيف الثابت لاحقاً. السبب: لأن مشتقة \\( e^x \\) هي نفسها.",
+        "equation_template": "2\\int e^x dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "q6_s6_1",
+            "correct_answer": "2e^x",
+            "options": [
+              "2e^x",
+              "e^{2x}",
+              "2xe^x",
+              "e^x"
+            ],
+            "id": "q_5_3_231_1_s6_i1",
+            "correct_value": "2e^x",
+            "allowed_keys": [
+              "2e^x",
+              "e^{2x}",
+              "2xe^x",
+              "e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( 2 \\) ثم \\( e^x \\) بجانبها."
+          }
+        ],
+        "hint": "اكتب \\( 2 \\) ثم \\( e^x \\) بجانبها.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب تكامل الطرف الأيمن. الطريقة: تكامل \\( e^x \\) هو \\( e^x \\) نفسه، فنضرب في العدد \\( 2 \\) ونضيف الثابت لاحقاً. السبب: لأن مشتقة \\( e^x \\) هي نفسها.",
+        "think": "اكتب \\( 2 \\) ثم \\( e^x \\) بجانبها.",
+        "html_structure": "2\\int e^x dx = {q_5_3_231_1_s6_i1} + c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب المعادلة بعد التكامل. الطريقة: اجمع نتيجتي الطرفين في معادلة واحدة. السبب: هذا هو الحل العام قبل تعويض الشرط.",
+        "equation_template": "-\\frac{1}{{input_1}} = {input_2} + c",
+        "inputs": [
+          {
+            "input_id": "q6_s7_1",
+            "correct_answer": "2y^2",
+            "options": [
+              "2y^2",
+              "y^2",
+              "2y",
+              "-2y^2"
+            ],
+            "id": "q_5_3_231_1_s7_i1",
+            "correct_value": "2y^2",
+            "allowed_keys": [
+              "2y^2",
+              "y^2",
+              "2y",
+              "-2y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل الناتجين من الخطوتين السابقتين كما هما."
+          },
+          {
+            "input_id": "q6_s7_2",
+            "correct_answer": "2e^x",
+            "options": [
+              "2e^x",
+              "e^x",
+              "2x",
+              "e^{2x}"
+            ],
+            "id": "q_5_3_231_1_s7_i2",
+            "correct_value": "2e^x",
+            "allowed_keys": [
+              "2e^x",
+              "e^x",
+              "2x",
+              "e^{2x}"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل الناتجين من الخطوتين السابقتين كما هما."
+          }
+        ],
+        "hint": "انقل الناتجين من الخطوتين السابقتين كما هما.",
+        "related_topics": [
+          "الحل العام"
+        ],
+        "step_id": "math345_5_3_231_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب المعادلة بعد التكامل. الطريقة: اجمع نتيجتي الطرفين في معادلة واحدة. السبب: هذا هو الحل العام قبل تعويض الشرط.",
+        "think": "انقل الناتجين من الخطوتين السابقتين كما هما.",
+        "html_structure": "-\\frac{1}{{q_5_3_231_1_s7_i1}} = {q_5_3_231_1_s7_i2} + c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نعوّض الشرط \\( x=0, y=\\frac12 \\) لإيجاد \\( c \\). الطريقة: ضع \\( y^2=\\frac14 \\) و \\( e^0=1 \\) في المعادلة. السبب: الشرط الابتدائي يحدد الثابت.",
+        "equation_template": "-\\frac{1}{2 \\times {input_1}} = 2 \\times {input_2} + c",
+        "inputs": [
+          {
+            "input_id": "q6_s8_1",
+            "correct_answer": "1/4",
+            "options": [
+              "1/4",
+              "1/2",
+              "1",
+              "2"
+            ],
+            "id": "q_5_3_231_1_s8_i1",
+            "correct_value": "1/4",
+            "allowed_keys": [
+              "1/4",
+              "1/2",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مربع \\( \\frac12 \\) هو \\( \\frac14 \\)، وأي عدد أسه صفر يساوي \\( 1 \\)."
+          },
+          {
+            "input_id": "q6_s8_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "e"
+            ],
+            "id": "q_5_3_231_1_s8_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "e"
+            ],
+            "label": "القيمة 2",
+            "hint": "مربع \\( \\frac12 \\) هو \\( \\frac14 \\)، وأي عدد أسه صفر يساوي \\( 1 \\)."
+          }
+        ],
+        "hint": "مربع \\( \\frac12 \\) هو \\( \\frac14 \\)، وأي عدد أسه صفر يساوي \\( 1 \\).",
+        "related_topics": [
+          "الشرط الابتدائي"
+        ],
+        "step_id": "math345_5_3_231_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعوّض الشرط \\( x=0, y=\\frac12 \\) لإيجاد \\( c \\). الطريقة: ضع \\( y^2=\\frac14 \\) و \\( e^0=1 \\) في المعادلة. السبب: الشرط الابتدائي يحدد الثابت.",
+        "think": "مربع \\( \\frac12 \\) هو \\( \\frac14 \\)، وأي عدد أسه صفر يساوي \\( 1 \\).",
+        "html_structure": "-\\frac{1}{2 \\times {q_5_3_231_1_s8_i1}} = 2 \\times {q_5_3_231_1_s8_i2} + c"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب قيمة \\( c \\). الطريقة: المقام \\( 2\\times\\frac14=\\frac12 \\) فيصبح الكسر \\( -2 \\)، ثم نعزل \\( c \\). السبب: لنحصل على رقم ثابت.",
+        "equation_template": "{input_1} = {input_2} + c \\Rightarrow c = {input_3}",
+        "inputs": [
+          {
+            "input_id": "q6_s9_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "-4"
+            ],
+            "id": "q_5_3_231_1_s9_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "-4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2 = 2 + c \\) فاطرح \\( 2 \\) من الطرفين: \\( -2-2 \\)."
+          },
+          {
+            "input_id": "q6_s9_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "id": "q_5_3_231_1_s9_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2 = 2 + c \\) فاطرح \\( 2 \\) من الطرفين: \\( -2-2 \\)."
+          },
+          {
+            "input_id": "q6_s9_3",
+            "correct_answer": "-4",
+            "options": [
+              "-4",
+              "4",
+              "0",
+              "-2"
+            ],
+            "id": "q_5_3_231_1_s9_i3",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-4",
+              "4",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( -2 = 2 + c \\) فاطرح \\( 2 \\) من الطرفين: \\( -2-2 \\)."
+          }
+        ],
+        "hint": "\\( -2 = 2 + c \\) فاطرح \\( 2 \\) من الطرفين: \\( -2-2 \\).",
+        "related_topics": [
+          "حل معادلة خطية"
+        ],
+        "step_id": "math345_5_3_231_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب قيمة \\( c \\). الطريقة: المقام \\( 2\\times\\frac14=\\frac12 \\) فيصبح الكسر \\( -2 \\)، ثم نعزل \\( c \\). السبب: لنحصل على رقم ثابت.",
+        "think": "\\( -2 = 2 + c \\) فاطرح \\( 2 \\) من الطرفين: \\( -2-2 \\).",
+        "html_structure": "{q_5_3_231_1_s9_i1} = {q_5_3_231_1_s9_i2} + c \\Rightarrow c = {q_5_3_231_1_s9_i3}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نكتب المعادلة بعد تعويض \\( c \\). الطريقة: ضع \\( c=-4 \\) في \\( 2e^x + c \\). السبب: لنحصل على الحل الخاص.",
+        "equation_template": "-\\frac{1}{2y^2} = {input_1}e^x {input_2}",
+        "inputs": [
+          {
+            "input_id": "q6_s10_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "id": "q_5_3_231_1_s10_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2e^x + (-4) \\) تعني \\( 2e^x - 4 \\)."
+          },
+          {
+            "input_id": "q6_s10_2",
+            "correct_answer": "- 4",
+            "options": [
+              "- 4",
+              "+ 4",
+              "- 2",
+              "+ 2"
+            ],
+            "id": "q_5_3_231_1_s10_i2",
+            "correct_value": "- 4",
+            "allowed_keys": [
+              "- 4",
+              "+ 4",
+              "- 2",
+              "+ 2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2e^x + (-4) \\) تعني \\( 2e^x - 4 \\)."
+          }
+        ],
+        "hint": "\\( 2e^x + (-4) \\) تعني \\( 2e^x - 4 \\).",
+        "related_topics": [
+          "الحل الخاص"
+        ],
+        "step_id": "math345_5_3_231_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نكتب المعادلة بعد تعويض \\( c \\). الطريقة: ضع \\( c=-4 \\) في \\( 2e^x + c \\). السبب: لنحصل على الحل الخاص.",
+        "think": "\\( 2e^x + (-4) \\) تعني \\( 2e^x - 4 \\).",
+        "html_structure": "-\\frac{1}{2y^2} = {q_5_3_231_1_s10_i1}e^x {q_5_3_231_1_s10_i2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نتخلص من الكسر السالب. الطريقة: اضرب الطرفين في \\( -2 \\): فيصبح \\( \\frac{1}{y^2} \\) في اليسار، وفي اليمين \\( -2\\cdot 2e^x \\) و \\( -2\\cdot(-4) \\). السبب: لتبسيط المعادلة.",
+        "equation_template": "\\frac{1}{y^2} = {input_1}e^x + {input_2}",
+        "inputs": [
+          {
+            "input_id": "q6_s11_1",
+            "correct_answer": "-4",
+            "options": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "id": "q_5_3_231_1_s11_i1",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-4",
+              "4",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2\\times 2 = -4 \\) و \\( -2 \\times -4 = 8 \\)."
+          },
+          {
+            "input_id": "q6_s11_2",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "-8",
+              "4",
+              "-4"
+            ],
+            "id": "q_5_3_231_1_s11_i2",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "-8",
+              "4",
+              "-4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2\\times 2 = -4 \\) و \\( -2 \\times -4 = 8 \\)."
+          }
+        ],
+        "hint": "\\( -2\\times 2 = -4 \\) و \\( -2 \\times -4 = 8 \\).",
+        "related_topics": [
+          "ضرب الطرفين"
+        ],
+        "step_id": "math345_5_3_231_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نتخلص من الكسر السالب. الطريقة: اضرب الطرفين في \\( -2 \\): فيصبح \\( \\frac{1}{y^2} \\) في اليسار، وفي اليمين \\( -2\\cdot 2e^x \\) و \\( -2\\cdot(-4) \\). السبب: لتبسيط المعادلة.",
+        "think": "\\( -2\\times 2 = -4 \\) و \\( -2 \\times -4 = 8 \\).",
+        "html_structure": "\\frac{1}{y^2} = {q_5_3_231_1_s11_i1}e^x + {q_5_3_231_1_s11_i2}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نعزل \\( y \\). الطريقة: اقلب الطرفين ثم خذ الجذر التربيعي، ونحدد الإشارة بالشرط \\( y(0)=\\frac12>0 \\) فنأخذ الموجب. السبب: القلب يعطي \\( y^2 \\)، والشرط يحدد الإشارة (التحقق: \\( x=0 \\) يعطي \\( \\frac{1}{\\sqrt4}=\\frac12 \\)).",
+        "equation_template": "y^2 = \\frac{1}{{input_1}} \\Rightarrow y = \\frac{1}{\\sqrt{{input_2}}}",
+        "inputs": [
+          {
+            "input_id": "q6_s12_1",
+            "correct_answer": "8-4e^x",
+            "options": [
+              "8-4e^x",
+              "4e^x-8",
+              "8+4e^x",
+              "4-8e^x"
+            ],
+            "id": "q_5_3_231_1_s12_i1",
+            "correct_value": "8-4e^x",
+            "allowed_keys": [
+              "8-4e^x",
+              "4e^x-8",
+              "8+4e^x",
+              "4-8e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام بعد القلب هو \\( 8 - 4e^x \\) في الخطوة السابقة، ضعه في الفراغين."
+          },
+          {
+            "input_id": "q6_s12_2",
+            "correct_answer": "8-4e^x",
+            "options": [
+              "8-4e^x",
+              "4e^x-8",
+              "8+4e^x",
+              "4-8e^x"
+            ],
+            "id": "q_5_3_231_1_s12_i2",
+            "correct_value": "8-4e^x",
+            "allowed_keys": [
+              "8-4e^x",
+              "4e^x-8",
+              "8+4e^x",
+              "4-8e^x"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام بعد القلب هو \\( 8 - 4e^x \\) في الخطوة السابقة، ضعه في الفراغين."
+          }
+        ],
+        "hint": "المقام بعد القلب هو \\( 8 - 4e^x \\) في الخطوة السابقة، ضعه في الفراغين.",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_5_3_231_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نعزل \\( y \\). الطريقة: اقلب الطرفين ثم خذ الجذر التربيعي، ونحدد الإشارة بالشرط \\( y(0)=\\frac12>0 \\) فنأخذ الموجب. السبب: القلب يعطي \\( y^2 \\)، والشرط يحدد الإشارة (التحقق: \\( x=0 \\) يعطي \\( \\frac{1}{\\sqrt4}=\\frac12 \\)).",
+        "think": "المقام بعد القلب هو \\( 8 - 4e^x \\) في الخطوة السابقة، ضعه في الفراغين.",
+        "html_structure": "y^2 = \\frac{1}{{q_5_3_231_1_s12_i1}} \\Rightarrow y = \\frac{1}{\\sqrt{{q_5_3_231_1_s12_i2}}}"
+      }
+    ]
+  },
+  {
+    "id_number": "q7_p231",
+    "page_number": 231,
+    "question_number": "7",
+    "question_text": "حل المعادلة \\( \\frac{dy}{dx} = e^{2x+y} \\) عندما \\( x = 0, y = 0 \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( y = \\ln\\left|\\frac{2}{3-e^{2x}}\\right| \\)",
+    "source_file": "رياضيات5/page_009_p231.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": 231,
+      "page_number": 231,
+      "file_page_number": 9,
+      "part_number": 1
+    },
+    "chapter": 5,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png",
+    "title": "حل المعادلة \\( \\frac{dy}{dx} = e^{2x+y} \\) عندما \\( x = 0, y = 0 \\)",
+    "number": "7",
+    "model_solution": "\\( y = \\ln\\left|\\frac{2}{3-e^{2x}}\\right| \\)",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحلل الأس المركب. الطريقة: استخدم \\( e^{a+b}=e^a e^b \\). السبب: لنفصل \\( x \\) عن \\( y \\).",
+        "equation_template": "\\frac{dy}{dx} = e^{{input_1}} \\cdot e^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q7_s1_1",
+            "correct_answer": "2x",
+            "options": [
+              "2x",
+              "x",
+              "2y",
+              "x+y"
+            ],
+            "id": "q_5_3_231_2_s1_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "2y",
+              "x+y"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس هو \\( 2x+y \\): ما فيه \\( x \\) في عامل، وما فيه \\( y \\) في عامل."
+          },
+          {
+            "input_id": "q7_s1_2",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "2y",
+              "x",
+              "1"
+            ],
+            "id": "q_5_3_231_2_s1_i2",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "2y",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس هو \\( 2x+y \\): ما فيه \\( x \\) في عامل، وما فيه \\( y \\) في عامل."
+          }
+        ],
+        "hint": "الأس هو \\( 2x+y \\): ما فيه \\( x \\) في عامل، وما فيه \\( y \\) في عامل.",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_5_3_231_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحلل الأس المركب. الطريقة: استخدم \\( e^{a+b}=e^a e^b \\). السبب: لنفصل \\( x \\) عن \\( y \\).",
+        "think": "الأس هو \\( 2x+y \\): ما فيه \\( x \\) في عامل، وما فيه \\( y \\) في عامل.",
+        "html_structure": "\\frac{dy}{dx} = e^{{q_5_3_231_2_s1_i1}} \\cdot e^{{q_5_3_231_2_s1_i2}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نفصل المتغيرات. الطريقة: اضرب في \\( dx \\) ثم اقسم على \\( e^y \\). السبب: ليبقى \\( y \\) مع \\( dy \\) فقط.",
+        "equation_template": "\\frac{dy}{{input_1}} = {input_2} \\, dx",
+        "inputs": [
+          {
+            "input_id": "q7_s2_1",
+            "correct_answer": "e^y",
+            "options": [
+              "e^y",
+              "e^{2x}",
+              "y",
+              "e"
+            ],
+            "id": "q_5_3_231_2_s2_i1",
+            "correct_value": "e^y",
+            "allowed_keys": [
+              "e^y",
+              "e^{2x}",
+              "y",
+              "e"
+            ],
+            "label": "القيمة 1",
+            "hint": "القاسم \\( e^y \\) وما تبقى مع \\( dx \\) هو \\( e^{2x} \\)."
+          },
+          {
+            "input_id": "q7_s2_2",
+            "correct_answer": "e^{2x}",
+            "options": [
+              "e^{2x}",
+              "e^x",
+              "e^y",
+              "2x"
+            ],
+            "id": "q_5_3_231_2_s2_i2",
+            "correct_value": "e^{2x}",
+            "allowed_keys": [
+              "e^{2x}",
+              "e^x",
+              "e^y",
+              "2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "القاسم \\( e^y \\) وما تبقى مع \\( dx \\) هو \\( e^{2x} \\)."
+          }
+        ],
+        "hint": "القاسم \\( e^y \\) وما تبقى مع \\( dx \\) هو \\( e^{2x} \\).",
+        "related_topics": [
+          "فصل المتغيرات"
+        ],
+        "step_id": "math345_5_3_231_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نفصل المتغيرات. الطريقة: اضرب في \\( dx \\) ثم اقسم على \\( e^y \\). السبب: ليبقى \\( y \\) مع \\( dy \\) فقط.",
+        "think": "القاسم \\( e^y \\) وما تبقى مع \\( dx \\) هو \\( e^{2x} \\).",
+        "html_structure": "\\frac{dy}{{q_5_3_231_2_s2_i1}} = {q_5_3_231_2_s2_i2} \\, dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب القسمة كأس سالب. الطريقة: \\( \\frac{1}{e^y}=e^{-y} \\). السبب: لتسهيل التكامل.",
+        "equation_template": "{input_1} \\, dy = e^{2x} \\, {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7_s3_1",
+            "correct_answer": "e^{-y}",
+            "options": [
+              "e^{-y}",
+              "e^{y}",
+              "-e^y",
+              "e^{2y}"
+            ],
+            "id": "q_5_3_231_2_s3_i1",
+            "correct_value": "e^{-y}",
+            "allowed_keys": [
+              "e^{-y}",
+              "e^{y}",
+              "-e^y",
+              "e^{2y}"
+            ],
+            "label": "القيمة 1",
+            "hint": "غيّر إشارة الأس من \\( y \\) إلى \\( -y \\)."
+          },
+          {
+            "input_id": "q7_s3_2",
+            "correct_answer": "dx",
+            "options": [
+              "dx",
+              "dy",
+              "x",
+              "y"
+            ],
+            "id": "q_5_3_231_2_s3_i2",
+            "correct_value": "dx",
+            "allowed_keys": [
+              "dx",
+              "dy",
+              "x",
+              "y"
+            ],
+            "label": "القيمة 2",
+            "hint": "غيّر إشارة الأس من \\( y \\) إلى \\( -y \\)."
+          }
+        ],
+        "hint": "غيّر إشارة الأس من \\( y \\) إلى \\( -y \\).",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_5_3_231_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب القسمة كأس سالب. الطريقة: \\( \\frac{1}{e^y}=e^{-y} \\). السبب: لتسهيل التكامل.",
+        "think": "غيّر إشارة الأس من \\( y \\) إلى \\( -y \\).",
+        "html_structure": "{q_5_3_231_2_s3_i1} \\, dy = e^{2x} \\, {q_5_3_231_2_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نُدخل التكامل. الطريقة: ضع \\( \\int \\) على الطرفين. السبب: التكامل يعكس الاشتقاق.",
+        "equation_template": "\\int {input_1} dy = \\int {input_2} dx",
+        "inputs": [
+          {
+            "input_id": "q7_s4_1",
+            "correct_answer": "e^{-y}",
+            "options": [
+              "e^{-y}",
+              "e^y",
+              "y",
+              "e^{2y}"
+            ],
+            "id": "q_5_3_231_2_s4_i1",
+            "correct_value": "e^{-y}",
+            "allowed_keys": [
+              "e^{-y}",
+              "e^y",
+              "y",
+              "e^{2y}"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل ما أمام \\( dy \\) وما أمام \\( dx \\) كما هما."
+          },
+          {
+            "input_id": "q7_s4_2",
+            "correct_answer": "e^{2x}",
+            "options": [
+              "e^{2x}",
+              "e^x",
+              "2x",
+              "e^{-x}"
+            ],
+            "id": "q_5_3_231_2_s4_i2",
+            "correct_value": "e^{2x}",
+            "allowed_keys": [
+              "e^{2x}",
+              "e^x",
+              "2x",
+              "e^{-x}"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل ما أمام \\( dy \\) وما أمام \\( dx \\) كما هما."
+          }
+        ],
+        "hint": "انقل ما أمام \\( dy \\) وما أمام \\( dx \\) كما هما.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نُدخل التكامل. الطريقة: ضع \\( \\int \\) على الطرفين. السبب: التكامل يعكس الاشتقاق.",
+        "think": "انقل ما أمام \\( dy \\) وما أمام \\( dx \\) كما هما.",
+        "html_structure": "\\int {q_5_3_231_2_s4_i1} dy = \\int {q_5_3_231_2_s4_i2} dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب تكامل الطرف الأيسر. الطريقة: \\( \\int e^{-y}dy \\): نقسم على مشتقة الأس \\( -1 \\). السبب: لأن مشتقة \\( -y \\) هي \\( -1 \\).",
+        "equation_template": "\\int e^{-y}dy = \\frac{e^{-y}}{{input_1}} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7_s5_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-y",
+              "2"
+            ],
+            "id": "q_5_3_231_2_s5_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-y",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "القسمة على \\( -1 \\) تغيّر الإشارة فقط."
+          },
+          {
+            "input_id": "q7_s5_2",
+            "correct_answer": "-e^{-y}",
+            "options": [
+              "-e^{-y}",
+              "e^{-y}",
+              "e^{y}",
+              "-e^y"
+            ],
+            "id": "q_5_3_231_2_s5_i2",
+            "correct_value": "-e^{-y}",
+            "allowed_keys": [
+              "-e^{-y}",
+              "e^{-y}",
+              "e^{y}",
+              "-e^y"
+            ],
+            "label": "القيمة 2",
+            "hint": "القسمة على \\( -1 \\) تغيّر الإشارة فقط."
+          }
+        ],
+        "hint": "القسمة على \\( -1 \\) تغيّر الإشارة فقط.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب تكامل الطرف الأيسر. الطريقة: \\( \\int e^{-y}dy \\): نقسم على مشتقة الأس \\( -1 \\). السبب: لأن مشتقة \\( -y \\) هي \\( -1 \\).",
+        "think": "القسمة على \\( -1 \\) تغيّر الإشارة فقط.",
+        "html_structure": "\\int e^{-y}dy = \\frac{e^{-y}}{{q_5_3_231_2_s5_i1}} = {q_5_3_231_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب تكامل الطرف الأيمن. الطريقة: نقسم على مشتقة الأس \\( 2x \\) وهي \\( 2 \\). السبب: \\( \\frac{d}{dx}e^{2x}=2e^{2x} \\).",
+        "equation_template": "\\int e^{2x}dx = \\frac{1}{{input_1}} e^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q7_s6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "x",
+              "-2"
+            ],
+            "id": "q_5_3_231_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "x",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الفراغ الأول هو مشتقة \\( 2x \\)، والثاني هو الأس نفسه."
+          },
+          {
+            "input_id": "q7_s6_2",
+            "correct_answer": "2x",
+            "options": [
+              "2x",
+              "x",
+              "2",
+              "y"
+            ],
+            "id": "q_5_3_231_2_s6_i2",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "2",
+              "y"
+            ],
+            "label": "القيمة 2",
+            "hint": "الفراغ الأول هو مشتقة \\( 2x \\)، والثاني هو الأس نفسه."
+          }
+        ],
+        "hint": "الفراغ الأول هو مشتقة \\( 2x \\)، والثاني هو الأس نفسه.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب تكامل الطرف الأيمن. الطريقة: نقسم على مشتقة الأس \\( 2x \\) وهي \\( 2 \\). السبب: \\( \\frac{d}{dx}e^{2x}=2e^{2x} \\).",
+        "think": "الفراغ الأول هو مشتقة \\( 2x \\)، والثاني هو الأس نفسه.",
+        "html_structure": "\\int e^{2x}dx = \\frac{1}{{q_5_3_231_2_s6_i1}} e^{{q_5_3_231_2_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب المعادلة. الطريقة: جمع الناتجين مع \\( c \\). السبب: الحل العام.",
+        "equation_template": "{input_1} = \\frac{{input_2}}{2} + c",
+        "inputs": [
+          {
+            "input_id": "q7_s7_1",
+            "correct_answer": "-e^{-y}",
+            "options": [
+              "-e^{-y}",
+              "e^{-y}",
+              "-e^{y}",
+              "e^y"
+            ],
+            "id": "q_5_3_231_2_s7_i1",
+            "correct_value": "-e^{-y}",
+            "allowed_keys": [
+              "-e^{-y}",
+              "e^{-y}",
+              "-e^{y}",
+              "e^y"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل نتائج الخطوتين السابقتين."
+          },
+          {
+            "input_id": "q7_s7_2",
+            "correct_answer": "e^{2x}",
+            "options": [
+              "e^{2x}",
+              "e^x",
+              "e^{-2x}",
+              "2e^x"
+            ],
+            "id": "q_5_3_231_2_s7_i2",
+            "correct_value": "e^{2x}",
+            "allowed_keys": [
+              "e^{2x}",
+              "e^x",
+              "e^{-2x}",
+              "2e^x"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل نتائج الخطوتين السابقتين."
+          }
+        ],
+        "hint": "انقل نتائج الخطوتين السابقتين.",
+        "related_topics": [
+          "الحل العام"
+        ],
+        "step_id": "math345_5_3_231_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب المعادلة. الطريقة: جمع الناتجين مع \\( c \\). السبب: الحل العام.",
+        "think": "انقل نتائج الخطوتين السابقتين.",
+        "html_structure": "{q_5_3_231_2_s7_i1} = \\frac{{q_5_3_231_2_s7_i2}}{2} + c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نعوّض \\( x=0,y=0 \\). الطريقة: \\( e^0=1 \\) لكل منها. السبب: لإيجاد \\( c \\).",
+        "equation_template": "-e^{{input_1}} = \\frac{e^{{input_2}}}{2} + c \\Rightarrow {input_3} = \\frac12 + c",
+        "inputs": [
+          {
+            "input_id": "q7_s8_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_5_3_231_2_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأسان صفر، و \\( -e^0=-1 \\)."
+          },
+          {
+            "input_id": "q7_s8_2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_5_3_231_2_s8_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأسان صفر، و \\( -e^0=-1 \\)."
+          },
+          {
+            "input_id": "q7_s8_3",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "id": "q_5_3_231_2_s8_i3",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 3",
+            "hint": "الأسان صفر، و \\( -e^0=-1 \\)."
+          }
+        ],
+        "hint": "الأسان صفر، و \\( -e^0=-1 \\).",
+        "related_topics": [
+          "الشرط الابتدائي"
+        ],
+        "step_id": "math345_5_3_231_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعوّض \\( x=0,y=0 \\). الطريقة: \\( e^0=1 \\) لكل منها. السبب: لإيجاد \\( c \\).",
+        "think": "الأسان صفر، و \\( -e^0=-1 \\).",
+        "html_structure": "-e^{{q_5_3_231_2_s8_i1}} = \\frac{e^{{q_5_3_231_2_s8_i2}}}{2} + c \\Rightarrow {q_5_3_231_2_s8_i3} = \\frac12 + c"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( c \\). الطريقة: اطرح \\( \\frac12 \\) من \\( -1 \\). السبب: لعزل الثابت.",
+        "equation_template": "c = -1 - \\frac12 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7_s9_1",
+            "correct_answer": "-3/2",
+            "options": [
+              "-3/2",
+              "3/2",
+              "-1/2",
+              "1/2"
+            ],
+            "id": "q_5_3_231_2_s9_i1",
+            "correct_value": "-3/2",
+            "allowed_keys": [
+              "-3/2",
+              "3/2",
+              "-1/2",
+              "1/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1 = -\\frac22 \\) ثم \\( -\\frac22-\\frac12 \\)."
+          }
+        ],
+        "hint": "\\( -1 = -\\frac22 \\) ثم \\( -\\frac22-\\frac12 \\).",
+        "related_topics": [
+          "الكسور"
+        ],
+        "step_id": "math345_5_3_231_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( c \\). الطريقة: اطرح \\( \\frac12 \\) من \\( -1 \\). السبب: لعزل الثابت.",
+        "think": "\\( -1 = -\\frac22 \\) ثم \\( -\\frac22-\\frac12 \\).",
+        "html_structure": "c = -1 - \\frac12 = {q_5_3_231_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نعوّض \\( c \\) ونوحّد المقام. الطريقة: \\( \\frac{e^{2x}}{2}-\\frac32=\\frac{e^{2x}-3}{2} \\). السبب: لتسهيل العزل.",
+        "equation_template": "-e^{-y} = \\frac{e^{2x} {input_1}}{2}",
+        "inputs": [
+          {
+            "input_id": "q7_s10_1",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "+3",
+              "-1",
+              "+1"
+            ],
+            "id": "q_5_3_231_2_s10_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "+3",
+              "-1",
+              "+1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الكسران لهما نفس المقام فاجمع البسطين."
+          }
+        ],
+        "hint": "الكسران لهما نفس المقام فاجمع البسطين.",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_5_3_231_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نعوّض \\( c \\) ونوحّد المقام. الطريقة: \\( \\frac{e^{2x}}{2}-\\frac32=\\frac{e^{2x}-3}{2} \\). السبب: لتسهيل العزل.",
+        "think": "الكسران لهما نفس المقام فاجمع البسطين.",
+        "html_structure": "-e^{-y} = \\frac{e^{2x} {q_5_3_231_2_s10_i1}}{2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نتخلص من الإشارة السالبة. الطريقة: اضرب الطرفين في \\( -1 \\): يصبح البسط \\( 3-e^{2x} \\). السبب: لعزل \\( e^{-y} \\).",
+        "equation_template": "e^{-y} = \\frac{{input_1} - e^{2x}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q7_s11_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "1",
+              "2"
+            ],
+            "id": "q_5_3_231_2_s11_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "عكس إشارات البسط يجعل \\( -3 \\) تصبح \\( +3 \\)."
+          },
+          {
+            "input_id": "q7_s11_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "-2",
+              "1"
+            ],
+            "id": "q_5_3_231_2_s11_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "عكس إشارات البسط يجعل \\( -3 \\) تصبح \\( +3 \\)."
+          }
+        ],
+        "hint": "عكس إشارات البسط يجعل \\( -3 \\) تصبح \\( +3 \\).",
+        "related_topics": [
+          "ضرب الطرفين"
+        ],
+        "step_id": "math345_5_3_231_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نتخلص من الإشارة السالبة. الطريقة: اضرب الطرفين في \\( -1 \\): يصبح البسط \\( 3-e^{2x} \\). السبب: لعزل \\( e^{-y} \\).",
+        "think": "عكس إشارات البسط يجعل \\( -3 \\) تصبح \\( +3 \\).",
+        "html_structure": "e^{-y} = \\frac{{q_5_3_231_2_s11_i1} - e^{2x}}{{q_5_3_231_2_s11_i2}}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نعزل \\( y \\). الطريقة: اقلب الطرفين فيصبح \\( e^y \\)، ثم خذ \\( \\ln \\) للطرفين. السبب: \\( \\ln e^y = y \\).",
+        "equation_template": "e^{y} = \\frac{{input_1}}{3 - e^{2x}} \\Rightarrow y = \\ln \\left| \\frac{2}{{input_2}} \\right|",
+        "inputs": [
+          {
+            "input_id": "q7_s12_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "e^{2x}"
+            ],
+            "id": "q_5_3_231_2_s12_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "e^{2x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "القلب يضع \\( 2 \\) في البسط و \\( 3-e^{2x} \\) في المقام."
+          },
+          {
+            "input_id": "q7_s12_2",
+            "correct_answer": "3-e^{2x}",
+            "options": [
+              "3-e^{2x}",
+              "e^{2x}-3",
+              "3+e^{2x}",
+              "2"
+            ],
+            "id": "q_5_3_231_2_s12_i2",
+            "correct_value": "3-e^{2x}",
+            "allowed_keys": [
+              "3-e^{2x}",
+              "e^{2x}-3",
+              "3+e^{2x}",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "القلب يضع \\( 2 \\) في البسط و \\( 3-e^{2x} \\) في المقام."
+          }
+        ],
+        "hint": "القلب يضع \\( 2 \\) في البسط و \\( 3-e^{2x} \\) في المقام.",
+        "related_topics": [
+          "اللوغاريتم الطبيعي"
+        ],
+        "step_id": "math345_5_3_231_2_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نعزل \\( y \\). الطريقة: اقلب الطرفين فيصبح \\( e^y \\)، ثم خذ \\( \\ln \\) للطرفين. السبب: \\( \\ln e^y = y \\).",
+        "think": "القلب يضع \\( 2 \\) في البسط و \\( 3-e^{2x} \\) في المقام.",
+        "html_structure": "e^{y} = \\frac{{q_5_3_231_2_s12_i1}}{3 - e^{2x}} \\Rightarrow y = \\ln \\left| \\frac{2}{{q_5_3_231_2_s12_i2}} \\right|"
+      }
+    ]
+  },
+  {
+    "id_number": "q8_p231",
+    "page_number": 231,
+    "question_number": "8",
+    "question_text": "حل المعادلة \\( e^x dx - y^3 dy = 0 \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( y = \\pm\\sqrt[4]{4e^x + c_1} \\)",
+    "source_file": "رياضيات5/page_009_p231.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": 231,
+      "page_number": 231,
+      "file_page_number": 9,
+      "part_number": 1
+    },
+    "chapter": 5,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_009_diag_1_drawing.png",
+    "title": "حل المعادلة \\( e^x dx - y^3 dy = 0 \\)",
+    "number": "8",
+    "model_solution": "\\( y = \\pm\\sqrt[4]{4e^x + c_1} \\)",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نرتب المعادلة لنفصل المتغيرات. الطريقة: انقل \\( y^3dy \\) إلى الطرف الآخر. السبب: لنجمع \\( x \\) مع \\( dx \\) و \\( y \\) مع \\( dy \\).",
+        "equation_template": "e^x dx = {input_1} \\, dy",
+        "inputs": [
+          {
+            "input_id": "q8_s1_1",
+            "correct_answer": "y^3",
+            "options": [
+              "y^3",
+              "y",
+              "e^x",
+              "y^4"
+            ],
+            "id": "q_5_3_231_3_s1_i1",
+            "correct_value": "y^3",
+            "allowed_keys": [
+              "y^3",
+              "y",
+              "e^x",
+              "y^4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد المطروح \\( y^3 dy \\) ينتقل موجباً."
+          }
+        ],
+        "hint": "الحد المطروح \\( y^3 dy \\) ينتقل موجباً.",
+        "related_topics": [
+          "فصل المتغيرات"
+        ],
+        "step_id": "math345_5_3_231_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نرتب المعادلة لنفصل المتغيرات. الطريقة: انقل \\( y^3dy \\) إلى الطرف الآخر. السبب: لنجمع \\( x \\) مع \\( dx \\) و \\( y \\) مع \\( dy \\).",
+        "think": "الحد المطروح \\( y^3 dy \\) ينتقل موجباً.",
+        "html_structure": "e^x dx = {q_5_3_231_3_s1_i1} \\, dy"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتأكد أن المتغيرات منفصلة ونكتب التكامل. الطريقة: ضع \\( \\int \\) على الطرفين. السبب: التكامل ينهي المعادلة.",
+        "equation_template": "\\int {input_1} dy = \\int {input_2} dx",
+        "inputs": [
+          {
+            "input_id": "q8_s2_1",
+            "correct_answer": "y^3",
+            "options": [
+              "y^3",
+              "y",
+              "e^x",
+              "y^4"
+            ],
+            "id": "q_5_3_231_3_s2_i1",
+            "correct_value": "y^3",
+            "allowed_keys": [
+              "y^3",
+              "y",
+              "e^x",
+              "y^4"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما مع \\( dy \\) هو \\( y^3 \\)، وما مع \\( dx \\) هو \\( e^x \\)."
+          },
+          {
+            "input_id": "q8_s2_2",
+            "correct_answer": "e^x",
+            "options": [
+              "e^x",
+              "x",
+              "e^{-x}",
+              "1"
+            ],
+            "id": "q_5_3_231_3_s2_i2",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "e^x",
+              "x",
+              "e^{-x}",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ما مع \\( dy \\) هو \\( y^3 \\)، وما مع \\( dx \\) هو \\( e^x \\)."
+          }
+        ],
+        "hint": "ما مع \\( dy \\) هو \\( y^3 \\)، وما مع \\( dx \\) هو \\( e^x \\).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتأكد أن المتغيرات منفصلة ونكتب التكامل. الطريقة: ضع \\( \\int \\) على الطرفين. السبب: التكامل ينهي المعادلة.",
+        "think": "ما مع \\( dy \\) هو \\( y^3 \\)، وما مع \\( dx \\) هو \\( e^x \\).",
+        "html_structure": "\\int {q_5_3_231_3_s2_i1} dy = \\int {q_5_3_231_3_s2_i2} dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب تكامل \\( y^3 \\). الطريقة: أضف \\( 1 \\) للأس واقسم عليه. السبب: قاعدة القوى.",
+        "equation_template": "\\int y^3 dy = \\frac{y^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q8_s3_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "5"
+            ],
+            "id": "q_5_3_231_3_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3+1=4 \\) وهو أيضاً المقام."
+          },
+          {
+            "input_id": "q8_s3_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "5"
+            ],
+            "id": "q_5_3_231_3_s3_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3+1=4 \\) وهو أيضاً المقام."
+          }
+        ],
+        "hint": "\\( 3+1=4 \\) وهو أيضاً المقام.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب تكامل \\( y^3 \\). الطريقة: أضف \\( 1 \\) للأس واقسم عليه. السبب: قاعدة القوى.",
+        "think": "\\( 3+1=4 \\) وهو أيضاً المقام.",
+        "html_structure": "\\int y^3 dy = \\frac{y^{{q_5_3_231_3_s3_i1}}}{{q_5_3_231_3_s3_i2}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب تكامل \\( e^x \\). الطريقة: هو \\( e^x \\) نفسها. السبب: لأن مشتقتها نفسها.",
+        "equation_template": "\\int e^x dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "q8_s4_1",
+            "correct_answer": "e^x",
+            "options": [
+              "e^x",
+              "xe^x",
+              "e^{x}/x",
+              "1"
+            ],
+            "id": "q_5_3_231_3_s4_i1",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "e^x",
+              "xe^x",
+              "e^{x}/x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( e^x \\) وأضف \\( c \\)."
+          }
+        ],
+        "hint": "اكتب \\( e^x \\) وأضف \\( c \\).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_5_3_231_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب تكامل \\( e^x \\). الطريقة: هو \\( e^x \\) نفسها. السبب: لأن مشتقتها نفسها.",
+        "think": "اكتب \\( e^x \\) وأضف \\( c \\).",
+        "html_structure": "\\int e^x dx = {q_5_3_231_3_s4_i1} + c"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب المعادلة. الطريقة: اجمع الناتجين. السبب: الحل العام.",
+        "equation_template": "\\frac{y^4}{{input_1}} = {input_2} + c",
+        "inputs": [
+          {
+            "input_id": "q8_s5_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_5_3_231_3_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل ناتج الخطوتين."
+          },
+          {
+            "input_id": "q8_s5_2",
+            "correct_answer": "e^x",
+            "options": [
+              "e^x",
+              "x",
+              "e^{-x}",
+              "1"
+            ],
+            "id": "q_5_3_231_3_s5_i2",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "e^x",
+              "x",
+              "e^{-x}",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل ناتج الخطوتين."
+          }
+        ],
+        "hint": "انقل ناتج الخطوتين.",
+        "related_topics": [
+          "الحل العام"
+        ],
+        "step_id": "math345_5_3_231_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب المعادلة. الطريقة: اجمع الناتجين. السبب: الحل العام.",
+        "think": "انقل ناتج الخطوتين.",
+        "html_structure": "\\frac{y^4}{{q_5_3_231_3_s5_i1}} = {q_5_3_231_3_s5_i2} + c"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نتخلص من القسمة على \\( 4 \\). الطريقة: اضرب الطرفين في \\( 4 \\) (يشمل \\( c \\)). السبب: لعزل \\( y^4 \\).",
+        "equation_template": "y^4 = {input_1} e^x + {input_2} c",
+        "inputs": [
+          {
+            "input_id": "q8_s6_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_5_3_231_3_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "كل حد في الطرف الأيمن يُضرب في \\( 4 \\)."
+          },
+          {
+            "input_id": "q8_s6_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_5_3_231_3_s6_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "كل حد في الطرف الأيمن يُضرب في \\( 4 \\)."
+          }
+        ],
+        "hint": "كل حد في الطرف الأيمن يُضرب في \\( 4 \\).",
+        "related_topics": [
+          "ضرب الطرفين"
+        ],
+        "step_id": "math345_5_3_231_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نتخلص من القسمة على \\( 4 \\). الطريقة: اضرب الطرفين في \\( 4 \\) (يشمل \\( c \\)). السبب: لعزل \\( y^4 \\).",
+        "think": "كل حد في الطرف الأيمن يُضرب في \\( 4 \\).",
+        "html_structure": "y^4 = {q_5_3_231_3_s6_i1} e^x + {q_5_3_231_3_s6_i2} c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نختصر الثابت. الطريقة: اجعل \\( 4c = c_1 \\) فهو أيضاً ثابت اختياري. السبب: لتبسيط الشكل.",
+        "equation_template": "4c = c_1 \\Rightarrow y^4 = {input_1} + c_1",
+        "inputs": [
+          {
+            "input_id": "q8_s7_1",
+            "correct_answer": "4e^x",
+            "options": [
+              "4e^x",
+              "e^x",
+              "4x",
+              "c_1"
+            ],
+            "id": "q_5_3_231_3_s7_i1",
+            "correct_value": "4e^x",
+            "allowed_keys": [
+              "4e^x",
+              "e^x",
+              "4x",
+              "c_1"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( 4c \\) بـ \\( c_1 \\) وأبقِ \\( 4e^x \\)."
+          }
+        ],
+        "hint": "استبدل \\( 4c \\) بـ \\( c_1 \\) وأبقِ \\( 4e^x \\).",
+        "related_topics": [
+          "الثابت الاختياري"
+        ],
+        "step_id": "math345_5_3_231_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نختصر الثابت. الطريقة: اجعل \\( 4c = c_1 \\) فهو أيضاً ثابت اختياري. السبب: لتبسيط الشكل.",
+        "think": "استبدل \\( 4c \\) بـ \\( c_1 \\) وأبقِ \\( 4e^x \\).",
+        "html_structure": "4c = c_1 \\Rightarrow y^4 = {q_5_3_231_3_s7_i1} + c_1"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نعزل \\( y \\). الطريقة: خذ الجذر الرابع للطرفين، ولأنه زوجي نضع \\( \\pm \\). السبب: جذر زوجي ينتج إشارتين.",
+        "equation_template": "y = \\pm \\sqrt[{input_1}]{{input_2} + c_1}",
+        "inputs": [
+          {
+            "input_id": "q8_s8_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "8"
+            ],
+            "id": "q_5_3_231_3_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر من الرتبة نفسها لأس \\( y^4 \\)."
+          },
+          {
+            "input_id": "q8_s8_2",
+            "correct_answer": "4e^x",
+            "options": [
+              "4e^x",
+              "e^x",
+              "4x",
+              "y^4"
+            ],
+            "id": "q_5_3_231_3_s8_i2",
+            "correct_value": "4e^x",
+            "allowed_keys": [
+              "4e^x",
+              "e^x",
+              "4x",
+              "y^4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الجذر من الرتبة نفسها لأس \\( y^4 \\)."
+          }
+        ],
+        "hint": "الجذر من الرتبة نفسها لأس \\( y^4 \\).",
+        "related_topics": [
+          "الجذور"
+        ],
+        "step_id": "math345_5_3_231_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعزل \\( y \\). الطريقة: خذ الجذر الرابع للطرفين، ولأنه زوجي نضع \\( \\pm \\). السبب: جذر زوجي ينتج إشارتين.",
+        "think": "الجذر من الرتبة نفسها لأس \\( y^4 \\).",
+        "html_structure": "y = \\pm \\sqrt[{q_5_3_231_3_s8_i1}]{{q_5_3_231_3_s8_i2} + c_1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع الحل. الطريقة: اشتق \\( \\frac{y^4}{4} \\) بالنسبة لـ \\( y \\). السبب: ليظهر \\( y^3 \\) الأصلي.",
+        "equation_template": "\\frac{d}{dy}\\left(\\frac{y^4}{4}\\right) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q8_s9_1",
+            "correct_answer": "y^3",
+            "options": [
+              "y^3",
+              "y^4",
+              "4y^3",
+              "y^2"
+            ],
+            "id": "q_5_3_231_3_s9_i1",
+            "correct_value": "y^3",
+            "allowed_keys": [
+              "y^3",
+              "y^4",
+              "4y^3",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\times\\frac14=1 \\) والأس ينقص بواحد."
+          }
+        ],
+        "hint": "\\( 4\\times\\frac14=1 \\) والأس ينقص بواحد.",
+        "related_topics": [
+          "المراجعة"
+        ],
+        "step_id": "math345_5_3_231_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع الحل. الطريقة: اشتق \\( \\frac{y^4}{4} \\) بالنسبة لـ \\( y \\). السبب: ليظهر \\( y^3 \\) الأصلي.",
+        "think": "\\( 4\\times\\frac14=1 \\) والأس ينقص بواحد.",
+        "html_structure": "\\frac{d}{dy}\\left(\\frac{y^4}{4}\\right) = {q_5_3_231_3_s9_i1}"
+      }
+    ]
+  }
+]

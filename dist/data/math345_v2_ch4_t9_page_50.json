@@ -1,0 +1,684 @@
+[
+  {
+    "id_number": "q1_p50",
+    "page_number": 50,
+    "question_number": "1",
+    "question_text": "جد قيم الزاوية \\( x \\) إذا كان \\( \\cos x=\\frac12 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_050_diag_quadrants_diagram.png"
+    ],
+    "full_model_solution": "زاوية الإسناد \\( \\frac\\pi3 \\). \\( \\cos \\) موجب في الربعين الأول والرابع: \\( x=\\frac\\pi3 \\) أو \\( x=2\\pi-\\frac\\pi3=\\frac{5\\pi}{3} \\).",
+    "source_file": "رياضيلت 4/page_050_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 50
+    },
+    "chapter": 4,
+    "topic_index": 8,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_050_diag_quadrants_diagram.png",
+    "title": "جد قيم الزاوية \\( x \\) إذا كان \\( \\cos x=\\frac12 \\).",
+    "number": "1",
+    "model_solution": "زاوية الإسناد \\( \\frac\\pi3 \\). \\( \\cos \\) موجب في الربعين الأول والرابع: \\( x=\\frac\\pi3 \\) أو \\( x=2\\pi-\\frac\\pi3=\\frac{5\\pi}{3} \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد زاوية الإسناد. الطريقة: نتذكر الزاوية التي جيب تمامها \\( \\frac12 \\) في الربع الأول. السبب: لأن زاوية الإسناد دائماً حادة وموجبة.",
+        "equation_template": "\\cos\\theta=\\frac12\\Rightarrow\\theta={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\frac{\\pi}{3}",
+            "options": [
+              "\\frac{\\pi}{4}",
+              "\\frac{\\pi}{3}",
+              "\\frac{\\pi}{6}",
+              "\\frac{\\pi}{2}"
+            ],
+            "id": "q_4_9_50_1_s1_i1",
+            "correct_value": "\\frac{\\pi}{3}",
+            "allowed_keys": [
+              "\\frac{\\pi}{4}",
+              "\\frac{\\pi}{3}",
+              "\\frac{\\pi}{6}",
+              "\\frac{\\pi}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 60^\\circ \\) هي \\( \\frac\\pi3 \\)."
+          }
+        ],
+        "hint": "\\( 60^\\circ \\) هي \\( \\frac\\pi3 \\).",
+        "related_topics": [
+          "الزوايا الخاصة"
+        ],
+        "step_id": "math345_4_9_50_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد زاوية الإسناد. الطريقة: نتذكر الزاوية التي جيب تمامها \\( \\frac12 \\) في الربع الأول. السبب: لأن زاوية الإسناد دائماً حادة وموجبة.",
+        "think": "\\( 60^\\circ \\) هي \\( \\frac\\pi3 \\).",
+        "html_structure": "\\cos\\theta=\\frac12\\Rightarrow\\theta={q_4_9_50_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد الأرباع. الطريقة: قيمة \\( \\cos x \\) هنا موجبة، وجيب التمام موجب في الربع الأول والربع الرابع. السبب: لأن إشارة الدالة تحدد الأرباع الممكنة.",
+        "equation_template": "\\cos x>0\\Rightarrow\\text{Q}{input_1}\\text{ and Q}{input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "1",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_4_9_50_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الربعان الأول والرابع."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "4",
+            "options": [
+              "1",
+              "3",
+              "4",
+              "2"
+            ],
+            "id": "q_4_9_50_1_s2_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "1",
+              "3",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الربعان الأول والرابع."
+          }
+        ],
+        "hint": "الربعان الأول والرابع.",
+        "related_topics": [
+          "إشارات الدوال"
+        ],
+        "step_id": "math345_4_9_50_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد الأرباع. الطريقة: قيمة \\( \\cos x \\) هنا موجبة، وجيب التمام موجب في الربع الأول والربع الرابع. السبب: لأن إشارة الدالة تحدد الأرباع الممكنة.",
+        "think": "الربعان الأول والرابع.",
+        "html_structure": "\\cos x>0\\Rightarrow\\text{Q}{q_4_9_50_1_s2_i1}\\text{ and Q}{q_4_9_50_1_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب حل الربع الأول. الطريقة: في الربع الأول الزاوية تساوي زاوية الإسناد. السبب: لأن الزاوية نفسها حادة.",
+        "equation_template": "x=\\frac{\\pi}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "6",
+              "4",
+              "3"
+            ],
+            "id": "q_4_9_50_1_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "6",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام \\( 3 \\)."
+          }
+        ],
+        "hint": "المقام \\( 3 \\).",
+        "related_topics": [
+          "الأرباع"
+        ],
+        "step_id": "math345_4_9_50_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب حل الربع الأول. الطريقة: في الربع الأول الزاوية تساوي زاوية الإسناد. السبب: لأن الزاوية نفسها حادة.",
+        "think": "المقام \\( 3 \\).",
+        "html_structure": "x=\\frac{\\pi}{{q_4_9_50_1_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب قانون الربع الرابع. الطريقة: الزاوية = \\( 2\\pi \\) ناقص زاوية الإسناد. السبب: لأن الربع الرابع يقع قبل دورة كاملة.",
+        "equation_template": "x=2\\pi-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "\\frac{\\pi}{3}",
+            "options": [
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{3}",
+              "\\pi",
+              "\\frac{\\pi}{6}"
+            ],
+            "id": "q_4_9_50_1_s4_i1",
+            "correct_value": "\\frac{\\pi}{3}",
+            "allowed_keys": [
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{3}",
+              "\\pi",
+              "\\frac{\\pi}{6}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح زاوية الإسناد التي وجدتها."
+          }
+        ],
+        "hint": "اطرح زاوية الإسناد التي وجدتها.",
+        "related_topics": [
+          "الأرباع"
+        ],
+        "step_id": "math345_4_9_50_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب قانون الربع الرابع. الطريقة: الزاوية = \\( 2\\pi \\) ناقص زاوية الإسناد. السبب: لأن الربع الرابع يقع قبل دورة كاملة.",
+        "think": "اطرح زاوية الإسناد التي وجدتها.",
+        "html_structure": "x=2\\pi-{q_4_9_50_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نوحد المقامات. الطريقة: \\( 2\\pi=\\frac{6\\pi}{3} \\). السبب: لنطرح كسرين.",
+        "equation_template": "2\\pi-\\frac\\pi3=\\frac{{input_1}\\pi-\\pi}{3}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "6",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "id": "q_4_9_50_1_s5_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times3 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times3 \\).",
+        "related_topics": [
+          "طرح الكسور"
+        ],
+        "step_id": "math345_4_9_50_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نوحد المقامات. الطريقة: \\( 2\\pi=\\frac{6\\pi}{3} \\). السبب: لنطرح كسرين.",
+        "think": "\\( 2\\times3 \\).",
+        "html_structure": "2\\pi-\\frac\\pi3=\\frac{{q_4_9_50_1_s5_i1}\\pi-\\pi}{3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نبسط البسط. الطريقة: \\( 6\\pi-\\pi \\). السبب: للناتج.",
+        "equation_template": "\\frac{6\\pi-\\pi}{3}=\\frac{{input_1}\\pi}{3}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "5",
+            "options": [
+              "4",
+              "5",
+              "7",
+              "6"
+            ],
+            "id": "q_4_9_50_1_s6_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "4",
+              "5",
+              "7",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6-1 \\)."
+          }
+        ],
+        "hint": "\\( 6-1 \\).",
+        "related_topics": [
+          "الجمع والطرح"
+        ],
+        "step_id": "math345_4_9_50_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نبسط البسط. الطريقة: \\( 6\\pi-\\pi \\). السبب: للناتج.",
+        "think": "\\( 6-1 \\).",
+        "html_structure": "\\frac{6\\pi-\\pi}{3}=\\frac{{q_4_9_50_1_s6_i1}\\pi}{3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتحقق. الطريقة: \\( \\cos\\frac{5\\pi}{3}=\\cos\\frac\\pi3 \\) لأن \\( \\cos \\) موجب في الربع الرابع. السبب: للتأكد.",
+        "equation_template": "\\cos\\frac{5\\pi}{3}=\\cos\\frac{\\pi}{3}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "\\frac12",
+              "-\\frac12",
+              "\\frac{\\sqrt3}{2}",
+              "1"
+            ],
+            "id": "q_4_9_50_1_s7_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "\\frac12",
+              "-\\frac12",
+              "\\frac{\\sqrt3}{2}",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمة \\( \\cos\\frac\\pi3 \\)."
+          }
+        ],
+        "hint": "قيمة \\( \\cos\\frac\\pi3 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_9_50_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق. الطريقة: \\( \\cos\\frac{5\\pi}{3}=\\cos\\frac\\pi3 \\) لأن \\( \\cos \\) موجب في الربع الرابع. السبب: للتأكد.",
+        "think": "قيمة \\( \\cos\\frac\\pi3 \\).",
+        "html_structure": "\\cos\\frac{5\\pi}{3}=\\cos\\frac{\\pi}{3}={q_4_9_50_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الجواب. الطريقة: الحلان \\( \\frac\\pi3 \\) و \\( \\frac{5\\pi}{3} \\). السبب: نهاية الحل.",
+        "equation_template": "x\\in\\left\\{\\frac{\\pi}{3},\\frac{{input_1}\\pi}{3}\\right\\}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "7",
+              "4",
+              "2"
+            ],
+            "id": "q_4_9_50_1_s8_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "7",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط \\( 5 \\)."
+          }
+        ],
+        "hint": "البسط \\( 5 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_9_50_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الجواب. الطريقة: الحلان \\( \\frac\\pi3 \\) و \\( \\frac{5\\pi}{3} \\). السبب: نهاية الحل.",
+        "think": "البسط \\( 5 \\).",
+        "html_structure": "x\\in\\left\\{\\frac{\\pi}{3},\\frac{{q_4_9_50_1_s8_i1}\\pi}{3}\\right\\}"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p50",
+    "page_number": 50,
+    "question_number": "2",
+    "question_text": "جد قيم الزاوية \\( x \\) إذا كان \\( \\tan x=-1 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_050_diag_quadrants_diagram.png"
+    ],
+    "full_model_solution": "زاوية الإسناد \\( \\frac\\pi4 \\). \\( \\tan \\) سالب في الثاني والرابع: \\( x=\\pi-\\frac\\pi4=\\frac{3\\pi}{4} \\) أو \\( x=2\\pi-\\frac\\pi4=\\frac{7\\pi}{4} \\).",
+    "source_file": "رياضيلت 4/page_050_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 50
+    },
+    "chapter": 4,
+    "topic_index": 8,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_050_diag_quadrants_diagram.png",
+    "title": "جد قيم الزاوية \\( x \\) إذا كان \\( \\tan x=-1 \\).",
+    "number": "2",
+    "model_solution": "زاوية الإسناد \\( \\frac\\pi4 \\). \\( \\tan \\) سالب في الثاني والرابع: \\( x=\\pi-\\frac\\pi4=\\frac{3\\pi}{4} \\) أو \\( x=2\\pi-\\frac\\pi4=\\frac{7\\pi}{4} \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد زاوية الإسناد. الطريقة: نهمل الإشارة السالبة ونبحث عن \\( \\tan\\theta=1 \\). السبب: لأن زاوية الإسناد حادة.",
+        "equation_template": "\\tan\\theta=1\\Rightarrow\\theta={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\frac{\\pi}{4}",
+            "options": [
+              "\\frac{\\pi}{3}",
+              "\\frac{\\pi}{4}",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{6}"
+            ],
+            "id": "q_4_9_50_2_s1_i1",
+            "correct_value": "\\frac{\\pi}{4}",
+            "allowed_keys": [
+              "\\frac{\\pi}{3}",
+              "\\frac{\\pi}{4}",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{6}"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 45^\\circ \\)."
+          }
+        ],
+        "hint": "\\( 45^\\circ \\).",
+        "related_topics": [
+          "الزوايا الخاصة"
+        ],
+        "step_id": "math345_4_9_50_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد زاوية الإسناد. الطريقة: نهمل الإشارة السالبة ونبحث عن \\( \\tan\\theta=1 \\). السبب: لأن زاوية الإسناد حادة.",
+        "think": "\\( 45^\\circ \\).",
+        "html_structure": "\\tan\\theta=1\\Rightarrow\\theta={q_4_9_50_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد الأرباع. الطريقة: \\( \\tan x \\) سالب، والظل سالب في الربع الثاني والرابع. السبب: إشارة الدالة.",
+        "equation_template": "\\tan x<0\\Rightarrow\\text{Q}{input_1}\\text{ and Q}{input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_9_50_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثاني والرابع."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_9_50_2_s2_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الثاني والرابع."
+          }
+        ],
+        "hint": "الثاني والرابع.",
+        "related_topics": [
+          "إشارات الدوال"
+        ],
+        "step_id": "math345_4_9_50_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد الأرباع. الطريقة: \\( \\tan x \\) سالب، والظل سالب في الربع الثاني والرابع. السبب: إشارة الدالة.",
+        "think": "الثاني والرابع.",
+        "html_structure": "\\tan x<0\\Rightarrow\\text{Q}{q_4_9_50_2_s2_i1}\\text{ and Q}{q_4_9_50_2_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب قانون الربع الثاني. الطريقة: الزاوية = \\( \\pi \\) ناقص زاوية الإسناد. السبب: لأن الربع الثاني بعد \\( \\frac\\pi2 \\) وقبل \\( \\pi \\).",
+        "equation_template": "x=\\pi-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "\\frac{\\pi}{4}",
+            "options": [
+              "\\frac{\\pi}{2}",
+              "\\pi",
+              "\\frac{\\pi}{3}",
+              "\\frac{\\pi}{4}"
+            ],
+            "id": "q_4_9_50_2_s3_i1",
+            "correct_value": "\\frac{\\pi}{4}",
+            "allowed_keys": [
+              "\\frac{\\pi}{2}",
+              "\\pi",
+              "\\frac{\\pi}{3}",
+              "\\frac{\\pi}{4}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( \\frac\\pi4 \\)."
+          }
+        ],
+        "hint": "اطرح \\( \\frac\\pi4 \\).",
+        "related_topics": [
+          "الأرباع"
+        ],
+        "step_id": "math345_4_9_50_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب قانون الربع الثاني. الطريقة: الزاوية = \\( \\pi \\) ناقص زاوية الإسناد. السبب: لأن الربع الثاني بعد \\( \\frac\\pi2 \\) وقبل \\( \\pi \\).",
+        "think": "اطرح \\( \\frac\\pi4 \\).",
+        "html_structure": "x=\\pi-{q_4_9_50_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نوحد المقامات. الطريقة: \\( \\pi=\\frac{4\\pi}{4} \\). السبب: لنطرح.",
+        "equation_template": "\\pi-\\frac\\pi4=\\frac{{input_1}\\pi-\\pi}{4}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "4",
+            "options": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "id": "q_4_9_50_2_s4_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\pi \\) تساوي \\( \\frac{4\\pi}{4} \\)."
+          }
+        ],
+        "hint": "\\( \\pi \\) تساوي \\( \\frac{4\\pi}{4} \\).",
+        "related_topics": [
+          "طرح الكسور"
+        ],
+        "step_id": "math345_4_9_50_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نوحد المقامات. الطريقة: \\( \\pi=\\frac{4\\pi}{4} \\). السبب: لنطرح.",
+        "think": "\\( \\pi \\) تساوي \\( \\frac{4\\pi}{4} \\).",
+        "html_structure": "\\pi-\\frac\\pi4=\\frac{{q_4_9_50_2_s4_i1}\\pi-\\pi}{4}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نبسط. الطريقة: \\( 4\\pi-\\pi=3\\pi \\). السبب: للناتج.",
+        "equation_template": "\\frac{4\\pi-\\pi}{4}=\\frac{{input_1}\\pi}{4}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "2",
+              "4"
+            ],
+            "id": "q_4_9_50_2_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4-1 \\)."
+          }
+        ],
+        "hint": "\\( 4-1 \\).",
+        "related_topics": [
+          "الجمع والطرح"
+        ],
+        "step_id": "math345_4_9_50_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نبسط. الطريقة: \\( 4\\pi-\\pi=3\\pi \\). السبب: للناتج.",
+        "think": "\\( 4-1 \\).",
+        "html_structure": "\\frac{4\\pi-\\pi}{4}=\\frac{{q_4_9_50_2_s5_i1}\\pi}{4}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحل الربع الرابع. الطريقة: \\( 2\\pi=\\frac{8\\pi}{4} \\) ثم نطرح \\( \\pi \\). السبب: قانون الربع الرابع.",
+        "equation_template": "x=2\\pi-\\frac\\pi4=\\frac{{input_1}\\pi-\\pi}{4}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "6",
+              "4",
+              "2"
+            ],
+            "id": "q_4_9_50_2_s6_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "6",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times4 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times4 \\).",
+        "related_topics": [
+          "الأرباع"
+        ],
+        "step_id": "math345_4_9_50_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحل الربع الرابع. الطريقة: \\( 2\\pi=\\frac{8\\pi}{4} \\) ثم نطرح \\( \\pi \\). السبب: قانون الربع الرابع.",
+        "think": "\\( 2\\times4 \\).",
+        "html_structure": "x=2\\pi-\\frac\\pi4=\\frac{{q_4_9_50_2_s6_i1}\\pi-\\pi}{4}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نبسط. الطريقة: \\( 8\\pi-\\pi=7\\pi \\). السبب: للناتج.",
+        "equation_template": "\\frac{8\\pi-\\pi}{4}=\\frac{{input_1}\\pi}{4}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "7",
+            "options": [
+              "5",
+              "6",
+              "9",
+              "7"
+            ],
+            "id": "q_4_9_50_2_s7_i1",
+            "correct_value": "7",
+            "allowed_keys": [
+              "5",
+              "6",
+              "9",
+              "7"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 8-1 \\)."
+          }
+        ],
+        "hint": "\\( 8-1 \\).",
+        "related_topics": [
+          "الجمع والطرح"
+        ],
+        "step_id": "math345_4_9_50_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نبسط. الطريقة: \\( 8\\pi-\\pi=7\\pi \\). السبب: للناتج.",
+        "think": "\\( 8-1 \\).",
+        "html_structure": "\\frac{8\\pi-\\pi}{4}=\\frac{{q_4_9_50_2_s7_i1}\\pi}{4}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق. الطريقة: \\( \\tan\\frac{3\\pi}{4}=\\frac{\\sin}{\\cos}=\\frac{\\frac{\\sqrt2}{2}}{-\\frac{\\sqrt2}{2}} \\). السبب: للتأكد.",
+        "equation_template": "\\tan\\frac{3\\pi}{4}=\\frac{\\frac{\\sqrt2}{2}}{{input_1}}={input_2}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "-\\frac{\\sqrt2}{2}",
+            "options": [
+              "\\frac{\\sqrt2}{2}",
+              "-\\frac{\\sqrt2}{2}",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_9_50_2_s8_i1",
+            "correct_value": "-\\frac{\\sqrt2}{2}",
+            "allowed_keys": [
+              "\\frac{\\sqrt2}{2}",
+              "-\\frac{\\sqrt2}{2}",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم الجيب على جيب التمام السالب."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "\\frac12"
+            ],
+            "id": "q_4_9_50_2_s8_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "\\frac12"
+            ],
+            "label": "القيمة 2",
+            "hint": "قسّم الجيب على جيب التمام السالب."
+          }
+        ],
+        "hint": "قسّم الجيب على جيب التمام السالب.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_9_50_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق. الطريقة: \\( \\tan\\frac{3\\pi}{4}=\\frac{\\sin}{\\cos}=\\frac{\\frac{\\sqrt2}{2}}{-\\frac{\\sqrt2}{2}} \\). السبب: للتأكد.",
+        "think": "قسّم الجيب على جيب التمام السالب.",
+        "html_structure": "\\tan\\frac{3\\pi}{4}=\\frac{\\frac{\\sqrt2}{2}}{{q_4_9_50_2_s8_i1}}={q_4_9_50_2_s8_i2}"
+      }
+    ]
+  }
+]

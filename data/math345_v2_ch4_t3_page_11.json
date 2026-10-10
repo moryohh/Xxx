@@ -1,0 +1,567 @@
+[
+  {
+    "id_number": "q15_p11",
+    "page_number": 11,
+    "question_number": "15",
+    "question_text": "جد \\( \\int_{-1}^{1}\\frac{dx}{9-12x+4x^2} \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_011_diag_1_drawing.png"
+    ],
+    "full_model_solution": "المقام (3-2x)² ⇒ (3-2x)^(-2) ⇒ -1/2 ∫(-2)(3-2x)^(-2)dx = 1/(2(3-2x)) ⇒ 1/2 - 1/10 = 2/5",
+    "source_file": "رياضيلت 4/page_011_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 11
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_011_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_011_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_011_interactive.json"
+    ],
+    "title": "جد \\( \\int_{-1}^{1}\\frac{dx}{9-12x+4x^2} \\)",
+    "number": "15",
+    "model_solution": "المقام (3-2x)² ⇒ (3-2x)^(-2) ⇒ -1/2 ∫(-2)(3-2x)^(-2)dx = 1/(2(3-2x)) ⇒ 1/2 - 1/10 = 2/5",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: تحليل المقام. الطريقة: المقام مربع كامل: الحد الأول مربع \\( 2x \\)، والأخير مربع \\( 3 \\)، والحد الأوسط \\( 2 \\times 3 \\times 2x = 12x \\). السبب: لنكتبه كقوس مرفوع لقوة.",
+        "equation_template": "9 - 12x + 4x^2 = ({input_1} - 2x)^2",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s1_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "9",
+              "4"
+            ],
+            "id": "q_4_3_11_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "9",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر \\( 9 \\) هو \\( 3 \\)."
+          }
+        ],
+        "hint": "جذر \\( 9 \\) هو \\( 3 \\).",
+        "related_topics": [
+          "المربع الكامل"
+        ],
+        "step_id": "math345_4_3_11_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: تحليل المقام. الطريقة: المقام مربع كامل: الحد الأول مربع \\( 2x \\)، والأخير مربع \\( 3 \\)، والحد الأوسط \\( 2 \\times 3 \\times 2x = 12x \\). السبب: لنكتبه كقوس مرفوع لقوة.",
+        "think": "جذر \\( 9 \\) هو \\( 3 \\).",
+        "html_structure": "9 - 12x + 4x^2 = ({q_4_3_11_1_s1_i1} - 2x)^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نقل القوس للبسط. الطريقة: نغير إشارة الأس. السبب: لنستعمل قاعدة القوس المرفوع لقوة.",
+        "equation_template": "\\frac{1}{(3-2x)^2} = (3-2x)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s2_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_11_1_s2_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) يصبح \\( -2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) يصبح \\( -2 \\).",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_4_3_11_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نقل القوس للبسط. الطريقة: نغير إشارة الأس. السبب: لنستعمل قاعدة القوس المرفوع لقوة.",
+        "think": "الأس \\( 2 \\) يصبح \\( -2 \\).",
+        "html_structure": "\\frac{1}{(3-2x)^2} = (3-2x)^{{q_4_3_11_1_s2_i1}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( 3-2x \\). السبب: قاعدة التكامل.",
+        "equation_template": "(3-2x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s3_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "3",
+              "-3"
+            ],
+            "id": "q_4_3_11_1_s3_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "3",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( -2x \\) هي \\( -2 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( -2x \\) هي \\( -2 \\).",
+        "related_topics": [
+          "مشتقة كثيرة الحدود"
+        ],
+        "step_id": "math345_4_3_11_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( 3-2x \\). السبب: قاعدة التكامل.",
+        "think": "مشتقة \\( -2x \\) هي \\( -2 \\).",
+        "html_structure": "(3-2x)' = {q_4_3_11_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: توفير الثابت. الطريقة: نضرب داخل التكامل في \\( -2 \\) وخارجه في \\( \\frac{1}{-2} \\). السبب: لأن المشتقة \\( -2 \\) غير موجودة.",
+        "equation_template": "\\frac{1}{{input_1}}\\int_{-1}^{1}({input_2})(3-2x)^{-2}dx",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s4_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_11_1_s4_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -2 \\) في الموضعين."
+          },
+          {
+            "input_id": "q15_p11_s4_2",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_11_1_s4_i2",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -2 \\) في الموضعين."
+          }
+        ],
+        "hint": "ضع \\( -2 \\) في الموضعين.",
+        "related_topics": [
+          "توفير الثابت"
+        ],
+        "step_id": "math345_4_3_11_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: توفير الثابت. الطريقة: نضرب داخل التكامل في \\( -2 \\) وخارجه في \\( \\frac{1}{-2} \\). السبب: لأن المشتقة \\( -2 \\) غير موجودة.",
+        "think": "ضع \\( -2 \\) في الموضعين.",
+        "html_structure": "\\frac{1}{{q_4_3_11_1_s4_i1}}\\int_{-1}^{1}({q_4_3_11_1_s4_i2})(3-2x)^{-2}dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: تكامل القوس. الطريقة: نرفع الأس بواحد ونقسم عليه. السبب: قاعدة القوة",
+        "equation_template": "\\frac{(3-2x)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s5_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_11_1_s5_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2+1=-1 \\)."
+          },
+          {
+            "input_id": "q15_p11_s5_2",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_11_1_s5_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2+1=-1 \\)."
+          }
+        ],
+        "hint": "\\( -2+1=-1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_11_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: تكامل القوس. الطريقة: نرفع الأس بواحد ونقسم عليه. السبب: قاعدة القوة",
+        "think": "\\( -2+1=-1 \\).",
+        "html_structure": "\\frac{(3-2x)^{{q_4_3_11_1_s5_i1}}}{{q_4_3_11_1_s5_i2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: الدالة الأصلية. الطريقة: \\( \\frac{1}{-2}\\times\\frac{1}{-1} = \\frac12 \\). السبب: سالب في سالب موجب.",
+        "equation_template": "F(x) = \\frac{1}{{input_1}(3-2x)}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_3_11_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( \\frac12 \\)."
+          }
+        ],
+        "hint": "المعامل \\( \\frac12 \\).",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_3_11_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: الدالة الأصلية. الطريقة: \\( \\frac{1}{-2}\\times\\frac{1}{-1} = \\frac12 \\). السبب: سالب في سالب موجب.",
+        "think": "المعامل \\( \\frac12 \\).",
+        "html_structure": "F(x) = \\frac{1}{{q_4_3_11_1_s6_i1}(3-2x)}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( 3 - 2(1) = 1 \\). السبب: \\( F(b) \\).",
+        "equation_template": "F(1) = \\frac{1}{2(3 - 2({input_1}))} = \\frac{1}{2({input_2})} = \\frac{1}{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s7_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_3_11_1_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3-2=1 \\) ثم \\( 2 \\times 1 \\)."
+          },
+          {
+            "input_id": "q15_p11_s7_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "id": "q_4_3_11_1_s7_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3-2=1 \\) ثم \\( 2 \\times 1 \\)."
+          },
+          {
+            "input_id": "q15_p11_s7_3",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_11_1_s7_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 3-2=1 \\) ثم \\( 2 \\times 1 \\)."
+          }
+        ],
+        "hint": "\\( 3-2=1 \\) ثم \\( 2 \\times 1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_11_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( 3 - 2(1) = 1 \\). السبب: \\( F(b) \\).",
+        "think": "\\( 3-2=1 \\) ثم \\( 2 \\times 1 \\).",
+        "html_structure": "F(1) = \\frac{1}{2(3 - 2({q_4_3_11_1_s7_i1}))} = \\frac{1}{2({q_4_3_11_1_s7_i2})} = \\frac{1}{{q_4_3_11_1_s7_i3}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التعويض بالحد \\( -1 \\). الطريقة: \\( 3 - 2(-1) = 3 + 2 = 5 \\). السبب: \\( F(a) \\).",
+        "equation_template": "F(-1) = \\frac{1}{2(3 - 2({input_1}))} = \\frac{1}{2({input_2})} = \\frac{1}{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s8_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_3_11_1_s8_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب في سالب يعطي \\( +2 \\)."
+          },
+          {
+            "input_id": "q15_p11_s8_2",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_11_1_s8_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "سالب في سالب يعطي \\( +2 \\)."
+          },
+          {
+            "input_id": "q15_p11_s8_3",
+            "correct_answer": "10",
+            "options": [
+              "10",
+              "5",
+              "6",
+              "8"
+            ],
+            "id": "q_4_3_11_1_s8_i3",
+            "correct_value": "10",
+            "allowed_keys": [
+              "10",
+              "5",
+              "6",
+              "8"
+            ],
+            "label": "القيمة 3",
+            "hint": "سالب في سالب يعطي \\( +2 \\)."
+          }
+        ],
+        "hint": "سالب في سالب يعطي \\( +2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_11_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التعويض بالحد \\( -1 \\). الطريقة: \\( 3 - 2(-1) = 3 + 2 = 5 \\). السبب: \\( F(a) \\).",
+        "think": "سالب في سالب يعطي \\( +2 \\).",
+        "html_structure": "F(-1) = \\frac{1}{2(3 - 2({q_4_3_11_1_s8_i1}))} = \\frac{1}{2({q_4_3_11_1_s8_i2})} = \\frac{1}{{q_4_3_11_1_s8_i3}}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: توحيد المقامات. الطريقة: المقام المشترك \\( 10 \\): \\( \\frac12 = \\frac{5}{10} \\). السبب: لنطرح.",
+        "equation_template": "\\frac12 - \\frac{1}{10} = \\frac{{input_1}}{10} - \\frac{1}{10}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s9_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "2",
+              "1",
+              "10"
+            ],
+            "id": "q_4_3_11_1_s9_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "2",
+              "1",
+              "10"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 10 \\div 2 = 5 \\)."
+          }
+        ],
+        "hint": "\\( 10 \\div 2 = 5 \\).",
+        "related_topics": [
+          "توحيد المقامات"
+        ],
+        "step_id": "math345_4_3_11_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: توحيد المقامات. الطريقة: المقام المشترك \\( 10 \\): \\( \\frac12 = \\frac{5}{10} \\). السبب: لنطرح.",
+        "think": "\\( 10 \\div 2 = 5 \\).",
+        "html_structure": "\\frac12 - \\frac{1}{10} = \\frac{{q_4_3_11_1_s9_i1}}{10} - \\frac{1}{10}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: الناتج. الطريقة: \\( \\frac{5-1}{10} = \\frac{4}{10} \\) ثم نختصر على \\( 2 \\). السبب: أبسط صورة.",
+        "equation_template": "\\frac{{input_1}}{10} = \\frac{{input_2}}{5}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s10_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "6",
+              "5",
+              "2"
+            ],
+            "id": "q_4_3_11_1_s10_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "6",
+              "5",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم على \\( 2 \\)."
+          },
+          {
+            "input_id": "q15_p11_s10_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "4"
+            ],
+            "id": "q_4_3_11_1_s10_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "قسّم على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم على \\( 2 \\).",
+        "related_topics": [
+          "اختصار الكسور"
+        ],
+        "step_id": "math345_4_3_11_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: الناتج. الطريقة: \\( \\frac{5-1}{10} = \\frac{4}{10} \\) ثم نختصر على \\( 2 \\). السبب: أبسط صورة.",
+        "think": "قسّم على \\( 2 \\).",
+        "html_structure": "\\frac{{q_4_3_11_1_s10_i1}}{10} = \\frac{{q_4_3_11_1_s10_i2}}{5}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: التأكد من أن المقام لا يساوي صفراً. الطريقة: أصغر قيمة لـ \\( 3-2x \\) على \\( [-1,1] \\) عند \\( x=1 \\). السبب: إذا كان صفراً لتعذر التكامل.",
+        "equation_template": "3 - 2(1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q15_p11_s11_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "-1",
+              "5"
+            ],
+            "id": "q_4_3_11_1_s11_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "-1",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3 - 2 \\)."
+          }
+        ],
+        "hint": "\\( 3 - 2 \\).",
+        "related_topics": [
+          "مجال الدالة"
+        ],
+        "step_id": "math345_4_3_11_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: التأكد من أن المقام لا يساوي صفراً. الطريقة: أصغر قيمة لـ \\( 3-2x \\) على \\( [-1,1] \\) عند \\( x=1 \\). السبب: إذا كان صفراً لتعذر التكامل.",
+        "think": "\\( 3 - 2 \\).",
+        "html_structure": "3 - 2(1) = {q_4_3_11_1_s11_i1}"
+      }
+    ]
+  }
+]

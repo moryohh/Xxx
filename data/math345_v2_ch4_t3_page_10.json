@@ -1,0 +1,1000 @@
+[
+  {
+    "id_number": "q11_p10",
+    "page_number": 10,
+    "question_number": "11",
+    "question_text": "جد \\( \\int_{1}^{2}\\frac{1}{(5-2x)^2}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_010_diag_1_drawing.png"
+    ],
+    "full_model_solution": "(5-2x)^(-2) ⇒ نوفر المشتقة (-2): -1/2 ∫(-2)(5-2x)^(-2)dx = 1/(2(5-2x)) ⇒ 1/2 - 1/6 = 1/3",
+    "source_file": "رياضيلت 4/page_010_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 10
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_010_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_010_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_010_interactive.json"
+    ],
+    "title": "جد \\( \\int_{1}^{2}\\frac{1}{(5-2x)^2}\\,dx \\)",
+    "number": "11",
+    "model_solution": "(5-2x)^(-2) ⇒ نوفر المشتقة (-2): -1/2 ∫(-2)(5-2x)^(-2)dx = 1/(2(5-2x)) ⇒ 1/2 - 1/6 = 1/3",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نقل القوس من المقام إلى البسط. الطريقة: نغير إشارة الأس. السبب: لنستعمل قاعدة القوس المرفوع لقوة.",
+        "equation_template": "\\frac{1}{(5-2x)^2} = (5-2x)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s1_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_10_1_s1_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) يصبح \\( -2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) يصبح \\( -2 \\).",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_4_3_10_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نقل القوس من المقام إلى البسط. الطريقة: نغير إشارة الأس. السبب: لنستعمل قاعدة القوس المرفوع لقوة.",
+        "think": "الأس \\( 2 \\) يصبح \\( -2 \\).",
+        "html_structure": "\\frac{1}{(5-2x)^2} = (5-2x)^{{q_4_3_10_1_s1_i1}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: إيجاد مشتقة داخل القوس. الطريقة: نشتق \\( 5-2x \\). السبب: قاعدة تحتاج المشتقة.",
+        "equation_template": "(5-2x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s2_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "5",
+              "-5"
+            ],
+            "id": "q_4_3_10_1_s2_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "5",
+              "-5"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 5 \\) صفر، ومشتقة \\( -2x \\) هي \\( -2 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 5 \\) صفر، ومشتقة \\( -2x \\) هي \\( -2 \\).",
+        "related_topics": [
+          "مشتقة كثيرة الحدود"
+        ],
+        "step_id": "math345_4_3_10_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: إيجاد مشتقة داخل القوس. الطريقة: نشتق \\( 5-2x \\). السبب: قاعدة تحتاج المشتقة.",
+        "think": "مشتقة \\( 5 \\) صفر، ومشتقة \\( -2x \\) هي \\( -2 \\).",
+        "html_structure": "(5-2x)' = {q_4_3_10_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: توفير المشتقة. الطريقة: نضرب داخل التكامل في \\( -2 \\) وخارجه في \\( \\frac{1}{-2} \\). السبب: لأن حاصل ضربهما \\( 1 \\).",
+        "equation_template": "\\frac{1}{{input_1}}\\int_1^2 ({input_2})(5-2x)^{-2}dx",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s3_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_10_1_s3_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -2 \\) في الموضعين."
+          },
+          {
+            "input_id": "q11_p10_s3_2",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_10_1_s3_i2",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -2 \\) في الموضعين."
+          }
+        ],
+        "hint": "ضع \\( -2 \\) في الموضعين.",
+        "related_topics": [
+          "توفير الثابت"
+        ],
+        "step_id": "math345_4_3_10_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: توفير المشتقة. الطريقة: نضرب داخل التكامل في \\( -2 \\) وخارجه في \\( \\frac{1}{-2} \\). السبب: لأن حاصل ضربهما \\( 1 \\).",
+        "think": "ضع \\( -2 \\) في الموضعين.",
+        "html_structure": "\\frac{1}{{q_4_3_10_1_s3_i1}}\\int_1^2 ({q_4_3_10_1_s3_i2})(5-2x)^{-2}dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: تكامل القوس. الطريقة: نرفع الأس بواحد ونقسم عليه، ونهمل المشتقة. السبب: قاعدة القوة",
+        "equation_template": "\\frac{(5-2x)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s4_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_10_1_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2+1=-1 \\)."
+          },
+          {
+            "input_id": "q11_p10_s4_2",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_10_1_s4_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2+1=-1 \\)."
+          }
+        ],
+        "hint": "\\( -2+1=-1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_10_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: تكامل القوس. الطريقة: نرفع الأس بواحد ونقسم عليه، ونهمل المشتقة. السبب: قاعدة القوة",
+        "think": "\\( -2+1=-1 \\).",
+        "html_structure": "\\frac{(5-2x)^{{q_4_3_10_1_s4_i1}}}{{q_4_3_10_1_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: تبسيط الدالة الأصلية. الطريقة: \\( \\frac{1}{-2} \\times \\frac{1}{-1} = \\frac12 \\) ثم نعيد القوس للمقام. السبب: للتعويض بسهولة.",
+        "equation_template": "F(x) = \\frac{1}{{input_1}(5-2x)}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s5_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_3_10_1_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب في سالب موجب."
+          }
+        ],
+        "hint": "سالب في سالب موجب.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_3_10_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: تبسيط الدالة الأصلية. الطريقة: \\( \\frac{1}{-2} \\times \\frac{1}{-1} = \\frac12 \\) ثم نعيد القوس للمقام. السبب: للتعويض بسهولة.",
+        "think": "سالب في سالب موجب.",
+        "html_structure": "F(x) = \\frac{1}{{q_4_3_10_1_s5_i1}(5-2x)}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نضع \\( x=2 \\). السبب: \\( F(b) \\).",
+        "equation_template": "F(2) = \\frac{1}{2(5 - {input_1})} = \\frac{1}{2({input_2})} = \\frac{1}{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s6_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "5",
+              "10"
+            ],
+            "id": "q_4_3_10_1_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "5",
+              "10"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2(2)=4 \\) ثم \\( 5-4=1 \\)."
+          },
+          {
+            "input_id": "q11_p10_s6_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "0"
+            ],
+            "id": "q_4_3_10_1_s6_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2(2)=4 \\) ثم \\( 5-4=1 \\)."
+          },
+          {
+            "input_id": "q11_p10_s6_3",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_10_1_s6_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 2(2)=4 \\) ثم \\( 5-4=1 \\)."
+          }
+        ],
+        "hint": "\\( 2(2)=4 \\) ثم \\( 5-4=1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_10_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نضع \\( x=2 \\). السبب: \\( F(b) \\).",
+        "think": "\\( 2(2)=4 \\) ثم \\( 5-4=1 \\).",
+        "html_structure": "F(2) = \\frac{1}{2(5 - {q_4_3_10_1_s6_i1})} = \\frac{1}{2({q_4_3_10_1_s6_i2})} = \\frac{1}{{q_4_3_10_1_s6_i3}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: التعويض بالحد الأدنى. الطريقة: نضع \\( x=1 \\). السبب: \\( F(a) \\).",
+        "equation_template": "F(1) = \\frac{1}{2(5 - {input_1})} = \\frac{1}{2({input_2})} = \\frac{1}{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s7_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "5"
+            ],
+            "id": "q_4_3_10_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2(1)=2 \\) ثم \\( 5-2=3 \\)."
+          },
+          {
+            "input_id": "q11_p10_s7_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "7"
+            ],
+            "id": "q_4_3_10_1_s7_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "7"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2(1)=2 \\) ثم \\( 5-2=3 \\)."
+          },
+          {
+            "input_id": "q11_p10_s7_3",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "4",
+              "5"
+            ],
+            "id": "q_4_3_10_1_s7_i3",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 2(1)=2 \\) ثم \\( 5-2=3 \\)."
+          }
+        ],
+        "hint": "\\( 2(1)=2 \\) ثم \\( 5-2=3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_10_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: التعويض بالحد الأدنى. الطريقة: نضع \\( x=1 \\). السبب: \\( F(a) \\).",
+        "think": "\\( 2(1)=2 \\) ثم \\( 5-2=3 \\).",
+        "html_structure": "F(1) = \\frac{1}{2(5 - {q_4_3_10_1_s7_i1})} = \\frac{1}{2({q_4_3_10_1_s7_i2})} = \\frac{1}{{q_4_3_10_1_s7_i3}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: توحيد المقامات. الطريقة: المقام المشترك \\( 6 \\): \\( \\frac12 = \\frac36 \\). السبب: لنستطيع الطرح.",
+        "equation_template": "\\frac12 - \\frac16 = \\frac{{input_1}}{6} - \\frac{1}{6}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s8_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_4_3_10_1_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac12 = \\frac{3}{6} \\)."
+          }
+        ],
+        "hint": "\\( \\frac12 = \\frac{3}{6} \\).",
+        "related_topics": [
+          "توحيد المقامات"
+        ],
+        "step_id": "math345_4_3_10_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: توحيد المقامات. الطريقة: المقام المشترك \\( 6 \\): \\( \\frac12 = \\frac36 \\). السبب: لنستطيع الطرح.",
+        "think": "\\( \\frac12 = \\frac{3}{6} \\).",
+        "html_structure": "\\frac12 - \\frac16 = \\frac{{q_4_3_10_1_s8_i1}}{6} - \\frac{1}{6}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: الناتج النهائي. الطريقة: \\( \\frac{3-1}{6} = \\frac26 \\) ثم نبسط. السبب: أبسط صورة.",
+        "equation_template": "\\frac{{input_1}}{6} = \\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s9_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "id": "q_4_3_10_1_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم البسط والمقام على \\( 2 \\)."
+          },
+          {
+            "input_id": "q11_p10_s9_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "6",
+              "4"
+            ],
+            "id": "q_4_3_10_1_s9_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "6",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "قسّم البسط والمقام على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم البسط والمقام على \\( 2 \\).",
+        "related_topics": [
+          "اختصار الكسور"
+        ],
+        "step_id": "math345_4_3_10_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: الناتج النهائي. الطريقة: \\( \\frac{3-1}{6} = \\frac26 \\) ثم نبسط. السبب: أبسط صورة.",
+        "think": "قسّم البسط والمقام على \\( 2 \\).",
+        "html_structure": "\\frac{{q_4_3_10_1_s9_i1}}{6} = \\frac{1}{{q_4_3_10_1_s9_i2}}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: التأكد من أن التكامل ممكن. الطريقة: المقام يجب ألا يساوي صفراً على \\( [1,2] \\). السبب: أصغر قيمة لـ \\( 5-2x \\) عند \\( x=2 \\).",
+        "equation_template": "5 - 2(2) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q11_p10_s10_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "-1",
+              "3"
+            ],
+            "id": "q_4_3_10_1_s10_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "-1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5 - 4 \\)."
+          }
+        ],
+        "hint": "\\( 5 - 4 \\).",
+        "related_topics": [
+          "مجال الدالة"
+        ],
+        "step_id": "math345_4_3_10_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: التأكد من أن التكامل ممكن. الطريقة: المقام يجب ألا يساوي صفراً على \\( [1,2] \\). السبب: أصغر قيمة لـ \\( 5-2x \\) عند \\( x=2 \\).",
+        "think": "\\( 5 - 4 \\).",
+        "html_structure": "5 - 2(2) = {q_4_3_10_1_s10_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q14_p10",
+    "page_number": 10,
+    "question_number": "14",
+    "question_text": "جد \\( \\int_{0}^{1}\\frac{x}{(x^2+1)^2}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_010_diag_1_drawing.png"
+    ],
+    "full_model_solution": "x(x²+1)^(-2) ⇒ 1/2∫2x(x²+1)^(-2)dx = -1/(2(x²+1)) ⇒ -1/4 + 1/2 = 1/4",
+    "source_file": "رياضيلت 4/page_010_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 10
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_010_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_010_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_010_interactive.json"
+    ],
+    "title": "جد \\( \\int_{0}^{1}\\frac{x}{(x^2+1)^2}\\,dx \\)",
+    "number": "14",
+    "model_solution": "x(x²+1)^(-2) ⇒ 1/2∫2x(x²+1)^(-2)dx = -1/(2(x²+1)) ⇒ -1/4 + 1/2 = 1/4",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نقل القوس إلى البسط. الطريقة: نغير إشارة الأس. السبب: لنستعمل قاعدة القوس المرفوع لقوة.",
+        "equation_template": "\\frac{x}{(x^2+1)^2} = x(x^2+1)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s1_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_3_10_2_s1_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) يصبح \\( -2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) يصبح \\( -2 \\).",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_4_3_10_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نقل القوس إلى البسط. الطريقة: نغير إشارة الأس. السبب: لنستعمل قاعدة القوس المرفوع لقوة.",
+        "think": "الأس \\( 2 \\) يصبح \\( -2 \\).",
+        "html_structure": "\\frac{x}{(x^2+1)^2} = x(x^2+1)^{{q_4_3_10_2_s1_i1}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( x^2+1 \\). السبب: قاعدة التكامل.",
+        "equation_template": "(x^2+1)' = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s2_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "id": "q_4_3_10_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x^2 \\) هي \\( 2x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( x^2 \\) هي \\( 2x \\).",
+        "related_topics": [
+          "مشتقة كثيرة الحدود"
+        ],
+        "step_id": "math345_4_3_10_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: مشتقة داخل القوس. الطريقة: نشتق \\( x^2+1 \\). السبب: قاعدة التكامل.",
+        "think": "مشتقة \\( x^2 \\) هي \\( 2x \\).",
+        "html_structure": "(x^2+1)' = {q_4_3_10_2_s2_i1}x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: توفير الثابت. الطريقة: نضرب داخل التكامل في \\( 2 \\) وخارجه في \\( \\frac12 \\). السبب: لأن الموجود \\( x \\) والمطلوب \\( 2x \\).",
+        "equation_template": "\\frac{1}{{input_1}}\\int_0^1 {input_2}x(x^2+1)^{-2}dx",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_10_2_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 2 \\) في الموضعين."
+          },
+          {
+            "input_id": "q14_p10_s3_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_10_2_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 2 \\) في الموضعين."
+          }
+        ],
+        "hint": "ضع \\( 2 \\) في الموضعين.",
+        "related_topics": [
+          "توفير الثابت"
+        ],
+        "step_id": "math345_4_3_10_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: توفير الثابت. الطريقة: نضرب داخل التكامل في \\( 2 \\) وخارجه في \\( \\frac12 \\). السبب: لأن الموجود \\( x \\) والمطلوب \\( 2x \\).",
+        "think": "ضع \\( 2 \\) في الموضعين.",
+        "html_structure": "\\frac{1}{{q_4_3_10_2_s3_i1}}\\int_0^1 {q_4_3_10_2_s3_i2}x(x^2+1)^{-2}dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: تكامل القوس. الطريقة: نرفع الأس بواحد ونقسم عليه. السبب: قاعدة القوة",
+        "equation_template": "\\frac{(x^2+1)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s4_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_10_2_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2+1=-1 \\)."
+          },
+          {
+            "input_id": "q14_p10_s4_2",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_10_2_s4_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2+1=-1 \\)."
+          }
+        ],
+        "hint": "\\( -2+1=-1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_10_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: تكامل القوس. الطريقة: نرفع الأس بواحد ونقسم عليه. السبب: قاعدة القوة",
+        "think": "\\( -2+1=-1 \\).",
+        "html_structure": "\\frac{(x^2+1)^{{q_4_3_10_2_s4_i1}}}{{q_4_3_10_2_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: الدالة الأصلية. الطريقة: \\( \\frac12 \\times \\frac{1}{-1} = -\\frac12 \\) ثم نعيد القوس للمقام. السبب: للتعويض.",
+        "equation_template": "F(x) = -\\frac{1}{{input_1}(x^2+1)}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s5_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "id": "q_4_3_10_2_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac12 \\) بإشارة سالبة."
+          }
+        ],
+        "hint": "\\( \\frac12 \\) بإشارة سالبة.",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_4_3_10_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: الدالة الأصلية. الطريقة: \\( \\frac12 \\times \\frac{1}{-1} = -\\frac12 \\) ثم نعيد القوس للمقام. السبب: للتعويض.",
+        "think": "\\( \\frac12 \\) بإشارة سالبة.",
+        "html_structure": "F(x) = -\\frac{1}{{q_4_3_10_2_s5_i1}(x^2+1)}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( 1^2+1 = 2 \\). السبب: \\( F(b) \\).",
+        "equation_template": "F(1) = -\\frac{1}{2({input_1})} = -\\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_10_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2 \\times 2 = 4 \\)."
+          },
+          {
+            "input_id": "q14_p10_s6_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "id": "q_4_3_10_2_s6_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2 \\times 2 = 4 \\)."
+          }
+        ],
+        "hint": "\\( 2 \\times 2 = 4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_10_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( 1^2+1 = 2 \\). السبب: \\( F(b) \\).",
+        "think": "\\( 2 \\times 2 = 4 \\).",
+        "html_structure": "F(1) = -\\frac{1}{2({q_4_3_10_2_s6_i1})} = -\\frac{1}{{q_4_3_10_2_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: التعويض بالحد \\( 0 \\). الطريقة: \\( 0^2+1 = 1 \\). السبب: \\( F(a) \\).",
+        "equation_template": "F(0) = -\\frac{1}{2({input_1})} = -\\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s7_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_10_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2 \\times 1 = 2 \\)."
+          },
+          {
+            "input_id": "q14_p10_s7_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_10_2_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2 \\times 1 = 2 \\)."
+          }
+        ],
+        "hint": "\\( 2 \\times 1 = 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_10_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: التعويض بالحد \\( 0 \\). الطريقة: \\( 0^2+1 = 1 \\). السبب: \\( F(a) \\).",
+        "think": "\\( 2 \\times 1 = 2 \\).",
+        "html_structure": "F(0) = -\\frac{1}{2({q_4_3_10_2_s7_i1})} = -\\frac{1}{{q_4_3_10_2_s7_i2}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: الطرح. الطريقة: \\( F(1) - F(0) = -\\frac14 + \\frac12 \\). نوحد المقامات إلى \\( 4 \\). السبب: طرح قيمة سالبة يعني جمعها.",
+        "equation_template": "-\\frac14 - \\left(-\\frac12\\right) = -\\frac14 + \\frac{{input_1}}{4}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s8_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_10_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac12 = \\frac24 \\)."
+          }
+        ],
+        "hint": "\\( \\frac12 = \\frac24 \\).",
+        "related_topics": [
+          "توحيد المقامات"
+        ],
+        "step_id": "math345_4_3_10_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: الطرح. الطريقة: \\( F(1) - F(0) = -\\frac14 + \\frac12 \\). نوحد المقامات إلى \\( 4 \\). السبب: طرح قيمة سالبة يعني جمعها.",
+        "think": "\\( \\frac12 = \\frac24 \\).",
+        "html_structure": "-\\frac14 - \\left(-\\frac12\\right) = -\\frac14 + \\frac{{q_4_3_10_2_s8_i1}}{4}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: الناتج. الطريقة: \\( \\frac{-1+2}{4} \\). السبب: قيمة التكامل.",
+        "equation_template": "\\int_0^1 = \\frac{{input_1}}{4}",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s9_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_3_10_2_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1 + 2 = 1 \\)."
+          }
+        ],
+        "hint": "\\( -1 + 2 = 1 \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_3_10_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: الناتج. الطريقة: \\( \\frac{-1+2}{4} \\). السبب: قيمة التكامل.",
+        "think": "\\( -1 + 2 = 1 \\).",
+        "html_structure": "\\int_0^1 = \\frac{{q_4_3_10_2_s9_i1}}{4}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: فحص المعقولية. الطريقة: الدالة موجبة على \\( [0,1] \\) فيجب أن يكون الناتج موجباً. السبب: للتأكد من الإشارة.",
+        "equation_template": "\\text{الناتج} {input_1} 0",
+        "inputs": [
+          {
+            "input_id": "q14_p10_s10_1",
+            "correct_answer": ">",
+            "options": [
+              ">",
+              "<",
+              "=",
+              "\\leq"
+            ],
+            "id": "q_4_3_10_2_s10_i1",
+            "correct_value": ">",
+            "allowed_keys": [
+              ">",
+              "<",
+              "=",
+              "\\leq"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac14 \\) أكبر من الصفر."
+          }
+        ],
+        "hint": "\\( \\frac14 \\) أكبر من الصفر.",
+        "related_topics": [
+          "إشارة التكامل"
+        ],
+        "step_id": "math345_4_3_10_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: فحص المعقولية. الطريقة: الدالة موجبة على \\( [0,1] \\) فيجب أن يكون الناتج موجباً. السبب: للتأكد من الإشارة.",
+        "think": "\\( \\frac14 \\) أكبر من الصفر.",
+        "html_structure": "\\text{الناتج} {q_4_3_10_2_s10_i1} 0"
+      }
+    ]
+  }
+]

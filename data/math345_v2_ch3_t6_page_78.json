@@ -1,0 +1,938 @@
+[
+  {
+    "id_number": "q2_p78",
+    "page_number": 78,
+    "question_number": "س2",
+    "question_text": "باستخدام اختبار المشتقة الثانية إن أمكن جد النهايات المحلية للدالة \\( f(x)=3x-x^3 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_078_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( f'=3-3x^2,\\ x=\\pm1,\\ f''=-6x \\): عظمى \\( (1,2) \\) وصغرى \\( (-1,-2) \\).",
+    "source_file": "رياضيات 3/page_078_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 78
+    },
+    "chapter": 3,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_078_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيات 3/page_078_interactive.json"
+    ],
+    "title": "باستخدام اختبار المشتقة الثانية إن أمكن جد النهايات المحلية للدالة \\( f(x)=3x-x^3 \\).",
+    "number": "س2",
+    "model_solution": "\\( f'=3-3x^2,\\ x=\\pm1,\\ f''=-6x \\): عظمى \\( (1,2) \\) وصغرى \\( (-1,-2) \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( f(x)=3x-x^3 \\). الطريقة: مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^3 \\) هي \\( 3x^2 \\). السبب: لإيجاد النقاط الحرجة.",
+        "equation_template": "f'(x)={input_1}-{input_2}x^2",
+        "inputs": [
+          {
+            "input_id": "s1_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "6",
+              "0"
+            ],
+            "id": "q_3_6_78_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "6",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 3 \\) للحد الثاني."
+          },
+          {
+            "input_id": "s1_b",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "6",
+              "2"
+            ],
+            "id": "q_3_6_78_1_s1_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "6",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "أنزل الأس \\( 3 \\) للحد الثاني."
+          }
+        ],
+        "hint": "أنزل الأس \\( 3 \\) للحد الثاني.",
+        "related_topics": [
+          "المشتقة الأولى"
+        ],
+        "step_id": "math345_3_6_78_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( f(x)=3x-x^3 \\). الطريقة: مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^3 \\) هي \\( 3x^2 \\). السبب: لإيجاد النقاط الحرجة.",
+        "think": "أنزل الأس \\( 3 \\) للحد الثاني.",
+        "html_structure": "f'(x)={q_3_6_78_1_s1_i1}-{q_3_6_78_1_s1_i2}x^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي بالصفر. الطريقة: \\( 3-3x^2=0 \\) فاقسم على \\( 3 \\). السبب: لنجد \\( x^2 \\).",
+        "equation_template": "3-3x^2=0\\Rightarrow x^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_v",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "0",
+              "-1"
+            ],
+            "id": "q_3_6_78_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\div3=1 \\)."
+          }
+        ],
+        "hint": "\\( 3\\div3=1 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_3_6_78_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي بالصفر. الطريقة: \\( 3-3x^2=0 \\) فاقسم على \\( 3 \\). السبب: لنجد \\( x^2 \\).",
+        "think": "\\( 3\\div3=1 \\).",
+        "html_structure": "3-3x^2=0\\Rightarrow x^2={q_3_6_78_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نأخذ الجذر. الطريقة: جذر \\( 1 \\) هو \\( +1 \\) و\\( -1 \\). السبب: لأن مربع كل منهما \\( 1 \\).",
+        "equation_template": "x={input_1}\\ \\text{or}\\ x={input_2}",
+        "inputs": [
+          {
+            "input_id": "s3_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "0",
+              "2"
+            ],
+            "id": "q_3_6_78_1_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمتان متقابلتان."
+          },
+          {
+            "input_id": "s3_b",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-3",
+              "0",
+              "-2"
+            ],
+            "id": "q_3_6_78_1_s3_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-3",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "قيمتان متقابلتان."
+          }
+        ],
+        "hint": "قيمتان متقابلتان.",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_3_6_78_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نأخذ الجذر. الطريقة: جذر \\( 1 \\) هو \\( +1 \\) و\\( -1 \\). السبب: لأن مربع كل منهما \\( 1 \\).",
+        "think": "قيمتان متقابلتان.",
+        "html_structure": "x={q_3_6_78_1_s3_i1}\\ \\text{or}\\ x={q_3_6_78_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق ثانية. الطريقة: مشتقة \\( -3x^2 \\) هي \\( -6x \\). السبب: لإجراء الاختبار.",
+        "equation_template": "f''(x)=-{input_1}x",
+        "inputs": [
+          {
+            "input_id": "s4_c",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_3_6_78_1_s4_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times3=6 \\) وتبقى الإشارة سالبة."
+          }
+        ],
+        "hint": "\\( 2\\times3=6 \\) وتبقى الإشارة سالبة.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق ثانية. الطريقة: مشتقة \\( -3x^2 \\) هي \\( -6x \\). السبب: لإجراء الاختبار.",
+        "think": "\\( 2\\times3=6 \\) وتبقى الإشارة سالبة.",
+        "html_structure": "f''(x)=-{q_3_6_78_1_s4_i1}x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوّض \\( x=1 \\). الطريقة: \\( -6\\times1 \\). السبب: لنحدد النوع.",
+        "equation_template": "f''(1)=-6({input_1})={input_2}",
+        "inputs": [
+          {
+            "input_id": "s5_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "6",
+              "0"
+            ],
+            "id": "q_3_6_78_1_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "6",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -6\\times1=-6 \\)."
+          },
+          {
+            "input_id": "s5_v",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "0",
+              "-1"
+            ],
+            "id": "q_3_6_78_1_s5_i2",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -6\\times1=-6 \\)."
+          }
+        ],
+        "hint": "\\( -6\\times1=-6 \\).",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوّض \\( x=1 \\). الطريقة: \\( -6\\times1 \\). السبب: لنحدد النوع.",
+        "think": "\\( -6\\times1=-6 \\).",
+        "html_structure": "f''(1)=-6({q_3_6_78_1_s5_i1})={q_3_6_78_1_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوّض \\( x=-1 \\). الطريقة: \\( -6\\times(-1) \\). السبب: لنحدد النوع.",
+        "equation_template": "f''(-1)=-6({input_1})={input_2}",
+        "inputs": [
+          {
+            "input_id": "s6_a",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "6",
+              "0"
+            ],
+            "id": "q_3_6_78_1_s6_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "6",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب في سالب موجب."
+          },
+          {
+            "input_id": "s6_v",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "-6",
+              "0",
+              "1"
+            ],
+            "id": "q_3_6_78_1_s6_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "-6",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "سالب في سالب موجب."
+          }
+        ],
+        "hint": "سالب في سالب موجب.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوّض \\( x=-1 \\). الطريقة: \\( -6\\times(-1) \\). السبب: لنحدد النوع.",
+        "think": "سالب في سالب موجب.",
+        "html_structure": "f''(-1)=-6({q_3_6_78_1_s6_i1})={q_3_6_78_1_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحدد النوع. الطريقة: سالب يعني عظمى، وموجب يعني صغرى. السبب: قاعدة الاختبار.",
+        "equation_template": "x=1:\\ {input_1},\\quad x=-1:\\ {input_2}",
+        "inputs": [
+          {
+            "input_id": "s7_a",
+            "correct_answer": "عظمى",
+            "options": [
+              "عظمى",
+              "صغرى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "id": "q_3_6_78_1_s7_i1",
+            "correct_value": "عظمى",
+            "allowed_keys": [
+              "عظمى",
+              "صغرى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -6 \\) سالبة و\\( 6 \\) موجبة."
+          },
+          {
+            "input_id": "s7_b",
+            "correct_answer": "صغرى",
+            "options": [
+              "صغرى",
+              "عظمى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "id": "q_3_6_78_1_s7_i2",
+            "correct_value": "صغرى",
+            "allowed_keys": [
+              "صغرى",
+              "عظمى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -6 \\) سالبة و\\( 6 \\) موجبة."
+          }
+        ],
+        "hint": "\\( -6 \\) سالبة و\\( 6 \\) موجبة.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحدد النوع. الطريقة: سالب يعني عظمى، وموجب يعني صغرى. السبب: قاعدة الاختبار.",
+        "think": "\\( -6 \\) سالبة و\\( 6 \\) موجبة.",
+        "html_structure": "x=1:\\ {q_3_6_78_1_s7_i1},\\quad x=-1:\\ {q_3_6_78_1_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب \\( f(1) \\). الطريقة: \\( 3(1)-1^3 \\). السبب: للإحداثي الصادي.",
+        "equation_template": "f(1)=3-{input_1}={input_2}",
+        "inputs": [
+          {
+            "input_id": "s8_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "0",
+              "2"
+            ],
+            "id": "q_3_6_78_1_s8_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3-1=2 \\)."
+          },
+          {
+            "input_id": "s8_v",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "-2",
+              "3"
+            ],
+            "id": "q_3_6_78_1_s8_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "-2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3-1=2 \\)."
+          }
+        ],
+        "hint": "\\( 3-1=2 \\).",
+        "related_topics": [
+          "قيمة الدالة"
+        ],
+        "step_id": "math345_3_6_78_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب \\( f(1) \\). الطريقة: \\( 3(1)-1^3 \\). السبب: للإحداثي الصادي.",
+        "think": "\\( 3-1=2 \\).",
+        "html_structure": "f(1)=3-{q_3_6_78_1_s8_i1}={q_3_6_78_1_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( f(-1) \\). الطريقة: \\( 3(-1)-(-1)^3=-3+1 \\). السبب: للإحداثي الصادي.",
+        "equation_template": "f(-1)=-3+{input_1}={input_2}",
+        "inputs": [
+          {
+            "input_id": "s9_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "0"
+            ],
+            "id": "q_3_6_78_1_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( (-1)^3=-1 \\) والطرح يحولها \\( +1 \\)."
+          },
+          {
+            "input_id": "s9_v",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-4",
+              "0"
+            ],
+            "id": "q_3_6_78_1_s9_i2",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( (-1)^3=-1 \\) والطرح يحولها \\( +1 \\)."
+          }
+        ],
+        "hint": "\\( (-1)^3=-1 \\) والطرح يحولها \\( +1 \\).",
+        "related_topics": [
+          "قيمة الدالة"
+        ],
+        "step_id": "math345_3_6_78_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( f(-1) \\). الطريقة: \\( 3(-1)-(-1)^3=-3+1 \\). السبب: للإحداثي الصادي.",
+        "think": "\\( (-1)^3=-1 \\) والطرح يحولها \\( +1 \\).",
+        "html_structure": "f(-1)=-3+{q_3_6_78_1_s9_i1}={q_3_6_78_1_s9_i2}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نكتب النقطتين. الطريقة: اكتب الصادي لكل نقطة. السبب: المطلوب نقاط النهايات.",
+        "equation_template": "\\max:(1,{input_1}),\\ \\min:(-1,{input_2})",
+        "inputs": [
+          {
+            "input_id": "s10_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "3"
+            ],
+            "id": "q_3_6_78_1_s10_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "استعمل الصاديين السابقين."
+          },
+          {
+            "input_id": "s10_b",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "-3"
+            ],
+            "id": "q_3_6_78_1_s10_i2",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "-3"
+            ],
+            "label": "القيمة 2",
+            "hint": "استعمل الصاديين السابقين."
+          }
+        ],
+        "hint": "استعمل الصاديين السابقين.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نكتب النقطتين. الطريقة: اكتب الصادي لكل نقطة. السبب: المطلوب نقاط النهايات.",
+        "think": "استعمل الصاديين السابقين.",
+        "html_structure": "\\max:(1,{q_3_6_78_1_s10_i1}),\\ \\min:(-1,{q_3_6_78_1_s10_i2})"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p78",
+    "page_number": 78,
+    "question_number": "س3",
+    "question_text": "باستخدام اختبار المشتقة الثانية إن أمكن جد النهايات المحلية للدالة \\( f(x)=6x-3x^2-1 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_078_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( f'=6-6x,\\ x=1,\\ f''=-6<0 \\): عظمى \\( (1,2) \\).",
+    "source_file": "رياضيات 3/page_078_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 78
+    },
+    "chapter": 3,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_078_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيات 3/page_078_interactive.json"
+    ],
+    "title": "باستخدام اختبار المشتقة الثانية إن أمكن جد النهايات المحلية للدالة \\( f(x)=6x-3x^2-1 \\).",
+    "number": "س3",
+    "model_solution": "\\( f'=6-6x,\\ x=1,\\ f''=-6<0 \\): عظمى \\( (1,2) \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( f(x)=6x-3x^2-1 \\). الطريقة: مشتقة \\( 6x \\) هي \\( 6 \\) ومشتقة \\( -3x^2 \\) هي \\( -6x \\) ومشتقة \\( -1 \\) صفر. السبب: لإيجاد النقطة الحرجة.",
+        "equation_template": "f'(x)={input_1}-{input_2}x",
+        "inputs": [
+          {
+            "input_id": "s1_a",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "1",
+              "0"
+            ],
+            "id": "q_3_6_78_2_s1_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times3=6 \\)."
+          },
+          {
+            "input_id": "s1_b",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_3_6_78_2_s1_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times3=6 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times3=6 \\).",
+        "related_topics": [
+          "المشتقة الأولى"
+        ],
+        "step_id": "math345_3_6_78_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( f(x)=6x-3x^2-1 \\). الطريقة: مشتقة \\( 6x \\) هي \\( 6 \\) ومشتقة \\( -3x^2 \\) هي \\( -6x \\) ومشتقة \\( -1 \\) صفر. السبب: لإيجاد النقطة الحرجة.",
+        "think": "\\( 2\\times3=6 \\).",
+        "html_structure": "f'(x)={q_3_6_78_2_s1_i1}-{q_3_6_78_2_s1_i2}x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي بالصفر. الطريقة: \\( 6-6x=0 \\) فانقل \\( 6x \\). السبب: لنحل لـ \\( x \\).",
+        "equation_template": "6-6x=0\\Rightarrow 6x={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_v",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "0",
+              "-6",
+              "1"
+            ],
+            "id": "q_3_6_78_2_s2_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "0",
+              "-6",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( -6x \\) إلى الطرف الأيمن."
+          }
+        ],
+        "hint": "انقل \\( -6x \\) إلى الطرف الأيمن.",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_3_6_78_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي بالصفر. الطريقة: \\( 6-6x=0 \\) فانقل \\( 6x \\). السبب: لنحل لـ \\( x \\).",
+        "think": "انقل \\( -6x \\) إلى الطرف الأيمن.",
+        "html_structure": "6-6x=0\\Rightarrow 6x={q_3_6_78_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نقسم على \\( 6 \\). الطريقة: اقسم الطرفين. السبب: لنجد \\( x \\).",
+        "equation_template": "x={input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_x",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "6",
+              "0",
+              "-1"
+            ],
+            "id": "q_3_6_78_2_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "6",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6\\div6=1 \\)."
+          }
+        ],
+        "hint": "\\( 6\\div6=1 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_3_6_78_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نقسم على \\( 6 \\). الطريقة: اقسم الطرفين. السبب: لنجد \\( x \\).",
+        "think": "\\( 6\\div6=1 \\).",
+        "html_structure": "x={q_3_6_78_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق ثانية. الطريقة: مشتقة \\( 6-6x \\) هي \\( -6 \\). السبب: لإجراء الاختبار.",
+        "equation_template": "f''(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_v",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "0",
+              "-1"
+            ],
+            "id": "q_3_6_78_2_s4_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( -6x \\) هي \\( -6 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( -6x \\) هي \\( -6 \\).",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق ثانية. الطريقة: مشتقة \\( 6-6x \\) هي \\( -6 \\). السبب: لإجراء الاختبار.",
+        "think": "مشتقة \\( -6x \\) هي \\( -6 \\).",
+        "html_structure": "f''(x)={q_3_6_78_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نقارن إشارة \\( f''(1) \\) بالصفر. الطريقة: \\( f''(1)=-6 \\). السبب: لتحديد النوع.",
+        "equation_template": "f''(1){input_1}0",
+        "inputs": [
+          {
+            "input_id": "s5_s",
+            "correct_answer": "<",
+            "options": [
+              "<",
+              ">",
+              "=",
+              "\\geq"
+            ],
+            "id": "q_3_6_78_2_s5_i1",
+            "correct_value": "<",
+            "allowed_keys": [
+              "<",
+              ">",
+              "=",
+              "\\geq"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -6 \\) أصغر من الصفر."
+          }
+        ],
+        "hint": "\\( -6 \\) أصغر من الصفر.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نقارن إشارة \\( f''(1) \\) بالصفر. الطريقة: \\( f''(1)=-6 \\). السبب: لتحديد النوع.",
+        "think": "\\( -6 \\) أصغر من الصفر.",
+        "html_structure": "f''(1){q_3_6_78_2_s5_i1}0"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحدد نوع النهاية. الطريقة: سالب يعني عظمى. السبب: قاعدة الاختبار.",
+        "equation_template": "x=1:\\ {input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_t",
+            "correct_answer": "عظمى",
+            "options": [
+              "عظمى",
+              "صغرى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "id": "q_3_6_78_2_s6_i1",
+            "correct_value": "عظمى",
+            "allowed_keys": [
+              "عظمى",
+              "صغرى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج سالب."
+          }
+        ],
+        "hint": "الناتج سالب.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحدد نوع النهاية. الطريقة: سالب يعني عظمى. السبب: قاعدة الاختبار.",
+        "think": "الناتج سالب.",
+        "html_structure": "x=1:\\ {q_3_6_78_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب \\( f(1) \\). الطريقة: \\( 6(1)-3(1)^2-1=6-3-1 \\). السبب: للإحداثي الصادي.",
+        "equation_template": "f(1)=6-{input_1}-1={input_2}",
+        "inputs": [
+          {
+            "input_id": "s7_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "6",
+              "1",
+              "9"
+            ],
+            "id": "q_3_6_78_2_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "6",
+              "1",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6-3-1=2 \\)."
+          },
+          {
+            "input_id": "s7_v",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "8",
+              "4"
+            ],
+            "id": "q_3_6_78_2_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "8",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 6-3-1=2 \\)."
+          }
+        ],
+        "hint": "\\( 6-3-1=2 \\).",
+        "related_topics": [
+          "قيمة الدالة"
+        ],
+        "step_id": "math345_3_6_78_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب \\( f(1) \\). الطريقة: \\( 6(1)-3(1)^2-1=6-3-1 \\). السبب: للإحداثي الصادي.",
+        "think": "\\( 6-3-1=2 \\).",
+        "html_structure": "f(1)=6-{q_3_6_78_2_s7_i1}-1={q_3_6_78_2_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب النقطة. الطريقة: الصادي \\( 2 \\). السبب: المطلوب النقطة بإحداثياتها.",
+        "equation_template": "(1,{input_1})",
+        "inputs": [
+          {
+            "input_id": "s8_y",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "3"
+            ],
+            "id": "q_3_6_78_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "استعمل القيمة السابقة."
+          }
+        ],
+        "hint": "استعمل القيمة السابقة.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب النقطة. الطريقة: الصادي \\( 2 \\). السبب: المطلوب النقطة بإحداثياتها.",
+        "think": "استعمل القيمة السابقة.",
+        "html_structure": "(1,{q_3_6_78_2_s8_i1})"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بأن \\( f'' \\) ثابتة. الطريقة: \\( f''=-6 \\) لأي قيمة، فعوّض \\( x=5 \\). السبب: لنتأكد أن الدالة محدبة دائماً وأن الحل منطقي.",
+        "equation_template": "f''(5)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s9_v",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "0",
+              "-30"
+            ],
+            "id": "q_3_6_78_2_s9_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "0",
+              "-30"
+            ],
+            "label": "القيمة 1",
+            "hint": "لا يتغير الناتج مع \\( x \\)."
+          }
+        ],
+        "hint": "لا يتغير الناتج مع \\( x \\).",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_6_78_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بأن \\( f'' \\) ثابتة. الطريقة: \\( f''=-6 \\) لأي قيمة، فعوّض \\( x=5 \\). السبب: لنتأكد أن الدالة محدبة دائماً وأن الحل منطقي.",
+        "think": "لا يتغير الناتج مع \\( x \\).",
+        "html_structure": "f''(5)={q_3_6_78_2_s9_i1}"
+      }
+    ]
+  }
+]

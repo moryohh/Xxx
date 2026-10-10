@@ -1,0 +1,778 @@
+[
+  {
+    "id_number": "q_abs_p32",
+    "page_number": 32,
+    "question_number": "تطبيق",
+    "question_text": "لتكن \\( f(x)=|x-1| \\). أوجد \\( \\int_0^2 f(x)\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم هندسي",
+        "desc": "مخطط توضيحي يمثل تقسيم فترة التكامل من 0 إلى 2 بحد فاصل عند 1، موضحاً إشارة الدالة قبل وبعد الحد الفاصل.",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_1_drawing_hndsy.png"
+      },
+      {
+        "id": "diag_2",
+        "type": "شكل توضيحي",
+        "desc": "شرح توضيحي للخطوات العامة لتكامل الدوال التي تحتوي على مطلق، بما في ذلك الرسم التوضيحي للفترة [a, b] والحد الفاصل c.",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_2_diagram.png"
+      }
+    ],
+    "full_model_solution": "x=1 فالدالة -(x-1) قبلها و(x-1) بعدها: \\int_0^1(-x+1)dx+\\int_1^2(x-1)dx=\\frac12+\\frac12=1",
+    "source_file": "رياضيلت 4/p032_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 32,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_1_drawing_hndsy.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_2_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_1_drawing_hndsy.png",
+    "title": "لتكن \\( f(x)=|x-1| \\). أوجد \\( \\int_0^2 f(x)\\,dx \\)",
+    "number": "تطبيق",
+    "model_solution": "x=1 فالدالة -(x-1) قبلها و(x-1) بعدها: \\int_0^1(-x+1)dx+\\int_1^2(x-1)dx=\\frac12+\\frac12=1",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد الحد الفاصل. الطريقة: نساوي ما داخل المطلق بالصفر. السبب: لأن إشارة الدالة تتغير عنده.",
+        "equation_template": "x-1=0\\Rightarrow x={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "id": "q_4_3_32_1_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( -1 \\) للطرف الثاني."
+          }
+        ],
+        "hint": "انقل \\( -1 \\) للطرف الثاني.",
+        "related_topics": [
+          "القيمة المطلقة"
+        ],
+        "step_id": "math345_4_3_32_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد الحد الفاصل. الطريقة: نساوي ما داخل المطلق بالصفر. السبب: لأن إشارة الدالة تتغير عنده.",
+        "think": "انقل \\( -1 \\) للطرف الثاني.",
+        "html_structure": "x-1=0\\Rightarrow x={q_4_3_32_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب الدالة منشطرة. الطريقة: بعد \\( 1 \\) الدالة \\( x-1 \\) وقبله \\( -(x-1) \\). السبب: لأن المطلق يحوّل السالب إلى موجب.",
+        "equation_template": "f(x)=\\begin{cases}x-1 & x\\ge {input_1}\\\\ {input_2} & x<1\\end{cases}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "-1",
+              "2",
+              "1"
+            ],
+            "id": "q_4_3_32_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "-1",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الفاصل \\( 1 \\) والفرع الآخر معكوس الإشارة."
+          },
+          {
+            "input_id": "s2_i2",
+            "correct_answer": "-(x-1)",
+            "options": [
+              "x+1",
+              "-(x+1)",
+              "-(x-1)",
+              "x-1"
+            ],
+            "id": "q_4_3_32_1_s2_i2",
+            "correct_value": "-(x-1)",
+            "allowed_keys": [
+              "x+1",
+              "-(x+1)",
+              "-(x-1)",
+              "x-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الفاصل \\( 1 \\) والفرع الآخر معكوس الإشارة."
+          }
+        ],
+        "hint": "الحد الفاصل \\( 1 \\) والفرع الآخر معكوس الإشارة.",
+        "related_topics": [
+          "الدالة المنشطرة"
+        ],
+        "step_id": "math345_4_3_32_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب الدالة منشطرة. الطريقة: بعد \\( 1 \\) الدالة \\( x-1 \\) وقبله \\( -(x-1) \\). السبب: لأن المطلق يحوّل السالب إلى موجب.",
+        "think": "الحد الفاصل \\( 1 \\) والفرع الآخر معكوس الإشارة.",
+        "html_structure": "f(x)=\\begin{cases}x-1 & x\\ge {q_4_3_32_1_s2_i1}\\\\ {q_4_3_32_1_s2_i2} & x<1\\end{cases}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نقسم فترة التكامل. الطريقة: نقسم \\( [0,2] \\) عند \\( 1 \\). السبب: لأن الحد الفاصل يقع داخل الفترة.",
+        "equation_template": "\\int_0^2=\\int_0^{input_1}+\\int_{input_2}^2",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "0",
+              "2",
+              "1"
+            ],
+            "id": "q_4_3_32_1_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الحد الفاصل في الفراغين."
+          },
+          {
+            "input_id": "s3_i2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_3_32_1_s3_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع الحد الفاصل في الفراغين."
+          }
+        ],
+        "hint": "ضع الحد الفاصل في الفراغين.",
+        "related_topics": [
+          "تجزئة التكامل"
+        ],
+        "step_id": "math345_4_3_32_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نقسم فترة التكامل. الطريقة: نقسم \\( [0,2] \\) عند \\( 1 \\). السبب: لأن الحد الفاصل يقع داخل الفترة.",
+        "think": "ضع الحد الفاصل في الفراغين.",
+        "html_structure": "\\int_0^2=\\int_0^{q_4_3_32_1_s3_i1}+\\int_{q_4_3_32_1_s3_i2}^2"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب دالة الفرع الأول. الطريقة: \\( -(x-1)=-x+1 \\). السبب: فتح القوس.",
+        "equation_template": "-(x-1)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "-x+1",
+            "options": [
+              "x-1",
+              "x+1",
+              "-x-1",
+              "-x+1"
+            ],
+            "id": "q_4_3_32_1_s4_i1",
+            "correct_value": "-x+1",
+            "allowed_keys": [
+              "x-1",
+              "x+1",
+              "-x-1",
+              "-x+1"
+            ],
+            "label": "القيمة 1",
+            "hint": "وزّع الإشارة السالبة."
+          }
+        ],
+        "hint": "وزّع الإشارة السالبة.",
+        "related_topics": [
+          "فتح الأقواس"
+        ],
+        "step_id": "math345_4_3_32_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب دالة الفرع الأول. الطريقة: \\( -(x-1)=-x+1 \\). السبب: فتح القوس.",
+        "think": "وزّع الإشارة السالبة.",
+        "html_structure": "-(x-1)={q_4_3_32_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد الدالة الأصلية للفرع الأول. الطريقة: \\( \\int(-x+1)dx=-\\frac{x^2}{2}+x \\). السبب: قاعدة القوة.",
+        "equation_template": "\\int_0^1(-x+1)dx=\\left[-\\frac{x^2}{2}+{input_1}\\right]_0^1",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "x",
+            "options": [
+              "2x",
+              "x",
+              "1",
+              "x^2"
+            ],
+            "id": "q_4_3_32_1_s5_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "1",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "تكامل \\( 1 \\) هو \\( x \\)."
+          }
+        ],
+        "hint": "تكامل \\( 1 \\) هو \\( x \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_32_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد الدالة الأصلية للفرع الأول. الطريقة: \\( \\int(-x+1)dx=-\\frac{x^2}{2}+x \\). السبب: قاعدة القوة.",
+        "think": "تكامل \\( 1 \\) هو \\( x \\).",
+        "html_structure": "\\int_0^1(-x+1)dx=\\left[-\\frac{x^2}{2}+{q_4_3_32_1_s5_i1}\\right]_0^1"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب قيمته. الطريقة: نعوض \\( 1 \\) ثم \\( 0 \\). السبب: نظرية الحساب.",
+        "equation_template": "\\left(-\\frac12+1\\right)-0={input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "0",
+              "1",
+              "-\\frac12",
+              "\\frac12"
+            ],
+            "id": "q_4_3_32_1_s6_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-\\frac12",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -\\frac12+1 \\)."
+          }
+        ],
+        "hint": "\\( -\\frac12+1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_32_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب قيمته. الطريقة: نعوض \\( 1 \\) ثم \\( 0 \\). السبب: نظرية الحساب.",
+        "think": "\\( -\\frac12+1 \\).",
+        "html_structure": "\\left(-\\frac12+1\\right)-0={q_4_3_32_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب الفرع الثاني. الطريقة: \\( \\left[\\frac{x^2}{2}-x\\right]_1^2 \\). السبب: نعوض الحدين.",
+        "equation_template": "(2-2)-\\left({input_1}-1\\right)={input_2}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "1",
+              "2",
+              "\\frac14",
+              "\\frac12"
+            ],
+            "id": "q_4_3_32_1_s7_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "1",
+              "2",
+              "\\frac14",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "عند \\( 1 \\): \\( \\frac{1}{2}-1 \\)."
+          },
+          {
+            "input_id": "s7_i2",
+            "correct_answer": "\\frac12",
+            "options": [
+              "-\\frac12",
+              "1",
+              "0",
+              "\\frac12"
+            ],
+            "id": "q_4_3_32_1_s7_i2",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "-\\frac12",
+              "1",
+              "0",
+              "\\frac12"
+            ],
+            "label": "القيمة 2",
+            "hint": "عند \\( 1 \\): \\( \\frac{1}{2}-1 \\)."
+          }
+        ],
+        "hint": "عند \\( 1 \\): \\( \\frac{1}{2}-1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_32_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب الفرع الثاني. الطريقة: \\( \\left[\\frac{x^2}{2}-x\\right]_1^2 \\). السبب: نعوض الحدين.",
+        "think": "عند \\( 1 \\): \\( \\frac{1}{2}-1 \\).",
+        "html_structure": "(2-2)-\\left({q_4_3_32_1_s7_i1}-1\\right)={q_4_3_32_1_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نجمع الناتجين. الطريقة: \\( \\frac12+\\frac12 \\). السبب: المجموع النهائي.",
+        "equation_template": "\\frac12+\\frac12={input_1}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "\\frac12"
+            ],
+            "id": "q_4_3_32_1_s8_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "نصف زائد نصف."
+          }
+        ],
+        "hint": "نصف زائد نصف.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_32_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نجمع الناتجين. الطريقة: \\( \\frac12+\\frac12 \\). السبب: المجموع النهائي.",
+        "think": "نصف زائد نصف.",
+        "html_structure": "\\frac12+\\frac12={q_4_3_32_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q40_p32",
+    "page_number": 32,
+    "question_number": "سؤال",
+    "question_text": "لتكن \\( f(x)=|x-1| \\) أوجد \\( \\int_0^2f(x)dx \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_1_drawing_hndsy.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_2_diagram.png"
+    ],
+    "full_model_solution": "الحد الفاصل \\( x=1 \\). \\( \\int_0^1(-x+1)dx+\\int_1^2(x-1)dx=\\frac12+\\frac12=1 \\).",
+    "source_file": "رياضيلت 4/page_032_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 32
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_032_diag_1_drawing_hndsy.png",
+    "title": "لتكن \\( f(x)=|x-1| \\) أوجد \\( \\int_0^2f(x)dx \\).",
+    "number": "سؤال",
+    "model_solution": "الحد الفاصل \\( x=1 \\). \\( \\int_0^1(-x+1)dx+\\int_1^2(x-1)dx=\\frac12+\\frac12=1 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد الحد الفاصل. الطريقة: نساوي ما داخل المطلق بصفر. السبب: لنعرف تغير الإشارة.",
+        "equation_template": "x-1=0\\Rightarrow x={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "-1",
+              "0"
+            ],
+            "id": "q_4_3_32_2_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "أضف \\( 1 \\)."
+          }
+        ],
+        "hint": "أضف \\( 1 \\).",
+        "related_topics": [
+          "المطلق"
+        ],
+        "step_id": "math345_4_3_32_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد الحد الفاصل. الطريقة: نساوي ما داخل المطلق بصفر. السبب: لنعرف تغير الإشارة.",
+        "think": "أضف \\( 1 \\).",
+        "html_structure": "x-1=0\\Rightarrow x={q_4_3_32_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد الدالة قبل الحد. الطريقة: عندما \\( x<1 \\) يكون ما داخل المطلق سالباً. السبب: فنضرب بـ \\( -1 \\).",
+        "equation_template": "x<1\\Rightarrow|x-1|={input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "-(x-1)",
+            "options": [
+              "-(x-1)",
+              "-(x+1)",
+              "x-1",
+              "x+1"
+            ],
+            "id": "q_4_3_32_2_s2_i1",
+            "correct_value": "-(x-1)",
+            "allowed_keys": [
+              "-(x-1)",
+              "-(x+1)",
+              "x-1",
+              "x+1"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب القوس."
+          }
+        ],
+        "hint": "سالب القوس.",
+        "related_topics": [
+          "المطلق"
+        ],
+        "step_id": "math345_4_3_32_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد الدالة قبل الحد. الطريقة: عندما \\( x<1 \\) يكون ما داخل المطلق سالباً. السبب: فنضرب بـ \\( -1 \\).",
+        "think": "سالب القوس.",
+        "html_structure": "x<1\\Rightarrow|x-1|={q_4_3_32_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد الدالة بعد الحد. الطريقة: عندما \\( x\\ge1 \\) موجب. السبب: نفسه.",
+        "equation_template": "x\\ge1\\Rightarrow|x-1|={input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "x-1",
+            "options": [
+              "x+1",
+              "x-1",
+              "-(x-1)",
+              "1-x"
+            ],
+            "id": "q_4_3_32_2_s3_i1",
+            "correct_value": "x-1",
+            "allowed_keys": [
+              "x+1",
+              "x-1",
+              "-(x-1)",
+              "1-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "كما هو."
+          }
+        ],
+        "hint": "كما هو.",
+        "related_topics": [
+          "المطلق"
+        ],
+        "step_id": "math345_4_3_32_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد الدالة بعد الحد. الطريقة: عندما \\( x\\ge1 \\) موجب. السبب: نفسه.",
+        "think": "كما هو.",
+        "html_structure": "x\\ge1\\Rightarrow|x-1|={q_4_3_32_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نقسم التكامل. الطريقة: عند \\( 1 \\). السبب: للمقارنة.",
+        "equation_template": "\\int_0^{{input_1}}(-x+1)dx+\\int_{{input_2}}^2(x-1)dx",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "id": "q_4_3_32_2_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الفاصل."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "id": "q_4_3_32_2_s4_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الفاصل."
+          }
+        ],
+        "hint": "الحد الفاصل.",
+        "related_topics": [
+          "تجزئة الفترة"
+        ],
+        "step_id": "math345_4_3_32_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نقسم التكامل. الطريقة: عند \\( 1 \\). السبب: للمقارنة.",
+        "think": "الحد الفاصل.",
+        "html_structure": "\\int_0^{{q_4_3_32_2_s4_i1}}(-x+1)dx+\\int_{{q_4_3_32_2_s4_i2}}^2(x-1)dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكامل الأول. الطريقة: \\( -\\frac{x^2}{2}+x \\). السبب: قاعدة.",
+        "equation_template": "\\int(-x+1)dx=-\\frac{x^2}{{input_1}}+{input_2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_32_2_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم على \\( 2 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "c",
+              "1",
+              "x^2"
+            ],
+            "id": "q_4_3_32_2_s5_i2",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "c",
+              "1",
+              "x^2"
+            ],
+            "label": "القيمة 2",
+            "hint": "قسّم على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم على \\( 2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_32_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكامل الأول. الطريقة: \\( -\\frac{x^2}{2}+x \\). السبب: قاعدة.",
+        "think": "قسّم على \\( 2 \\).",
+        "html_structure": "\\int(-x+1)dx=-\\frac{x^2}{{q_4_3_32_2_s5_i1}}+{q_4_3_32_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض الحدين. الطريقة: عند \\( 1 \\) ثم \\( 0 \\). السبب: نظرية الأساس.",
+        "equation_template": "\\left(-\\frac12+1\\right)-0={input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "\\frac12",
+              "1",
+              "0",
+              "\\frac32"
+            ],
+            "id": "q_4_3_32_2_s6_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "\\frac12",
+              "1",
+              "0",
+              "\\frac32"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-\\frac12 \\)."
+          }
+        ],
+        "hint": "\\( 1-\\frac12 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_32_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض الحدين. الطريقة: عند \\( 1 \\) ثم \\( 0 \\). السبب: نظرية الأساس.",
+        "think": "\\( 1-\\frac12 \\).",
+        "html_structure": "\\left(-\\frac12+1\\right)-0={q_4_3_32_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكامل الثاني. الطريقة: \\( \\frac{x^2}{2}-x \\). السبب: قاعدة.",
+        "equation_template": "\\int(x-1)dx=\\frac{x^2}{2}-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "x",
+            "options": [
+              "c",
+              "x",
+              "1",
+              "x^2"
+            ],
+            "id": "q_4_3_32_2_s7_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "c",
+              "x",
+              "1",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "تكامل \\( 1 \\)."
+          }
+        ],
+        "hint": "تكامل \\( 1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_32_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكامل الثاني. الطريقة: \\( \\frac{x^2}{2}-x \\). السبب: قاعدة.",
+        "think": "تكامل \\( 1 \\).",
+        "html_structure": "\\int(x-1)dx=\\frac{x^2}{2}-{q_4_3_32_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نعوض من \\( 1 \\) إلى \\( 2 \\). الطريقة: \\( (2-2)-(\\frac12-1) \\). السبب: نظرية.",
+        "equation_template": "\\left(\\frac42-2\\right)-\\left(\\frac12-1\\right)={input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "-\\frac12",
+              "0",
+              "\\frac12",
+              "1"
+            ],
+            "id": "q_4_3_32_2_s8_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "-\\frac12",
+              "0",
+              "\\frac12",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0-(-\\frac12) \\)."
+          }
+        ],
+        "hint": "\\( 0-(-\\frac12) \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_32_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعوض من \\( 1 \\) إلى \\( 2 \\). الطريقة: \\( (2-2)-(\\frac12-1) \\). السبب: نظرية.",
+        "think": "\\( 0-(-\\frac12) \\).",
+        "html_structure": "\\left(\\frac42-2\\right)-\\left(\\frac12-1\\right)={q_4_3_32_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نجمع. الطريقة: \\( \\frac12+\\frac12 \\). السبب: النهاية.",
+        "equation_template": "\\frac12+\\frac12={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "\\frac12",
+              "0",
+              "1"
+            ],
+            "id": "q_4_3_32_2_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "\\frac12",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج واحد."
+          }
+        ],
+        "hint": "الناتج واحد.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_3_32_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نجمع. الطريقة: \\( \\frac12+\\frac12 \\). السبب: النهاية.",
+        "think": "الناتج واحد.",
+        "html_structure": "\\frac12+\\frac12={q_4_3_32_2_s9_i1}"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1429 @@
+[
+  {
+    "id_number": "q5_p66",
+    "page_number": 66,
+    "question_number": "5",
+    "question_text": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( y=2x^2 \\) والمستقيمين \\( x=0,\\;x=5 \\) حول محور \\( x \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2012 تمهيدي",
+      "2017 تمهيدي-احيائي",
+      "2019 تمهيدي-احيائي",
+      "2020 دور (3)-تطبيقي"
+    ],
+    "full_model_solution": "\\( V=\\pi\\int_0^54x^4dx=\\pi\\left[\\frac{4x^5}{5}\\right]_0^5=2500\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_066_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 66
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png",
+    "title": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( y=2x^2 \\) والمستقيمين \\( x=0,\\;x=5 \\) حول محور \\( x \\).",
+    "number": "5",
+    "model_solution": "\\( V=\\pi\\int_0^54x^4dx=\\pi\\left[\\frac{4x^5}{5}\\right]_0^5=2500\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "equation_template": "x={input_1}\\;\\text{to}\\;x={input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "10",
+              "0",
+              "-1"
+            ],
+            "id": "q_4_6_66_1_s1_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "10",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "5",
+            "options": [
+              "0",
+              "-5",
+              "6",
+              "5"
+            ],
+            "id": "q_4_6_66_1_s1_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "0",
+              "-5",
+              "6",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          }
+        ],
+        "hint": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_6_66_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "think": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "html_structure": "x={q_4_6_66_1_s1_i1}\\;\\text{to}\\;x={q_4_6_66_1_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "equation_template": "V=\\pi\\int_{0}^{5}{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "y^2",
+            "options": [
+              "x^2",
+              "\\sqrt{y}",
+              "y",
+              "y^2"
+            ],
+            "id": "q_4_6_66_1_s2_i1",
+            "correct_value": "y^2",
+            "allowed_keys": [
+              "x^2",
+              "\\sqrt{y}",
+              "y",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( y \\) داخل التكامل."
+          }
+        ],
+        "hint": "اكتب مربع \\( y \\) داخل التكامل.",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_66_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "think": "اكتب مربع \\( y \\) داخل التكامل.",
+        "html_structure": "V=\\pi\\int_{0}^{5}{q_4_6_66_1_s2_i1}\\,dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نربع الدالة. الطريقة: \\( (2x^2)^2=4x^4 \\): نربع المعامل \\( 2 \\) ونضاعف الأس. السبب: لنحصل على \\( y^2 \\).",
+        "equation_template": "y^2=(2x^2)^2={input_1}x^4",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "16"
+            ],
+            "id": "q_4_6_66_1_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2 \\).",
+        "related_topics": [
+          "التربيع"
+        ],
+        "step_id": "math345_4_6_66_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نربع الدالة. الطريقة: \\( (2x^2)^2=4x^4 \\): نربع المعامل \\( 2 \\) ونضاعف الأس. السبب: لنحصل على \\( y^2 \\).",
+        "think": "\\( 2\\times2 \\).",
+        "html_structure": "y^2=(2x^2)^2={q_4_6_66_1_s3_i1}x^4"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int4x^4dx \\) نزيد الأس ونقسم. السبب: قاعدة القوة.",
+        "equation_template": "\\int4x^4dx=\\frac{4x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "id": "q_4_6_66_1_s4_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4+1=5 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "5",
+            "options": [
+              "3",
+              "6",
+              "4",
+              "5"
+            ],
+            "id": "q_4_6_66_1_s4_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "3",
+              "6",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4+1=5 \\)."
+          }
+        ],
+        "hint": "\\( 4+1=5 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_66_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int4x^4dx \\) نزيد الأس ونقسم. السبب: قاعدة القوة.",
+        "think": "\\( 4+1=5 \\).",
+        "html_structure": "\\int4x^4dx=\\frac{4x^{{q_4_6_66_1_s4_i1}}}{{q_4_6_66_1_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب \\( 5^5 \\). الطريقة: \\( 5\\times5\\times5\\times5\\times5 \\). السبب: للحد العلوي.",
+        "equation_template": "5^5={input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "3125",
+            "options": [
+              "25",
+              "3125",
+              "1250",
+              "625"
+            ],
+            "id": "q_4_6_66_1_s5_i1",
+            "correct_value": "3125",
+            "allowed_keys": [
+              "25",
+              "3125",
+              "1250",
+              "625"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 625\\times5 \\)."
+          }
+        ],
+        "hint": "\\( 625\\times5 \\).",
+        "related_topics": [
+          "الأسس"
+        ],
+        "step_id": "math345_4_6_66_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب \\( 5^5 \\). الطريقة: \\( 5\\times5\\times5\\times5\\times5 \\). السبب: للحد العلوي.",
+        "think": "\\( 625\\times5 \\).",
+        "html_structure": "5^5={q_4_6_66_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نضرب في \\( 4 \\). الطريقة: \\( 4\\times3125 \\). السبب: المعامل.",
+        "equation_template": "\\frac{4\\times3125}{5}=\\frac{{input_1}}{5}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "12500",
+            "options": [
+              "3125",
+              "6250",
+              "15625",
+              "12500"
+            ],
+            "id": "q_4_6_66_1_s6_i1",
+            "correct_value": "12500",
+            "allowed_keys": [
+              "3125",
+              "6250",
+              "15625",
+              "12500"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3125\\times4 \\)."
+          }
+        ],
+        "hint": "\\( 3125\\times4 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_4_6_66_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نضرب في \\( 4 \\). الطريقة: \\( 4\\times3125 \\). السبب: المعامل.",
+        "think": "\\( 3125\\times4 \\).",
+        "html_structure": "\\frac{4\\times3125}{5}=\\frac{{q_4_6_66_1_s6_i1}}{5}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقسم على \\( 5 \\). الطريقة: \\( 12500\\div5 \\). السبب: الناتج.",
+        "equation_template": "\\frac{12500}{5}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "2500",
+            "options": [
+              "625",
+              "250",
+              "2500",
+              "25000"
+            ],
+            "id": "q_4_6_66_1_s7_i1",
+            "correct_value": "2500",
+            "allowed_keys": [
+              "625",
+              "250",
+              "2500",
+              "25000"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 12500\\div5 \\)."
+          }
+        ],
+        "hint": "\\( 12500\\div5 \\).",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_4_6_66_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقسم على \\( 5 \\). الطريقة: \\( 12500\\div5 \\). السبب: الناتج.",
+        "think": "\\( 12500\\div5 \\).",
+        "html_structure": "\\frac{12500}{5}={q_4_6_66_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: الحد السفلي صفر فلا يغير. السبب: \\( 2500-0 \\).",
+        "equation_template": "V=\\pi(2500-{input_1})=2500\\pi",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "0",
+            "options": [
+              "2500",
+              "5",
+              "1",
+              "0"
+            ],
+            "id": "q_4_6_66_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "2500",
+              "5",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "عند \\( 0 \\) القيمة صفر."
+          }
+        ],
+        "hint": "عند \\( 0 \\) القيمة صفر.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_66_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: الحد السفلي صفر فلا يغير. السبب: \\( 2500-0 \\).",
+        "think": "عند \\( 0 \\) القيمة صفر.",
+        "html_structure": "V=\\pi(2500-{q_4_6_66_1_s8_i1})=2500\\pi"
+      }
+    ]
+  },
+  {
+    "id_number": "q6_p66",
+    "page_number": 66,
+    "question_number": "6",
+    "question_text": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( 4x^2=y \\) والمستقيمين \\( y=0,\\;y=16 \\) حول المحور \\( y \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2025 دور (2)",
+      "2015 تمهيدي",
+      "2012 دور (1)-خارج",
+      "2020 تمهيدي-تطبيقي",
+      "2018 دور (3)-احيائي",
+      "2018 دور (1)-احيائي-خارج",
+      "2019 دور (1)-تطبيقي-خارج"
+    ],
+    "full_model_solution": "\\( x^2=\\frac y4 \\) فـ \\( V=\\pi\\int_0^{16}\\frac y4dy=\\pi\\left[\\frac{y^2}{8}\\right]_0^{16}=32\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_066_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 66
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png",
+    "title": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( 4x^2=y \\) والمستقيمين \\( y=0,\\;y=16 \\) حول المحور \\( y \\).",
+    "number": "6",
+    "model_solution": "\\( x^2=\\frac y4 \\) فـ \\( V=\\pi\\int_0^{16}\\frac y4dy=\\pi\\left[\\frac{y^2}{8}\\right]_0^{16}=32\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور الصادات. الطريقة: القانون \\( V=\\pi\\int x^2\\,dy \\) فنضع \\( x^2 \\) والحدين \\( y \\). السبب: لأن الدوران حول محور الصادات يولد أقراصاً نصف قطرها \\( x \\).",
+        "equation_template": "V=\\pi\\int_{0}^{16}{input_1}\\,dy",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "x^2",
+            "options": [
+              "x",
+              "\\sqrt{x}",
+              "x^2",
+              "y^2"
+            ],
+            "id": "q_4_6_66_2_s1_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x",
+              "\\sqrt{x}",
+              "x^2",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( x \\)."
+          }
+        ],
+        "hint": "اكتب مربع \\( x \\).",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_66_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور الصادات. الطريقة: القانون \\( V=\\pi\\int x^2\\,dy \\) فنضع \\( x^2 \\) والحدين \\( y \\). السبب: لأن الدوران حول محور الصادات يولد أقراصاً نصف قطرها \\( x \\).",
+        "think": "اكتب مربع \\( x \\).",
+        "html_structure": "V=\\pi\\int_{0}^{16}{q_4_6_66_2_s1_i1}\\,dy"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: نقسم الطرفين على \\( 4 \\). السبب: القانون يحتاج \\( x^2 \\) وحدها.",
+        "equation_template": "4x^2=y\\Rightarrow x^2=\\frac{y}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "8",
+              "4",
+              "16"
+            ],
+            "id": "q_4_6_66_2_s2_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "8",
+              "4",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل أمام \\( x^2 \\)."
+          }
+        ],
+        "hint": "المعامل أمام \\( x^2 \\).",
+        "related_topics": [
+          "عزل المتغير"
+        ],
+        "step_id": "math345_4_6_66_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: نقسم الطرفين على \\( 4 \\). السبب: القانون يحتاج \\( x^2 \\) وحدها.",
+        "think": "المعامل أمام \\( x^2 \\).",
+        "html_structure": "4x^2=y\\Rightarrow x^2=\\frac{y}{{q_4_6_66_2_s2_i1}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعوض في التكامل. الطريقة: \\( \\frac y4=\\frac14y \\). السبب: لنكامل بالقوة.",
+        "equation_template": "V=\\pi\\int_0^{16}\\frac14\\,{input_1}\\,dy",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "y",
+            "options": [
+              "4y",
+              "1",
+              "y^2",
+              "y"
+            ],
+            "id": "q_4_6_66_2_s3_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "4y",
+              "1",
+              "y^2",
+              "y"
+            ],
+            "label": "القيمة 1",
+            "hint": "المتغير \\( y \\)."
+          }
+        ],
+        "hint": "المتغير \\( y \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_66_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعوض في التكامل. الطريقة: \\( \\frac y4=\\frac14y \\). السبب: لنكامل بالقوة.",
+        "think": "المتغير \\( y \\).",
+        "html_structure": "V=\\pi\\int_0^{16}\\frac14\\,{q_4_6_66_2_s3_i1}\\,dy"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\frac14\\cdot\\frac{y^2}{2} \\). السبب: نزيد الأس ثم نقسم.",
+        "equation_template": "\\int\\frac14y\\,dy=\\frac{y^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "3"
+            ],
+            "id": "q_4_6_66_2_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\times2=8 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "8",
+            "options": [
+              "4",
+              "16",
+              "8",
+              "2"
+            ],
+            "id": "q_4_6_66_2_s4_i2",
+            "correct_value": "8",
+            "allowed_keys": [
+              "4",
+              "16",
+              "8",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4\\times2=8 \\)."
+          }
+        ],
+        "hint": "\\( 4\\times2=8 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_66_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\frac14\\cdot\\frac{y^2}{2} \\). السبب: نزيد الأس ثم نقسم.",
+        "think": "\\( 4\\times2=8 \\).",
+        "html_structure": "\\int\\frac14y\\,dy=\\frac{y^{{q_4_6_66_2_s4_i1}}}{{q_4_6_66_2_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 16^2=256 \\). السبب: للتكامل المحدد.",
+        "equation_template": "\\frac{16^2}{8}=\\frac{{input_1}}{8}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "256",
+            "options": [
+              "32",
+              "128",
+              "256",
+              "512"
+            ],
+            "id": "q_4_6_66_2_s5_i1",
+            "correct_value": "256",
+            "allowed_keys": [
+              "32",
+              "128",
+              "256",
+              "512"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 16\\times16 \\)."
+          }
+        ],
+        "hint": "\\( 16\\times16 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_66_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 16^2=256 \\). السبب: للتكامل المحدد.",
+        "think": "\\( 16\\times16 \\).",
+        "html_structure": "\\frac{16^2}{8}=\\frac{{q_4_6_66_2_s5_i1}}{8}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقسم. الطريقة: \\( 256\\div8 \\). السبب: القيمة العليا.",
+        "equation_template": "\\frac{256}{8}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "32",
+            "options": [
+              "8",
+              "64",
+              "16",
+              "32"
+            ],
+            "id": "q_4_6_66_2_s6_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "8",
+              "64",
+              "16",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم."
+          }
+        ],
+        "hint": "اقسم.",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_4_6_66_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقسم. الطريقة: \\( 256\\div8 \\). السبب: القيمة العليا.",
+        "think": "اقسم.",
+        "html_structure": "\\frac{256}{8}={q_4_6_66_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( \\frac{0^2}{8} \\). السبب: صفر.",
+        "equation_template": "\\frac{0^2}{8}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "2",
+              "8",
+              "1"
+            ],
+            "id": "q_4_6_66_2_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "2",
+              "8",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "صفر."
+          }
+        ],
+        "hint": "صفر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_66_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( \\frac{0^2}{8} \\). السبب: صفر.",
+        "think": "صفر.",
+        "html_structure": "\\frac{0^2}{8}={q_4_6_66_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\pi\\times32 \\). السبب: الناتج.",
+        "equation_template": "V={input_1}\\pi\\;\\text{unit}^3",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "32",
+            "options": [
+              "32",
+              "8",
+              "64",
+              "16"
+            ],
+            "id": "q_4_6_66_2_s8_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "32",
+              "8",
+              "64",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج."
+          }
+        ],
+        "hint": "الناتج.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_66_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\pi\\times32 \\). السبب: الناتج.",
+        "think": "الناتج.",
+        "html_structure": "V={q_4_6_66_2_s8_i1}\\pi\\;\\text{unit}^3"
+      }
+    ]
+  },
+  {
+    "id_number": "q7_p66",
+    "page_number": 66,
+    "question_number": "7",
+    "question_text": "أوجد الحجم الناشئ من دوران المنطقة المحصورة بين محور الصادات ومنحنى الدالة \\( y=\\frac3x,\\;1\\le y\\le3 \\) حول المحور الصادي.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2017 دور (2)-احيائي"
+    ],
+    "full_model_solution": "\\( x=\\frac3y \\) فـ \\( V=\\pi\\int_1^3\\frac{9}{y^2}dy=\\pi\\left[-\\frac9y\\right]_1^3=6\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_066_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 66
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png",
+    "title": "أوجد الحجم الناشئ من دوران المنطقة المحصورة بين محور الصادات ومنحنى الدالة \\( y=\\frac3x,\\;1\\le y\\le3 \\) حول المحور الصادي.",
+    "number": "7",
+    "model_solution": "\\( x=\\frac3y \\) فـ \\( V=\\pi\\int_1^3\\frac{9}{y^2}dy=\\pi\\left[-\\frac9y\\right]_1^3=6\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور الصادات. الطريقة: القانون \\( V=\\pi\\int x^2\\,dy \\) فنضع \\( x^2 \\) والحدين \\( y \\). السبب: لأن الدوران حول محور الصادات يولد أقراصاً نصف قطرها \\( x \\).",
+        "equation_template": "V=\\pi\\int_{1}^{3}{input_1}\\,dy",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "x^2",
+            "options": [
+              "\\sqrt{x}",
+              "x",
+              "x^2",
+              "y^2"
+            ],
+            "id": "q_4_6_66_3_s1_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "\\sqrt{x}",
+              "x",
+              "x^2",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( x \\)."
+          }
+        ],
+        "hint": "اكتب مربع \\( x \\).",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_66_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور الصادات. الطريقة: القانون \\( V=\\pi\\int x^2\\,dy \\) فنضع \\( x^2 \\) والحدين \\( y \\). السبب: لأن الدوران حول محور الصادات يولد أقراصاً نصف قطرها \\( x \\).",
+        "think": "اكتب مربع \\( x \\).",
+        "html_structure": "V=\\pi\\int_{1}^{3}{q_4_6_66_3_s1_i1}\\,dy"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نعزل \\( x \\). الطريقة: من \\( y=\\frac3x \\) نضرب بـ \\( x \\) ونقسم على \\( y \\). السبب: نحتاج \\( x \\) بدلالة \\( y \\).",
+        "equation_template": "x=\\frac{3}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "y",
+            "options": [
+              "x",
+              "y^2",
+              "3",
+              "y"
+            ],
+            "id": "q_4_6_66_3_s2_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "x",
+              "y^2",
+              "3",
+              "y"
+            ],
+            "label": "القيمة 1",
+            "hint": "بدّل مكان \\( x \\) و \\( y \\)."
+          }
+        ],
+        "hint": "بدّل مكان \\( x \\) و \\( y \\).",
+        "related_topics": [
+          "عزل المتغير"
+        ],
+        "step_id": "math345_4_6_66_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نعزل \\( x \\). الطريقة: من \\( y=\\frac3x \\) نضرب بـ \\( x \\) ونقسم على \\( y \\). السبب: نحتاج \\( x \\) بدلالة \\( y \\).",
+        "think": "بدّل مكان \\( x \\) و \\( y \\).",
+        "html_structure": "x=\\frac{3}{{q_4_6_66_3_s2_i1}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نربع. الطريقة: \\( \\left(\\frac3y\\right)^2 \\) نربع البسط والمقام. السبب: للقانون.",
+        "equation_template": "x^2=\\frac{{input_1}}{y^2}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "9",
+            "options": [
+              "27",
+              "3",
+              "9",
+              "6"
+            ],
+            "id": "q_4_6_66_3_s3_i1",
+            "correct_value": "9",
+            "allowed_keys": [
+              "27",
+              "3",
+              "9",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times3 \\)."
+          }
+        ],
+        "hint": "\\( 3\\times3 \\).",
+        "related_topics": [
+          "التربيع"
+        ],
+        "step_id": "math345_4_6_66_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نربع. الطريقة: \\( \\left(\\frac3y\\right)^2 \\) نربع البسط والمقام. السبب: للقانون.",
+        "think": "\\( 3\\times3 \\).",
+        "html_structure": "x^2=\\frac{{q_4_6_66_3_s3_i1}}{y^2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب بأس سالب. الطريقة: \\( \\frac{1}{y^2}=y^{-2} \\). السبب: لنطبق قاعدة القوة.",
+        "equation_template": "\\frac{9}{y^2}=9y^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "-2",
+            "options": [
+              "-1",
+              "2",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_6_66_3_s4_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-1",
+              "2",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام ينتقل بأس سالب."
+          }
+        ],
+        "hint": "المقام ينتقل بأس سالب.",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_4_6_66_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب بأس سالب. الطريقة: \\( \\frac{1}{y^2}=y^{-2} \\). السبب: لنطبق قاعدة القوة.",
+        "think": "المقام ينتقل بأس سالب.",
+        "html_structure": "\\frac{9}{y^2}=9y^{{q_4_6_66_3_s4_i1}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد الأس \\( -2+1=-1 \\) ونقسم عليه. السبب: قاعدة القوة.",
+        "equation_template": "\\int9y^{-2}dy=\\frac{9y^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "-1",
+            "options": [
+              "1",
+              "0",
+              "-1",
+              "-2"
+            ],
+            "id": "q_4_6_66_3_s5_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "-1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2+1 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "-1",
+            "options": [
+              "1",
+              "2",
+              "-1",
+              "-2"
+            ],
+            "id": "q_4_6_66_3_s5_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "-1",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2+1 \\)."
+          }
+        ],
+        "hint": "\\( -2+1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_66_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد الأس \\( -2+1=-1 \\) ونقسم عليه. السبب: قاعدة القوة.",
+        "think": "\\( -2+1 \\).",
+        "html_structure": "\\int9y^{-2}dy=\\frac{9y^{{q_4_6_66_3_s5_i1}}}{{q_4_6_66_3_s5_i2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نبسط. الطريقة: \\( \\frac{9y^{-1}}{-1}=-\\frac9y \\). السبب: لنعوض بسهولة.",
+        "equation_template": "-9y^{-1}=-\\frac{9}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "y",
+            "options": [
+              "1",
+              "9",
+              "y",
+              "y^2"
+            ],
+            "id": "q_4_6_66_3_s6_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "1",
+              "9",
+              "y",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس السالب يعني مقاماً."
+          }
+        ],
+        "hint": "الأس السالب يعني مقاماً.",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_6_66_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نبسط. الطريقة: \\( \\frac{9y^{-1}}{-1}=-\\frac9y \\). السبب: لنعوض بسهولة.",
+        "think": "الأس السالب يعني مقاماً.",
+        "html_structure": "-9y^{-1}=-\\frac{9}{{q_4_6_66_3_s6_i1}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوض الحدين. الطريقة: عند \\( y=3 \\): \\( -\\frac93 \\). عند \\( y=1 \\): \\( -\\frac91 \\). السبب: العليا ناقص السفلى.",
+        "equation_template": "\\left(-\\frac93\\right)-\\left(-\\frac91\\right)={input_1}-({input_2})",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "-9",
+              "9",
+              "3"
+            ],
+            "id": "q_4_6_66_3_s7_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "-9",
+              "9",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 9\\div3=3 \\) و \\( 9\\div1=9 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "-9",
+            "options": [
+              "-3",
+              "-9",
+              "9",
+              "3"
+            ],
+            "id": "q_4_6_66_3_s7_i2",
+            "correct_value": "-9",
+            "allowed_keys": [
+              "-3",
+              "-9",
+              "9",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 9\\div3=3 \\) و \\( 9\\div1=9 \\)."
+          }
+        ],
+        "hint": "\\( 9\\div3=3 \\) و \\( 9\\div1=9 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_66_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوض الحدين. الطريقة: عند \\( y=3 \\): \\( -\\frac93 \\). عند \\( y=1 \\): \\( -\\frac91 \\). السبب: العليا ناقص السفلى.",
+        "think": "\\( 9\\div3=3 \\) و \\( 9\\div1=9 \\).",
+        "html_structure": "\\left(-\\frac93\\right)-\\left(-\\frac91\\right)={q_4_6_66_3_s7_i1}-({q_4_6_66_3_s7_i2})"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: \\( -3+9 \\) ثم \\( \\pi \\). السبب: الناتج.",
+        "equation_template": "V=(-3+9)\\pi={input_1}\\pi",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "-6",
+              "12",
+              "3"
+            ],
+            "id": "q_4_6_66_3_s8_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "-6",
+              "12",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع."
+          }
+        ],
+        "hint": "اجمع.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_66_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: \\( -3+9 \\) ثم \\( \\pi \\). السبب: الناتج.",
+        "think": "اجمع.",
+        "html_structure": "V=(-3+9)\\pi={q_4_6_66_3_s8_i1}\\pi"
+      }
+    ]
+  },
+  {
+    "id_number": "q8_p66",
+    "page_number": 66,
+    "question_number": "8",
+    "question_text": "أوجد الحجم الناتج من دوران المساحة المحصورة بين المنحنى \\( y=x^2+1 \\) والمستقيم \\( y=4 \\) حول المحور الصادي.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2016 دور (1)-خارج",
+      "2015 دور (1)-خارج",
+      "2013 دور (1)"
+    ],
+    "full_model_solution": "\\( x^2=y-1 \\) و \\( y\\in[1,4] \\): \\( V=\\pi\\int_1^4(y-1)dy=\\pi\\left[\\frac{y^2}{2}-y\\right]_1^4=\\frac92\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_066_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 66
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_066_diag_1_drawing.png",
+    "title": "أوجد الحجم الناتج من دوران المساحة المحصورة بين المنحنى \\( y=x^2+1 \\) والمستقيم \\( y=4 \\) حول المحور الصادي.",
+    "number": "8",
+    "model_solution": "\\( x^2=y-1 \\) و \\( y\\in[1,4] \\): \\( V=\\pi\\int_1^4(y-1)dy=\\pi\\left[\\frac{y^2}{2}-y\\right]_1^4=\\frac92\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد حدود \\( y \\). الطريقة: أقل قيمة للمنحنى عند \\( x=0 \\) هي \\( y=1 \\)، والمستقيم يحدد الأعلى \\( y=4 \\). السبب: لأن الدوران حول \\( y \\) فحدوده قيم \\( y \\).",
+        "equation_template": "y\\in[{input_1},{input_2}]",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "1",
+              "4",
+              "2"
+            ],
+            "id": "q_4_6_66_4_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "1",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0^2+1=1 \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "4",
+            "options": [
+              "5",
+              "4",
+              "1",
+              "2"
+            ],
+            "id": "q_4_6_66_4_s1_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "5",
+              "4",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 0^2+1=1 \\)."
+          }
+        ],
+        "hint": "\\( 0^2+1=1 \\).",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_6_66_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد حدود \\( y \\). الطريقة: أقل قيمة للمنحنى عند \\( x=0 \\) هي \\( y=1 \\)، والمستقيم يحدد الأعلى \\( y=4 \\). السبب: لأن الدوران حول \\( y \\) فحدوده قيم \\( y \\).",
+        "think": "\\( 0^2+1=1 \\).",
+        "html_structure": "y\\in[{q_4_6_66_4_s1_i1},{q_4_6_66_4_s1_i2}]"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور الصادات. الطريقة: القانون \\( V=\\pi\\int x^2\\,dy \\) فنضع \\( x^2 \\) والحدين \\( y \\). السبب: لأن الدوران حول محور الصادات يولد أقراصاً نصف قطرها \\( x \\).",
+        "equation_template": "V=\\pi\\int_{1}^{4}{input_1}\\,dy",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "x^2",
+            "options": [
+              "y^2",
+              "x",
+              "x^2",
+              "\\sqrt{x}"
+            ],
+            "id": "q_4_6_66_4_s2_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "y^2",
+              "x",
+              "x^2",
+              "\\sqrt{x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( x \\)."
+          }
+        ],
+        "hint": "اكتب مربع \\( x \\).",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_66_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور الصادات. الطريقة: القانون \\( V=\\pi\\int x^2\\,dy \\) فنضع \\( x^2 \\) والحدين \\( y \\). السبب: لأن الدوران حول محور الصادات يولد أقراصاً نصف قطرها \\( x \\).",
+        "think": "اكتب مربع \\( x \\).",
+        "html_structure": "V=\\pi\\int_{1}^{4}{q_4_6_66_4_s2_i1}\\,dy"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: نطرح \\( 1 \\) من الطرفين. السبب: القانون يحتاج \\( x^2 \\).",
+        "equation_template": "x^2=y-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "4",
+              "0",
+              "2",
+              "1"
+            ],
+            "id": "q_4_6_66_4_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "4",
+              "0",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 1 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 1 \\).",
+        "related_topics": [
+          "عزل المتغير"
+        ],
+        "step_id": "math345_4_6_66_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: نطرح \\( 1 \\) من الطرفين. السبب: القانون يحتاج \\( x^2 \\).",
+        "think": "اطرح \\( 1 \\).",
+        "html_structure": "x^2=y-{q_4_6_66_4_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int y\\,dy=\\frac{y^2}{2} \\) و \\( \\int1\\,dy=y \\). السبب: قاعدة القوة.",
+        "equation_template": "\\int(y-1)dy=\\frac{y^{{input_1}}}{{input_2}}-y",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "1"
+            ],
+            "id": "q_4_6_66_4_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "id": "q_4_6_66_4_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "\\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_66_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int y\\,dy=\\frac{y^2}{2} \\) و \\( \\int1\\,dy=y \\). السبب: قاعدة القوة.",
+        "think": "\\( 1+1=2 \\).",
+        "html_structure": "\\int(y-1)dy=\\frac{y^{{q_4_6_66_4_s4_i1}}}{{q_4_6_66_4_s4_i2}}-y"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض \\( y=4 \\). الطريقة: \\( \\frac{16}{2}-4 \\). السبب: الحد العلوي.",
+        "equation_template": "\\frac{4^2}{2}-4={input_1}-4={input_2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "8",
+            "options": [
+              "16",
+              "8",
+              "2",
+              "4"
+            ],
+            "id": "q_4_6_66_4_s5_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "16",
+              "8",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 16\\div2=8 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "4",
+            "options": [
+              "12",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_4_6_66_4_s5_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "12",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 16\\div2=8 \\)."
+          }
+        ],
+        "hint": "\\( 16\\div2=8 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_66_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض \\( y=4 \\). الطريقة: \\( \\frac{16}{2}-4 \\). السبب: الحد العلوي.",
+        "think": "\\( 16\\div2=8 \\).",
+        "html_structure": "\\frac{4^2}{2}-4={q_4_6_66_4_s5_i1}-4={q_4_6_66_4_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض \\( y=1 \\). الطريقة: \\( \\frac12-1 \\). السبب: الحد السفلي.",
+        "equation_template": "\\frac{1^2}{2}-1={input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "-\\frac12",
+            "options": [
+              "-\\frac12",
+              "0",
+              "\\frac12",
+              "-1"
+            ],
+            "id": "q_4_6_66_4_s6_i1",
+            "correct_value": "-\\frac12",
+            "allowed_keys": [
+              "-\\frac12",
+              "0",
+              "\\frac12",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.5-1 \\)."
+          }
+        ],
+        "hint": "\\( 0.5-1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_66_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض \\( y=1 \\). الطريقة: \\( \\frac12-1 \\). السبب: الحد السفلي.",
+        "think": "\\( 0.5-1 \\).",
+        "html_structure": "\\frac{1^2}{2}-1={q_4_6_66_4_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نطرح. الطريقة: \\( 4-\\left(-\\frac12\\right)=4+\\frac12 \\). السبب: العليا ناقص السفلى.",
+        "equation_template": "4+\\frac12={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\frac92",
+            "options": [
+              "\\frac72",
+              "5",
+              "\\frac{11}{2}",
+              "\\frac92"
+            ],
+            "id": "q_4_6_66_4_s7_i1",
+            "correct_value": "\\frac92",
+            "allowed_keys": [
+              "\\frac72",
+              "5",
+              "\\frac{11}{2}",
+              "\\frac92"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac82+\\frac12 \\)."
+          }
+        ],
+        "hint": "\\( \\frac82+\\frac12 \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_6_66_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نطرح. الطريقة: \\( 4-\\left(-\\frac12\\right)=4+\\frac12 \\). السبب: العليا ناقص السفلى.",
+        "think": "\\( \\frac82+\\frac12 \\).",
+        "html_structure": "4+\\frac12={q_4_6_66_4_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\frac92\\pi \\). السبب: الناتج.",
+        "equation_template": "V=\\frac{{input_1}}{2}\\pi\\;\\text{unit}^3",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "9",
+            "options": [
+              "8",
+              "7",
+              "9",
+              "11"
+            ],
+            "id": "q_4_6_66_4_s8_i1",
+            "correct_value": "9",
+            "allowed_keys": [
+              "8",
+              "7",
+              "9",
+              "11"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط \\( 9 \\)."
+          }
+        ],
+        "hint": "البسط \\( 9 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_66_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\frac92\\pi \\). السبب: الناتج.",
+        "think": "البسط \\( 9 \\).",
+        "html_structure": "V=\\frac{{q_4_6_66_4_s8_i1}}{2}\\pi\\;\\text{unit}^3"
+      }
+    ]
+  }
+]

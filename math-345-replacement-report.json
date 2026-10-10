@@ -1,0 +1,1791 @@
+{
+  "source_files": 250,
+  "raw_questions": 454,
+  "exported_questions": 411,
+  "exported_page_topic_groups": 201,
+  "duplicate_copies": 43,
+  "empty_pages": [
+    "رياضيات 3/math_p005.json",
+    "رياضيات 3/page_011.json",
+    "رياضيات 3/page_012.json",
+    "رياضيات 3/page_030_steps.json",
+    "رياضيات 3/page_041(1).json",
+    "رياضيات 3/page_041.json",
+    "رياضيات 3/page_051_interactive.json",
+    "رياضيات 3/page_058_interactive.json",
+    "رياضيات 3/page_059_interactive.json",
+    "رياضيات 3/page_067_output(1).json",
+    "رياضيات 3/page_067_output.json",
+    "رياضيات 3/page_073_output.json",
+    "رياضيات 3/page_080_output(1).json",
+    "رياضيات 3/page_080_output.json",
+    "رياضيات 3/page_081_output(1).json",
+    "رياضيات 3/page_081_output.json",
+    "رياضيات 3/page_113.json",
+    "رياضيات 3/page_114.json",
+    "رياضيات 3/page_115.json",
+    "رياضيات 3/page_118.json",
+    "رياضيات 3/page_120.json",
+    "رياضيات 3/page_122.json",
+    "رياضيات 3/page_123.json",
+    "رياضيات 3/page_128_steps.json",
+    "رياضيات 3/page_130_steps.json",
+    "رياضيات 3/page_132_steps.json",
+    "رياضيات 3/page_136_output.json",
+    "رياضيات5/page_015.json",
+    "رياضيات5/page_016.json",
+    "رياضيلت 4/page_018_interactive.json",
+    "رياضيلت 4/page_041_interactive.json",
+    "رياضيلت 4/page_048_interactive.json",
+    "رياضيلت 4/page_051_interactive.json",
+    "رياضيلت 4/page_058_interactive.json",
+    "رياضيلت 4/page_059_interactive.json",
+    "رياضيلت 4/page_064_interactive.json",
+    "رياضيلت 4/page_082.json"
+  ],
+  "repaired_files": [
+    {
+      "file": "رياضيات 3/gemini-code-1791549377442.txt",
+      "recovered_questions": 2,
+      "completed_steps": 4
+    }
+  ],
+  "chapters": {
+    "3": {
+      "questions": 180,
+      "page_topic_groups": 110,
+      "topics": [
+        {
+          "name": "تمهيد: قواعد الاشتقاق والاشتقاق الضمني",
+          "pages": 5
+        },
+        {
+          "name": "المعدلات المرتبطة",
+          "pages": 17
+        },
+        {
+          "name": "مبرهنة رول",
+          "pages": 11
+        },
+        {
+          "name": "مبرهنة القيمة المتوسطة",
+          "pages": 9
+        },
+        {
+          "name": "التقريب والتفاضلات",
+          "pages": 12
+        },
+        {
+          "name": "التزايد والتناقص والنهايات المحلية",
+          "pages": 15
+        },
+        {
+          "name": "التقعر والتحدب ونقاط الانقلاب",
+          "pages": 4
+        },
+        {
+          "name": "مسائل الثوابت والمماس والنهايات",
+          "pages": 12
+        },
+        {
+          "name": "رسم الدوال والمجال والتناظر والمحاذيات",
+          "pages": 14
+        },
+        {
+          "name": "تطبيقات القيم العظمى والصغرى",
+          "pages": 9
+        },
+        {
+          "name": "تمارين مرتبطة بالقطع المكافئ",
+          "pages": 2
+        }
+      ]
+    },
+    "4": {
+      "questions": 190,
+      "page_topic_groups": 76,
+      "topics": [
+        {
+          "name": "تمهيد: مشتقات الدوال الأسية واللوغاريتمية",
+          "pages": 2
+        },
+        {
+          "name": "التكامل غير المحدد",
+          "pages": 25
+        },
+        {
+          "name": "التكامل المحدد",
+          "pages": 18
+        },
+        {
+          "name": "المساحات بين المنحنيات",
+          "pages": 12
+        },
+        {
+          "name": "تطبيقات التكامل في الحركة",
+          "pages": 4
+        },
+        {
+          "name": "الحجوم الدورانية",
+          "pages": 3
+        },
+        {
+          "name": "الدالة المقابلة وخواص التكامل",
+          "pages": 3
+        },
+        {
+          "name": "مجاميع ريمان والتجزئة",
+          "pages": 8
+        },
+        {
+          "name": "تمهيد: المعادلات المثلثية",
+          "pages": 1
+        }
+      ]
+    },
+    "5": {
+      "questions": 41,
+      "page_topic_groups": 15,
+      "topics": [
+        {
+          "name": "رتبة ودرجة المعادلة التفاضلية",
+          "pages": 2
+        },
+        {
+          "name": "التحقق من حلول المعادلات التفاضلية",
+          "pages": 5
+        },
+        {
+          "name": "حل المعادلات التفاضلية وفصل المتغيرات",
+          "pages": 8
+        }
+      ]
+    }
+  },
+  "mapping": [
+    {
+      "chapter": 3,
+      "topic": "تمهيد: قواعد الاشتقاق والاشتقاق الضمني",
+      "page": 6,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "تمهيد: قواعد الاشتقاق والاشتقاق الضمني",
+      "page": 7,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "تمهيد: قواعد الاشتقاق والاشتقاق الضمني",
+      "page": 8,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 3,
+      "topic": "تمهيد: قواعد الاشتقاق والاشتقاق الضمني",
+      "page": 9,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تمهيد: قواعد الاشتقاق والاشتقاق الضمني",
+      "page": 10,
+      "questions": 3,
+      "images": 0
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 13,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 14,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 15,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 16,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 17,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 18,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 19,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 20,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 21,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 22,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 23,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 24,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 25,
+      "questions": 1,
+      "images": 0
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 26,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 27,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 28,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "المعدلات المرتبطة",
+      "page": 29,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 31,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 32,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 33,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 34,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 35,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 36,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 37,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 38,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 39,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 40,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة رول",
+      "page": 44,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 42,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 43,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 45,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 46,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 47,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 48,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 49,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 50,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مبرهنة القيمة المتوسطة",
+      "page": 57,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 52,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 53,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 54,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 55,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 56,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 60,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 61,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 62,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 63,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 64,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 65,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقريب والتفاضلات",
+      "page": 66,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 68,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 69,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 70,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 71,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 72,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 77,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 78,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 79,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 82,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 88,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 90,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 92,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 224,
+      "questions": 4,
+      "images": 0
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 225,
+      "questions": 4,
+      "images": 0
+    },
+    {
+      "chapter": 3,
+      "topic": "التزايد والتناقص والنهايات المحلية",
+      "page": 226,
+      "questions": 2,
+      "images": 0
+    },
+    {
+      "chapter": 3,
+      "topic": "التقعر والتحدب ونقاط الانقلاب",
+      "page": 74,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقعر والتحدب ونقاط الانقلاب",
+      "page": 75,
+      "questions": 4,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "التقعر والتحدب ونقاط الانقلاب",
+      "page": 76,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "التقعر والتحدب ونقاط الانقلاب",
+      "page": 97,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 83,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 84,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 85,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 86,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 87,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 89,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 90,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 91,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 93,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 94,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 95,
+      "questions": 2,
+      "images": 3
+    },
+    {
+      "chapter": 3,
+      "topic": "مسائل الثوابت والمماس والنهايات",
+      "page": 96,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 99,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 100,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 101,
+      "questions": 2,
+      "images": 6
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 102,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 107,
+      "questions": 2,
+      "images": 4
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 108,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 109,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 110,
+      "questions": 3,
+      "images": 12
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 111,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 112,
+      "questions": 1,
+      "images": 4
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 116,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 117,
+      "questions": 1,
+      "images": 3
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 119,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "رسم الدوال والمجال والتناظر والمحاذيات",
+      "page": 121,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 124,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 125,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 126,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 127,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 129,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 131,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 133,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 134,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 3,
+      "topic": "تطبيقات القيم العظمى والصغرى",
+      "page": 137,
+      "questions": 3,
+      "images": 5
+    },
+    {
+      "chapter": 3,
+      "topic": "تمارين مرتبطة بالقطع المكافئ",
+      "page": 97,
+      "questions": 1,
+      "images": 0
+    },
+    {
+      "chapter": 3,
+      "topic": "تمارين مرتبطة بالقطع المكافئ",
+      "page": 98,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "تمهيد: مشتقات الدوال الأسية واللوغاريتمية",
+      "page": 37,
+      "questions": 6,
+      "images": 6
+    },
+    {
+      "chapter": 4,
+      "topic": "تمهيد: مشتقات الدوال الأسية واللوغاريتمية",
+      "page": 38,
+      "questions": 5,
+      "images": 10
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 1,
+      "questions": 5,
+      "images": 5
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 2,
+      "questions": 14,
+      "images": 28
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 3,
+      "questions": 7,
+      "images": 7
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 4,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 5,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 7,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 8,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 9,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 10,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 11,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 13,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 15,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 16,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 17,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 19,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 20,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 21,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 22,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 23,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 24,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 29,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 30,
+      "questions": 8,
+      "images": 8
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 31,
+      "questions": 7,
+      "images": 7
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 39,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل غير المحدد",
+      "page": 42,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 6,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 7,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 8,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 10,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 11,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 12,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 14,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 17,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 21,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 22,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 32,
+      "questions": 2,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 39,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 40,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 208,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 209,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 210,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 213,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "التكامل المحدد",
+      "page": 220,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 43,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 44,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 45,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 46,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 47,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 49,
+      "questions": 2,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 52,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 53,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 54,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 55,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 56,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "المساحات بين المنحنيات",
+      "page": 57,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "تطبيقات التكامل في الحركة",
+      "page": 200,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "تطبيقات التكامل في الحركة",
+      "page": 201,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "تطبيقات التكامل في الحركة",
+      "page": 202,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "تطبيقات التكامل في الحركة",
+      "page": 203,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "الحجوم الدورانية",
+      "page": 65,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "الحجوم الدورانية",
+      "page": 66,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "الحجوم الدورانية",
+      "page": 67,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "الدالة المقابلة وخواص التكامل",
+      "page": 211,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "الدالة المقابلة وخواص التكامل",
+      "page": 212,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "الدالة المقابلة وخواص التكامل",
+      "page": 213,
+      "questions": 3,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 214,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 215,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 216,
+      "questions": 1,
+      "images": 1
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 217,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 218,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 219,
+      "questions": 1,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 220,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 4,
+      "topic": "مجاميع ريمان والتجزئة",
+      "page": 221,
+      "questions": 2,
+      "images": 4
+    },
+    {
+      "chapter": 4,
+      "topic": "تمهيد: المعادلات المثلثية",
+      "page": 50,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 5,
+      "topic": "رتبة ودرجة المعادلة التفاضلية",
+      "page": 1,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 5,
+      "topic": "رتبة ودرجة المعادلة التفاضلية",
+      "page": 223,
+      "questions": 2,
+      "images": 0
+    },
+    {
+      "chapter": 5,
+      "topic": "التحقق من حلول المعادلات التفاضلية",
+      "page": 2,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 5,
+      "topic": "التحقق من حلول المعادلات التفاضلية",
+      "page": 3,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 5,
+      "topic": "التحقق من حلول المعادلات التفاضلية",
+      "page": 4,
+      "questions": 2,
+      "images": 4
+    },
+    {
+      "chapter": 5,
+      "topic": "التحقق من حلول المعادلات التفاضلية",
+      "page": 5,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 5,
+      "topic": "التحقق من حلول المعادلات التفاضلية",
+      "page": 6,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 7,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 8,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 13,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 14,
+      "questions": 2,
+      "images": 2
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 231,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 232,
+      "questions": 4,
+      "images": 4
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 233,
+      "questions": 3,
+      "images": 3
+    },
+    {
+      "chapter": 5,
+      "topic": "حل المعادلات التفاضلية وفصل المتغيرات",
+      "page": 234,
+      "questions": 3,
+      "images": 3
+    }
+  ],
+  "duplicates": [
+    {
+      "file": "رياضيات 3/page_042.json",
+      "question": "1",
+      "kept_source": "رياضيات 3/page_042(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_042.json",
+      "question": "2",
+      "kept_source": "رياضيات 3/page_042(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_043.json",
+      "question": "39",
+      "kept_source": "رياضيات 3/page_043(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_044.json",
+      "question": "49",
+      "kept_source": "رياضيات 3/page_044(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_048_steps.json",
+      "question": "8",
+      "kept_source": "رياضيات 3/page_048_interactive.json"
+    },
+    {
+      "file": "رياضيات 3/page_060_interactive.json",
+      "question": "س2",
+      "kept_source": "رياضيات 3/page_060_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_060_interactive.json",
+      "question": "س3",
+      "kept_source": "رياضيات 3/page_060_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_061_interactive.json",
+      "question": "49",
+      "kept_source": "رياضيات 3/page_061_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_061_interactive.json",
+      "question": "59",
+      "kept_source": "رياضيات 3/page_061_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_062_interactive.json",
+      "question": "64",
+      "kept_source": "رياضيات 3/page_062_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_063_interactive.json",
+      "question": "7",
+      "kept_source": "رياضيات 3/page_063_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_063_interactive.json",
+      "question": "8",
+      "kept_source": "رياضيات 3/page_063_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_064_output.json",
+      "question": "1",
+      "kept_source": "رياضيات 3/page_064_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_064_output.json",
+      "question": "2",
+      "kept_source": "رياضيات 3/page_064_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_065_output.json",
+      "question": "3",
+      "kept_source": "رياضيات 3/page_065_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_065_output.json",
+      "question": "4",
+      "kept_source": "رياضيات 3/page_065_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_066_output.json",
+      "question": "5",
+      "kept_source": "رياضيات 3/page_066_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_076_interactive.json",
+      "question": "7",
+      "kept_source": "رياضيات 3/page_076_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_076_interactive.json",
+      "question": "8",
+      "kept_source": "رياضيات 3/page_076_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_077_interactive.json",
+      "question": "سؤال",
+      "kept_source": "رياضيات 3/page_077_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_078_interactive.json",
+      "question": "س2",
+      "kept_source": "رياضيات 3/page_078_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_078_interactive.json",
+      "question": "س3",
+      "kept_source": "رياضيات 3/page_078_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_079_interactive.json",
+      "question": "س",
+      "kept_source": "رياضيات 3/page_079_interactive(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_082_output.json",
+      "question": "19",
+      "kept_source": "رياضيات 3/page_082_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_083_output.json",
+      "question": "29",
+      "kept_source": "رياضيات 3/page_083_output(1).json"
+    },
+    {
+      "file": "رياضيات 3/page_137_output.json",
+      "question": "18",
+      "kept_source": "رياضيات 3/New Text Document (4).txt"
+    },
+    {
+      "file": "رياضيلت 4/page_009_interactive.json",
+      "question": "7",
+      "kept_source": "رياضيلت 4/page_009_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_009_interactive.json",
+      "question": "8",
+      "kept_source": "رياضيلت 4/page_009_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_009_interactive.json",
+      "question": "9",
+      "kept_source": "رياضيلت 4/page_009_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_009_interactive.json",
+      "question": "10",
+      "kept_source": "رياضيلت 4/page_009_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_010_interactive.json",
+      "question": "11",
+      "kept_source": "رياضيلت 4/page_010_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_010_interactive.json",
+      "question": "12",
+      "kept_source": "رياضيلت 4/page_010_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_010_interactive.json",
+      "question": "13",
+      "kept_source": "رياضيلت 4/page_010_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_010_interactive.json",
+      "question": "14",
+      "kept_source": "رياضيلت 4/page_010_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_011_interactive.json",
+      "question": "15",
+      "kept_source": "رياضيلت 4/page_011_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_011_interactive.json",
+      "question": "16",
+      "kept_source": "رياضيلت 4/page_011_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_012_interactive.json",
+      "question": "17",
+      "kept_source": "رياضيلت 4/page_012_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_012_interactive.json",
+      "question": "18",
+      "kept_source": "رياضيلت 4/page_012_interactive(1).json"
+    },
+    {
+      "file": "رياضيلت 4/page_029_interactive.json",
+      "question": "29",
+      "kept_source": "رياضيلت 4/p029_steps.json"
+    },
+    {
+      "file": "رياضيلت 4/page_029_interactive.json",
+      "question": "30",
+      "kept_source": "رياضيلت 4/p029_steps.json"
+    },
+    {
+      "file": "رياضيلت 4/page_030_interactive.json",
+      "question": "31",
+      "kept_source": "رياضيلت 4/p030_steps.json"
+    },
+    {
+      "file": "رياضيلت 4/page_030_interactive.json",
+      "question": "33",
+      "kept_source": "رياضيلت 4/p030_steps.json"
+    },
+    {
+      "file": "رياضيلت 4/page_031_interactive.json",
+      "question": "38",
+      "kept_source": "رياضيلت 4/p031_steps.json"
+    }
+  ]
+}

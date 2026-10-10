@@ -1,0 +1,718 @@
+[
+  {
+    "id_number": "qarea_p43",
+    "page_number": 43,
+    "question_number": "سؤال",
+    "question_text": "جد المساحة المحددة بالمنحني \\( f(x)=x^3-3x^2+2x \\) ومحور السينات",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_043_diagram_1_drawing_byany.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_043_diagram_2_drawing_byany.png"
+    ],
+    "full_model_solution": "نقاط التقاطع \\( 0,1,2 \\). \\( A_1=\\frac14 \\) و \\( A_2=-\\frac14 \\) فالمساحة \\( A=\\frac12 \\) وحدة مربعة.",
+    "source_file": "رياضيلت 4/page_043_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 43
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_043_diagram_1_drawing_byany.png",
+    "title": "جد المساحة المحددة بالمنحني \\( f(x)=x^3-3x^2+2x \\) ومحور السينات",
+    "number": "سؤال",
+    "model_solution": "نقاط التقاطع \\( 0,1,2 \\). \\( A_1=\\frac14 \\) و \\( A_2=-\\frac14 \\) فالمساحة \\( A=\\frac12 \\) وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد نقاط التقاطع مع محور السينات. الطريقة: نساوي الدالة بصفر ونخرج \\( x \\) عاملاً مشتركاً. السبب: لأن المحور \\( x \\) يعني \\( f(x)=0 \\).",
+        "equation_template": "x\\left({input_1}\\right)=0",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "x^2-3x+2",
+            "options": [
+              "x^2-3x",
+              "x^2+3x+2",
+              "x^2-3x+2",
+              "x^3-3x+2"
+            ],
+            "id": "q_4_4_43_1_s1_i1",
+            "correct_value": "x^2-3x+2",
+            "allowed_keys": [
+              "x^2-3x",
+              "x^2+3x+2",
+              "x^2-3x+2",
+              "x^3-3x+2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم كل حد على \\( x \\)."
+          }
+        ],
+        "hint": "اقسم كل حد على \\( x \\).",
+        "related_topics": [
+          "نقاط التقاطع"
+        ],
+        "step_id": "math345_4_4_43_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد نقاط التقاطع مع محور السينات. الطريقة: نساوي الدالة بصفر ونخرج \\( x \\) عاملاً مشتركاً. السبب: لأن المحور \\( x \\) يعني \\( f(x)=0 \\).",
+        "think": "اقسم كل حد على \\( x \\).",
+        "html_structure": "x\\left({q_4_4_43_1_s1_i1}\\right)=0"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحلل القوس. الطريقة: نبحث عن عددين حاصل ضربهما \\( 2 \\) ومجموعهما \\( -3 \\): \\( -1 \\) و \\( -2 \\). السبب: لنجد الجذور.",
+        "equation_template": "(x-{input_1})(x-{input_2})",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1\\times2=2 \\) و \\( 1+2=3 \\)."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "3"
+            ],
+            "id": "q_4_4_43_1_s2_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1\\times2=2 \\) و \\( 1+2=3 \\)."
+          }
+        ],
+        "hint": "\\( 1\\times2=2 \\) و \\( 1+2=3 \\).",
+        "related_topics": [
+          "التحليل"
+        ],
+        "step_id": "math345_4_4_43_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحلل القوس. الطريقة: نبحث عن عددين حاصل ضربهما \\( 2 \\) ومجموعهما \\( -3 \\): \\( -1 \\) و \\( -2 \\). السبب: لنجد الجذور.",
+        "think": "\\( 1\\times2=2 \\) و \\( 1+2=3 \\).",
+        "html_structure": "(x-{q_4_4_43_1_s2_i1})(x-{q_4_4_43_1_s2_i2})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نرتب الجذور. الطريقة: نرتبها من الأصغر: الأصغر \\( a \\)، الأوسط \\( b \\)، الأكبر \\( c \\). السبب: لتقسيم المساحة.",
+        "equation_template": "a=0,\\;b={input_1},\\;c={input_2}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذور \\( 0,1,2 \\)."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "0",
+              "1"
+            ],
+            "id": "q_4_4_43_1_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الجذور \\( 0,1,2 \\)."
+          }
+        ],
+        "hint": "الجذور \\( 0,1,2 \\).",
+        "related_topics": [
+          "ترتيب الحدود"
+        ],
+        "step_id": "math345_4_4_43_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نرتب الجذور. الطريقة: نرتبها من الأصغر: الأصغر \\( a \\)، الأوسط \\( b \\)، الأكبر \\( c \\). السبب: لتقسيم المساحة.",
+        "think": "الجذور \\( 0,1,2 \\).",
+        "html_structure": "a=0,\\;b={q_4_4_43_1_s3_i1},\\;c={q_4_4_43_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب صيغة المساحة. الطريقة: \\( A=|A_1|+|A_2| \\) حيث \\( A_1 \\) من \\( 0 \\) إلى \\( 1 \\) و \\( A_2 \\) من \\( 1 \\) إلى \\( 2 \\). السبب: لأن المساحة موجبة دائماً.",
+        "equation_template": "A_1=\\int_0^{{input_1}}f(x)dx,\\;A_2=\\int_{{input_2}}^{{input_3}}f(x)dx",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "id": "q_4_4_43_1_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأول ينتهي عند \\( 1 \\)، والثاني يبدأ من \\( 1 \\) إلى \\( 2 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s4_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأول ينتهي عند \\( 1 \\)، والثاني يبدأ من \\( 1 \\) إلى \\( 2 \\)."
+          },
+          {
+            "input_id": "step4_in3",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_4_4_43_1_s4_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 3",
+            "hint": "الأول ينتهي عند \\( 1 \\)، والثاني يبدأ من \\( 1 \\) إلى \\( 2 \\)."
+          }
+        ],
+        "hint": "الأول ينتهي عند \\( 1 \\)، والثاني يبدأ من \\( 1 \\) إلى \\( 2 \\).",
+        "related_topics": [
+          "المساحة"
+        ],
+        "step_id": "math345_4_4_43_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب صيغة المساحة. الطريقة: \\( A=|A_1|+|A_2| \\) حيث \\( A_1 \\) من \\( 0 \\) إلى \\( 1 \\) و \\( A_2 \\) من \\( 1 \\) إلى \\( 2 \\). السبب: لأن المساحة موجبة دائماً.",
+        "think": "الأول ينتهي عند \\( 1 \\)، والثاني يبدأ من \\( 1 \\) إلى \\( 2 \\).",
+        "html_structure": "A_1=\\int_0^{{q_4_4_43_1_s4_i1}}f(x)dx,\\;A_2=\\int_{{q_4_4_43_1_s4_i2}}^{{q_4_4_43_1_s4_i3}}f(x)dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد كل أس بواحد ونقسم عليه. السبب: قاعدة القوة.",
+        "equation_template": "F(x)=\\frac{x^{{input_1}}}{4}-x^{{input_2}}+x^{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "4",
+            "options": [
+              "5",
+              "2",
+              "4",
+              "3"
+            ],
+            "id": "q_4_4_43_1_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "5",
+              "2",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( x^3\\to\\frac{x^4}{4} \\) و \\( 3x^2\\to x^3 \\) و \\( 2x\\to x^2 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_4_43_1_s5_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( x^3\\to\\frac{x^4}{4} \\) و \\( 3x^2\\to x^3 \\) و \\( 2x\\to x^2 \\)."
+          },
+          {
+            "input_id": "step5_in3",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "3",
+              "4",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s5_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "3",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( x^3\\to\\frac{x^4}{4} \\) و \\( 3x^2\\to x^3 \\) و \\( 2x\\to x^2 \\)."
+          }
+        ],
+        "hint": "\\( x^3\\to\\frac{x^4}{4} \\) و \\( 3x^2\\to x^3 \\) و \\( 2x\\to x^2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_4_43_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد كل أس بواحد ونقسم عليه. السبب: قاعدة القوة.",
+        "think": "\\( x^3\\to\\frac{x^4}{4} \\) و \\( 3x^2\\to x^3 \\) و \\( 2x\\to x^2 \\).",
+        "html_structure": "F(x)=\\frac{x^{{q_4_4_43_1_s5_i1}}}{4}-x^{{q_4_4_43_1_s5_i2}}+x^{{q_4_4_43_1_s5_i3}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( F(1) \\). الطريقة: نعوض \\( x=1 \\). السبب: للتكامل الأول.",
+        "equation_template": "F(1)=\\frac14-{input_1}+{input_2}={input_3}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "1",
+            "options": [
+              "3",
+              "0",
+              "2",
+              "1"
+            ],
+            "id": "q_4_4_43_1_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "3",
+              "0",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1^4=1^3=1^2=1 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s6_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1^4=1^3=1^2=1 \\)."
+          },
+          {
+            "input_id": "step6_in3",
+            "correct_answer": "\\frac14",
+            "options": [
+              "\\frac14",
+              "0",
+              "\\frac12",
+              "1"
+            ],
+            "id": "q_4_4_43_1_s6_i3",
+            "correct_value": "\\frac14",
+            "allowed_keys": [
+              "\\frac14",
+              "0",
+              "\\frac12",
+              "1"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 1^4=1^3=1^2=1 \\)."
+          }
+        ],
+        "hint": "\\( 1^4=1^3=1^2=1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_43_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( F(1) \\). الطريقة: نعوض \\( x=1 \\). السبب: للتكامل الأول.",
+        "think": "\\( 1^4=1^3=1^2=1 \\).",
+        "html_structure": "F(1)=\\frac14-{q_4_4_43_1_s6_i1}+{q_4_4_43_1_s6_i2}={q_4_4_43_1_s6_i3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب \\( A_1 \\). الطريقة: \\( F(0)=0 \\) فنطرح. السبب: نظرية الأساس.",
+        "equation_template": "A_1=F(1)-F(0)=\\frac14-{input_1}={input_2}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "\\frac14"
+            ],
+            "id": "q_4_4_43_1_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "\\frac14"
+            ],
+            "label": "القيمة 1",
+            "hint": "عند \\( x=0 \\) كل الحدود صفر."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "\\frac14",
+            "options": [
+              "0",
+              "\\frac12",
+              "\\frac14",
+              "1"
+            ],
+            "id": "q_4_4_43_1_s7_i2",
+            "correct_value": "\\frac14",
+            "allowed_keys": [
+              "0",
+              "\\frac12",
+              "\\frac14",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "عند \\( x=0 \\) كل الحدود صفر."
+          }
+        ],
+        "hint": "عند \\( x=0 \\) كل الحدود صفر.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_43_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب \\( A_1 \\). الطريقة: \\( F(0)=0 \\) فنطرح. السبب: نظرية الأساس.",
+        "think": "عند \\( x=0 \\) كل الحدود صفر.",
+        "html_structure": "A_1=F(1)-F(0)=\\frac14-{q_4_4_43_1_s7_i1}={q_4_4_43_1_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب \\( F(2) \\). الطريقة: نعوض \\( x=2 \\): \\( 2^4=16 \\)، \\( 2^3=8 \\)، \\( 2^2=4 \\). السبب: للتكامل الثاني.",
+        "equation_template": "F(2)=\\frac{16}{4}-{input_1}+{input_2}={input_3}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "8",
+            "options": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s8_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "4",
+              "8",
+              "16",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4-8+4 \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "16",
+              "2",
+              "8"
+            ],
+            "id": "q_4_4_43_1_s8_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "16",
+              "2",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4-8+4 \\)."
+          },
+          {
+            "input_id": "step8_in3",
+            "correct_answer": "0",
+            "options": [
+              "4",
+              "1",
+              "0",
+              "8"
+            ],
+            "id": "q_4_4_43_1_s8_i3",
+            "correct_value": "0",
+            "allowed_keys": [
+              "4",
+              "1",
+              "0",
+              "8"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 4-8+4 \\)."
+          }
+        ],
+        "hint": "\\( 4-8+4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_43_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب \\( F(2) \\). الطريقة: نعوض \\( x=2 \\): \\( 2^4=16 \\)، \\( 2^3=8 \\)، \\( 2^2=4 \\). السبب: للتكامل الثاني.",
+        "think": "\\( 4-8+4 \\).",
+        "html_structure": "F(2)=\\frac{16}{4}-{q_4_4_43_1_s8_i1}+{q_4_4_43_1_s8_i2}={q_4_4_43_1_s8_i3}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( A_2 \\). الطريقة: \\( F(2)-F(1) \\). السبب: لأن الحد العلوي \\( 2 \\).",
+        "equation_template": "A_2=0-\\frac14={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "-\\frac14",
+            "options": [
+              "0",
+              "-\\frac14",
+              "\\frac14",
+              "\\frac12"
+            ],
+            "id": "q_4_4_43_1_s9_i1",
+            "correct_value": "-\\frac14",
+            "allowed_keys": [
+              "0",
+              "-\\frac14",
+              "\\frac14",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج سالب لأن المنحني تحت المحور."
+          }
+        ],
+        "hint": "الناتج سالب لأن المنحني تحت المحور.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_43_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( A_2 \\). الطريقة: \\( F(2)-F(1) \\). السبب: لأن الحد العلوي \\( 2 \\).",
+        "think": "الناتج سالب لأن المنحني تحت المحور.",
+        "html_structure": "A_2=0-\\frac14={q_4_4_43_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نأخذ القيمة المطلقة. الطريقة: المساحة لا تكون سالبة فنأخذ المطلق لكل جزء. السبب: لذلك \\( |A_2|=\\frac14 \\).",
+        "equation_template": "A=\\left|\\frac14\\right|+\\left|{input_1}\\right|=\\frac14+{input_2}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "-\\frac14",
+            "options": [
+              "\\frac14",
+              "-\\frac14",
+              "0",
+              "\\frac12"
+            ],
+            "id": "q_4_4_43_1_s10_i1",
+            "correct_value": "-\\frac14",
+            "allowed_keys": [
+              "\\frac14",
+              "-\\frac14",
+              "0",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( A_2 \\) داخل المطلق ثم أخرجه."
+          },
+          {
+            "input_id": "step10_in2",
+            "correct_answer": "\\frac14",
+            "options": [
+              "\\frac12",
+              "0",
+              "-\\frac14",
+              "\\frac14"
+            ],
+            "id": "q_4_4_43_1_s10_i2",
+            "correct_value": "\\frac14",
+            "allowed_keys": [
+              "\\frac12",
+              "0",
+              "-\\frac14",
+              "\\frac14"
+            ],
+            "label": "القيمة 2",
+            "hint": "اكتب \\( A_2 \\) داخل المطلق ثم أخرجه."
+          }
+        ],
+        "hint": "اكتب \\( A_2 \\) داخل المطلق ثم أخرجه.",
+        "related_topics": [
+          "القيمة المطلقة"
+        ],
+        "step_id": "math345_4_4_43_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نأخذ القيمة المطلقة. الطريقة: المساحة لا تكون سالبة فنأخذ المطلق لكل جزء. السبب: لذلك \\( |A_2|=\\frac14 \\).",
+        "think": "اكتب \\( A_2 \\) داخل المطلق ثم أخرجه.",
+        "html_structure": "A=\\left|\\frac14\\right|+\\left|{q_4_4_43_1_s10_i1}\\right|=\\frac14+{q_4_4_43_1_s10_i2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجمع. الطريقة: \\( \\frac14+\\frac14 \\). السبب: للمساحة الكلية.",
+        "equation_template": "A=\\frac14+\\frac14=\\frac{{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s11_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع البسطين."
+          },
+          {
+            "input_id": "step11_in2",
+            "correct_answer": "4",
+            "options": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "id": "q_4_4_43_1_s11_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "اجمع البسطين."
+          }
+        ],
+        "hint": "اجمع البسطين.",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_4_43_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجمع. الطريقة: \\( \\frac14+\\frac14 \\). السبب: للمساحة الكلية.",
+        "think": "اجمع البسطين.",
+        "html_structure": "A=\\frac14+\\frac14=\\frac{{q_4_4_43_1_s11_i1}}{{q_4_4_43_1_s11_i2}}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نكتب الوحدة. الطريقة: نختصر \\( \\frac24=\\frac12 \\) ونضيف الوحدة. السبب: المساحة بوحدات مربعة.",
+        "equation_template": "A=\\frac12\\;{input_1}",
+        "inputs": [
+          {
+            "input_id": "step12_in1",
+            "correct_answer": "unit^2",
+            "options": [
+              "unit^3",
+              "unit^2",
+              "units",
+              "unit"
+            ],
+            "id": "q_4_4_43_1_s12_i1",
+            "correct_value": "unit^2",
+            "allowed_keys": [
+              "unit^3",
+              "unit^2",
+              "units",
+              "unit"
+            ],
+            "label": "القيمة 1",
+            "hint": "وحدة قياس المساحة مربعة."
+          }
+        ],
+        "hint": "وحدة قياس المساحة مربعة.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_4_43_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نكتب الوحدة. الطريقة: نختصر \\( \\frac24=\\frac12 \\) ونضيف الوحدة. السبب: المساحة بوحدات مربعة.",
+        "think": "وحدة قياس المساحة مربعة.",
+        "html_structure": "A=\\frac12\\;{q_4_4_43_1_s12_i1}"
+      }
+    ]
+  }
+]

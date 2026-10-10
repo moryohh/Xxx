@@ -1,0 +1,1115 @@
+[
+  {
+    "id_number": "q4_p213",
+    "page_number": 213,
+    "question_number": "4",
+    "question_text": "إذا كانت \\( f(x) \\) دالة مستمرة على الفترة \\( [1,5] \\) بحيث \\( F(x)=3x^2 \\) دالة مقابلة للدالة \\( f \\) فجد \\( \\int_{1}^{5} f(x)\\,dx \\)",
+    "image_urls": [],
+    "full_model_solution": "∫₁⁵ f(x)dx = F(5)-F(1) = 3(25)-3(1) = 75-3 = 72",
+    "source_file": "رياضيلت 4/page_073.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 73,
+      "pdf_page_number": 213,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 6,
+    "image_url": null,
+    "title": "إذا كانت \\( f(x) \\) دالة مستمرة على الفترة \\( [1,5] \\) بحيث \\( F(x)=3x^2 \\) دالة مقابلة للدالة \\( f \\) فجد \\( \\int_{1}^{5} f(x)\\,dx \\)",
+    "number": "4",
+    "model_solution": "∫₁⁵ f(x)dx = F(5)-F(1) = 3(25)-3(1) = 75-3 = 72",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "المعطى أن \\( F(x)=3x^2 \\) دالة مقابلة للدالة \\( f \\). الهدف: تذكر قانون التكامل المحدد. الطريقة: \\( \\int_a^b f=F(b)-F(a) \\). السبب: لا نحتاج \\( f \\) نفسها لأن \\( F \\) كافية.",
+        "equation_template": "\\int_{1}^{5} f(x)\\,dx = F({input_1}) - F({input_2})",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "0",
+              "1"
+            ],
+            "id": "q_4_7_213_1_s1_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الحد العلوي \\( 5 \\) أولاً ثم السفلي \\( 1 \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "5",
+              "0"
+            ],
+            "id": "q_4_7_213_1_s1_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع الحد العلوي \\( 5 \\) أولاً ثم السفلي \\( 1 \\)."
+          }
+        ],
+        "hint": "ضع الحد العلوي \\( 5 \\) أولاً ثم السفلي \\( 1 \\).",
+        "related_topics": [
+          "النظرية الأساسية للتكامل"
+        ],
+        "step_id": "math345_4_7_213_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "المعطى أن \\( F(x)=3x^2 \\) دالة مقابلة للدالة \\( f \\). الهدف: تذكر قانون التكامل المحدد. الطريقة: \\( \\int_a^b f=F(b)-F(a) \\). السبب: لا نحتاج \\( f \\) نفسها لأن \\( F \\) كافية.",
+        "think": "ضع الحد العلوي \\( 5 \\) أولاً ثم السفلي \\( 1 \\).",
+        "html_structure": "\\int_{1}^{5} f(x)\\,dx = F({q_4_7_213_1_s1_i1}) - F({q_4_7_213_1_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نعوّض الحد العلوي. الهدف: \\( F(5) \\). الطريقة: \\( F(x)=3x^2 \\) فنضع \\( 5 \\) مكان \\( x \\).",
+        "equation_template": "F(5) = 3({input_1})^2",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "5",
+            "options": [
+              "15",
+              "25",
+              "5",
+              "3"
+            ],
+            "id": "q_4_7_213_1_s2_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "15",
+              "25",
+              "5",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الرقم \\( 5 \\) داخل القوس."
+          }
+        ],
+        "hint": "ضع الرقم \\( 5 \\) داخل القوس.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نعوّض الحد العلوي. الهدف: \\( F(5) \\). الطريقة: \\( F(x)=3x^2 \\) فنضع \\( 5 \\) مكان \\( x \\).",
+        "think": "ضع الرقم \\( 5 \\) داخل القوس.",
+        "html_structure": "F(5) = 3({q_4_7_213_1_s2_i1})^2"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نربّع. الهدف: \\( 5^2=25 \\) ثم نضرب في \\( 3 \\).",
+        "equation_template": "F(5) = 3(25) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "75",
+            "options": [
+              "28",
+              "125",
+              "75",
+              "15"
+            ],
+            "id": "q_4_7_213_1_s3_i1",
+            "correct_value": "75",
+            "allowed_keys": [
+              "28",
+              "125",
+              "75",
+              "15"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 3\\times25 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 3\\times25 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_4_7_213_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نربّع. الهدف: \\( 5^2=25 \\) ثم نضرب في \\( 3 \\).",
+        "think": "اضرب \\( 3\\times25 \\).",
+        "html_structure": "F(5) = 3(25) = {q_4_7_213_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نعوّض الحد السفلي. الهدف: \\( F(1) \\).",
+        "equation_template": "F(1) = 3(1)^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "3",
+            "options": [
+              "9",
+              "6",
+              "3",
+              "1"
+            ],
+            "id": "q_4_7_213_1_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "9",
+              "6",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1^2=1 \\) ثم \\( 3\\times1 \\)."
+          }
+        ],
+        "hint": "\\( 1^2=1 \\) ثم \\( 3\\times1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نعوّض الحد السفلي. الهدف: \\( F(1) \\).",
+        "think": "\\( 1^2=1 \\) ثم \\( 3\\times1 \\).",
+        "html_structure": "F(1) = 3(1)^2 = {q_4_7_213_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نطرح. الهدف: \\( F(5)-F(1) \\).",
+        "equation_template": "75 - 3 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "72",
+            "options": [
+              "72",
+              "75",
+              "70",
+              "78"
+            ],
+            "id": "q_4_7_213_1_s5_i1",
+            "correct_value": "72",
+            "allowed_keys": [
+              "72",
+              "75",
+              "70",
+              "78"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 3 \\) من \\( 75 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 3 \\) من \\( 75 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_7_213_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نطرح. الهدف: \\( F(5)-F(1) \\).",
+        "think": "اطرح \\( 3 \\) من \\( 75 \\).",
+        "html_structure": "75 - 3 = {q_4_7_213_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نكتب الجواب النهائي.",
+        "equation_template": "\\int_{1}^{5} f(x)\\,dx = {input_1} \\text{ unit}^2",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "72",
+            "options": [
+              "3",
+              "75",
+              "78",
+              "72"
+            ],
+            "id": "q_4_7_213_1_s6_i1",
+            "correct_value": "72",
+            "allowed_keys": [
+              "3",
+              "75",
+              "78",
+              "72"
+            ],
+            "label": "القيمة 1",
+            "hint": "هو ناتج الطرح السابق."
+          }
+        ],
+        "hint": "هو ناتج الطرح السابق.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_7_213_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نكتب الجواب النهائي.",
+        "think": "هو ناتج الطرح السابق.",
+        "html_structure": "\\int_{1}^{5} f(x)\\,dx = {q_4_7_213_1_s6_i1} \\text{ unit}^2"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "مراجعة: \\( f \\) هي مشتقة \\( F \\).",
+        "equation_template": "f(x) = F'(x) = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "12",
+              "2"
+            ],
+            "id": "q_4_7_213_1_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "12",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x^2 \\) هي \\( 3\\times2x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x^2 \\) هي \\( 3\\times2x \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_7_213_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "مراجعة: \\( f \\) هي مشتقة \\( F \\).",
+        "think": "مشتقة \\( 3x^2 \\) هي \\( 3\\times2x \\).",
+        "html_structure": "f(x) = F'(x) = {q_4_7_213_1_s7_i1}x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "مراجعة: تكامل \\( 6x \\) يعيدنا إلى \\( 3x^2 \\) فيكون الجواب منطقياً.",
+        "equation_template": "\\int 6x\\,dx = {input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "3",
+            "options": [
+              "12",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_4_7_213_1_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "12",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم \\( 6 \\) على الأس الجديد \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم \\( 6 \\) على الأس الجديد \\( 2 \\).",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_7_213_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "مراجعة: تكامل \\( 6x \\) يعيدنا إلى \\( 3x^2 \\) فيكون الجواب منطقياً.",
+        "think": "قسّم \\( 6 \\) على الأس الجديد \\( 2 \\).",
+        "html_structure": "\\int 6x\\,dx = {q_4_7_213_1_s8_i1}x^2"
+      }
+    ]
+  },
+  {
+    "id_number": "q5_p213",
+    "page_number": 213,
+    "question_number": "5",
+    "question_text": "إذا كانت \\( f \\) دالة مستمرة على الفترة \\( [0,\\frac{\\pi}{2}] \\) وأن الدالة المقابلة للدالة \\( f \\) هي \\( F(x)=\\sin x \\) فجد \\( \\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx \\)",
+    "image_urls": [],
+    "full_model_solution": "∫₀^{π/2} f dx = F(π/2)-F(0) = sin(π/2)-sin 0 = 1-0 = 1",
+    "source_file": "رياضيلت 4/page_073.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 73,
+      "pdf_page_number": 213,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 6,
+    "image_url": null,
+    "title": "إذا كانت \\( f \\) دالة مستمرة على الفترة \\( [0,\\frac{\\pi}{2}] \\) وأن الدالة المقابلة للدالة \\( f \\) هي \\( F(x)=\\sin x \\) فجد \\( \\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx \\)",
+    "number": "5",
+    "model_solution": "∫₀^{π/2} f dx = F(π/2)-F(0) = sin(π/2)-sin 0 = 1-0 = 1",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "المعطى \\( F(x)=\\sin x \\) دالة مقابلة للدالة \\( f \\). الهدف: كتابة القانون. الطريقة: التكامل يساوي \\( F \\) عند الحد العلوي ناقص \\( F \\) عند الحد السفلي.",
+        "equation_template": "\\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx = F\\left({input_1}\\right) - F({input_2})",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\frac{\\pi}{2}",
+            "options": [
+              "\\frac{\\pi}{2}",
+              "0",
+              "\\pi",
+              "1"
+            ],
+            "id": "q_4_7_213_2_s1_i1",
+            "correct_value": "\\frac{\\pi}{2}",
+            "allowed_keys": [
+              "\\frac{\\pi}{2}",
+              "0",
+              "\\pi",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "العلوي \\( \\frac{\\pi}{2} \\) والسفلي \\( 0 \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "\\frac{\\pi}{2}",
+              "\\pi"
+            ],
+            "id": "q_4_7_213_2_s1_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "\\frac{\\pi}{2}",
+              "\\pi"
+            ],
+            "label": "القيمة 2",
+            "hint": "العلوي \\( \\frac{\\pi}{2} \\) والسفلي \\( 0 \\)."
+          }
+        ],
+        "hint": "العلوي \\( \\frac{\\pi}{2} \\) والسفلي \\( 0 \\).",
+        "related_topics": [
+          "النظرية الأساسية للتكامل"
+        ],
+        "step_id": "math345_4_7_213_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "المعطى \\( F(x)=\\sin x \\) دالة مقابلة للدالة \\( f \\). الهدف: كتابة القانون. الطريقة: التكامل يساوي \\( F \\) عند الحد العلوي ناقص \\( F \\) عند الحد السفلي.",
+        "think": "العلوي \\( \\frac{\\pi}{2} \\) والسفلي \\( 0 \\).",
+        "html_structure": "\\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx = F\\left({q_4_7_213_2_s1_i1}\\right) - F({q_4_7_213_2_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نعوّض الحد العلوي في \\( F \\).",
+        "equation_template": "F\\left(\\frac{\\pi}{2}\\right) = \\sin\\left({input_1}\\right)",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\frac{\\pi}{2}",
+            "options": [
+              "0",
+              "\\frac{\\pi}{4}",
+              "\\pi",
+              "\\frac{\\pi}{2}"
+            ],
+            "id": "q_4_7_213_2_s2_i1",
+            "correct_value": "\\frac{\\pi}{2}",
+            "allowed_keys": [
+              "0",
+              "\\frac{\\pi}{4}",
+              "\\pi",
+              "\\frac{\\pi}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع نفس الزاوية داخل الجيب."
+          }
+        ],
+        "hint": "ضع نفس الزاوية داخل الجيب.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نعوّض الحد العلوي في \\( F \\).",
+        "think": "ضع نفس الزاوية داخل الجيب.",
+        "html_structure": "F\\left(\\frac{\\pi}{2}\\right) = \\sin\\left({q_4_7_213_2_s2_i1}\\right)"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نحسب جيب الزاوية القائمة (\\( 90 \\) درجة).",
+        "equation_template": "\\sin\\frac{\\pi}{2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "-1",
+              "\\frac{1}{2}",
+              "1"
+            ],
+            "id": "q_4_7_213_2_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "-1",
+              "\\frac{1}{2}",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب الزاوية القائمة يساوي \\( 1 \\)."
+          }
+        ],
+        "hint": "جيب الزاوية القائمة يساوي \\( 1 \\).",
+        "related_topics": [
+          "قيم الدوال المثلثية"
+        ],
+        "step_id": "math345_4_7_213_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نحسب جيب الزاوية القائمة (\\( 90 \\) درجة).",
+        "think": "جيب الزاوية القائمة يساوي \\( 1 \\).",
+        "html_structure": "\\sin\\frac{\\pi}{2} = {q_4_7_213_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نعوّض الحد السفلي.",
+        "equation_template": "F(0) = \\sin({input_1})",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "0",
+            "options": [
+              "\\pi",
+              "0",
+              "\\frac{\\pi}{2}",
+              "1"
+            ],
+            "id": "q_4_7_213_2_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "\\pi",
+              "0",
+              "\\frac{\\pi}{2}",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الصفر داخل الجيب."
+          }
+        ],
+        "hint": "ضع الصفر داخل الجيب.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نعوّض الحد السفلي.",
+        "think": "ضع الصفر داخل الجيب.",
+        "html_structure": "F(0) = \\sin({q_4_7_213_2_s4_i1})"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب جيب الصفر.",
+        "equation_template": "\\sin 0 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "\\pi",
+              "1",
+              "0"
+            ],
+            "id": "q_4_7_213_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "\\pi",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب الصفر يساوي صفراً."
+          }
+        ],
+        "hint": "جيب الصفر يساوي صفراً.",
+        "related_topics": [
+          "قيم الدوال المثلثية"
+        ],
+        "step_id": "math345_4_7_213_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب جيب الصفر.",
+        "think": "جيب الصفر يساوي صفراً.",
+        "html_structure": "\\sin 0 = {q_4_7_213_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نطرح.",
+        "equation_template": "1 - {input_1} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "id": "q_4_7_213_2_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح الصفر من \\( 1 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "id": "q_4_7_213_2_s6_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "اطرح الصفر من \\( 1 \\)."
+          }
+        ],
+        "hint": "اطرح الصفر من \\( 1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_7_213_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نطرح.",
+        "think": "اطرح الصفر من \\( 1 \\).",
+        "html_structure": "1 - {q_4_7_213_2_s6_i1} = {q_4_7_213_2_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نكتب الجواب.",
+        "equation_template": "\\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "1",
+            "options": [
+              "\\frac{\\pi}{2}",
+              "0",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_7_213_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "\\frac{\\pi}{2}",
+              "0",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "هو ناتج الطرح السابق."
+          }
+        ],
+        "hint": "هو ناتج الطرح السابق.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_7_213_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نكتب الجواب.",
+        "think": "هو ناتج الطرح السابق.",
+        "html_structure": "\\int_{0}^{\\frac{\\pi}{2}} f(x)\\,dx = {q_4_7_213_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "مراجعة: \\( f \\) هي مشتقة \\( F \\).",
+        "equation_template": "f(x) = F'(x) = {input_1} x",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "\\cos",
+            "options": [
+              "\\cos",
+              "\\tan",
+              "-\\cos",
+              "\\sin"
+            ],
+            "id": "q_4_7_213_2_s8_i1",
+            "correct_value": "\\cos",
+            "allowed_keys": [
+              "\\cos",
+              "\\tan",
+              "-\\cos",
+              "\\sin"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_7_213_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "مراجعة: \\( f \\) هي مشتقة \\( F \\).",
+        "think": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\).",
+        "html_structure": "f(x) = F'(x) = {q_4_7_213_2_s8_i1} x"
+      }
+    ]
+  },
+  {
+    "id_number": "q7_p213",
+    "page_number": 213,
+    "question_number": "7",
+    "question_text": "إذا كانت \\( f \\) دالة مستمرة على الفترة \\( [-2,6] \\) وكان \\( \\int_{-2}^{6}(f(x)+3)\\,dx=32 \\) وكان \\( \\int_{1}^{6} f(x)\\,dx=6 \\) جد \\( \\int_{-2}^{1} f(x)\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_073_diag_q7_drawing_hndsy.png"
+    ],
+    "full_model_solution": "∫(f+3) = ∫f + [3x] = ∫f + 24 = 32 → ∫₋₂⁶ f = 8 . 8 = ∫₋₂¹ f + 6 → ∫₋₂¹ f = 2",
+    "source_file": "رياضيلت 4/page_073.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 73,
+      "pdf_page_number": 213,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 6,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_073_diag_q7_drawing_hndsy.png",
+    "title": "إذا كانت \\( f \\) دالة مستمرة على الفترة \\( [-2,6] \\) وكان \\( \\int_{-2}^{6}(f(x)+3)\\,dx=32 \\) وكان \\( \\int_{1}^{6} f(x)\\,dx=6 \\) جد \\( \\int_{-2}^{1} f(x)\\,dx \\)",
+    "number": "7",
+    "model_solution": "∫(f+3) = ∫f + [3x] = ∫f + 24 = 32 → ∫₋₂⁶ f = 8 . 8 = ∫₋₂¹ f + 6 → ∫₋₂¹ f = 2",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نفصل التكامل إلى جزأين. الهدف: كتابة \\( \\int (f+3) \\) كمجموع. الطريقة: تكامل المجموع هو مجموع التكاملين. السبب: لأنه يساعدنا لعزل \\( \\int f \\).",
+        "equation_template": "\\int_{-2}^{6} f(x)\\,dx + \\int_{-2}^{6} {input_1}\\,dx = 32",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "3",
+            "options": [
+              "x",
+              "3",
+              "32",
+              "f(x)"
+            ],
+            "id": "q_4_7_213_3_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "x",
+              "3",
+              "32",
+              "f(x)"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجزء الثاني من \\( f(x)+3 \\) هو العدد \\( 3 \\)."
+          }
+        ],
+        "hint": "الجزء الثاني من \\( f(x)+3 \\) هو العدد \\( 3 \\).",
+        "related_topics": [
+          "خواص التكامل"
+        ],
+        "step_id": "math345_4_7_213_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نفصل التكامل إلى جزأين. الهدف: كتابة \\( \\int (f+3) \\) كمجموع. الطريقة: تكامل المجموع هو مجموع التكاملين. السبب: لأنه يساعدنا لعزل \\( \\int f \\).",
+        "think": "الجزء الثاني من \\( f(x)+3 \\) هو العدد \\( 3 \\).",
+        "html_structure": "\\int_{-2}^{6} f(x)\\,dx + \\int_{-2}^{6} {q_4_7_213_3_s1_i1}\\,dx = 32"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نكامل العدد الثابت. الطريقة: تكامل \\( 3 \\) هو \\( 3x \\).",
+        "equation_template": "\\int 3\\,dx = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "3",
+              "6",
+              "x"
+            ],
+            "id": "q_4_7_213_3_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "3",
+              "6",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "تكامل الثابت هو الثابت مضروباً في \\( x \\)."
+          }
+        ],
+        "hint": "تكامل الثابت هو الثابت مضروباً في \\( x \\).",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_7_213_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نكامل العدد الثابت. الطريقة: تكامل \\( 3 \\) هو \\( 3x \\).",
+        "think": "تكامل الثابت هو الثابت مضروباً في \\( x \\).",
+        "html_structure": "\\int 3\\,dx = {q_4_7_213_3_s2_i1}x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نعوّض حدود التكامل في \\( 3x \\). الهدف: \\( 3(6)-3(-2) \\).",
+        "equation_template": "[3x]_{-2}^{6} = 3(6) - 3({input_1})",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "-2",
+            "options": [
+              "6",
+              "0",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_7_213_3_s3_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "6",
+              "0",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد السفلي هو \\( -2 \\) بإشارته السالبة."
+          }
+        ],
+        "hint": "الحد السفلي هو \\( -2 \\) بإشارته السالبة.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نعوّض حدود التكامل في \\( 3x \\). الهدف: \\( 3(6)-3(-2) \\).",
+        "think": "الحد السفلي هو \\( -2 \\) بإشارته السالبة.",
+        "html_structure": "[3x]_{-2}^{6} = 3(6) - 3({q_4_7_213_3_s3_i1})"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نحسب. الطريقة: \\( 18-(-6)=18+6 \\).",
+        "equation_template": "18 - ({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "-6",
+            "options": [
+              "3",
+              "-3",
+              "-6",
+              "6"
+            ],
+            "id": "q_4_7_213_3_s4_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "-6",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times(-2)=-6 \\) وطرح السالب يعني الجمع."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "24",
+            "options": [
+              "12",
+              "24",
+              "30",
+              "18"
+            ],
+            "id": "q_4_7_213_3_s4_i2",
+            "correct_value": "24",
+            "allowed_keys": [
+              "12",
+              "24",
+              "30",
+              "18"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times(-2)=-6 \\) وطرح السالب يعني الجمع."
+          }
+        ],
+        "hint": "\\( 3\\times(-2)=-6 \\) وطرح السالب يعني الجمع.",
+        "related_topics": [
+          "الأعداد السالبة"
+        ],
+        "step_id": "math345_4_7_213_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نحسب. الطريقة: \\( 18-(-6)=18+6 \\).",
+        "think": "\\( 3\\times(-2)=-6 \\) وطرح السالب يعني الجمع.",
+        "html_structure": "18 - ({q_4_7_213_3_s4_i1}) = {q_4_7_213_3_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نعوّض في المعادلة الأولى.",
+        "equation_template": "\\int_{-2}^{6} f(x)\\,dx + {input_1} = 32",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "24",
+            "options": [
+              "6",
+              "18",
+              "32",
+              "24"
+            ],
+            "id": "q_4_7_213_3_s5_i1",
+            "correct_value": "24",
+            "allowed_keys": [
+              "6",
+              "18",
+              "32",
+              "24"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع قيمة تكامل الثابت التي حسبناها."
+          }
+        ],
+        "hint": "ضع قيمة تكامل الثابت التي حسبناها.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نعوّض في المعادلة الأولى.",
+        "think": "ضع قيمة تكامل الثابت التي حسبناها.",
+        "html_structure": "\\int_{-2}^{6} f(x)\\,dx + {q_4_7_213_3_s5_i1} = 32"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نعزل التكامل. الطريقة: اطرح \\( 24 \\) من \\( 32 \\).",
+        "equation_template": "\\int_{-2}^{6} f(x)\\,dx = 32 - 24 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "8",
+            "options": [
+              "6",
+              "56",
+              "8",
+              "24"
+            ],
+            "id": "q_4_7_213_3_s6_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "6",
+              "56",
+              "8",
+              "24"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 32-24 \\)."
+          }
+        ],
+        "hint": "\\( 32-24 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_4_7_213_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نعزل التكامل. الطريقة: اطرح \\( 24 \\) من \\( 32 \\).",
+        "think": "\\( 32-24 \\).",
+        "html_structure": "\\int_{-2}^{6} f(x)\\,dx = 32 - 24 = {q_4_7_213_3_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نستخدم المعطى الآخر \\( \\int_1^6 f=6 \\) بتجزئة الفترة \\( [-2,6] \\) عند \\( x=1 \\).",
+        "equation_template": "\\int_{-2}^{6} f = \\int_{-2}^{{input_1}} f + \\int_{{input_2}}^{6} f",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "6",
+              "-2",
+              "8"
+            ],
+            "id": "q_4_7_213_3_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "6",
+              "-2",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "نقطة التقسيم هي \\( 1 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "1",
+            "options": [
+              "6",
+              "8",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_7_213_3_s7_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "6",
+              "8",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "نقطة التقسيم هي \\( 1 \\)."
+          }
+        ],
+        "hint": "نقطة التقسيم هي \\( 1 \\).",
+        "related_topics": [
+          "خاصية التجزئة"
+        ],
+        "step_id": "math345_4_7_213_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نستخدم المعطى الآخر \\( \\int_1^6 f=6 \\) بتجزئة الفترة \\( [-2,6] \\) عند \\( x=1 \\).",
+        "think": "نقطة التقسيم هي \\( 1 \\).",
+        "html_structure": "\\int_{-2}^{6} f = \\int_{-2}^{{q_4_7_213_3_s7_i1}} f + \\int_{{q_4_7_213_3_s7_i2}}^{6} f"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نعوّض القيم المعروفة.",
+        "equation_template": "8 = \\int_{-2}^{1} f(x)\\,dx + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "6",
+            "options": [
+              "2",
+              "8",
+              "32",
+              "6"
+            ],
+            "id": "q_4_7_213_3_s8_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "2",
+              "8",
+              "32",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "التكامل من \\( 1 \\) إلى \\( 6 \\) معطى في السؤال."
+          }
+        ],
+        "hint": "التكامل من \\( 1 \\) إلى \\( 6 \\) معطى في السؤال.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_7_213_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نعوّض القيم المعروفة.",
+        "think": "التكامل من \\( 1 \\) إلى \\( 6 \\) معطى في السؤال.",
+        "html_structure": "8 = \\int_{-2}^{1} f(x)\\,dx + {q_4_7_213_3_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "نعزل المطلوب.",
+        "equation_template": "\\int_{-2}^{1} f(x)\\,dx = 8 - 6 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "2",
+            "options": [
+              "6",
+              "2",
+              "8",
+              "14"
+            ],
+            "id": "q_4_7_213_3_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "6",
+              "2",
+              "8",
+              "14"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 8-6 \\)."
+          }
+        ],
+        "hint": "\\( 8-6 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_4_7_213_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "نعزل المطلوب.",
+        "think": "\\( 8-6 \\).",
+        "html_structure": "\\int_{-2}^{1} f(x)\\,dx = 8 - 6 = {q_4_7_213_3_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "مراجعة: نجمع الجزأين فيرجع التكامل الكلي.",
+        "equation_template": "2 + 6 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "8",
+            "options": [
+              "12",
+              "8",
+              "4",
+              "32"
+            ],
+            "id": "q_4_7_213_3_s10_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "12",
+              "8",
+              "4",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2+6 \\)."
+          }
+        ],
+        "hint": "\\( 2+6 \\).",
+        "related_topics": [
+          "مراجعة النتيجة"
+        ],
+        "step_id": "math345_4_7_213_3_step_10",
+        "title": "الخطوة 10",
+        "explanation": "مراجعة: نجمع الجزأين فيرجع التكامل الكلي.",
+        "think": "\\( 2+6 \\).",
+        "html_structure": "2 + 6 = {q_4_7_213_3_s10_i1}"
+      }
+    ]
+  }
+]

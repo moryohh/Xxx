@@ -1,0 +1,1577 @@
+[
+  {
+    "id_number": "q1_p1",
+    "page_number": 1,
+    "question_number": "1",
+    "question_text": "جد \\( \\int 3\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "full_model_solution": "∫ 3 dx = 3x + c",
+    "source_file": "رياضيلت 4/part2_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 141
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png",
+    "title": "جد \\( \\int 3\\,dx \\)",
+    "number": "1",
+    "model_solution": "∫ 3 dx = 3x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dx \\)، وهو العدد \\( 3 \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "equation_template": "a = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_c_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "0",
+              "1"
+            ],
+            "id": "q_4_2_1_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته."
+          }
+        ],
+        "hint": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dx \\)، وهو العدد \\( 3 \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "think": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته.",
+        "html_structure": "a = {q_4_2_1_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dx \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "equation_template": "d{input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c_var",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_1_s2_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب."
+          }
+        ],
+        "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "related_topics": [
+          "متغير التكامل"
+        ],
+        "step_id": "math345_4_2_1_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dx \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "think": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "html_structure": "d{q_4_2_1_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( x \\) في الفراغ. السبب: لأن مشتقة \\( ax \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "equation_template": "\\int a\\,dx = a\\cdot{input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step3_c_rule",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_1_s3_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة."
+          }
+        ],
+        "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( x \\) في الفراغ. السبب: لأن مشتقة \\( ax \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "think": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "html_structure": "\\int a\\,dx = a\\cdot{q_4_2_1_1_s3_i1} + c"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( 3 \\) بجانب المتغير \\( x \\) فيصبح الناتج \\( 3x \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "equation_template": "3 \\cdot x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_c_prod",
+            "correct_answer": "3x",
+            "options": [
+              "3x",
+              "3",
+              "x",
+              "3+x"
+            ],
+            "id": "q_4_2_1_1_s4_i1",
+            "correct_value": "3x",
+            "allowed_keys": [
+              "3x",
+              "3",
+              "x",
+              "3+x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد \\( 3 \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما."
+          }
+        ],
+        "hint": "اكتب العدد \\( 3 \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "related_topics": [
+          "ضرب ثابت في متغير"
+        ],
+        "step_id": "math345_4_2_1_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( 3 \\) بجانب المتغير \\( x \\) فيصبح الناتج \\( 3x \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "think": "اكتب العدد \\( 3 \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "html_structure": "3 \\cdot x = {q_4_2_1_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( 3x + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "equation_template": "3x + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_c_plus",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_1_1_s5_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\)."
+          }
+        ],
+        "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_1_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( 3x + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "think": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "html_structure": "3x + {q_4_2_1_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( 3x \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "equation_template": "\\int 3\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_c_final",
+            "correct_answer": "3x + c",
+            "options": [
+              "3x + c",
+              "3x",
+              "3 + c",
+              "x + c"
+            ],
+            "id": "q_4_2_1_1_s6_i1",
+            "correct_value": "3x + c",
+            "allowed_keys": [
+              "3x + c",
+              "3x",
+              "3 + c",
+              "x + c"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\)."
+          }
+        ],
+        "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_1_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( 3x \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "think": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "html_structure": "\\int 3\\,dx = {q_4_2_1_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( 3x \\) بالنسبة إلى \\( x \\) فنحصل على المعامل \\( 3 \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "equation_template": "\\frac{d}{dx}(3x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_c_d1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "0",
+              "1"
+            ],
+            "id": "q_4_2_1_1_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( 3 \\)."
+          }
+        ],
+        "hint": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( 3 \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_1_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( 3x \\) بالنسبة إلى \\( x \\) فنحصل على المعامل \\( 3 \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "think": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( 3 \\).",
+        "html_structure": "\\frac{d}{dx}(3x) = {q_4_2_1_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( 3 \\) فقط وهو العدد الذي كامل تحته.",
+        "equation_template": "\\frac{d}{dx}(c) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_c_d2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "c",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_1_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "c",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة أي عدد ثابت هي \\( 0 \\)."
+          }
+        ],
+        "hint": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "related_topics": [
+          "مشتقة الثابت"
+        ],
+        "step_id": "math345_4_2_1_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( 3 \\) فقط وهو العدد الذي كامل تحته.",
+        "think": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "html_structure": "\\frac{d}{dx}(c) = {q_4_2_1_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p1",
+    "page_number": 1,
+    "question_number": "2",
+    "question_text": "جد \\( \\int -5\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "full_model_solution": "∫ -5 dx = -5x + c",
+    "source_file": "رياضيلت 4/part2_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 141
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png",
+    "title": "جد \\( \\int -5\\,dx \\)",
+    "number": "2",
+    "model_solution": "∫ -5 dx = -5x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dx \\)، وهو العدد \\( -5 \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "equation_template": "a = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_c_a",
+            "correct_answer": "-5",
+            "options": [
+              "-5",
+              "5",
+              "0",
+              "1"
+            ],
+            "id": "q_4_2_1_2_s1_i1",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "-5",
+              "5",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته."
+          }
+        ],
+        "hint": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dx \\)، وهو العدد \\( -5 \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "think": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته.",
+        "html_structure": "a = {q_4_2_1_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dx \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "equation_template": "d{input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c_var",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_2_s2_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب."
+          }
+        ],
+        "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "related_topics": [
+          "متغير التكامل"
+        ],
+        "step_id": "math345_4_2_1_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dx \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "think": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "html_structure": "d{q_4_2_1_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( x \\) في الفراغ. السبب: لأن مشتقة \\( ax \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "equation_template": "\\int a\\,dx = a\\cdot{input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step3_c_rule",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_2_s3_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة."
+          }
+        ],
+        "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( x \\) في الفراغ. السبب: لأن مشتقة \\( ax \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "think": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "html_structure": "\\int a\\,dx = a\\cdot{q_4_2_1_2_s3_i1} + c"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( -5 \\) بجانب المتغير \\( x \\) فيصبح الناتج \\( -5x \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "equation_template": "-5 \\cdot x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_c_prod",
+            "correct_answer": "-5x",
+            "options": [
+              "-5x",
+              "-5",
+              "x",
+              "-5+x"
+            ],
+            "id": "q_4_2_1_2_s4_i1",
+            "correct_value": "-5x",
+            "allowed_keys": [
+              "-5x",
+              "-5",
+              "x",
+              "-5+x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد \\( -5 \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما."
+          }
+        ],
+        "hint": "اكتب العدد \\( -5 \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "related_topics": [
+          "ضرب ثابت في متغير"
+        ],
+        "step_id": "math345_4_2_1_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( -5 \\) بجانب المتغير \\( x \\) فيصبح الناتج \\( -5x \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "think": "اكتب العدد \\( -5 \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "html_structure": "-5 \\cdot x = {q_4_2_1_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( -5x + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "equation_template": "-5x + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_c_plus",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_1_2_s5_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\)."
+          }
+        ],
+        "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_1_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( -5x + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "think": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "html_structure": "-5x + {q_4_2_1_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( -5x \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "equation_template": "\\int -5\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_c_final",
+            "correct_answer": "-5x + c",
+            "options": [
+              "-5x + c",
+              "-5x",
+              "-5 + c",
+              "x + c"
+            ],
+            "id": "q_4_2_1_2_s6_i1",
+            "correct_value": "-5x + c",
+            "allowed_keys": [
+              "-5x + c",
+              "-5x",
+              "-5 + c",
+              "x + c"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\)."
+          }
+        ],
+        "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_1_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( -5x \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "think": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "html_structure": "\\int -5\\,dx = {q_4_2_1_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( -5x \\) بالنسبة إلى \\( x \\) فنحصل على المعامل \\( -5 \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "equation_template": "\\frac{d}{dx}(-5x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_c_d1",
+            "correct_answer": "-5",
+            "options": [
+              "-5",
+              "5",
+              "0",
+              "1"
+            ],
+            "id": "q_4_2_1_2_s7_i1",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "-5",
+              "5",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( -5 \\)."
+          }
+        ],
+        "hint": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( -5 \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_1_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( -5x \\) بالنسبة إلى \\( x \\) فنحصل على المعامل \\( -5 \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "think": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( -5 \\).",
+        "html_structure": "\\frac{d}{dx}(-5x) = {q_4_2_1_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( -5 \\) فقط وهو العدد الذي كامل تحته.",
+        "equation_template": "\\frac{d}{dx}(c) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_c_d2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "c",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_1_2_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "c",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة أي عدد ثابت هي \\( 0 \\)."
+          }
+        ],
+        "hint": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "related_topics": [
+          "مشتقة الثابت"
+        ],
+        "step_id": "math345_4_2_1_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( -5 \\) فقط وهو العدد الذي كامل تحته.",
+        "think": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "html_structure": "\\frac{d}{dx}(c) = {q_4_2_1_2_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p1",
+    "page_number": 1,
+    "question_number": "3",
+    "question_text": "جد \\( \\int \\frac{1}{2}\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "full_model_solution": "∫ 1/2 dx = (1/2)x + c",
+    "source_file": "رياضيلت 4/part2_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 141
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png",
+    "title": "جد \\( \\int \\frac{1}{2}\\,dx \\)",
+    "number": "3",
+    "model_solution": "∫ 1/2 dx = (1/2)x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dx \\)، وهو العدد \\( \\frac{1}{2} \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "equation_template": "a = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_c_a",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "-1/2",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_1_3_s1_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "-1/2",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته."
+          }
+        ],
+        "hint": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dx \\)، وهو العدد \\( \\frac{1}{2} \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "think": "اكتب العدد الموجود قبل \\( dx \\) كما هو بإشارته.",
+        "html_structure": "a = {q_4_2_1_3_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dx \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "equation_template": "d{input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c_var",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_3_s2_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب."
+          }
+        ],
+        "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "related_topics": [
+          "متغير التكامل"
+        ],
+        "step_id": "math345_4_2_1_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dx \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "think": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "html_structure": "d{q_4_2_1_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( x \\) في الفراغ. السبب: لأن مشتقة \\( ax \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "equation_template": "\\int a\\,dx = a\\cdot{input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step3_c_rule",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_3_s3_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "y",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة."
+          }
+        ],
+        "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( x \\) في الفراغ. السبب: لأن مشتقة \\( ax \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "think": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "html_structure": "\\int a\\,dx = a\\cdot{q_4_2_1_3_s3_i1} + c"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( \\frac{1}{2} \\) بجانب المتغير \\( x \\) فيصبح الناتج \\( \\frac{1}{2}x \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "equation_template": "\\frac{1}{2} \\cdot x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_c_prod",
+            "correct_answer": "(1/2)x",
+            "options": [
+              "(1/2)x",
+              "1/2",
+              "x",
+              "1/2+x"
+            ],
+            "id": "q_4_2_1_3_s4_i1",
+            "correct_value": "(1/2)x",
+            "allowed_keys": [
+              "(1/2)x",
+              "1/2",
+              "x",
+              "1/2+x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد \\( \\frac{1}{2} \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما."
+          }
+        ],
+        "hint": "اكتب العدد \\( \\frac{1}{2} \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "related_topics": [
+          "ضرب ثابت في متغير"
+        ],
+        "step_id": "math345_4_2_1_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( \\frac{1}{2} \\) بجانب المتغير \\( x \\) فيصبح الناتج \\( \\frac{1}{2}x \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "think": "اكتب العدد \\( \\frac{1}{2} \\) ثم الحرف \\( x \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "html_structure": "\\frac{1}{2} \\cdot x = {q_4_2_1_3_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( \\frac{1}{2}x + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "equation_template": "\\frac{1}{2}x + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_c_plus",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_1_3_s5_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\)."
+          }
+        ],
+        "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_1_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( \\frac{1}{2}x + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "think": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "html_structure": "\\frac{1}{2}x + {q_4_2_1_3_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( \\frac{1}{2}x \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "equation_template": "\\int \\frac{1}{2}\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_c_final",
+            "correct_answer": "(1/2)x + c",
+            "options": [
+              "(1/2)x + c",
+              "(1/2)x",
+              "1/2 + c",
+              "x + c"
+            ],
+            "id": "q_4_2_1_3_s6_i1",
+            "correct_value": "(1/2)x + c",
+            "allowed_keys": [
+              "(1/2)x + c",
+              "(1/2)x",
+              "1/2 + c",
+              "x + c"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\)."
+          }
+        ],
+        "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_1_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( \\frac{1}{2}x \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "think": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "html_structure": "\\int \\frac{1}{2}\\,dx = {q_4_2_1_3_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( \\frac{1}{2}x \\) بالنسبة إلى \\( x \\) فنحصل على المعامل \\( \\frac{1}{2} \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "equation_template": "\\frac{d}{dx}(\\frac{1}{2}x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_c_d1",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "-1/2",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_1_3_s7_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "-1/2",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\frac{1}{2} \\)."
+          }
+        ],
+        "hint": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\frac{1}{2} \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_1_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( \\frac{1}{2}x \\) بالنسبة إلى \\( x \\) فنحصل على المعامل \\( \\frac{1}{2} \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "think": "اشتق المتغير \\( x \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\frac{1}{2} \\).",
+        "html_structure": "\\frac{d}{dx}(\\frac{1}{2}x) = {q_4_2_1_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( \\frac{1}{2} \\) فقط وهو العدد الذي كامل تحته.",
+        "equation_template": "\\frac{d}{dx}(c) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_c_d2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "c",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_1_3_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "c",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة أي عدد ثابت هي \\( 0 \\)."
+          }
+        ],
+        "hint": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "related_topics": [
+          "مشتقة الثابت"
+        ],
+        "step_id": "math345_4_2_1_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( \\frac{1}{2} \\) فقط وهو العدد الذي كامل تحته.",
+        "think": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "html_structure": "\\frac{d}{dx}(c) = {q_4_2_1_3_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_p1",
+    "page_number": 1,
+    "question_number": "4",
+    "question_text": "جد \\( \\int \\frac{1}{3}\\,dy \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "full_model_solution": "∫ 1/3 dy = (1/3)y + c",
+    "source_file": "رياضيلت 4/part2_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 141
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png",
+    "title": "جد \\( \\int \\frac{1}{3}\\,dy \\)",
+    "number": "4",
+    "model_solution": "∫ 1/3 dy = (1/3)y + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dy \\)، وهو العدد \\( \\frac{1}{3} \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "equation_template": "a = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_c_a",
+            "correct_answer": "1/3",
+            "options": [
+              "1/3",
+              "-1/3",
+              "3",
+              "1"
+            ],
+            "id": "q_4_2_1_4_s1_i1",
+            "correct_value": "1/3",
+            "allowed_keys": [
+              "1/3",
+              "-1/3",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد الموجود قبل \\( dy \\) كما هو بإشارته."
+          }
+        ],
+        "hint": "اكتب العدد الموجود قبل \\( dy \\) كما هو بإشارته.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dy \\)، وهو العدد \\( \\frac{1}{3} \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "think": "اكتب العدد الموجود قبل \\( dy \\) كما هو بإشارته.",
+        "html_structure": "a = {q_4_2_1_4_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dy \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "equation_template": "d{input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c_var",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "x",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_4_s2_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "x",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب."
+          }
+        ],
+        "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "related_topics": [
+          "متغير التكامل"
+        ],
+        "step_id": "math345_4_2_1_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dy \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "think": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "html_structure": "d{q_4_2_1_4_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( y \\) في الفراغ. السبب: لأن مشتقة \\( ay \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "equation_template": "\\int a\\,dy = a\\cdot{input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step3_c_rule",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "x",
+              "t",
+              "z"
+            ],
+            "id": "q_4_2_1_4_s3_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "x",
+              "t",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة."
+          }
+        ],
+        "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( y \\) في الفراغ. السبب: لأن مشتقة \\( ay \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "think": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "html_structure": "\\int a\\,dy = a\\cdot{q_4_2_1_4_s3_i1} + c"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( \\frac{1}{3} \\) بجانب المتغير \\( y \\) فيصبح الناتج \\( \\frac{1}{3}y \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "equation_template": "\\frac{1}{3} \\cdot y = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_c_prod",
+            "correct_answer": "(1/3)y",
+            "options": [
+              "(1/3)y",
+              "1/3",
+              "y",
+              "1/3+y"
+            ],
+            "id": "q_4_2_1_4_s4_i1",
+            "correct_value": "(1/3)y",
+            "allowed_keys": [
+              "(1/3)y",
+              "1/3",
+              "y",
+              "1/3+y"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد \\( \\frac{1}{3} \\) ثم الحرف \\( y \\) بجانبه مباشرة بدون أي علامة بينهما."
+          }
+        ],
+        "hint": "اكتب العدد \\( \\frac{1}{3} \\) ثم الحرف \\( y \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "related_topics": [
+          "ضرب ثابت في متغير"
+        ],
+        "step_id": "math345_4_2_1_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( \\frac{1}{3} \\) بجانب المتغير \\( y \\) فيصبح الناتج \\( \\frac{1}{3}y \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "think": "اكتب العدد \\( \\frac{1}{3} \\) ثم الحرف \\( y \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "html_structure": "\\frac{1}{3} \\cdot y = {q_4_2_1_4_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( \\frac{1}{3}y + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "equation_template": "\\frac{1}{3}y + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_c_plus",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "y"
+            ],
+            "id": "q_4_2_1_4_s5_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "y"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\)."
+          }
+        ],
+        "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_1_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( \\frac{1}{3}y + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "think": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "html_structure": "\\frac{1}{3}y + {q_4_2_1_4_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( \\frac{1}{3}y \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "equation_template": "\\int \\frac{1}{3}\\,dy = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_c_final",
+            "correct_answer": "(1/3)y + c",
+            "options": [
+              "(1/3)y + c",
+              "(1/3)y",
+              "1/3 + c",
+              "y + c"
+            ],
+            "id": "q_4_2_1_4_s6_i1",
+            "correct_value": "(1/3)y + c",
+            "allowed_keys": [
+              "(1/3)y + c",
+              "(1/3)y",
+              "1/3 + c",
+              "y + c"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\)."
+          }
+        ],
+        "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_1_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( \\frac{1}{3}y \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "think": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "html_structure": "\\int \\frac{1}{3}\\,dy = {q_4_2_1_4_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( \\frac{1}{3}y \\) بالنسبة إلى \\( y \\) فنحصل على المعامل \\( \\frac{1}{3} \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "equation_template": "\\frac{d}{dy}(\\frac{1}{3}y) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_c_d1",
+            "correct_answer": "1/3",
+            "options": [
+              "1/3",
+              "-1/3",
+              "3",
+              "1"
+            ],
+            "id": "q_4_2_1_4_s7_i1",
+            "correct_value": "1/3",
+            "allowed_keys": [
+              "1/3",
+              "-1/3",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق المتغير \\( y \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\frac{1}{3} \\)."
+          }
+        ],
+        "hint": "اشتق المتغير \\( y \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\frac{1}{3} \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_1_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( \\frac{1}{3}y \\) بالنسبة إلى \\( y \\) فنحصل على المعامل \\( \\frac{1}{3} \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "think": "اشتق المتغير \\( y \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\frac{1}{3} \\).",
+        "html_structure": "\\frac{d}{dy}(\\frac{1}{3}y) = {q_4_2_1_4_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( \\frac{1}{3} \\) فقط وهو العدد الذي كامل تحته.",
+        "equation_template": "\\frac{d}{dy}(c) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_c_d2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "c",
+              "1",
+              "y"
+            ],
+            "id": "q_4_2_1_4_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "c",
+              "1",
+              "y"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة أي عدد ثابت هي \\( 0 \\)."
+          }
+        ],
+        "hint": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "related_topics": [
+          "مشتقة الثابت"
+        ],
+        "step_id": "math345_4_2_1_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( \\frac{1}{3} \\) فقط وهو العدد الذي كامل تحته.",
+        "think": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "html_structure": "\\frac{d}{dy}(c) = {q_4_2_1_4_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q5_p1",
+    "page_number": 1,
+    "question_number": "5",
+    "question_text": "جد \\( \\int \\sqrt{2}\\,dt \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "full_model_solution": "∫ √2 dt = √2 t + c",
+    "source_file": "رياضيلت 4/part2_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 141
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_001_diag_1_drawing.png",
+    "title": "جد \\( \\int \\sqrt{2}\\,dt \\)",
+    "number": "5",
+    "model_solution": "∫ √2 dt = √2 t + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dt \\)، وهو العدد \\( \\sqrt{2} \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "equation_template": "a = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_c_a",
+            "correct_answer": "√2",
+            "options": [
+              "√2",
+              "2",
+              "-√2",
+              "1"
+            ],
+            "id": "q_4_2_1_5_s1_i1",
+            "correct_value": "√2",
+            "allowed_keys": [
+              "√2",
+              "2",
+              "-√2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد الموجود قبل \\( dt \\) كما هو بإشارته."
+          }
+        ],
+        "hint": "اكتب العدد الموجود قبل \\( dt \\) كما هو بإشارته.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_5_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الثابت الذي نريد تكامله. الطريقة: ننظر إلى ما هو مكتوب بين علامة التكامل و \\( dt \\)، وهو العدد \\( \\sqrt{2} \\). السبب: هذا العدد هو الذي سيُضرب في المتغير في الجواب.",
+        "think": "اكتب العدد الموجود قبل \\( dt \\) كما هو بإشارته.",
+        "html_structure": "a = {q_4_2_1_5_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dt \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "equation_template": "d{input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c_var",
+            "correct_answer": "t",
+            "options": [
+              "t",
+              "x",
+              "y",
+              "z"
+            ],
+            "id": "q_4_2_1_5_s2_i1",
+            "correct_value": "t",
+            "allowed_keys": [
+              "t",
+              "x",
+              "y",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب."
+          }
+        ],
+        "hint": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "related_topics": [
+          "متغير التكامل"
+        ],
+        "step_id": "math345_4_2_1_5_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد المتغير الذي نكامل بالنسبة له. الطريقة: نقرأ الحرف الموجود بعد حرف \\( d \\) في آخر التكامل، وهنا هو \\( dt \\). السبب: القاعدة تقول إننا نضيف هذا المتغير نفسه إلى الثابت.",
+        "think": "انظر إلى آخر التكامل: الحرف الذي يلي \\( d \\) هو المطلوب.",
+        "html_structure": "d{q_4_2_1_5_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( t \\) في الفراغ. السبب: لأن مشتقة \\( at \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "equation_template": "\\int a\\,dt = a\\cdot{input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step3_c_rule",
+            "correct_answer": "t",
+            "options": [
+              "t",
+              "x",
+              "y",
+              "z"
+            ],
+            "id": "q_4_2_1_5_s3_i1",
+            "correct_value": "t",
+            "allowed_keys": [
+              "t",
+              "x",
+              "y",
+              "z"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة."
+          }
+        ],
+        "hint": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_1_5_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب قاعدة تكامل الثابت. الطريقة: تكامل الثابت \\( a \\) يساوي \\( a \\) مضروباً في متغير التكامل، فنضع المتغير \\( t \\) في الفراغ. السبب: لأن مشتقة \\( at \\) تساوي \\( a \\) فنرجع للثابت الأصلي.",
+        "think": "ضع نفس الحرف الذي كتبته في الخطوة السابقة.",
+        "html_structure": "\\int a\\,dt = a\\cdot{q_4_2_1_5_s3_i1} + c"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( \\sqrt{2} \\) بجانب المتغير \\( t \\) فيصبح الناتج \\( \\sqrt{2}t \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "equation_template": "\\sqrt{2} \\cdot t = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_c_prod",
+            "correct_answer": "√2 t",
+            "options": [
+              "√2 t",
+              "√2",
+              "t",
+              "√2+t"
+            ],
+            "id": "q_4_2_1_5_s4_i1",
+            "correct_value": "√2 t",
+            "allowed_keys": [
+              "√2 t",
+              "√2",
+              "t",
+              "√2+t"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب العدد \\( \\sqrt{2} \\) ثم الحرف \\( t \\) بجانبه مباشرة بدون أي علامة بينهما."
+          }
+        ],
+        "hint": "اكتب العدد \\( \\sqrt{2} \\) ثم الحرف \\( t \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "related_topics": [
+          "ضرب ثابت في متغير"
+        ],
+        "step_id": "math345_4_2_1_5_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضرب الثابت في المتغير. الطريقة: نضع العدد \\( \\sqrt{2} \\) بجانب المتغير \\( t \\) فيصبح الناتج \\( \\sqrt{2}t \\). السبب: هذا هو الجزء الأول من الجواب.",
+        "think": "اكتب العدد \\( \\sqrt{2} \\) ثم الحرف \\( t \\) بجانبه مباشرة بدون أي علامة بينهما.",
+        "html_structure": "\\sqrt{2} \\cdot t = {q_4_2_1_5_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( \\sqrt{2}t + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "equation_template": "\\sqrt{2}t + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_c_plus",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "t"
+            ],
+            "id": "q_4_2_1_5_s5_i1",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "t"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\)."
+          }
+        ],
+        "hint": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_1_5_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: إضافة ثابت التكامل. الطريقة: نكتب بعد الناتج علامة جمع ثم الحرف \\( c \\). السبب: لأن مشتقة أي عدد ثابت تساوي صفراً، فكل الدوال \\( \\sqrt{2}t + c \\) لها نفس المشتقة، ولذلك نضيف \\( c \\) للتعبير عنها كلها.",
+        "think": "الرمز الذي يمثل ثابت التكامل هو الحرف \\( c \\).",
+        "html_structure": "\\sqrt{2}t + {q_4_2_1_5_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( \\sqrt{2}t \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "equation_template": "\\int \\sqrt{2}\\,dt = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_c_final",
+            "correct_answer": "√2 t + c",
+            "options": [
+              "√2 t + c",
+              "√2 t",
+              "√2 + c",
+              "t + c"
+            ],
+            "id": "q_4_2_1_5_s6_i1",
+            "correct_value": "√2 t + c",
+            "allowed_keys": [
+              "√2 t + c",
+              "√2 t",
+              "√2 + c",
+              "t + c"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\)."
+          }
+        ],
+        "hint": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_1_5_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: كتابة الجواب النهائي كاملاً. الطريقة: نجمع الناتج \\( \\sqrt{2}t \\) مع \\( c \\). السبب: هذا هو التكامل غير المحدد للثابت.",
+        "think": "الجواب هو ما كتبته في الخطوة الرابعة مضافاً إليه \\( + c \\).",
+        "html_structure": "\\int \\sqrt{2}\\,dt = {q_4_2_1_5_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( \\sqrt{2}t \\) بالنسبة إلى \\( t \\) فنحصل على المعامل \\( \\sqrt{2} \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "equation_template": "\\frac{d}{dt}(\\sqrt{2}t) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_c_d1",
+            "correct_answer": "√2",
+            "options": [
+              "√2",
+              "2",
+              "-√2",
+              "1"
+            ],
+            "id": "q_4_2_1_5_s7_i1",
+            "correct_value": "√2",
+            "allowed_keys": [
+              "√2",
+              "2",
+              "-√2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق المتغير \\( t \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\sqrt{2} \\)."
+          }
+        ],
+        "hint": "اشتق المتغير \\( t \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\sqrt{2} \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_1_5_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتأكد من الجواب بالاشتقاق. الطريقة: نشتق \\( \\sqrt{2}t \\) بالنسبة إلى \\( t \\) فنحصل على المعامل \\( \\sqrt{2} \\) نفسه. السبب: لأن مشتقة (عدد × متغير) هي العدد.",
+        "think": "اشتق المتغير \\( t \\) فيصبح \\( 1 \\) ثم اضرب في \\( \\sqrt{2} \\).",
+        "html_structure": "\\frac{d}{dt}(\\sqrt{2}t) = {q_4_2_1_5_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( \\sqrt{2} \\) فقط وهو العدد الذي كامل تحته.",
+        "equation_template": "\\frac{d}{dt}(c) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_c_d2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "c",
+              "1",
+              "t"
+            ],
+            "id": "q_4_2_1_5_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "c",
+              "1",
+              "t"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة أي عدد ثابت هي \\( 0 \\)."
+          }
+        ],
+        "hint": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "related_topics": [
+          "مشتقة الثابت"
+        ],
+        "step_id": "math345_4_2_1_5_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نشتق ثابت التكامل. الطريقة: نشتق \\( c \\) فنحصل على صفر. السبب: مشتقة أي ثابت تساوي صفراً، وبذلك يرجع الجواب بعد الاشتقاق إلى \\( \\sqrt{2} \\) فقط وهو العدد الذي كامل تحته.",
+        "think": "مشتقة أي عدد ثابت هي \\( 0 \\).",
+        "html_structure": "\\frac{d}{dt}(c) = {q_4_2_1_5_s8_i1}"
+      }
+    ]
+  }
+]

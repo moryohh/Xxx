@@ -1,0 +1,1420 @@
+[
+  {
+    "id_number": "ex1_p6",
+    "page_number": 6,
+    "question_number": "مثال 1",
+    "question_text": "جد \\( \\int_{0}^{1}(3x^2-2)\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png"
+    ],
+    "full_model_solution": "[x³-2x] من 0 إلى 1 = (1-2) - (0) = -1",
+    "source_file": "رياضيلت 4/page_006_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 6
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png",
+    "title": "جد \\( \\int_{0}^{1}(3x^2-2)\\,dx \\)",
+    "number": "مثال 1",
+    "model_solution": "[x³-2x] من 0 إلى 1 = (1-2) - (0) = -1",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: تكامل الحد الأول. الطريقة: نرفع الأس بواحد ونقسم على الأس الجديد ونبسط. السبب: قاعدة القوة.",
+        "equation_template": "\\int 3x^2dx = \\frac{3x^{{input_1}}}{{input_2}} = x^{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s1_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_3_6_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) يصبح \\( 3 \\) ونقسم \\( 3 \\) على \\( 3 \\)."
+          },
+          {
+            "input_id": "ex1_p6_s1_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_4_3_6_1_s1_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 2 \\) يصبح \\( 3 \\) ونقسم \\( 3 \\) على \\( 3 \\)."
+          },
+          {
+            "input_id": "ex1_p6_s1_3",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_3_6_1_s1_i3",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 3",
+            "hint": "الأس \\( 2 \\) يصبح \\( 3 \\) ونقسم \\( 3 \\) على \\( 3 \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) يصبح \\( 3 \\) ونقسم \\( 3 \\) على \\( 3 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_6_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: تكامل الحد الأول. الطريقة: نرفع الأس بواحد ونقسم على الأس الجديد ونبسط. السبب: قاعدة القوة.",
+        "think": "الأس \\( 2 \\) يصبح \\( 3 \\) ونقسم \\( 3 \\) على \\( 3 \\).",
+        "html_structure": "\\int 3x^2dx = \\frac{3x^{{q_4_3_6_1_s1_i1}}}{{q_4_3_6_1_s1_i2}} = x^{{q_4_3_6_1_s1_i3}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: تكامل الحد الثاني. الطريقة: تكامل ثابت \\( -2 \\) هو \\( -2x \\). السبب: لأن مشتقة \\( -2x \\) هي \\( -2 \\).",
+        "equation_template": "\\int -2\\,dx = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s2_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "-1",
+              "0"
+            ],
+            "id": "q_4_3_6_1_s2_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "أضف \\( x \\) بجانب \\( -2 \\)."
+          }
+        ],
+        "hint": "أضف \\( x \\) بجانب \\( -2 \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_3_6_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: تكامل الحد الثاني. الطريقة: تكامل ثابت \\( -2 \\) هو \\( -2x \\). السبب: لأن مشتقة \\( -2x \\) هي \\( -2 \\).",
+        "think": "أضف \\( x \\) بجانب \\( -2 \\).",
+        "html_structure": "\\int -2\\,dx = {q_4_3_6_1_s2_i1}x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: كتابة دالة التكامل \\( F(x) \\). الطريقة: نجمع الناتجين. السبب: سنعوض فيها الحدود.",
+        "equation_template": "F(x) = x^3 - {input_1}x",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_3_6_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( 2 \\) بعد إشارة الطرح."
+          }
+        ],
+        "hint": "المعامل \\( 2 \\) بعد إشارة الطرح.",
+        "related_topics": [
+          "الدالة الأصلية"
+        ],
+        "step_id": "math345_4_3_6_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: كتابة دالة التكامل \\( F(x) \\). الطريقة: نجمع الناتجين. السبب: سنعوض فيها الحدود.",
+        "think": "المعامل \\( 2 \\) بعد إشارة الطرح.",
+        "html_structure": "F(x) = x^3 - {q_4_3_6_1_s3_i1}x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: معرفة ما يُضاف أو لا يُضاف. الطريقة: في التكامل المحدد لا نضيف \\( c \\). السبب: لأنه يُحذف عند طرح \\( F(a) \\) من \\( F(b) \\).",
+        "equation_template": "\\text{ثابت التكامل } c : {input_1}",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s4_1",
+            "correct_answer": "لا نضيفه",
+            "options": [
+              "لا نضيفه",
+              "نضيفه",
+              "نضربه",
+              "نقسمه"
+            ],
+            "id": "q_4_3_6_1_s4_i1",
+            "correct_value": "لا نضيفه",
+            "allowed_keys": [
+              "لا نضيفه",
+              "نضيفه",
+              "نضربه",
+              "نقسمه"
+            ],
+            "label": "القيمة 1",
+            "hint": "التكامل المحدد له حدان، فاختر: لا نضيفه."
+          }
+        ],
+        "hint": "التكامل المحدد له حدان، فاختر: لا نضيفه.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_6_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: معرفة ما يُضاف أو لا يُضاف. الطريقة: في التكامل المحدد لا نضيف \\( c \\). السبب: لأنه يُحذف عند طرح \\( F(a) \\) من \\( F(b) \\).",
+        "think": "التكامل المحدد له حدان، فاختر: لا نضيفه.",
+        "html_structure": "\\text{ثابت التكامل } c : {q_4_3_6_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نضع \\( x=1 \\) في \\( F \\). السبب: القانون \\( F(b) \\).",
+        "equation_template": "F(1) = 1^3 - 2({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s5_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_3_6_1_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 - 2 = -1 \\)."
+          },
+          {
+            "input_id": "ex1_p6_s5_2",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "id": "q_4_3_6_1_s5_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1 - 2 = -1 \\)."
+          }
+        ],
+        "hint": "\\( 1 - 2 = -1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_6_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نضع \\( x=1 \\) في \\( F \\). السبب: القانون \\( F(b) \\).",
+        "think": "\\( 1 - 2 = -1 \\).",
+        "html_structure": "F(1) = 1^3 - 2({q_4_3_6_1_s5_i1}) = {q_4_3_6_1_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: التعويض بالحد الأدنى. الطريقة: نضع \\( x=0 \\) في \\( F \\). السبب: القانون \\( F(a) \\).",
+        "equation_template": "F(0) = 0^3 - 2({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s6_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_3_6_1_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أي شيء مضروب في صفر يساوي صفراً."
+          },
+          {
+            "input_id": "ex1_p6_s6_2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_3_6_1_s6_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "أي شيء مضروب في صفر يساوي صفراً."
+          }
+        ],
+        "hint": "أي شيء مضروب في صفر يساوي صفراً.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_6_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: التعويض بالحد الأدنى. الطريقة: نضع \\( x=0 \\) في \\( F \\). السبب: القانون \\( F(a) \\).",
+        "think": "أي شيء مضروب في صفر يساوي صفراً.",
+        "html_structure": "F(0) = 0^3 - 2({q_4_3_6_1_s6_i1}) = {q_4_3_6_1_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: طرح الأدنى من الأعلى. الطريقة: نكتب \\( F(1) - F(0) \\). السبب: قانون التكامل المحدد.",
+        "equation_template": "F(1) - F(0) = ({input_1}) - ({input_2})",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s7_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "id": "q_4_3_6_1_s7_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب القيمتين السابقتين."
+          },
+          {
+            "input_id": "ex1_p6_s7_2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_3_6_1_s7_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "اكتب القيمتين السابقتين."
+          }
+        ],
+        "hint": "اكتب القيمتين السابقتين.",
+        "related_topics": [
+          "القانون الأساسي"
+        ],
+        "step_id": "math345_4_3_6_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: طرح الأدنى من الأعلى. الطريقة: نكتب \\( F(1) - F(0) \\). السبب: قانون التكامل المحدد.",
+        "think": "اكتب القيمتين السابقتين.",
+        "html_structure": "F(1) - F(0) = ({q_4_3_6_1_s7_i1}) - ({q_4_3_6_1_s7_i2})"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: إيجاد الناتج النهائي. الطريقة: \\( -1 - 0 = -1 \\). السبب: هذه قيمة التكامل.",
+        "equation_template": "\\int_0^1(3x^2-2)dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "ex1_p6_s8_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "id": "q_4_3_6_1_s8_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 0 \\) من \\( -1 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 0 \\) من \\( -1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_6_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: إيجاد الناتج النهائي. الطريقة: \\( -1 - 0 = -1 \\). السبب: هذه قيمة التكامل.",
+        "think": "اطرح \\( 0 \\) من \\( -1 \\).",
+        "html_structure": "\\int_0^1(3x^2-2)dx = {q_4_3_6_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "ex2_p6",
+    "page_number": 6,
+    "question_number": "مثال 2",
+    "question_text": "جد \\( \\int_{1}^{2}2x\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png"
+    ],
+    "full_model_solution": "[x²] من 1 إلى 2 = 4 - 1 = 3",
+    "source_file": "رياضيلت 4/page_006_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 6
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png",
+    "title": "جد \\( \\int_{1}^{2}2x\\,dx \\)",
+    "number": "مثال 2",
+    "model_solution": "[x²] من 1 إلى 2 = 4 - 1 = 3",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: إيجاد الدالة الأصلية. الطريقة: نرفع الأس بواحد ونقسم على الأس الجديد. السبب: قاعدة القوة.",
+        "equation_template": "\\int 2x\\,dx = \\frac{2x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s1_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_6_2_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 1 \\) يصبح \\( 2 \\)."
+          },
+          {
+            "input_id": "ex2_p6_s1_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_6_2_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 1 \\) يصبح \\( 2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 1 \\) يصبح \\( 2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_6_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: إيجاد الدالة الأصلية. الطريقة: نرفع الأس بواحد ونقسم على الأس الجديد. السبب: قاعدة القوة.",
+        "think": "الأس \\( 1 \\) يصبح \\( 2 \\).",
+        "html_structure": "\\int 2x\\,dx = \\frac{2x^{{q_4_3_6_2_s1_i1}}}{{q_4_3_6_2_s1_i2}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: تبسيط الدالة الأصلية. الطريقة: \\( \\frac{2}{2}=1 \\). السبب: للتعويض بسهولة.",
+        "equation_template": "F(x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s2_1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "2x^2",
+              "x",
+              "2x"
+            ],
+            "id": "q_4_3_6_2_s2_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "2x^2",
+              "x",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2 \\div 2 = 1 \\)."
+          }
+        ],
+        "hint": "\\( 2 \\div 2 = 1 \\).",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_3_6_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: تبسيط الدالة الأصلية. الطريقة: \\( \\frac{2}{2}=1 \\). السبب: للتعويض بسهولة.",
+        "think": "\\( 2 \\div 2 = 1 \\).",
+        "html_structure": "F(x) = {q_4_3_6_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: تحديد الحدين. الطريقة: الحد السفلي والعلوي من علامة التكامل. السبب: لنعرف أين نعوض.",
+        "equation_template": "a = {input_1},\\; b = {input_2}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s3_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "id": "q_4_3_6_2_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأدنى \\( 1 \\) والأعلى \\( 2 \\)."
+          },
+          {
+            "input_id": "ex2_p6_s3_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_6_2_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأدنى \\( 1 \\) والأعلى \\( 2 \\)."
+          }
+        ],
+        "hint": "الأدنى \\( 1 \\) والأعلى \\( 2 \\).",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_3_6_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: تحديد الحدين. الطريقة: الحد السفلي والعلوي من علامة التكامل. السبب: لنعرف أين نعوض.",
+        "think": "الأدنى \\( 1 \\) والأعلى \\( 2 \\).",
+        "html_structure": "a = {q_4_3_6_2_s3_i1},\\; b = {q_4_3_6_2_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نربع \\( 2 \\). السبب: \\( F(b) \\).",
+        "equation_template": "F(2) = ({input_1})^2 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s4_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_6_2_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2 \\times 2 \\)."
+          },
+          {
+            "input_id": "ex2_p6_s4_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "8"
+            ],
+            "id": "q_4_3_6_2_s4_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2 \\times 2 \\)."
+          }
+        ],
+        "hint": "\\( 2 \\times 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_6_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: التعويض بالحد الأعلى. الطريقة: نربع \\( 2 \\). السبب: \\( F(b) \\).",
+        "think": "\\( 2 \\times 2 \\).",
+        "html_structure": "F(2) = ({q_4_3_6_2_s4_i1})^2 = {q_4_3_6_2_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: التعويض بالحد الأدنى. الطريقة: نربع \\( 1 \\). السبب: \\( F(a) \\).",
+        "equation_template": "F(1) = ({input_1})^2 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s5_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "id": "q_4_3_6_2_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 \\times 1 \\)."
+          },
+          {
+            "input_id": "ex2_p6_s5_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "id": "q_4_3_6_2_s5_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1 \\times 1 \\)."
+          }
+        ],
+        "hint": "\\( 1 \\times 1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_6_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: التعويض بالحد الأدنى. الطريقة: نربع \\( 1 \\). السبب: \\( F(a) \\).",
+        "think": "\\( 1 \\times 1 \\).",
+        "html_structure": "F(1) = ({q_4_3_6_2_s5_i1})^2 = {q_4_3_6_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: الطرح. الطريقة: نطرح الأدنى من الأعلى. السبب: قانون التكامل المحدد.",
+        "equation_template": "F(2) - F(1) = {input_1} - {input_2}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s6_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_4_3_6_2_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأعلى أولاً ثم الأدنى."
+          },
+          {
+            "input_id": "ex2_p6_s6_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "id": "q_4_3_6_2_s6_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأعلى أولاً ثم الأدنى."
+          }
+        ],
+        "hint": "الأعلى أولاً ثم الأدنى.",
+        "related_topics": [
+          "القانون الأساسي"
+        ],
+        "step_id": "math345_4_3_6_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: الطرح. الطريقة: نطرح الأدنى من الأعلى. السبب: قانون التكامل المحدد.",
+        "think": "الأعلى أولاً ثم الأدنى.",
+        "html_structure": "F(2) - F(1) = {q_4_3_6_2_s6_i1} - {q_4_3_6_2_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: الناتج. الطريقة: \\( 4 - 1 \\). السبب: قيمة التكامل.",
+        "equation_template": "\\int_1^2 2x\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s7_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "2",
+              "4"
+            ],
+            "id": "q_4_3_6_2_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 1 \\) من \\( 4 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 1 \\) من \\( 4 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_6_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: الناتج. الطريقة: \\( 4 - 1 \\). السبب: قيمة التكامل.",
+        "think": "اطرح \\( 1 \\) من \\( 4 \\).",
+        "html_structure": "\\int_1^2 2x\\,dx = {q_4_3_6_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التحقق هندسياً. الطريقة: المساحة تحت \\( y=2x \\) شبه منحرف ارتفاعاه \\( 2 \\) و\\( 4 \\) وعرضه \\( 1 \\). السبب: للتأكد من الجواب.",
+        "equation_template": "\\frac{({input_1} + {input_2})}{2} \\times 1 = 3",
+        "inputs": [
+          {
+            "input_id": "ex2_p6_s8_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_6_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الارتفاعان: \\( y(1)=2 \\) و\\( y(2)=4 \\)."
+          },
+          {
+            "input_id": "ex2_p6_s8_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "id": "q_4_3_6_2_s8_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "الارتفاعان: \\( y(1)=2 \\) و\\( y(2)=4 \\)."
+          }
+        ],
+        "hint": "الارتفاعان: \\( y(1)=2 \\) و\\( y(2)=4 \\).",
+        "related_topics": [
+          "المساحة"
+        ],
+        "step_id": "math345_4_3_6_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التحقق هندسياً. الطريقة: المساحة تحت \\( y=2x \\) شبه منحرف ارتفاعاه \\( 2 \\) و\\( 4 \\) وعرضه \\( 1 \\). السبب: للتأكد من الجواب.",
+        "think": "الارتفاعان: \\( y(1)=2 \\) و\\( y(2)=4 \\).",
+        "html_structure": "\\frac{({q_4_3_6_2_s8_i1} + {q_4_3_6_2_s8_i2})}{2} \\times 1 = 3"
+      }
+    ]
+  },
+  {
+    "id_number": "ex3_p6",
+    "page_number": 6,
+    "question_number": "مثال 3",
+    "question_text": "جد \\( \\int_{2}^{1}(x+2)\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png"
+    ],
+    "full_model_solution": "الحدود معكوسة: = -∫₁² (x+2)dx = -[x²/2 + 2x] من 1 إلى 2 = -[(2+4)-(1/2+2)] = -3.5",
+    "source_file": "رياضيلت 4/page_006_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 6
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_006_diag_1_diagram.png",
+    "title": "جد \\( \\int_{2}^{1}(x+2)\\,dx \\)",
+    "number": "مثال 3",
+    "model_solution": "الحدود معكوسة: = -∫₁² (x+2)dx = -[x²/2 + 2x] من 1 إلى 2 = -[(2+4)-(1/2+2)] = -3.5",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: معالجة الحدود المعكوسة. الطريقة: الحد الأعلى \\( 1 \\) أصغر من الأدنى \\( 2 \\)، فنقلب الحدين ونضرب في \\( -1 \\). السبب: قلب الحدين يغير الإشارة.",
+        "equation_template": "\\int_{2}^{1} = {input_1}\\int_{{input_2}}^{{input_3}}",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s1_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "2",
+              "-2"
+            ],
+            "id": "q_4_3_6_3_s1_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "2",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -1 \\) ثم الحد \\( 1 \\) ثم \\( 2 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s1_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "id": "q_4_3_6_3_s1_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -1 \\) ثم الحد \\( 1 \\) ثم \\( 2 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s1_3",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_6_3_s1_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 3",
+            "hint": "ضع \\( -1 \\) ثم الحد \\( 1 \\) ثم \\( 2 \\)."
+          }
+        ],
+        "hint": "ضع \\( -1 \\) ثم الحد \\( 1 \\) ثم \\( 2 \\).",
+        "related_topics": [
+          "قلب حدود التكامل"
+        ],
+        "step_id": "math345_4_3_6_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: معالجة الحدود المعكوسة. الطريقة: الحد الأعلى \\( 1 \\) أصغر من الأدنى \\( 2 \\)، فنقلب الحدين ونضرب في \\( -1 \\). السبب: قلب الحدين يغير الإشارة.",
+        "think": "ضع \\( -1 \\) ثم الحد \\( 1 \\) ثم \\( 2 \\).",
+        "html_structure": "\\int_{2}^{1} = {q_4_3_6_3_s1_i1}\\int_{{q_4_3_6_3_s1_i2}}^{{q_4_3_6_3_s1_i3}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: تكامل \\( x \\). الطريقة: نرفع الأس ونقسم. السبب: قاعدة القوة.",
+        "equation_template": "\\int x\\,dx = \\frac{x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s2_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_6_3_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s2_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_6_3_s2_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) والمقام \\( 2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_6_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: تكامل \\( x \\). الطريقة: نرفع الأس ونقسم. السبب: قاعدة القوة.",
+        "think": "الأس \\( 2 \\) والمقام \\( 2 \\).",
+        "html_structure": "\\int x\\,dx = \\frac{x^{{q_4_3_6_3_s2_i1}}}{{q_4_3_6_3_s2_i2}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: تكامل الثابت. الطريقة: \\( \\int 2dx = 2x \\). السبب: مشتقة \\( 2x \\) هي \\( 2 \\).",
+        "equation_template": "\\int 2\\,dx = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_6_3_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( 2 \\)."
+          }
+        ],
+        "hint": "اكتب \\( 2 \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_3_6_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: تكامل الثابت. الطريقة: \\( \\int 2dx = 2x \\). السبب: مشتقة \\( 2x \\) هي \\( 2 \\).",
+        "think": "اكتب \\( 2 \\).",
+        "html_structure": "\\int 2\\,dx = {q_4_3_6_3_s3_i1}x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: جمع الدالة الأصلية. الطريقة: نجمع الناتجين. السبب: للتعويض.",
+        "equation_template": "F(x) = \\frac{x^2}{2} + {input_1}x",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s4_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_6_3_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "معامل الحد الثاني \\( 2 \\)."
+          }
+        ],
+        "hint": "معامل الحد الثاني \\( 2 \\).",
+        "related_topics": [
+          "الدالة الأصلية"
+        ],
+        "step_id": "math345_4_3_6_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: جمع الدالة الأصلية. الطريقة: نجمع الناتجين. السبب: للتعويض.",
+        "think": "معامل الحد الثاني \\( 2 \\).",
+        "html_structure": "F(x) = \\frac{x^2}{2} + {q_4_3_6_3_s4_i1}x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: التعويض بالحد \\( 2 \\). الطريقة: \\( \\frac{4}{2} + 4 = 6 \\). السبب: \\( F(2) \\).",
+        "equation_template": "F(2) = \\frac{{input_1}}{2} + 2({input_2}) = {input_3}",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s5_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "id": "q_4_3_6_3_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2^2=4 \\) و\\( 4\\div2=2 \\) و\\( 2\\times2=4 \\) ثم \\( 2+4 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s5_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "id": "q_4_3_6_3_s5_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2^2=4 \\) و\\( 4\\div2=2 \\) و\\( 2\\times2=4 \\) ثم \\( 2+4 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s5_3",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "4",
+              "8",
+              "2"
+            ],
+            "id": "q_4_3_6_3_s5_i3",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "4",
+              "8",
+              "2"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 2^2=4 \\) و\\( 4\\div2=2 \\) و\\( 2\\times2=4 \\) ثم \\( 2+4 \\)."
+          }
+        ],
+        "hint": "\\( 2^2=4 \\) و\\( 4\\div2=2 \\) و\\( 2\\times2=4 \\) ثم \\( 2+4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_6_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: التعويض بالحد \\( 2 \\). الطريقة: \\( \\frac{4}{2} + 4 = 6 \\). السبب: \\( F(2) \\).",
+        "think": "\\( 2^2=4 \\) و\\( 4\\div2=2 \\) و\\( 2\\times2=4 \\) ثم \\( 2+4 \\).",
+        "html_structure": "F(2) = \\frac{{q_4_3_6_3_s5_i1}}{2} + 2({q_4_3_6_3_s5_i2}) = {q_4_3_6_3_s5_i3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( \\frac12 + 2 = 2.5 \\). السبب: \\( F(1) \\).",
+        "equation_template": "F(1) = \\frac{{input_1}}{2} + 2({input_2}) = {input_3}",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s6_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_4_3_6_3_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1^2=1 \\)، \\( \\frac12=0.5 \\)، \\( 2 \\times 1 = 2 \\)، المجموع \\( 2.5 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s6_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_4_3_6_3_s6_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1^2=1 \\)، \\( \\frac12=0.5 \\)، \\( 2 \\times 1 = 2 \\)، المجموع \\( 2.5 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s6_3",
+            "correct_answer": "2.5",
+            "options": [
+              "2.5",
+              "3",
+              "1.5",
+              "2"
+            ],
+            "id": "q_4_3_6_3_s6_i3",
+            "correct_value": "2.5",
+            "allowed_keys": [
+              "2.5",
+              "3",
+              "1.5",
+              "2"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 1^2=1 \\)، \\( \\frac12=0.5 \\)، \\( 2 \\times 1 = 2 \\)، المجموع \\( 2.5 \\)."
+          }
+        ],
+        "hint": "\\( 1^2=1 \\)، \\( \\frac12=0.5 \\)، \\( 2 \\times 1 = 2 \\)، المجموع \\( 2.5 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_6_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: التعويض بالحد \\( 1 \\). الطريقة: \\( \\frac12 + 2 = 2.5 \\). السبب: \\( F(1) \\).",
+        "think": "\\( 1^2=1 \\)، \\( \\frac12=0.5 \\)، \\( 2 \\times 1 = 2 \\)، المجموع \\( 2.5 \\).",
+        "html_structure": "F(1) = \\frac{{q_4_3_6_3_s6_i1}}{2} + 2({q_4_3_6_3_s6_i2}) = {q_4_3_6_3_s6_i3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: الطرح. الطريقة: \\( F(2) - F(1) \\). السبب: قانون التكامل المحدد.",
+        "equation_template": "{input_1} - {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s7_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "2.5",
+              "3.5",
+              "4"
+            ],
+            "id": "q_4_3_6_3_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "2.5",
+              "3.5",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6 - 2.5 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s7_2",
+            "correct_answer": "2.5",
+            "options": [
+              "2.5",
+              "6",
+              "3",
+              "1"
+            ],
+            "id": "q_4_3_6_3_s7_i2",
+            "correct_value": "2.5",
+            "allowed_keys": [
+              "2.5",
+              "6",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 6 - 2.5 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s7_3",
+            "correct_answer": "3.5",
+            "options": [
+              "3.5",
+              "3",
+              "8.5",
+              "4.5"
+            ],
+            "id": "q_4_3_6_3_s7_i3",
+            "correct_value": "3.5",
+            "allowed_keys": [
+              "3.5",
+              "3",
+              "8.5",
+              "4.5"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 6 - 2.5 \\)."
+          }
+        ],
+        "hint": "\\( 6 - 2.5 \\).",
+        "related_topics": [
+          "الطرح"
+        ],
+        "step_id": "math345_4_3_6_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: الطرح. الطريقة: \\( F(2) - F(1) \\). السبب: قانون التكامل المحدد.",
+        "think": "\\( 6 - 2.5 \\).",
+        "html_structure": "{q_4_3_6_3_s7_i1} - {q_4_3_6_3_s7_i2} = {q_4_3_6_3_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: تطبيق الإشارة السالبة. الطريقة: نضرب الناتج في \\( -1 \\). السبب: بسبب قلب الحدود.",
+        "equation_template": "{input_1} \\times {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s8_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "2",
+              "-2"
+            ],
+            "id": "q_4_3_6_3_s8_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "2",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1 \\times 3.5 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s8_2",
+            "correct_answer": "3.5",
+            "options": [
+              "3.5",
+              "6",
+              "2.5",
+              "7"
+            ],
+            "id": "q_4_3_6_3_s8_i2",
+            "correct_value": "3.5",
+            "allowed_keys": [
+              "3.5",
+              "6",
+              "2.5",
+              "7"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -1 \\times 3.5 \\)."
+          },
+          {
+            "input_id": "ex3_p6_s8_3",
+            "correct_answer": "-3.5",
+            "options": [
+              "-3.5",
+              "3.5",
+              "-7",
+              "-2.5"
+            ],
+            "id": "q_4_3_6_3_s8_i3",
+            "correct_value": "-3.5",
+            "allowed_keys": [
+              "-3.5",
+              "3.5",
+              "-7",
+              "-2.5"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( -1 \\times 3.5 \\)."
+          }
+        ],
+        "hint": "\\( -1 \\times 3.5 \\).",
+        "related_topics": [
+          "الضرب بإشارة"
+        ],
+        "step_id": "math345_4_3_6_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: تطبيق الإشارة السالبة. الطريقة: نضرب الناتج في \\( -1 \\). السبب: بسبب قلب الحدود.",
+        "think": "\\( -1 \\times 3.5 \\).",
+        "html_structure": "{q_4_3_6_3_s8_i1} \\times {q_4_3_6_3_s8_i2} = {q_4_3_6_3_s8_i3}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: التحقق من معقولية الإشارة. الطريقة: الدالة \\( x+2 \\) موجبة بين \\( 1 \\) و\\( 2 \\) لكن الحدود معكوسة. السبب: فالناتج يجب أن يكون سالباً.",
+        "equation_template": "\\text{الناتج} {input_1} 0",
+        "inputs": [
+          {
+            "input_id": "ex3_p6_s9_1",
+            "correct_answer": "<",
+            "options": [
+              "<",
+              ">",
+              "=",
+              "\\geq"
+            ],
+            "id": "q_4_3_6_3_s9_i1",
+            "correct_value": "<",
+            "allowed_keys": [
+              "<",
+              ">",
+              "=",
+              "\\geq"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجواب \\( -3.5 \\) أصغر من الصفر."
+          }
+        ],
+        "hint": "الجواب \\( -3.5 \\) أصغر من الصفر.",
+        "related_topics": [
+          "إشارة التكامل"
+        ],
+        "step_id": "math345_4_3_6_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: التحقق من معقولية الإشارة. الطريقة: الدالة \\( x+2 \\) موجبة بين \\( 1 \\) و\\( 2 \\) لكن الحدود معكوسة. السبب: فالناتج يجب أن يكون سالباً.",
+        "think": "الجواب \\( -3.5 \\) أصغر من الصفر.",
+        "html_structure": "\\text{الناتج} {q_4_3_6_3_s9_i1} 0"
+      }
+    ]
+  }
+]

@@ -1,0 +1,644 @@
+[
+  {
+    "id_number": "q2_p39",
+    "page_number": 39,
+    "question_number": "2",
+    "question_text": "جد قيمة التكامل: \\( \\int x\\,e^{x^2}\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "صفحة 39",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_039_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "\\frac12e^{x^2}+c",
+    "source_file": "رياضيلت 4/p039_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 39,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_039_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_039_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int x\\,e^{x^2}\\,dx \\)",
+    "number": "2",
+    "model_solution": "\\frac12e^{x^2}+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنحدد الأس. الطريقة: الأس هو \\( x^2 \\). السبب: لنبحث عن مشتقته.",
+        "equation_template": "u={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "x^2",
+            "options": [
+              "2x",
+              "x",
+              "e^{x^2}",
+              "x^2"
+            ],
+            "id": "q_4_2_39_1_s1_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "e^{x^2}",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما فوق \\( e \\)."
+          }
+        ],
+        "hint": "ما فوق \\( e \\).",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_2_39_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنحدد الأس. الطريقة: الأس هو \\( x^2 \\). السبب: لنبحث عن مشتقته.",
+        "think": "ما فوق \\( e \\).",
+        "html_structure": "u={q_4_2_39_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنشتق الأس. الطريقة: مشتقة \\( x^2 \\) هي \\( 2x \\). السبب: قاعدة القوة.",
+        "equation_template": "u'={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "2x",
+            "options": [
+              "x^2",
+              "x",
+              "2",
+              "2x"
+            ],
+            "id": "q_4_2_39_1_s2_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "x^2",
+              "x",
+              "2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل القوة."
+          }
+        ],
+        "hint": "أنزل القوة.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_2_39_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنشتق الأس. الطريقة: مشتقة \\( x^2 \\) هي \\( 2x \\). السبب: قاعدة القوة.",
+        "think": "أنزل القوة.",
+        "html_structure": "u'={q_4_2_39_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنوفر المشتقة الكاملة. الطريقة: عندنا \\( x \\) لا \\( 2x \\)، فنضرب في \\( \\frac12 \\). السبب: لنصنع \\( 2x \\) دون تغيير القيمة.",
+        "equation_template": "{input_1}\\times2x=x",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "\\frac{1}{2}",
+            "options": [
+              "2",
+              "-\\frac12",
+              "1",
+              "\\frac{1}{2}"
+            ],
+            "id": "q_4_2_39_1_s3_i1",
+            "correct_value": "\\frac{1}{2}",
+            "allowed_keys": [
+              "2",
+              "-\\frac12",
+              "1",
+              "\\frac{1}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "مقلوب \\( 2 \\)."
+          }
+        ],
+        "hint": "مقلوب \\( 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_39_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنوفر المشتقة الكاملة. الطريقة: عندنا \\( x \\) لا \\( 2x \\)، فنضرب في \\( \\frac12 \\). السبب: لنصنع \\( 2x \\) دون تغيير القيمة.",
+        "think": "مقلوب \\( 2 \\).",
+        "html_structure": "{q_4_2_39_1_s3_i1}\\times2x=x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنعيد كتابة التكامل. الطريقة: نخرج \\( \\frac12 \\) ونضع \\( 2x \\). السبب: لنطبق القاعدة.",
+        "equation_template": "\\frac12\\int{input_1}\\,e^{x^2}dx",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "2x",
+            "options": [
+              "x",
+              "x^2",
+              "2",
+              "2x"
+            ],
+            "id": "q_4_2_39_1_s4_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "x",
+              "x^2",
+              "2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المشتقة \\( 2x \\)."
+          }
+        ],
+        "hint": "المشتقة \\( 2x \\).",
+        "related_topics": [
+          "تعويض المشتقة"
+        ],
+        "step_id": "math345_4_2_39_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنعيد كتابة التكامل. الطريقة: نخرج \\( \\frac12 \\) ونضع \\( 2x \\). السبب: لنطبق القاعدة.",
+        "think": "المشتقة \\( 2x \\).",
+        "html_structure": "\\frac12\\int{q_4_2_39_1_s4_i1}\\,e^{x^2}dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنتذكر قاعدة التكامل الأسي. الطريقة: إذا ظهرت \\( e^{u} \\) مضروبة في مشتقة الأس \\( u' \\) فالتكامل هو \\( e^u \\) نفسها. أكمل. السبب: لأن مشتقة \\( e^u \\) تعطي \\( e^u u' \\).",
+        "equation_template": "\\int e^{u}\\cdot u'\\,dx={input_1}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "e^{u}",
+            "options": [
+              "\\ln u",
+              "e^{u}",
+              "u\\,e^{u}",
+              "e^{u}u'"
+            ],
+            "id": "q_4_2_39_1_s5_i1",
+            "correct_value": "e^{u}",
+            "allowed_keys": [
+              "\\ln u",
+              "e^{u}",
+              "u\\,e^{u}",
+              "e^{u}u'"
+            ],
+            "label": "القيمة 1",
+            "hint": "بعد التكامل تبقى \\( e \\) بالأس فقط."
+          }
+        ],
+        "hint": "بعد التكامل تبقى \\( e \\) بالأس فقط.",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_2_39_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنتذكر قاعدة التكامل الأسي. الطريقة: إذا ظهرت \\( e^{u} \\) مضروبة في مشتقة الأس \\( u' \\) فالتكامل هو \\( e^u \\) نفسها. أكمل. السبب: لأن مشتقة \\( e^u \\) تعطي \\( e^u u' \\).",
+        "think": "بعد التكامل تبقى \\( e \\) بالأس فقط.",
+        "html_structure": "\\int e^{u}\\cdot u'\\,dx={q_4_2_39_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنطبق القاعدة. الطريقة: نهمل المشتقة ونبقي \\( e^{x^2} \\). السبب: هذا نص القاعدة.",
+        "equation_template": "\\int e^{x^2}\\cdot2x\\,dx=e^{input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "x^2",
+            "options": [
+              "2x",
+              "e",
+              "x",
+              "x^2"
+            ],
+            "id": "q_4_2_39_1_s6_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "2x",
+              "e",
+              "x",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( x^2 \\)."
+          }
+        ],
+        "hint": "الأس \\( x^2 \\).",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_2_39_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنطبق القاعدة. الطريقة: نهمل المشتقة ونبقي \\( e^{x^2} \\). السبب: هذا نص القاعدة.",
+        "think": "الأس \\( x^2 \\).",
+        "html_structure": "\\int e^{x^2}\\cdot2x\\,dx=e^{q_4_2_39_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنكتب الجواب. الطريقة: نضرب في \\( \\frac12 \\) ونضيف \\( c \\). السبب: التكامل غير المحدد.",
+        "equation_template": "\\int xe^{x^2}dx={input_1}e^{x^2}+c",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\frac{1}{2}",
+            "options": [
+              "\\frac{1}{2}",
+              "2",
+              "x",
+              "1"
+            ],
+            "id": "q_4_2_39_1_s7_i1",
+            "correct_value": "\\frac{1}{2}",
+            "allowed_keys": [
+              "\\frac{1}{2}",
+              "2",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل خارج التكامل."
+          }
+        ],
+        "hint": "المعامل خارج التكامل.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_2_39_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنكتب الجواب. الطريقة: نضرب في \\( \\frac12 \\) ونضيف \\( c \\). السبب: التكامل غير المحدد.",
+        "think": "المعامل خارج التكامل.",
+        "html_structure": "\\int xe^{x^2}dx={q_4_2_39_1_s7_i1}e^{x^2}+c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنتحقق بالاشتقاق. الطريقة: مشتقة \\( \\frac12e^{x^2} \\) هي \\( \\frac12\\cdot2x\\cdot e^{x^2} \\). السبب: لنعيد الدالة الأصلية.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac12e^{x^2}\\right)=\\frac12\\cdot{input_1}\\cdot e^{x^2}=xe^{x^2}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "2x",
+            "options": [
+              "2x",
+              "2",
+              "x^2",
+              "x"
+            ],
+            "id": "q_4_2_39_1_s8_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2x",
+              "2",
+              "x^2",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة الأس."
+          }
+        ],
+        "hint": "مشتقة الأس.",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_39_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنتحقق بالاشتقاق. الطريقة: مشتقة \\( \\frac12e^{x^2} \\) هي \\( \\frac12\\cdot2x\\cdot e^{x^2} \\). السبب: لنعيد الدالة الأصلية.",
+        "think": "مشتقة الأس.",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac12e^{x^2}\\right)=\\frac12\\cdot{q_4_2_39_1_s8_i1}\\cdot e^{x^2}=xe^{x^2}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p39",
+    "page_number": 39,
+    "question_number": "3",
+    "question_text": "جد قيمة التكامل: \\( \\int\\sec^2 3x\\;e^{\\tan3x}\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "صفحة 39",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_039_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "\\frac13e^{\\tan3x}+c",
+    "source_file": "رياضيلت 4/p039_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 39,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_039_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_039_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int\\sec^2 3x\\;e^{\\tan3x}\\,dx \\)",
+    "number": "3",
+    "model_solution": "\\frac13e^{\\tan3x}+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنحدد الأس. الطريقة: الأس \\( u=\\tan3x \\). السبب: لنبحث عن مشتقته.",
+        "equation_template": "u={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "\\tan 3x",
+            "options": [
+              "e^{\\tan 3x}",
+              "\\sec^2 3x",
+              "3x",
+              "\\tan 3x"
+            ],
+            "id": "q_4_2_39_2_s1_i1",
+            "correct_value": "\\tan 3x",
+            "allowed_keys": [
+              "e^{\\tan 3x}",
+              "\\sec^2 3x",
+              "3x",
+              "\\tan 3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما فوق \\( e \\)."
+          }
+        ],
+        "hint": "ما فوق \\( e \\).",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_2_39_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنحدد الأس. الطريقة: الأس \\( u=\\tan3x \\). السبب: لنبحث عن مشتقته.",
+        "think": "ما فوق \\( e \\).",
+        "html_structure": "u={q_4_2_39_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنشتق الأس. الطريقة: مشتقة \\( \\tan3x \\) هي \\( 3\\sec^23x \\). السبب: نضرب في مشتقة الزاوية \\( 3 \\).",
+        "equation_template": "u'={input_1}\\sec^23x",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "-3"
+            ],
+            "id": "q_4_2_39_2_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "معامل \\( x \\) داخل الظل."
+          }
+        ],
+        "hint": "معامل \\( x \\) داخل الظل.",
+        "related_topics": [
+          "مشتقة الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_39_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنشتق الأس. الطريقة: مشتقة \\( \\tan3x \\) هي \\( 3\\sec^23x \\). السبب: نضرب في مشتقة الزاوية \\( 3 \\).",
+        "think": "معامل \\( x \\) داخل الظل.",
+        "html_structure": "u'={q_4_2_39_2_s2_i1}\\sec^23x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنوفر المشتقة الكاملة. الطريقة: عندنا \\( \\sec^23x \\) فقط فنضرب في \\( \\frac13 \\). السبب: لنصنع \\( 3\\sec^23x \\).",
+        "equation_template": "{input_1}\\times3\\sec^23x=\\sec^23x",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "\\frac{1}{3}",
+            "options": [
+              "1",
+              "3",
+              "\\frac{1}{3}",
+              "-\\frac13"
+            ],
+            "id": "q_4_2_39_2_s3_i1",
+            "correct_value": "\\frac{1}{3}",
+            "allowed_keys": [
+              "1",
+              "3",
+              "\\frac{1}{3}",
+              "-\\frac13"
+            ],
+            "label": "القيمة 1",
+            "hint": "مقلوب \\( 3 \\)."
+          }
+        ],
+        "hint": "مقلوب \\( 3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_39_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنوفر المشتقة الكاملة. الطريقة: عندنا \\( \\sec^23x \\) فقط فنضرب في \\( \\frac13 \\). السبب: لنصنع \\( 3\\sec^23x \\).",
+        "think": "مقلوب \\( 3 \\).",
+        "html_structure": "{q_4_2_39_2_s3_i1}\\times3\\sec^23x=\\sec^23x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنعيد كتابة التكامل. الطريقة: نخرج \\( \\frac13 \\) ونضع \\( 3\\sec^23x \\). السبب: لنطبق القاعدة.",
+        "equation_template": "\\frac13\\int{input_1}\\,e^{\\tan3x}dx",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "3\\sec^23x",
+            "options": [
+              "\\sec^23x",
+              "3\\tan 3x",
+              "3\\sec^23x",
+              "\\sec 3x"
+            ],
+            "id": "q_4_2_39_2_s4_i1",
+            "correct_value": "3\\sec^23x",
+            "allowed_keys": [
+              "\\sec^23x",
+              "3\\tan 3x",
+              "3\\sec^23x",
+              "\\sec 3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المشتقة الكاملة."
+          }
+        ],
+        "hint": "المشتقة الكاملة.",
+        "related_topics": [
+          "تعويض المشتقة"
+        ],
+        "step_id": "math345_4_2_39_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنعيد كتابة التكامل. الطريقة: نخرج \\( \\frac13 \\) ونضع \\( 3\\sec^23x \\). السبب: لنطبق القاعدة.",
+        "think": "المشتقة الكاملة.",
+        "html_structure": "\\frac13\\int{q_4_2_39_2_s4_i1}\\,e^{\\tan3x}dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنتذكر قاعدة التكامل الأسي. الطريقة: إذا ظهرت \\( e^{u} \\) مضروبة في مشتقة الأس \\( u' \\) فالتكامل هو \\( e^u \\) نفسها. أكمل. السبب: لأن مشتقة \\( e^u \\) تعطي \\( e^u u' \\).",
+        "equation_template": "\\int e^{u}\\cdot u'\\,dx={input_1}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "e^{u}",
+            "options": [
+              "u\\,e^{u}",
+              "\\ln u",
+              "e^{u}u'",
+              "e^{u}"
+            ],
+            "id": "q_4_2_39_2_s5_i1",
+            "correct_value": "e^{u}",
+            "allowed_keys": [
+              "u\\,e^{u}",
+              "\\ln u",
+              "e^{u}u'",
+              "e^{u}"
+            ],
+            "label": "القيمة 1",
+            "hint": "بعد التكامل تبقى \\( e \\) بالأس فقط."
+          }
+        ],
+        "hint": "بعد التكامل تبقى \\( e \\) بالأس فقط.",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_2_39_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنتذكر قاعدة التكامل الأسي. الطريقة: إذا ظهرت \\( e^{u} \\) مضروبة في مشتقة الأس \\( u' \\) فالتكامل هو \\( e^u \\) نفسها. أكمل. السبب: لأن مشتقة \\( e^u \\) تعطي \\( e^u u' \\).",
+        "think": "بعد التكامل تبقى \\( e \\) بالأس فقط.",
+        "html_structure": "\\int e^{u}\\cdot u'\\,dx={q_4_2_39_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنطبق القاعدة. الطريقة: نهمل المشتقة ونبقي \\( e^{\\tan3x} \\). السبب: نص القاعدة.",
+        "equation_template": "\\int e^{\\tan3x}\\cdot3\\sec^23x\\,dx=e^{input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "\\tan 3x",
+            "options": [
+              "3x",
+              "3\\sec^23x",
+              "\\sec 3x",
+              "\\tan 3x"
+            ],
+            "id": "q_4_2_39_2_s6_i1",
+            "correct_value": "\\tan 3x",
+            "allowed_keys": [
+              "3x",
+              "3\\sec^23x",
+              "\\sec 3x",
+              "\\tan 3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس الأصلي."
+          }
+        ],
+        "hint": "الأس الأصلي.",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_2_39_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنطبق القاعدة. الطريقة: نهمل المشتقة ونبقي \\( e^{\\tan3x} \\). السبب: نص القاعدة.",
+        "think": "الأس الأصلي.",
+        "html_structure": "\\int e^{\\tan3x}\\cdot3\\sec^23x\\,dx=e^{q_4_2_39_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنكتب الجواب. الطريقة: نضرب في \\( \\frac13 \\) ونضيف \\( c \\). السبب: التكامل غير المحدد.",
+        "equation_template": "{input_1}e^{\\tan3x}+c",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\frac{1}{3}",
+            "options": [
+              "\\frac{1}{3}",
+              "-\\frac13",
+              "1",
+              "3"
+            ],
+            "id": "q_4_2_39_2_s7_i1",
+            "correct_value": "\\frac{1}{3}",
+            "allowed_keys": [
+              "\\frac{1}{3}",
+              "-\\frac13",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل خارج التكامل."
+          }
+        ],
+        "hint": "المعامل خارج التكامل.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_2_39_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنكتب الجواب. الطريقة: نضرب في \\( \\frac13 \\) ونضيف \\( c \\). السبب: التكامل غير المحدد.",
+        "think": "المعامل خارج التكامل.",
+        "html_structure": "{q_4_2_39_2_s7_i1}e^{\\tan3x}+c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنتحقق بالاشتقاق. الطريقة: نشتق \\( \\frac13e^{\\tan3x} \\). السبب: لنعيد الدالة الأصلية.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac13e^{\\tan3x}\\right)=\\frac13\\cdot{input_1}\\cdot e^{\\tan3x}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "3\\sec^23x",
+            "options": [
+              "\\sec^23x",
+              "\\sec 3x",
+              "3\\tan 3x",
+              "3\\sec^23x"
+            ],
+            "id": "q_4_2_39_2_s8_i1",
+            "correct_value": "3\\sec^23x",
+            "allowed_keys": [
+              "\\sec^23x",
+              "\\sec 3x",
+              "3\\tan 3x",
+              "3\\sec^23x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة الأس."
+          }
+        ],
+        "hint": "مشتقة الأس.",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_39_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنتحقق بالاشتقاق. الطريقة: نشتق \\( \\frac13e^{\\tan3x} \\). السبب: لنعيد الدالة الأصلية.",
+        "think": "مشتقة الأس.",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac13e^{\\tan3x}\\right)=\\frac13\\cdot{q_4_2_39_2_s8_i1}\\cdot e^{\\tan3x}"
+      }
+    ]
+  }
+]

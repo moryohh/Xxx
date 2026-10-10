@@ -1,0 +1,1550 @@
+[
+  {
+    "id_number": "q7_p40",
+    "page_number": 40,
+    "question_number": "7",
+    "question_text": "جد قيمة التكامل: \\( \\int_0^1(1+e^x)^2\\,e^x\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2016 تمهيدي",
+      "2011 دور 1",
+      "2013 دور 2",
+      "2023 تمهيدي-تطبيقي"
+    ],
+    "full_model_solution": "\\( \\left[\\frac{(1+e^x)^3}{3}\\right]_0^1=\\frac{(1+e)^3}{3}-\\frac{8}{3}=\\frac{(1+e)^3-8}{3} \\).",
+    "source_file": "رياضيلت 4/page_040_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 40
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int_0^1(1+e^x)^2\\,e^x\\,dx \\)",
+    "number": "7",
+    "model_solution": "\\( \\left[\\frac{(1+e^x)^3}{3}\\right]_0^1=\\frac{(1+e)^3}{3}-\\frac{8}{3}=\\frac{(1+e)^3-8}{3} \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الدالة الداخلية \\( u \\) ونشتقها. الطريقة: نختار القوس \\( u=1+e^x \\) ونشتقه: مشتقة \\( 1 \\) صفر ومشتقة \\( e^x \\) هي نفسها. السبب: لأن ظهور مشتقة القوس بجانبه يعني أننا نستطيع استخدام قاعدة القوة.",
+        "equation_template": "\\frac{d}{dx}(1+e^x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "e^x",
+            "options": [
+              "xe^{x-1}",
+              "e^x",
+              "1",
+              "1+e^x"
+            ],
+            "id": "q_4_3_40_1_s1_i1",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "xe^{x-1}",
+              "e^x",
+              "1",
+              "1+e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق \\( 1 \\) فتعطي \\( 0 \\)، واشتق \\( e^x \\) فتبقى \\( e^x \\)."
+          }
+        ],
+        "hint": "اشتق \\( 1 \\) فتعطي \\( 0 \\)، واشتق \\( e^x \\) فتبقى \\( e^x \\).",
+        "related_topics": [
+          "مشتقة الدالة الأسية"
+        ],
+        "step_id": "math345_4_3_40_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الدالة الداخلية \\( u \\) ونشتقها. الطريقة: نختار القوس \\( u=1+e^x \\) ونشتقه: مشتقة \\( 1 \\) صفر ومشتقة \\( e^x \\) هي نفسها. السبب: لأن ظهور مشتقة القوس بجانبه يعني أننا نستطيع استخدام قاعدة القوة.",
+        "think": "اشتق \\( 1 \\) فتعطي \\( 0 \\)، واشتق \\( e^x \\) فتبقى \\( e^x \\).",
+        "html_structure": "\\frac{d}{dx}(1+e^x)={q_4_3_40_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتأكد من مطابقة التكامل لصيغة \\( \\int u^nu'dx \\). الطريقة: القوس \\( (1+e^x) \\) مرفوع للقوة \\( 2 \\)، ويجاوره \\( e^x \\) وهو \\( u' \\) تماماً. السبب: لأننا لا نحتاج إلى أي معامل تصحيح.",
+        "equation_template": "\\int u^{{input_1}}\\,u'\\,dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "e"
+            ],
+            "id": "q_4_3_40_1_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "e"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى أس القوس في السؤال."
+          }
+        ],
+        "hint": "انظر إلى أس القوس في السؤال.",
+        "related_topics": [
+          "التكامل بالتعويض"
+        ],
+        "step_id": "math345_4_3_40_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتأكد من مطابقة التكامل لصيغة \\( \\int u^nu'dx \\). الطريقة: القوس \\( (1+e^x) \\) مرفوع للقوة \\( 2 \\)، ويجاوره \\( e^x \\) وهو \\( u' \\) تماماً. السبب: لأننا لا نحتاج إلى أي معامل تصحيح.",
+        "think": "انظر إلى أس القوس في السؤال.",
+        "html_structure": "\\int u^{{q_4_3_40_1_s2_i1}}\\,u'\\,dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نطبق قاعدة القوة. الطريقة: نزيد الأس بواحد ثم نقسم على الأس الجديد. السبب: لأن مشتقة \\( \\frac{u^3}{3} \\) تعطي \\( u^2u' \\).",
+        "equation_template": "\\int u^2u'\\,dx=\\frac{u^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_3_40_1_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2+1=3 \\) ويوضع الرقم نفسه في المقام."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "3",
+            "options": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_3_40_1_s3_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 2+1=3 \\) ويوضع الرقم نفسه في المقام."
+          }
+        ],
+        "hint": "الأس \\( 2+1=3 \\) ويوضع الرقم نفسه في المقام.",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_3_40_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نطبق قاعدة القوة. الطريقة: نزيد الأس بواحد ثم نقسم على الأس الجديد. السبب: لأن مشتقة \\( \\frac{u^3}{3} \\) تعطي \\( u^2u' \\).",
+        "think": "الأس \\( 2+1=3 \\) ويوضع الرقم نفسه في المقام.",
+        "html_structure": "\\int u^2u'\\,dx=\\frac{u^{{q_4_3_40_1_s3_i1}}}{{q_4_3_40_1_s3_i2}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب الدالة الأصلية مع حدود التكامل. الطريقة: نضع \\( u=1+e^x \\) ونرسم الأقواس مع الحد السفلي والعلوي. السبب: لأن التكامل محدد ونحتاج الحدين.",
+        "equation_template": "\\left[\\frac{(1+e^x)^3}{3}\\right]_{{input_1}}^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "e",
+              "2"
+            ],
+            "id": "q_4_3_40_1_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "e",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد السفلي \\( 0 \\) والعلوي \\( 1 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "e",
+              "2",
+              "1"
+            ],
+            "id": "q_4_3_40_1_s4_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "e",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد السفلي \\( 0 \\) والعلوي \\( 1 \\)."
+          }
+        ],
+        "hint": "الحد السفلي \\( 0 \\) والعلوي \\( 1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب الدالة الأصلية مع حدود التكامل. الطريقة: نضع \\( u=1+e^x \\) ونرسم الأقواس مع الحد السفلي والعلوي. السبب: لأن التكامل محدد ونحتاج الحدين.",
+        "think": "الحد السفلي \\( 0 \\) والعلوي \\( 1 \\).",
+        "html_structure": "\\left[\\frac{(1+e^x)^3}{3}\\right]_{{q_4_3_40_1_s4_i1}}^{{q_4_3_40_1_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: نضع \\( x=1 \\) فيصير \\( e^1=e \\). السبب: لأن القيمة العلوية تدخل أولاً في الطرح.",
+        "equation_template": "\\frac{(1+e^{{input_1}})^3}{3}=\\frac{(1+{input_2})^3}{3}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "1",
+            "options": [
+              "e",
+              "1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_3_40_1_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "e",
+              "1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس الأول \\( 1 \\) والثاني \\( e \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "e",
+            "options": [
+              "1",
+              "0",
+              "e",
+              "e^2"
+            ],
+            "id": "q_4_3_40_1_s5_i2",
+            "correct_value": "e",
+            "allowed_keys": [
+              "1",
+              "0",
+              "e",
+              "e^2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس الأول \\( 1 \\) والثاني \\( e \\)."
+          }
+        ],
+        "hint": "الأس الأول \\( 1 \\) والثاني \\( e \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_40_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: نضع \\( x=1 \\) فيصير \\( e^1=e \\). السبب: لأن القيمة العلوية تدخل أولاً في الطرح.",
+        "think": "الأس الأول \\( 1 \\) والثاني \\( e \\).",
+        "html_structure": "\\frac{(1+e^{{q_4_3_40_1_s5_i1}})^3}{3}=\\frac{(1+{q_4_3_40_1_s5_i2})^3}{3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض الحد السفلي. الطريقة: نضع \\( x=0 \\) فيصير \\( e^0=1 \\) ثم \\( 1+1 \\). السبب: لأن أي عدد مرفوع للقوة صفر يساوي واحداً.",
+        "equation_template": "\\frac{(1+e^0)^3}{3}=\\frac{({input_1})^3}{3}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "e",
+              "0"
+            ],
+            "id": "q_4_3_40_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "e",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 1+1 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 1+1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_40_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض الحد السفلي. الطريقة: نضع \\( x=0 \\) فيصير \\( e^0=1 \\) ثم \\( 1+1 \\). السبب: لأن أي عدد مرفوع للقوة صفر يساوي واحداً.",
+        "think": "اجمع \\( 1+1 \\).",
+        "html_structure": "\\frac{(1+e^0)^3}{3}=\\frac{({q_4_3_40_1_s6_i1})^3}{3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب \\( 2^3 \\). الطريقة: نضرب \\( 2\\times2\\times2 \\). السبب: لنبسط الحد السفلي.",
+        "equation_template": "2^3={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "8",
+            "options": [
+              "6",
+              "8",
+              "9",
+              "4"
+            ],
+            "id": "q_4_3_40_1_s7_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "6",
+              "8",
+              "9",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2=4 \\) ثم \\( 4\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2=4 \\) ثم \\( 4\\times2 \\).",
+        "related_topics": [
+          "الأسس"
+        ],
+        "step_id": "math345_4_3_40_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب \\( 2^3 \\). الطريقة: نضرب \\( 2\\times2\\times2 \\). السبب: لنبسط الحد السفلي.",
+        "think": "\\( 2\\times2=4 \\) ثم \\( 4\\times2 \\).",
+        "html_structure": "2^3={q_4_3_40_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب القيمة السفلى بعد التبسيط. الطريقة: نستبدل \\( (2)^3 \\) بـ \\( 8 \\). السبب: لنحصل على كسر بسيط.",
+        "equation_template": "\\frac{(1+e)^3}{3}-\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "2",
+              "6",
+              "9"
+            ],
+            "id": "q_4_3_40_1_s8_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "2",
+              "6",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الذي حسبته في الخطوة السابقة."
+          }
+        ],
+        "hint": "الرقم الذي حسبته في الخطوة السابقة.",
+        "related_topics": [
+          "الطرح"
+        ],
+        "step_id": "math345_4_3_40_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب القيمة السفلى بعد التبسيط. الطريقة: نستبدل \\( (2)^3 \\) بـ \\( 8 \\). السبب: لنحصل على كسر بسيط.",
+        "think": "الرقم الذي حسبته في الخطوة السابقة.",
+        "html_structure": "\\frac{(1+e)^3}{3}-\\frac{{q_4_3_40_1_s8_i1}}{3}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نوحد الكسرين. الطريقة: المقام مشترك \\( 3 \\) فنضع الفرق في البسط. السبب: لأن طرح كسرين بمقام واحد يكون في البسط.",
+        "equation_template": "\\frac{(1+e)^3\\;{input_1}\\;8}{3}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "-",
+            "options": [
+              "\\div",
+              "+",
+              "-",
+              "\\times"
+            ],
+            "id": "q_4_3_40_1_s9_i1",
+            "correct_value": "-",
+            "allowed_keys": [
+              "\\div",
+              "+",
+              "-",
+              "\\times"
+            ],
+            "label": "القيمة 1",
+            "hint": "العملية المستخدمة هي الطرح."
+          }
+        ],
+        "hint": "العملية المستخدمة هي الطرح.",
+        "related_topics": [
+          "جمع وطرح الكسور"
+        ],
+        "step_id": "math345_4_3_40_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نوحد الكسرين. الطريقة: المقام مشترك \\( 3 \\) فنضع الفرق في البسط. السبب: لأن طرح كسرين بمقام واحد يكون في البسط.",
+        "think": "العملية المستخدمة هي الطرح.",
+        "html_structure": "\\frac{(1+e)^3\\;{q_4_3_40_1_s9_i1}\\;8}{3}"
+      }
+    ]
+  },
+  {
+    "id_number": "q5_p40",
+    "page_number": 40,
+    "question_number": "5",
+    "question_text": "جد قيمة التكامل: \\( \\int_0^{\\ln2}e^{-x}\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2022 تمهيدي-احيائي",
+      "2017 دور 1-تطبيقي-خارج"
+    ],
+    "full_model_solution": "\\( \\left[-e^{-x}\\right]_0^{\\ln2}=-e^{-\\ln2}+e^0=-\\frac12+1=\\frac12 \\).",
+    "source_file": "رياضيلت 4/page_040_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 40
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int_0^{\\ln2}e^{-x}\\,dx \\)",
+    "number": "5",
+    "model_solution": "\\( \\left[-e^{-x}\\right]_0^{\\ln2}=-e^{-\\ln2}+e^0=-\\frac12+1=\\frac12 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعرف معامل \\( x \\) في الأس. الطريقة: الصيغة \\( \\int e^{ax}dx=\\frac1ae^{ax} \\). في \\( e^{-x} \\) المعامل هو الرقم الملاصق لـ \\( x \\). السبب: لأن مشتقة الأس تضرب بـ \\( a \\) فنقسم عليه.",
+        "equation_template": "a={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "-1",
+            "options": [
+              "2",
+              "-1",
+              "1",
+              "0"
+            ],
+            "id": "q_4_3_40_2_s1_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -x=(-1)\\cdot x \\)."
+          }
+        ],
+        "hint": "\\( -x=(-1)\\cdot x \\).",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_3_40_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعرف معامل \\( x \\) في الأس. الطريقة: الصيغة \\( \\int e^{ax}dx=\\frac1ae^{ax} \\). في \\( e^{-x} \\) المعامل هو الرقم الملاصق لـ \\( x \\). السبب: لأن مشتقة الأس تضرب بـ \\( a \\) فنقسم عليه.",
+        "think": "\\( -x=(-1)\\cdot x \\).",
+        "html_structure": "a={q_4_3_40_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب التكامل غير المحدد. الطريقة: نقسم على \\( -1 \\). السبب: للحصول على الدالة الأصلية.",
+        "equation_template": "\\int e^{-x}dx=\\frac{1}{-1}e^{-x}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "-e^{-x}",
+            "options": [
+              "-e^{x}",
+              "-e^{-x}",
+              "e^{x}",
+              "e^{-x}"
+            ],
+            "id": "q_4_3_40_2_s2_i1",
+            "correct_value": "-e^{-x}",
+            "allowed_keys": [
+              "-e^{x}",
+              "-e^{-x}",
+              "e^{x}",
+              "e^{-x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "القسمة على \\( -1 \\) تضع إشارة سالبة."
+          }
+        ],
+        "hint": "القسمة على \\( -1 \\) تضع إشارة سالبة.",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_3_40_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب التكامل غير المحدد. الطريقة: نقسم على \\( -1 \\). السبب: للحصول على الدالة الأصلية.",
+        "think": "القسمة على \\( -1 \\) تضع إشارة سالبة.",
+        "html_structure": "\\int e^{-x}dx=\\frac{1}{-1}e^{-x}={q_4_3_40_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب الحدين. الطريقة: الحد السفلي \\( 0 \\) والعلوي \\( \\ln 2 \\). السبب: لأن التكامل محدد.",
+        "equation_template": "\\left[-e^{-x}\\right]_0^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "\\ln2",
+            "options": [
+              "2",
+              "e^2",
+              "1",
+              "\\ln2"
+            ],
+            "id": "q_4_3_40_2_s3_i1",
+            "correct_value": "\\ln2",
+            "allowed_keys": [
+              "2",
+              "e^2",
+              "1",
+              "\\ln2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد العلوي في السؤال."
+          }
+        ],
+        "hint": "الحد العلوي في السؤال.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب الحدين. الطريقة: الحد السفلي \\( 0 \\) والعلوي \\( \\ln 2 \\). السبب: لأن التكامل محدد.",
+        "think": "الحد العلوي في السؤال.",
+        "html_structure": "\\left[-e^{-x}\\right]_0^{{q_4_3_40_2_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نبسط \\( e^{-\\ln2} \\). الطريقة: نستخدم \\( -\\ln2=\\ln2^{-1}=\\ln\\frac12 \\). السبب: لأن المعامل أمام اللوغاريتم يصير أساً.",
+        "equation_template": "-\\ln2=\\ln\\left({input_1}\\right)",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "-\\frac12",
+              "\\frac12",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_3_40_2_s4_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "-\\frac12",
+              "\\frac12",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2^{-1}=\\frac12 \\)."
+          }
+        ],
+        "hint": "\\( 2^{-1}=\\frac12 \\).",
+        "related_topics": [
+          "قوانين اللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نبسط \\( e^{-\\ln2} \\). الطريقة: نستخدم \\( -\\ln2=\\ln2^{-1}=\\ln\\frac12 \\). السبب: لأن المعامل أمام اللوغاريتم يصير أساً.",
+        "think": "\\( 2^{-1}=\\frac12 \\).",
+        "html_structure": "-\\ln2=\\ln\\left({q_4_3_40_2_s4_i1}\\right)"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نستخدم \\( e^{\\ln A}=A \\). الطريقة: \\( e^{\\ln\\frac12}=\\frac12 \\). السبب: لأن الدالة الأسية عكس اللوغاريتمية.",
+        "equation_template": "e^{-\\ln2}=e^{\\ln\\frac12}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "2",
+              "\\frac12",
+              "1",
+              "-\frac12"
+            ],
+            "id": "q_4_3_40_2_s5_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "2",
+              "\\frac12",
+              "1",
+              "-\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج هو نفس ما داخل \\( \\ln \\)."
+          }
+        ],
+        "hint": "الناتج هو نفس ما داخل \\( \\ln \\).",
+        "related_topics": [
+          "الدالة الأسية واللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نستخدم \\( e^{\\ln A}=A \\). الطريقة: \\( e^{\\ln\\frac12}=\\frac12 \\). السبب: لأن الدالة الأسية عكس اللوغاريتمية.",
+        "think": "الناتج هو نفس ما داخل \\( \\ln \\).",
+        "html_structure": "e^{-\\ln2}=e^{\\ln\\frac12}={q_4_3_40_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( -e^{-\\ln2}=-\\frac12 \\). السبب: لنحصل على القيمة العلوية.",
+        "equation_template": "-e^{-\\ln2}=-\\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "id": "q_4_3_40_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( 2 \\)."
+          }
+        ],
+        "hint": "المقام هو \\( 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_40_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( -e^{-\\ln2}=-\\frac12 \\). السبب: لنحصل على القيمة العلوية.",
+        "think": "المقام هو \\( 2 \\).",
+        "html_structure": "-e^{-\\ln2}=-\\frac{1}{{q_4_3_40_2_s6_i1}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( -e^{-0}=-e^0=-1 \\). السبب: لأن \\( e^0=1 \\).",
+        "equation_template": "-e^{-0}=-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "e"
+            ],
+            "id": "q_4_3_40_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "e"
+            ],
+            "label": "القيمة 1",
+            "hint": "أي عدد أسه صفر يساوي \\( 1 \\)."
+          }
+        ],
+        "hint": "أي عدد أسه صفر يساوي \\( 1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_40_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( -e^{-0}=-e^0=-1 \\). السبب: لأن \\( e^0=1 \\).",
+        "think": "أي عدد أسه صفر يساوي \\( 1 \\).",
+        "html_structure": "-e^{-0}=-{q_4_3_40_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نطرح القيمة السفلى من العلوية. الطريقة: \\( \\left(-\\frac12\\right)-(-1) \\). السبب: القانون: العليا ناقص السفلى.",
+        "equation_template": "\\left(-\\frac12\\right)-\\left({input_1}\\right)",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "-1",
+            "options": [
+              "1",
+              "-1",
+              "-\\frac12",
+              "0"
+            ],
+            "id": "q_4_3_40_2_s8_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "-\\frac12",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "القيمة السفلى هي \\( -1 \\) كما وجدنا."
+          }
+        ],
+        "hint": "القيمة السفلى هي \\( -1 \\) كما وجدنا.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نطرح القيمة السفلى من العلوية. الطريقة: \\( \\left(-\\frac12\\right)-(-1) \\). السبب: القانون: العليا ناقص السفلى.",
+        "think": "القيمة السفلى هي \\( -1 \\) كما وجدنا.",
+        "html_structure": "\\left(-\\frac12\\right)-\\left({q_4_3_40_2_s8_i1}\\right)"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نجمع. الطريقة: \\( -\\frac12+1 \\). السبب: للناتج النهائي.",
+        "equation_template": "-\\frac12+1={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "\\frac12",
+              "0",
+              "-\\frac12",
+              "1"
+            ],
+            "id": "q_4_3_40_2_s9_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "\\frac12",
+              "0",
+              "-\\frac12",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-\\frac12 \\)."
+          }
+        ],
+        "hint": "\\( 1-\\frac12 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_3_40_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نجمع. الطريقة: \\( -\\frac12+1 \\). السبب: للناتج النهائي.",
+        "think": "\\( 1-\\frac12 \\).",
+        "html_structure": "-\\frac12+1={q_4_3_40_2_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q8_p40",
+    "page_number": 40,
+    "question_number": "8",
+    "question_text": "جد قيمة التكامل: \\( \\int_1^2x\\,e^{-\\ln x}\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png"
+    ],
+    "exams_referenced": [],
+    "full_model_solution": "\\( e^{-\\ln x}=\\frac1x \\) فالتكامل \\( \\int_1^21\\,dx=[x]_1^2=1 \\).",
+    "source_file": "رياضيلت 4/page_040_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 40
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int_1^2x\\,e^{-\\ln x}\\,dx \\)",
+    "number": "8",
+    "model_solution": "\\( e^{-\\ln x}=\\frac1x \\) فالتكامل \\( \\int_1^21\\,dx=[x]_1^2=1 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نبسط الأس \\( -\\ln x \\). الطريقة: نُدخل السالب إلى داخل اللوغاريتم أساً. السبب: لأن \\( n\\ln x=\\ln x^n \\).",
+        "equation_template": "-\\ln x=\\ln\\left({input_1}\\right)",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "x^{-1}",
+            "options": [
+              "x^{-1}",
+              "\\ln x",
+              "x^2",
+              "-x"
+            ],
+            "id": "q_4_3_40_3_s1_i1",
+            "correct_value": "x^{-1}",
+            "allowed_keys": [
+              "x^{-1}",
+              "\\ln x",
+              "x^2",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس هو \\( -1 \\)."
+          }
+        ],
+        "hint": "الأس هو \\( -1 \\).",
+        "related_topics": [
+          "قوانين اللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نبسط الأس \\( -\\ln x \\). الطريقة: نُدخل السالب إلى داخل اللوغاريتم أساً. السبب: لأن \\( n\\ln x=\\ln x^n \\).",
+        "think": "الأس هو \\( -1 \\).",
+        "html_structure": "-\\ln x=\\ln\\left({q_4_3_40_3_s1_i1}\\right)"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتخلص من \\( e \\) و \\( \\ln \\). الطريقة: نستخدم \\( e^{\\ln A}=A \\). السبب: لأنهما دالتان عكسيتان.",
+        "equation_template": "e^{-\\ln x}=e^{\\ln x^{-1}}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "x^{-1}",
+            "options": [
+              "x",
+              "x^{-1}",
+              "e^x",
+              "-x"
+            ],
+            "id": "q_4_3_40_3_s2_i1",
+            "correct_value": "x^{-1}",
+            "allowed_keys": [
+              "x",
+              "x^{-1}",
+              "e^x",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج ما بداخل \\( \\ln \\)."
+          }
+        ],
+        "hint": "الناتج ما بداخل \\( \\ln \\).",
+        "related_topics": [
+          "الدالة الأسية واللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتخلص من \\( e \\) و \\( \\ln \\). الطريقة: نستخدم \\( e^{\\ln A}=A \\). السبب: لأنهما دالتان عكسيتان.",
+        "think": "الناتج ما بداخل \\( \\ln \\).",
+        "html_structure": "e^{-\\ln x}=e^{\\ln x^{-1}}={q_4_3_40_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نضرب في \\( x \\). الطريقة: \\( x\\cdot x^{-1}=x^{1-1} \\) فنجمع الأسس. السبب: لتبسيط الدالة.",
+        "equation_template": "x\\cdot x^{-1}=x^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "0",
+            "options": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "id": "q_4_3_40_3_s3_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 1+(-1) \\)."
+          }
+        ],
+        "hint": "اجمع \\( 1+(-1) \\).",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_4_3_40_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نضرب في \\( x \\). الطريقة: \\( x\\cdot x^{-1}=x^{1-1} \\) فنجمع الأسس. السبب: لتبسيط الدالة.",
+        "think": "اجمع \\( 1+(-1) \\).",
+        "html_structure": "x\\cdot x^{-1}=x^{{q_4_3_40_3_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب \\( x^0 \\). الطريقة: أي عدد غير صفري أسه صفر يساوي واحداً. السبب: قاعدة الأسس.",
+        "equation_template": "x^0={input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "x",
+              "-1",
+              "0",
+              "1"
+            ],
+            "id": "q_4_3_40_3_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "x",
+              "-1",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج رقم واحد."
+          }
+        ],
+        "hint": "الناتج رقم واحد.",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_4_3_40_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب \\( x^0 \\). الطريقة: أي عدد غير صفري أسه صفر يساوي واحداً. السبب: قاعدة الأسس.",
+        "think": "الناتج رقم واحد.",
+        "html_structure": "x^0={q_4_3_40_3_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعيد كتابة التكامل. الطريقة: التكامل الآن لدالة ثابتة. السبب: بعد التبسيط.",
+        "equation_template": "\\int_1^2{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "x",
+              "0"
+            ],
+            "id": "q_4_3_40_3_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "x",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة بعد التبسيط هي \\( 1 \\)."
+          }
+        ],
+        "hint": "الدالة بعد التبسيط هي \\( 1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعيد كتابة التكامل. الطريقة: التكامل الآن لدالة ثابتة. السبب: بعد التبسيط.",
+        "think": "الدالة بعد التبسيط هي \\( 1 \\).",
+        "html_structure": "\\int_1^2{q_4_3_40_3_s5_i1}\\,dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: تكامل الثابت \\( 1 \\) هو \\( x \\). السبب: لأن مشتقة \\( x \\) هي \\( 1 \\).",
+        "equation_template": "\\int1\\,dx={input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "x",
+            "options": [
+              "0",
+              "x^2",
+              "x",
+              "1"
+            ],
+            "id": "q_4_3_40_3_s6_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "0",
+              "x^2",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المتغير نفسه."
+          }
+        ],
+        "hint": "المتغير نفسه.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_3_40_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: تكامل الثابت \\( 1 \\) هو \\( x \\). السبب: لأن مشتقة \\( x \\) هي \\( 1 \\).",
+        "think": "المتغير نفسه.",
+        "html_structure": "\\int1\\,dx={q_4_3_40_3_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نضع الحدين. الطريقة: الحد السفلي \\( 1 \\) والعلوي \\( 2 \\). السبب: لأنه تكامل محدد.",
+        "equation_template": "\\left[x\\right]_{{input_1}}^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "e"
+            ],
+            "id": "q_4_3_40_3_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "e"
+            ],
+            "label": "القيمة 1",
+            "hint": "من \\( 1 \\) إلى \\( 2 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "e"
+            ],
+            "id": "q_4_3_40_3_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "e"
+            ],
+            "label": "القيمة 2",
+            "hint": "من \\( 1 \\) إلى \\( 2 \\)."
+          }
+        ],
+        "hint": "من \\( 1 \\) إلى \\( 2 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نضع الحدين. الطريقة: الحد السفلي \\( 1 \\) والعلوي \\( 2 \\). السبب: لأنه تكامل محدد.",
+        "think": "من \\( 1 \\) إلى \\( 2 \\).",
+        "html_structure": "\\left[x\\right]_{{q_4_3_40_3_s7_i1}}^{{q_4_3_40_3_s7_i2}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نعوض ونطرح. الطريقة: العليا ناقص السفلى. السبب: الناتج النهائي.",
+        "equation_template": "[x]_1^2={input_1}-{input_2}={input_3}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "id": "q_4_3_40_3_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2-1=1 \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "2",
+              "3",
+              "1"
+            ],
+            "id": "q_4_3_40_3_s8_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "2",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2-1=1 \\)."
+          },
+          {
+            "input_id": "step8_in3",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_40_3_s8_i3",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 2-1=1 \\)."
+          }
+        ],
+        "hint": "\\( 2-1=1 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_3_40_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نعوض ونطرح. الطريقة: العليا ناقص السفلى. السبب: الناتج النهائي.",
+        "think": "\\( 2-1=1 \\).",
+        "html_structure": "[x]_1^2={q_4_3_40_3_s8_i1}-{q_4_3_40_3_s8_i2}={q_4_3_40_3_s8_i3}"
+      }
+    ]
+  },
+  {
+    "id_number": "q6_p40",
+    "page_number": 40,
+    "question_number": "6",
+    "question_text": "جد قيمة التكامل: \\( \\int_{\\ln3}^{\\ln5}e^{2x}\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png"
+    ],
+    "exams_referenced": [
+      "2016 دور 2",
+      "2014 دور 2",
+      "2012 دور 2"
+    ],
+    "full_model_solution": "\\( \\left[\\frac12e^{2x}\\right]_{\\ln3}^{\\ln5}=\\frac12(25-9)=8 \\).",
+    "source_file": "رياضيلت 4/page_040_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 40
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_040_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int_{\\ln3}^{\\ln5}e^{2x}\\,dx \\)",
+    "number": "6",
+    "model_solution": "\\( \\left[\\frac12e^{2x}\\right]_{\\ln3}^{\\ln5}=\\frac12(25-9)=8 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب الدالة الأصلية. الطريقة: \\( \\int e^{ax}dx=\\frac1ae^{ax} \\) ونضع \\( a \\) المعامل الملاصق لـ \\( x \\). السبب: لأن مشتقة الأس تضرب بـ \\( a \\).",
+        "equation_template": "\\int e^{2x}dx=\\frac{1}{{input_1}}e^{2x}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "-2",
+              "2",
+              "4"
+            ],
+            "id": "q_4_3_40_4_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "-2",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل هو \\( 2 \\)."
+          }
+        ],
+        "hint": "المعامل هو \\( 2 \\).",
+        "related_topics": [
+          "تكامل الدالة الأسية"
+        ],
+        "step_id": "math345_4_3_40_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب الدالة الأصلية. الطريقة: \\( \\int e^{ax}dx=\\frac1ae^{ax} \\) ونضع \\( a \\) المعامل الملاصق لـ \\( x \\). السبب: لأن مشتقة الأس تضرب بـ \\( a \\).",
+        "think": "المعامل هو \\( 2 \\).",
+        "html_structure": "\\int e^{2x}dx=\\frac{1}{{q_4_3_40_4_s1_i1}}e^{2x}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نضع الحدين. الطريقة: الحدان \\( \\ln3 \\) و \\( \\ln5 \\). السبب: لأنه تكامل محدد.",
+        "equation_template": "\\left[\\frac12e^{2x}\\right]_{{input_1}}^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\ln3",
+            "options": [
+              "\\ln5",
+              "3",
+              "\\ln3",
+              "5"
+            ],
+            "id": "q_4_3_40_4_s2_i1",
+            "correct_value": "\\ln3",
+            "allowed_keys": [
+              "\\ln5",
+              "3",
+              "\\ln3",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "السفلي \\( \\ln3 \\) والعلوي \\( \\ln5 \\)."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "\\ln5",
+            "options": [
+              "\\ln5",
+              "3",
+              "\\ln3",
+              "5"
+            ],
+            "id": "q_4_3_40_4_s2_i2",
+            "correct_value": "\\ln5",
+            "allowed_keys": [
+              "\\ln5",
+              "3",
+              "\\ln3",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "السفلي \\( \\ln3 \\) والعلوي \\( \\ln5 \\)."
+          }
+        ],
+        "hint": "السفلي \\( \\ln3 \\) والعلوي \\( \\ln5 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نضع الحدين. الطريقة: الحدان \\( \\ln3 \\) و \\( \\ln5 \\). السبب: لأنه تكامل محدد.",
+        "think": "السفلي \\( \\ln3 \\) والعلوي \\( \\ln5 \\).",
+        "html_structure": "\\left[\\frac12e^{2x}\\right]_{{q_4_3_40_4_s2_i1}}^{{q_4_3_40_4_s2_i2}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نبسط الحد العلوي. الطريقة: \\( 2\\ln5=\\ln5^2 \\). السبب: لأن المعامل أمام \\( \\ln \\) يصير أساً.",
+        "equation_template": "e^{2\\ln5}=e^{\\ln5^{{input_1}}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2",
+            "options": [
+              "5",
+              "1",
+              "3",
+              "2"
+            ],
+            "id": "q_4_3_40_4_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "5",
+              "1",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( 2 \\)."
+          }
+        ],
+        "hint": "المعامل \\( 2 \\).",
+        "related_topics": [
+          "قوانين اللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نبسط الحد العلوي. الطريقة: \\( 2\\ln5=\\ln5^2 \\). السبب: لأن المعامل أمام \\( \\ln \\) يصير أساً.",
+        "think": "المعامل \\( 2 \\).",
+        "html_structure": "e^{2\\ln5}=e^{\\ln5^{{q_4_3_40_4_s3_i1}}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب \\( 5^2 \\). الطريقة: نضرب \\( 5\\times5 \\). السبب: لنتخلص من الأس.",
+        "equation_template": "5^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "25",
+            "options": [
+              "25",
+              "10",
+              "7",
+              "52"
+            ],
+            "id": "q_4_3_40_4_s4_i1",
+            "correct_value": "25",
+            "allowed_keys": [
+              "25",
+              "10",
+              "7",
+              "52"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5\\times5 \\)."
+          }
+        ],
+        "hint": "\\( 5\\times5 \\).",
+        "related_topics": [
+          "الأسس"
+        ],
+        "step_id": "math345_4_3_40_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب \\( 5^2 \\). الطريقة: نضرب \\( 5\\times5 \\). السبب: لنتخلص من الأس.",
+        "think": "\\( 5\\times5 \\).",
+        "html_structure": "5^2={q_4_3_40_4_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نتخلص من \\( e \\) و \\( \\ln \\). الطريقة: \\( e^{\\ln25}=25 \\). السبب: لأنهما عكسيتان.",
+        "equation_template": "e^{\\ln25}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "25",
+            "options": [
+              "25",
+              "5",
+              "1",
+              "e"
+            ],
+            "id": "q_4_3_40_4_s5_i1",
+            "correct_value": "25",
+            "allowed_keys": [
+              "25",
+              "5",
+              "1",
+              "e"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج ما داخل \\( \\ln \\)."
+          }
+        ],
+        "hint": "الناتج ما داخل \\( \\ln \\).",
+        "related_topics": [
+          "الدالة الأسية واللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نتخلص من \\( e \\) و \\( \\ln \\). الطريقة: \\( e^{\\ln25}=25 \\). السبب: لأنهما عكسيتان.",
+        "think": "الناتج ما داخل \\( \\ln \\).",
+        "html_structure": "e^{\\ln25}={q_4_3_40_4_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نبسط الحد السفلي. الطريقة: \\( e^{2\\ln3}=e^{\\ln9}=9 \\). السبب: نفس الطريقة.",
+        "equation_template": "e^{2\\ln3}=e^{\\ln {input_1}}={input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "9",
+            "options": [
+              "9",
+              "3",
+              "27",
+              "6"
+            ],
+            "id": "q_4_3_40_4_s6_i1",
+            "correct_value": "9",
+            "allowed_keys": [
+              "9",
+              "3",
+              "27",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3^2=9 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "9",
+            "options": [
+              "27",
+              "9",
+              "6",
+              "3"
+            ],
+            "id": "q_4_3_40_4_s6_i2",
+            "correct_value": "9",
+            "allowed_keys": [
+              "27",
+              "9",
+              "6",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3^2=9 \\)."
+          }
+        ],
+        "hint": "\\( 3^2=9 \\).",
+        "related_topics": [
+          "قوانين اللوغاريتم"
+        ],
+        "step_id": "math345_4_3_40_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نبسط الحد السفلي. الطريقة: \\( e^{2\\ln3}=e^{\\ln9}=9 \\). السبب: نفس الطريقة.",
+        "think": "\\( 3^2=9 \\).",
+        "html_structure": "e^{2\\ln3}=e^{\\ln {q_4_3_40_4_s6_i1}}={q_4_3_40_4_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوض الحدين. الطريقة: نضع \\( 25 \\) من الحد العلوي و \\( 9 \\) من السفلي. السبب: العليا ناقص السفلى.",
+        "equation_template": "\\frac12\\left({input_1}-{input_2}\\right)",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "25",
+            "options": [
+              "5",
+              "9",
+              "3",
+              "25"
+            ],
+            "id": "q_4_3_40_4_s7_i1",
+            "correct_value": "25",
+            "allowed_keys": [
+              "5",
+              "9",
+              "3",
+              "25"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأول \\( 25 \\) والثاني \\( 9 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "9",
+            "options": [
+              "25",
+              "3",
+              "9",
+              "5"
+            ],
+            "id": "q_4_3_40_4_s7_i2",
+            "correct_value": "9",
+            "allowed_keys": [
+              "25",
+              "3",
+              "9",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأول \\( 25 \\) والثاني \\( 9 \\)."
+          }
+        ],
+        "hint": "الأول \\( 25 \\) والثاني \\( 9 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_40_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوض الحدين. الطريقة: نضع \\( 25 \\) من الحد العلوي و \\( 9 \\) من السفلي. السبب: العليا ناقص السفلى.",
+        "think": "الأول \\( 25 \\) والثاني \\( 9 \\).",
+        "html_structure": "\\frac12\\left({q_4_3_40_4_s7_i1}-{q_4_3_40_4_s7_i2}\\right)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب الفرق. الطريقة: \\( 25-9 \\). السبب: للتبسيط.",
+        "equation_template": "25-9={input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "34",
+              "14",
+              "18"
+            ],
+            "id": "q_4_3_40_4_s8_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "34",
+              "14",
+              "18"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح."
+          }
+        ],
+        "hint": "اطرح.",
+        "related_topics": [
+          "الطرح"
+        ],
+        "step_id": "math345_4_3_40_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب الفرق. الطريقة: \\( 25-9 \\). السبب: للتبسيط.",
+        "think": "اطرح.",
+        "html_structure": "25-9={q_4_3_40_4_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نضرب في النصف. الطريقة: \\( \\frac12\\times16 \\). السبب: الناتج النهائي.",
+        "equation_template": "\\frac12\\times16={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "16",
+              "4",
+              "32"
+            ],
+            "id": "q_4_3_40_4_s9_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "16",
+              "4",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "نصف \\( 16 \\)."
+          }
+        ],
+        "hint": "نصف \\( 16 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_3_40_4_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نضرب في النصف. الطريقة: \\( \\frac12\\times16 \\). السبب: الناتج النهائي.",
+        "think": "نصف \\( 16 \\).",
+        "html_structure": "\\frac12\\times16={q_4_3_40_4_s9_i1}"
+      }
+    ]
+  }
+]

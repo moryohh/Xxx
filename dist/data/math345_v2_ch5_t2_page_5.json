@@ -1,0 +1,1099 @@
+[
+  {
+    "id_number": "q13_p5",
+    "page_number": 5,
+    "question_number": "13",
+    "question_text": "اثبت أن \\( y = x\\ln|x| - x \\) هو أحد حلول المعادلة \\( x\\frac{dy}{dx} = x + y \\) , \\( x > 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=ln x ⇒ x y' = x ln x و x+y = x ln x ⇒ حل",
+    "source_file": "رياضيات5/part3_page_005_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 5,
+      "pdf_page_number": 227
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png",
+    "title": "اثبت أن \\( y = x\\ln|x| - x \\) هو أحد حلول المعادلة \\( x\\frac{dy}{dx} = x + y \\) , \\( x > 0 \\)",
+    "number": "13",
+    "model_solution": "y'=ln x ⇒ x y' = x ln x و x+y = x ln x ⇒ حل",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق الحد \\( x\\ln x \\) من \\( y = x\\ln|x| - x \\). الطريقة: نستخدم قاعدة الضرب: مشتقة الأول \\( x \\) مضروبة في الثاني، أو الأول مضروباً في مشتقة الثاني: \\( x\\cdot\\frac{1}{x} + \\ln x\\cdot 1 \\). السبب: الحد حاصل ضرب دالتين.",
+        "equation_template": "(x\\ln x)' = x\\cdot\\frac{1}{{input_1}} + \\ln x\\cdot{input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "1",
+              "x^2",
+              "ln x"
+            ],
+            "id": "q_5_2_5_1_s1_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "1",
+              "x^2",
+              "ln x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\ln x \\) هي \\( \\frac{1}{x} \\) ومشتقة \\( x \\) هي \\( 1 \\)."
+          },
+          {
+            "input_id": "step1_b",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "x",
+              "0",
+              "ln x"
+            ],
+            "id": "q_5_2_5_1_s1_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "x",
+              "0",
+              "ln x"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( \\ln x \\) هي \\( \\frac{1}{x} \\) ومشتقة \\( x \\) هي \\( 1 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\ln x \\) هي \\( \\frac{1}{x} \\) ومشتقة \\( x \\) هي \\( 1 \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_5_2_5_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق الحد \\( x\\ln x \\) من \\( y = x\\ln|x| - x \\). الطريقة: نستخدم قاعدة الضرب: مشتقة الأول \\( x \\) مضروبة في الثاني، أو الأول مضروباً في مشتقة الثاني: \\( x\\cdot\\frac{1}{x} + \\ln x\\cdot 1 \\). السبب: الحد حاصل ضرب دالتين.",
+        "think": "مشتقة \\( \\ln x \\) هي \\( \\frac{1}{x} \\) ومشتقة \\( x \\) هي \\( 1 \\).",
+        "html_structure": "(x\\ln x)' = x\\cdot\\frac{1}{{q_5_2_5_1_s1_i1}} + \\ln x\\cdot{q_5_2_5_1_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبسط الناتج. الطريقة: \\( x\\cdot\\frac{1}{x} = 1 \\) فيصبح \\( 1 + \\ln x \\). السبب: الـ \\( x \\) تختصر مع المقام.",
+        "equation_template": "x\\cdot\\frac{1}{x} + \\ln x = {input_1} + \\ln x",
+        "inputs": [
+          {
+            "input_id": "step2_c",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "x",
+              "0",
+              "2"
+            ],
+            "id": "q_5_2_5_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "x",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اختصر \\( x \\) مع \\( x \\)."
+          }
+        ],
+        "hint": "اختصر \\( x \\) مع \\( x \\).",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_5_2_5_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبسط الناتج. الطريقة: \\( x\\cdot\\frac{1}{x} = 1 \\) فيصبح \\( 1 + \\ln x \\). السبب: الـ \\( x \\) تختصر مع المقام.",
+        "think": "اختصر \\( x \\) مع \\( x \\).",
+        "html_structure": "x\\cdot\\frac{1}{x} + \\ln x = {q_5_2_5_1_s2_i1} + \\ln x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق الحد \\( -x \\). الطريقة: مشتقة \\( x \\) هي \\( 1 \\) فمشتقة \\( -x \\) هي \\( -1 \\). السبب: لنكمل مشتقة \\( y \\).",
+        "equation_template": "(-x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "id": "q_5_2_5_1_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) وأمامها سالب."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) وأمامها سالب.",
+        "related_topics": [
+          "اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_5_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق الحد \\( -x \\). الطريقة: مشتقة \\( x \\) هي \\( 1 \\) فمشتقة \\( -x \\) هي \\( -1 \\). السبب: لنكمل مشتقة \\( y \\).",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) وأمامها سالب.",
+        "html_structure": "(-x)' = {q_5_2_5_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب \\( y' \\) كاملة. الطريقة: نجمع: \\( 1 + \\ln x + (-1) \\) فيلغي \\( 1 \\) مع \\( -1 \\). السبب: لنعوضها في المعادلة.",
+        "equation_template": "y' = 1 + \\ln x + ({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_e",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "id": "q_5_2_5_1_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 - 1 = 0 \\) فيبقى \\( \\ln x \\) فقط."
+          },
+          {
+            "input_id": "step4_f",
+            "correct_answer": "ln x",
+            "options": [
+              "ln x",
+              "1 + ln x",
+              "x ln x",
+              "1/x"
+            ],
+            "id": "q_5_2_5_1_s4_i2",
+            "correct_value": "ln x",
+            "allowed_keys": [
+              "ln x",
+              "1 + ln x",
+              "x ln x",
+              "1/x"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1 - 1 = 0 \\) فيبقى \\( \\ln x \\) فقط."
+          }
+        ],
+        "hint": "\\( 1 - 1 = 0 \\) فيبقى \\( \\ln x \\) فقط.",
+        "related_topics": [
+          "المشتقة الأولى"
+        ],
+        "step_id": "math345_5_2_5_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب \\( y' \\) كاملة. الطريقة: نجمع: \\( 1 + \\ln x + (-1) \\) فيلغي \\( 1 \\) مع \\( -1 \\). السبب: لنعوضها في المعادلة.",
+        "think": "\\( 1 - 1 = 0 \\) فيبقى \\( \\ln x \\) فقط.",
+        "html_structure": "y' = 1 + \\ln x + ({q_5_2_5_1_s4_i1}) = {q_5_2_5_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب الطرف الأيسر \\( x\\,y' \\). الطريقة: نضرب \\( x \\) في \\( y' = \\ln x \\). السبب: هذا هو الطرف الأيسر من المعادلة المصحّحة \\( x\\frac{dy}{dx} = x + y \\).",
+        "equation_template": "x\\,y' = x\\cdot\\ln x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_g",
+            "correct_answer": "x ln x",
+            "options": [
+              "x ln x",
+              "ln x",
+              "x + ln x",
+              "x/ln x"
+            ],
+            "id": "q_5_2_5_1_s5_i1",
+            "correct_value": "x ln x",
+            "allowed_keys": [
+              "x ln x",
+              "ln x",
+              "x + ln x",
+              "x/ln x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( x \\) ثم \\( \\ln x \\) بجانبها."
+          }
+        ],
+        "hint": "اكتب \\( x \\) ثم \\( \\ln x \\) بجانبها.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_5_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب الطرف الأيسر \\( x\\,y' \\). الطريقة: نضرب \\( x \\) في \\( y' = \\ln x \\). السبب: هذا هو الطرف الأيسر من المعادلة المصحّحة \\( x\\frac{dy}{dx} = x + y \\).",
+        "think": "اكتب \\( x \\) ثم \\( \\ln x \\) بجانبها.",
+        "html_structure": "x\\,y' = x\\cdot\\ln x = {q_5_2_5_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب الطرف الأيمن \\( x + y \\). الطريقة: نعوض \\( y = x\\ln x - x \\) فنكتب \\( x + x\\ln x - x \\). السبب: لنقارن الطرفين.",
+        "equation_template": "x + y = x + x\\ln x - {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_h",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "1",
+              "ln x",
+              "x ln x"
+            ],
+            "id": "q_5_2_5_1_s6_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "1",
+              "ln x",
+              "x ln x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد المطروح هو الحد الأخير من \\( y \\)."
+          }
+        ],
+        "hint": "الحد المطروح هو الحد الأخير من \\( y \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_5_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب الطرف الأيمن \\( x + y \\). الطريقة: نعوض \\( y = x\\ln x - x \\) فنكتب \\( x + x\\ln x - x \\). السبب: لنقارن الطرفين.",
+        "think": "الحد المطروح هو الحد الأخير من \\( y \\).",
+        "html_structure": "x + y = x + x\\ln x - {q_5_2_5_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نبسط الطرف الأيمن. الطريقة: \\( x - x = 0 \\) فيبقى \\( x\\ln x \\). السبب: الحدان متقابلان.",
+        "equation_template": "x + x\\ln x - x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_i",
+            "correct_answer": "x ln x",
+            "options": [
+              "x ln x",
+              "2x ln x",
+              "ln x",
+              "0"
+            ],
+            "id": "q_5_2_5_1_s7_i1",
+            "correct_value": "x ln x",
+            "allowed_keys": [
+              "x ln x",
+              "2x ln x",
+              "ln x",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "احذف \\( +x \\) مع \\( -x \\)."
+          }
+        ],
+        "hint": "احذف \\( +x \\) مع \\( -x \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_5_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نبسط الطرف الأيمن. الطريقة: \\( x - x = 0 \\) فيبقى \\( x\\ln x \\). السبب: الحدان متقابلان.",
+        "think": "احذف \\( +x \\) مع \\( -x \\).",
+        "html_structure": "x + x\\ln x - x = {q_5_2_5_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نقارن الطرفين. الطريقة: الأيسر \\( x\\ln x \\) والأيمن \\( x\\ln x \\). السبب: التساوي يعني تحقق المعادلة.",
+        "equation_template": "x\\ln x \\;\\; {input_1} \\;\\; x\\ln x",
+        "inputs": [
+          {
+            "input_id": "step8_j",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_5_1_s8_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرفان متطابقان."
+          }
+        ],
+        "hint": "الطرفان متطابقان.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_5_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نقارن الطرفين. الطريقة: الأيسر \\( x\\ln x \\) والأيمن \\( x\\ln x \\). السبب: التساوي يعني تحقق المعادلة.",
+        "think": "الطرفان متطابقان.",
+        "html_structure": "x\\ln x \\;\\; {q_5_2_5_1_s8_i1} \\;\\; x\\ln x"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نستنتج. الطريقة: بما أن الطرفين متساويان فالعلاقة حل. (ملاحظة: نص السؤال المستخرج كتب المعادلة \\( \\frac{dy}{dx} = x + y \\)، بينما الحل المطبوع يضرب الطرف الأيسر في \\( x \\) أي أن المعادلة الصحيحة هي \\( x\\frac{dy}{dx} = x + y \\).) السبب: هذا هو تعريف الحل.",
+        "equation_template": "y = x\\ln|x| - x \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_5_1_s9_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_5_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نستنتج. الطريقة: بما أن الطرفين متساويان فالعلاقة حل. (ملاحظة: نص السؤال المستخرج كتب المعادلة \\( \\frac{dy}{dx} = x + y \\)، بينما الحل المطبوع يضرب الطرف الأيسر في \\( x \\) أي أن المعادلة الصحيحة هي \\( x\\frac{dy}{dx} = x + y \\).) السبب: هذا هو تعريف الحل.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "y = x\\ln|x| - x \\Rightarrow {q_5_2_5_1_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q11_p5",
+    "page_number": 5,
+    "question_number": "11",
+    "question_text": "بين أن \\( \\ln|y| = x^2 + c \\) حل للمعادلة التفاضلية \\( y'' = 4x^2y + 2y \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'/y=2x ⇒ y'=2xy ⇒ y''=2y+2xy'=4x²y+2y",
+    "source_file": "رياضيات5/part3_page_005_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 5,
+      "pdf_page_number": 227
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png",
+    "title": "بين أن \\( \\ln|y| = x^2 + c \\) حل للمعادلة التفاضلية \\( y'' = 4x^2y + 2y \\)",
+    "number": "11",
+    "model_solution": "y'/y=2x ⇒ y'=2xy ⇒ y''=2y+2xy'=4x²y+2y",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق الطرف الأيسر من العلاقة الضمنية. الطريقة: مشتقة \\( \\ln|y| \\) هي \\( \\frac{1}{y} \\) مضروبة في \\( y' \\) لأن \\( y \\) دالة في \\( x \\). السبب: العلاقة ضمنية فنشتقها كما هي.",
+        "equation_template": "(\\ln|y|)' = \\frac{{input_1}}{y}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "y'",
+            "options": [
+              "y'",
+              "1",
+              "y",
+              "x"
+            ],
+            "id": "q_5_2_5_2_s1_i1",
+            "correct_value": "y'",
+            "allowed_keys": [
+              "y'",
+              "1",
+              "y",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( y' \\) في البسط."
+          }
+        ],
+        "hint": "ضع \\( y' \\) في البسط.",
+        "related_topics": [
+          "الاشتقاق الضمني"
+        ],
+        "step_id": "math345_5_2_5_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق الطرف الأيسر من العلاقة الضمنية. الطريقة: مشتقة \\( \\ln|y| \\) هي \\( \\frac{1}{y} \\) مضروبة في \\( y' \\) لأن \\( y \\) دالة في \\( x \\). السبب: العلاقة ضمنية فنشتقها كما هي.",
+        "think": "ضع \\( y' \\) في البسط.",
+        "html_structure": "(\\ln|y|)' = \\frac{{q_5_2_5_2_s1_i1}}{y}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق الطرف الأيمن \\( x^2 + c \\). الطريقة: مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( c \\) (ثابت) صفر. السبب: الثابت مشتقته صفر.",
+        "equation_template": "(x^2 + c)' = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "c",
+              "x"
+            ],
+            "id": "q_5_2_5_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "c",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 2 \\)."
+          }
+        ],
+        "hint": "أنزل الأس \\( 2 \\).",
+        "related_topics": [
+          "قاعدة اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_5_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق الطرف الأيمن \\( x^2 + c \\). الطريقة: مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( c \\) (ثابت) صفر. السبب: الثابت مشتقته صفر.",
+        "think": "أنزل الأس \\( 2 \\).",
+        "html_structure": "(x^2 + c)' = {q_5_2_5_2_s2_i1}x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعزل \\( y' \\). الطريقة: لدينا \\( \\frac{y'}{y} = 2x \\)، نضرب الطرفين في \\( y \\) فنحصل على \\( y' = 2xy \\). السبب: لأن المعادلة المطلوبة فيها \\( y'' \\) ونحتاج \\( y' \\) أولاً.",
+        "equation_template": "y' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "2xy",
+            "options": [
+              "2xy",
+              "2x",
+              "2y",
+              "x^2 y"
+            ],
+            "id": "q_5_2_5_2_s3_i1",
+            "correct_value": "2xy",
+            "allowed_keys": [
+              "2xy",
+              "2x",
+              "2y",
+              "x^2 y"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2x \\) في \\( y \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2x \\) في \\( y \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_5_2_5_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعزل \\( y' \\). الطريقة: لدينا \\( \\frac{y'}{y} = 2x \\)، نضرب الطرفين في \\( y \\) فنحصل على \\( y' = 2xy \\). السبب: لأن المعادلة المطلوبة فيها \\( y'' \\) ونحتاج \\( y' \\) أولاً.",
+        "think": "اضرب \\( 2x \\) في \\( y \\).",
+        "html_structure": "y' = {q_5_2_5_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق مرة ثانية للحصول على \\( y'' \\). الطريقة: نشتق \\( 2xy \\) بقاعدة الضرب: مشتقة \\( 2x \\) مضروبة في \\( y \\) زائد \\( 2x \\) مضروبة في \\( y' \\). السبب: الحد حاصل ضرب دالتين.",
+        "equation_template": "y'' = 2\\,{input_1} + 2x\\,{input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "y'",
+              "x",
+              "1"
+            ],
+            "id": "q_5_2_5_2_s4_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "y'",
+              "x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 2x \\) هي \\( 2 \\) وهي تُضرب في \\( y \\)."
+          },
+          {
+            "input_id": "step4_e",
+            "correct_answer": "y'",
+            "options": [
+              "y'",
+              "y",
+              "y''",
+              "x"
+            ],
+            "id": "q_5_2_5_2_s4_i2",
+            "correct_value": "y'",
+            "allowed_keys": [
+              "y'",
+              "y",
+              "y''",
+              "x"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( 2x \\) هي \\( 2 \\) وهي تُضرب في \\( y \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 2x \\) هي \\( 2 \\) وهي تُضرب في \\( y \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_5_2_5_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق مرة ثانية للحصول على \\( y'' \\). الطريقة: نشتق \\( 2xy \\) بقاعدة الضرب: مشتقة \\( 2x \\) مضروبة في \\( y \\) زائد \\( 2x \\) مضروبة في \\( y' \\). السبب: الحد حاصل ضرب دالتين.",
+        "think": "مشتقة \\( 2x \\) هي \\( 2 \\) وهي تُضرب في \\( y \\).",
+        "html_structure": "y'' = 2\\,{q_5_2_5_2_s4_i1} + 2x\\,{q_5_2_5_2_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض \\( y' = 2xy \\). الطريقة: نستبدل \\( y' \\) في الحد \\( 2xy' \\). السبب: لنتخلص من \\( y' \\) ونكتب كل شيء بدلالة \\( y \\) و \\( x \\).",
+        "equation_template": "2x\\cdot y' = 2x\\cdot({input_1})",
+        "inputs": [
+          {
+            "input_id": "step5_f",
+            "correct_answer": "2xy",
+            "options": [
+              "2xy",
+              "2x",
+              "y",
+              "x^2 y"
+            ],
+            "id": "q_5_2_5_2_s5_i1",
+            "correct_value": "2xy",
+            "allowed_keys": [
+              "2xy",
+              "2x",
+              "y",
+              "x^2 y"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ قيمة \\( y' \\) التي وجدناها."
+          }
+        ],
+        "hint": "انسخ قيمة \\( y' \\) التي وجدناها.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_5_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض \\( y' = 2xy \\). الطريقة: نستبدل \\( y' \\) في الحد \\( 2xy' \\). السبب: لنتخلص من \\( y' \\) ونكتب كل شيء بدلالة \\( y \\) و \\( x \\).",
+        "think": "انسخ قيمة \\( y' \\) التي وجدناها.",
+        "html_structure": "2x\\cdot y' = 2x\\cdot({q_5_2_5_2_s5_i1})"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نضرب. الطريقة: \\( 2x\\times2xy = 4x^2y \\). السبب: لنبسط الحد.",
+        "equation_template": "2x\\cdot2xy = {input_1}x^2y",
+        "inputs": [
+          {
+            "input_id": "step6_g",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_5_2_5_2_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times2 \\) و \\( x\\times x \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times2 \\) و \\( x\\times x \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_2_5_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نضرب. الطريقة: \\( 2x\\times2xy = 4x^2y \\). السبب: لنبسط الحد.",
+        "think": "اضرب \\( 2\\times2 \\) و \\( x\\times x \\).",
+        "html_structure": "2x\\cdot2xy = {q_5_2_5_2_s6_i1}x^2y"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب \\( y'' \\) كاملة. الطريقة: نجمع الحدين: \\( 2y + 4x^2y \\). السبب: لنقارنها بالمعادلة.",
+        "equation_template": "y'' = 2y + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_h",
+            "correct_answer": "4x^2 y",
+            "options": [
+              "4x^2 y",
+              "2x^2 y",
+              "4xy",
+              "4x y"
+            ],
+            "id": "q_5_2_5_2_s7_i1",
+            "correct_value": "4x^2 y",
+            "allowed_keys": [
+              "4x^2 y",
+              "2x^2 y",
+              "4xy",
+              "4x y"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الذي حسبناه في الخطوة السابقة."
+          }
+        ],
+        "hint": "الحد الذي حسبناه في الخطوة السابقة.",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_5_2_5_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب \\( y'' \\) كاملة. الطريقة: نجمع الحدين: \\( 2y + 4x^2y \\). السبب: لنقارنها بالمعادلة.",
+        "think": "الحد الذي حسبناه في الخطوة السابقة.",
+        "html_structure": "y'' = 2y + {q_5_2_5_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نقارن بالمعادلة التفاضلية. الطريقة: المعادلة المطلوبة \\( y'' = 4x^2y + 2y \\) وهي نفس ما وجدناه. السبب: لنتأكد من التحقق.",
+        "equation_template": "2y + 4x^2y \\;\\; {input_1} \\;\\; 4x^2y + 2y",
+        "inputs": [
+          {
+            "input_id": "step8_i",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_5_2_s8_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرفان متساويان مع اختلاف الترتيب فقط."
+          }
+        ],
+        "hint": "الطرفان متساويان مع اختلاف الترتيب فقط.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_5_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نقارن بالمعادلة التفاضلية. الطريقة: المعادلة المطلوبة \\( y'' = 4x^2y + 2y \\) وهي نفس ما وجدناه. السبب: لنتأكد من التحقق.",
+        "think": "الطرفان متساويان مع اختلاف الترتيب فقط.",
+        "html_structure": "2y + 4x^2y \\;\\; {q_5_2_5_2_s8_i1} \\;\\; 4x^2y + 2y"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. (ملاحظة: النص المستخرج كتب المعادلة بالمشتقة الأولى، والحل المطبوع يصل إلى \\( y'' \\) فاعتمدنا \\( y'' = 4x^2y + 2y \\).) السبب: هذا هو البرهان.",
+        "equation_template": "\\ln|y| = x^2 + c \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_5_2_s9_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_5_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. (ملاحظة: النص المستخرج كتب المعادلة بالمشتقة الأولى، والحل المطبوع يصل إلى \\( y'' \\) فاعتمدنا \\( y'' = 4x^2y + 2y \\).) السبب: هذا هو البرهان.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "\\ln|y| = x^2 + c \\Rightarrow {q_5_2_5_2_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q12_p5",
+    "page_number": 5,
+    "question_number": "12",
+    "question_text": "بين أن العلاقة \\( y = x^2 + 3x \\) حل للمعادلة التفاضلية \\( xy' = x^2 + y \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=2x+3 ⇒ xy'=2x²+3x = x²+y ⇒ حل",
+    "source_file": "رياضيات5/part3_page_005_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 5,
+      "pdf_page_number": 227
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_005_diag_1_drawing.png",
+    "title": "بين أن العلاقة \\( y = x^2 + 3x \\) حل للمعادلة التفاضلية \\( xy' = x^2 + y \\)",
+    "number": "12",
+    "model_solution": "y'=2x+3 ⇒ xy'=2x²+3x = x²+y ⇒ حل",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق الحد \\( x^2 \\) من \\( y = x^2 + 3x \\). الطريقة: ننزل الأس \\( 2 \\) فتصبح المشتقة \\( 2x \\). السبب: نحتاج \\( y' \\) في المعادلة.",
+        "equation_template": "(x^2)' = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "id": "q_5_2_5_3_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 2 \\) أمام \\( x \\)."
+          }
+        ],
+        "hint": "أنزل الأس \\( 2 \\) أمام \\( x \\).",
+        "related_topics": [
+          "قاعدة اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_5_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق الحد \\( x^2 \\) من \\( y = x^2 + 3x \\). الطريقة: ننزل الأس \\( 2 \\) فتصبح المشتقة \\( 2x \\). السبب: نحتاج \\( y' \\) في المعادلة.",
+        "think": "أنزل الأس \\( 2 \\) أمام \\( x \\).",
+        "html_structure": "(x^2)' = {q_5_2_5_3_s1_i1}x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق الحد \\( 3x \\). الطريقة: مشتقة \\( 3x \\) هي العدد \\( 3 \\). السبب: مشتقة (عدد × x) هي العدد.",
+        "equation_template": "(3x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "0",
+              "x"
+            ],
+            "id": "q_5_2_5_3_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "0",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "العدد المضروب في \\( x \\)."
+          }
+        ],
+        "hint": "العدد المضروب في \\( x \\).",
+        "related_topics": [
+          "قاعدة اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_5_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق الحد \\( 3x \\). الطريقة: مشتقة \\( 3x \\) هي العدد \\( 3 \\). السبب: مشتقة (عدد × x) هي العدد.",
+        "think": "العدد المضروب في \\( x \\).",
+        "html_structure": "(3x)' = {q_5_2_5_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب الطرف الأيسر \\( x\\,y' \\) من المعادلة \\( xy' = x^2 + y \\). الطريقة: نضرب \\( x \\) في \\( y' = 2x + 3 \\) ونوزع. السبب: لنقارنه مع الأيمن.",
+        "equation_template": "x(2x+3) = {input_1}x^2 + {input_2}x",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "5"
+            ],
+            "id": "q_5_2_5_3_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "وزّع \\( x \\) على \\( 2x \\) ثم على \\( 3 \\)."
+          },
+          {
+            "input_id": "step3_d",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_5_2_5_3_s3_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "وزّع \\( x \\) على \\( 2x \\) ثم على \\( 3 \\)."
+          }
+        ],
+        "hint": "وزّع \\( x \\) على \\( 2x \\) ثم على \\( 3 \\).",
+        "related_topics": [
+          "خاصية التوزيع"
+        ],
+        "step_id": "math345_5_2_5_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب الطرف الأيسر \\( x\\,y' \\) من المعادلة \\( xy' = x^2 + y \\). الطريقة: نضرب \\( x \\) في \\( y' = 2x + 3 \\) ونوزع. السبب: لنقارنه مع الأيمن.",
+        "think": "وزّع \\( x \\) على \\( 2x \\) ثم على \\( 3 \\).",
+        "html_structure": "x(2x+3) = {q_5_2_5_3_s3_i1}x^2 + {q_5_2_5_3_s3_i2}x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نعوض \\( y \\) في الطرف الأيمن \\( x^2 + y \\). الطريقة: نضع \\( y = x^2 + 3x \\) مكان \\( y \\). السبب: لنحسب الطرف الأيمن.",
+        "equation_template": "x^2 + y = x^2 + ({input_1})",
+        "inputs": [
+          {
+            "input_id": "step4_e",
+            "correct_answer": "x^2+3x",
+            "options": [
+              "x^2+3x",
+              "2x+3",
+              "x^2",
+              "3x"
+            ],
+            "id": "q_5_2_5_3_s4_i1",
+            "correct_value": "x^2+3x",
+            "allowed_keys": [
+              "x^2+3x",
+              "2x+3",
+              "x^2",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( y \\) كما في السؤال."
+          }
+        ],
+        "hint": "اكتب \\( y \\) كما في السؤال.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_5_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نعوض \\( y \\) في الطرف الأيمن \\( x^2 + y \\). الطريقة: نضع \\( y = x^2 + 3x \\) مكان \\( y \\). السبب: لنحسب الطرف الأيمن.",
+        "think": "اكتب \\( y \\) كما في السؤال.",
+        "html_structure": "x^2 + y = x^2 + ({q_5_2_5_3_s4_i1})"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجمع الحدود المتشابهة. الطريقة: \\( x^2 + x^2 = 2x^2 \\) ويبقى \\( 3x \\). السبب: جمع الحدود التي لها نفس القوة.",
+        "equation_template": "x^2 + x^2 + 3x = {input_1}x^2 + 3x",
+        "inputs": [
+          {
+            "input_id": "step5_f",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_5_2_5_3_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع معاملي \\( x^2 \\)."
+          }
+        ],
+        "hint": "اجمع معاملي \\( x^2 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_5_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجمع الحدود المتشابهة. الطريقة: \\( x^2 + x^2 = 2x^2 \\) ويبقى \\( 3x \\). السبب: جمع الحدود التي لها نفس القوة.",
+        "think": "اجمع معاملي \\( x^2 \\).",
+        "html_structure": "x^2 + x^2 + 3x = {q_5_2_5_3_s5_i1}x^2 + 3x"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقارن الطرفين. الطريقة: الأيسر \\( 2x^2+3x \\) والأيمن \\( 2x^2+3x \\). السبب: التساوي يعني تحقق المعادلة.",
+        "equation_template": "2x^2 + 3x \\;\\; {input_1} \\;\\; 2x^2 + 3x",
+        "inputs": [
+          {
+            "input_id": "step6_g",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_5_3_s6_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرفان متطابقان."
+          }
+        ],
+        "hint": "الطرفان متطابقان.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_5_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقارن الطرفين. الطريقة: الأيسر \\( 2x^2+3x \\) والأيمن \\( 2x^2+3x \\). السبب: التساوي يعني تحقق المعادلة.",
+        "think": "الطرفان متطابقان.",
+        "html_structure": "2x^2 + 3x \\;\\; {q_5_2_5_3_s6_i1} \\;\\; 2x^2 + 3x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب الفرق بين الطرفين. الطريقة: نطرح الأيمن من الأيسر فنحصل على صفر. السبب: لنؤكد التحقق.",
+        "equation_template": "xy' - (x^2 + y) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_h",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "x",
+              "3x"
+            ],
+            "id": "q_5_2_5_3_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "x",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 2x^2+3x \\) من \\( 2x^2+3x \\)."
+          }
+        ],
+        "hint": "اطرح \\( 2x^2+3x \\) من \\( 2x^2+3x \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_5_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب الفرق بين الطرفين. الطريقة: نطرح الأيمن من الأيسر فنحصل على صفر. السبب: لنؤكد التحقق.",
+        "think": "اطرح \\( 2x^2+3x \\) من \\( 2x^2+3x \\).",
+        "html_structure": "xy' - (x^2 + y) = {q_5_2_5_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. (ملاحظة: النص المستخرج كتب المعادلة \\( y = xy' \\)، لكن الحل المطبوع يظهر أن المعادلة المقصودة هي \\( xy' = x^2 + y \\)، لأن العلاقة لا تحقق \\( y = xy' \\).) السبب: هذا هو تعريف الحل.",
+        "equation_template": "y = x^2 + 3x \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_5_3_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_5_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. (ملاحظة: النص المستخرج كتب المعادلة \\( y = xy' \\)، لكن الحل المطبوع يظهر أن المعادلة المقصودة هي \\( xy' = x^2 + y \\)، لأن العلاقة لا تحقق \\( y = xy' \\).) السبب: هذا هو تعريف الحل.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "y = x^2 + 3x \\Rightarrow {q_5_2_5_3_s8_i1}"
+      }
+    ]
+  }
+]

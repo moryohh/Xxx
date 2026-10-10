@@ -1,0 +1,1442 @@
+[
+  {
+    "id_number": "q1_p65",
+    "page_number": 65,
+    "question_number": "1",
+    "question_text": "المنطقة بين المنحنى \\( y=\\sqrt{x} \\) و \\( 0\\le x\\le4 \\) ومحور السينات دارت حول محور السينات، جد حجمها.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( V=\\pi\\int_0^4x\\,dx=\\pi\\left[\\frac{x^2}{2}\\right]_0^4=8\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_065_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 65
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png",
+    "title": "المنطقة بين المنحنى \\( y=\\sqrt{x} \\) و \\( 0\\le x\\le4 \\) ومحور السينات دارت حول محور السينات، جد حجمها.",
+    "number": "1",
+    "model_solution": "\\( V=\\pi\\int_0^4x\\,dx=\\pi\\left[\\frac{x^2}{2}\\right]_0^4=8\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "equation_template": "x={input_1}\\;\\text{to}\\;x={input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "10"
+            ],
+            "id": "q_4_6_65_1_s1_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "10"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "4",
+            "options": [
+              "-4",
+              "0",
+              "4",
+              "5"
+            ],
+            "id": "q_4_6_65_1_s1_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "-4",
+              "0",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          }
+        ],
+        "hint": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_6_65_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "think": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "html_structure": "x={q_4_6_65_1_s1_i1}\\;\\text{to}\\;x={q_4_6_65_1_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "equation_template": "V=\\pi\\int_{0}^{4}{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "y^2",
+            "options": [
+              "y",
+              "x^2",
+              "\\sqrt{y}",
+              "y^2"
+            ],
+            "id": "q_4_6_65_1_s2_i1",
+            "correct_value": "y^2",
+            "allowed_keys": [
+              "y",
+              "x^2",
+              "\\sqrt{y}",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( y \\) داخل التكامل."
+          }
+        ],
+        "hint": "اكتب مربع \\( y \\) داخل التكامل.",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_65_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "think": "اكتب مربع \\( y \\) داخل التكامل.",
+        "html_structure": "V=\\pi\\int_{0}^{4}{q_4_6_65_1_s2_i1}\\,dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نربع الدالة. الطريقة: \\( y=\\sqrt x \\) فنربع الطرفين. السبب: لأن القانون يحتاج \\( y^2 \\).",
+        "equation_template": "y^2=(\\sqrt{x})^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "x",
+            "options": [
+              "\\sqrt x",
+              "2x",
+              "x",
+              "x^2"
+            ],
+            "id": "q_4_6_65_1_s3_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "\\sqrt x",
+              "2x",
+              "x",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "التربيع يلغي الجذر."
+          }
+        ],
+        "hint": "التربيع يلغي الجذر.",
+        "related_topics": [
+          "التربيع"
+        ],
+        "step_id": "math345_4_6_65_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نربع الدالة. الطريقة: \\( y=\\sqrt x \\) فنربع الطرفين. السبب: لأن القانون يحتاج \\( y^2 \\).",
+        "think": "التربيع يلغي الجذر.",
+        "html_structure": "y^2=(\\sqrt{x})^2={q_4_6_65_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد أس \\( x \\) بواحد ونقسم عليه. السبب: قاعدة القوة.",
+        "equation_template": "\\int x\\,dx=\\frac{x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "0",
+              "2",
+              "1"
+            ],
+            "id": "q_4_6_65_1_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "0",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_6_65_1_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "\\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_65_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد أس \\( x \\) بواحد ونقسم عليه. السبب: قاعدة القوة.",
+        "think": "\\( 1+1=2 \\).",
+        "html_structure": "\\int x\\,dx=\\frac{x^{{q_4_6_65_1_s4_i1}}}{{q_4_6_65_1_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: نضع \\( x=4 \\). السبب: للتكامل المحدد.",
+        "equation_template": "\\frac{{input_1}^2}{2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "4",
+              "0",
+              "16"
+            ],
+            "id": "q_4_6_65_1_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "4",
+              "0",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد العلوي \\( 4 \\)."
+          }
+        ],
+        "hint": "الحد العلوي \\( 4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: نضع \\( x=4 \\). السبب: للتكامل المحدد.",
+        "think": "الحد العلوي \\( 4 \\).",
+        "html_structure": "\\frac{{q_4_6_65_1_s5_i1}^2}{2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب المربع. الطريقة: \\( 4^2 \\). السبب: للتبسيط.",
+        "equation_template": "4^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "4",
+              "2",
+              "8"
+            ],
+            "id": "q_4_6_65_1_s6_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "4",
+              "2",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\times4 \\)."
+          }
+        ],
+        "hint": "\\( 4\\times4 \\).",
+        "related_topics": [
+          "الأسس"
+        ],
+        "step_id": "math345_4_6_65_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب المربع. الطريقة: \\( 4^2 \\). السبب: للتبسيط.",
+        "think": "\\( 4\\times4 \\).",
+        "html_structure": "4^2={q_4_6_65_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نطرح قيمة الحد السفلي. الطريقة: \\( \\frac{16}{2}-\\frac{0}{2} \\). السبب: العليا ناقص السفلى.",
+        "equation_template": "\\frac{16}{2}-\\frac{0}{2}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "16",
+              "4",
+              "0"
+            ],
+            "id": "q_4_6_65_1_s7_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "16",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 16 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 16 \\) على \\( 2 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_6_65_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نطرح قيمة الحد السفلي. الطريقة: \\( \\frac{16}{2}-\\frac{0}{2} \\). السبب: العليا ناقص السفلى.",
+        "think": "اقسم \\( 16 \\) على \\( 2 \\).",
+        "html_structure": "\\frac{16}{2}-\\frac{0}{2}={q_4_6_65_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: نضرب الناتج في \\( \\pi \\). السبب: القانون فيه \\( \\pi \\).",
+        "equation_template": "V={input_1}\\pi\\;\\text{unit}^3",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "8",
+            "options": [
+              "16",
+              "2",
+              "8",
+              "4"
+            ],
+            "id": "q_4_6_65_1_s8_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "16",
+              "2",
+              "8",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج السابق."
+          }
+        ],
+        "hint": "الناتج السابق.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_65_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: نضرب الناتج في \\( \\pi \\). السبب: القانون فيه \\( \\pi \\).",
+        "think": "الناتج السابق.",
+        "html_structure": "V={q_4_6_65_1_s8_i1}\\pi\\;\\text{unit}^3"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p65",
+    "page_number": 65,
+    "question_number": "2",
+    "question_text": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( y^2=8x \\) والمستقيمين \\( x=0,\\;x=2 \\) حول المحور السيني.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( V=\\pi\\int_0^28x\\,dx=\\pi[4x^2]_0^2=16\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_065_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 65
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png",
+    "title": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( y^2=8x \\) والمستقيمين \\( x=0,\\;x=2 \\) حول المحور السيني.",
+    "number": "2",
+    "model_solution": "\\( V=\\pi\\int_0^28x\\,dx=\\pi[4x^2]_0^2=16\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "equation_template": "x={input_1}\\;\\text{to}\\;x={input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "-1",
+              "10",
+              "1"
+            ],
+            "id": "q_4_6_65_2_s1_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "-1",
+              "10",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "-2",
+              "0"
+            ],
+            "id": "q_4_6_65_2_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "-2",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          }
+        ],
+        "hint": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_6_65_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "think": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "html_structure": "x={q_4_6_65_2_s1_i1}\\;\\text{to}\\;x={q_4_6_65_2_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب القانون. الطريقة: الدوران حول \\( x \\) يعني \\( V=\\pi\\int y^2dx \\). السبب: لأن الأقراص نصف قطرها \\( y \\).",
+        "equation_template": "V=\\pi\\int_0^2y^{{input_1}}dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "1",
+              "2",
+              "3"
+            ],
+            "id": "q_4_6_65_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "أس \\( y \\) في القانون."
+          }
+        ],
+        "hint": "أس \\( y \\) في القانون.",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_65_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب القانون. الطريقة: الدوران حول \\( x \\) يعني \\( V=\\pi\\int y^2dx \\). السبب: لأن الأقراص نصف قطرها \\( y \\).",
+        "think": "أس \\( y \\) في القانون.",
+        "html_structure": "V=\\pi\\int_0^2y^{{q_4_6_65_2_s2_i1}}dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعوض \\( y^2 \\). الطريقة: المعادلة تعطي \\( y^2 \\) مباشرة. السبب: فلا نحتاج إلى جذر.",
+        "equation_template": "y^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "8x",
+            "options": [
+              "8x^2",
+              "64x",
+              "8x",
+              "\\sqrt{8x}"
+            ],
+            "id": "q_4_6_65_2_s3_i1",
+            "correct_value": "8x",
+            "allowed_keys": [
+              "8x^2",
+              "64x",
+              "8x",
+              "\\sqrt{8x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الطرف الأيمن."
+          }
+        ],
+        "hint": "انسخ الطرف الأيمن.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعوض \\( y^2 \\). الطريقة: المعادلة تعطي \\( y^2 \\) مباشرة. السبب: فلا نحتاج إلى جذر.",
+        "think": "انسخ الطرف الأيمن.",
+        "html_structure": "y^2={q_4_6_65_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int8x\\,dx \\) نزيد الأس ونقسم. السبب: قاعدة القوة.",
+        "equation_template": "\\int8x\\,dx=\\frac{8x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "8",
+              "3"
+            ],
+            "id": "q_4_6_65_2_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "8",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "2",
+            "options": [
+              "8",
+              "2",
+              "3",
+              "1"
+            ],
+            "id": "q_4_6_65_2_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "8",
+              "2",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "\\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_65_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int8x\\,dx \\) نزيد الأس ونقسم. السبب: قاعدة القوة.",
+        "think": "\\( 1+1=2 \\).",
+        "html_structure": "\\int8x\\,dx=\\frac{8x^{{q_4_6_65_2_s4_i1}}}{{q_4_6_65_2_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نبسط المعامل. الطريقة: \\( \\frac82=4 \\). السبب: لتبسيط الناتج.",
+        "equation_template": "\\frac{8x^2}{2}={input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "4",
+            "options": [
+              "8",
+              "2",
+              "16",
+              "4"
+            ],
+            "id": "q_4_6_65_2_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "8",
+              "2",
+              "16",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 8 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 8 \\) على \\( 2 \\).",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_6_65_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نبسط المعامل. الطريقة: \\( \\frac82=4 \\). السبب: لتبسيط الناتج.",
+        "think": "اقسم \\( 8 \\) على \\( 2 \\).",
+        "html_structure": "\\frac{8x^2}{2}={q_4_6_65_2_s5_i1}x^2"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 4(2)^2 \\) فنحسب \\( 2^2=4 \\). السبب: للتكامل المحدد.",
+        "equation_template": "4(2)^2=4\\times{input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "16",
+              "8"
+            ],
+            "id": "q_4_6_65_2_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "16",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 4(2)^2 \\) فنحسب \\( 2^2=4 \\). السبب: للتكامل المحدد.",
+        "think": "\\( 2\\times2 \\).",
+        "html_structure": "4(2)^2=4\\times{q_4_6_65_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نضرب. الطريقة: \\( 4\\times4 \\). السبب: للقيمة العليا.",
+        "equation_template": "4\\times4={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "16",
+            "options": [
+              "12",
+              "4",
+              "16",
+              "8"
+            ],
+            "id": "q_4_6_65_2_s7_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "12",
+              "4",
+              "16",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب."
+          }
+        ],
+        "hint": "اضرب.",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_4_6_65_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نضرب. الطريقة: \\( 4\\times4 \\). السبب: للقيمة العليا.",
+        "think": "اضرب.",
+        "html_structure": "4\\times4={q_4_6_65_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نطرح الحد السفلي. الطريقة: عند \\( x=0 \\) القيمة صفر. السبب: العليا ناقص السفلى.",
+        "equation_template": "V=\\pi(16-{input_1})",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "16",
+              "0",
+              "4"
+            ],
+            "id": "q_4_6_65_2_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "16",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4(0)^2=0 \\)."
+          }
+        ],
+        "hint": "\\( 4(0)^2=0 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_6_65_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نطرح الحد السفلي. الطريقة: عند \\( x=0 \\) القيمة صفر. السبب: العليا ناقص السفلى.",
+        "think": "\\( 4(0)^2=0 \\).",
+        "html_structure": "V=\\pi(16-{q_4_6_65_2_s8_i1})"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\pi\\times16 \\). السبب: الناتج النهائي.",
+        "equation_template": "V={input_1}\\pi\\;\\text{unit}^3",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "16",
+            "options": [
+              "32",
+              "8",
+              "16",
+              "4"
+            ],
+            "id": "q_4_6_65_2_s9_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "32",
+              "8",
+              "16",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج السابق."
+          }
+        ],
+        "hint": "الناتج السابق.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_65_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\pi\\times16 \\). السبب: الناتج النهائي.",
+        "think": "الناتج السابق.",
+        "html_structure": "V={q_4_6_65_2_s9_i1}\\pi\\;\\text{unit}^3"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p65",
+    "page_number": 65,
+    "question_number": "3",
+    "question_text": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( x^2=y \\) والمستقيمين \\( x=1,\\;x=2 \\) حول المحور السيني.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( y^2=x^4 \\) فـ \\( V=\\pi\\int_1^2x^4dx=\\pi\\left[\\frac{x^5}{5}\\right]_1^2=\\frac{31}{5}\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_065_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 65
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png",
+    "title": "أوجد الحجم الناتج من دوران المساحة المحددة بالقطع المكافئ \\( x^2=y \\) والمستقيمين \\( x=1,\\;x=2 \\) حول المحور السيني.",
+    "number": "3",
+    "model_solution": "\\( y^2=x^4 \\) فـ \\( V=\\pi\\int_1^2x^4dx=\\pi\\left[\\frac{x^5}{5}\\right]_1^2=\\frac{31}{5}\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "equation_template": "x={input_1}\\;\\text{to}\\;x={input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "10",
+              "2"
+            ],
+            "id": "q_4_6_65_3_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "10",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "3",
+              "2",
+              "-2"
+            ],
+            "id": "q_4_6_65_3_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "3",
+              "2",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          }
+        ],
+        "hint": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_6_65_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "think": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "html_structure": "x={q_4_6_65_3_s1_i1}\\;\\text{to}\\;x={q_4_6_65_3_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "equation_template": "V=\\pi\\int_{1}^{2}{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "y^2",
+            "options": [
+              "x^2",
+              "y",
+              "y^2",
+              "\\sqrt{y}"
+            ],
+            "id": "q_4_6_65_3_s2_i1",
+            "correct_value": "y^2",
+            "allowed_keys": [
+              "x^2",
+              "y",
+              "y^2",
+              "\\sqrt{y}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( y \\) داخل التكامل."
+          }
+        ],
+        "hint": "اكتب مربع \\( y \\) داخل التكامل.",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_65_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "think": "اكتب مربع \\( y \\) داخل التكامل.",
+        "html_structure": "V=\\pi\\int_{1}^{2}{q_4_6_65_3_s2_i1}\\,dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نربع الدالة. الطريقة: \\( y=x^2 \\) فنربع: نضرب الأسس \\( 2\\times2 \\). السبب: لنحصل على \\( y^2 \\).",
+        "equation_template": "y^2=(x^2)^2=x^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "4",
+            "options": [
+              "5",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_4_6_65_3_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "5",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2 \\).",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_4_6_65_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نربع الدالة. الطريقة: \\( y=x^2 \\) فنربع: نضرب الأسس \\( 2\\times2 \\). السبب: لنحصل على \\( y^2 \\).",
+        "think": "\\( 2\\times2 \\).",
+        "html_structure": "y^2=(x^2)^2=x^{{q_4_6_65_3_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد الأس ونقسم عليه. السبب: قاعدة القوة.",
+        "equation_template": "\\int x^4dx=\\frac{x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "5",
+            "options": [
+              "4",
+              "3",
+              "6",
+              "5"
+            ],
+            "id": "q_4_6_65_3_s4_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "4",
+              "3",
+              "6",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4+1=5 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "4",
+              "6"
+            ],
+            "id": "q_4_6_65_3_s4_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "4",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4+1=5 \\)."
+          }
+        ],
+        "hint": "\\( 4+1=5 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_65_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد الأس ونقسم عليه. السبب: قاعدة القوة.",
+        "think": "\\( 4+1=5 \\).",
+        "html_structure": "\\int x^4dx=\\frac{x^{{q_4_6_65_3_s4_i1}}}{{q_4_6_65_3_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 2^5=32 \\). السبب: للتكامل المحدد.",
+        "equation_template": "\\frac{2^5}{5}=\\frac{{input_1}}{5}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "32",
+            "options": [
+              "16",
+              "25",
+              "32",
+              "10"
+            ],
+            "id": "q_4_6_65_3_s5_i1",
+            "correct_value": "32",
+            "allowed_keys": [
+              "16",
+              "25",
+              "32",
+              "10"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2\\times2\\times2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2\\times2\\times2\\times2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 2^5=32 \\). السبب: للتكامل المحدد.",
+        "think": "\\( 2\\times2\\times2\\times2\\times2 \\).",
+        "html_structure": "\\frac{2^5}{5}=\\frac{{q_4_6_65_3_s5_i1}}{5}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( 1^5=1 \\). السبب: أي قوة لـ \\( 1 \\) تساوي \\( 1 \\).",
+        "equation_template": "\\frac{1^5}{5}=\\frac{{input_1}}{5}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "5",
+              "0",
+              "1"
+            ],
+            "id": "q_4_6_65_3_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "5",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الواحد."
+          }
+        ],
+        "hint": "الواحد.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( 1^5=1 \\). السبب: أي قوة لـ \\( 1 \\) تساوي \\( 1 \\).",
+        "think": "الواحد.",
+        "html_structure": "\\frac{1^5}{5}=\\frac{{q_4_6_65_3_s6_i1}}{5}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نطرح. الطريقة: \\( \\frac{32}{5}-\\frac15 \\) بمقام مشترك. السبب: العليا ناقص السفلى.",
+        "equation_template": "\\frac{32}{5}-\\frac15=\\frac{{input_1}}{5}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "31",
+            "options": [
+              "31",
+              "33",
+              "32",
+              "30"
+            ],
+            "id": "q_4_6_65_3_s7_i1",
+            "correct_value": "31",
+            "allowed_keys": [
+              "31",
+              "33",
+              "32",
+              "30"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 32-1 \\)."
+          }
+        ],
+        "hint": "\\( 32-1 \\).",
+        "related_topics": [
+          "طرح الكسور"
+        ],
+        "step_id": "math345_4_6_65_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نطرح. الطريقة: \\( \\frac{32}{5}-\\frac15 \\) بمقام مشترك. السبب: العليا ناقص السفلى.",
+        "think": "\\( 32-1 \\).",
+        "html_structure": "\\frac{32}{5}-\\frac15=\\frac{{q_4_6_65_3_s7_i1}}{5}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: نضرب في \\( \\pi \\). السبب: القانون.",
+        "equation_template": "V=\\frac{{input_1}}{5}\\pi\\;\\text{unit}^3",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "31",
+            "options": [
+              "32",
+              "5",
+              "33",
+              "31"
+            ],
+            "id": "q_4_6_65_3_s8_i1",
+            "correct_value": "31",
+            "allowed_keys": [
+              "32",
+              "5",
+              "33",
+              "31"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج السابق."
+          }
+        ],
+        "hint": "الناتج السابق.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_65_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: نضرب في \\( \\pi \\). السبب: القانون.",
+        "think": "الناتج السابق.",
+        "html_structure": "V=\\frac{{q_4_6_65_3_s8_i1}}{5}\\pi\\;\\text{unit}^3"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_p65",
+    "page_number": 65,
+    "question_number": "4",
+    "question_text": "أوجد الحجم الناتج من دوران المساحة المحصورة بين منحني \\( x^3=y^2 \\) والمستقيمين \\( x=0,\\;x=2 \\) حول المحور السيني.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( V=\\pi\\int_0^2x^3dx=\\pi\\left[\\frac{x^4}{4}\\right]_0^2=4\\pi \\) وحدة مكعبة.",
+    "source_file": "رياضيلت 4/page_065_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 65
+    },
+    "chapter": 4,
+    "topic_index": 5,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_065_diag_1_drawing.png",
+    "title": "أوجد الحجم الناتج من دوران المساحة المحصورة بين منحني \\( x^3=y^2 \\) والمستقيمين \\( x=0,\\;x=2 \\) حول المحور السيني.",
+    "number": "4",
+    "model_solution": "\\( V=\\pi\\int_0^2x^3dx=\\pi\\left[\\frac{x^4}{4}\\right]_0^2=4\\pi \\) وحدة مكعبة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "equation_template": "x={input_1}\\;\\text{to}\\;x={input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "0",
+            "options": [
+              "10",
+              "-1",
+              "1",
+              "0"
+            ],
+            "id": "q_4_6_65_4_s1_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "10",
+              "-1",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "2",
+              "0",
+              "-2"
+            ],
+            "id": "q_4_6_65_4_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "2",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الأصغر ثم الأكبر كما في السؤال."
+          }
+        ],
+        "hint": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "related_topics": [
+          "حدود التكامل"
+        ],
+        "step_id": "math345_4_6_65_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد حدود التكامل. الطريقة: السؤال أعطانا المستقيمين مباشرة فنأخذهما حدين للتكامل بدون تعويض. السبب: لأن حدود قانون الدوران حول محور السينات هي قيم \\( x \\).",
+        "think": "الحد الأصغر ثم الأكبر كما في السؤال.",
+        "html_structure": "x={q_4_6_65_4_s1_i1}\\;\\text{to}\\;x={q_4_6_65_4_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "equation_template": "V=\\pi\\int_{0}^{2}{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "y^2",
+            "options": [
+              "x^2",
+              "y",
+              "y^2",
+              "\\sqrt{y}"
+            ],
+            "id": "q_4_6_65_4_s2_i1",
+            "correct_value": "y^2",
+            "allowed_keys": [
+              "x^2",
+              "y",
+              "y^2",
+              "\\sqrt{y}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب مربع \\( y \\) داخل التكامل."
+          }
+        ],
+        "hint": "اكتب مربع \\( y \\) داخل التكامل.",
+        "related_topics": [
+          "حجوم دورانية"
+        ],
+        "step_id": "math345_4_6_65_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب قانون الحجم للدوران حول محور السينات. الطريقة: القانون \\( V=\\pi\\int y^2\\,dx \\) فنضع \\( y^2 \\) داخل التكامل مع حدود \\( x \\) الظاهرة في الفراغات. السبب: لأن الدوران حول محور السينات يولد أقراصاً نصف قطر كل منها \\( y \\) ومساحتها \\( \\pi y^2 \\).",
+        "think": "اكتب مربع \\( y \\) داخل التكامل.",
+        "html_structure": "V=\\pi\\int_{0}^{2}{q_4_6_65_4_s2_i1}\\,dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعوض \\( y^2 \\). الطريقة: المعادلة تعطي \\( y^2=x^3 \\). السبب: لا نحتاج إلى جذر.",
+        "equation_template": "y^2=x^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "3",
+            "options": [
+              "4",
+              "6",
+              "2",
+              "3"
+            ],
+            "id": "q_4_6_65_4_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "4",
+              "6",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "أس \\( x \\) في السؤال."
+          }
+        ],
+        "hint": "أس \\( x \\) في السؤال.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعوض \\( y^2 \\). الطريقة: المعادلة تعطي \\( y^2=x^3 \\). السبب: لا نحتاج إلى جذر.",
+        "think": "أس \\( x \\) في السؤال.",
+        "html_structure": "y^2=x^{{q_4_6_65_4_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد الأس ونقسم. السبب: قاعدة القوة.",
+        "equation_template": "\\int x^3dx=\\frac{x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "4",
+            "options": [
+              "5",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_4_6_65_4_s4_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "5",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3+1=4 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "4",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "5"
+            ],
+            "id": "q_4_6_65_4_s4_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3+1=4 \\)."
+          }
+        ],
+        "hint": "\\( 3+1=4 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_6_65_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: نزيد الأس ونقسم. السبب: قاعدة القوة.",
+        "think": "\\( 3+1=4 \\).",
+        "html_structure": "\\int x^3dx=\\frac{x^{{q_4_6_65_4_s4_i1}}}{{q_4_6_65_4_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 2^4=16 \\). السبب: للتكامل المحدد.",
+        "equation_template": "\\frac{2^4}{4}=\\frac{{input_1}}{4}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "16",
+            "options": [
+              "4",
+              "8",
+              "16",
+              "32"
+            ],
+            "id": "q_4_6_65_4_s5_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "4",
+              "8",
+              "16",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2\\times2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2\\times2\\times2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض الحد العلوي. الطريقة: \\( 2^4=16 \\). السبب: للتكامل المحدد.",
+        "think": "\\( 2\\times2\\times2\\times2 \\).",
+        "html_structure": "\\frac{2^4}{4}=\\frac{{q_4_6_65_4_s5_i1}}{4}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نبسط. الطريقة: \\( 16\\div4 \\). السبب: للقيمة العليا.",
+        "equation_template": "\\frac{16}{4}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "16",
+              "4",
+              "8"
+            ],
+            "id": "q_4_6_65_4_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "16",
+              "4",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم."
+          }
+        ],
+        "hint": "اقسم.",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_4_6_65_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نبسط. الطريقة: \\( 16\\div4 \\). السبب: للقيمة العليا.",
+        "think": "اقسم.",
+        "html_structure": "\\frac{16}{4}={q_4_6_65_4_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( \\frac{0^4}{4} \\). السبب: صفر.",
+        "equation_template": "\\frac{0^4}{4}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "0",
+            "options": [
+              "4",
+              "1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_6_65_4_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "4",
+              "1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "صفر مرفوع لأي قوة صفر."
+          }
+        ],
+        "hint": "صفر مرفوع لأي قوة صفر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_6_65_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوض الحد السفلي. الطريقة: \\( \\frac{0^4}{4} \\). السبب: صفر.",
+        "think": "صفر مرفوع لأي قوة صفر.",
+        "html_structure": "\\frac{0^4}{4}={q_4_6_65_4_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\pi(4-0) \\). السبب: الناتج.",
+        "equation_template": "V={input_1}\\pi\\;\\text{unit}^3",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "4",
+            "options": [
+              "8",
+              "4",
+              "2",
+              "16"
+            ],
+            "id": "q_4_6_65_4_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "8",
+              "4",
+              "2",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4-0 \\)."
+          }
+        ],
+        "hint": "\\( 4-0 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_6_65_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الحجم. الطريقة: \\( \\pi(4-0) \\). السبب: الناتج.",
+        "think": "\\( 4-0 \\).",
+        "html_structure": "V={q_4_6_65_4_s8_i1}\\pi\\;\\text{unit}^3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2654 @@
+[
+  {
+    "id_number": "q36_p31",
+    "page_number": 31,
+    "question_number": "36",
+    "question_text": "جد قيمة التكامل: \\( \\int (1+\\cos 3x)^2\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "الصفحة 31",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "(1+\\cos3x)^2=\\frac32+2\\cos3x+\\frac12\\cos6x ثم \\int=\\frac32x+\\frac23\\sin3x+\\frac1{12}\\sin6x+c",
+    "source_file": "رياضيلت 4/p031_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int (1+\\cos 3x)^2\\,dx \\)",
+    "number": "36",
+    "model_solution": "(1+\\cos3x)^2=\\frac32+2\\cos3x+\\frac12\\cos6x ثم \\int=\\frac32x+\\frac23\\sin3x+\\frac1{12}\\sin6x+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفتح القوس لأنه لا توجد مشتقة داخله. الطريقة: \\( (a+b)^2=a^2+2ab+b^2 \\) مع \\( a=1 \\) و\\( b=\\cos3x \\). اكتب الحد الأوسط. السبب: لأن القوس المربع لا يُكامل مباشرة.",
+        "equation_template": "(1+\\cos3x)^2 = 1 + {input_1} + \\cos^2 3x",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "2\\cos 3x",
+            "options": [
+              "\\cos^2 3x",
+              "2\\cos 3x",
+              "\\cos 3x",
+              "2\\cos 6x"
+            ],
+            "id": "q_4_2_31_1_s1_i1",
+            "correct_value": "2\\cos 3x",
+            "allowed_keys": [
+              "\\cos^2 3x",
+              "2\\cos 3x",
+              "\\cos 3x",
+              "2\\cos 6x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأوسط \\( 2\\times1\\times\\cos3x \\)."
+          }
+        ],
+        "hint": "الحد الأوسط \\( 2\\times1\\times\\cos3x \\).",
+        "related_topics": [
+          "مفكوك مربع القوسين"
+        ],
+        "step_id": "math345_4_2_31_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفتح القوس لأنه لا توجد مشتقة داخله. الطريقة: \\( (a+b)^2=a^2+2ab+b^2 \\) مع \\( a=1 \\) و\\( b=\\cos3x \\). اكتب الحد الأوسط. السبب: لأن القوس المربع لا يُكامل مباشرة.",
+        "think": "الحد الأوسط \\( 2\\times1\\times\\cos3x \\).",
+        "html_structure": "(1+\\cos3x)^2 = 1 + {q_4_2_31_1_s1_i1} + \\cos^2 3x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحوّل \\( \\cos^2 3x \\). الطريقة: \\( \\cos^2\\theta=\\frac12+\\frac12\\cos2\\theta \\) مع \\( \\theta=3x \\). السبب: لنكامله بسهولة.",
+        "equation_template": "\\cos^2 3x = \\frac12 + \\frac12\\cos {input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "6x",
+            "options": [
+              "6x",
+              "3x",
+              "2x",
+              "9x"
+            ],
+            "id": "q_4_2_31_1_s2_i1",
+            "correct_value": "6x",
+            "allowed_keys": [
+              "6x",
+              "3x",
+              "2x",
+              "9x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضعف \\( 3x \\)."
+          }
+        ],
+        "hint": "ضعف \\( 3x \\).",
+        "related_topics": [
+          "ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_31_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحوّل \\( \\cos^2 3x \\). الطريقة: \\( \\cos^2\\theta=\\frac12+\\frac12\\cos2\\theta \\) مع \\( \\theta=3x \\). السبب: لنكامله بسهولة.",
+        "think": "ضعف \\( 3x \\).",
+        "html_structure": "\\cos^2 3x = \\frac12 + \\frac12\\cos {q_4_2_31_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نجمع الثوابت. الطريقة: \\( 1+\\frac12=\\frac32 \\). السبب: لتقليل الحدود.",
+        "equation_template": "(1+\\cos 3x)^2 = {input_1} + 2\\cos 3x + \\frac12\\cos 6x",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "\\frac{3}{2}",
+            "options": [
+              "\\frac{3}{2}",
+              "2",
+              "\\frac13",
+              "\\frac12"
+            ],
+            "id": "q_4_2_31_1_s3_i1",
+            "correct_value": "\\frac{3}{2}",
+            "allowed_keys": [
+              "\\frac{3}{2}",
+              "2",
+              "\\frac13",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "واحد زائد نصف."
+          }
+        ],
+        "hint": "واحد زائد نصف.",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_2_31_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نجمع الثوابت. الطريقة: \\( 1+\\frac12=\\frac32 \\). السبب: لتقليل الحدود.",
+        "think": "واحد زائد نصف.",
+        "html_structure": "(1+\\cos 3x)^2 = {q_4_2_31_1_s3_i1} + 2\\cos 3x + \\frac12\\cos 6x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل الحد الثابت. الطريقة: \\( \\int\\frac32dx=\\frac32x \\). السبب: تكامل الثابت يضرب في \\( x \\).",
+        "equation_template": "\\int {input_1}\\,dx = {input_2}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "\\frac{3}{2}",
+            "options": [
+              "\\frac12",
+              "3",
+              "2",
+              "\\frac{3}{2}"
+            ],
+            "id": "q_4_2_31_1_s4_i1",
+            "correct_value": "\\frac{3}{2}",
+            "allowed_keys": [
+              "\\frac12",
+              "3",
+              "2",
+              "\\frac{3}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت \\( \\frac32 \\) ثم نضرب في \\( x \\)."
+          },
+          {
+            "input_id": "s4_i2",
+            "correct_answer": "\\frac{3}{2}x",
+            "options": [
+              "\\frac12x",
+              "x",
+              "\\frac32",
+              "\\frac{3}{2}x"
+            ],
+            "id": "q_4_2_31_1_s4_i2",
+            "correct_value": "\\frac{3}{2}x",
+            "allowed_keys": [
+              "\\frac12x",
+              "x",
+              "\\frac32",
+              "\\frac{3}{2}x"
+            ],
+            "label": "القيمة 2",
+            "hint": "الثابت \\( \\frac32 \\) ثم نضرب في \\( x \\)."
+          }
+        ],
+        "hint": "الثابت \\( \\frac32 \\) ثم نضرب في \\( x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_31_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل الحد الثابت. الطريقة: \\( \\int\\frac32dx=\\frac32x \\). السبب: تكامل الثابت يضرب في \\( x \\).",
+        "think": "الثابت \\( \\frac32 \\) ثم نضرب في \\( x \\).",
+        "html_structure": "\\int {q_4_2_31_1_s4_i1}\\,dx = {q_4_2_31_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكامل \\( 2\\cos 3x \\). الطريقة: \\( \\int\\cos3x\\,dx=\\frac13\\sin3x \\) فنضرب في \\( 2 \\). السبب: قاعدة تكامل الجيب تمام.",
+        "equation_template": "\\int 2\\cos 3x\\,dx = {input_1}\\sin 3x",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "\\frac{2}{3}",
+            "options": [
+              "\\frac13",
+              "6",
+              "\\frac{2}{3}",
+              "\\frac32"
+            ],
+            "id": "q_4_2_31_1_s5_i1",
+            "correct_value": "\\frac{2}{3}",
+            "allowed_keys": [
+              "\\frac13",
+              "6",
+              "\\frac{2}{3}",
+              "\\frac32"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times\\frac13 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times\\frac13 \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_31_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكامل \\( 2\\cos 3x \\). الطريقة: \\( \\int\\cos3x\\,dx=\\frac13\\sin3x \\) فنضرب في \\( 2 \\). السبب: قاعدة تكامل الجيب تمام.",
+        "think": "\\( 2\\times\\frac13 \\).",
+        "html_structure": "\\int 2\\cos 3x\\,dx = {q_4_2_31_1_s5_i1}\\sin 3x"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكامل \\( \\frac12\\cos6x \\). الطريقة: \\( \\frac12\\times\\frac16=\\frac1{12} \\). السبب: لأن \\( \\int\\cos6x=\\frac16\\sin6x \\).",
+        "equation_template": "\\int\\frac12\\cos 6x\\,dx=\\frac{1}{{input_1}}\\sin 6x",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "12",
+            "options": [
+              "6",
+              "12",
+              "3",
+              "8"
+            ],
+            "id": "q_4_2_31_1_s6_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "6",
+              "12",
+              "3",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب المقامين \\( 2\\times6 \\)."
+          }
+        ],
+        "hint": "اضرب المقامين \\( 2\\times6 \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_31_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( \\frac12\\cos6x \\). الطريقة: \\( \\frac12\\times\\frac16=\\frac1{12} \\). السبب: لأن \\( \\int\\cos6x=\\frac16\\sin6x \\).",
+        "think": "اضرب المقامين \\( 2\\times6 \\).",
+        "html_structure": "\\int\\frac12\\cos 6x\\,dx=\\frac{1}{{q_4_2_31_1_s6_i1}}\\sin 6x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجمع الكل. الطريقة: نضع النواتج الثلاثة مع \\( c \\). السبب: لتكوين الجواب النهائي.",
+        "equation_template": "{input_1}x + {input_2}\\sin 3x + {input_3}\\sin 6x + c",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\frac{3}{2}",
+            "options": [
+              "3",
+              "\\frac12",
+              "\\frac{3}{2}",
+              "2"
+            ],
+            "id": "q_4_2_31_1_s7_i1",
+            "correct_value": "\\frac{3}{2}",
+            "allowed_keys": [
+              "3",
+              "\\frac12",
+              "\\frac{3}{2}",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "خذ المعاملات من الخطوات السابقة."
+          },
+          {
+            "input_id": "s7_i2",
+            "correct_answer": "\\frac{2}{3}",
+            "options": [
+              "2",
+              "\\frac13",
+              "\\frac32",
+              "\\frac{2}{3}"
+            ],
+            "id": "q_4_2_31_1_s7_i2",
+            "correct_value": "\\frac{2}{3}",
+            "allowed_keys": [
+              "2",
+              "\\frac13",
+              "\\frac32",
+              "\\frac{2}{3}"
+            ],
+            "label": "القيمة 2",
+            "hint": "خذ المعاملات من الخطوات السابقة."
+          },
+          {
+            "input_id": "s7_i3",
+            "correct_answer": "\\frac{1}{12}",
+            "options": [
+              "\\frac{1}{8}",
+              "\\frac16",
+              "\\frac{1}{12}",
+              "\\frac12"
+            ],
+            "id": "q_4_2_31_1_s7_i3",
+            "correct_value": "\\frac{1}{12}",
+            "allowed_keys": [
+              "\\frac{1}{8}",
+              "\\frac16",
+              "\\frac{1}{12}",
+              "\\frac12"
+            ],
+            "label": "القيمة 3",
+            "hint": "خذ المعاملات من الخطوات السابقة."
+          }
+        ],
+        "hint": "خذ المعاملات من الخطوات السابقة.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_2_31_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجمع الكل. الطريقة: نضع النواتج الثلاثة مع \\( c \\). السبب: لتكوين الجواب النهائي.",
+        "think": "خذ المعاملات من الخطوات السابقة.",
+        "html_structure": "{q_4_2_31_1_s7_i1}x + {q_4_2_31_1_s7_i2}\\sin 3x + {q_4_2_31_1_s7_i3}\\sin 6x + c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق من الحد الأخير بالاشتقاق. الطريقة: مشتقة \\( \\frac1{12}\\sin6x \\) هي \\( \\frac{6}{12}\\cos6x \\). السبب: للتأكد من المعامل.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac{1}{12}\\sin6x\\right)={input_1}\\cos 6x",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "\\frac1{12}",
+              "\\frac16",
+              "\\frac12",
+              "6"
+            ],
+            "id": "q_4_2_31_1_s8_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "\\frac1{12}",
+              "\\frac16",
+              "\\frac12",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 6 \\) على \\( 12 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 6 \\) على \\( 12 \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_31_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق من الحد الأخير بالاشتقاق. الطريقة: مشتقة \\( \\frac1{12}\\sin6x \\) هي \\( \\frac{6}{12}\\cos6x \\). السبب: للتأكد من المعامل.",
+        "think": "اقسم \\( 6 \\) على \\( 12 \\).",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac{1}{12}\\sin6x\\right)={q_4_2_31_1_s8_i1}\\cos 6x"
+      }
+    ]
+  },
+  {
+    "id_number": "q37_p31",
+    "page_number": 31,
+    "question_number": "37",
+    "question_text": "جد قيمة التكامل: \\( \\int (\\cos^4 x-\\sin^4 x)\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "الصفحة 31",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "\\cos^4x-\\sin^4x=(\\cos^2x-\\sin^2x)(\\cos^2x+\\sin^2x)=\\cos2x\\times1 فالتكامل \\frac12\\sin2x+c",
+    "source_file": "رياضيلت 4/p031_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int (\\cos^4 x-\\sin^4 x)\\,dx \\)",
+    "number": "37",
+    "model_solution": "\\cos^4x-\\sin^4x=(\\cos^2x-\\sin^2x)(\\cos^2x+\\sin^2x)=\\cos2x\\times1 فالتكامل \\frac12\\sin2x+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب القوة الرابعة كمربع. الطريقة: \\( \\cos^4x=(\\cos^2x)^2 \\). ضع القوتين. السبب: لنحصل على فرق مربعين.",
+        "equation_template": "(\\cos^{input_1}x)^2-(\\sin^{input_2}x)^2",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "id": "q_4_2_31_2_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوة الداخلية \\( 2 \\) لكل منهما."
+          },
+          {
+            "input_id": "s1_i2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "id": "q_4_2_31_2_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "القوة الداخلية \\( 2 \\) لكل منهما."
+          }
+        ],
+        "hint": "القوة الداخلية \\( 2 \\) لكل منهما.",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_4_2_31_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب القوة الرابعة كمربع. الطريقة: \\( \\cos^4x=(\\cos^2x)^2 \\). ضع القوتين. السبب: لنحصل على فرق مربعين.",
+        "think": "القوة الداخلية \\( 2 \\) لكل منهما.",
+        "html_structure": "(\\cos^{q_4_2_31_2_s1_i1}x)^2-(\\sin^{q_4_2_31_2_s1_i2}x)^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحلل فرق المربعين. الطريقة: \\( A^2-B^2=(A-B)(A+B) \\). السبب: لنرى متطابقات جاهزة.",
+        "equation_template": "(\\cos^2x-\\sin^2x)(\\cos^2x {input_1} \\sin^2x)",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "+",
+            "options": [
+              "\\times",
+              "-",
+              "+",
+              "\\div"
+            ],
+            "id": "q_4_2_31_2_s2_i1",
+            "correct_value": "+",
+            "allowed_keys": [
+              "\\times",
+              "-",
+              "+",
+              "\\div"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوس الثاني مجموع."
+          }
+        ],
+        "hint": "القوس الثاني مجموع.",
+        "related_topics": [
+          "فرق بين مربعين"
+        ],
+        "step_id": "math345_4_2_31_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحلل فرق المربعين. الطريقة: \\( A^2-B^2=(A-B)(A+B) \\). السبب: لنرى متطابقات جاهزة.",
+        "think": "القوس الثاني مجموع.",
+        "html_structure": "(\\cos^2x-\\sin^2x)(\\cos^2x {q_4_2_31_2_s2_i1} \\sin^2x)"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: قيمة القوس الثاني. الطريقة: \\( \\cos^2x+\\sin^2x=1 \\). السبب: متطابقة فيثاغورس.",
+        "equation_template": "\\cos^2x+\\sin^2x={input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "\\cos 2x"
+            ],
+            "id": "q_4_2_31_2_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "\\cos 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مجموع المربعين يساوي واحداً."
+          }
+        ],
+        "hint": "مجموع المربعين يساوي واحداً.",
+        "related_topics": [
+          "المتطابقات المثلثية"
+        ],
+        "step_id": "math345_4_2_31_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: قيمة القوس الثاني. الطريقة: \\( \\cos^2x+\\sin^2x=1 \\). السبب: متطابقة فيثاغورس.",
+        "think": "مجموع المربعين يساوي واحداً.",
+        "html_structure": "\\cos^2x+\\sin^2x={q_4_2_31_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: قيمة القوس الأول. الطريقة: \\( \\cos^2x-\\sin^2x=\\cos2x \\). السبب: قانون ضعف الزاوية.",
+        "equation_template": "\\cos^2x-\\sin^2x={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "\\cos 2x",
+            "options": [
+              "\\cos 2x",
+              "1",
+              "\\cos x",
+              "\\sin 2x"
+            ],
+            "id": "q_4_2_31_2_s4_i1",
+            "correct_value": "\\cos 2x",
+            "allowed_keys": [
+              "\\cos 2x",
+              "1",
+              "\\cos x",
+              "\\sin 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "فرق المربعين يساوي جيب تمام ضعف الزاوية."
+          }
+        ],
+        "hint": "فرق المربعين يساوي جيب تمام ضعف الزاوية.",
+        "related_topics": [
+          "ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_31_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: قيمة القوس الأول. الطريقة: \\( \\cos^2x-\\sin^2x=\\cos2x \\). السبب: قانون ضعف الزاوية.",
+        "think": "فرق المربعين يساوي جيب تمام ضعف الزاوية.",
+        "html_structure": "\\cos^2x-\\sin^2x={q_4_2_31_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب التكامل المبسط. الطريقة: \\( \\cos2x\\times1=\\cos2x \\). السبب: ضرب بواحد.",
+        "equation_template": "\\int(\\cos^4x-\\sin^4x)dx=\\int {input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "\\cos 2x",
+            "options": [
+              "\\cos 2x",
+              "\\cos x",
+              "1",
+              "\\sin 2x"
+            ],
+            "id": "q_4_2_31_2_s5_i1",
+            "correct_value": "\\cos 2x",
+            "allowed_keys": [
+              "\\cos 2x",
+              "\\cos x",
+              "1",
+              "\\sin 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج من الخطوتين السابقتين."
+          }
+        ],
+        "hint": "الناتج من الخطوتين السابقتين.",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_2_31_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب التكامل المبسط. الطريقة: \\( \\cos2x\\times1=\\cos2x \\). السبب: ضرب بواحد.",
+        "think": "الناتج من الخطوتين السابقتين.",
+        "html_structure": "\\int(\\cos^4x-\\sin^4x)dx=\\int {q_4_2_31_2_s5_i1}\\,dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكامل \\( \\cos 2x \\). الطريقة: \\( \\frac{1}{2}\\sin2x \\). السبب: قاعدة التكامل.",
+        "equation_template": "\\int\\cos2x\\,dx=\\frac{1}{{input_1}}{input_2}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "-2",
+              "2",
+              "4"
+            ],
+            "id": "q_4_2_31_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "-2",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم على \\( 2 \\)."
+          },
+          {
+            "input_id": "s6_i2",
+            "correct_answer": "\\sin 2x",
+            "options": [
+              "\\sin 2x",
+              "\\cos 2x",
+              "2\\sin 2x",
+              "-\\sin 2x"
+            ],
+            "id": "q_4_2_31_2_s6_i2",
+            "correct_value": "\\sin 2x",
+            "allowed_keys": [
+              "\\sin 2x",
+              "\\cos 2x",
+              "2\\sin 2x",
+              "-\\sin 2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "اقسم على \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم على \\( 2 \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_31_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( \\cos 2x \\). الطريقة: \\( \\frac{1}{2}\\sin2x \\). السبب: قاعدة التكامل.",
+        "think": "اقسم على \\( 2 \\).",
+        "html_structure": "\\int\\cos2x\\,dx=\\frac{1}{{q_4_2_31_2_s6_i1}}{q_4_2_31_2_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب الناتج. الطريقة: نضيف \\( c \\). السبب: ثابت التكامل.",
+        "equation_template": "\\frac{1}{2}{input_1} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\sin 2x",
+            "options": [
+              "\\sin x",
+              "\\sin 2x",
+              "\\cos 2x",
+              "-\\sin 2x"
+            ],
+            "id": "q_4_2_31_2_s7_i1",
+            "correct_value": "\\sin 2x",
+            "allowed_keys": [
+              "\\sin x",
+              "\\sin 2x",
+              "\\cos 2x",
+              "-\\sin 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أكمل بالدالة ثم الثابت."
+          },
+          {
+            "input_id": "s7_i2",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "1",
+              "0",
+              "x"
+            ],
+            "id": "q_4_2_31_2_s7_i2",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "1",
+              "0",
+              "x"
+            ],
+            "label": "القيمة 2",
+            "hint": "أكمل بالدالة ثم الثابت."
+          }
+        ],
+        "hint": "أكمل بالدالة ثم الثابت.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_2_31_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب الناتج. الطريقة: نضيف \\( c \\). السبب: ثابت التكامل.",
+        "think": "أكمل بالدالة ثم الثابت.",
+        "html_structure": "\\frac{1}{2}{q_4_2_31_2_s7_i1} + {q_4_2_31_2_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: مشتقة \\( \\frac12\\sin2x \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac{1}{2}\\sin 2x\\right)=\\frac{1}{2}\\times{input_1}\\times\\cos 2x=\\cos 2x",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "\\frac12",
+              "2",
+              "4"
+            ],
+            "id": "q_4_2_31_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "\\frac12",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة الزاوية \\( 2x \\) هي \\( 2 \\)."
+          }
+        ],
+        "hint": "مشتقة الزاوية \\( 2x \\) هي \\( 2 \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_31_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: مشتقة \\( \\frac12\\sin2x \\). السبب: للتأكد.",
+        "think": "مشتقة الزاوية \\( 2x \\) هي \\( 2 \\).",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac{1}{2}\\sin 2x\\right)=\\frac{1}{2}\\times{q_4_2_31_2_s8_i1}\\times\\cos 2x=\\cos 2x"
+      }
+    ]
+  },
+  {
+    "id_number": "q38_p31",
+    "page_number": 31,
+    "question_number": "38",
+    "question_text": "جد قيمة التكامل: \\( \\int \\cot x\\cdot\\csc^2 x\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "الصفحة 31",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "\\int\\cot x\\csc^2x\\,dx=-\\int\\cot x(-\\csc^2x)dx=-\\frac{\\cot^2x}{2}+c",
+    "source_file": "رياضيلت 4/p031_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_031_interactive.json"
+    ],
+    "title": "جد قيمة التكامل: \\( \\int \\cot x\\cdot\\csc^2 x\\,dx \\)",
+    "number": "38",
+    "model_solution": "\\int\\cot x\\csc^2x\\,dx=-\\int\\cot x(-\\csc^2x)dx=-\\frac{\\cot^2x}{2}+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( \\cot x \\). الطريقة: مشتقة \\( \\cot x \\) هي \\( -\\csc^2x \\). السبب: لنعرف هل المشتقة موجودة.",
+        "equation_template": "\\frac{d}{dx}\\cot x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "-\\csc^2 x",
+            "options": [
+              "-\\csc x\\cot x",
+              "\\csc^2 x",
+              "-\\csc^2 x",
+              "\\sec^2x"
+            ],
+            "id": "q_4_2_31_3_s1_i1",
+            "correct_value": "-\\csc^2 x",
+            "allowed_keys": [
+              "-\\csc x\\cot x",
+              "\\csc^2 x",
+              "-\\csc^2 x",
+              "\\sec^2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة ظل التمام سالب مربع قاطع التمام."
+          }
+        ],
+        "hint": "مشتقة ظل التمام سالب مربع قاطع التمام.",
+        "related_topics": [
+          "مشتقات المثلثية"
+        ],
+        "step_id": "math345_4_2_31_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( \\cot x \\). الطريقة: مشتقة \\( \\cot x \\) هي \\( -\\csc^2x \\). السبب: لنعرف هل المشتقة موجودة.",
+        "think": "مشتقة ظل التمام سالب مربع قاطع التمام.",
+        "html_structure": "\\frac{d}{dx}\\cot x = {q_4_2_31_3_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبحث عن المعامل. الطريقة: نريد \\( \\csc^2x \\) لا \\( -\\csc^2x \\). السبب: لنصنع المشتقة الصحيحة.",
+        "equation_template": "{input_1}\\times(-\\csc^2x)=\\csc^2x",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "2",
+              "\\frac12"
+            ],
+            "id": "q_4_2_31_3_s2_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "2",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب بـ \\( -1 \\)."
+          }
+        ],
+        "hint": "اضرب بـ \\( -1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_31_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبحث عن المعامل. الطريقة: نريد \\( \\csc^2x \\) لا \\( -\\csc^2x \\). السبب: لنصنع المشتقة الصحيحة.",
+        "think": "اضرب بـ \\( -1 \\).",
+        "html_structure": "{q_4_2_31_3_s2_i1}\\times(-\\csc^2x)=\\csc^2x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعيد كتابة التكامل. الطريقة: نُخرج \\( -1 \\) أمام التكامل. السبب: لأن \\( (-1)(-1)=1 \\).",
+        "equation_template": "\\int\\cot x\\csc^2x\\,dx={input_1}\\int\\cot x\\cdot(-\\csc^2 x)\\,dx",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "-1",
+            "options": [
+              "2",
+              "-1",
+              "1",
+              "\\frac12"
+            ],
+            "id": "q_4_2_31_3_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "1",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -1 \\)."
+          }
+        ],
+        "hint": "ضع \\( -1 \\).",
+        "related_topics": [
+          "تعويض المشتقة"
+        ],
+        "step_id": "math345_4_2_31_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعيد كتابة التكامل. الطريقة: نُخرج \\( -1 \\) أمام التكامل. السبب: لأن \\( (-1)(-1)=1 \\).",
+        "think": "ضع \\( -1 \\).",
+        "html_structure": "\\int\\cot x\\csc^2x\\,dx={q_4_2_31_3_s3_i1}\\int\\cot x\\cdot(-\\csc^2 x)\\,dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نطبق قاعدة القوة. الطريقة: \\( \\int u\\,u'dx=\\frac{u^2}{2} \\). السبب: القوة \\( 1 \\) تصبح \\( 2 \\).",
+        "equation_template": "\\int u\\cdot u'dx=\\frac{u^{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_2_31_3_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوة \\( 1+1 \\)."
+          },
+          {
+            "input_id": "s4_i2",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "id": "q_4_2_31_3_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "القوة \\( 1+1 \\)."
+          }
+        ],
+        "hint": "القوة \\( 1+1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_31_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق قاعدة القوة. الطريقة: \\( \\int u\\,u'dx=\\frac{u^2}{2} \\). السبب: القوة \\( 1 \\) تصبح \\( 2 \\).",
+        "think": "القوة \\( 1+1 \\).",
+        "html_structure": "\\int u\\cdot u'dx=\\frac{u^{q_4_2_31_3_s4_i1}}{{q_4_2_31_3_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوّض \\( u=\\cot x \\). الطريقة: نضرب بـ \\( -1 \\). السبب: المعامل خارج التكامل.",
+        "equation_template": "{input_1}\\times\\frac{\\cot^2 x}{2}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "\\frac12",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_31_3_s5_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "\\frac12",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل الخارجي."
+          }
+        ],
+        "hint": "المعامل الخارجي.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_31_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوّض \\( u=\\cot x \\). الطريقة: نضرب بـ \\( -1 \\). السبب: المعامل خارج التكامل.",
+        "think": "المعامل الخارجي.",
+        "html_structure": "{q_4_2_31_3_s5_i1}\\times\\frac{\\cot^2 x}{2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الجواب. الطريقة: \\( -\\frac{\\cot^2x}{2}+c \\). السبب: الناتج النهائي.",
+        "equation_template": "-\\frac{{input_1}^2 x}{2} + c",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "\\cot",
+            "options": [
+              "\\cot",
+              "\\csc",
+              "\\sec",
+              "\\tan"
+            ],
+            "id": "q_4_2_31_3_s6_i1",
+            "correct_value": "\\cot",
+            "allowed_keys": [
+              "\\cot",
+              "\\csc",
+              "\\sec",
+              "\\tan"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة المربعة هي ظل التمام."
+          }
+        ],
+        "hint": "الدالة المربعة هي ظل التمام.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_2_31_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الجواب. الطريقة: \\( -\\frac{\\cot^2x}{2}+c \\). السبب: الناتج النهائي.",
+        "think": "الدالة المربعة هي ظل التمام.",
+        "html_structure": "-\\frac{{q_4_2_31_3_s6_i1}^2 x}{2} + c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: صورة مكافئة. الطريقة: \\( \\cot^2x=\\csc^2x-1 \\). السبب: فرق ثابت فقط.",
+        "equation_template": "\\cot^2x=\\csc^2x-{input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "\\sec^2x"
+            ],
+            "id": "q_4_2_31_3_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "\\sec^2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المتطابقة \\( 1+\\cot^2=\\csc^2 \\)."
+          }
+        ],
+        "hint": "المتطابقة \\( 1+\\cot^2=\\csc^2 \\).",
+        "related_topics": [
+          "المتطابقات المثلثية"
+        ],
+        "step_id": "math345_4_2_31_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: صورة مكافئة. الطريقة: \\( \\cot^2x=\\csc^2x-1 \\). السبب: فرق ثابت فقط.",
+        "think": "المتطابقة \\( 1+\\cot^2=\\csc^2 \\).",
+        "html_structure": "\\cot^2x=\\csc^2x-{q_4_2_31_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: مشتقة \\( -\\frac{\\cot^2x}{2} \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\left(-\\frac{\\cot^2x}{2}\\right)=-\\cot x\\cdot({input_1})=\\cot x\\csc^2x",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "-\\csc^2 x",
+            "options": [
+              "-\\csc x",
+              "-\\csc^2 x",
+              "\\sec^2 x",
+              "\\csc^2 x"
+            ],
+            "id": "q_4_2_31_3_s8_i1",
+            "correct_value": "-\\csc^2 x",
+            "allowed_keys": [
+              "-\\csc x",
+              "-\\csc^2 x",
+              "\\sec^2 x",
+              "\\csc^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\cot x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\cot x \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_31_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: مشتقة \\( -\\frac{\\cot^2x}{2} \\). السبب: للتأكد.",
+        "think": "مشتقة \\( \\cot x \\).",
+        "html_structure": "\\frac{d}{dx}\\left(-\\frac{\\cot^2x}{2}\\right)=-\\cot x\\cdot({q_4_2_31_3_s8_i1})=\\cot x\\csc^2x"
+      }
+    ]
+  },
+  {
+    "id_number": "q39_p31",
+    "page_number": 31,
+    "question_number": "39",
+    "question_text": "جد قيمة التكامل: \\( \\int (\\sin 2x-1)(\\cos^2 2x+2)\\,dx \\)",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "الصفحة 31",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "نوزع الأقواس فنحصل على \\sin2x\\cos^22x+2\\sin2x-\\cos^22x-2 ثم نكامل فنحصل على -\\frac16\\cos^32x-\\cos2x-\\frac18\\sin4x-\\frac52x+c",
+    "source_file": "رياضيلت 4/p031_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int (\\sin 2x-1)(\\cos^2 2x+2)\\,dx \\)",
+    "number": "39",
+    "model_solution": "نوزع الأقواس فنحصل على \\sin2x\\cos^22x+2\\sin2x-\\cos^22x-2 ثم نكامل فنحصل على -\\frac16\\cos^32x-\\cos2x-\\frac18\\sin4x-\\frac52x+c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نوزع الأقواس. الطريقة: نضرب \\( \\sin2x \\) في الحدين ثم \\( -1 \\) في الحدين. السبب: لأن الحاصل لا يحتوي مشتقة مباشرة.",
+        "equation_template": "\\sin2x\\cos^22x + {input_1} - \\cos^22x - {input_2}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "2\\sin 2x",
+            "options": [
+              "\\sin 2x",
+              "2\\cos 2x",
+              "2\\sin 2x",
+              "\\sin^2 2x"
+            ],
+            "id": "q_4_2_31_4_s1_i1",
+            "correct_value": "2\\sin 2x",
+            "allowed_keys": [
+              "\\sin 2x",
+              "2\\cos 2x",
+              "2\\sin 2x",
+              "\\sin^2 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\sin2x\\times2 \\) ثم \\( -1\\times2 \\)."
+          },
+          {
+            "input_id": "s1_i2",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "-2",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_31_4_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "-2",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\sin2x\\times2 \\) ثم \\( -1\\times2 \\)."
+          }
+        ],
+        "hint": "\\( \\sin2x\\times2 \\) ثم \\( -1\\times2 \\).",
+        "related_topics": [
+          "ضرب الأقواس"
+        ],
+        "step_id": "math345_4_2_31_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نوزع الأقواس. الطريقة: نضرب \\( \\sin2x \\) في الحدين ثم \\( -1 \\) في الحدين. السبب: لأن الحاصل لا يحتوي مشتقة مباشرة.",
+        "think": "\\( \\sin2x\\times2 \\) ثم \\( -1\\times2 \\).",
+        "html_structure": "\\sin2x\\cos^22x + {q_4_2_31_4_s1_i1} - \\cos^22x - {q_4_2_31_4_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق \\( \\cos 2x \\). الطريقة: لإيجاد معامل التكامل الأول. السبب: لنضبط المشتقة.",
+        "equation_template": "\\frac{d}{dx}\\cos 2x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "-2\\sin 2x",
+            "options": [
+              "-2\\sin 2x",
+              "-\\sin 2x",
+              "2\\sin 2x",
+              "-2\\cos 2x"
+            ],
+            "id": "q_4_2_31_4_s2_i1",
+            "correct_value": "-2\\sin 2x",
+            "allowed_keys": [
+              "-2\\sin 2x",
+              "-\\sin 2x",
+              "2\\sin 2x",
+              "-2\\cos 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل \\( 2 \\) وغيّر الإشارة."
+          }
+        ],
+        "hint": "أنزل \\( 2 \\) وغيّر الإشارة.",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_4_2_31_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق \\( \\cos 2x \\). الطريقة: لإيجاد معامل التكامل الأول. السبب: لنضبط المشتقة.",
+        "think": "أنزل \\( 2 \\) وغيّر الإشارة.",
+        "html_structure": "\\frac{d}{dx}\\cos 2x = {q_4_2_31_4_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكامل الحد الأول. الطريقة: \\( -\\frac12\\cdot\\frac{\\cos^32x}{3} \\). السبب: قاعدة القوة بعد التعويض.",
+        "equation_template": "\\int\\sin2x\\cos^22x\\,dx=-\\frac12\\cdot\\frac{\\cos^{input_1}2x}{{input_2}}=-\\frac{1}{{input_3}}\\cos^32x",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "id": "q_4_2_31_4_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوة \\( 2+1 \\) ثم \\( 2\\times3 \\)."
+          },
+          {
+            "input_id": "s3_i2",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "id": "q_4_2_31_4_s3_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "القوة \\( 2+1 \\) ثم \\( 2\\times3 \\)."
+          },
+          {
+            "input_id": "s3_i3",
+            "correct_answer": "6",
+            "options": [
+              "12",
+              "3",
+              "9",
+              "6"
+            ],
+            "id": "q_4_2_31_4_s3_i3",
+            "correct_value": "6",
+            "allowed_keys": [
+              "12",
+              "3",
+              "9",
+              "6"
+            ],
+            "label": "القيمة 3",
+            "hint": "القوة \\( 2+1 \\) ثم \\( 2\\times3 \\)."
+          }
+        ],
+        "hint": "القوة \\( 2+1 \\) ثم \\( 2\\times3 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_31_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكامل الحد الأول. الطريقة: \\( -\\frac12\\cdot\\frac{\\cos^32x}{3} \\). السبب: قاعدة القوة بعد التعويض.",
+        "think": "القوة \\( 2+1 \\) ثم \\( 2\\times3 \\).",
+        "html_structure": "\\int\\sin2x\\cos^22x\\,dx=-\\frac12\\cdot\\frac{\\cos^{q_4_2_31_4_s3_i1}2x}{{q_4_2_31_4_s3_i2}}=-\\frac{1}{{q_4_2_31_4_s3_i3}}\\cos^32x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل الحد الثاني. الطريقة: \\( \\int2\\sin2x\\,dx=-\\cos2x \\). السبب: لأن \\( 2 \\) تختصر مع \\( \\frac12 \\).",
+        "equation_template": "\\int2\\sin2x\\,dx={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "-\\cos 2x",
+            "options": [
+              "\\cos 2x",
+              "-\\cos 2x",
+              "-2\\cos 2x",
+              "\\sin 2x"
+            ],
+            "id": "q_4_2_31_4_s4_i1",
+            "correct_value": "-\\cos 2x",
+            "allowed_keys": [
+              "\\cos 2x",
+              "-\\cos 2x",
+              "-2\\cos 2x",
+              "\\sin 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجيب يتكامل إلى سالب جيب تمام."
+          }
+        ],
+        "hint": "الجيب يتكامل إلى سالب جيب تمام.",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_31_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل الحد الثاني. الطريقة: \\( \\int2\\sin2x\\,dx=-\\cos2x \\). السبب: لأن \\( 2 \\) تختصر مع \\( \\frac12 \\).",
+        "think": "الجيب يتكامل إلى سالب جيب تمام.",
+        "html_structure": "\\int2\\sin2x\\,dx={q_4_2_31_4_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحوّل \\( \\cos^22x \\). الطريقة: \\( \\cos^2\\theta=\\frac12+\\frac12\\cos2\\theta \\) مع \\( \\theta=2x \\). السبب: لنكامله.",
+        "equation_template": "\\cos^22x=\\frac12+\\frac12\\cos {input_1}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "4x",
+            "options": [
+              "8x",
+              "x",
+              "2x",
+              "4x"
+            ],
+            "id": "q_4_2_31_4_s5_i1",
+            "correct_value": "4x",
+            "allowed_keys": [
+              "8x",
+              "x",
+              "2x",
+              "4x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضعف \\( 2x \\)."
+          }
+        ],
+        "hint": "ضعف \\( 2x \\).",
+        "related_topics": [
+          "ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_31_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحوّل \\( \\cos^22x \\). الطريقة: \\( \\cos^2\\theta=\\frac12+\\frac12\\cos2\\theta \\) مع \\( \\theta=2x \\). السبب: لنكامله.",
+        "think": "ضعف \\( 2x \\).",
+        "html_structure": "\\cos^22x=\\frac12+\\frac12\\cos {q_4_2_31_4_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكامل \\( \\cos^22x \\). الطريقة: \\( \\frac12\\times\\frac14=\\frac18 \\). السبب: قاعدة تكامل جيب التمام.",
+        "equation_template": "\\int\\cos^22x\\,dx=\\frac x2+\\frac{1}{{input_1}}\\sin4x",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "8",
+            "options": [
+              "2",
+              "8",
+              "16",
+              "4"
+            ],
+            "id": "q_4_2_31_4_s6_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "2",
+              "8",
+              "16",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times4 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times4 \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_31_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( \\cos^22x \\). الطريقة: \\( \\frac12\\times\\frac14=\\frac18 \\). السبب: قاعدة تكامل جيب التمام.",
+        "think": "\\( 2\\times4 \\).",
+        "html_structure": "\\int\\cos^22x\\,dx=\\frac x2+\\frac{1}{{q_4_2_31_4_s6_i1}}\\sin4x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجمع حدود \\( x \\). الطريقة: \\( -\\frac x2-2x \\). السبب: لدمج الحدود المتشابهة.",
+        "equation_template": "-\\frac x2-2x=-\\frac{{input_1}}{2}x",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_2_31_4_s7_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2x=\\frac{4x}{2} \\)."
+          }
+        ],
+        "hint": "\\( 2x=\\frac{4x}{2} \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_2_31_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجمع حدود \\( x \\). الطريقة: \\( -\\frac x2-2x \\). السبب: لدمج الحدود المتشابهة.",
+        "think": "\\( 2x=\\frac{4x}{2} \\).",
+        "html_structure": "-\\frac x2-2x=-\\frac{{q_4_2_31_4_s7_i1}}{2}x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الجواب. الطريقة: نجمع الحدود الأربعة. السبب: الجواب النهائي.",
+        "equation_template": "-\\frac16\\cos^32x-{input_1}-\\frac18{input_2}-\\frac52x+c",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "\\cos 2x",
+            "options": [
+              "\\cos 4x",
+              "\\cos 2x",
+              "\\sin 2x",
+              "1"
+            ],
+            "id": "q_4_2_31_4_s8_i1",
+            "correct_value": "\\cos 2x",
+            "allowed_keys": [
+              "\\cos 4x",
+              "\\cos 2x",
+              "\\sin 2x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "حد جيب التمام ثم جيب الزاوية الأربعة."
+          },
+          {
+            "input_id": "s8_i2",
+            "correct_answer": "\\sin 4x",
+            "options": [
+              "\\sin 8x",
+              "\\sin 4x",
+              "\\cos 4x",
+              "\\sin 2x"
+            ],
+            "id": "q_4_2_31_4_s8_i2",
+            "correct_value": "\\sin 4x",
+            "allowed_keys": [
+              "\\sin 8x",
+              "\\sin 4x",
+              "\\cos 4x",
+              "\\sin 2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "حد جيب التمام ثم جيب الزاوية الأربعة."
+          }
+        ],
+        "hint": "حد جيب التمام ثم جيب الزاوية الأربعة.",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_2_31_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الجواب. الطريقة: نجمع الحدود الأربعة. السبب: الجواب النهائي.",
+        "think": "حد جيب التمام ثم جيب الزاوية الأربعة.",
+        "html_structure": "-\\frac16\\cos^32x-{q_4_2_31_4_s8_i1}-\\frac18{q_4_2_31_4_s8_i2}-\\frac52x+c"
+      }
+    ]
+  },
+  {
+    "id_number": "q36_p31",
+    "page_number": 31,
+    "question_number": "36",
+    "question_text": "جد قيمة التكامل: \\( \\int(1+\\cos 3x)^2dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( \\frac32x+\\frac23\\sin 3x+\\frac1{12}\\sin 6x+c \\).",
+    "source_file": "رياضيلت 4/page_031_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int(1+\\cos 3x)^2dx \\)",
+    "number": "36",
+    "model_solution": "\\( \\frac32x+\\frac23\\sin 3x+\\frac1{12}\\sin 6x+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفتح التربيع. الطريقة: لا توجد مشتقة داخل القوس، فنفتحه: \\( 1+2\\cos3x+\\cos^23x \\). السبب: لأن القاعدة غير قابلة للتطبيق.",
+        "equation_template": "1+{input_1}\\cos 3x+{input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_4_2_31_5_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأوسط \\( 2\\cos3x \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "\\cos^23x",
+            "options": [
+              "\\cos 3x",
+              "\\cos^23x",
+              "1",
+              "\\cos 6x"
+            ],
+            "id": "q_4_2_31_5_s1_i2",
+            "correct_value": "\\cos^23x",
+            "allowed_keys": [
+              "\\cos 3x",
+              "\\cos^23x",
+              "1",
+              "\\cos 6x"
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الأوسط \\( 2\\cos3x \\)."
+          }
+        ],
+        "hint": "الحد الأوسط \\( 2\\cos3x \\).",
+        "related_topics": [
+          "فتح التربيع"
+        ],
+        "step_id": "math345_4_2_31_5_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفتح التربيع. الطريقة: لا توجد مشتقة داخل القوس، فنفتحه: \\( 1+2\\cos3x+\\cos^23x \\). السبب: لأن القاعدة غير قابلة للتطبيق.",
+        "think": "الحد الأوسط \\( 2\\cos3x \\).",
+        "html_structure": "1+{q_4_2_31_5_s1_i1}\\cos 3x+{q_4_2_31_5_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نخفض قوة \\( \\cos^2 \\). الطريقة: \\( \\cos^2\\theta=\\frac12+\\frac12\\cos2\\theta \\). السبب: لأن تكامل المربع مباشرة صعب.",
+        "equation_template": "\\cos^23x=\\frac12+\\frac12\\cos {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "6x",
+            "options": [
+              "9x",
+              "6x",
+              "2x",
+              "3x"
+            ],
+            "id": "q_4_2_31_5_s2_i1",
+            "correct_value": "6x",
+            "allowed_keys": [
+              "9x",
+              "6x",
+              "2x",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضعف \\( 3x \\)."
+          }
+        ],
+        "hint": "ضعف \\( 3x \\).",
+        "related_topics": [
+          "خفض القوة"
+        ],
+        "step_id": "math345_4_2_31_5_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نخفض قوة \\( \\cos^2 \\). الطريقة: \\( \\cos^2\\theta=\\frac12+\\frac12\\cos2\\theta \\). السبب: لأن تكامل المربع مباشرة صعب.",
+        "think": "ضعف \\( 3x \\).",
+        "html_structure": "\\cos^23x=\\frac12+\\frac12\\cos {q_4_2_31_5_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نجمع الحدود الثابتة. الطريقة: \\( 1+\\frac12=\\frac32 \\). السبب: لتبسيط.",
+        "equation_template": "{input_1}+2\\cos3x+\\frac12\\cos6x",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "\\frac32",
+            "options": [
+              "\\frac32",
+              "\\frac12",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_31_5_s3_i1",
+            "correct_value": "\\frac32",
+            "allowed_keys": [
+              "\\frac32",
+              "\\frac12",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 1 \\) مع \\( \\frac12 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 1 \\) مع \\( \\frac12 \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_2_31_5_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نجمع الحدود الثابتة. الطريقة: \\( 1+\\frac12=\\frac32 \\). السبب: لتبسيط.",
+        "think": "اجمع \\( 1 \\) مع \\( \\frac12 \\).",
+        "html_structure": "{q_4_2_31_5_s3_i1}+2\\cos3x+\\frac12\\cos6x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نفصل التكاملات. الطريقة: ثلاثة تكاملات. السبب: لكل حد.",
+        "equation_template": "\\int\\frac32dx+\\int2\\cos3x\\,dx+\\int{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "\\frac12\\cos6x",
+            "options": [
+              "2\\cos6x",
+              "\\frac12\\cos6x",
+              "\\cos6x",
+              "\\frac12\\cos3x"
+            ],
+            "id": "q_4_2_31_5_s4_i1",
+            "correct_value": "\\frac12\\cos6x",
+            "allowed_keys": [
+              "2\\cos6x",
+              "\\frac12\\cos6x",
+              "\\cos6x",
+              "\\frac12\\cos3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأخير."
+          }
+        ],
+        "hint": "الحد الأخير.",
+        "related_topics": [
+          "خطية التكامل"
+        ],
+        "step_id": "math345_4_2_31_5_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نفصل التكاملات. الطريقة: ثلاثة تكاملات. السبب: لكل حد.",
+        "think": "الحد الأخير.",
+        "html_structure": "\\int\\frac32dx+\\int2\\cos3x\\,dx+\\int{q_4_2_31_5_s4_i1}\\,dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكامل الثابت. الطريقة: \\( \\int a\\,dx=ax \\). السبب: قاعدة.",
+        "equation_template": "\\int\\frac32dx={input_1}x",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\frac32",
+            "options": [
+              "\\frac12",
+              "3",
+              "\\frac32",
+              "1"
+            ],
+            "id": "q_4_2_31_5_s5_i1",
+            "correct_value": "\\frac32",
+            "allowed_keys": [
+              "\\frac12",
+              "3",
+              "\\frac32",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت نفسه."
+          }
+        ],
+        "hint": "الثابت نفسه.",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_31_5_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكامل الثابت. الطريقة: \\( \\int a\\,dx=ax \\). السبب: قاعدة.",
+        "think": "الثابت نفسه.",
+        "html_structure": "\\int\\frac32dx={q_4_2_31_5_s5_i1}x"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكامل \\( 2\\cos 3x \\). الطريقة: اقسم على \\( 3 \\). السبب: مشتقة الزاوية.",
+        "equation_template": "\\int2\\cos3x\\,dx=\\frac{2}{{input_1}}\\sin3x",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "2",
+              "6",
+              "3"
+            ],
+            "id": "q_4_2_31_5_s6_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "2",
+              "6",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الملاصق لـ \\( x \\)."
+          }
+        ],
+        "hint": "الرقم الملاصق لـ \\( x \\).",
+        "related_topics": [
+          "تكامل جيب التمام"
+        ],
+        "step_id": "math345_4_2_31_5_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( 2\\cos 3x \\). الطريقة: اقسم على \\( 3 \\). السبب: مشتقة الزاوية.",
+        "think": "الرقم الملاصق لـ \\( x \\).",
+        "html_structure": "\\int2\\cos3x\\,dx=\\frac{2}{{q_4_2_31_5_s6_i1}}\\sin3x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكامل \\( \\frac12\\cos6x \\). الطريقة: \\( \\frac12\\times\\frac16=\\frac1{12} \\). السبب: اقسم على \\( 6 \\).",
+        "equation_template": "\\int\\frac12\\cos6x\\,dx=\\frac12\\cdot\\frac1{{input_1}}\\sin6x=\\frac1{{input_2}}\\sin6x",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "6",
+            "options": [
+              "3",
+              "6",
+              "12",
+              "2"
+            ],
+            "id": "q_4_2_31_5_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "3",
+              "6",
+              "12",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times6=12 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "12",
+            "options": [
+              "3",
+              "12",
+              "8",
+              "6"
+            ],
+            "id": "q_4_2_31_5_s7_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "3",
+              "12",
+              "8",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times6=12 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times6=12 \\).",
+        "related_topics": [
+          "تكامل جيب التمام"
+        ],
+        "step_id": "math345_4_2_31_5_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكامل \\( \\frac12\\cos6x \\). الطريقة: \\( \\frac12\\times\\frac16=\\frac1{12} \\). السبب: اقسم على \\( 6 \\).",
+        "think": "\\( 2\\times6=12 \\).",
+        "html_structure": "\\int\\frac12\\cos6x\\,dx=\\frac12\\cdot\\frac1{{q_4_2_31_5_s7_i1}}\\sin6x=\\frac1{{q_4_2_31_5_s7_i2}}\\sin6x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نجمع. الطريقة: نضع النتائج الثلاث مع \\( c \\). السبب: الجواب.",
+        "equation_template": "F=\\frac32x+\\frac{{input_1}}{3}\\sin3x+\\frac1{12}\\sin6x+c",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "id": "q_4_2_31_5_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط \\( 2 \\)."
+          }
+        ],
+        "hint": "البسط \\( 2 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_31_5_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نجمع. الطريقة: نضع النتائج الثلاث مع \\( c \\). السبب: الجواب.",
+        "think": "البسط \\( 2 \\).",
+        "html_structure": "F=\\frac32x+\\frac{{q_4_2_31_5_s8_i1}}{3}\\sin3x+\\frac1{12}\\sin6x+c"
+      }
+    ]
+  },
+  {
+    "id_number": "q37_p31",
+    "page_number": 31,
+    "question_number": "37",
+    "question_text": "جد قيمة التكامل: \\( \\int(\\cos^4x-\\sin^4x)dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( \\cos^4x-\\sin^4x=\\cos2x \\)، فالتكامل \\( \\frac12\\sin2x+c \\).",
+    "source_file": "رياضيلت 4/page_031_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int(\\cos^4x-\\sin^4x)dx \\)",
+    "number": "37",
+    "model_solution": "\\( \\cos^4x-\\sin^4x=\\cos2x \\)، فالتكامل \\( \\frac12\\sin2x+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب القوى الرابعة كمربعات. الطريقة: \\( \\cos^4x=(\\cos^2x)^2 \\). السبب: لنستخدم فرق المربعين.",
+        "equation_template": "(\\cos^2x)^{{input_1}}-(\\sin^2x)^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "id": "q_4_2_31_6_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) في الحالتين."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "id": "q_4_2_31_6_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 2 \\) في الحالتين."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) في الحالتين.",
+        "related_topics": [
+          "القوى"
+        ],
+        "step_id": "math345_4_2_31_6_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب القوى الرابعة كمربعات. الطريقة: \\( \\cos^4x=(\\cos^2x)^2 \\). السبب: لنستخدم فرق المربعين.",
+        "think": "الأس \\( 2 \\) في الحالتين.",
+        "html_structure": "(\\cos^2x)^{{q_4_2_31_6_s1_i1}}-(\\sin^2x)^{{q_4_2_31_6_s1_i2}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحلل. الطريقة: \\( A^2-B^2=(A-B)(A+B) \\). السبب: لتبسيط.",
+        "equation_template": "(\\cos^2x-\\sin^2x)({input_1})",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\cos^2x+\\sin^2x",
+            "options": [
+              "\\cos^2x-\\sin^2x",
+              "\\cos 2x",
+              "1",
+              "\\cos^2x+\\sin^2x"
+            ],
+            "id": "q_4_2_31_6_s2_i1",
+            "correct_value": "\\cos^2x+\\sin^2x",
+            "allowed_keys": [
+              "\\cos^2x-\\sin^2x",
+              "\\cos 2x",
+              "1",
+              "\\cos^2x+\\sin^2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "قوس الجمع."
+          }
+        ],
+        "hint": "قوس الجمع.",
+        "related_topics": [
+          "فرق مربعين"
+        ],
+        "step_id": "math345_4_2_31_6_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحلل. الطريقة: \\( A^2-B^2=(A-B)(A+B) \\). السبب: لتبسيط.",
+        "think": "قوس الجمع.",
+        "html_structure": "(\\cos^2x-\\sin^2x)({q_4_2_31_6_s2_i1})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نطبق المتطابقة. الطريقة: \\( \\cos^2x+\\sin^2x=1 \\). السبب: متطابقة أساسية.",
+        "equation_template": "\\cos^2x+\\sin^2x={input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "\\cos2x",
+              "2",
+              "0"
+            ],
+            "id": "q_4_2_31_6_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "\\cos2x",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج \\( 1 \\)."
+          }
+        ],
+        "hint": "الناتج \\( 1 \\).",
+        "related_topics": [
+          "المتطابقة"
+        ],
+        "step_id": "math345_4_2_31_6_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نطبق المتطابقة. الطريقة: \\( \\cos^2x+\\sin^2x=1 \\). السبب: متطابقة أساسية.",
+        "think": "الناتج \\( 1 \\).",
+        "html_structure": "\\cos^2x+\\sin^2x={q_4_2_31_6_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نطبق ضعف الزاوية. الطريقة: \\( \\cos^2x-\\sin^2x=\\cos2x \\). السبب: قانون.",
+        "equation_template": "\\cos^2x-\\sin^2x=\\cos{input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "2x",
+            "options": [
+              "4x",
+              "x",
+              "2x",
+              "x^2"
+            ],
+            "id": "q_4_2_31_6_s4_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "4x",
+              "x",
+              "2x",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضعف \\( x \\)."
+          }
+        ],
+        "hint": "ضعف \\( x \\).",
+        "related_topics": [
+          "ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_31_6_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق ضعف الزاوية. الطريقة: \\( \\cos^2x-\\sin^2x=\\cos2x \\). السبب: قانون.",
+        "think": "ضعف \\( x \\).",
+        "html_structure": "\\cos^2x-\\sin^2x=\\cos{q_4_2_31_6_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نبسط التكامل. الطريقة: \\( \\cos2x\\times1 \\). السبب: للتكامل.",
+        "equation_template": "\\int{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\cos2x",
+            "options": [
+              "1",
+              "\\cos^22x",
+              "\\sin2x",
+              "\\cos2x"
+            ],
+            "id": "q_4_2_31_6_s5_i1",
+            "correct_value": "\\cos2x",
+            "allowed_keys": [
+              "1",
+              "\\cos^22x",
+              "\\sin2x",
+              "\\cos2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ \\( \\cos2x \\)."
+          }
+        ],
+        "hint": "انسخ \\( \\cos2x \\).",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_2_31_6_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نبسط التكامل. الطريقة: \\( \\cos2x\\times1 \\). السبب: للتكامل.",
+        "think": "انسخ \\( \\cos2x \\).",
+        "html_structure": "\\int{q_4_2_31_6_s5_i1}\\,dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكامل. الطريقة: اقسم على \\( 2 \\). السبب: مشتقة الزاوية.",
+        "equation_template": "\\int\\cos2x\\,dx=\\frac{1}{{input_1}}\\sin2x",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_2_31_6_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الملاصق."
+          }
+        ],
+        "hint": "الرقم الملاصق.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_4_2_31_6_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل. الطريقة: اقسم على \\( 2 \\). السبب: مشتقة الزاوية.",
+        "think": "الرقم الملاصق.",
+        "html_structure": "\\int\\cos2x\\,dx=\\frac{1}{{q_4_2_31_6_s6_i1}}\\sin2x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب الجواب. الطريقة: أضف \\( c \\). السبب: تكامل غير محدد.",
+        "equation_template": "F=\\frac12{input_1}+c",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\sin2x",
+            "options": [
+              "\\cos2x",
+              "-\\sin2x",
+              "\\sin x",
+              "\\sin2x"
+            ],
+            "id": "q_4_2_31_6_s7_i1",
+            "correct_value": "\\sin2x",
+            "allowed_keys": [
+              "\\cos2x",
+              "-\\sin2x",
+              "\\sin x",
+              "\\sin2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجيب."
+          }
+        ],
+        "hint": "الجيب.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_31_6_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب الجواب. الطريقة: أضف \\( c \\). السبب: تكامل غير محدد.",
+        "think": "الجيب.",
+        "html_structure": "F=\\frac12{q_4_2_31_6_s7_i1}+c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق. الطريقة: \\( \\frac12\\times2=1 \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac12\\sin2x\\right)=\\frac12\\cdot{input_1}\\cdot\\cos2x=\\cos2x",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "3"
+            ],
+            "id": "q_4_2_31_6_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 2x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 2x \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_2_31_6_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق. الطريقة: \\( \\frac12\\times2=1 \\). السبب: للتأكد.",
+        "think": "مشتقة \\( 2x \\).",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac12\\sin2x\\right)=\\frac12\\cdot{q_4_2_31_6_s8_i1}\\cdot\\cos2x=\\cos2x"
+      }
+    ]
+  },
+  {
+    "id_number": "q39_p31",
+    "page_number": 31,
+    "question_number": "39",
+    "question_text": "جد قيمة التكامل: \\( \\int(\\sin2x-1)(\\cos^22x+2)dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png"
+    ],
+    "full_model_solution": "\\( -\\frac16\\cos^32x-\\cos2x-\\frac18\\sin4x-\\frac52x+c \\).",
+    "source_file": "رياضيلت 4/page_031_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 31
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_031_diag_1_drawing.png",
+    "title": "جد قيمة التكامل: \\( \\int(\\sin2x-1)(\\cos^22x+2)dx \\)",
+    "number": "39",
+    "model_solution": "\\( -\\frac16\\cos^32x-\\cos2x-\\frac18\\sin4x-\\frac52x+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفتح الأقواس. الطريقة: نضرب كل حد. السبب: لعدم وجود مشتقة داخل القوس.",
+        "equation_template": "\\sin2x\\cos^22x+{input_1}-\\cos^22x-{input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "2\\sin2x",
+            "options": [
+              "\\sin2x",
+              "2\\cos2x",
+              "2\\sin2x",
+              "4\\sin2x"
+            ],
+            "id": "q_4_2_31_7_s1_i1",
+            "correct_value": "2\\sin2x",
+            "allowed_keys": [
+              "\\sin2x",
+              "2\\cos2x",
+              "2\\sin2x",
+              "4\\sin2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الضرب الموزع."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "-2",
+              "1",
+              "2",
+              "4"
+            ],
+            "id": "q_4_2_31_7_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "-2",
+              "1",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "الضرب الموزع."
+          }
+        ],
+        "hint": "الضرب الموزع.",
+        "related_topics": [
+          "فتح الأقواس"
+        ],
+        "step_id": "math345_4_2_31_7_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفتح الأقواس. الطريقة: نضرب كل حد. السبب: لعدم وجود مشتقة داخل القوس.",
+        "think": "الضرب الموزع.",
+        "html_structure": "\\sin2x\\cos^22x+{q_4_2_31_7_s1_i1}-\\cos^22x-{q_4_2_31_7_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نفصل التكامل. الطريقة: أربعة تكاملات. السبب: لكل حد.",
+        "equation_template": "\\int\\sin2x\\cos^22x\\,dx+{input_1}\\int\\sin2x\\,dx-\\int{input_2}\\,dx-\\int2\\,dx",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "-2",
+              "1"
+            ],
+            "id": "q_4_2_31_7_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعاملات."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "\\cos^22x",
+            "options": [
+              "\\cos^22x",
+              "\\sin^22x",
+              "2",
+              "\\cos2x"
+            ],
+            "id": "q_4_2_31_7_s2_i2",
+            "correct_value": "\\cos^22x",
+            "allowed_keys": [
+              "\\cos^22x",
+              "\\sin^22x",
+              "2",
+              "\\cos2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعاملات."
+          }
+        ],
+        "hint": "المعاملات.",
+        "related_topics": [
+          "خطية التكامل"
+        ],
+        "step_id": "math345_4_2_31_7_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نفصل التكامل. الطريقة: أربعة تكاملات. السبب: لكل حد.",
+        "think": "المعاملات.",
+        "html_structure": "\\int\\sin2x\\cos^22x\\,dx+{q_4_2_31_7_s2_i1}\\int\\sin2x\\,dx-\\int{q_4_2_31_7_s2_i2}\\,dx-\\int2\\,dx"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق \\( \\cos2x \\). الطريقة: \\( -2\\sin2x \\). السبب: للتكامل الأول.",
+        "equation_template": "\\frac{d}{dx}\\cos2x={input_1}\\sin2x",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "-2",
+            "options": [
+              "2",
+              "-1",
+              "1",
+              "-2"
+            ],
+            "id": "q_4_2_31_7_s3_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضعف الزاوية."
+          }
+        ],
+        "hint": "ضعف الزاوية.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_2_31_7_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق \\( \\cos2x \\). الطريقة: \\( -2\\sin2x \\). السبب: للتكامل الأول.",
+        "think": "ضعف الزاوية.",
+        "html_structure": "\\frac{d}{dx}\\cos2x={q_4_2_31_7_s3_i1}\\sin2x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نطبق القوة. الطريقة: نقسم على \\( -2 \\). السبب: لتظهر المشتقة.",
+        "equation_template": "-\\frac12\\cdot\\frac{\\cos^{{input_1}}2x}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_4_2_31_7_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 3 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_2_31_7_s4_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 3 \\)."
+          }
+        ],
+        "hint": "الأس \\( 3 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_31_7_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق القوة. الطريقة: نقسم على \\( -2 \\). السبب: لتظهر المشتقة.",
+        "think": "الأس \\( 3 \\).",
+        "html_structure": "-\\frac12\\cdot\\frac{\\cos^{{q_4_2_31_7_s4_i1}}2x}{{q_4_2_31_7_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضرب الكسور. الطريقة: \\( \\frac12\\times\\frac13 \\). السبب: للتبسيط.",
+        "equation_template": "-\\frac12\\cdot\\frac13=-\\frac1{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "6",
+            "options": [
+              "3",
+              "6",
+              "5",
+              "2"
+            ],
+            "id": "q_4_2_31_7_s5_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "3",
+              "6",
+              "5",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times3 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times3 \\).",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_31_7_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضرب الكسور. الطريقة: \\( \\frac12\\times\\frac13 \\). السبب: للتبسيط.",
+        "think": "\\( 2\\times3 \\).",
+        "html_structure": "-\\frac12\\cdot\\frac13=-\\frac1{{q_4_2_31_7_s5_i1}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكامل \\( 2\\sin2x \\). الطريقة: \\( 2\\times(-\\frac12\\cos2x) \\). السبب: قاعدة.",
+        "equation_template": "2\\int\\sin2x\\,dx={input_1}\\cos2x",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "-1",
+            "options": [
+              "1",
+              "-\frac12",
+              "-1",
+              "-2"
+            ],
+            "id": "q_4_2_31_7_s6_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "1",
+              "-\frac12",
+              "-1",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج \\( -\\cos2x \\)."
+          }
+        ],
+        "hint": "الناتج \\( -\\cos2x \\).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_4_2_31_7_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكامل \\( 2\\sin2x \\). الطريقة: \\( 2\\times(-\\frac12\\cos2x) \\). السبب: قاعدة.",
+        "think": "الناتج \\( -\\cos2x \\).",
+        "html_structure": "2\\int\\sin2x\\,dx={q_4_2_31_7_s6_i1}\\cos2x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نخفض قوة \\( \\cos^22x \\). الطريقة: \\( \\frac12+\\frac12\\cos4x \\). السبب: قانون.",
+        "equation_template": "\\cos^22x=\\frac12+\\frac12\\cos{input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "4x",
+            "options": [
+              "8x",
+              "2x",
+              "x",
+              "4x"
+            ],
+            "id": "q_4_2_31_7_s7_i1",
+            "correct_value": "4x",
+            "allowed_keys": [
+              "8x",
+              "2x",
+              "x",
+              "4x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضعف \\( 2x \\)."
+          }
+        ],
+        "hint": "ضعف \\( 2x \\).",
+        "related_topics": [
+          "خفض القوة"
+        ],
+        "step_id": "math345_4_2_31_7_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نخفض قوة \\( \\cos^22x \\). الطريقة: \\( \\frac12+\\frac12\\cos4x \\). السبب: قانون.",
+        "think": "ضعف \\( 2x \\).",
+        "html_structure": "\\cos^22x=\\frac12+\\frac12\\cos{q_4_2_31_7_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكامل. الطريقة: \\( \\frac12x+\\frac18\\sin4x \\). السبب: اقسم على \\( 4 \\).",
+        "equation_template": "\\int\\cos^22x\\,dx=\\frac12x+\\frac1{{input_1}}\\sin4x",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "8",
+            "options": [
+              "2",
+              "8",
+              "4",
+              "16"
+            ],
+            "id": "q_4_2_31_7_s8_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "2",
+              "8",
+              "4",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times4 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times4 \\).",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_4_2_31_7_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكامل. الطريقة: \\( \\frac12x+\\frac18\\sin4x \\). السبب: اقسم على \\( 4 \\).",
+        "think": "\\( 2\\times4 \\).",
+        "html_structure": "\\int\\cos^22x\\,dx=\\frac12x+\\frac1{{q_4_2_31_7_s8_i1}}\\sin4x"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نكامل الثابت. الطريقة: \\( 2x \\). السبب: قاعدة.",
+        "equation_template": "\\int2\\,dx={input_1}x",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "0",
+              "4",
+              "2"
+            ],
+            "id": "q_4_2_31_7_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "0",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت."
+          }
+        ],
+        "hint": "الثابت.",
+        "related_topics": [
+          "التكامل"
+        ],
+        "step_id": "math345_4_2_31_7_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكامل الثابت. الطريقة: \\( 2x \\). السبب: قاعدة.",
+        "think": "الثابت.",
+        "html_structure": "\\int2\\,dx={q_4_2_31_7_s9_i1}x"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نجمع. الطريقة: نجمع \\( \\frac12+2=\\frac52 \\). السبب: للنهاية.",
+        "equation_template": "F=-\\frac16\\cos^32x-\\cos2x-\\frac18\\sin4x-\\frac{{input_1}}{{input_2}}x+c",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_31_7_s10_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac52 \\)."
+          },
+          {
+            "input_id": "step10_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "id": "q_4_2_31_7_s10_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac52 \\)."
+          }
+        ],
+        "hint": "\\( \\frac52 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_31_7_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نجمع. الطريقة: نجمع \\( \\frac12+2=\\frac52 \\). السبب: للنهاية.",
+        "think": "\\( \\frac52 \\).",
+        "html_structure": "F=-\\frac16\\cos^32x-\\cos2x-\\frac18\\sin4x-\\frac{{q_4_2_31_7_s10_i1}}{{q_4_2_31_7_s10_i2}}x+c"
+      }
+    ]
+  }
+]

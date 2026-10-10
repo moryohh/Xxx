@@ -1,0 +1,1052 @@
+[
+  {
+    "id_number": "q16_p56",
+    "page_number": 56,
+    "question_number": "16",
+    "question_text": "جد المساحة المحددة بالدالتين \\( y=\\frac12x \\) و \\( y=\\sqrt{x-1} \\) وعلى الفترة \\( [2,5] \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_056_diag_q16_drawing_hndsy.png"
+    ],
+    "full_model_solution": "التربيع يعطي \\( (x-2)^2=0 \\) فالتماس عند \\( x=2 \\). \\( A=\\int_2^5\\left(\\frac12x-\\sqrt{x-1}\\right)dx=\\left[\\frac{x^2}{4}-\\frac23(x-1)^{3/2}\\right]_2^5=\\frac{25}{4}-\\frac{17}{3}=\\frac{7}{12} \\) وحدة مربعة.",
+    "source_file": "رياضيلت 4/page_056_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 56
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_056_diag_q16_drawing_hndsy.png",
+    "title": "جد المساحة المحددة بالدالتين \\( y=\\frac12x \\) و \\( y=\\sqrt{x-1} \\) وعلى الفترة \\( [2,5] \\).",
+    "number": "16",
+    "model_solution": "التربيع يعطي \\( (x-2)^2=0 \\) فالتماس عند \\( x=2 \\). \\( A=\\int_2^5\\left(\\frac12x-\\sqrt{x-1}\\right)dx=\\left[\\frac{x^2}{4}-\\frac23(x-1)^{3/2}\\right]_2^5=\\frac{25}{4}-\\frac{17}{3}=\\frac{7}{12} \\) وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد نقاط تقاطع الدالتين. الطريقة: نساوي \\( \\frac12x=\\sqrt{x-1} \\) ثم نربع الطرفين لنتخلص من الجذر: مربع \\( \\frac12x \\) هو \\( \\frac14x^2 \\). السبب: لأن التربيع يزيل الجذر التربيعي.",
+        "equation_template": "\\frac14x^2={input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "x-1",
+            "options": [
+              "x+1",
+              "x-1",
+              "\\sqrt{x-1}",
+              "x^2-1"
+            ],
+            "id": "q_4_4_56_1_s1_i1",
+            "correct_value": "x-1",
+            "allowed_keys": [
+              "x+1",
+              "x-1",
+              "\\sqrt{x-1}",
+              "x^2-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مربع الجذر يعطي ما داخله \\( x-1 \\)."
+          }
+        ],
+        "hint": "مربع الجذر يعطي ما داخله \\( x-1 \\).",
+        "related_topics": [
+          "نقاط التقاطع"
+        ],
+        "step_id": "math345_4_4_56_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد نقاط تقاطع الدالتين. الطريقة: نساوي \\( \\frac12x=\\sqrt{x-1} \\) ثم نربع الطرفين لنتخلص من الجذر: مربع \\( \\frac12x \\) هو \\( \\frac14x^2 \\). السبب: لأن التربيع يزيل الجذر التربيعي.",
+        "think": "مربع الجذر يعطي ما داخله \\( x-1 \\).",
+        "html_structure": "\\frac14x^2={q_4_4_56_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتخلص من الكسر. الطريقة: نضرب طرفي المعادلة في \\( 4 \\). السبب: لنحصل على معادلة بمعاملات صحيحة.",
+        "equation_template": "x^2={input_1}(x-1)=4x-{input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "4",
+            "options": [
+              "1",
+              "8",
+              "2",
+              "4"
+            ],
+            "id": "q_4_4_56_1_s2_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "1",
+              "8",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( \\frac14x^2 \\) في \\( 4 \\) و \\( (x-1) \\) في \\( 4 \\)."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "4",
+            "options": [
+              "1",
+              "8",
+              "4",
+              "2"
+            ],
+            "id": "q_4_4_56_1_s2_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "1",
+              "8",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( \\frac14x^2 \\) في \\( 4 \\) و \\( (x-1) \\) في \\( 4 \\)."
+          }
+        ],
+        "hint": "اضرب \\( \\frac14x^2 \\) في \\( 4 \\) و \\( (x-1) \\) في \\( 4 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_4_4_56_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتخلص من الكسر. الطريقة: نضرب طرفي المعادلة في \\( 4 \\). السبب: لنحصل على معادلة بمعاملات صحيحة.",
+        "think": "اضرب \\( \\frac14x^2 \\) في \\( 4 \\) و \\( (x-1) \\) في \\( 4 \\).",
+        "html_structure": "x^2={q_4_4_56_1_s2_i1}(x-1)=4x-{q_4_4_56_1_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحلل المعادلة التربيعية. الطريقة: ننقل كل الحدود لطرف واحد فنحصل على \\( x^2-4x+4=0 \\) وهو مربع كامل. السبب: لأن \\( 2\\times2=4 \\) و \\( 2+2=4 \\).",
+        "equation_template": "x^2-4x+4=0\\Rightarrow(x-{input_1})^2=0",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_4_56_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الذي ضعفه \\( 4 \\) ومربعه \\( 4 \\)."
+          }
+        ],
+        "hint": "الرقم الذي ضعفه \\( 4 \\) ومربعه \\( 4 \\).",
+        "related_topics": [
+          "المربع الكامل"
+        ],
+        "step_id": "math345_4_4_56_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحلل المعادلة التربيعية. الطريقة: ننقل كل الحدود لطرف واحد فنحصل على \\( x^2-4x+4=0 \\) وهو مربع كامل. السبب: لأن \\( 2\\times2=4 \\) و \\( 2+2=4 \\).",
+        "think": "الرقم الذي ضعفه \\( 4 \\) ومربعه \\( 4 \\).",
+        "html_structure": "x^2-4x+4=0\\Rightarrow(x-{q_4_4_56_1_s3_i1})^2=0"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحدد أي الدالتين أعلى في الفترة. الطريقة: نختار نقطة داخل الفترة \\( x=3 \\): قيمة \\( \\frac12x \\) هي \\( \\frac32 \\) و \\( \\sqrt{2}\\approx1.41 \\). السبب: لأن الدالة العليا هي التي نطرح منها السفلى حتى تكون الناتج موجباً.",
+        "equation_template": "\\frac12(3)={input_1},\\quad\\sqrt{3-1}\\approx1.41",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1.5",
+            "options": [
+              "1",
+              "1.5",
+              "0.5",
+              "3"
+            ],
+            "id": "q_4_4_56_1_s4_i1",
+            "correct_value": "1.5",
+            "allowed_keys": [
+              "1",
+              "1.5",
+              "0.5",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 3 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 3 \\) على \\( 2 \\).",
+        "related_topics": [
+          "الدالة العليا"
+        ],
+        "step_id": "math345_4_4_56_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحدد أي الدالتين أعلى في الفترة. الطريقة: نختار نقطة داخل الفترة \\( x=3 \\): قيمة \\( \\frac12x \\) هي \\( \\frac32 \\) و \\( \\sqrt{2}\\approx1.41 \\). السبب: لأن الدالة العليا هي التي نطرح منها السفلى حتى تكون الناتج موجباً.",
+        "think": "اقسم \\( 3 \\) على \\( 2 \\).",
+        "html_structure": "\\frac12(3)={q_4_4_56_1_s4_i1},\\quad\\sqrt{3-1}\\approx1.41"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب تكامل المساحة. الطريقة: المساحة = تكامل (العليا ناقص السفلى) من \\( 2 \\) إلى \\( 5 \\). المنحنيان يتماسان عند \\( x=2 \\) فقط. السبب: فلا نحتاج إلى تجزئة الفترة.",
+        "equation_template": "A=\\int_2^5\\left(\\frac12x-{input_1}\\right)dx",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\sqrt{x-1}",
+            "options": [
+              "x-1",
+              "\\frac12x",
+              "\\sqrt{x}",
+              "\\sqrt{x-1}"
+            ],
+            "id": "q_4_4_56_1_s5_i1",
+            "correct_value": "\\sqrt{x-1}",
+            "allowed_keys": [
+              "x-1",
+              "\\frac12x",
+              "\\sqrt{x}",
+              "\\sqrt{x-1}"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة السفلى هي الجذر."
+          }
+        ],
+        "hint": "الدالة السفلى هي الجذر.",
+        "related_topics": [
+          "المساحة بين منحنيين"
+        ],
+        "step_id": "math345_4_4_56_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب تكامل المساحة. الطريقة: المساحة = تكامل (العليا ناقص السفلى) من \\( 2 \\) إلى \\( 5 \\). المنحنيان يتماسان عند \\( x=2 \\) فقط. السبب: فلا نحتاج إلى تجزئة الفترة.",
+        "think": "الدالة السفلى هي الجذر.",
+        "html_structure": "A=\\int_2^5\\left(\\frac12x-{q_4_4_56_1_s5_i1}\\right)dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحول الجذر إلى أس. الطريقة: \\( \\sqrt{x-1}=(x-1)^{1/2} \\). السبب: لنطبق قاعدة القوة.",
+        "equation_template": "\\sqrt{x-1}=(x-1)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "\\frac12",
+            "options": [
+              "2",
+              "1",
+              "\\frac12",
+              "-\\frac12"
+            ],
+            "id": "q_4_4_56_1_s6_i1",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "2",
+              "1",
+              "\\frac12",
+              "-\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "أس الجذر التربيعي."
+          }
+        ],
+        "hint": "أس الجذر التربيعي.",
+        "related_topics": [
+          "الأسس الكسرية"
+        ],
+        "step_id": "math345_4_4_56_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحول الجذر إلى أس. الطريقة: \\( \\sqrt{x-1}=(x-1)^{1/2} \\). السبب: لنطبق قاعدة القوة.",
+        "think": "أس الجذر التربيعي.",
+        "html_structure": "\\sqrt{x-1}=(x-1)^{{q_4_4_56_1_s6_i1}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكامل الحد الجذري. الطريقة: نزيد الأس بواحد ونقسم عليه (مشتقة \\( x-1 \\) هي \\( 1 \\)). السبب: قاعدة القوة.",
+        "equation_template": "\\int(x-1)^{1/2}dx=\\frac{(x-1)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\frac32",
+            "options": [
+              "2",
+              "\\frac32",
+              "\\frac12",
+              "3"
+            ],
+            "id": "q_4_4_56_1_s7_i1",
+            "correct_value": "\\frac32",
+            "allowed_keys": [
+              "2",
+              "\\frac32",
+              "\\frac12",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac12+1=\\frac32 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "\\frac32",
+            "options": [
+              "\\frac32",
+              "2",
+              "3",
+              "\\frac12"
+            ],
+            "id": "q_4_4_56_1_s7_i2",
+            "correct_value": "\\frac32",
+            "allowed_keys": [
+              "\\frac32",
+              "2",
+              "3",
+              "\\frac12"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac12+1=\\frac32 \\)."
+          }
+        ],
+        "hint": "\\( \\frac12+1=\\frac32 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_4_56_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكامل الحد الجذري. الطريقة: نزيد الأس بواحد ونقسم عليه (مشتقة \\( x-1 \\) هي \\( 1 \\)). السبب: قاعدة القوة.",
+        "think": "\\( \\frac12+1=\\frac32 \\).",
+        "html_structure": "\\int(x-1)^{1/2}dx=\\frac{(x-1)^{{q_4_4_56_1_s7_i1}}}{{q_4_4_56_1_s7_i2}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الدالة الأصلية كاملة. الطريقة: \\( \\int\\frac12x\\,dx=\\frac{x^2}{4} \\) والقسمة على \\( \\frac32 \\) تعني الضرب في \\( \\frac23 \\). السبب: لنحصل على \\( F(x) \\).",
+        "equation_template": "F(x)=\\frac{x^2}{{input_1}}-\\frac23(x-1)^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_4_56_1_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac12\\times\\frac{x^2}{2} \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "\\frac32",
+            "options": [
+              "\\frac12",
+              "3",
+              "2",
+              "\\frac32"
+            ],
+            "id": "q_4_4_56_1_s8_i2",
+            "correct_value": "\\frac32",
+            "allowed_keys": [
+              "\\frac12",
+              "3",
+              "2",
+              "\\frac32"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac12\\times\\frac{x^2}{2} \\)."
+          }
+        ],
+        "hint": "\\( \\frac12\\times\\frac{x^2}{2} \\).",
+        "related_topics": [
+          "الدالة الأصلية"
+        ],
+        "step_id": "math345_4_4_56_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الدالة الأصلية كاملة. الطريقة: \\( \\int\\frac12x\\,dx=\\frac{x^2}{4} \\) والقسمة على \\( \\frac32 \\) تعني الضرب في \\( \\frac23 \\). السبب: لنحصل على \\( F(x) \\).",
+        "think": "\\( \\frac12\\times\\frac{x^2}{2} \\).",
+        "html_structure": "F(x)=\\frac{x^2}{{q_4_4_56_1_s8_i1}}-\\frac23(x-1)^{{q_4_4_56_1_s8_i2}}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( F(5) \\). الطريقة: \\( (5-1)^{3/2}=4^{3/2}=8 \\). السبب: \\( \\sqrt4=2 \\) ثم \\( 2^3=8 \\).",
+        "equation_template": "F(5)=\\frac{25}{4}-\\frac23\\times{input_1}=\\frac{25}{4}-\\frac{16}{3}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "6",
+              "4",
+              "16"
+            ],
+            "id": "q_4_4_56_1_s9_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "6",
+              "4",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4^{3/2}=(\\sqrt4)^3 \\)."
+          }
+        ],
+        "hint": "\\( 4^{3/2}=(\\sqrt4)^3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_56_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( F(5) \\). الطريقة: \\( (5-1)^{3/2}=4^{3/2}=8 \\). السبب: \\( \\sqrt4=2 \\) ثم \\( 2^3=8 \\).",
+        "think": "\\( 4^{3/2}=(\\sqrt4)^3 \\).",
+        "html_structure": "F(5)=\\frac{25}{4}-\\frac23\\times{q_4_4_56_1_s9_i1}=\\frac{25}{4}-\\frac{16}{3}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحسب \\( F(2) \\). الطريقة: \\( \\frac{2^2}{4}=1 \\) و \\( (2-1)^{3/2}=1 \\). السبب: للحد السفلي.",
+        "equation_template": "F(2)=1-\\frac{{input_1}}{3}=\\frac13",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "3",
+              "4",
+              "2"
+            ],
+            "id": "q_4_4_56_1_s10_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "3",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac23\\times1 \\)."
+          }
+        ],
+        "hint": "\\( \\frac23\\times1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_56_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحسب \\( F(2) \\). الطريقة: \\( \\frac{2^2}{4}=1 \\) و \\( (2-1)^{3/2}=1 \\). السبب: للحد السفلي.",
+        "think": "\\( \\frac23\\times1 \\).",
+        "html_structure": "F(2)=1-\\frac{{q_4_4_56_1_s10_i1}}{3}=\\frac13"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نطرح \\( F(2) \\) من \\( F(5) \\). الطريقة: نجمع الكسور ذات المقام \\( 3 \\): \\( \\frac{16}{3}+\\frac13 \\). السبب: لنبسط.",
+        "equation_template": "A=\\frac{25}{4}-\\frac{16}{3}-\\frac13=\\frac{25}{4}-\\frac{{input_1}}{3}",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "17",
+            "options": [
+              "17",
+              "15",
+              "19",
+              "16"
+            ],
+            "id": "q_4_4_56_1_s11_i1",
+            "correct_value": "17",
+            "allowed_keys": [
+              "17",
+              "15",
+              "19",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 16+1 \\)."
+          }
+        ],
+        "hint": "\\( 16+1 \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_4_56_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نطرح \\( F(2) \\) من \\( F(5) \\). الطريقة: نجمع الكسور ذات المقام \\( 3 \\): \\( \\frac{16}{3}+\\frac13 \\). السبب: لنبسط.",
+        "think": "\\( 16+1 \\).",
+        "html_structure": "A=\\frac{25}{4}-\\frac{16}{3}-\\frac13=\\frac{25}{4}-\\frac{{q_4_4_56_1_s11_i1}}{3}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نوحد المقامات. الطريقة: المقام المشترك \\( 12 \\): \\( \\frac{25}{4}=\\frac{75}{12} \\) و \\( \\frac{17}{3}=\\frac{68}{12} \\). السبب: لنطرح.",
+        "equation_template": "\\frac{25}{4}-\\frac{17}{3}=\\frac{{input_1}-{input_2}}{12}",
+        "inputs": [
+          {
+            "input_id": "step12_in1",
+            "correct_answer": "75",
+            "options": [
+              "25",
+              "50",
+              "100",
+              "75"
+            ],
+            "id": "q_4_4_56_1_s12_i1",
+            "correct_value": "75",
+            "allowed_keys": [
+              "25",
+              "50",
+              "100",
+              "75"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 25\\times3 \\) و \\( 17\\times4 \\)."
+          },
+          {
+            "input_id": "step12_in2",
+            "correct_answer": "68",
+            "options": [
+              "51",
+              "34",
+              "68",
+              "17"
+            ],
+            "id": "q_4_4_56_1_s12_i2",
+            "correct_value": "68",
+            "allowed_keys": [
+              "51",
+              "34",
+              "68",
+              "17"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( 25\\times3 \\) و \\( 17\\times4 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 25\\times3 \\) و \\( 17\\times4 \\).",
+        "related_topics": [
+          "طرح الكسور"
+        ],
+        "step_id": "math345_4_4_56_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نوحد المقامات. الطريقة: المقام المشترك \\( 12 \\): \\( \\frac{25}{4}=\\frac{75}{12} \\) و \\( \\frac{17}{3}=\\frac{68}{12} \\). السبب: لنطرح.",
+        "think": "اضرب \\( 25\\times3 \\) و \\( 17\\times4 \\).",
+        "html_structure": "\\frac{25}{4}-\\frac{17}{3}=\\frac{{q_4_4_56_1_s12_i1}-{q_4_4_56_1_s12_i2}}{12}"
+      },
+      {
+        "step_number": 13,
+        "step_explanation": "الهدف: نحسب الناتج النهائي. الطريقة: \\( 75-68 \\). السبب: للمساحة.",
+        "equation_template": "\\frac{75-68}{12}=\\frac{{input_1}}{12}",
+        "inputs": [
+          {
+            "input_id": "step13_in1",
+            "correct_answer": "7",
+            "options": [
+              "7",
+              "8",
+              "143",
+              "6"
+            ],
+            "id": "q_4_4_56_1_s13_i1",
+            "correct_value": "7",
+            "allowed_keys": [
+              "7",
+              "8",
+              "143",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح."
+          }
+        ],
+        "hint": "اطرح.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_4_56_1_step_13",
+        "title": "الخطوة 13",
+        "explanation": "الهدف: نحسب الناتج النهائي. الطريقة: \\( 75-68 \\). السبب: للمساحة.",
+        "think": "اطرح.",
+        "html_structure": "\\frac{75-68}{12}=\\frac{{q_4_4_56_1_s13_i1}}{12}"
+      }
+    ]
+  },
+  {
+    "id_number": "q17_p56",
+    "page_number": 56,
+    "question_number": "17",
+    "question_text": "جد المساحة المحددة بالدالتين \\( g(x)=\\sin x\\cos x \\) و \\( f(x)=\\sin x \\) حيث \\( x\\in[0,2\\pi] \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_056_diag_q17_drawing_hndsy.png"
+    ],
+    "full_model_solution": "\\( \\sin x(\\cos x-1)=0 \\) فالنقاط \\( 0,\\pi,2\\pi \\). \\( A_1=2 \\) و \\( A_2=-2 \\) فالمساحة \\( A=4 \\) وحدات مربعة.",
+    "source_file": "رياضيلت 4/page_056_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 56
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_056_diag_q17_drawing_hndsy.png",
+    "title": "جد المساحة المحددة بالدالتين \\( g(x)=\\sin x\\cos x \\) و \\( f(x)=\\sin x \\) حيث \\( x\\in[0,2\\pi] \\).",
+    "number": "17",
+    "model_solution": "\\( \\sin x(\\cos x-1)=0 \\) فالنقاط \\( 0,\\pi,2\\pi \\). \\( A_1=2 \\) و \\( A_2=-2 \\) فالمساحة \\( A=4 \\) وحدات مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نساوي الدالتين. الطريقة: ننقل \\( \\sin x \\) للطرف الأيسر ونخرجه عاملاً مشتركاً. السبب: لنجد نقاط التقاطع.",
+        "equation_template": "\\sin x(\\cos x-{input_1})=0",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_4_56_2_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\sin x\\cos x-\\sin x=\\sin x(\\cos x-1) \\)."
+          }
+        ],
+        "hint": "\\( \\sin x\\cos x-\\sin x=\\sin x(\\cos x-1) \\).",
+        "related_topics": [
+          "نقاط التقاطع"
+        ],
+        "step_id": "math345_4_4_56_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نساوي الدالتين. الطريقة: ننقل \\( \\sin x \\) للطرف الأيسر ونخرجه عاملاً مشتركاً. السبب: لنجد نقاط التقاطع.",
+        "think": "\\( \\sin x\\cos x-\\sin x=\\sin x(\\cos x-1) \\).",
+        "html_structure": "\\sin x(\\cos x-{q_4_4_56_2_s1_i1})=0"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحل العامل الأول. الطريقة: \\( \\sin x=0 \\) في \\( [0,2\\pi] \\). السبب: الجيب صفر عند أضعاف \\( \\pi \\).",
+        "equation_template": "\\sin x=0\\Rightarrow x=0,\\;{input_1},\\;2\\pi",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\pi",
+            "options": [
+              "\\frac\\pi2",
+              "\\pi",
+              "3\\pi",
+              "\\frac{3\\pi}{2}"
+            ],
+            "id": "q_4_4_56_2_s2_i1",
+            "correct_value": "\\pi",
+            "allowed_keys": [
+              "\\frac\\pi2",
+              "\\pi",
+              "3\\pi",
+              "\\frac{3\\pi}{2}"
+            ],
+            "label": "القيمة 1",
+            "hint": "الزاوية بين \\( 0 \\) و \\( 2\\pi \\)."
+          }
+        ],
+        "hint": "الزاوية بين \\( 0 \\) و \\( 2\\pi \\).",
+        "related_topics": [
+          "المعادلات المثلثية"
+        ],
+        "step_id": "math345_4_4_56_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحل العامل الأول. الطريقة: \\( \\sin x=0 \\) في \\( [0,2\\pi] \\). السبب: الجيب صفر عند أضعاف \\( \\pi \\).",
+        "think": "الزاوية بين \\( 0 \\) و \\( 2\\pi \\).",
+        "html_structure": "\\sin x=0\\Rightarrow x=0,\\;{q_4_4_56_2_s2_i1},\\;2\\pi"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحل العامل الثاني. الطريقة: \\( \\cos x=1 \\) عند بداية الدورة ونهايتها. السبب: جيب التمام يساوي \\( 1 \\) عند \\( 0 \\) و \\( 2\\pi \\).",
+        "equation_template": "\\cos x=1\\Rightarrow x=0,\\;{input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2\\pi",
+            "options": [
+              "2\\pi",
+              "\\pi",
+              "\\frac\\pi2",
+              "3\\pi"
+            ],
+            "id": "q_4_4_56_2_s3_i1",
+            "correct_value": "2\\pi",
+            "allowed_keys": [
+              "2\\pi",
+              "\\pi",
+              "\\frac\\pi2",
+              "3\\pi"
+            ],
+            "label": "القيمة 1",
+            "hint": "زاوية الدورة الكاملة."
+          }
+        ],
+        "hint": "زاوية الدورة الكاملة.",
+        "related_topics": [
+          "المعادلات المثلثية"
+        ],
+        "step_id": "math345_4_4_56_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحل العامل الثاني. الطريقة: \\( \\cos x=1 \\) عند بداية الدورة ونهايتها. السبب: جيب التمام يساوي \\( 1 \\) عند \\( 0 \\) و \\( 2\\pi \\).",
+        "think": "زاوية الدورة الكاملة.",
+        "html_structure": "\\cos x=1\\Rightarrow x=0,\\;{q_4_4_56_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نرتب الحدود. الطريقة: التقاطعات \\( 0,\\pi,2\\pi \\) فنجزئ الفترة إلى جزأين. السبب: لأن الإشارة قد تتغير عند \\( \\pi \\).",
+        "equation_template": "a=0,\\;b={input_1},\\;c={input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "\\pi",
+            "options": [
+              "\\frac\\pi2",
+              "2\\pi",
+              "3\\pi",
+              "\\pi"
+            ],
+            "id": "q_4_4_56_2_s4_i1",
+            "correct_value": "\\pi",
+            "allowed_keys": [
+              "\\frac\\pi2",
+              "2\\pi",
+              "3\\pi",
+              "\\pi"
+            ],
+            "label": "القيمة 1",
+            "hint": "الوسط \\( \\pi \\) والأكبر \\( 2\\pi \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "2\\pi",
+            "options": [
+              "2\\pi",
+              "3\\pi",
+              "\\pi",
+              "\\frac\\pi2"
+            ],
+            "id": "q_4_4_56_2_s4_i2",
+            "correct_value": "2\\pi",
+            "allowed_keys": [
+              "2\\pi",
+              "3\\pi",
+              "\\pi",
+              "\\frac\\pi2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الوسط \\( \\pi \\) والأكبر \\( 2\\pi \\)."
+          }
+        ],
+        "hint": "الوسط \\( \\pi \\) والأكبر \\( 2\\pi \\).",
+        "related_topics": [
+          "تجزئة الفترة"
+        ],
+        "step_id": "math345_4_4_56_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نرتب الحدود. الطريقة: التقاطعات \\( 0,\\pi,2\\pi \\) فنجزئ الفترة إلى جزأين. السبب: لأن الإشارة قد تتغير عند \\( \\pi \\).",
+        "think": "الوسط \\( \\pi \\) والأكبر \\( 2\\pi \\).",
+        "html_structure": "a=0,\\;b={q_4_4_56_2_s4_i1},\\;c={q_4_4_56_2_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحدد الدالة العليا. الطريقة: نأخذ \\( x=\\frac\\pi2 \\): \\( \\sin\\frac\\pi2=1 \\) و \\( \\sin\\frac\\pi2\\cos\\frac\\pi2 \\) يساوي صفراً. السبب: لنعرف ترتيب الدالتين.",
+        "equation_template": "f\\left(\\tfrac\\pi2\\right)=1>g\\left(\\tfrac\\pi2\\right)={input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "\\frac12"
+            ],
+            "id": "q_4_4_56_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "\\frac12"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\cos\\frac\\pi2=0 \\)."
+          }
+        ],
+        "hint": "\\( \\cos\\frac\\pi2=0 \\).",
+        "related_topics": [
+          "الدالة العليا"
+        ],
+        "step_id": "math345_4_4_56_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحدد الدالة العليا. الطريقة: نأخذ \\( x=\\frac\\pi2 \\): \\( \\sin\\frac\\pi2=1 \\) و \\( \\sin\\frac\\pi2\\cos\\frac\\pi2 \\) يساوي صفراً. السبب: لنعرف ترتيب الدالتين.",
+        "think": "\\( \\cos\\frac\\pi2=0 \\).",
+        "html_structure": "f\\left(\\tfrac\\pi2\\right)=1>g\\left(\\tfrac\\pi2\\right)={q_4_4_56_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب دالة الفرق. الطريقة: \\( h(x)=f(x)-g(x) \\). السبب: لنكامل فرقاً واحداً.",
+        "equation_template": "h(x)=\\sin x-{input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "\\sin x\\cos x",
+            "options": [
+              "\\sin^2x",
+              "\\sin x",
+              "\\cos x",
+              "\\sin x\\cos x"
+            ],
+            "id": "q_4_4_56_2_s6_i1",
+            "correct_value": "\\sin x\\cos x",
+            "allowed_keys": [
+              "\\sin^2x",
+              "\\sin x",
+              "\\cos x",
+              "\\sin x\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة \\( g \\)."
+          }
+        ],
+        "hint": "الدالة \\( g \\).",
+        "related_topics": [
+          "المساحة بين منحنيين"
+        ],
+        "step_id": "math345_4_4_56_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب دالة الفرق. الطريقة: \\( h(x)=f(x)-g(x) \\). السبب: لنكامل فرقاً واحداً.",
+        "think": "الدالة \\( g \\).",
+        "html_structure": "h(x)=\\sin x-{q_4_4_56_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int\\sin x\\,dx=-\\cos x \\) و \\( \\int\\sin x\\cos x\\,dx=\\frac{\\sin^2x}{2} \\). السبب: قاعدة القوة بمشتقة \\( \\sin x \\) هي \\( \\cos x \\).",
+        "equation_template": "\\int\\sin x\\cos x\\,dx=\\frac{\\sin^{{input_1}}x}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_4_56_2_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "3"
+            ],
+            "id": "q_4_4_56_2_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_4_56_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجد الدالة الأصلية. الطريقة: \\( \\int\\sin x\\,dx=-\\cos x \\) و \\( \\int\\sin x\\cos x\\,dx=\\frac{\\sin^2x}{2} \\). السبب: قاعدة القوة بمشتقة \\( \\sin x \\) هي \\( \\cos x \\).",
+        "think": "الأس \\( 1+1=2 \\).",
+        "html_structure": "\\int\\sin x\\cos x\\,dx=\\frac{\\sin^{{q_4_4_56_2_s7_i1}}x}{{q_4_4_56_2_s7_i2}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب قيم \\( H(x)=-\\cos x-\\frac{\\sin^2x}{2} \\). الطريقة: عند \\( 0 \\): \\( -1-0 \\). عند \\( \\pi \\): \\( 1-0 \\). عند \\( 2\\pi \\): \\( -1-0 \\). السبب: لنحسب كل مساحة.",
+        "equation_template": "H(0)=-1,\\;H(\\pi)={input_1},\\;H(2\\pi)={input_2}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_56_2_s8_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\cos\\pi=-1 \\) و \\( \\cos2\\pi=1 \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "-1",
+            "options": [
+              "-2",
+              "0",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_4_56_2_s8_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-2",
+              "0",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\cos\\pi=-1 \\) و \\( \\cos2\\pi=1 \\)."
+          }
+        ],
+        "hint": "\\( \\cos\\pi=-1 \\) و \\( \\cos2\\pi=1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_4_56_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب قيم \\( H(x)=-\\cos x-\\frac{\\sin^2x}{2} \\). الطريقة: عند \\( 0 \\): \\( -1-0 \\). عند \\( \\pi \\): \\( 1-0 \\). عند \\( 2\\pi \\): \\( -1-0 \\). السبب: لنحسب كل مساحة.",
+        "think": "\\( \\cos\\pi=-1 \\) و \\( \\cos2\\pi=1 \\).",
+        "html_structure": "H(0)=-1,\\;H(\\pi)={q_4_4_56_2_s8_i1},\\;H(2\\pi)={q_4_4_56_2_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( A_1 \\). الطريقة: \\( H(\\pi)-H(0)=1-(-1) \\). السبب: العليا ناقص السفلى.",
+        "equation_template": "A_1=1-(-1)={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "0"
+            ],
+            "id": "q_4_4_56_2_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مع السالب يعطي موجباً."
+          }
+        ],
+        "hint": "السالب مع السالب يعطي موجباً.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_56_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( A_1 \\). الطريقة: \\( H(\\pi)-H(0)=1-(-1) \\). السبب: العليا ناقص السفلى.",
+        "think": "السالب مع السالب يعطي موجباً.",
+        "html_structure": "A_1=1-(-1)={q_4_4_56_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحسب \\( A_2 \\). الطريقة: \\( H(2\\pi)-H(\\pi)=-1-1 \\). السبب: الناتج سالب لأن الدالة العليا انقلبت.",
+        "equation_template": "A_2=-1-1={input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "-2",
+            "options": [
+              "-1",
+              "-2",
+              "2",
+              "0"
+            ],
+            "id": "q_4_4_56_2_s10_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-1",
+              "-2",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1-1 \\)."
+          }
+        ],
+        "hint": "\\( -1-1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_56_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحسب \\( A_2 \\). الطريقة: \\( H(2\\pi)-H(\\pi)=-1-1 \\). السبب: الناتج سالب لأن الدالة العليا انقلبت.",
+        "think": "\\( -1-1 \\).",
+        "html_structure": "A_2=-1-1={q_4_4_56_2_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجمع المساحتين. الطريقة: \\( |2|+|-2| \\). السبب: المساحة موجبة.",
+        "equation_template": "A=2+|-2|={input_1}",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "0",
+              "4",
+              "-4"
+            ],
+            "id": "q_4_4_56_2_s11_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "0",
+              "4",
+              "-4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2+2 \\)."
+          }
+        ],
+        "hint": "\\( 2+2 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_4_56_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجمع المساحتين. الطريقة: \\( |2|+|-2| \\). السبب: المساحة موجبة.",
+        "think": "\\( 2+2 \\).",
+        "html_structure": "A=2+|-2|={q_4_4_56_2_s11_i1}"
+      }
+    ]
+  }
+]

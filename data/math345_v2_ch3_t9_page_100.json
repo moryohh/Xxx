@@ -1,0 +1,1582 @@
+[
+  {
+    "id_number": "q1_sym_p100",
+    "page_number": 100,
+    "question_number": "مثال 1",
+    "question_text": "تحقق من تناظر الدالة \\( f(x) = x^2 \\) حول محور الصادات.",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "رسم الصفحة 100 كاملاً",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "f(-x)=(-x)^2=x^2=f(x) فالدالة متناظرة حول محور الصادات.",
+    "source_file": "رياضيات 3/page_100_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 100,
+      "pdf_page_number": 102,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png",
+    "title": "تحقق من تناظر الدالة \\( f(x) = x^2 \\) حول محور الصادات.",
+    "number": "مثال 1",
+    "model_solution": "f(-x)=(-x)^2=x^2=f(x) فالدالة متناظرة حول محور الصادات.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نطبق شرط التناظر حول محور الصادات. الطريقة: نستبدل كل \\( x \\) في الدالة بـ \\( -x \\). السبب: لأن التناظر حول محور الصادات يعني أن النقطتين \\( x \\) و \\( -x \\) لهما نفس قيمة الدالة.",
+        "equation_template": "f({input_1}) = ({input_2})^2",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step1_1",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "id": "q_3_9_100_1_s1_i1",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -x \\) داخل القوس وبجانب \\( f \\)."
+          },
+          {
+            "input_id": "q1_sym_step1_2",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "id": "q_3_9_100_1_s1_i2",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -x \\) داخل القوس وبجانب \\( f \\)."
+          }
+        ],
+        "hint": "ضع \\( -x \\) داخل القوس وبجانب \\( f \\).",
+        "related_topics": [
+          "التناظر حول محور الصادات"
+        ],
+        "step_id": "math345_3_9_100_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نطبق شرط التناظر حول محور الصادات. الطريقة: نستبدل كل \\( x \\) في الدالة بـ \\( -x \\). السبب: لأن التناظر حول محور الصادات يعني أن النقطتين \\( x \\) و \\( -x \\) لهما نفس قيمة الدالة.",
+        "think": "ضع \\( -x \\) داخل القوس وبجانب \\( f \\).",
+        "html_structure": "f({q_3_9_100_1_s1_i1}) = ({q_3_9_100_1_s1_i2})^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحسب مربع \\( -x \\). الطريقة: \\( (-x)(-x) \\): سالب في سالب يعطي موجباً. السبب: لأن القوة الزوجية تلغي الإشارة السالبة.",
+        "equation_template": "(-x)^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step2_1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "-x^2",
+              "x",
+              "-x"
+            ],
+            "id": "q_3_9_100_1_s2_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "-x^2",
+              "x",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( (-x) \\times (-x) \\)."
+          }
+        ],
+        "hint": "اضرب \\( (-x) \\times (-x) \\).",
+        "related_topics": [
+          "قوى الأعداد السالبة"
+        ],
+        "step_id": "math345_3_9_100_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحسب مربع \\( -x \\). الطريقة: \\( (-x)(-x) \\): سالب في سالب يعطي موجباً. السبب: لأن القوة الزوجية تلغي الإشارة السالبة.",
+        "think": "اضرب \\( (-x) \\times (-x) \\).",
+        "html_structure": "(-x)^2 = {q_3_9_100_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب ناتج \\( f(-x) \\). الطريقة: نأخذ النتيجة السابقة. السبب: لنقارنها بالدالة الأصلية.",
+        "equation_template": "f(-x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step3_1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "-x^2",
+              "x",
+              "-x"
+            ],
+            "id": "q_3_9_100_1_s3_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "-x^2",
+              "x",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ ناتج الخطوة السابقة."
+          }
+        ],
+        "hint": "انسخ ناتج الخطوة السابقة.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_9_100_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب ناتج \\( f(-x) \\). الطريقة: نأخذ النتيجة السابقة. السبب: لنقارنها بالدالة الأصلية.",
+        "think": "انسخ ناتج الخطوة السابقة.",
+        "html_structure": "f(-x) = {q_3_9_100_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب الدالة الأصلية. الطريقة: الدالة المعطاة بدون أي تغيير. السبب: لنقارن بين الاثنتين.",
+        "equation_template": "f(x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step4_1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "-x^2",
+              "x",
+              "2x"
+            ],
+            "id": "q_3_9_100_1_s4_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "-x^2",
+              "x",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الدالة من نص السؤال."
+          }
+        ],
+        "hint": "انسخ الدالة من نص السؤال.",
+        "related_topics": [
+          "المقارنة"
+        ],
+        "step_id": "math345_3_9_100_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب الدالة الأصلية. الطريقة: الدالة المعطاة بدون أي تغيير. السبب: لنقارن بين الاثنتين.",
+        "think": "انسخ الدالة من نص السؤال.",
+        "html_structure": "f(x) = {q_3_9_100_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نقارن \\( f(x) \\) مع \\( f(-x) \\). الطريقة: انظر هل الناتجان متطابقان. السبب: لأن تساويهما هو شرط التناظر حول محور الصادات.",
+        "equation_template": "f(x) {input_1} f(-x)",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step5_1",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_3_9_100_1_s5_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتجان نفسه \\( x^2 \\) فاختر علامة التساوي."
+          }
+        ],
+        "hint": "الناتجان نفسه \\( x^2 \\) فاختر علامة التساوي.",
+        "related_topics": [
+          "شرط التناظر"
+        ],
+        "step_id": "math345_3_9_100_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نقارن \\( f(x) \\) مع \\( f(-x) \\). الطريقة: انظر هل الناتجان متطابقان. السبب: لأن تساويهما هو شرط التناظر حول محور الصادات.",
+        "think": "الناتجان نفسه \\( x^2 \\) فاختر علامة التساوي.",
+        "html_structure": "f(x) {q_3_9_100_1_s5_i1} f(-x)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نفحص الشرط الثاني (نقطة الأصل) للتأكد. الطريقة: احسب \\( -f(x) \\) بوضع إشارة سالب أمام الدالة. السبب: لنعرف هل هناك نوع آخر من التناظر.",
+        "equation_template": "-f(x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step6_1",
+            "correct_answer": "-x^2",
+            "options": [
+              "-x^2",
+              "x^2",
+              "-x",
+              "x"
+            ],
+            "id": "q_3_9_100_1_s6_i1",
+            "correct_value": "-x^2",
+            "allowed_keys": [
+              "-x^2",
+              "x^2",
+              "-x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع سالباً أمام \\( x^2 \\)."
+          }
+        ],
+        "hint": "ضع سالباً أمام \\( x^2 \\).",
+        "related_topics": [
+          "اختبار التناظر"
+        ],
+        "step_id": "math345_3_9_100_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نفحص الشرط الثاني (نقطة الأصل) للتأكد. الطريقة: احسب \\( -f(x) \\) بوضع إشارة سالب أمام الدالة. السبب: لنعرف هل هناك نوع آخر من التناظر.",
+        "think": "ضع سالباً أمام \\( x^2 \\).",
+        "html_structure": "-f(x) = {q_3_9_100_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب الاستنتاج. الطريقة: \\( f(-x)=f(x) \\) متحقق، لذلك نختار نوع التناظر. السبب: لأن الشرط الأول تحقق.",
+        "equation_template": "الدالة متناظرة حول {input_1}",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step7_1",
+            "correct_answer": "محور الصادات",
+            "options": [
+              "محور الصادات",
+              "محور السينات",
+              "نقطة الأصل",
+              "لا يوجد تناظر"
+            ],
+            "id": "q_3_9_100_1_s7_i1",
+            "correct_value": "محور الصادات",
+            "allowed_keys": [
+              "محور الصادات",
+              "محور السينات",
+              "نقطة الأصل",
+              "لا يوجد تناظر"
+            ],
+            "label": "القيمة 1",
+            "hint": "الشرط \\( f(-x)=f(x) \\) يخص محور الصادات."
+          }
+        ],
+        "hint": "الشرط \\( f(-x)=f(x) \\) يخص محور الصادات.",
+        "related_topics": [
+          "الاستنتاج"
+        ],
+        "step_id": "math345_3_9_100_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب الاستنتاج. الطريقة: \\( f(-x)=f(x) \\) متحقق، لذلك نختار نوع التناظر. السبب: لأن الشرط الأول تحقق.",
+        "think": "الشرط \\( f(-x)=f(x) \\) يخص محور الصادات.",
+        "html_structure": "الدالة متناظرة حول {q_3_9_100_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=2 \\) ثم \\( x=-2 \\). السبب: للتأكد من تساوي الناتجين.",
+        "equation_template": "f(2) = {input_1} , f(-2) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q1_sym_step8_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "-4",
+              "8"
+            ],
+            "id": "q_3_9_100_1_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "-4",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2^2 = 4 \\) و \\( (-2)^2 = 4 \\)."
+          },
+          {
+            "input_id": "q1_sym_step8_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "-4",
+              "8"
+            ],
+            "id": "q_3_9_100_1_s8_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "-4",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2^2 = 4 \\) و \\( (-2)^2 = 4 \\)."
+          }
+        ],
+        "hint": "\\( 2^2 = 4 \\) و \\( (-2)^2 = 4 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_100_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=2 \\) ثم \\( x=-2 \\). السبب: للتأكد من تساوي الناتجين.",
+        "think": "\\( 2^2 = 4 \\) و \\( (-2)^2 = 4 \\).",
+        "html_structure": "f(2) = {q_3_9_100_1_s8_i1} , f(-2) = {q_3_9_100_1_s8_i2}"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_sym_p100",
+    "page_number": 100,
+    "question_number": "مثال 2",
+    "question_text": "تحقق من تناظر الدالة \\( f(x) = x^4 - 2x^2 \\) حول محور الصادات.",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "رسم الصفحة 100 كاملاً",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "f(-x)=(-x)^4-2(-x)^2=x^4-2x^2=f(x) فالدالة متناظرة حول محور الصادات.",
+    "source_file": "رياضيات 3/page_100_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 100,
+      "pdf_page_number": 102,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png",
+    "title": "تحقق من تناظر الدالة \\( f(x) = x^4 - 2x^2 \\) حول محور الصادات.",
+    "number": "مثال 2",
+    "model_solution": "f(-x)=(-x)^4-2(-x)^2=x^4-2x^2=f(x) فالدالة متناظرة حول محور الصادات.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نطبق شرط التناظر. الطريقة: نستبدل كل \\( x \\) بـ \\( -x \\). السبب: لأن هذا هو أساس اختبار التناظر.",
+        "equation_template": "f(-x) = ({input_1})^4 - 2({input_2})^2",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step1_1",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "id": "q_3_9_100_2_s1_i1",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -x \\) في القوسين."
+          },
+          {
+            "input_id": "q2_sym_step1_2",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "id": "q_3_9_100_2_s1_i2",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "2x",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -x \\) في القوسين."
+          }
+        ],
+        "hint": "ضع \\( -x \\) في القوسين.",
+        "related_topics": [
+          "التناظر حول محور الصادات"
+        ],
+        "step_id": "math345_3_9_100_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نطبق شرط التناظر. الطريقة: نستبدل كل \\( x \\) بـ \\( -x \\). السبب: لأن هذا هو أساس اختبار التناظر.",
+        "think": "ضع \\( -x \\) في القوسين.",
+        "html_structure": "f(-x) = ({q_3_9_100_2_s1_i1})^4 - 2({q_3_9_100_2_s1_i2})^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحسب \\( (-x)^4 \\). الطريقة: أربع ضربات للسالب، والنتيجة موجبة. السبب: لأن القوة الزوجية تلغي الإشارة.",
+        "equation_template": "(-x)^4 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step2_1",
+            "correct_answer": "x^4",
+            "options": [
+              "x^4",
+              "-x^4",
+              "x^2",
+              "-x"
+            ],
+            "id": "q_3_9_100_2_s2_i1",
+            "correct_value": "x^4",
+            "allowed_keys": [
+              "x^4",
+              "-x^4",
+              "x^2",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مضروب أربع مرات يصير موجباً."
+          }
+        ],
+        "hint": "السالب مضروب أربع مرات يصير موجباً.",
+        "related_topics": [
+          "قوى الأعداد السالبة"
+        ],
+        "step_id": "math345_3_9_100_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحسب \\( (-x)^4 \\). الطريقة: أربع ضربات للسالب، والنتيجة موجبة. السبب: لأن القوة الزوجية تلغي الإشارة.",
+        "think": "السالب مضروب أربع مرات يصير موجباً.",
+        "html_structure": "(-x)^4 = {q_3_9_100_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب \\( (-x)^2 \\). الطريقة: سالب في سالب موجب. السبب: لأن القوة زوجية.",
+        "equation_template": "(-x)^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step3_1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "-x^2",
+              "x",
+              "-x"
+            ],
+            "id": "q_3_9_100_2_s3_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "-x^2",
+              "x",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( (-x)(-x) \\)."
+          }
+        ],
+        "hint": "اضرب \\( (-x)(-x) \\).",
+        "related_topics": [
+          "قوى الأعداد السالبة"
+        ],
+        "step_id": "math345_3_9_100_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب \\( (-x)^2 \\). الطريقة: سالب في سالب موجب. السبب: لأن القوة زوجية.",
+        "think": "اضرب \\( (-x)(-x) \\).",
+        "html_structure": "(-x)^2 = {q_3_9_100_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجمّع الناتج. الطريقة: نعوّض النتيجتين، فيبقى المعامل \\( 2 \\) كما هو. السبب: لأن المعامل لا يتأثر بالتعويض.",
+        "equation_template": "f(-x) = x^4 - {input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step4_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "4",
+              "1"
+            ],
+            "id": "q_3_9_100_2_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل المضروب في \\( (-x)^2 \\) هو \\( 2 \\)."
+          }
+        ],
+        "hint": "المعامل المضروب في \\( (-x)^2 \\) هو \\( 2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_9_100_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجمّع الناتج. الطريقة: نعوّض النتيجتين، فيبقى المعامل \\( 2 \\) كما هو. السبب: لأن المعامل لا يتأثر بالتعويض.",
+        "think": "المعامل المضروب في \\( (-x)^2 \\) هو \\( 2 \\).",
+        "html_structure": "f(-x) = x^4 - {q_3_9_100_2_s4_i1}x^2"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نقارن. الطريقة: الدالة الأصلية \\( x^4 - 2x^2 \\) و \\( f(-x) \\) نفسها. السبب: لأن تساويهما شرط التناظر.",
+        "equation_template": "f(x) {input_1} f(-x)",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step5_1",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_3_9_100_2_s5_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتجان متطابقان."
+          }
+        ],
+        "hint": "الناتجان متطابقان.",
+        "related_topics": [
+          "شرط التناظر"
+        ],
+        "step_id": "math345_3_9_100_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نقارن. الطريقة: الدالة الأصلية \\( x^4 - 2x^2 \\) و \\( f(-x) \\) نفسها. السبب: لأن تساويهما شرط التناظر.",
+        "think": "الناتجان متطابقان.",
+        "html_structure": "f(x) {q_3_9_100_2_s5_i1} f(-x)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نفحص الشرط الثاني. الطريقة: احسب \\( -f(x) \\): غيّر إشارة كل حد. السبب: لنستبعد التناظر حول نقطة الأصل.",
+        "equation_template": "-f(x) = -x^4 + {input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "4",
+              "1"
+            ],
+            "id": "q_3_9_100_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "إشارة \\( -2x^2 \\) تصبح موجبة."
+          }
+        ],
+        "hint": "إشارة \\( -2x^2 \\) تصبح موجبة.",
+        "related_topics": [
+          "اختبار التناظر"
+        ],
+        "step_id": "math345_3_9_100_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نفحص الشرط الثاني. الطريقة: احسب \\( -f(x) \\): غيّر إشارة كل حد. السبب: لنستبعد التناظر حول نقطة الأصل.",
+        "think": "إشارة \\( -2x^2 \\) تصبح موجبة.",
+        "html_structure": "-f(x) = -x^4 + {q_3_9_100_2_s6_i1}x^2"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن \\( f(-x) \\) مع \\( -f(x) \\). الطريقة: الأول \\( x^4-2x^2 \\) والثاني \\( -x^4+2x^2 \\). السبب: لأن إشارتيهما مختلفتان.",
+        "equation_template": "f(-x) {input_1} -f(x)",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step7_1",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "id": "q_3_9_100_2_s7_i1",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتجان مختلفان."
+          }
+        ],
+        "hint": "الناتجان مختلفان.",
+        "related_topics": [
+          "المقارنة"
+        ],
+        "step_id": "math345_3_9_100_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن \\( f(-x) \\) مع \\( -f(x) \\). الطريقة: الأول \\( x^4-2x^2 \\) والثاني \\( -x^4+2x^2 \\). السبب: لأن إشارتيهما مختلفتان.",
+        "think": "الناتجان مختلفان.",
+        "html_structure": "f(-x) {q_3_9_100_2_s7_i1} -f(x)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الاستنتاج. الطريقة: تحقق \\( f(-x)=f(x) \\). السبب: هذا يحدد نوع التناظر.",
+        "equation_template": "الدالة متناظرة حول {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step8_1",
+            "correct_answer": "محور الصادات",
+            "options": [
+              "محور الصادات",
+              "محور السينات",
+              "نقطة الأصل",
+              "لا يوجد تناظر"
+            ],
+            "id": "q_3_9_100_2_s8_i1",
+            "correct_value": "محور الصادات",
+            "allowed_keys": [
+              "محور الصادات",
+              "محور السينات",
+              "نقطة الأصل",
+              "لا يوجد تناظر"
+            ],
+            "label": "القيمة 1",
+            "hint": "الشرط يخص محور الصادات."
+          }
+        ],
+        "hint": "الشرط يخص محور الصادات.",
+        "related_topics": [
+          "الاستنتاج"
+        ],
+        "step_id": "math345_3_9_100_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الاستنتاج. الطريقة: تحقق \\( f(-x)=f(x) \\). السبب: هذا يحدد نوع التناظر.",
+        "think": "الشرط يخص محور الصادات.",
+        "html_structure": "الدالة متناظرة حول {q_3_9_100_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=1 \\) و \\( x=-1 \\). السبب: للتأكد.",
+        "equation_template": "f(1) = {input_1} , f(-1) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q2_sym_step9_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-3"
+            ],
+            "id": "q_3_9_100_2_s9_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 - 2 = -1 \\) و \\( (-1)^4 - 2(-1)^2 = 1-2 \\)."
+          },
+          {
+            "input_id": "q2_sym_step9_2",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-3"
+            ],
+            "id": "q_3_9_100_2_s9_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1 - 2 = -1 \\) و \\( (-1)^4 - 2(-1)^2 = 1-2 \\)."
+          }
+        ],
+        "hint": "\\( 1 - 2 = -1 \\) و \\( (-1)^4 - 2(-1)^2 = 1-2 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_100_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=1 \\) و \\( x=-1 \\). السبب: للتأكد.",
+        "think": "\\( 1 - 2 = -1 \\) و \\( (-1)^4 - 2(-1)^2 = 1-2 \\).",
+        "html_structure": "f(1) = {q_3_9_100_2_s9_i1} , f(-1) = {q_3_9_100_2_s9_i2}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_sym_p100",
+    "page_number": 100,
+    "question_number": "مثال 3",
+    "question_text": "تحقق من تناظر الدالة \\( f(x) = x^3 - 3x \\) حول نقطة الأصل.",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "رسم الصفحة 100 كاملاً",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "f(-x)=(-x)^3-3(-x)=-x^3+3x=-(x^3-3x)=-f(x) فالدالة متناظرة حول نقطة الأصل.",
+    "source_file": "رياضيات 3/page_100_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 100,
+      "pdf_page_number": 102,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png",
+    "title": "تحقق من تناظر الدالة \\( f(x) = x^3 - 3x \\) حول نقطة الأصل.",
+    "number": "مثال 3",
+    "model_solution": "f(-x)=(-x)^3-3(-x)=-x^3+3x=-(x^3-3x)=-f(x) فالدالة متناظرة حول نقطة الأصل.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نطبق الشرط. الطريقة: استبدل كل \\( x \\) بـ \\( -x \\). السبب: لأن التناظر حول نقطة الأصل يُفحص بـ \\( f(-x) \\).",
+        "equation_template": "f(-x) = ({input_1})^3 - 3({input_2})",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step1_1",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "3x",
+              "-1"
+            ],
+            "id": "q_3_9_100_3_s1_i1",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "3x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -x \\) في القوسين."
+          },
+          {
+            "input_id": "q3_sym_step1_2",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "3x",
+              "-1"
+            ],
+            "id": "q_3_9_100_3_s1_i2",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "3x",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -x \\) في القوسين."
+          }
+        ],
+        "hint": "ضع \\( -x \\) في القوسين.",
+        "related_topics": [
+          "التناظر حول نقطة الأصل"
+        ],
+        "step_id": "math345_3_9_100_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نطبق الشرط. الطريقة: استبدل كل \\( x \\) بـ \\( -x \\). السبب: لأن التناظر حول نقطة الأصل يُفحص بـ \\( f(-x) \\).",
+        "think": "ضع \\( -x \\) في القوسين.",
+        "html_structure": "f(-x) = ({q_3_9_100_3_s1_i1})^3 - 3({q_3_9_100_3_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحسب \\( (-x)^3 \\). الطريقة: ثلاث ضربات للسالب، النتيجة سالبة. السبب: لأن القوة الفردية تُبقي الإشارة.",
+        "equation_template": "(-x)^3 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step2_1",
+            "correct_answer": "-x^3",
+            "options": [
+              "-x^3",
+              "x^3",
+              "-x",
+              "x"
+            ],
+            "id": "q_3_9_100_3_s2_i1",
+            "correct_value": "-x^3",
+            "allowed_keys": [
+              "-x^3",
+              "x^3",
+              "-x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مضروب ثلاث مرات يبقى سالباً."
+          }
+        ],
+        "hint": "السالب مضروب ثلاث مرات يبقى سالباً.",
+        "related_topics": [
+          "قوى الأعداد السالبة"
+        ],
+        "step_id": "math345_3_9_100_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحسب \\( (-x)^3 \\). الطريقة: ثلاث ضربات للسالب، النتيجة سالبة. السبب: لأن القوة الفردية تُبقي الإشارة.",
+        "think": "السالب مضروب ثلاث مرات يبقى سالباً.",
+        "html_structure": "(-x)^3 = {q_3_9_100_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب \\( -3(-x) \\). الطريقة: سالب في سالب يساوي موجباً. السبب: لأن حاصل ضرب إشارتين سالبتين موجب.",
+        "equation_template": "-3(-x) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step3_1",
+            "correct_answer": "3x",
+            "options": [
+              "3x",
+              "-3x",
+              "x",
+              "-x"
+            ],
+            "id": "q_3_9_100_3_s3_i1",
+            "correct_value": "3x",
+            "allowed_keys": [
+              "3x",
+              "-3x",
+              "x",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( -3 \\times -x \\)."
+          }
+        ],
+        "hint": "اضرب \\( -3 \\times -x \\).",
+        "related_topics": [
+          "ضرب الإشارات"
+        ],
+        "step_id": "math345_3_9_100_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب \\( -3(-x) \\). الطريقة: سالب في سالب يساوي موجباً. السبب: لأن حاصل ضرب إشارتين سالبتين موجب.",
+        "think": "اضرب \\( -3 \\times -x \\).",
+        "html_structure": "-3(-x) = {q_3_9_100_3_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب \\( f(-x) \\). الطريقة: اجمع الحدين الناتجين. السبب: لنوحد الصيغة.",
+        "equation_template": "f(-x) = -x^3 {input_1} 3x",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step4_1",
+            "correct_answer": "+",
+            "options": [
+              "+",
+              "-",
+              "×",
+              "÷"
+            ],
+            "id": "q_3_9_100_3_s4_i1",
+            "correct_value": "+",
+            "allowed_keys": [
+              "+",
+              "-",
+              "×",
+              "÷"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثاني \\( 3x \\) موجب."
+          }
+        ],
+        "hint": "الحد الثاني \\( 3x \\) موجب.",
+        "related_topics": [
+          "تجميع الحدود"
+        ],
+        "step_id": "math345_3_9_100_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب \\( f(-x) \\). الطريقة: اجمع الحدين الناتجين. السبب: لنوحد الصيغة.",
+        "think": "الحد الثاني \\( 3x \\) موجب.",
+        "html_structure": "f(-x) = -x^3 {q_3_9_100_3_s4_i1} 3x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نسحب إشارة سالب كعامل مشترك. الطريقة: أخرج \\( - \\) أمام قوس، فتنعكس إشارة كل حد. السبب: لنقارن بالدالة الأصلية.",
+        "equation_template": "-x^3 + 3x = -(x^3 {input_1} 3x)",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step5_1",
+            "correct_answer": "-",
+            "options": [
+              "-",
+              "+",
+              "×",
+              "÷"
+            ],
+            "id": "q_3_9_100_3_s5_i1",
+            "correct_value": "-",
+            "allowed_keys": [
+              "-",
+              "+",
+              "×",
+              "÷"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( +3x \\) تصبح \\( -3x \\) داخل القوس."
+          }
+        ],
+        "hint": "\\( +3x \\) تصبح \\( -3x \\) داخل القوس.",
+        "related_topics": [
+          "سحب عامل مشترك"
+        ],
+        "step_id": "math345_3_9_100_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نسحب إشارة سالب كعامل مشترك. الطريقة: أخرج \\( - \\) أمام قوس، فتنعكس إشارة كل حد. السبب: لنقارن بالدالة الأصلية.",
+        "think": "\\( +3x \\) تصبح \\( -3x \\) داخل القوس.",
+        "html_structure": "-x^3 + 3x = -(x^3 {q_3_9_100_3_s5_i1} 3x)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نتعرف على القوس. الطريقة: القوس \\( x^3-3x \\) هو الدالة الأصلية. السبب: لنكتبها بدلالة \\( f(x) \\).",
+        "equation_template": "f(-x) = -({input_1})",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step6_1",
+            "correct_answer": "f(x)",
+            "options": [
+              "f(x)",
+              "f(-x)",
+              "x^3+3x",
+              "x^3"
+            ],
+            "id": "q_3_9_100_3_s6_i1",
+            "correct_value": "f(x)",
+            "allowed_keys": [
+              "f(x)",
+              "f(-x)",
+              "x^3+3x",
+              "x^3"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوس نفس الدالة المعطاة."
+          }
+        ],
+        "hint": "القوس نفس الدالة المعطاة.",
+        "related_topics": [
+          "الدالة الأصلية"
+        ],
+        "step_id": "math345_3_9_100_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نتعرف على القوس. الطريقة: القوس \\( x^3-3x \\) هو الدالة الأصلية. السبب: لنكتبها بدلالة \\( f(x) \\).",
+        "think": "القوس نفس الدالة المعطاة.",
+        "html_structure": "f(-x) = -({q_3_9_100_3_s6_i1})"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نفحص الشرط الأول. الطريقة: قارن \\( f(-x) \\) مع \\( f(x) \\). السبب: لنستبعد التناظر حول محور الصادات.",
+        "equation_template": "f(-x) = -x^3 + 3x {input_1} f(x)",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step7_1",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "id": "q_3_9_100_3_s7_i1",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -x^3+3x \\) تختلف عن \\( x^3-3x \\)."
+          }
+        ],
+        "hint": "\\( -x^3+3x \\) تختلف عن \\( x^3-3x \\).",
+        "related_topics": [
+          "المقارنة"
+        ],
+        "step_id": "math345_3_9_100_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نفحص الشرط الأول. الطريقة: قارن \\( f(-x) \\) مع \\( f(x) \\). السبب: لنستبعد التناظر حول محور الصادات.",
+        "think": "\\( -x^3+3x \\) تختلف عن \\( x^3-3x \\).",
+        "html_structure": "f(-x) = -x^3 + 3x {q_3_9_100_3_s7_i1} f(x)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الاستنتاج. الطريقة: تحقق \\( f(-x)=-f(x) \\). السبب: هذا شرط نقطة الأصل.",
+        "equation_template": "الدالة متناظرة حول {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step8_1",
+            "correct_answer": "نقطة الأصل",
+            "options": [
+              "نقطة الأصل",
+              "محور الصادات",
+              "محور السينات",
+              "لا يوجد تناظر"
+            ],
+            "id": "q_3_9_100_3_s8_i1",
+            "correct_value": "نقطة الأصل",
+            "allowed_keys": [
+              "نقطة الأصل",
+              "محور الصادات",
+              "محور السينات",
+              "لا يوجد تناظر"
+            ],
+            "label": "القيمة 1",
+            "hint": "الشرط \\( f(-x)=-f(x) \\) يخص نقطة الأصل."
+          }
+        ],
+        "hint": "الشرط \\( f(-x)=-f(x) \\) يخص نقطة الأصل.",
+        "related_topics": [
+          "الاستنتاج"
+        ],
+        "step_id": "math345_3_9_100_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الاستنتاج. الطريقة: تحقق \\( f(-x)=-f(x) \\). السبب: هذا شرط نقطة الأصل.",
+        "think": "الشرط \\( f(-x)=-f(x) \\) يخص نقطة الأصل.",
+        "html_structure": "الدالة متناظرة حول {q_3_9_100_3_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=1 \\) و \\( x=-1 \\). السبب: للتأكد أن الناتجين متعاكسان.",
+        "equation_template": "f(1) = {input_1} , f(-1) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q3_sym_step9_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "0",
+              "-4"
+            ],
+            "id": "q_3_9_100_3_s9_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "0",
+              "-4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-3=-2 \\) و \\( -1+3=2 \\)."
+          },
+          {
+            "input_id": "q3_sym_step9_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "0",
+              "4"
+            ],
+            "id": "q_3_9_100_3_s9_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1-3=-2 \\) و \\( -1+3=2 \\)."
+          }
+        ],
+        "hint": "\\( 1-3=-2 \\) و \\( -1+3=2 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_100_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=1 \\) و \\( x=-1 \\). السبب: للتأكد أن الناتجين متعاكسان.",
+        "think": "\\( 1-3=-2 \\) و \\( -1+3=2 \\).",
+        "html_structure": "f(1) = {q_3_9_100_3_s9_i1} , f(-1) = {q_3_9_100_3_s9_i2}"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_sym_p100",
+    "page_number": 100,
+    "question_number": "مثال 4",
+    "question_text": "تحقق من تناظر الدالة \\( f(x) = x^5 - x^3 \\) حول نقطة الأصل.",
+    "question_images": [
+      {
+        "id": "diag_1",
+        "type": "رسم توضيحي",
+        "desc": "رسم الصفحة 100 كاملاً",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+      }
+    ],
+    "full_model_solution": "f(-x)=(-x)^5-(-x)^3=-x^5+x^3=-(x^5-x^3)=-f(x) فالدالة متناظرة حول نقطة الأصل.",
+    "source_file": "رياضيات 3/page_100_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 100,
+      "pdf_page_number": 102,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_100_diag_1_drawing.png",
+    "title": "تحقق من تناظر الدالة \\( f(x) = x^5 - x^3 \\) حول نقطة الأصل.",
+    "number": "مثال 4",
+    "model_solution": "f(-x)=(-x)^5-(-x)^3=-x^5+x^3=-(x^5-x^3)=-f(x) فالدالة متناظرة حول نقطة الأصل.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نطبق الشرط. الطريقة: استبدل كل \\( x \\) بـ \\( -x \\). السبب: لأنه شرط التناظر.",
+        "equation_template": "f(-x) = ({input_1})^5 - ({input_2})^3",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step1_1",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "5x",
+              "-1"
+            ],
+            "id": "q_3_9_100_4_s1_i1",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "5x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( -x \\) في القوسين."
+          },
+          {
+            "input_id": "q4_sym_step1_2",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "3x",
+              "-1"
+            ],
+            "id": "q_3_9_100_4_s1_i2",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "3x",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( -x \\) في القوسين."
+          }
+        ],
+        "hint": "ضع \\( -x \\) في القوسين.",
+        "related_topics": [
+          "التناظر حول نقطة الأصل"
+        ],
+        "step_id": "math345_3_9_100_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نطبق الشرط. الطريقة: استبدل كل \\( x \\) بـ \\( -x \\). السبب: لأنه شرط التناظر.",
+        "think": "ضع \\( -x \\) في القوسين.",
+        "html_structure": "f(-x) = ({q_3_9_100_4_s1_i1})^5 - ({q_3_9_100_4_s1_i2})^3"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحسب \\( (-x)^5 \\). الطريقة: القوة فردية فتبقى الإشارة سالبة. السبب: لأن عدداً فردياً من السوالب يعطي سالباً.",
+        "equation_template": "(-x)^5 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step2_1",
+            "correct_answer": "-x^5",
+            "options": [
+              "-x^5",
+              "x^5",
+              "-x",
+              "x"
+            ],
+            "id": "q_3_9_100_4_s2_i1",
+            "correct_value": "-x^5",
+            "allowed_keys": [
+              "-x^5",
+              "x^5",
+              "-x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب خمس مرات يبقى سالباً."
+          }
+        ],
+        "hint": "السالب خمس مرات يبقى سالباً.",
+        "related_topics": [
+          "قوى الأعداد السالبة"
+        ],
+        "step_id": "math345_3_9_100_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحسب \\( (-x)^5 \\). الطريقة: القوة فردية فتبقى الإشارة سالبة. السبب: لأن عدداً فردياً من السوالب يعطي سالباً.",
+        "think": "السالب خمس مرات يبقى سالباً.",
+        "html_structure": "(-x)^5 = {q_3_9_100_4_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب \\( (-x)^3 \\). الطريقة: القوة فردية فالناتج سالب. السبب: للسبب نفسه.",
+        "equation_template": "(-x)^3 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step3_1",
+            "correct_answer": "-x^3",
+            "options": [
+              "-x^3",
+              "x^3",
+              "-x",
+              "x"
+            ],
+            "id": "q_3_9_100_4_s3_i1",
+            "correct_value": "-x^3",
+            "allowed_keys": [
+              "-x^3",
+              "x^3",
+              "-x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب ثلاث مرات يبقى سالباً."
+          }
+        ],
+        "hint": "السالب ثلاث مرات يبقى سالباً.",
+        "related_topics": [
+          "قوى الأعداد السالبة"
+        ],
+        "step_id": "math345_3_9_100_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب \\( (-x)^3 \\). الطريقة: القوة فردية فالناتج سالب. السبب: للسبب نفسه.",
+        "think": "السالب ثلاث مرات يبقى سالباً.",
+        "html_structure": "(-x)^3 = {q_3_9_100_4_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نعوّض الناتجين. الطريقة: الإشارة السالبة التي قبل القوس الثاني تنعكس. السبب: لأن طرح سالب يصبح جمعاً.",
+        "equation_template": "f(-x) = -x^5 - ({input_1}) = -x^5 {input_2} x^3",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step4_1",
+            "correct_answer": "-x^3",
+            "options": [
+              "-x^3",
+              "x^3",
+              "-x",
+              "x"
+            ],
+            "id": "q_3_9_100_4_s4_i1",
+            "correct_value": "-x^3",
+            "allowed_keys": [
+              "-x^3",
+              "x^3",
+              "-x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -(-x^3) = +x^3 \\)."
+          },
+          {
+            "input_id": "q4_sym_step4_2",
+            "correct_answer": "+",
+            "options": [
+              "+",
+              "-",
+              "×",
+              "÷"
+            ],
+            "id": "q_3_9_100_4_s4_i2",
+            "correct_value": "+",
+            "allowed_keys": [
+              "+",
+              "-",
+              "×",
+              "÷"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -(-x^3) = +x^3 \\)."
+          }
+        ],
+        "hint": "\\( -(-x^3) = +x^3 \\).",
+        "related_topics": [
+          "ضرب الإشارات"
+        ],
+        "step_id": "math345_3_9_100_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نعوّض الناتجين. الطريقة: الإشارة السالبة التي قبل القوس الثاني تنعكس. السبب: لأن طرح سالب يصبح جمعاً.",
+        "think": "\\( -(-x^3) = +x^3 \\).",
+        "html_structure": "f(-x) = -x^5 - ({q_3_9_100_4_s4_i1}) = -x^5 {q_3_9_100_4_s4_i2} x^3"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نسحب سالب عامل مشترك. الطريقة: أخرج \\( - \\) أمام قوس فتنعكس إشارة كل حد. السبب: لنقارن بالدالة الأصلية.",
+        "equation_template": "-x^5 + x^3 = -(x^5 {input_1} x^3)",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step5_1",
+            "correct_answer": "-",
+            "options": [
+              "-",
+              "+",
+              "×",
+              "÷"
+            ],
+            "id": "q_3_9_100_4_s5_i1",
+            "correct_value": "-",
+            "allowed_keys": [
+              "-",
+              "+",
+              "×",
+              "÷"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( +x^3 \\) تصبح \\( -x^3 \\) داخل القوس."
+          }
+        ],
+        "hint": "\\( +x^3 \\) تصبح \\( -x^3 \\) داخل القوس.",
+        "related_topics": [
+          "سحب عامل مشترك"
+        ],
+        "step_id": "math345_3_9_100_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نسحب سالب عامل مشترك. الطريقة: أخرج \\( - \\) أمام قوس فتنعكس إشارة كل حد. السبب: لنقارن بالدالة الأصلية.",
+        "think": "\\( +x^3 \\) تصبح \\( -x^3 \\) داخل القوس.",
+        "html_structure": "-x^5 + x^3 = -(x^5 {q_3_9_100_4_s5_i1} x^3)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نتعرف على القوس. الطريقة: القوس هو الدالة الأصلية. السبب: لنكتبها بدلالة \\( f(x) \\).",
+        "equation_template": "f(-x) = -({input_1})",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step6_1",
+            "correct_answer": "f(x)",
+            "options": [
+              "f(x)",
+              "f(-x)",
+              "x^5+x^3",
+              "x^5"
+            ],
+            "id": "q_3_9_100_4_s6_i1",
+            "correct_value": "f(x)",
+            "allowed_keys": [
+              "f(x)",
+              "f(-x)",
+              "x^5+x^3",
+              "x^5"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوس يساوي \\( f(x) \\)."
+          }
+        ],
+        "hint": "القوس يساوي \\( f(x) \\).",
+        "related_topics": [
+          "الدالة الأصلية"
+        ],
+        "step_id": "math345_3_9_100_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نتعرف على القوس. الطريقة: القوس هو الدالة الأصلية. السبب: لنكتبها بدلالة \\( f(x) \\).",
+        "think": "القوس يساوي \\( f(x) \\).",
+        "html_structure": "f(-x) = -({q_3_9_100_4_s6_i1})"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نفحص الشرط الأول. الطريقة: قارن \\( f(-x) \\) مع \\( f(x) \\). السبب: لنستبعد محور الصادات.",
+        "equation_template": "f(-x) {input_1} f(x)",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step7_1",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "id": "q_3_9_100_4_s7_i1",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -x^5+x^3 \\) ليست مثل \\( x^5-x^3 \\)."
+          }
+        ],
+        "hint": "\\( -x^5+x^3 \\) ليست مثل \\( x^5-x^3 \\).",
+        "related_topics": [
+          "المقارنة"
+        ],
+        "step_id": "math345_3_9_100_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نفحص الشرط الأول. الطريقة: قارن \\( f(-x) \\) مع \\( f(x) \\). السبب: لنستبعد محور الصادات.",
+        "think": "\\( -x^5+x^3 \\) ليست مثل \\( x^5-x^3 \\).",
+        "html_structure": "f(-x) {q_3_9_100_4_s7_i1} f(x)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الاستنتاج. الطريقة: تحقق \\( f(-x)=-f(x) \\). السبب: هذا شرط نقطة الأصل.",
+        "equation_template": "الدالة متناظرة حول {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step8_1",
+            "correct_answer": "نقطة الأصل",
+            "options": [
+              "نقطة الأصل",
+              "محور الصادات",
+              "محور السينات",
+              "لا يوجد تناظر"
+            ],
+            "id": "q_3_9_100_4_s8_i1",
+            "correct_value": "نقطة الأصل",
+            "allowed_keys": [
+              "نقطة الأصل",
+              "محور الصادات",
+              "محور السينات",
+              "لا يوجد تناظر"
+            ],
+            "label": "القيمة 1",
+            "hint": "الشرط يخص نقطة الأصل."
+          }
+        ],
+        "hint": "الشرط يخص نقطة الأصل.",
+        "related_topics": [
+          "الاستنتاج"
+        ],
+        "step_id": "math345_3_9_100_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الاستنتاج. الطريقة: تحقق \\( f(-x)=-f(x) \\). السبب: هذا شرط نقطة الأصل.",
+        "think": "الشرط يخص نقطة الأصل.",
+        "html_structure": "الدالة متناظرة حول {q_3_9_100_4_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=2 \\) و \\( x=-2 \\). السبب: للتأكد.",
+        "equation_template": "f(2) = {input_1} , f(-2) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q4_sym_step9_1",
+            "correct_answer": "24",
+            "options": [
+              "24",
+              "-24",
+              "8",
+              "40"
+            ],
+            "id": "q_3_9_100_4_s9_i1",
+            "correct_value": "24",
+            "allowed_keys": [
+              "24",
+              "-24",
+              "8",
+              "40"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 32-8=24 \\) و \\( -32+8=-24 \\)."
+          },
+          {
+            "input_id": "q4_sym_step9_2",
+            "correct_answer": "-24",
+            "options": [
+              "-24",
+              "24",
+              "-8",
+              "-40"
+            ],
+            "id": "q_3_9_100_4_s9_i2",
+            "correct_value": "-24",
+            "allowed_keys": [
+              "-24",
+              "24",
+              "-8",
+              "-40"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 32-8=24 \\) و \\( -32+8=-24 \\)."
+          }
+        ],
+        "hint": "\\( 32-8=24 \\) و \\( -32+8=-24 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_3_9_100_4_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نراجع بقيمة عددية. الطريقة: عوّض \\( x=2 \\) و \\( x=-2 \\). السبب: للتأكد.",
+        "think": "\\( 32-8=24 \\) و \\( -32+8=-24 \\).",
+        "html_structure": "f(2) = {q_3_9_100_4_s9_i1} , f(-2) = {q_3_9_100_4_s9_i2}"
+      }
+    ]
+  }
+]

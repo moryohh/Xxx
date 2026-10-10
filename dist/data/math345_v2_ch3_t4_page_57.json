@@ -1,0 +1,904 @@
+[
+  {
+    "id_number": "q12_p57",
+    "page_number": 57,
+    "question_number": "12",
+    "question_text": "باستخدام نتيجة مبرهنة القيمة المتوسطة جد الجذر التكعيبي للعدد \\( 0.12 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_057_diag_1_drawing/model.png"
+    ],
+    "full_model_solution": "\\( 0.12=0.120,\\ f(x)=x^{1/3},\\ a=0.125,\\ h=-0.005,\\ f(a)=0.5,\\ f'(a)=\\frac{4}{3} \\) فـ \\( f(a+h)\\approx0.5-0.006667\\approx0.49333 \\).",
+    "source_file": "رياضيات 3/page_057_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 57
+    },
+    "chapter": 3,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_057_diag_1_drawing/model.png",
+    "title": "باستخدام نتيجة مبرهنة القيمة المتوسطة جد الجذر التكعيبي للعدد \\( 0.12 \\).",
+    "number": "12",
+    "model_solution": "\\( 0.12=0.120,\\ f(x)=x^{1/3},\\ a=0.125,\\ h=-0.005,\\ f(a)=0.5,\\ f'(a)=\\frac{4}{3} \\) فـ \\( f(a+h)\\approx0.5-0.006667\\approx0.49333 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نوحّد عدد المنازل العشرية مع دليل الجذر. الطريقة: الجذر تكعيبي (دليله \\( 3 \\))، لذا نكتب \\( 0.12 \\) بثلاث منازل بإضافة صفر على اليمين. السبب: لأنه يسهل اختيار \\( a \\) من مكعب كامل.",
+        "equation_template": "0.12={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_v",
+            "correct_answer": "0.120",
+            "options": [
+              "0.120",
+              "0.012",
+              "0.102",
+              "1.20"
+            ],
+            "id": "q_3_4_57_1_s1_i1",
+            "correct_value": "0.120",
+            "allowed_keys": [
+              "0.120",
+              "0.012",
+              "0.102",
+              "1.20"
+            ],
+            "label": "القيمة 1",
+            "hint": "أضف صفراً واحداً على يمين \\( 0.12 \\)."
+          }
+        ],
+        "hint": "أضف صفراً واحداً على يمين \\( 0.12 \\).",
+        "related_topics": [
+          "توحيد المراتب"
+        ],
+        "step_id": "math345_3_4_57_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نوحّد عدد المنازل العشرية مع دليل الجذر. الطريقة: الجذر تكعيبي (دليله \\( 3 \\))، لذا نكتب \\( 0.12 \\) بثلاث منازل بإضافة صفر على اليمين. السبب: لأنه يسهل اختيار \\( a \\) من مكعب كامل.",
+        "think": "أضف صفراً واحداً على يمين \\( 0.12 \\).",
+        "html_structure": "0.12={q_3_4_57_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد الدالة. الطريقة: الجذر التكعيبي هو الأس \\( \\frac{1}{3} \\). السبب: للاشتقاق.",
+        "equation_template": "f(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_f",
+            "correct_answer": "x^{1/3}",
+            "options": [
+              "x^{1/3}",
+              "x^{-1/3}",
+              "x^3",
+              "3x"
+            ],
+            "id": "q_3_4_57_1_s2_i1",
+            "correct_value": "x^{1/3}",
+            "allowed_keys": [
+              "x^{1/3}",
+              "x^{-1/3}",
+              "x^3",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( x^{\\frac{1}{3}} \\)."
+          }
+        ],
+        "hint": "اكتب \\( x^{\\frac{1}{3}} \\).",
+        "related_topics": [
+          "نتيجة مبرهنة القيمة المتوسطة (التقريب)"
+        ],
+        "step_id": "math345_3_4_57_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد الدالة. الطريقة: الجذر التكعيبي هو الأس \\( \\frac{1}{3} \\). السبب: للاشتقاق.",
+        "think": "اكتب \\( x^{\\frac{1}{3}} \\).",
+        "html_structure": "f(x)={q_3_4_57_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق الدالة. الطريقة: أنزل \\( \\frac{1}{3} \\) واطرح \\( 1 \\) من الأس. السبب: للقانون.",
+        "equation_template": "f'(x)=\\frac{1}{3}x^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "s3_p",
+            "correct_answer": "-2/3",
+            "options": [
+              "-2/3",
+              "2/3",
+              "-1/3",
+              "-4/3"
+            ],
+            "id": "q_3_4_57_1_s3_i1",
+            "correct_value": "-2/3",
+            "allowed_keys": [
+              "-2/3",
+              "2/3",
+              "-1/3",
+              "-4/3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{1}{3}-1=-\\frac{2}{3} \\)."
+          }
+        ],
+        "hint": "\\( \\frac{1}{3}-1=-\\frac{2}{3} \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_3_4_57_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق الدالة. الطريقة: أنزل \\( \\frac{1}{3} \\) واطرح \\( 1 \\) من الأس. السبب: للقانون.",
+        "think": "\\( \\frac{1}{3}-1=-\\frac{2}{3} \\).",
+        "html_structure": "f'(x)=\\frac{1}{3}x^{{q_3_4_57_1_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحدد \\( b \\) و \\( a \\). الطريقة: \\( b=0.120 \\) و\\( a=0.125 \\) لأن \\( (0.5)^3=0.125 \\). السبب: لأنه أقرب مكعب كامل.",
+        "equation_template": "b={input_1},\\quad a={input_2}",
+        "inputs": [
+          {
+            "input_id": "s4_b",
+            "correct_answer": "0.120",
+            "options": [
+              "0.120",
+              "0.125",
+              "0.5",
+              "1.2"
+            ],
+            "id": "q_3_4_57_1_s4_i1",
+            "correct_value": "0.120",
+            "allowed_keys": [
+              "0.120",
+              "0.125",
+              "0.5",
+              "1.2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعطى \\( 0.120 \\) والأقرب \\( 0.125 \\)."
+          },
+          {
+            "input_id": "s4_a",
+            "correct_answer": "0.125",
+            "options": [
+              "0.125",
+              "0.120",
+              "0.5",
+              "0.25"
+            ],
+            "id": "q_3_4_57_1_s4_i2",
+            "correct_value": "0.125",
+            "allowed_keys": [
+              "0.125",
+              "0.120",
+              "0.5",
+              "0.25"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعطى \\( 0.120 \\) والأقرب \\( 0.125 \\)."
+          }
+        ],
+        "hint": "المعطى \\( 0.120 \\) والأقرب \\( 0.125 \\).",
+        "related_topics": [
+          "اختيار a"
+        ],
+        "step_id": "math345_3_4_57_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحدد \\( b \\) و \\( a \\). الطريقة: \\( b=0.120 \\) و\\( a=0.125 \\) لأن \\( (0.5)^3=0.125 \\). السبب: لأنه أقرب مكعب كامل.",
+        "think": "المعطى \\( 0.120 \\) والأقرب \\( 0.125 \\).",
+        "html_structure": "b={q_3_4_57_1_s4_i1},\\quad a={q_3_4_57_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب \\( h \\). الطريقة: \\( h=0.120-0.125 \\). السبب: الانحراف.",
+        "equation_template": "h={input_1}",
+        "inputs": [
+          {
+            "input_id": "s5_h",
+            "correct_answer": "-0.005",
+            "options": [
+              "-0.005",
+              "0.005",
+              "-0.05",
+              "0.245"
+            ],
+            "id": "q_3_4_57_1_s5_i1",
+            "correct_value": "-0.005",
+            "allowed_keys": [
+              "-0.005",
+              "0.005",
+              "-0.05",
+              "0.245"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.120-0.125=-0.005 \\)."
+          }
+        ],
+        "hint": "\\( 0.120-0.125=-0.005 \\).",
+        "related_topics": [
+          "h = b - a"
+        ],
+        "step_id": "math345_3_4_57_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب \\( h \\). الطريقة: \\( h=0.120-0.125 \\). السبب: الانحراف.",
+        "think": "\\( 0.120-0.125=-0.005 \\).",
+        "html_structure": "h={q_3_4_57_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( f(a) \\). الطريقة: الجذر التكعيبي لـ \\( 0.125 \\). السبب: قيمة البداية.",
+        "equation_template": "f(0.125)=\\sqrt[3]{{input_1}}={input_2}",
+        "inputs": [
+          {
+            "input_id": "s6_a",
+            "correct_answer": "0.125",
+            "options": [
+              "0.125",
+              "0.12",
+              "0.5",
+              "0.25"
+            ],
+            "id": "q_3_4_57_1_s6_i1",
+            "correct_value": "0.125",
+            "allowed_keys": [
+              "0.125",
+              "0.12",
+              "0.5",
+              "0.25"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.5\\times0.5\\times0.5=0.125 \\)."
+          },
+          {
+            "input_id": "s6_v",
+            "correct_answer": "0.5",
+            "options": [
+              "0.5",
+              "0.25",
+              "0.05",
+              "0.125"
+            ],
+            "id": "q_3_4_57_1_s6_i2",
+            "correct_value": "0.5",
+            "allowed_keys": [
+              "0.5",
+              "0.25",
+              "0.05",
+              "0.125"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 0.5\\times0.5\\times0.5=0.125 \\)."
+          }
+        ],
+        "hint": "\\( 0.5\\times0.5\\times0.5=0.125 \\).",
+        "related_topics": [
+          "قيمة الدالة"
+        ],
+        "step_id": "math345_3_4_57_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( f(a) \\). الطريقة: الجذر التكعيبي لـ \\( 0.125 \\). السبب: قيمة البداية.",
+        "think": "\\( 0.5\\times0.5\\times0.5=0.125 \\).",
+        "html_structure": "f(0.125)=\\sqrt[3]{{q_3_4_57_1_s6_i1}}={q_3_4_57_1_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوّض في المشتقة. الطريقة: \\( x^{-\\frac{2}{3}}=\\frac{1}{(\\sqrt[3]{x})^2} \\). عوّض الجذر التكعيبي لـ \\( 0.125 \\). السبب: الأس السالب مقلوب.",
+        "equation_template": "f'(0.125)=\\frac{1}{3\\times({input_1})^2}",
+        "inputs": [
+          {
+            "input_id": "s7_r",
+            "correct_answer": "0.5",
+            "options": [
+              "0.5",
+              "0.125",
+              "2",
+              "0.25"
+            ],
+            "id": "q_3_4_57_1_s7_i1",
+            "correct_value": "0.5",
+            "allowed_keys": [
+              "0.5",
+              "0.125",
+              "2",
+              "0.25"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر هو \\( 0.5 \\)."
+          }
+        ],
+        "hint": "الجذر هو \\( 0.5 \\).",
+        "related_topics": [
+          "الأس السالب"
+        ],
+        "step_id": "math345_3_4_57_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوّض في المشتقة. الطريقة: \\( x^{-\\frac{2}{3}}=\\frac{1}{(\\sqrt[3]{x})^2} \\). عوّض الجذر التكعيبي لـ \\( 0.125 \\). السبب: الأس السالب مقلوب.",
+        "think": "الجذر هو \\( 0.5 \\).",
+        "html_structure": "f'(0.125)=\\frac{1}{3\\times({q_3_4_57_1_s7_i1})^2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نبسط المقام. الطريقة: ربّع \\( 0.5 \\) واضرب في \\( 3 \\). السبب: كسر بسيط.",
+        "equation_template": "f'(0.125)=\\frac{1}{3\\times{input_1}}=\\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "s8_a",
+            "correct_answer": "0.25",
+            "options": [
+              "0.25",
+              "1",
+              "0.5",
+              "0.1"
+            ],
+            "id": "q_3_4_57_1_s8_i1",
+            "correct_value": "0.25",
+            "allowed_keys": [
+              "0.25",
+              "1",
+              "0.5",
+              "0.1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.5\\times0.5=0.25 \\) و\\( 3\\times0.25=0.75 \\)."
+          },
+          {
+            "input_id": "s8_b",
+            "correct_answer": "0.75",
+            "options": [
+              "0.75",
+              "1.5",
+              "0.25",
+              "3"
+            ],
+            "id": "q_3_4_57_1_s8_i2",
+            "correct_value": "0.75",
+            "allowed_keys": [
+              "0.75",
+              "1.5",
+              "0.25",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 0.5\\times0.5=0.25 \\) و\\( 3\\times0.25=0.75 \\)."
+          }
+        ],
+        "hint": "\\( 0.5\\times0.5=0.25 \\) و\\( 3\\times0.25=0.75 \\).",
+        "related_topics": [
+          "الأعداد العشرية"
+        ],
+        "step_id": "math345_3_4_57_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نبسط المقام. الطريقة: ربّع \\( 0.5 \\) واضرب في \\( 3 \\). السبب: كسر بسيط.",
+        "think": "\\( 0.5\\times0.5=0.25 \\) و\\( 3\\times0.25=0.75 \\).",
+        "html_structure": "f'(0.125)=\\frac{1}{3\\times{q_3_4_57_1_s8_i1}}=\\frac{1}{{q_3_4_57_1_s8_i2}}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب قيمة \\( f'(a) \\). الطريقة: \\( \\frac{1}{0.75}=\\frac{4}{3} \\) ونكتبه عشرياً مقرّباً. السبب: للضرب.",
+        "equation_template": "\\frac{1}{0.75}\\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "s9_v",
+            "correct_answer": "1.3333",
+            "options": [
+              "1.3333",
+              "0.75",
+              "1.75",
+              "0.3333"
+            ],
+            "id": "q_3_4_57_1_s9_i1",
+            "correct_value": "1.3333",
+            "allowed_keys": [
+              "1.3333",
+              "0.75",
+              "1.75",
+              "0.3333"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\div3\\approx1.3333 \\)."
+          }
+        ],
+        "hint": "\\( 4\\div3\\approx1.3333 \\).",
+        "related_topics": [
+          "الكسور"
+        ],
+        "step_id": "math345_3_4_57_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب قيمة \\( f'(a) \\). الطريقة: \\( \\frac{1}{0.75}=\\frac{4}{3} \\) ونكتبه عشرياً مقرّباً. السبب: للضرب.",
+        "think": "\\( 4\\div3\\approx1.3333 \\).",
+        "html_structure": "\\frac{1}{0.75}\\approx {q_3_4_57_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نعوّض في القانون ونحسب الضرب. الطريقة: \\( 0.5+(-0.005)\\times1.3333 \\). احسب الحاصل أولاً. السبب: الحد التصحيحي.",
+        "equation_template": "(-0.005)\\times1.3333\\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "s10_v",
+            "correct_answer": "-0.006667",
+            "options": [
+              "-0.006667",
+              "0.006667",
+              "-0.06667",
+              "-0.0075"
+            ],
+            "id": "q_3_4_57_1_s10_i1",
+            "correct_value": "-0.006667",
+            "allowed_keys": [
+              "-0.006667",
+              "0.006667",
+              "-0.06667",
+              "-0.0075"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.005\\times1.3333\\approx0.006667 \\) وإشارته سالبة."
+          }
+        ],
+        "hint": "\\( 0.005\\times1.3333\\approx0.006667 \\) وإشارته سالبة.",
+        "related_topics": [
+          "الضرب العشري"
+        ],
+        "step_id": "math345_3_4_57_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نعوّض في القانون ونحسب الضرب. الطريقة: \\( 0.5+(-0.005)\\times1.3333 \\). احسب الحاصل أولاً. السبب: الحد التصحيحي.",
+        "think": "\\( 0.005\\times1.3333\\approx0.006667 \\) وإشارته سالبة.",
+        "html_structure": "(-0.005)\\times1.3333\\approx {q_3_4_57_1_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجمع النتيجة. الطريقة: اطرح \\( 0.006667 \\) من \\( 0.5 \\). السبب: القيمة التقريبية.",
+        "equation_template": "\\sqrt[3]{0.12}\\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "s11_v",
+            "correct_answer": "0.493333",
+            "options": [
+              "0.493333",
+              "0.506667",
+              "0.4933",
+              "0.5"
+            ],
+            "id": "q_3_4_57_1_s11_i1",
+            "correct_value": "0.493333",
+            "allowed_keys": [
+              "0.493333",
+              "0.506667",
+              "0.4933",
+              "0.5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.5-0.006667=0.493333 \\)."
+          }
+        ],
+        "hint": "\\( 0.5-0.006667=0.493333 \\).",
+        "related_topics": [
+          "الطرح"
+        ],
+        "step_id": "math345_3_4_57_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجمع النتيجة. الطريقة: اطرح \\( 0.006667 \\) من \\( 0.5 \\). السبب: القيمة التقريبية.",
+        "think": "\\( 0.5-0.006667=0.493333 \\).",
+        "html_structure": "\\sqrt[3]{0.12}\\approx {q_3_4_57_1_s11_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q13_p57",
+    "page_number": 57,
+    "question_number": "13",
+    "question_text": "باستخدام نتيجة مبرهنة القيمة المتوسطة جد الجذر التربيعي للعدد \\( 0.50 \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_057_diag_1_drawing/model.png"
+    ],
+    "full_model_solution": "\\( f(x)=\\sqrt{x},\\ a=0.49,\\ h=0.01,\\ f(a)=0.7,\\ f'(a)=\\frac{1}{1.4}\\approx0.7143 \\) فـ \\( f(a+h)\\approx0.7+0.00714=0.70714 \\).",
+    "source_file": "رياضيات 3/page_057_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 57
+    },
+    "chapter": 3,
+    "topic_index": 3,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_057_diag_1_drawing/model.png",
+    "title": "باستخدام نتيجة مبرهنة القيمة المتوسطة جد الجذر التربيعي للعدد \\( 0.50 \\).",
+    "number": "13",
+    "model_solution": "\\( f(x)=\\sqrt{x},\\ a=0.49,\\ h=0.01,\\ f(a)=0.7,\\ f'(a)=\\frac{1}{1.4}\\approx0.7143 \\) فـ \\( f(a+h)\\approx0.7+0.00714=0.70714 \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد الدالة. الطريقة: الجذر التربيعي للمقدار \\( 0.50 \\) (مرتبتان مساويتان لدليل الجذر \\( 2 \\)). السبب: للاشتقاق.",
+        "equation_template": "f(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_f",
+            "correct_answer": "\\sqrt{x}",
+            "options": [
+              "\\sqrt{x}",
+              "x^2",
+              "\\sqrt[3]{x}",
+              "\\frac{1}{x}"
+            ],
+            "id": "q_3_4_57_2_s1_i1",
+            "correct_value": "\\sqrt{x}",
+            "allowed_keys": [
+              "\\sqrt{x}",
+              "x^2",
+              "\\sqrt[3]{x}",
+              "\\frac{1}{x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( x \\) تحت الجذر التربيعي."
+          }
+        ],
+        "hint": "ضع \\( x \\) تحت الجذر التربيعي.",
+        "related_topics": [
+          "نتيجة مبرهنة القيمة المتوسطة (التقريب)"
+        ],
+        "step_id": "math345_3_4_57_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد الدالة. الطريقة: الجذر التربيعي للمقدار \\( 0.50 \\) (مرتبتان مساويتان لدليل الجذر \\( 2 \\)). السبب: للاشتقاق.",
+        "think": "ضع \\( x \\) تحت الجذر التربيعي.",
+        "html_structure": "f(x)={q_3_4_57_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق الدالة. الطريقة: مشتقة \\( \\sqrt{x} \\) هي \\( 1 \\) على ضعف الجذر. السبب: للقانون.",
+        "equation_template": "f'(x)=\\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "s2_d",
+            "correct_answer": "2\\sqrt{x}",
+            "options": [
+              "2\\sqrt{x}",
+              "\\sqrt{x}",
+              "2x",
+              "x^2"
+            ],
+            "id": "q_3_4_57_2_s2_i1",
+            "correct_value": "2\\sqrt{x}",
+            "allowed_keys": [
+              "2\\sqrt{x}",
+              "\\sqrt{x}",
+              "2x",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( 2 \\) في الجذر."
+          }
+        ],
+        "hint": "المقام هو \\( 2 \\) في الجذر.",
+        "related_topics": [
+          "مشتقة الجذر"
+        ],
+        "step_id": "math345_3_4_57_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق الدالة. الطريقة: مشتقة \\( \\sqrt{x} \\) هي \\( 1 \\) على ضعف الجذر. السبب: للقانون.",
+        "think": "المقام هو \\( 2 \\) في الجذر.",
+        "html_structure": "f'(x)=\\frac{1}{{q_3_4_57_2_s2_i1}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد \\( b \\) و \\( a \\). الطريقة: \\( b=0.50 \\) و\\( a=0.49 \\) لأن \\( 0.7^2=0.49 \\). السبب: أقرب مربع كامل.",
+        "equation_template": "b={input_1},\\quad a={input_2}",
+        "inputs": [
+          {
+            "input_id": "s3_b",
+            "correct_answer": "0.50",
+            "options": [
+              "0.50",
+              "0.49",
+              "0.7",
+              "0.25"
+            ],
+            "id": "q_3_4_57_2_s3_i1",
+            "correct_value": "0.50",
+            "allowed_keys": [
+              "0.50",
+              "0.49",
+              "0.7",
+              "0.25"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعطى \\( 0.50 \\) والأقرب \\( 0.49 \\)."
+          },
+          {
+            "input_id": "s3_a",
+            "correct_answer": "0.49",
+            "options": [
+              "0.49",
+              "0.50",
+              "0.7",
+              "0.25"
+            ],
+            "id": "q_3_4_57_2_s3_i2",
+            "correct_value": "0.49",
+            "allowed_keys": [
+              "0.49",
+              "0.50",
+              "0.7",
+              "0.25"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعطى \\( 0.50 \\) والأقرب \\( 0.49 \\)."
+          }
+        ],
+        "hint": "المعطى \\( 0.50 \\) والأقرب \\( 0.49 \\).",
+        "related_topics": [
+          "اختيار a"
+        ],
+        "step_id": "math345_3_4_57_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد \\( b \\) و \\( a \\). الطريقة: \\( b=0.50 \\) و\\( a=0.49 \\) لأن \\( 0.7^2=0.49 \\). السبب: أقرب مربع كامل.",
+        "think": "المعطى \\( 0.50 \\) والأقرب \\( 0.49 \\).",
+        "html_structure": "b={q_3_4_57_2_s3_i1},\\quad a={q_3_4_57_2_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب \\( h \\). الطريقة: \\( h=0.50-0.49 \\). السبب: الانحراف.",
+        "equation_template": "h={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_h",
+            "correct_answer": "0.01",
+            "options": [
+              "0.01",
+              "-0.01",
+              "0.1",
+              "0.99"
+            ],
+            "id": "q_3_4_57_2_s4_i1",
+            "correct_value": "0.01",
+            "allowed_keys": [
+              "0.01",
+              "-0.01",
+              "0.1",
+              "0.99"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.50-0.49=0.01 \\)."
+          }
+        ],
+        "hint": "\\( 0.50-0.49=0.01 \\).",
+        "related_topics": [
+          "h = b - a"
+        ],
+        "step_id": "math345_3_4_57_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب \\( h \\). الطريقة: \\( h=0.50-0.49 \\). السبب: الانحراف.",
+        "think": "\\( 0.50-0.49=0.01 \\).",
+        "html_structure": "h={q_3_4_57_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب \\( f(a) \\). الطريقة: الجذر التربيعي لـ \\( 0.49 \\). السبب: قيمة البداية.",
+        "equation_template": "f(0.49)=\\sqrt{{input_1}}={input_2}",
+        "inputs": [
+          {
+            "input_id": "s5_a",
+            "correct_answer": "0.49",
+            "options": [
+              "0.49",
+              "0.50",
+              "0.7",
+              "0.07"
+            ],
+            "id": "q_3_4_57_2_s5_i1",
+            "correct_value": "0.49",
+            "allowed_keys": [
+              "0.49",
+              "0.50",
+              "0.7",
+              "0.07"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.7\\times0.7=0.49 \\)."
+          },
+          {
+            "input_id": "s5_v",
+            "correct_answer": "0.7",
+            "options": [
+              "0.7",
+              "0.07",
+              "0.49",
+              "0.9"
+            ],
+            "id": "q_3_4_57_2_s5_i2",
+            "correct_value": "0.7",
+            "allowed_keys": [
+              "0.7",
+              "0.07",
+              "0.49",
+              "0.9"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 0.7\\times0.7=0.49 \\)."
+          }
+        ],
+        "hint": "\\( 0.7\\times0.7=0.49 \\).",
+        "related_topics": [
+          "قيمة الدالة"
+        ],
+        "step_id": "math345_3_4_57_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب \\( f(a) \\). الطريقة: الجذر التربيعي لـ \\( 0.49 \\). السبب: قيمة البداية.",
+        "think": "\\( 0.7\\times0.7=0.49 \\).",
+        "html_structure": "f(0.49)=\\sqrt{{q_3_4_57_2_s5_i1}}={q_3_4_57_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوّض في المشتقة. الطريقة: ضع \\( \\sqrt{0.49}=0.7 \\) في المقام. السبب: للحصول على \\( f'(a) \\).",
+        "equation_template": "f'(0.49)=\\frac{1}{2\\times{input_1}}",
+        "inputs": [
+          {
+            "input_id": "s6_r",
+            "correct_answer": "0.7",
+            "options": [
+              "0.7",
+              "0.49",
+              "0.07",
+              "1.4"
+            ],
+            "id": "q_3_4_57_2_s6_i1",
+            "correct_value": "0.7",
+            "allowed_keys": [
+              "0.7",
+              "0.49",
+              "0.07",
+              "1.4"
+            ],
+            "label": "القيمة 1",
+            "hint": "استعمل \\( 0.7 \\) من الخطوة 5."
+          }
+        ],
+        "hint": "استعمل \\( 0.7 \\) من الخطوة 5.",
+        "related_topics": [
+          "مشتقة الجذر"
+        ],
+        "step_id": "math345_3_4_57_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوّض في المشتقة. الطريقة: ضع \\( \\sqrt{0.49}=0.7 \\) في المقام. السبب: للحصول على \\( f'(a) \\).",
+        "think": "استعمل \\( 0.7 \\) من الخطوة 5.",
+        "html_structure": "f'(0.49)=\\frac{1}{2\\times{q_3_4_57_2_s6_i1}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نبسط المقام. الطريقة: اضرب \\( 2\\times0.7 \\). السبب: كسر بسيط.",
+        "equation_template": "f'(0.49)=\\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "s7_a",
+            "correct_answer": "1.4",
+            "options": [
+              "1.4",
+              "0.14",
+              "2.7",
+              "1"
+            ],
+            "id": "q_3_4_57_2_s7_i1",
+            "correct_value": "1.4",
+            "allowed_keys": [
+              "1.4",
+              "0.14",
+              "2.7",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times0.7=1.4 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times0.7=1.4 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_3_4_57_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نبسط المقام. الطريقة: اضرب \\( 2\\times0.7 \\). السبب: كسر بسيط.",
+        "think": "\\( 2\\times0.7=1.4 \\).",
+        "html_structure": "f'(0.49)=\\frac{1}{{q_3_4_57_2_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحوّل لعدد عشري. الطريقة: قسّم \\( 1 \\) على \\( 1.4 \\) وقرّب لأربع منازل. السبب: للحساب.",
+        "equation_template": "\\frac{1}{1.4}\\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "s8_v",
+            "correct_answer": "0.7143",
+            "options": [
+              "0.7143",
+              "0.1429",
+              "1.4",
+              "0.5"
+            ],
+            "id": "q_3_4_57_2_s8_i1",
+            "correct_value": "0.7143",
+            "allowed_keys": [
+              "0.7143",
+              "0.1429",
+              "1.4",
+              "0.5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1\\div1.4\\approx0.7143 \\)."
+          }
+        ],
+        "hint": "\\( 1\\div1.4\\approx0.7143 \\).",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_3_4_57_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحوّل لعدد عشري. الطريقة: قسّم \\( 1 \\) على \\( 1.4 \\) وقرّب لأربع منازل. السبب: للحساب.",
+        "think": "\\( 1\\div1.4\\approx0.7143 \\).",
+        "html_structure": "\\frac{1}{1.4}\\approx {q_3_4_57_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نعوّض في القانون ونحسب الضرب. الطريقة: \\( 0.7+0.01\\times0.7143 \\). احسب الحاصل. السبب: الحد التصحيحي.",
+        "equation_template": "0.01\\times0.7143\\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "s9_v",
+            "correct_answer": "0.007143",
+            "options": [
+              "0.007143",
+              "0.07143",
+              "0.7143",
+              "0.0007"
+            ],
+            "id": "q_3_4_57_2_s9_i1",
+            "correct_value": "0.007143",
+            "allowed_keys": [
+              "0.007143",
+              "0.07143",
+              "0.7143",
+              "0.0007"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب بتحريك الفاصلة منزلتين لليسار."
+          }
+        ],
+        "hint": "اضرب بتحريك الفاصلة منزلتين لليسار.",
+        "related_topics": [
+          "الضرب العشري"
+        ],
+        "step_id": "math345_3_4_57_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نعوّض في القانون ونحسب الضرب. الطريقة: \\( 0.7+0.01\\times0.7143 \\). احسب الحاصل. السبب: الحد التصحيحي.",
+        "think": "اضرب بتحريك الفاصلة منزلتين لليسار.",
+        "html_structure": "0.01\\times0.7143\\approx {q_3_4_57_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نجمع للنتيجة. الطريقة: اجمع \\( 0.7 \\) مع \\( 0.007143 \\). السبب: القيمة التقريبية.",
+        "equation_template": "\\sqrt{0.50}\\approx {input_1}",
+        "inputs": [
+          {
+            "input_id": "s10_v",
+            "correct_answer": "0.707143",
+            "options": [
+              "0.707143",
+              "0.692857",
+              "0.77143",
+              "0.7143"
+            ],
+            "id": "q_3_4_57_2_s10_i1",
+            "correct_value": "0.707143",
+            "allowed_keys": [
+              "0.707143",
+              "0.692857",
+              "0.77143",
+              "0.7143"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0.700000+0.007143=0.707143 \\)."
+          }
+        ],
+        "hint": "\\( 0.700000+0.007143=0.707143 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_3_4_57_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نجمع للنتيجة. الطريقة: اجمع \\( 0.7 \\) مع \\( 0.007143 \\). السبب: القيمة التقريبية.",
+        "think": "\\( 0.700000+0.007143=0.707143 \\).",
+        "html_structure": "\\sqrt{0.50}\\approx {q_3_4_57_2_s10_i1}"
+      }
+    ]
+  }
+]

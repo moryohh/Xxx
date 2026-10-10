@@ -1,0 +1,1422 @@
+[
+  {
+    "id_number": "q1_p2",
+    "page_number": 2,
+    "question_number": "1",
+    "question_text": "هل \\( y = x^3 + x - 2 \\) حل للمعادلة التفاضلية \\( \\frac{d^2y}{dx^2} = 6x \\)؟ (نص السؤال المستخرج كتب العلاقة بصيغة مشوشة، والحل المطبوع يستخدم \\( y = x^3 + x - 2 \\))",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=3x²+1 ، y''=6x ⇒ الطرفان متساويان ⇒ حل",
+    "source_file": "رياضيات5/part3_page_002_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 2,
+      "pdf_page_number": 224
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png",
+    "title": "هل \\( y = x^3 + x - 2 \\) حل للمعادلة التفاضلية \\( \\frac{d^2y}{dx^2} = 6x \\)؟ (نص السؤال المستخرج كتب العلاقة بصيغة مشوشة، والحل المطبوع يستخدم \\( y = x^3 + x - 2 \\))",
+    "number": "1",
+    "model_solution": "y'=3x²+1 ، y''=6x ⇒ الطرفان متساويان ⇒ حل",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نبدأ باشتقاق الحد \\( x^3 \\) في \\( y = x^3 + x - 2 \\). الطريقة: ننزل الأس \\( 3 \\) أمام \\( x \\) وننقص الأس بمقدار \\( 1 \\) فيصبح \\( 3x^2 \\). السبب: نحتاج المشتقة الثانية، ولا نصل إليها إلا بعد المشتقة الأولى.",
+        "equation_template": "(x^3)' = {input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "x"
+            ],
+            "id": "q_5_2_2_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 3 \\) أمام \\( x \\)."
+          }
+        ],
+        "hint": "أنزل الأس \\( 3 \\) أمام \\( x \\).",
+        "related_topics": [
+          "قاعدة اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_2_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نبدأ باشتقاق الحد \\( x^3 \\) في \\( y = x^3 + x - 2 \\). الطريقة: ننزل الأس \\( 3 \\) أمام \\( x \\) وننقص الأس بمقدار \\( 1 \\) فيصبح \\( 3x^2 \\). السبب: نحتاج المشتقة الثانية، ولا نصل إليها إلا بعد المشتقة الأولى.",
+        "think": "أنزل الأس \\( 3 \\) أمام \\( x \\).",
+        "html_structure": "(x^3)' = {q_5_2_2_1_s1_i1}x^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق بقية الحدود. الطريقة: مشتقة \\( x \\) هي \\( 1 \\)، ومشتقة العدد الثابت \\( -2 \\) هي صفر. السبب: مشتقة أي ثابت تساوي صفراً.",
+        "equation_template": "(x)' = {input_1} \\quad , \\quad (-2)' = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_5_2_2_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت صفر."
+          },
+          {
+            "input_id": "step2_c",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "-2",
+              "1",
+              "2"
+            ],
+            "id": "q_5_2_2_1_s2_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "-2",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت صفر."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت صفر.",
+        "related_topics": [
+          "اشتقاق الثوابت"
+        ],
+        "step_id": "math345_5_2_2_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق بقية الحدود. الطريقة: مشتقة \\( x \\) هي \\( 1 \\)، ومشتقة العدد الثابت \\( -2 \\) هي صفر. السبب: مشتقة أي ثابت تساوي صفراً.",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت صفر.",
+        "html_structure": "(x)' = {q_5_2_2_1_s2_i1} \\quad , \\quad (-2)' = {q_5_2_2_1_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب المشتقة الأولى كاملة. الطريقة: نجمع النواتج: \\( 3x^2 + 1 + 0 \\). السبب: هذا ما نشتقه مرة ثانية.",
+        "equation_template": "y' = {input_1}x^2 + {input_2}",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "6"
+            ],
+            "id": "q_5_2_2_1_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل الأول \\( 3 \\) والعدد الثابت \\( 1 \\)."
+          },
+          {
+            "input_id": "step3_e",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "id": "q_5_2_2_1_s3_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعامل الأول \\( 3 \\) والعدد الثابت \\( 1 \\)."
+          }
+        ],
+        "hint": "المعامل الأول \\( 3 \\) والعدد الثابت \\( 1 \\).",
+        "related_topics": [
+          "المشتقة الأولى"
+        ],
+        "step_id": "math345_5_2_2_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب المشتقة الأولى كاملة. الطريقة: نجمع النواتج: \\( 3x^2 + 1 + 0 \\). السبب: هذا ما نشتقه مرة ثانية.",
+        "think": "المعامل الأول \\( 3 \\) والعدد الثابت \\( 1 \\).",
+        "html_structure": "y' = {q_5_2_2_1_s3_i1}x^2 + {q_5_2_2_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق \\( 3x^2 \\) مرة ثانية. الطريقة: ننزل الأس \\( 2 \\) ونضربه في \\( 3 \\) فيصبح \\( 6x \\). السبب: نريد المشتقة الثانية.",
+        "equation_template": "(3x^2)' = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "step4_f",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "id": "q_5_2_2_1_s4_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times3 \\).",
+        "related_topics": [
+          "قاعدة اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_2_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق \\( 3x^2 \\) مرة ثانية. الطريقة: ننزل الأس \\( 2 \\) ونضربه في \\( 3 \\) فيصبح \\( 6x \\). السبب: نريد المشتقة الثانية.",
+        "think": "اضرب \\( 2\\times3 \\).",
+        "html_structure": "(3x^2)' = {q_5_2_2_1_s4_i1}x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب المشتقة الثانية كاملة. الطريقة: مشتقة \\( 3x^2 \\) هي \\( 6x \\) ومشتقة العدد الثابت \\( 1 \\) هي صفر. السبب: هكذا نحصل على \\( y'' \\).",
+        "equation_template": "\\frac{d^2y}{dx^2} = 6x + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_g",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "6",
+              "-1"
+            ],
+            "id": "q_5_2_2_1_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "6",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة الثابت \\( 1 \\) هي صفر."
+          }
+        ],
+        "hint": "مشتقة الثابت \\( 1 \\) هي صفر.",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_5_2_2_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب المشتقة الثانية كاملة. الطريقة: مشتقة \\( 3x^2 \\) هي \\( 6x \\) ومشتقة العدد الثابت \\( 1 \\) هي صفر. السبب: هكذا نحصل على \\( y'' \\).",
+        "think": "مشتقة الثابت \\( 1 \\) هي صفر.",
+        "html_structure": "\\frac{d^2y}{dx^2} = 6x + {q_5_2_2_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض في طرف المعادلة التفاضلية الأيسر. الطريقة: الطرف الأيسر هو \\( \\frac{d^2y}{dx^2} \\) وقد وجدنا قيمته. السبب: لنقارنه بالطرف الأيمن.",
+        "equation_template": "\\text{LHS} = \\frac{d^2y}{dx^2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_h",
+            "correct_answer": "6x",
+            "options": [
+              "6x",
+              "6",
+              "x",
+              "3x"
+            ],
+            "id": "q_5_2_2_1_s6_i1",
+            "correct_value": "6x",
+            "allowed_keys": [
+              "6x",
+              "6",
+              "x",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ المشتقة الثانية التي حسبتها."
+          }
+        ],
+        "hint": "انسخ المشتقة الثانية التي حسبتها.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_2_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض في طرف المعادلة التفاضلية الأيسر. الطريقة: الطرف الأيسر هو \\( \\frac{d^2y}{dx^2} \\) وقد وجدنا قيمته. السبب: لنقارنه بالطرف الأيمن.",
+        "think": "انسخ المشتقة الثانية التي حسبتها.",
+        "html_structure": "\\text{LHS} = \\frac{d^2y}{dx^2} = {q_5_2_2_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن الطرفين. الطريقة: الطرف الأيمن في السؤال هو \\( 6x \\) والأيسر \\( 6x \\). السبب: إذا تساوى الطرفان تحققت المعادلة.",
+        "equation_template": "6x \\;\\; {input_1} \\;\\; 6x",
+        "inputs": [
+          {
+            "input_id": "step7_cmp",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_2_1_s7_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرفان نفس التعبير فاختر علامة المساواة."
+          }
+        ],
+        "hint": "الطرفان نفس التعبير فاختر علامة المساواة.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_2_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن الطرفين. الطريقة: الطرف الأيمن في السؤال هو \\( 6x \\) والأيسر \\( 6x \\). السبب: إذا تساوى الطرفان تحققت المعادلة.",
+        "think": "الطرفان نفس التعبير فاختر علامة المساواة.",
+        "html_structure": "6x \\;\\; {q_5_2_2_1_s7_i1} \\;\\; 6x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: بما أن الطرفين متساويان فالعلاقة تحقق المعادلة. السبب: هذا هو تعريف الحل.",
+        "equation_template": "y = x^3 + x - 2 \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_2_1_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تساوي الطرفين يعني أن العلاقة حل."
+          }
+        ],
+        "hint": "تساوي الطرفين يعني أن العلاقة حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_2_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: بما أن الطرفين متساويان فالعلاقة تحقق المعادلة. السبب: هذا هو تعريف الحل.",
+        "think": "تساوي الطرفين يعني أن العلاقة حل.",
+        "html_structure": "y = x^3 + x - 2 \\Rightarrow {q_5_2_2_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p2",
+    "page_number": 2,
+    "question_number": "2",
+    "question_text": "هل \\( y = x + 2 \\) حل للمعادلة التفاضلية \\( y'' + 3y' + y = x \\)؟",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=1 ، y''=0 ⇒ 0+3+x+2 = x+5 ≠ x ⇒ ليست حلاً",
+    "source_file": "رياضيات5/part3_page_002_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 2,
+      "pdf_page_number": 224
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png",
+    "title": "هل \\( y = x + 2 \\) حل للمعادلة التفاضلية \\( y'' + 3y' + y = x \\)؟",
+    "number": "2",
+    "model_solution": "y'=1 ، y''=0 ⇒ 0+3+x+2 = x+5 ≠ x ⇒ ليست حلاً",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( y = x + 2 \\) مرة أولى. الطريقة: مشتقة \\( x \\) هي \\( 1 \\) ومشتقة \\( 2 \\) هي صفر. السبب: المعادلة تحتوي \\( y' \\).",
+        "equation_template": "y' = {input_1} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "x"
+            ],
+            "id": "q_5_2_2_2_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت \\( 2 \\) هي صفر."
+          },
+          {
+            "input_id": "step1_b",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "2",
+              "1",
+              "x"
+            ],
+            "id": "q_5_2_2_2_s1_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "2",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت \\( 2 \\) هي صفر."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت \\( 2 \\) هي صفر.",
+        "related_topics": [
+          "المشتقة الأولى"
+        ],
+        "step_id": "math345_5_2_2_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( y = x + 2 \\) مرة أولى. الطريقة: مشتقة \\( x \\) هي \\( 1 \\) ومشتقة \\( 2 \\) هي صفر. السبب: المعادلة تحتوي \\( y' \\).",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) ومشتقة الثابت \\( 2 \\) هي صفر.",
+        "html_structure": "y' = {q_5_2_2_2_s1_i1} + {q_5_2_2_2_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق مرة ثانية. الطريقة: المشتقة الأولى \\( 1 \\) ثابت فمشتقتها صفر. السبب: المعادلة تحتوي \\( y'' \\).",
+        "equation_template": "y'' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "x"
+            ],
+            "id": "q_5_2_2_2_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة العدد \\( 1 \\) هي صفر."
+          }
+        ],
+        "hint": "مشتقة العدد \\( 1 \\) هي صفر.",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_5_2_2_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق مرة ثانية. الطريقة: المشتقة الأولى \\( 1 \\) ثابت فمشتقتها صفر. السبب: المعادلة تحتوي \\( y'' \\).",
+        "think": "مشتقة العدد \\( 1 \\) هي صفر.",
+        "html_structure": "y'' = {q_5_2_2_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعوض القيم في الطرف الأيسر \\( y'' + 3y' + y \\). الطريقة: نضع \\( 0 \\) مكان \\( y'' \\) و \\( 1 \\) مكان \\( y' \\) و \\( x+2 \\) مكان \\( y \\). السبب: لنحسب قيمة الطرف الأيسر.",
+        "equation_template": "y'' + 3y' + y = {input_1} + 3({input_2}) + (x+2)",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "id": "q_5_2_2_2_s3_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( y'' = 0 \\) ثم \\( y' = 1 \\) كما وجدنا."
+          },
+          {
+            "input_id": "step3_e",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "id": "q_5_2_2_2_s3_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( y'' = 0 \\) ثم \\( y' = 1 \\) كما وجدنا."
+          }
+        ],
+        "hint": "ضع \\( y'' = 0 \\) ثم \\( y' = 1 \\) كما وجدنا.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_2_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعوض القيم في الطرف الأيسر \\( y'' + 3y' + y \\). الطريقة: نضع \\( 0 \\) مكان \\( y'' \\) و \\( 1 \\) مكان \\( y' \\) و \\( x+2 \\) مكان \\( y \\). السبب: لنحسب قيمة الطرف الأيسر.",
+        "think": "ضع \\( y'' = 0 \\) ثم \\( y' = 1 \\) كما وجدنا.",
+        "html_structure": "y'' + 3y' + y = {q_5_2_2_2_s3_i1} + 3({q_5_2_2_2_s3_i2}) + (x+2)"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب الضرب. الطريقة: \\( 3 \\times 1 = 3 \\). السبب: لنبسط التعبير.",
+        "equation_template": "3(1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_f",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "0",
+              "6"
+            ],
+            "id": "q_5_2_2_2_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "0",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 3 \\) في \\( 1 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 3 \\) في \\( 1 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_2_2_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب الضرب. الطريقة: \\( 3 \\times 1 = 3 \\). السبب: لنبسط التعبير.",
+        "think": "اضرب \\( 3 \\) في \\( 1 \\).",
+        "html_structure": "3(1) = {q_5_2_2_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجمع الأعداد. الطريقة: \\( 0 + 3 + 2 = 5 \\) ويبقى \\( x \\). السبب: لنصل إلى أبسط صورة للطرف الأيسر.",
+        "equation_template": "0 + 3 + x + 2 = x + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_g",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_5_2_2_2_s5_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 0+3+2 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 0+3+2 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_2_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجمع الأعداد. الطريقة: \\( 0 + 3 + 2 = 5 \\) ويبقى \\( x \\). السبب: لنصل إلى أبسط صورة للطرف الأيسر.",
+        "think": "اجمع \\( 0+3+2 \\).",
+        "html_structure": "0 + 3 + x + 2 = x + {q_5_2_2_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الطرف الأيمن. الطريقة: الطرف الأيمن في المعادلة هو \\( x \\) كما في السؤال. السبب: لنقارنه بالأيسر.",
+        "equation_template": "\\text{RHS} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_h",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "x+5",
+              "5",
+              "0"
+            ],
+            "id": "q_5_2_2_2_s6_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "x+5",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الطرف الأيمن من نص المعادلة."
+          }
+        ],
+        "hint": "انسخ الطرف الأيمن من نص المعادلة.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_2_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الطرف الأيمن. الطريقة: الطرف الأيمن في المعادلة هو \\( x \\) كما في السؤال. السبب: لنقارنه بالأيسر.",
+        "think": "انسخ الطرف الأيمن من نص المعادلة.",
+        "html_structure": "\\text{RHS} = {q_5_2_2_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن الطرفين. الطريقة: الأيسر \\( x+5 \\) والأيمن \\( x \\) والفرق \\( 5 \\). السبب: لا تتساوى الطرفان.",
+        "equation_template": "x + 5 \\;\\; {input_1} \\;\\; x",
+        "inputs": [
+          {
+            "input_id": "step7_cmp",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_2_2_s7_i1",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( x+5 \\) لا تساوي \\( x \\) لأن الفرق \\( 5 \\)."
+          }
+        ],
+        "hint": "\\( x+5 \\) لا تساوي \\( x \\) لأن الفرق \\( 5 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_2_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن الطرفين. الطريقة: الأيسر \\( x+5 \\) والأيمن \\( x \\) والفرق \\( 5 \\). السبب: لا تتساوى الطرفان.",
+        "think": "\\( x+5 \\) لا تساوي \\( x \\) لأن الفرق \\( 5 \\).",
+        "html_structure": "x + 5 \\;\\; {q_5_2_2_2_s7_i1} \\;\\; x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: بما أن الطرفين غير متساويين فالعلاقة لا تحقق المعادلة. السبب: الحل يجب أن يحقق المعادلة.",
+        "equation_template": "y = x + 2 \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "ليس حلاً للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_2_2_s8_i1",
+            "correct_value": "ليس حلاً للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "عدم التساوي يعني أنها ليست حلاً."
+          }
+        ],
+        "hint": "عدم التساوي يعني أنها ليست حلاً.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_2_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: بما أن الطرفين غير متساويين فالعلاقة لا تحقق المعادلة. السبب: الحل يجب أن يحقق المعادلة.",
+        "think": "عدم التساوي يعني أنها ليست حلاً.",
+        "html_structure": "y = x + 2 \\Rightarrow {q_5_2_2_2_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p2",
+    "page_number": 2,
+    "question_number": "3",
+    "question_text": "برهن أن \\( y = \\sin x \\) حل للمعادلة التفاضلية \\( y'' + y = 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=cos x ، y''=−sin x ⇒ −sin x + sin x = 0",
+    "source_file": "رياضيات5/part3_page_002_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 2,
+      "pdf_page_number": 224
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png",
+    "title": "برهن أن \\( y = \\sin x \\) حل للمعادلة التفاضلية \\( y'' + y = 0 \\)",
+    "number": "3",
+    "model_solution": "y'=cos x ، y''=−sin x ⇒ −sin x + sin x = 0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( y = \\sin x \\) مرة أولى. الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\). السبب: المعادلة تحتوي مشتقة ثانية.",
+        "equation_template": "y' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "cos x",
+            "options": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "-sin x"
+            ],
+            "id": "q_5_2_2_3_s1_i1",
+            "correct_value": "cos x",
+            "allowed_keys": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "-sin x"
+            ],
+            "label": "القيمة 1",
+            "hint": "من جدول المشتقات: مشتقة \\( \\sin x \\)."
+          }
+        ],
+        "hint": "من جدول المشتقات: مشتقة \\( \\sin x \\).",
+        "related_topics": [
+          "مشتقات الدوال المثلثية"
+        ],
+        "step_id": "math345_5_2_2_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( y = \\sin x \\) مرة أولى. الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\). السبب: المعادلة تحتوي مشتقة ثانية.",
+        "think": "من جدول المشتقات: مشتقة \\( \\sin x \\).",
+        "html_structure": "y' = {q_5_2_2_3_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق مرة ثانية. الطريقة: نشتق \\( \\cos x \\) فنحصل على \\( -\\sin x \\). السبب: نريد \\( y'' \\).",
+        "equation_template": "y'' = ({input_1})' = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "cos x",
+            "options": [
+              "cos x",
+              "sin x",
+              "-sin x",
+              "-cos x"
+            ],
+            "id": "q_5_2_2_3_s2_i1",
+            "correct_value": "cos x",
+            "allowed_keys": [
+              "cos x",
+              "sin x",
+              "-sin x",
+              "-cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب المشتقة الأولى ثم مشتقتها \\( -\\sin x \\)."
+          },
+          {
+            "input_id": "step2_c",
+            "correct_answer": "-sin x",
+            "options": [
+              "-sin x",
+              "sin x",
+              "cos x",
+              "-cos x"
+            ],
+            "id": "q_5_2_2_3_s2_i2",
+            "correct_value": "-sin x",
+            "allowed_keys": [
+              "-sin x",
+              "sin x",
+              "cos x",
+              "-cos x"
+            ],
+            "label": "القيمة 2",
+            "hint": "اكتب المشتقة الأولى ثم مشتقتها \\( -\\sin x \\)."
+          }
+        ],
+        "hint": "اكتب المشتقة الأولى ثم مشتقتها \\( -\\sin x \\).",
+        "related_topics": [
+          "مشتقات الدوال المثلثية"
+        ],
+        "step_id": "math345_5_2_2_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق مرة ثانية. الطريقة: نشتق \\( \\cos x \\) فنحصل على \\( -\\sin x \\). السبب: نريد \\( y'' \\).",
+        "think": "اكتب المشتقة الأولى ثم مشتقتها \\( -\\sin x \\).",
+        "html_structure": "y'' = ({q_5_2_2_3_s2_i1})' = {q_5_2_2_3_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعوض في الطرف الأيسر \\( y'' + y \\). الطريقة: نضع \\( -\\sin x \\) مكان \\( y'' \\) و \\( \\sin x \\) مكان \\( y \\). السبب: لنحسب قيمة الطرف الأيسر.",
+        "equation_template": "y'' + y = ({input_1}) + \\sin x",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "-sin x",
+            "options": [
+              "-sin x",
+              "sin x",
+              "cos x",
+              "-cos x"
+            ],
+            "id": "q_5_2_2_3_s3_i1",
+            "correct_value": "-sin x",
+            "allowed_keys": [
+              "-sin x",
+              "sin x",
+              "cos x",
+              "-cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ \\( y'' \\) التي حسبتها في الخطوة السابقة."
+          }
+        ],
+        "hint": "انسخ \\( y'' \\) التي حسبتها في الخطوة السابقة.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_2_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعوض في الطرف الأيسر \\( y'' + y \\). الطريقة: نضع \\( -\\sin x \\) مكان \\( y'' \\) و \\( \\sin x \\) مكان \\( y \\). السبب: لنحسب قيمة الطرف الأيسر.",
+        "think": "انسخ \\( y'' \\) التي حسبتها في الخطوة السابقة.",
+        "html_structure": "y'' + y = ({q_5_2_2_3_s3_i1}) + \\sin x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نبسط الجمع. الطريقة: \\( -\\sin x + \\sin x \\) متقابلان فيحذف أحدهما الآخر. السبب: العددان المتقابلان مجموعهما صفر.",
+        "equation_template": "-\\sin x + \\sin x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_e",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2 sin x",
+              "-1"
+            ],
+            "id": "q_5_2_2_3_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2 sin x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أي تعبير مع عكسه يعطي صفراً."
+          }
+        ],
+        "hint": "أي تعبير مع عكسه يعطي صفراً.",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_2_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نبسط الجمع. الطريقة: \\( -\\sin x + \\sin x \\) متقابلان فيحذف أحدهما الآخر. السبب: العددان المتقابلان مجموعهما صفر.",
+        "think": "أي تعبير مع عكسه يعطي صفراً.",
+        "html_structure": "-\\sin x + \\sin x = {q_5_2_2_3_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب الطرف الأيمن. الطريقة: الطرف الأيمن للمعادلة هو \\( 0 \\). السبب: لنقارنه.",
+        "equation_template": "\\text{RHS} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_f",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "sin x",
+              "-1"
+            ],
+            "id": "q_5_2_2_3_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "sin x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ ما بعد علامة المساواة في المعادلة."
+          }
+        ],
+        "hint": "انسخ ما بعد علامة المساواة في المعادلة.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_2_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب الطرف الأيمن. الطريقة: الطرف الأيمن للمعادلة هو \\( 0 \\). السبب: لنقارنه.",
+        "think": "انسخ ما بعد علامة المساواة في المعادلة.",
+        "html_structure": "\\text{RHS} = {q_5_2_2_3_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقارن. الطريقة: الأيسر \\( 0 \\) والأيمن \\( 0 \\). السبب: لنتأكد من التحقق.",
+        "equation_template": "0 \\;\\; {input_1} \\;\\; 0",
+        "inputs": [
+          {
+            "input_id": "step6_cmp",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_2_3_s6_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "العددان متساويان."
+          }
+        ],
+        "hint": "العددان متساويان.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_2_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقارن. الطريقة: الأيسر \\( 0 \\) والأيمن \\( 0 \\). السبب: لنتأكد من التحقق.",
+        "think": "العددان متساويان.",
+        "html_structure": "0 \\;\\; {q_5_2_2_3_s6_i1} \\;\\; 0"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب الفرق بين الطرفين. الطريقة: الفرق صفر لكل قيمة لـ \\( x \\). السبب: لأن المعادلة تتحقق لكل قيم \\( x \\).",
+        "equation_template": "\\text{LHS} - \\text{RHS} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_g",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "sin x"
+            ],
+            "id": "q_5_2_2_3_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "sin x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 0 \\) من \\( 0 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 0 \\) من \\( 0 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_2_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب الفرق بين الطرفين. الطريقة: الفرق صفر لكل قيمة لـ \\( x \\). السبب: لأن المعادلة تتحقق لكل قيم \\( x \\).",
+        "think": "اطرح \\( 0 \\) من \\( 0 \\).",
+        "html_structure": "\\text{LHS} - \\text{RHS} = {q_5_2_2_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. السبب: هذا هو البرهان.",
+        "equation_template": "y = \\sin x \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_2_3_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أن العلاقة حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أن العلاقة حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_2_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. السبب: هذا هو البرهان.",
+        "think": "تحقق المعادلة يعني أن العلاقة حل.",
+        "html_structure": "y = \\sin x \\Rightarrow {q_5_2_2_3_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_p2",
+    "page_number": 2,
+    "question_number": "4",
+    "question_text": "برهن أن \\( y = 2\\sin 2x + 3\\cos 2x \\) حل للمعادلة التفاضلية \\( y'' + 4y = 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y''=−12cos2x−8sin2x ⇒ y''+4y=0",
+    "source_file": "رياضيات5/part3_page_002_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 2,
+      "pdf_page_number": 224
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_002_diag_1_drawing.png",
+    "title": "برهن أن \\( y = 2\\sin 2x + 3\\cos 2x \\) حل للمعادلة التفاضلية \\( y'' + 4y = 0 \\)",
+    "number": "4",
+    "model_solution": "y''=−12cos2x−8sin2x ⇒ y''+4y=0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق الحد الأول من \\( y = 2\\sin 2x + 3\\cos 2x \\). الطريقة: مشتقة \\( \\sin 2x \\) هي \\( \\cos 2x \\) مضروبة في مشتقة الزاوية \\( 2 \\)، فنحسب \\( 2 \\times 2 \\). السبب: مشتقة الدالة المركبة تضرب في مشتقة الزاوية.",
+        "equation_template": "(2\\sin 2x)' = {input_1}\\cos 2x",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_5_2_2_4_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2 \\) في مشتقة الزاوية \\( 2 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2 \\) في مشتقة الزاوية \\( 2 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_2_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق الحد الأول من \\( y = 2\\sin 2x + 3\\cos 2x \\). الطريقة: مشتقة \\( \\sin 2x \\) هي \\( \\cos 2x \\) مضروبة في مشتقة الزاوية \\( 2 \\)، فنحسب \\( 2 \\times 2 \\). السبب: مشتقة الدالة المركبة تضرب في مشتقة الزاوية.",
+        "think": "اضرب \\( 2 \\) في مشتقة الزاوية \\( 2 \\).",
+        "html_structure": "(2\\sin 2x)' = {q_5_2_2_4_s1_i1}\\cos 2x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق الحد الثاني. الطريقة: مشتقة \\( \\cos 2x \\) هي \\( -\\sin 2x \\) مضروبة في \\( 2 \\)، فنحسب \\( 3 \\times (-1) \\times 2 \\). السبب: الإشارة سالبة لأن مشتقة جيب التمام سالبة.",
+        "equation_template": "(3\\cos 2x)' = {input_1}\\sin 2x",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "-3",
+              "3"
+            ],
+            "id": "q_5_2_2_4_s2_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "-3",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 3 \\times 2 \\) ثم ضع إشارة سالب."
+          }
+        ],
+        "hint": "اضرب \\( 3 \\times 2 \\) ثم ضع إشارة سالب.",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_2_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق الحد الثاني. الطريقة: مشتقة \\( \\cos 2x \\) هي \\( -\\sin 2x \\) مضروبة في \\( 2 \\)، فنحسب \\( 3 \\times (-1) \\times 2 \\). السبب: الإشارة سالبة لأن مشتقة جيب التمام سالبة.",
+        "think": "اضرب \\( 3 \\times 2 \\) ثم ضع إشارة سالب.",
+        "html_structure": "(3\\cos 2x)' = {q_5_2_2_4_s2_i1}\\sin 2x"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق \\( 4\\cos 2x \\) مرة ثانية. الطريقة: مشتقة \\( \\cos 2x \\) هي \\( -2\\sin 2x \\)، فنحسب \\( 4\\times(-2) \\). السبب: نحتاج المشتقة الثانية.",
+        "equation_template": "(4\\cos 2x)' = {input_1}\\sin 2x",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "-8",
+            "options": [
+              "-8",
+              "8",
+              "-4",
+              "4"
+            ],
+            "id": "q_5_2_2_4_s3_i1",
+            "correct_value": "-8",
+            "allowed_keys": [
+              "-8",
+              "8",
+              "-4",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 4 \\) في \\( -2 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 4 \\) في \\( -2 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_2_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق \\( 4\\cos 2x \\) مرة ثانية. الطريقة: مشتقة \\( \\cos 2x \\) هي \\( -2\\sin 2x \\)، فنحسب \\( 4\\times(-2) \\). السبب: نحتاج المشتقة الثانية.",
+        "think": "اضرب \\( 4 \\) في \\( -2 \\).",
+        "html_structure": "(4\\cos 2x)' = {q_5_2_2_4_s3_i1}\\sin 2x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق \\( -6\\sin 2x \\). الطريقة: مشتقة \\( \\sin 2x \\) هي \\( 2\\cos 2x \\)، فنحسب \\( -6\\times 2 \\). السبب: نكمل المشتقة الثانية.",
+        "equation_template": "(-6\\sin 2x)' = {input_1}\\cos 2x",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "-12",
+            "options": [
+              "-12",
+              "12",
+              "-6",
+              "6"
+            ],
+            "id": "q_5_2_2_4_s4_i1",
+            "correct_value": "-12",
+            "allowed_keys": [
+              "-12",
+              "12",
+              "-6",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( -6 \\) في \\( 2 \\)."
+          }
+        ],
+        "hint": "اضرب \\( -6 \\) في \\( 2 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_2_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق \\( -6\\sin 2x \\). الطريقة: مشتقة \\( \\sin 2x \\) هي \\( 2\\cos 2x \\)، فنحسب \\( -6\\times 2 \\). السبب: نكمل المشتقة الثانية.",
+        "think": "اضرب \\( -6 \\) في \\( 2 \\).",
+        "html_structure": "(-6\\sin 2x)' = {q_5_2_2_4_s4_i1}\\cos 2x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب المشتقة الثانية كاملة. الطريقة: نجمع الناتجين: \\( -12\\cos 2x - 8\\sin 2x \\). السبب: لنعوضها في المعادلة.",
+        "equation_template": "y'' = {input_1}\\cos 2x + {input_2}\\sin 2x",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "-12",
+            "options": [
+              "-12",
+              "12",
+              "-6",
+              "-8"
+            ],
+            "id": "q_5_2_2_4_s5_i1",
+            "correct_value": "-12",
+            "allowed_keys": [
+              "-12",
+              "12",
+              "-6",
+              "-8"
+            ],
+            "label": "القيمة 1",
+            "hint": "معامل \\( \\cos \\) هو \\( -12 \\) ومعامل \\( \\sin \\) هو \\( -8 \\)."
+          },
+          {
+            "input_id": "step5_f",
+            "correct_answer": "-8",
+            "options": [
+              "-8",
+              "8",
+              "-4",
+              "-12"
+            ],
+            "id": "q_5_2_2_4_s5_i2",
+            "correct_value": "-8",
+            "allowed_keys": [
+              "-8",
+              "8",
+              "-4",
+              "-12"
+            ],
+            "label": "القيمة 2",
+            "hint": "معامل \\( \\cos \\) هو \\( -12 \\) ومعامل \\( \\sin \\) هو \\( -8 \\)."
+          }
+        ],
+        "hint": "معامل \\( \\cos \\) هو \\( -12 \\) ومعامل \\( \\sin \\) هو \\( -8 \\).",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_5_2_2_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب المشتقة الثانية كاملة. الطريقة: نجمع الناتجين: \\( -12\\cos 2x - 8\\sin 2x \\). السبب: لنعوضها في المعادلة.",
+        "think": "معامل \\( \\cos \\) هو \\( -12 \\) ومعامل \\( \\sin \\) هو \\( -8 \\).",
+        "html_structure": "y'' = {q_5_2_2_4_s5_i1}\\cos 2x + {q_5_2_2_4_s5_i2}\\sin 2x"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( 4y \\). الطريقة: نضرب كل حد في \\( 4 \\): \\( 4\\times2\\sin2x \\) و \\( 4\\times3\\cos2x \\). السبب: لأن المعادلة فيها \\( 4y \\).",
+        "equation_template": "4y = {input_1}\\sin 2x + {input_2}\\cos 2x",
+        "inputs": [
+          {
+            "input_id": "step6_g",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "4",
+              "2",
+              "12"
+            ],
+            "id": "q_5_2_2_4_s6_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "4",
+              "2",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 4\\times2 \\) ثم \\( 4\\times3 \\)."
+          },
+          {
+            "input_id": "step6_h",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "3",
+              "4",
+              "8"
+            ],
+            "id": "q_5_2_2_4_s6_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "3",
+              "4",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( 4\\times2 \\) ثم \\( 4\\times3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 4\\times2 \\) ثم \\( 4\\times3 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_2_2_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( 4y \\). الطريقة: نضرب كل حد في \\( 4 \\): \\( 4\\times2\\sin2x \\) و \\( 4\\times3\\cos2x \\). السبب: لأن المعادلة فيها \\( 4y \\).",
+        "think": "اضرب \\( 4\\times2 \\) ثم \\( 4\\times3 \\).",
+        "html_structure": "4y = {q_5_2_2_4_s6_i1}\\sin 2x + {q_5_2_2_4_s6_i2}\\cos 2x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجمع \\( y'' + 4y \\). الطريقة: نجمع معاملات \\( \\cos 2x \\): \\( -12 + 12 \\)، ومعاملات \\( \\sin 2x \\): \\( -8 + 8 \\). السبب: لنرى هل الناتج صفر.",
+        "equation_template": "(-12 + {input_1})\\cos 2x + (-8 + {input_2})\\sin 2x = 0",
+        "inputs": [
+          {
+            "input_id": "step7_i",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "8",
+              "4",
+              "-12"
+            ],
+            "id": "q_5_2_2_4_s7_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "8",
+              "4",
+              "-12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب معامل \\( \\cos \\) من \\( 4y \\) ثم معامل \\( \\sin \\) من \\( 4y \\)."
+          },
+          {
+            "input_id": "step7_j",
+            "correct_answer": "8",
+            "options": [
+              "8",
+              "12",
+              "4",
+              "-8"
+            ],
+            "id": "q_5_2_2_4_s7_i2",
+            "correct_value": "8",
+            "allowed_keys": [
+              "8",
+              "12",
+              "4",
+              "-8"
+            ],
+            "label": "القيمة 2",
+            "hint": "اكتب معامل \\( \\cos \\) من \\( 4y \\) ثم معامل \\( \\sin \\) من \\( 4y \\)."
+          }
+        ],
+        "hint": "اكتب معامل \\( \\cos \\) من \\( 4y \\) ثم معامل \\( \\sin \\) من \\( 4y \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_2_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجمع \\( y'' + 4y \\). الطريقة: نجمع معاملات \\( \\cos 2x \\): \\( -12 + 12 \\)، ومعاملات \\( \\sin 2x \\): \\( -8 + 8 \\). السبب: لنرى هل الناتج صفر.",
+        "think": "اكتب معامل \\( \\cos \\) من \\( 4y \\) ثم معامل \\( \\sin \\) من \\( 4y \\).",
+        "html_structure": "(-12 + {q_5_2_2_4_s7_i1})\\cos 2x + (-8 + {q_5_2_2_4_s7_i2})\\sin 2x = 0"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: الطرف الأيسر صفر والأيمن صفر. السبب: المعادلة تحققت.",
+        "equation_template": "y = 2\\sin 2x + 3\\cos 2x \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_2_4_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أن العلاقة حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أن العلاقة حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_2_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: الطرف الأيسر صفر والأيمن صفر. السبب: المعادلة تحققت.",
+        "think": "تحقق المعادلة يعني أن العلاقة حل.",
+        "html_structure": "y = 2\\sin 2x + 3\\cos 2x \\Rightarrow {q_5_2_2_4_s8_i1}"
+      }
+    ]
+  }
+]

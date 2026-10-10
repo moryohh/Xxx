@@ -1,0 +1,357 @@
+[
+  {
+    "id_number": "q6_p213",
+    "page_number": 213,
+    "question_number": "6",
+    "question_text": "إذا كان \\( \\int_{1}^{3} f(x)\\,dx = 5 \\) و \\( \\int_{3}^{7} f(x)\\,dx = 8 \\) فأوجد \\( \\int_{1}^{7} f(x)\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_073_diag_q6_drawing_hndsy.png"
+    ],
+    "full_model_solution": "∫₁⁷ f = ∫₁³ f + ∫₃⁷ f = 5+8 = 13",
+    "source_file": "رياضيلت 4/page_073.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 73,
+      "pdf_page_number": 213,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_073_diag_q6_drawing_hndsy.png",
+    "title": "إذا كان \\( \\int_{1}^{3} f(x)\\,dx = 5 \\) و \\( \\int_{3}^{7} f(x)\\,dx = 8 \\) فأوجد \\( \\int_{1}^{7} f(x)\\,dx \\)",
+    "number": "6",
+    "model_solution": "∫₁⁷ f = ∫₁³ f + ∫₃⁷ f = 5+8 = 13",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نلاحظ أن التكاملين المعطيين متجاوران: الأول من \\( 1 \\) إلى \\( 3 \\) والثاني من \\( 3 \\) إلى \\( 7 \\). الهدف: معرفة هل \\( 3 \\) تقع بين \\( 1 \\) و \\( 7 \\). السبب: إذا كانت كذلك نستطيع جمع التكاملين.",
+        "equation_template": "1 < {input_1} < 7",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "1",
+              "8"
+            ],
+            "id": "q_4_3_213_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الذي يتشارك فيه التكاملان هو \\( 3 \\)."
+          }
+        ],
+        "hint": "الرقم الذي يتشارك فيه التكاملان هو \\( 3 \\).",
+        "related_topics": [
+          "خاصية التجزئة"
+        ],
+        "step_id": "math345_4_3_213_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نلاحظ أن التكاملين المعطيين متجاوران: الأول من \\( 1 \\) إلى \\( 3 \\) والثاني من \\( 3 \\) إلى \\( 7 \\). الهدف: معرفة هل \\( 3 \\) تقع بين \\( 1 \\) و \\( 7 \\). السبب: إذا كانت كذلك نستطيع جمع التكاملين.",
+        "think": "الرقم الذي يتشارك فيه التكاملان هو \\( 3 \\).",
+        "html_structure": "1 < {q_4_3_213_1_s1_i1} < 7"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نكتب خاصية التجزئة. الطريقة: التكامل على فترة كبيرة = مجموع التكاملين على جزأيها.",
+        "equation_template": "\\int_{1}^{7} f = \\int_{1}^{{input_1}} f + \\int_{{input_2}}^{7} f",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "3",
+            "options": [
+              "5",
+              "7",
+              "3",
+              "1"
+            ],
+            "id": "q_4_3_213_1_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "5",
+              "7",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "نقطة التقسيم هي \\( 3 \\) في الموضعين."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "1",
+              "7"
+            ],
+            "id": "q_4_3_213_1_s2_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "1",
+              "7"
+            ],
+            "label": "القيمة 2",
+            "hint": "نقطة التقسيم هي \\( 3 \\) في الموضعين."
+          }
+        ],
+        "hint": "نقطة التقسيم هي \\( 3 \\) في الموضعين.",
+        "related_topics": [
+          "خاصية التجزئة"
+        ],
+        "step_id": "math345_4_3_213_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نكتب خاصية التجزئة. الطريقة: التكامل على فترة كبيرة = مجموع التكاملين على جزأيها.",
+        "think": "نقطة التقسيم هي \\( 3 \\) في الموضعين.",
+        "html_structure": "\\int_{1}^{7} f = \\int_{1}^{{q_4_3_213_1_s2_i1}} f + \\int_{{q_4_3_213_1_s2_i2}}^{7} f"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نكتب قيمة التكامل الأول من المعطيات.",
+        "equation_template": "\\int_{1}^{3} f(x)\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "5",
+            "options": [
+              "3",
+              "5",
+              "8",
+              "13"
+            ],
+            "id": "q_4_3_213_1_s3_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "3",
+              "5",
+              "8",
+              "13"
+            ],
+            "label": "القيمة 1",
+            "hint": "هو الرقم الأول المعطى في السؤال."
+          }
+        ],
+        "hint": "هو الرقم الأول المعطى في السؤال.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_213_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نكتب قيمة التكامل الأول من المعطيات.",
+        "think": "هو الرقم الأول المعطى في السؤال.",
+        "html_structure": "\\int_{1}^{3} f(x)\\,dx = {q_4_3_213_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نكتب قيمة التكامل الثاني من المعطيات.",
+        "equation_template": "\\int_{3}^{7} f(x)\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "8",
+            "options": [
+              "4",
+              "13",
+              "8",
+              "5"
+            ],
+            "id": "q_4_3_213_1_s4_i1",
+            "correct_value": "8",
+            "allowed_keys": [
+              "4",
+              "13",
+              "8",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "هو الرقم الثاني المعطى في السؤال."
+          }
+        ],
+        "hint": "هو الرقم الثاني المعطى في السؤال.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_213_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نكتب قيمة التكامل الثاني من المعطيات.",
+        "think": "هو الرقم الثاني المعطى في السؤال.",
+        "html_structure": "\\int_{3}^{7} f(x)\\,dx = {q_4_3_213_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نعوّض القيمتين في خاصية التجزئة.",
+        "equation_template": "\\int_{1}^{7} f = {input_1} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "5",
+            "options": [
+              "13",
+              "5",
+              "8",
+              "3"
+            ],
+            "id": "q_4_3_213_1_s5_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "13",
+              "5",
+              "8",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع القيمتين بنفس ترتيب التكاملين."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "8",
+            "options": [
+              "7",
+              "5",
+              "13",
+              "8"
+            ],
+            "id": "q_4_3_213_1_s5_i2",
+            "correct_value": "8",
+            "allowed_keys": [
+              "7",
+              "5",
+              "13",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع القيمتين بنفس ترتيب التكاملين."
+          }
+        ],
+        "hint": "ضع القيمتين بنفس ترتيب التكاملين.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_3_213_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نعوّض القيمتين في خاصية التجزئة.",
+        "think": "ضع القيمتين بنفس ترتيب التكاملين.",
+        "html_structure": "\\int_{1}^{7} f = {q_4_3_213_1_s5_i1} + {q_4_3_213_1_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نجمع.",
+        "equation_template": "5 + 8 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "13",
+            "options": [
+              "12",
+              "13",
+              "40",
+              "3"
+            ],
+            "id": "q_4_3_213_1_s6_i1",
+            "correct_value": "13",
+            "allowed_keys": [
+              "12",
+              "13",
+              "40",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 5+8 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 5+8 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_4_3_213_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نجمع.",
+        "think": "اجمع \\( 5+8 \\).",
+        "html_structure": "5 + 8 = {q_4_3_213_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "مراجعة: الحد العلوي في التكامل الأول هو نفس الحد السفلي في الثاني.",
+        "equation_template": "\\text{الحد المشترك} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "3",
+              "5",
+              "7"
+            ],
+            "id": "q_4_3_213_1_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "3",
+              "5",
+              "7"
+            ],
+            "label": "القيمة 1",
+            "hint": "هو العدد الذي قسّمنا عنده الفترة."
+          }
+        ],
+        "hint": "هو العدد الذي قسّمنا عنده الفترة.",
+        "related_topics": [
+          "مراجعة النتيجة"
+        ],
+        "step_id": "math345_4_3_213_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "مراجعة: الحد العلوي في التكامل الأول هو نفس الحد السفلي في الثاني.",
+        "think": "هو العدد الذي قسّمنا عنده الفترة.",
+        "html_structure": "\\text{الحد المشترك} = {q_4_3_213_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الجواب النهائي.",
+        "equation_template": "\\int_{1}^{7} f(x)\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "13",
+            "options": [
+              "13",
+              "3",
+              "15",
+              "40"
+            ],
+            "id": "q_4_3_213_1_s8_i1",
+            "correct_value": "13",
+            "allowed_keys": [
+              "13",
+              "3",
+              "15",
+              "40"
+            ],
+            "label": "القيمة 1",
+            "hint": "هو ناتج الجمع السابق."
+          }
+        ],
+        "hint": "هو ناتج الجمع السابق.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_3_213_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الجواب النهائي.",
+        "think": "هو ناتج الجمع السابق.",
+        "html_structure": "\\int_{1}^{7} f(x)\\,dx = {q_4_3_213_1_s8_i1}"
+      }
+    ]
+  }
+]

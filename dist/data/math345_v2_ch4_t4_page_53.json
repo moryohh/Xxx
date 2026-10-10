@@ -1,0 +1,439 @@
+[
+  {
+    "id_number": "q12_p53",
+    "page_number": 53,
+    "question_number": "12",
+    "question_text": "جد المساحة المحددة بالمنحني \\( y=2\\cos^2x-1 \\) ومحور السينات وعلى الفترة \\( [0,\\frac{\\pi}{2}] \\).",
+    "question_images": [
+      {
+        "id": "diag_q1",
+        "type": "رسم بياني",
+        "desc": "مخطط يمثل تقسيم الفترة [0, π/2] إلى فترتين جزئيتين بواسطة النقطة π/4.",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_053_diag_q1_drawing_byany.png"
+      }
+    ],
+    "full_model_solution": "2cos²x-1=cos2x، وcos2x=0 عند x=π/4. A1=1/2، A2=-1/2، A=1 وحدة مربعة.",
+    "source_file": "رياضيلت 4/p053_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 53,
+      "part_number": 2,
+      "part_title": "الجزء 2 (صفحات 48 - 82)"
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_053_diag_q1_drawing_byany.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_053_diag_q1_drawing_byany.png",
+    "title": "جد المساحة المحددة بالمنحني \\( y=2\\cos^2x-1 \\) ومحور السينات وعلى الفترة \\( [0,\\frac{\\pi}{2}] \\).",
+    "number": "12",
+    "model_solution": "2cos²x-1=cos2x، وcos2x=0 عند x=π/4. A1=1/2، A2=-1/2، A=1 وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنبسط الدالة بقانون ضعف الزاوية. الطريقة: \\( 2\\cos^2x-1 \\) تساوي جيب تمام ضعف الزاوية. السبب: لنحصل على دالة سهلة التكامل.",
+        "equation_template": "2\\cos^2x-1={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "\\cos 2x",
+            "options": [
+              "\\sin 2x",
+              "\\cos 2x",
+              "1-\\cos 2x",
+              "\\cos^2 x"
+            ],
+            "id": "q_4_4_53_1_s1_i1",
+            "correct_value": "\\cos 2x",
+            "allowed_keys": [
+              "\\sin 2x",
+              "\\cos 2x",
+              "1-\\cos 2x",
+              "\\cos^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( \\cos \\) مع ضعف الزاوية \\( 2x \\)."
+          }
+        ],
+        "hint": "اكتب \\( \\cos \\) مع ضعف الزاوية \\( 2x \\).",
+        "related_topics": [
+          "ضعف الزاوية"
+        ],
+        "step_id": "math345_4_4_53_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنبسط الدالة بقانون ضعف الزاوية. الطريقة: \\( 2\\cos^2x-1 \\) تساوي جيب تمام ضعف الزاوية. السبب: لنحصل على دالة سهلة التكامل.",
+        "think": "اكتب \\( \\cos \\) مع ضعف الزاوية \\( 2x \\).",
+        "html_structure": "2\\cos^2x-1={q_4_4_53_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنجد نقاط التقاطع. الطريقة: نضع \\( \\cos2x=0 \\). جيب التمام صفر عند \\( \\frac{\\pi}{2} \\) و\\( \\frac{3\\pi}{2} \\). السبب: لأن محور السينات \\( y=0 \\).",
+        "equation_template": "2x={input_1},\\quad 2x=\\frac{3\\pi}{2}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "\\frac{\\pi}{2}",
+            "options": [
+              "\\pi",
+              "0",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{4}"
+            ],
+            "id": "q_4_4_53_1_s2_i1",
+            "correct_value": "\\frac{\\pi}{2}",
+            "allowed_keys": [
+              "\\pi",
+              "0",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{4}"
+            ],
+            "label": "القيمة 1",
+            "hint": "أول زاوية جيب تمامها صفر."
+          }
+        ],
+        "hint": "أول زاوية جيب تمامها صفر.",
+        "related_topics": [
+          "حل المعادلات المثلثية"
+        ],
+        "step_id": "math345_4_4_53_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنجد نقاط التقاطع. الطريقة: نضع \\( \\cos2x=0 \\). جيب التمام صفر عند \\( \\frac{\\pi}{2} \\) و\\( \\frac{3\\pi}{2} \\). السبب: لأن محور السينات \\( y=0 \\).",
+        "think": "أول زاوية جيب تمامها صفر.",
+        "html_structure": "2x={q_4_4_53_1_s2_i1},\\quad 2x=\\frac{3\\pi}{2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنقسم على \\( 2 \\) لنجد \\( x \\). الطريقة: \\( x=\\frac{\\pi}{4} \\) و\\( x=\\frac{3\\pi}{4} \\). السبب: لأن المطلوب \\( x \\).",
+        "equation_template": "x=\\frac{\\pi}{{input_1}},\\quad x=\\frac{3\\pi}{4}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "4",
+            "options": [
+              "8",
+              "3",
+              "4",
+              "2"
+            ],
+            "id": "q_4_4_53_1_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "8",
+              "3",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسمة \\( \\frac{\\pi}{2} \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسمة \\( \\frac{\\pi}{2} \\) على \\( 2 \\).",
+        "related_topics": [
+          "حل المعادلات المثلثية"
+        ],
+        "step_id": "math345_4_4_53_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنقسم على \\( 2 \\) لنجد \\( x \\). الطريقة: \\( x=\\frac{\\pi}{4} \\) و\\( x=\\frac{3\\pi}{4} \\). السبب: لأن المطلوب \\( x \\).",
+        "think": "قسمة \\( \\frac{\\pi}{2} \\) على \\( 2 \\).",
+        "html_structure": "x=\\frac{\\pi}{{q_4_4_53_1_s3_i1}},\\quad x=\\frac{3\\pi}{4}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنفحص أي الجذرين داخل الفترة. الطريقة: \\( \\frac{3\\pi}{4}>\\frac{\\pi}{2} \\) فيُهمل. السبب: لأنه خارج الفترة.",
+        "equation_template": "\\frac{3\\pi}{4}\\ {input_1}\\ [0,\\frac{\\pi}{2}]",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "\\notin",
+            "options": [
+              "\\subset",
+              "\\notin",
+              "=",
+              "\\in"
+            ],
+            "id": "q_4_4_53_1_s4_i1",
+            "correct_value": "\\notin",
+            "allowed_keys": [
+              "\\subset",
+              "\\notin",
+              "=",
+              "\\in"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 135^\\circ \\) أكبر من \\( 90^\\circ \\)."
+          }
+        ],
+        "hint": "\\( 135^\\circ \\) أكبر من \\( 90^\\circ \\).",
+        "related_topics": [
+          "تجزئة فترة التكامل"
+        ],
+        "step_id": "math345_4_4_53_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنفحص أي الجذرين داخل الفترة. الطريقة: \\( \\frac{3\\pi}{4}>\\frac{\\pi}{2} \\) فيُهمل. السبب: لأنه خارج الفترة.",
+        "think": "\\( 135^\\circ \\) أكبر من \\( 90^\\circ \\).",
+        "html_structure": "\\frac{3\\pi}{4}\\ {q_4_4_53_1_s4_i1}\\ [0,\\frac{\\pi}{2}]"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنقسم الفترة. الطريقة: نقسم عند \\( \\frac{\\pi}{4} \\) (انظر الرسم). السبب: لأن الإشارة تتغير عنده.",
+        "equation_template": "[0,{input_1}]\\cup[{input_2},\\frac{\\pi}{2}]",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "\\frac{\\pi}{4}",
+            "options": [
+              "\\pi",
+              "\\frac{3\\pi}{4}",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{4}"
+            ],
+            "id": "q_4_4_53_1_s5_i1",
+            "correct_value": "\\frac{\\pi}{4}",
+            "allowed_keys": [
+              "\\pi",
+              "\\frac{3\\pi}{4}",
+              "\\frac{\\pi}{2}",
+              "\\frac{\\pi}{4}"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( \\frac{\\pi}{4} \\) في الفراغين."
+          },
+          {
+            "input_id": "s5_i2",
+            "correct_answer": "\\frac{\\pi}{4}",
+            "options": [
+              "\\frac{3\\pi}{4}",
+              "\\frac{\\pi}{4}",
+              "\\pi",
+              "\\frac{\\pi}{2}"
+            ],
+            "id": "q_4_4_53_1_s5_i2",
+            "correct_value": "\\frac{\\pi}{4}",
+            "allowed_keys": [
+              "\\frac{3\\pi}{4}",
+              "\\frac{\\pi}{4}",
+              "\\pi",
+              "\\frac{\\pi}{2}"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( \\frac{\\pi}{4} \\) في الفراغين."
+          }
+        ],
+        "hint": "ضع \\( \\frac{\\pi}{4} \\) في الفراغين.",
+        "related_topics": [
+          "تجزئة فترة التكامل"
+        ],
+        "step_id": "math345_4_4_53_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنقسم الفترة. الطريقة: نقسم عند \\( \\frac{\\pi}{4} \\) (انظر الرسم). السبب: لأن الإشارة تتغير عنده.",
+        "think": "ضع \\( \\frac{\\pi}{4} \\) في الفراغين.",
+        "html_structure": "[0,{q_4_4_53_1_s5_i1}]\\cup[{q_4_4_53_1_s5_i2},\\frac{\\pi}{2}]"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنجد دالة التكامل. الطريقة: نوفر مشتقة الزاوية \\( 2 \\): \\( \\int\\cos2x\\,dx=\\frac12\\sin2x \\). السبب: لأن مشتقة \\( \\sin2x \\) تعطي \\( 2\\cos2x \\).",
+        "equation_template": "\\int\\cos2x\\,dx=\\frac{1}{{input_1}}{input_2}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "-2",
+              "1"
+            ],
+            "id": "q_4_4_53_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم على معامل \\( x \\)."
+          },
+          {
+            "input_id": "s6_i2",
+            "correct_answer": "\\sin 2x",
+            "options": [
+              "\\cos 2x",
+              "2\\sin 2x",
+              "\\sin 2x",
+              "-\\sin 2x"
+            ],
+            "id": "q_4_4_53_1_s6_i2",
+            "correct_value": "\\sin 2x",
+            "allowed_keys": [
+              "\\cos 2x",
+              "2\\sin 2x",
+              "\\sin 2x",
+              "-\\sin 2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "قسّم على معامل \\( x \\)."
+          }
+        ],
+        "hint": "قسّم على معامل \\( x \\).",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_4_53_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنجد دالة التكامل. الطريقة: نوفر مشتقة الزاوية \\( 2 \\): \\( \\int\\cos2x\\,dx=\\frac12\\sin2x \\). السبب: لأن مشتقة \\( \\sin2x \\) تعطي \\( 2\\cos2x \\).",
+        "think": "قسّم على معامل \\( x \\).",
+        "html_structure": "\\int\\cos2x\\,dx=\\frac{1}{{q_4_4_53_1_s6_i1}}{q_4_4_53_1_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنحسب \\( A_1 \\). الطريقة: \\( \\frac12(\\sin\\frac{\\pi}{2}-\\sin0) \\): جيب \\( \\frac{\\pi}{2} \\) يساوي \\( 1 \\). السبب: لأن \\( 2\\cdot\\frac{\\pi}{4}=\\frac{\\pi}{2} \\).",
+        "equation_template": "A_1=\\frac12(\\sin\\frac{\\pi}{2}-\\sin0)=\\frac12({input_1}-0)={input_2}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "-1",
+              "1",
+              "0"
+            ],
+            "id": "q_4_4_53_1_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب الزاوية القائمة \\( 1 \\)."
+          },
+          {
+            "input_id": "s7_i2",
+            "correct_answer": "\\frac12",
+            "options": [
+              "1",
+              "-\\frac12",
+              "0",
+              "\\frac12"
+            ],
+            "id": "q_4_4_53_1_s7_i2",
+            "correct_value": "\\frac12",
+            "allowed_keys": [
+              "1",
+              "-\\frac12",
+              "0",
+              "\\frac12"
+            ],
+            "label": "القيمة 2",
+            "hint": "جيب الزاوية القائمة \\( 1 \\)."
+          }
+        ],
+        "hint": "جيب الزاوية القائمة \\( 1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_53_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنحسب \\( A_1 \\). الطريقة: \\( \\frac12(\\sin\\frac{\\pi}{2}-\\sin0) \\): جيب \\( \\frac{\\pi}{2} \\) يساوي \\( 1 \\). السبب: لأن \\( 2\\cdot\\frac{\\pi}{4}=\\frac{\\pi}{2} \\).",
+        "think": "جيب الزاوية القائمة \\( 1 \\).",
+        "html_structure": "A_1=\\frac12(\\sin\\frac{\\pi}{2}-\\sin0)=\\frac12({q_4_4_53_1_s7_i1}-0)={q_4_4_53_1_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنحسب \\( A_2 \\). الطريقة: \\( \\frac12(\\sin\\pi-\\sin\\frac{\\pi}{2})=\\frac12(0-1) \\). السبب: لأن \\( \\sin\\pi=0 \\).",
+        "equation_template": "A_2=\\frac12(\\sin\\pi-\\sin\\frac{\\pi}{2})=\\frac12({input_1}-1)={input_2}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_4_4_53_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب \\( \\pi \\) صفر ثم اطرح \\( 1 \\)."
+          },
+          {
+            "input_id": "s8_i2",
+            "correct_answer": "-\\frac12",
+            "options": [
+              "0",
+              "-1",
+              "-\\frac12",
+              "\\frac12"
+            ],
+            "id": "q_4_4_53_1_s8_i2",
+            "correct_value": "-\\frac12",
+            "allowed_keys": [
+              "0",
+              "-1",
+              "-\\frac12",
+              "\\frac12"
+            ],
+            "label": "القيمة 2",
+            "hint": "جيب \\( \\pi \\) صفر ثم اطرح \\( 1 \\)."
+          }
+        ],
+        "hint": "جيب \\( \\pi \\) صفر ثم اطرح \\( 1 \\).",
+        "related_topics": [
+          "المساحة تحت المحور"
+        ],
+        "step_id": "math345_4_4_53_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنحسب \\( A_2 \\). الطريقة: \\( \\frac12(\\sin\\pi-\\sin\\frac{\\pi}{2})=\\frac12(0-1) \\). السبب: لأن \\( \\sin\\pi=0 \\).",
+        "think": "جيب \\( \\pi \\) صفر ثم اطرح \\( 1 \\).",
+        "html_structure": "A_2=\\frac12(\\sin\\pi-\\sin\\frac{\\pi}{2})=\\frac12({q_4_4_53_1_s8_i1}-1)={q_4_4_53_1_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: سنجمع القيم المطلقة. الطريقة: \\( \\left|\\frac12\\right|+\\left|-\\frac12\\right| \\). السبب: المساحة موجبة.",
+        "equation_template": "A=\\left|\\frac12\\right|+\\left|-\\frac12\\right|={input_1}",
+        "inputs": [
+          {
+            "input_id": "s9_i1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "\\frac12",
+              "0"
+            ],
+            "id": "q_4_4_53_1_s9_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "\\frac12",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "نصف زائد نصف."
+          }
+        ],
+        "hint": "نصف زائد نصف.",
+        "related_topics": [
+          "المساحة الكلية"
+        ],
+        "step_id": "math345_4_4_53_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: سنجمع القيم المطلقة. الطريقة: \\( \\left|\\frac12\\right|+\\left|-\\frac12\\right| \\). السبب: المساحة موجبة.",
+        "think": "نصف زائد نصف.",
+        "html_structure": "A=\\left|\\frac12\\right|+\\left|-\\frac12\\right|={q_4_4_53_1_s9_i1}"
+      }
+    ]
+  }
+]

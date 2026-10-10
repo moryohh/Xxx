@@ -1,0 +1,556 @@
+[
+  {
+    "id_number": "q5C_p108",
+    "page_number": 108,
+    "question_number": "5 (سادساً وسابعاً)",
+    "question_text": "ارسم منحنى الدالة \\( f(x) = 2x^2 - x^4 \\) — الجزء الثالث: التقعر والتحدب ونقاط الانقلاب والجدول.",
+    "question_images": [
+      {
+        "id": "diag_table_1",
+        "type": "جدول",
+        "desc": "جدول يربط بين إحداثيات x و y للنقاط الواقعة على منحني الدالة، بما في ذلك الأصفار ونقاط الانقلاب.",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_108_diag_table_1_table.png"
+      },
+      {
+        "id": "diag_graph_1",
+        "type": "مخطط بياني",
+        "desc": "رسم بياني يمثل منحني الدالة على المستوى الإحداثي مع النقاط ونقاط الانقلاب.",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_108_diag_graph_1_chart.png"
+      }
+    ],
+    "full_model_solution": "f''(x)=4-12x^2=0 → x^2=1/3 → x=±1/√3، y=5/9. نقطتا الانقلاب (±1/√3,5/9). تقعر في (-1/√3,1/√3)، وتحدب في x>1/√3 و x<-1/√3.",
+    "source_file": "رياضيات 3/page_108_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 108,
+      "pdf_page_number": 110,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_108_diag_table_1_table.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_108_diag_graph_1_chart.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_108_diag_table_1_table.png",
+    "title": "ارسم منحنى الدالة \\( f(x) = 2x^2 - x^4 \\) — الجزء الثالث: التقعر والتحدب ونقاط الانقلاب والجدول.",
+    "number": "5 (سادساً وسابعاً)",
+    "model_solution": "f''(x)=4-12x^2=0 → x^2=1/3 → x=±1/√3، y=5/9. نقطتا الانقلاب (±1/√3,5/9). تقعر في (-1/√3,1/√3)، وتحدب في x>1/√3 و x<-1/√3.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب المشتقة الثانية. الطريقة: من \\( f'(x)=4x-4x^3 \\) نشتق فنحصل على \\( 4-12x^2 \\). السبب: لأن نقاط الانقلاب تُستخرج من \\( f'' \\).",
+        "equation_template": "f''(x) = {input_1} - {input_2}x^2",
+        "inputs": [
+          {
+            "input_id": "q5C_step1_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق \\( 4x \\) فتصبح \\( 4 \\)، واشتق \\( 4x^3 \\) فتصبح \\( 12x^2 \\)."
+          },
+          {
+            "input_id": "q5C_step1_2",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s1_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "اشتق \\( 4x \\) فتصبح \\( 4 \\)، واشتق \\( 4x^3 \\) فتصبح \\( 12x^2 \\)."
+          }
+        ],
+        "hint": "اشتق \\( 4x \\) فتصبح \\( 4 \\)، واشتق \\( 4x^3 \\) فتصبح \\( 12x^2 \\).",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_3_9_108_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب المشتقة الثانية. الطريقة: من \\( f'(x)=4x-4x^3 \\) نشتق فنحصل على \\( 4-12x^2 \\). السبب: لأن نقاط الانقلاب تُستخرج من \\( f'' \\).",
+        "think": "اشتق \\( 4x \\) فتصبح \\( 4 \\)، واشتق \\( 4x^3 \\) فتصبح \\( 12x^2 \\).",
+        "html_structure": "f''(x) = {q_3_9_108_1_s1_i1} - {q_3_9_108_1_s1_i2}x^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي المشتقة الثانية بالصفر. الطريقة: ضع \\( 4-12x^2=0 \\) وانقل \\( 12x^2 \\) للطرف الآخر. السبب: لنجد قيم \\( x \\) المرشحة للانقلاب.",
+        "equation_template": "4 = {input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "q5C_step2_1",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s2_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد \\( -12x^2 \\) ينتقل موجباً."
+          }
+        ],
+        "hint": "الحد \\( -12x^2 \\) ينتقل موجباً.",
+        "related_topics": [
+          "نقاط الانقلاب"
+        ],
+        "step_id": "math345_3_9_108_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي المشتقة الثانية بالصفر. الطريقة: ضع \\( 4-12x^2=0 \\) وانقل \\( 12x^2 \\) للطرف الآخر. السبب: لنجد قيم \\( x \\) المرشحة للانقلاب.",
+        "think": "الحد \\( -12x^2 \\) ينتقل موجباً.",
+        "html_structure": "4 = {q_3_9_108_1_s2_i1}x^2"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: اقسم الطرفين على \\( 12 \\) واختصر. السبب: لنتخلص من المعامل.",
+        "equation_template": "x^2 = \\frac{{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q5C_step3_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_108_1_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{4}{12} \\) تختصر على \\( 4 \\)."
+          },
+          {
+            "input_id": "q5C_step3_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s3_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac{4}{12} \\) تختصر على \\( 4 \\)."
+          }
+        ],
+        "hint": "\\( \\frac{4}{12} \\) تختصر على \\( 4 \\).",
+        "related_topics": [
+          "تبسيط الكسور"
+        ],
+        "step_id": "math345_3_9_108_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: اقسم الطرفين على \\( 12 \\) واختصر. السبب: لنتخلص من المعامل.",
+        "think": "\\( \\frac{4}{12} \\) تختصر على \\( 4 \\).",
+        "html_structure": "x^2 = \\frac{{q_3_9_108_1_s3_i1}}{{q_3_9_108_1_s3_i2}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نأخذ الجذر التربيعي. الطريقة: جذر الكسر هو جذر البسط على جذر المقام. السبب: لنحصل على \\( x \\).",
+        "equation_template": "x = \\pm \\frac{1}{\\sqrt{{input_1}}}",
+        "inputs": [
+          {
+            "input_id": "q5C_step4_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام الأصلي \\( 3 \\) يوضع تحت الجذر."
+          }
+        ],
+        "hint": "المقام الأصلي \\( 3 \\) يوضع تحت الجذر.",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_3_9_108_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نأخذ الجذر التربيعي. الطريقة: جذر الكسر هو جذر البسط على جذر المقام. السبب: لنحصل على \\( x \\).",
+        "think": "المقام الأصلي \\( 3 \\) يوضع تحت الجذر.",
+        "html_structure": "x = \\pm \\frac{1}{\\sqrt{{q_3_9_108_1_s4_i1}}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد قيمة \\( y \\) عند \\( x=\\frac{1}{\\sqrt3} \\). الطريقة: \\( 2x^2 = \\frac{2}{3} \\) و \\( x^4 = \\frac{1}{9} \\) لأن \\( (\\frac13)^2 \\). السبب: لنكوّن نقطة الانقلاب.",
+        "equation_template": "f = \\frac{2}{3} - \\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "q5C_step5_1",
+            "correct_answer": "9",
+            "options": [
+              "9",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s5_i1",
+            "correct_value": "9",
+            "allowed_keys": [
+              "9",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مربع \\( \\frac13 \\) هو \\( \\frac{1}{9} \\)."
+          }
+        ],
+        "hint": "مربع \\( \\frac13 \\) هو \\( \\frac{1}{9} \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_9_108_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد قيمة \\( y \\) عند \\( x=\\frac{1}{\\sqrt3} \\). الطريقة: \\( 2x^2 = \\frac{2}{3} \\) و \\( x^4 = \\frac{1}{9} \\) لأن \\( (\\frac13)^2 \\). السبب: لنكوّن نقطة الانقلاب.",
+        "think": "مربع \\( \\frac13 \\) هو \\( \\frac{1}{9} \\).",
+        "html_structure": "f = \\frac{2}{3} - \\frac{1}{{q_3_9_108_1_s5_i1}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نوحد المقامات. الطريقة: حوّل \\( \\frac23 \\) إلى تاسعات بضرب البسط والمقام في \\( 3 \\). السبب: لأن الجمع والطرح يحتاجان مقاماً موحداً.",
+        "equation_template": "\\frac{2}{3} = \\frac{{input_1}}{9}",
+        "inputs": [
+          {
+            "input_id": "q5C_step6_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s6_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times3 = 6 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times3 = 6 \\).",
+        "related_topics": [
+          "توحيد المقامات"
+        ],
+        "step_id": "math345_3_9_108_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نوحد المقامات. الطريقة: حوّل \\( \\frac23 \\) إلى تاسعات بضرب البسط والمقام في \\( 3 \\). السبب: لأن الجمع والطرح يحتاجان مقاماً موحداً.",
+        "think": "\\( 2\\times3 = 6 \\).",
+        "html_structure": "\\frac{2}{3} = \\frac{{q_3_9_108_1_s6_i1}}{9}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نطرح الكسرين. الطريقة: اطرح البسطين مع بقاء المقام. السبب: لأن المقام متساوٍ.",
+        "equation_template": "\\frac{6}{9} - \\frac{1}{9} = \\frac{{input_1}}{9}",
+        "inputs": [
+          {
+            "input_id": "q5C_step7_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s7_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6-1 \\)."
+          }
+        ],
+        "hint": "\\( 6-1 \\).",
+        "related_topics": [
+          "طرح الكسور"
+        ],
+        "step_id": "math345_3_9_108_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نطرح الكسرين. الطريقة: اطرح البسطين مع بقاء المقام. السبب: لأن المقام متساوٍ.",
+        "think": "\\( 6-1 \\).",
+        "html_structure": "\\frac{6}{9} - \\frac{1}{9} = \\frac{{q_3_9_108_1_s7_i1}}{9}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نجد \\( y \\) عند \\( x=-\\frac{1}{\\sqrt3} \\). الطريقة: القوى زوجية فلا تتغير النتيجة. السبب: لأن الدالة متناظرة حول محور الصادات.",
+        "equation_template": "f(-\\frac{1}{\\sqrt{3}}) = \\frac{{input_1}}{9}",
+        "inputs": [
+          {
+            "input_id": "q5C_step8_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s8_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "هي نفس نتيجة \\( x \\) الموجبة."
+          }
+        ],
+        "hint": "هي نفس نتيجة \\( x \\) الموجبة.",
+        "related_topics": [
+          "التناظر"
+        ],
+        "step_id": "math345_3_9_108_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نجد \\( y \\) عند \\( x=-\\frac{1}{\\sqrt3} \\). الطريقة: القوى زوجية فلا تتغير النتيجة. السبب: لأن الدالة متناظرة حول محور الصادات.",
+        "think": "هي نفس نتيجة \\( x \\) الموجبة.",
+        "html_structure": "f(-\\frac{1}{\\sqrt{3}}) = \\frac{{q_3_9_108_1_s8_i1}}{9}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نفحص إشارة \\( f'' \\) في الوسط. الطريقة: عوّض \\( x=0 \\) في \\( 4-12x^2 \\). السبب: إذا كانت موجبة فالتقعر إلى الأعلى بين النقطتين.",
+        "equation_template": "f''(0) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q5C_step9_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s9_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 12\\times0=0 \\) فيبقى \\( 4 \\)."
+          }
+        ],
+        "hint": "\\( 12\\times0=0 \\) فيبقى \\( 4 \\).",
+        "related_topics": [
+          "التقعر"
+        ],
+        "step_id": "math345_3_9_108_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نفحص إشارة \\( f'' \\) في الوسط. الطريقة: عوّض \\( x=0 \\) في \\( 4-12x^2 \\). السبب: إذا كانت موجبة فالتقعر إلى الأعلى بين النقطتين.",
+        "think": "\\( 12\\times0=0 \\) فيبقى \\( 4 \\).",
+        "html_structure": "f''(0) = {q_3_9_108_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نفحص إشارة \\( f'' \\) على اليمين. الطريقة: عوّض \\( x=1 \\). السبب: إذا كانت سالبة فهناك تحدب.",
+        "equation_template": "f''(1) = 4 - 12 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q5C_step10_1",
+            "correct_answer": "-8",
+            "options": [
+              "-8",
+              "8",
+              "16",
+              "-16"
+            ],
+            "id": "q_3_9_108_1_s10_i1",
+            "correct_value": "-8",
+            "allowed_keys": [
+              "-8",
+              "8",
+              "16",
+              "-16"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 4-12 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 4-12 \\).",
+        "related_topics": [
+          "التحدب"
+        ],
+        "step_id": "math345_3_9_108_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نفحص إشارة \\( f'' \\) على اليمين. الطريقة: عوّض \\( x=1 \\). السبب: إذا كانت سالبة فهناك تحدب.",
+        "think": "اطرح \\( 4-12 \\).",
+        "html_structure": "f''(1) = 4 - 12 = {q_3_9_108_1_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجهز نقاط الجدول. الطريقة: قيمة \\( y \\) عند \\( x=\\pm1 \\) تساوي \\( 1 \\) (من النهايات). السبب: لأن الجدول يضم نقاطاً مهمة للرسم.",
+        "equation_template": "(1, {input_1}) , (-1, {input_2}) , (0,0)",
+        "inputs": [
+          {
+            "input_id": "q5C_step11_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_108_1_s11_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "النهايتان العظميان \\( (\\pm1,1) \\)."
+          },
+          {
+            "input_id": "q5C_step11_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_108_1_s11_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "النهايتان العظميان \\( (\\pm1,1) \\)."
+          }
+        ],
+        "hint": "النهايتان العظميان \\( (\\pm1,1) \\).",
+        "related_topics": [
+          "جدول القيم"
+        ],
+        "step_id": "math345_3_9_108_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجهز نقاط الجدول. الطريقة: قيمة \\( y \\) عند \\( x=\\pm1 \\) تساوي \\( 1 \\) (من النهايات). السبب: لأن الجدول يضم نقاطاً مهمة للرسم.",
+        "think": "النهايتان العظميان \\( (\\pm1,1) \\).",
+        "html_structure": "(1, {q_3_9_108_1_s11_i1}) , (-1, {q_3_9_108_1_s11_i2}) , (0,0)"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نكتب نقطتي الانقلاب النهائيتين. الطريقة: نجمع \\( x \\) و \\( y \\) معاً. السبب: لتلخيص المطلوب.",
+        "equation_template": "(\\pm\\frac{1}{\\sqrt{3}} , \\frac{{input_1}}{{input_2}})",
+        "inputs": [
+          {
+            "input_id": "q5C_step12_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s12_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط \\( 5 \\) والمقام \\( 9 \\)."
+          },
+          {
+            "input_id": "q5C_step12_2",
+            "correct_answer": "9",
+            "options": [
+              "9",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_108_1_s12_i2",
+            "correct_value": "9",
+            "allowed_keys": [
+              "9",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "البسط \\( 5 \\) والمقام \\( 9 \\)."
+          }
+        ],
+        "hint": "البسط \\( 5 \\) والمقام \\( 9 \\).",
+        "related_topics": [
+          "نقاط الانقلاب"
+        ],
+        "step_id": "math345_3_9_108_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نكتب نقطتي الانقلاب النهائيتين. الطريقة: نجمع \\( x \\) و \\( y \\) معاً. السبب: لتلخيص المطلوب.",
+        "think": "البسط \\( 5 \\) والمقام \\( 9 \\).",
+        "html_structure": "(\\pm\\frac{1}{\\sqrt{3}} , \\frac{{q_3_9_108_1_s12_i1}}{{q_3_9_108_1_s12_i2}})"
+      }
+    ]
+  }
+]

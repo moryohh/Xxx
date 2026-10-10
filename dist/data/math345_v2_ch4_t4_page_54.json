@@ -1,0 +1,491 @@
+[
+  {
+    "id_number": "q13_p54",
+    "page_number": 54,
+    "question_number": "13",
+    "question_text": "جد المساحة المحددة بالدالتين \\( f(x)=x^2 \\) و\\( g(x)=x^4-12 \\).",
+    "question_images": [
+      {
+        "id": "diag_q13",
+        "type": "جدول",
+        "desc": "جدول يوضح السنوات الدراسية والدورات الامتحانية التي ورد فيها السؤال (1997، 2015، 2008، 2009، 2016، 2015، 2020)",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_054_diag_q13_table.png"
+      }
+    ],
+    "full_model_solution": "x²=x⁴-12 فـ(x²-4)(x²+3)=0 وx=±2. A=|∫_{-2}^{2}(x⁴-x²-12)dx|=608/15 وحدة مربعة.",
+    "source_file": "رياضيلت 4/p054_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 54,
+      "part_number": 2,
+      "part_title": "الجزء 2 (صفحات 48 - 82)"
+    },
+    "chapter": 4,
+    "topic_index": 3,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_054_diag_q13_table.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_054_diag_q13_table.png",
+    "title": "جد المساحة المحددة بالدالتين \\( f(x)=x^2 \\) و\\( g(x)=x^4-12 \\).",
+    "number": "13",
+    "model_solution": "x²=x⁴-12 فـ(x²-4)(x²+3)=0 وx=±2. A=|∫_{-2}^{2}(x⁴-x²-12)dx|=608/15 وحدة مربعة.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنساوي الدالتين لنجد نقاط التقاطع. الطريقة: نكتب \\( x^2=x^4-12 \\) وننقل كل شيء إلى طرف واحد. السبب: لأن التقاطع حيث تتساوى القيمتان.",
+        "equation_template": "x^2=x^4-12\\Rightarrow x^4-x^2-{input_1}=0",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "3",
+              "-12",
+              "4"
+            ],
+            "id": "q_4_4_54_1_s1_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "3",
+              "-12",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( x^2 \\) و\\( -12 \\) إلى اليمين."
+          }
+        ],
+        "hint": "انقل \\( x^2 \\) و\\( -12 \\) إلى اليمين.",
+        "related_topics": [
+          "المساحة بالتكامل"
+        ],
+        "step_id": "math345_4_4_54_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنساوي الدالتين لنجد نقاط التقاطع. الطريقة: نكتب \\( x^2=x^4-12 \\) وننقل كل شيء إلى طرف واحد. السبب: لأن التقاطع حيث تتساوى القيمتان.",
+        "think": "انقل \\( x^2 \\) و\\( -12 \\) إلى اليمين.",
+        "html_structure": "x^2=x^4-12\\Rightarrow x^4-x^2-{q_4_4_54_1_s1_i1}=0"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنحلل المعادلة. الطريقة: نعتبر \\( x^2 \\) متغيراً: عددان ضربهما \\( -12 \\) ومجموعهما \\( -1 \\) هما \\( -4 \\) و\\( +3 \\). السبب: لإيجاد الجذور.",
+        "equation_template": "(x^2-{input_1})(x^2+{input_2})=0",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "4",
+            "options": [
+              "2",
+              "4",
+              "3",
+              "12"
+            ],
+            "id": "q_4_4_54_1_s2_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "2",
+              "4",
+              "3",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 4 \\) ثم \\( 3 \\)."
+          },
+          {
+            "input_id": "s2_i2",
+            "correct_answer": "3",
+            "options": [
+              "12",
+              "4",
+              "2",
+              "3"
+            ],
+            "id": "q_4_4_54_1_s2_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "12",
+              "4",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 4 \\) ثم \\( 3 \\)."
+          }
+        ],
+        "hint": "ضع \\( 4 \\) ثم \\( 3 \\).",
+        "related_topics": [
+          "التحليل إلى عوامل"
+        ],
+        "step_id": "math345_4_4_54_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنحلل المعادلة. الطريقة: نعتبر \\( x^2 \\) متغيراً: عددان ضربهما \\( -12 \\) ومجموعهما \\( -1 \\) هما \\( -4 \\) و\\( +3 \\). السبب: لإيجاد الجذور.",
+        "think": "ضع \\( 4 \\) ثم \\( 3 \\).",
+        "html_structure": "(x^2-{q_4_4_54_1_s2_i1})(x^2+{q_4_4_54_1_s2_i2})=0"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنحل كل قوس. الطريقة: \\( x^2+3=0 \\) يعطي \\( x^2=-3 \\) وهذا مستحيل فيُهمل. و\\( x^2-4=0 \\) يعطي \\( x=\\pm2 \\). السبب: لأن مربع العدد الحقيقي لا يكون سالباً.",
+        "equation_template": "x^2+3=0\\Rightarrow x^2={input_1}\\ (\\text{مهمل}),\\quad x={input_2}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "0",
+              "3",
+              "9"
+            ],
+            "id": "q_4_4_54_1_s3_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "0",
+              "3",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( x^2=-3 \\) مستحيل، وجذر \\( 4 \\) هو \\( \\pm2 \\)."
+          },
+          {
+            "input_id": "s3_i2",
+            "correct_answer": "\\pm2",
+            "options": [
+              "\\pm2",
+              "-2",
+              "2",
+              "\\pm4"
+            ],
+            "id": "q_4_4_54_1_s3_i2",
+            "correct_value": "\\pm2",
+            "allowed_keys": [
+              "\\pm2",
+              "-2",
+              "2",
+              "\\pm4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( x^2=-3 \\) مستحيل، وجذر \\( 4 \\) هو \\( \\pm2 \\)."
+          }
+        ],
+        "hint": "\\( x^2=-3 \\) مستحيل، وجذر \\( 4 \\) هو \\( \\pm2 \\).",
+        "related_topics": [
+          "جذور كثيرة الحدود"
+        ],
+        "step_id": "math345_4_4_54_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنحل كل قوس. الطريقة: \\( x^2+3=0 \\) يعطي \\( x^2=-3 \\) وهذا مستحيل فيُهمل. و\\( x^2-4=0 \\) يعطي \\( x=\\pm2 \\). السبب: لأن مربع العدد الحقيقي لا يكون سالباً.",
+        "think": "\\( x^2=-3 \\) مستحيل، وجذر \\( 4 \\) هو \\( \\pm2 \\).",
+        "html_structure": "x^2+3=0\\Rightarrow x^2={q_4_4_54_1_s3_i1}\\ (\\text{مهمل}),\\quad x={q_4_4_54_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنكوّن دالة التكامل. الطريقة: نطرح الدالتين: \\( g(x)-f(x)=x^4-12-x^2 \\). السبب: التكامل يكون للفرق بين الدالتين.",
+        "equation_template": "h(x)=x^4-{input_1}-12",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "2x^2",
+              "x",
+              "x^4"
+            ],
+            "id": "q_4_4_54_1_s4_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "2x^2",
+              "x",
+              "x^4"
+            ],
+            "label": "القيمة 1",
+            "hint": "احذف \\( x^2 \\) من الدالة الثانية."
+          }
+        ],
+        "hint": "احذف \\( x^2 \\) من الدالة الثانية.",
+        "related_topics": [
+          "المساحة بين منحنيين"
+        ],
+        "step_id": "math345_4_4_54_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنكوّن دالة التكامل. الطريقة: نطرح الدالتين: \\( g(x)-f(x)=x^4-12-x^2 \\). السبب: التكامل يكون للفرق بين الدالتين.",
+        "think": "احذف \\( x^2 \\) من الدالة الثانية.",
+        "html_structure": "h(x)=x^4-{q_4_4_54_1_s4_i1}-12"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنكتب التكامل المحدد. الطريقة: الحدان \\( -2 \\) و\\( 2 \\). السبب: لأنهما نقطتا التقاطع.",
+        "equation_template": "A=\\int_{-2}^{{input_1}}(x^4-x^2-12)\\,dx",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "2",
+              "-2",
+              "12"
+            ],
+            "id": "q_4_4_54_1_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "2",
+              "-2",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأعلى هو الجذر الموجب."
+          }
+        ],
+        "hint": "الحد الأعلى هو الجذر الموجب.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_54_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنكتب التكامل المحدد. الطريقة: الحدان \\( -2 \\) و\\( 2 \\). السبب: لأنهما نقطتا التقاطع.",
+        "think": "الحد الأعلى هو الجذر الموجب.",
+        "html_structure": "A=\\int_{-2}^{{q_4_4_54_1_s5_i1}}(x^4-x^2-12)\\,dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنجد دالة التكامل. الطريقة: \\( x^4\\to\\frac{x^5}{5} \\) و\\( -x^2\\to-\\frac{x^3}{3} \\) و\\( -12\\to-12x \\). السبب: قاعدة القوة.",
+        "equation_template": "H(x)=\\frac{x^{input_1}}{5}-\\frac{x^3}{3}-{input_2}x",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "5",
+            "options": [
+              "4",
+              "5",
+              "3",
+              "6"
+            ],
+            "id": "q_4_4_54_1_s6_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "4",
+              "5",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوة \\( 4+1 \\) والمعامل \\( 12 \\)."
+          },
+          {
+            "input_id": "s6_i2",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "3",
+              "4",
+              "-12"
+            ],
+            "id": "q_4_4_54_1_s6_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "3",
+              "4",
+              "-12"
+            ],
+            "label": "القيمة 2",
+            "hint": "القوة \\( 4+1 \\) والمعامل \\( 12 \\)."
+          }
+        ],
+        "hint": "القوة \\( 4+1 \\) والمعامل \\( 12 \\).",
+        "related_topics": [
+          "التكامل غير المحدد"
+        ],
+        "step_id": "math345_4_4_54_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنجد دالة التكامل. الطريقة: \\( x^4\\to\\frac{x^5}{5} \\) و\\( -x^2\\to-\\frac{x^3}{3} \\) و\\( -12\\to-12x \\). السبب: قاعدة القوة.",
+        "think": "القوة \\( 4+1 \\) والمعامل \\( 12 \\).",
+        "html_structure": "H(x)=\\frac{x^{q_4_4_54_1_s6_i1}}{5}-\\frac{x^3}{3}-{q_4_4_54_1_s6_i2}x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنحسب \\( H(2) \\). الطريقة: \\( \\frac{32}{5}-\\frac83-12(2) \\). السبب: لأن \\( 2^5=32 \\) و\\( 2^3=8 \\).",
+        "equation_template": "H(2)=\\frac{32}{5}-\\frac{8}{3}-{input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "24",
+            "options": [
+              "48",
+              "24",
+              "6",
+              "12"
+            ],
+            "id": "q_4_4_54_1_s7_i1",
+            "correct_value": "24",
+            "allowed_keys": [
+              "48",
+              "24",
+              "6",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 12\\times2 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 12\\times2 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_54_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنحسب \\( H(2) \\). الطريقة: \\( \\frac{32}{5}-\\frac83-12(2) \\). السبب: لأن \\( 2^5=32 \\) و\\( 2^3=8 \\).",
+        "think": "اضرب \\( 12\\times2 \\).",
+        "html_structure": "H(2)=\\frac{32}{5}-\\frac{8}{3}-{q_4_4_54_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنحسب \\( H(-2) \\). الطريقة: \\( -\\frac{32}{5}+\\frac83+24 \\): القوى الفردية تعطي السالب. السبب: لأن \\( (-2)^5=-32 \\).",
+        "equation_template": "H(-2)=-\\frac{32}{5}+\\frac{8}{3}+{input_1}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "24",
+            "options": [
+              "6",
+              "12",
+              "48",
+              "24"
+            ],
+            "id": "q_4_4_54_1_s8_i1",
+            "correct_value": "24",
+            "allowed_keys": [
+              "6",
+              "12",
+              "48",
+              "24"
+            ],
+            "label": "القيمة 1",
+            "hint": "القيمة نفسها \\( 24 \\)."
+          }
+        ],
+        "hint": "القيمة نفسها \\( 24 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_54_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنحسب \\( H(-2) \\). الطريقة: \\( -\\frac{32}{5}+\\frac83+24 \\): القوى الفردية تعطي السالب. السبب: لأن \\( (-2)^5=-32 \\).",
+        "think": "القيمة نفسها \\( 24 \\).",
+        "html_structure": "H(-2)=-\\frac{32}{5}+\\frac{8}{3}+{q_4_4_54_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: سنطرح \\( H(2)-H(-2) \\). الطريقة: نجمع الحدود المتشابهة: \\( \\frac{64}{5}-\\frac{16}{3}-48 \\). السبب: لأن الحدود تتضاعف.",
+        "equation_template": "H(2)-H(-2)=\\frac{64}{5}-\\frac{16}{3}-{input_1}",
+        "inputs": [
+          {
+            "input_id": "s9_i1",
+            "correct_answer": "48",
+            "options": [
+              "96",
+              "24",
+              "12",
+              "48"
+            ],
+            "id": "q_4_4_54_1_s9_i1",
+            "correct_value": "48",
+            "allowed_keys": [
+              "96",
+              "24",
+              "12",
+              "48"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 24+24 \\)."
+          }
+        ],
+        "hint": "\\( 24+24 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_4_54_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: سنطرح \\( H(2)-H(-2) \\). الطريقة: نجمع الحدود المتشابهة: \\( \\frac{64}{5}-\\frac{16}{3}-48 \\). السبب: لأن الحدود تتضاعف.",
+        "think": "\\( 24+24 \\).",
+        "html_structure": "H(2)-H(-2)=\\frac{64}{5}-\\frac{16}{3}-{q_4_4_54_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: سنوحد المقامات على \\( 15 \\). الطريقة: \\( \\frac{64}{5}=\\frac{192}{15} \\) و\\( \\frac{16}{3}=\\frac{80}{15} \\) و\\( 48=\\frac{720}{15} \\). السبب: لنجمع الكسور.",
+        "equation_template": "\\frac{192-80-{input_1}}{15}=-\\frac{608}{15}",
+        "inputs": [
+          {
+            "input_id": "s10_i1",
+            "correct_answer": "720",
+            "options": [
+              "480",
+              "48",
+              "240",
+              "720"
+            ],
+            "id": "q_4_4_54_1_s10_i1",
+            "correct_value": "720",
+            "allowed_keys": [
+              "480",
+              "48",
+              "240",
+              "720"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 48\\times15 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 48\\times15 \\).",
+        "related_topics": [
+          "جمع الكسور"
+        ],
+        "step_id": "math345_4_4_54_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: سنوحد المقامات على \\( 15 \\). الطريقة: \\( \\frac{64}{5}=\\frac{192}{15} \\) و\\( \\frac{16}{3}=\\frac{80}{15} \\) و\\( 48=\\frac{720}{15} \\). السبب: لنجمع الكسور.",
+        "think": "اضرب \\( 48\\times15 \\).",
+        "html_structure": "\\frac{192-80-{q_4_4_54_1_s10_i1}}{15}=-\\frac{608}{15}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: سنأخذ القيمة المطلقة. الطريقة: المساحة لا تكون سالبة، فنأخذ \\( \\left|-\\frac{608}{15}\\right| \\). السبب: لأن \\( g-f \\) سالبة على \\( (-2,2) \\).",
+        "equation_template": "A=\\left|-\\frac{608}{15}\\right|=\\frac{{input_1}}{15}",
+        "inputs": [
+          {
+            "input_id": "s11_i1",
+            "correct_answer": "608",
+            "options": [
+              "608",
+              "304",
+              "-608",
+              "720"
+            ],
+            "id": "q_4_4_54_1_s11_i1",
+            "correct_value": "608",
+            "allowed_keys": [
+              "608",
+              "304",
+              "-608",
+              "720"
+            ],
+            "label": "القيمة 1",
+            "hint": "أزل الإشارة السالبة."
+          }
+        ],
+        "hint": "أزل الإشارة السالبة.",
+        "related_topics": [
+          "المساحة الكلية"
+        ],
+        "step_id": "math345_4_4_54_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: سنأخذ القيمة المطلقة. الطريقة: المساحة لا تكون سالبة، فنأخذ \\( \\left|-\\frac{608}{15}\\right| \\). السبب: لأن \\( g-f \\) سالبة على \\( (-2,2) \\).",
+        "think": "أزل الإشارة السالبة.",
+        "html_structure": "A=\\left|-\\frac{608}{15}\\right|=\\frac{{q_4_4_54_1_s11_i1}}{15}"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1414 @@
+[
+  {
+    "id_number": "q13_p42",
+    "page_number": 42,
+    "question_number": "13",
+    "question_text": "جد قيمة التكامل: \\( \\int\\frac{\\ln|x|}{x}\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q13_diagram.png"
+    ],
+    "full_model_solution": "\\( \\int\\frac1x\\ln|x|dx=\\frac{(\\ln|x|)^2}{2}+c \\).",
+    "source_file": "رياضيلت 4/page_042_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 42
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q13_diagram.png",
+    "title": "جد قيمة التكامل: \\( \\int\\frac{\\ln|x|}{x}\\,dx \\)",
+    "number": "13",
+    "model_solution": "\\( \\int\\frac1x\\ln|x|dx=\\frac{(\\ln|x|)^2}{2}+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعيد كتابة الدالة لتظهر المشتقة. الطريقة: نفصل \\( \\frac1x \\) كعامل مضروب في \\( \\ln|x| \\). السبب: لأن \\( \\frac1x \\) مشتقة \\( \\ln|x| \\).",
+        "equation_template": "\\frac{\\ln|x|}{x}={input_1}\\cdot\\ln|x|",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\frac1x",
+            "options": [
+              "x",
+              "1",
+              "\\ln|x|",
+              "\\frac1x"
+            ],
+            "id": "q_4_2_42_1_s1_i1",
+            "correct_value": "\\frac1x",
+            "allowed_keys": [
+              "x",
+              "1",
+              "\\ln|x|",
+              "\\frac1x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( x \\) في المقام كعامل \\( \\frac1x \\)."
+          }
+        ],
+        "hint": "انقل \\( x \\) في المقام كعامل \\( \\frac1x \\).",
+        "related_topics": [
+          "إعادة الكتابة"
+        ],
+        "step_id": "math345_4_2_42_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعيد كتابة الدالة لتظهر المشتقة. الطريقة: نفصل \\( \\frac1x \\) كعامل مضروب في \\( \\ln|x| \\). السبب: لأن \\( \\frac1x \\) مشتقة \\( \\ln|x| \\).",
+        "think": "انقل \\( x \\) في المقام كعامل \\( \\frac1x \\).",
+        "html_structure": "\\frac{\\ln|x|}{x}={q_4_2_42_1_s1_i1}\\cdot\\ln|x|"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتذكر مشتقة \\( \\ln|x| \\). الطريقة: مشتقة اللوغاريتم الطبيعي لـ \\( x \\). السبب: لنحدد \\( u' \\).",
+        "equation_template": "\\frac{d}{dx}\\ln|x|={input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\frac1x",
+            "options": [
+              "x",
+              "\\ln|x|",
+              "-\\frac1x",
+              "\\frac1x"
+            ],
+            "id": "q_4_2_42_1_s2_i1",
+            "correct_value": "\\frac1x",
+            "allowed_keys": [
+              "x",
+              "\\ln|x|",
+              "-\\frac1x",
+              "\\frac1x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المشتقة \\( \\frac1x \\)."
+          }
+        ],
+        "hint": "المشتقة \\( \\frac1x \\).",
+        "related_topics": [
+          "المشتقات"
+        ],
+        "step_id": "math345_4_2_42_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتذكر مشتقة \\( \\ln|x| \\). الطريقة: مشتقة اللوغاريتم الطبيعي لـ \\( x \\). السبب: لنحدد \\( u' \\).",
+        "think": "المشتقة \\( \\frac1x \\).",
+        "html_structure": "\\frac{d}{dx}\\ln|x|={q_4_2_42_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نسمي \\( u \\) و \\( u' \\). الطريقة: \\( u=\\ln|x| \\) ويكون العامل الآخر \\( u' \\). السبب: لنطبق قاعدة القوة.",
+        "equation_template": "\\int\\ln|x|\\cdot\\frac1x\\,dx=\\int u\\cdot{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "u'",
+            "options": [
+              "1",
+              "u'",
+              "u^2",
+              "u"
+            ],
+            "id": "q_4_2_42_1_s3_i1",
+            "correct_value": "u'",
+            "allowed_keys": [
+              "1",
+              "u'",
+              "u^2",
+              "u"
+            ],
+            "label": "القيمة 1",
+            "hint": "العامل \\( \\frac1x \\) هو المشتقة."
+          }
+        ],
+        "hint": "العامل \\( \\frac1x \\) هو المشتقة.",
+        "related_topics": [
+          "التكامل بالتعويض"
+        ],
+        "step_id": "math345_4_2_42_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نسمي \\( u \\) و \\( u' \\). الطريقة: \\( u=\\ln|x| \\) ويكون العامل الآخر \\( u' \\). السبب: لنطبق قاعدة القوة.",
+        "think": "العامل \\( \\frac1x \\) هو المشتقة.",
+        "html_structure": "\\int\\ln|x|\\cdot\\frac1x\\,dx=\\int u\\cdot{q_4_2_42_1_s3_i1}\\,dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نطبق قاعدة القوة. الطريقة: \\( u \\) أسّها \\( 1 \\) فنزيد الأس إلى \\( 2 \\) ونقسم عليه. السبب: قاعدة.",
+        "equation_template": "\\int u\\,u'dx=\\frac{u^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "3"
+            ],
+            "id": "q_4_2_42_1_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "0",
+              "1"
+            ],
+            "id": "q_4_2_42_1_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "\\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_42_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق قاعدة القوة. الطريقة: \\( u \\) أسّها \\( 1 \\) فنزيد الأس إلى \\( 2 \\) ونقسم عليه. السبب: قاعدة.",
+        "think": "\\( 1+1=2 \\).",
+        "html_structure": "\\int u\\,u'dx=\\frac{u^{{q_4_2_42_1_s4_i1}}}{{q_4_2_42_1_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض \\( u \\). الطريقة: نضع \\( \\ln|x| \\) مكان \\( u \\). السبب: للعودة إلى \\( x \\).",
+        "equation_template": "\\frac{({input_1})^2}{2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\ln|x|",
+            "options": [
+              "1",
+              "\\ln|x|",
+              "x",
+              "\\frac1x"
+            ],
+            "id": "q_4_2_42_1_s5_i1",
+            "correct_value": "\\ln|x|",
+            "allowed_keys": [
+              "1",
+              "\\ln|x|",
+              "x",
+              "\\frac1x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( u=\\ln|x| \\)."
+          }
+        ],
+        "hint": "\\( u=\\ln|x| \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_42_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض \\( u \\). الطريقة: نضع \\( \\ln|x| \\) مكان \\( u \\). السبب: للعودة إلى \\( x \\).",
+        "think": "\\( u=\\ln|x| \\).",
+        "html_structure": "\\frac{({q_4_2_42_1_s5_i1})^2}{2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نضيف ثابت التكامل. الطريقة: نكتب \\( c \\) في الخانة الثانية. السبب: تكامل غير محدد.",
+        "equation_template": "F=\\frac{({input_1})^2}{2}+{input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "\\ln|x|",
+            "options": [
+              "\\frac1x",
+              "1",
+              "x",
+              "\\ln|x|"
+            ],
+            "id": "q_4_2_42_1_s6_i1",
+            "correct_value": "\\ln|x|",
+            "allowed_keys": [
+              "\\frac1x",
+              "1",
+              "x",
+              "\\ln|x|"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت \\( c \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "c",
+            "options": [
+              "0",
+              "1",
+              "x",
+              "c"
+            ],
+            "id": "q_4_2_42_1_s6_i2",
+            "correct_value": "c",
+            "allowed_keys": [
+              "0",
+              "1",
+              "x",
+              "c"
+            ],
+            "label": "القيمة 2",
+            "hint": "الثابت \\( c \\)."
+          }
+        ],
+        "hint": "الثابت \\( c \\).",
+        "related_topics": [
+          "الثابت التكاملي"
+        ],
+        "step_id": "math345_4_2_42_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نضيف ثابت التكامل. الطريقة: نكتب \\( c \\) في الخانة الثانية. السبب: تكامل غير محدد.",
+        "think": "الثابت \\( c \\).",
+        "html_structure": "F=\\frac{({q_4_2_42_1_s6_i1})^2}{2}+{q_4_2_42_1_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{(\\ln|x|)^2}{2} \\): ينزل الأس \\( 2 \\) ثم نضرب في مشتقة \\( \\ln|x| \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\frac{(\\ln|x|)^2}{2}=\\frac{2\\ln|x|}{2}\\times{input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\frac1x",
+            "options": [
+              "\\frac1x",
+              "x",
+              "1",
+              "2"
+            ],
+            "id": "q_4_2_42_1_s7_i1",
+            "correct_value": "\\frac1x",
+            "allowed_keys": [
+              "\\frac1x",
+              "x",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\ln|x| \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\ln|x| \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_2_42_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{(\\ln|x|)^2}{2} \\): ينزل الأس \\( 2 \\) ثم نضرب في مشتقة \\( \\ln|x| \\). السبب: للتأكد.",
+        "think": "مشتقة \\( \\ln|x| \\).",
+        "html_structure": "\\frac{d}{dx}\\frac{(\\ln|x|)^2}{2}=\\frac{2\\ln|x|}{2}\\times{q_4_2_42_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نبسط. الطريقة: \\( \\frac{2}{2}=1 \\). السبب: للمطابقة مع السؤال.",
+        "equation_template": "\\ln|x|\\cdot\\frac1x=\\frac{{input_1}}{x}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "\\ln|x|",
+            "options": [
+              "\\ln x^2",
+              "1",
+              "x",
+              "\\ln|x|"
+            ],
+            "id": "q_4_2_42_1_s8_i1",
+            "correct_value": "\\ln|x|",
+            "allowed_keys": [
+              "\\ln x^2",
+              "1",
+              "x",
+              "\\ln|x|"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط \\( \\ln|x| \\)."
+          }
+        ],
+        "hint": "البسط \\( \\ln|x| \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_2_42_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نبسط. الطريقة: \\( \\frac{2}{2}=1 \\). السبب: للمطابقة مع السؤال.",
+        "think": "البسط \\( \\ln|x| \\).",
+        "html_structure": "\\ln|x|\\cdot\\frac1x=\\frac{{q_4_2_42_1_s8_i1}}{x}"
+      }
+    ]
+  },
+  {
+    "id_number": "q14_p42",
+    "page_number": 42,
+    "question_number": "14",
+    "question_text": "جد قيمة التكامل: \\( \\int\\cot^35x\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q14_diagram.png"
+    ],
+    "full_model_solution": "\\( -\\frac1{10}\\cot^25x-\\frac15\\ln|\\sin5x|+c \\).",
+    "source_file": "رياضيلت 4/page_042_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 42
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q14_diagram.png",
+    "title": "جد قيمة التكامل: \\( \\int\\cot^35x\\,dx \\)",
+    "number": "14",
+    "model_solution": "\\( -\\frac1{10}\\cot^25x-\\frac15\\ln|\\sin5x|+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفصل قوة واحدة من \\( \\cot \\). الطريقة: \\( \\cot^35x=\\cot^25x\\cdot\\cot5x \\). السبب: لنحول \\( \\cot^2 \\) إلى \\( \\csc^2 \\).",
+        "equation_template": "\\cot^35x=\\cot^25x\\cdot{input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\cot5x",
+            "options": [
+              "1",
+              "\\csc5x",
+              "\\tan5x",
+              "\\cot5x"
+            ],
+            "id": "q_4_2_42_2_s1_i1",
+            "correct_value": "\\cot5x",
+            "allowed_keys": [
+              "1",
+              "\\csc5x",
+              "\\tan5x",
+              "\\cot5x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 3=2+1 \\)."
+          }
+        ],
+        "hint": "الأس \\( 3=2+1 \\).",
+        "related_topics": [
+          "القوى المثلثية"
+        ],
+        "step_id": "math345_4_2_42_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفصل قوة واحدة من \\( \\cot \\). الطريقة: \\( \\cot^35x=\\cot^25x\\cdot\\cot5x \\). السبب: لنحول \\( \\cot^2 \\) إلى \\( \\csc^2 \\).",
+        "think": "الأس \\( 3=2+1 \\).",
+        "html_structure": "\\cot^35x=\\cot^25x\\cdot{q_4_2_42_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نستخدم المتطابقة. الطريقة: \\( 1+\\cot^2\\theta=\\csc^2\\theta \\) فنحصل \\( \\cot^2\\theta=\\csc^2\\theta-1 \\). السبب: لأن \\( \\csc^2 \\) مشتقة \\( \\cot \\) المرتبطة.",
+        "equation_template": "\\cot^25x={input_1}-1",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\csc^25x",
+            "options": [
+              "\\csc5x",
+              "\\sec^25x",
+              "\\tan^25x",
+              "\\csc^25x"
+            ],
+            "id": "q_4_2_42_2_s2_i1",
+            "correct_value": "\\csc^25x",
+            "allowed_keys": [
+              "\\csc5x",
+              "\\sec^25x",
+              "\\tan^25x",
+              "\\csc^25x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\csc^2 \\) بزاوية \\( 5x \\)."
+          }
+        ],
+        "hint": "\\( \\csc^2 \\) بزاوية \\( 5x \\).",
+        "related_topics": [
+          "المتطابقات المثلثية"
+        ],
+        "step_id": "math345_4_2_42_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نستخدم المتطابقة. الطريقة: \\( 1+\\cot^2\\theta=\\csc^2\\theta \\) فنحصل \\( \\cot^2\\theta=\\csc^2\\theta-1 \\). السبب: لأن \\( \\csc^2 \\) مشتقة \\( \\cot \\) المرتبطة.",
+        "think": "\\( \\csc^2 \\) بزاوية \\( 5x \\).",
+        "html_structure": "\\cot^25x={q_4_2_42_2_s2_i1}-1"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نوزع \\( \\cot5x \\). الطريقة: نضرب كل حد بـ \\( \\cot5x \\) ونفصل التكاملين. السبب: لكل تكامل أسلوبه.",
+        "equation_template": "\\int\\cot5x\\csc^25x\\,dx-\\int{input_1}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "\\cot5x",
+            "options": [
+              "\\cot^25x",
+              "1",
+              "\\csc5x",
+              "\\cot5x"
+            ],
+            "id": "q_4_2_42_2_s3_i1",
+            "correct_value": "\\cot5x",
+            "allowed_keys": [
+              "\\cot^25x",
+              "1",
+              "\\csc5x",
+              "\\cot5x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثاني بعد التوزيع."
+          }
+        ],
+        "hint": "الحد الثاني بعد التوزيع.",
+        "related_topics": [
+          "خطية التكامل"
+        ],
+        "step_id": "math345_4_2_42_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نوزع \\( \\cot5x \\). الطريقة: نضرب كل حد بـ \\( \\cot5x \\) ونفصل التكاملين. السبب: لكل تكامل أسلوبه.",
+        "think": "الحد الثاني بعد التوزيع.",
+        "html_structure": "\\int\\cot5x\\csc^25x\\,dx-\\int{q_4_2_42_2_s3_i1}\\,dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق \\( \\cot5x \\) للتكامل الأول. الطريقة: \\( -\\csc^2 5x \\) مضروباً في مشتقة الزاوية. السبب: لنجد معامل التصحيح.",
+        "equation_template": "\\frac{d}{dx}\\cot5x={input_1}\\csc^25x",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "-5",
+            "options": [
+              "-5",
+              "-1",
+              "-\\frac15",
+              "5"
+            ],
+            "id": "q_4_2_42_2_s4_i1",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "-5",
+              "-1",
+              "-\\frac15",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1\\times5 \\)."
+          }
+        ],
+        "hint": "\\( -1\\times5 \\).",
+        "related_topics": [
+          "المشتقات المثلثية"
+        ],
+        "step_id": "math345_4_2_42_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق \\( \\cot5x \\) للتكامل الأول. الطريقة: \\( -\\csc^2 5x \\) مضروباً في مشتقة الزاوية. السبب: لنجد معامل التصحيح.",
+        "think": "\\( -1\\times5 \\).",
+        "html_structure": "\\frac{d}{dx}\\cot5x={q_4_2_42_2_s4_i1}\\csc^25x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نصنع المشتقة داخل التكامل. الطريقة: نضرب في \\( -5 \\) ونقسم بـ \\( -\\frac15 \\). السبب: لا تتغير القيمة.",
+        "equation_template": "\\int\\cot5x\\csc^25x\\,dx=-\\frac1{{input_1}}\\int\\cot5x(-5\\csc^25x)dx",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "5",
+            "options": [
+              "10",
+              "-5",
+              "5",
+              "1"
+            ],
+            "id": "q_4_2_42_2_s5_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "10",
+              "-5",
+              "5",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام \\( 5 \\)."
+          }
+        ],
+        "hint": "المقام \\( 5 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_42_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نصنع المشتقة داخل التكامل. الطريقة: نضرب في \\( -5 \\) ونقسم بـ \\( -\\frac15 \\). السبب: لا تتغير القيمة.",
+        "think": "المقام \\( 5 \\).",
+        "html_structure": "\\int\\cot5x\\csc^25x\\,dx=-\\frac1{{q_4_2_42_2_s5_i1}}\\int\\cot5x(-5\\csc^25x)dx"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نطبق قاعدة القوة. الطريقة: \\( \\int u u'dx=\\frac{u^2}{2} \\). السبب: قاعدة.",
+        "equation_template": "-\\frac15\\cdot\\frac{\\cot^{{input_1}}5x}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "5",
+              "3"
+            ],
+            "id": "q_4_2_42_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "5",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "5",
+              "3"
+            ],
+            "id": "q_4_2_42_2_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "5",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) والمقام \\( 2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_42_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نطبق قاعدة القوة. الطريقة: \\( \\int u u'dx=\\frac{u^2}{2} \\). السبب: قاعدة.",
+        "think": "الأس \\( 2 \\) والمقام \\( 2 \\).",
+        "html_structure": "-\\frac15\\cdot\\frac{\\cot^{{q_4_2_42_2_s6_i1}}5x}{{q_4_2_42_2_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نضرب المعاملات. الطريقة: \\( \\frac15\\times\\frac12 \\). السبب: للتبسيط.",
+        "equation_template": "-\\frac15\\times\\frac12=-\\frac1{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "10",
+            "options": [
+              "7",
+              "5",
+              "2",
+              "10"
+            ],
+            "id": "q_4_2_42_2_s7_i1",
+            "correct_value": "10",
+            "allowed_keys": [
+              "7",
+              "5",
+              "2",
+              "10"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 5\\times2 \\).",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_42_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نضرب المعاملات. الطريقة: \\( \\frac15\\times\\frac12 \\). السبب: للتبسيط.",
+        "think": "\\( 5\\times2 \\).",
+        "html_structure": "-\\frac15\\times\\frac12=-\\frac1{{q_4_2_42_2_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نجهز التكامل الثاني. الطريقة: \\( \\cot5x=\\frac{\\cos5x}{\\sin5x} \\) ومشتقة المقام \\( 5\\cos5x \\). السبب: لنطبق قاعدة اللوغاريتم.",
+        "equation_template": "\\int\\cot5x\\,dx=\\frac1{{input_1}}\\int\\frac{5\\cos5x}{\\sin5x}dx",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "5",
+            "options": [
+              "10",
+              "1",
+              "-5",
+              "5"
+            ],
+            "id": "q_4_2_42_2_s8_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "10",
+              "1",
+              "-5",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( 5 \\)."
+          }
+        ],
+        "hint": "المعامل \\( 5 \\).",
+        "related_topics": [
+          "التكامل اللوغاريتمي"
+        ],
+        "step_id": "math345_4_2_42_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نجهز التكامل الثاني. الطريقة: \\( \\cot5x=\\frac{\\cos5x}{\\sin5x} \\) ومشتقة المقام \\( 5\\cos5x \\). السبب: لنطبق قاعدة اللوغاريتم.",
+        "think": "المعامل \\( 5 \\).",
+        "html_structure": "\\int\\cot5x\\,dx=\\frac1{{q_4_2_42_2_s8_i1}}\\int\\frac{5\\cos5x}{\\sin5x}dx"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نطبق قاعدة اللوغاريتم. الطريقة: \\( \\int\\frac{u'}{u}dx=\\ln|u| \\). السبب: لأن مشتقة \\( \\ln|u| \\) هي \\( \\frac{u'}{u} \\).",
+        "equation_template": "\\int\\frac{u'}{u}dx={input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "\\ln|u|",
+            "options": [
+              "\\ln|u'|",
+              "\\frac1u",
+              "u^2",
+              "\\ln|u|"
+            ],
+            "id": "q_4_2_42_2_s9_i1",
+            "correct_value": "\\ln|u|",
+            "allowed_keys": [
+              "\\ln|u'|",
+              "\\frac1u",
+              "u^2",
+              "\\ln|u|"
+            ],
+            "label": "القيمة 1",
+            "hint": "نتيجة اللوغاريتم."
+          }
+        ],
+        "hint": "نتيجة اللوغاريتم.",
+        "related_topics": [
+          "التكامل اللوغاريتمي"
+        ],
+        "step_id": "math345_4_2_42_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نطبق قاعدة اللوغاريتم. الطريقة: \\( \\int\\frac{u'}{u}dx=\\ln|u| \\). السبب: لأن مشتقة \\( \\ln|u| \\) هي \\( \\frac{u'}{u} \\).",
+        "think": "نتيجة اللوغاريتم.",
+        "html_structure": "\\int\\frac{u'}{u}dx={q_4_2_42_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نعوض في التكامل الثاني. الطريقة: \\( u=\\sin5x \\). السبب: للعودة للمتغير.",
+        "equation_template": "\\int\\cot5x\\,dx=\\frac15\\ln|{input_1}|",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "\\sin5x",
+            "options": [
+              "\\cot5x",
+              "\\sin5x",
+              "\\tan5x",
+              "\\cos5x"
+            ],
+            "id": "q_4_2_42_2_s10_i1",
+            "correct_value": "\\sin5x",
+            "allowed_keys": [
+              "\\cot5x",
+              "\\sin5x",
+              "\\tan5x",
+              "\\cos5x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( u=\\sin5x \\)."
+          }
+        ],
+        "hint": "\\( u=\\sin5x \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_42_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نعوض في التكامل الثاني. الطريقة: \\( u=\\sin5x \\). السبب: للعودة للمتغير.",
+        "think": "\\( u=\\sin5x \\).",
+        "html_structure": "\\int\\cot5x\\,dx=\\frac15\\ln|{q_4_2_42_2_s10_i1}|"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجمع التكاملين بالإشارة. الطريقة: الأول \\( -\\frac1{10}\\cot^25x \\) والثاني يُطرح. السبب: لأن الثاني كان مطروحاً.",
+        "equation_template": "F=-\\frac1{10}\\cot^25x\\;{input_1}\\;\\frac15\\ln|\\sin5x|+c",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "-",
+            "options": [
+              "\\times",
+              "+",
+              "\\div",
+              "-"
+            ],
+            "id": "q_4_2_42_2_s11_i1",
+            "correct_value": "-",
+            "allowed_keys": [
+              "\\times",
+              "+",
+              "\\div",
+              "-"
+            ],
+            "label": "القيمة 1",
+            "hint": "الإشارة طرح."
+          }
+        ],
+        "hint": "الإشارة طرح.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_42_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجمع التكاملين بالإشارة. الطريقة: الأول \\( -\\frac1{10}\\cot^25x \\) والثاني يُطرح. السبب: لأن الثاني كان مطروحاً.",
+        "think": "الإشارة طرح.",
+        "html_structure": "F=-\\frac1{10}\\cot^25x\\;{q_4_2_42_2_s11_i1}\\;\\frac15\\ln|\\sin5x|+c"
+      }
+    ]
+  },
+  {
+    "id_number": "q15_p42",
+    "page_number": 42,
+    "question_number": "15",
+    "question_text": "جد قيمة التكامل: \\( \\int\\tan x\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q15_diagram.png"
+    ],
+    "full_model_solution": "\\( \\int\\frac{\\sin x}{\\cos x}dx=-\\ln|\\cos x|+c=\\ln|\\sec x|+c \\).",
+    "source_file": "رياضيلت 4/page_042_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 42
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q15_diagram.png",
+    "title": "جد قيمة التكامل: \\( \\int\\tan x\\,dx \\)",
+    "number": "15",
+    "model_solution": "\\( \\int\\frac{\\sin x}{\\cos x}dx=-\\ln|\\cos x|+c=\\ln|\\sec x|+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحول الظل إلى كسر. الطريقة: \\( \\tan x=\\frac{\\sin x}{\\cos x} \\). السبب: لنطبق قاعدة اللوغاريتم.",
+        "equation_template": "\\tan x=\\frac{\\sin x}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\cos x",
+            "options": [
+              "\\sin x",
+              "\\cot x",
+              "1",
+              "\\cos x"
+            ],
+            "id": "q_4_2_42_3_s1_i1",
+            "correct_value": "\\cos x",
+            "allowed_keys": [
+              "\\sin x",
+              "\\cot x",
+              "1",
+              "\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام جيب التمام."
+          }
+        ],
+        "hint": "المقام جيب التمام.",
+        "related_topics": [
+          "تعريف الظل"
+        ],
+        "step_id": "math345_4_2_42_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحول الظل إلى كسر. الطريقة: \\( \\tan x=\\frac{\\sin x}{\\cos x} \\). السبب: لنطبق قاعدة اللوغاريتم.",
+        "think": "المقام جيب التمام.",
+        "html_structure": "\\tan x=\\frac{\\sin x}{{q_4_2_42_3_s1_i1}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق المقام. الطريقة: مشتقة \\( \\cos x \\). السبب: لنقارن بالبسط.",
+        "equation_template": "\\frac{d}{dx}\\cos x={input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "-\\sin x",
+            "options": [
+              "\\sin x",
+              "\\cos x",
+              "-\\sin x",
+              "-\\cos x"
+            ],
+            "id": "q_4_2_42_3_s2_i1",
+            "correct_value": "-\\sin x",
+            "allowed_keys": [
+              "\\sin x",
+              "\\cos x",
+              "-\\sin x",
+              "-\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "السالب مع الجيب."
+          }
+        ],
+        "hint": "السالب مع الجيب.",
+        "related_topics": [
+          "المشتقات المثلثية"
+        ],
+        "step_id": "math345_4_2_42_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق المقام. الطريقة: مشتقة \\( \\cos x \\). السبب: لنقارن بالبسط.",
+        "think": "السالب مع الجيب.",
+        "html_structure": "\\frac{d}{dx}\\cos x={q_4_2_42_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نجعل البسط مشتقة المقام. الطريقة: نخرج \\( -1 \\) خارج التكامل. السبب: لأن البسط \\( \\sin x \\) هو سالب المشتقة.",
+        "equation_template": "\\int\\frac{\\sin x}{\\cos x}dx=-\\int\\frac{{input_1}}{\\cos x}dx",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "-\\sin x",
+            "options": [
+              "-\\sin x",
+              "\\sin x",
+              "1",
+              "\\cos x"
+            ],
+            "id": "q_4_2_42_3_s3_i1",
+            "correct_value": "-\\sin x",
+            "allowed_keys": [
+              "-\\sin x",
+              "\\sin x",
+              "1",
+              "\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب \\( \\sin x \\)."
+          }
+        ],
+        "hint": "سالب \\( \\sin x \\).",
+        "related_topics": [
+          "التكامل اللوغاريتمي"
+        ],
+        "step_id": "math345_4_2_42_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نجعل البسط مشتقة المقام. الطريقة: نخرج \\( -1 \\) خارج التكامل. السبب: لأن البسط \\( \\sin x \\) هو سالب المشتقة.",
+        "think": "سالب \\( \\sin x \\).",
+        "html_structure": "\\int\\frac{\\sin x}{\\cos x}dx=-\\int\\frac{{q_4_2_42_3_s3_i1}}{\\cos x}dx"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نطبق قاعدة اللوغاريتم. الطريقة: \\( \\int\\frac{u'}{u}dx=\\ln|u| \\). السبب: قاعدة.",
+        "equation_template": "\\int\\frac{u'}{u}dx=\\ln|{input_1}|",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "u",
+            "options": [
+              "1",
+              "u^2",
+              "u'",
+              "u"
+            ],
+            "id": "q_4_2_42_3_s4_i1",
+            "correct_value": "u",
+            "allowed_keys": [
+              "1",
+              "u^2",
+              "u'",
+              "u"
+            ],
+            "label": "القيمة 1",
+            "hint": "داخل المطلق المقام نفسه."
+          }
+        ],
+        "hint": "داخل المطلق المقام نفسه.",
+        "related_topics": [
+          "التكامل اللوغاريتمي"
+        ],
+        "step_id": "math345_4_2_42_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق قاعدة اللوغاريتم. الطريقة: \\( \\int\\frac{u'}{u}dx=\\ln|u| \\). السبب: قاعدة.",
+        "think": "داخل المطلق المقام نفسه.",
+        "html_structure": "\\int\\frac{u'}{u}dx=\\ln|{q_4_2_42_3_s4_i1}|"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض. الطريقة: \\( u=\\cos x \\) مع السالب. السبب: للجواب.",
+        "equation_template": "-\\ln|{input_1}|+c",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\cos x",
+            "options": [
+              "\\sin x",
+              "x",
+              "\\tan x",
+              "\\cos x"
+            ],
+            "id": "q_4_2_42_3_s5_i1",
+            "correct_value": "\\cos x",
+            "allowed_keys": [
+              "\\sin x",
+              "x",
+              "\\tan x",
+              "\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام."
+          }
+        ],
+        "hint": "المقام.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_42_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض. الطريقة: \\( u=\\cos x \\) مع السالب. السبب: للجواب.",
+        "think": "المقام.",
+        "html_structure": "-\\ln|{q_4_2_42_3_s5_i1}|+c"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحول الإشارة السالبة إلى أس. الطريقة: \\( -\\ln A=\\ln A^{-1} \\). السبب: قانون اللوغاريتم.",
+        "equation_template": "-\\ln|\\cos x|=\\ln|(\\cos x)^{{input_1}}|",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "-1",
+            "options": [
+              "2",
+              "1",
+              "0",
+              "-1"
+            ],
+            "id": "q_4_2_42_3_s6_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "2",
+              "1",
+              "0",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( -1 \\)."
+          }
+        ],
+        "hint": "الأس \\( -1 \\).",
+        "related_topics": [
+          "قوانين اللوغاريتم"
+        ],
+        "step_id": "math345_4_2_42_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحول الإشارة السالبة إلى أس. الطريقة: \\( -\\ln A=\\ln A^{-1} \\). السبب: قانون اللوغاريتم.",
+        "think": "الأس \\( -1 \\).",
+        "html_structure": "-\\ln|\\cos x|=\\ln|(\\cos x)^{{q_4_2_42_3_s6_i1}}|"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب المقلوب. الطريقة: \\( \\frac1{\\cos x}=\\sec x \\). السبب: تعريف.",
+        "equation_template": "(\\cos x)^{-1}=\\frac1{\\cos x}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\sec x",
+            "options": [
+              "\\sec x",
+              "\\sin x",
+              "\\csc x",
+              "\\cot x"
+            ],
+            "id": "q_4_2_42_3_s7_i1",
+            "correct_value": "\\sec x",
+            "allowed_keys": [
+              "\\sec x",
+              "\\sin x",
+              "\\csc x",
+              "\\cot x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مقلوب جيب التمام."
+          }
+        ],
+        "hint": "مقلوب جيب التمام.",
+        "related_topics": [
+          "النسب المثلثية"
+        ],
+        "step_id": "math345_4_2_42_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب المقلوب. الطريقة: \\( \\frac1{\\cos x}=\\sec x \\). السبب: تعريف.",
+        "think": "مقلوب جيب التمام.",
+        "html_structure": "(\\cos x)^{-1}=\\frac1{\\cos x}={q_4_2_42_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الجواب. الطريقة: نضع \\( \\sec x \\) داخل اللوغاريتم. السبب: الصيغة المعتمدة.",
+        "equation_template": "\\int\\tan x\\,dx=\\ln|{input_1}|+c",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "\\sec x",
+            "options": [
+              "\\sec x",
+              "\\cos x",
+              "\\csc x",
+              "\\sin x"
+            ],
+            "id": "q_4_2_42_3_s8_i1",
+            "correct_value": "\\sec x",
+            "allowed_keys": [
+              "\\sec x",
+              "\\cos x",
+              "\\csc x",
+              "\\sin x"
+            ],
+            "label": "القيمة 1",
+            "hint": "قاطع الزاوية."
+          }
+        ],
+        "hint": "قاطع الزاوية.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_42_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الجواب. الطريقة: نضع \\( \\sec x \\) داخل اللوغاريتم. السبب: الصيغة المعتمدة.",
+        "think": "قاطع الزاوية.",
+        "html_structure": "\\int\\tan x\\,dx=\\ln|{q_4_2_42_3_s8_i1}|+c"
+      }
+    ]
+  },
+  {
+    "id_number": "q16_p42",
+    "page_number": 42,
+    "question_number": "16",
+    "question_text": "جد قيمة التكامل: \\( \\int\\cot x\\,dx \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q16_diagram.png"
+    ],
+    "full_model_solution": "\\( \\int\\frac{\\cos x}{\\sin x}dx=\\ln|\\sin x|+c \\).",
+    "source_file": "رياضيلت 4/page_042_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 42
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_042_diag_q16_diagram.png",
+    "title": "جد قيمة التكامل: \\( \\int\\cot x\\,dx \\)",
+    "number": "16",
+    "model_solution": "\\( \\int\\frac{\\cos x}{\\sin x}dx=\\ln|\\sin x|+c \\).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحول ظل التمام إلى كسر. الطريقة: \\( \\cot x=\\frac{\\cos x}{\\sin x} \\). السبب: لنطبق اللوغاريتم.",
+        "equation_template": "\\cot x=\\frac{\\cos x}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "\\sin x",
+            "options": [
+              "\\sin x",
+              "1",
+              "\\cos x",
+              "\\tan x"
+            ],
+            "id": "q_4_2_42_4_s1_i1",
+            "correct_value": "\\sin x",
+            "allowed_keys": [
+              "\\sin x",
+              "1",
+              "\\cos x",
+              "\\tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام الجيب."
+          }
+        ],
+        "hint": "المقام الجيب.",
+        "related_topics": [
+          "تعريف ظل التمام"
+        ],
+        "step_id": "math345_4_2_42_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحول ظل التمام إلى كسر. الطريقة: \\( \\cot x=\\frac{\\cos x}{\\sin x} \\). السبب: لنطبق اللوغاريتم.",
+        "think": "المقام الجيب.",
+        "html_structure": "\\cot x=\\frac{\\cos x}{{q_4_2_42_4_s1_i1}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق المقام. الطريقة: مشتقة \\( \\sin x \\). السبب: لنقارن بالبسط.",
+        "equation_template": "\\frac{d}{dx}\\sin x={input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "\\cos x",
+            "options": [
+              "-\\cos x",
+              "-\\sin x",
+              "\\sin x",
+              "\\cos x"
+            ],
+            "id": "q_4_2_42_4_s2_i1",
+            "correct_value": "\\cos x",
+            "allowed_keys": [
+              "-\\cos x",
+              "-\\sin x",
+              "\\sin x",
+              "\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب التمام."
+          }
+        ],
+        "hint": "جيب التمام.",
+        "related_topics": [
+          "المشتقات المثلثية"
+        ],
+        "step_id": "math345_4_2_42_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق المقام. الطريقة: مشتقة \\( \\sin x \\). السبب: لنقارن بالبسط.",
+        "think": "جيب التمام.",
+        "html_structure": "\\frac{d}{dx}\\sin x={q_4_2_42_4_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نتحقق أن البسط مشتقة المقام. الطريقة: نسمي \\( u=\\sin x \\) فيكون البسط \\( u' \\). السبب: لا نحتاج معامل تصحيح.",
+        "equation_template": "\\frac{\\cos x}{\\sin x}=\\frac{u'}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "u",
+            "options": [
+              "u'",
+              "1",
+              "u",
+              "u^2"
+            ],
+            "id": "q_4_2_42_4_s3_i1",
+            "correct_value": "u",
+            "allowed_keys": [
+              "u'",
+              "1",
+              "u",
+              "u^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام \\( u \\)."
+          }
+        ],
+        "hint": "المقام \\( u \\).",
+        "related_topics": [
+          "التكامل اللوغاريتمي"
+        ],
+        "step_id": "math345_4_2_42_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نتحقق أن البسط مشتقة المقام. الطريقة: نسمي \\( u=\\sin x \\) فيكون البسط \\( u' \\). السبب: لا نحتاج معامل تصحيح.",
+        "think": "المقام \\( u \\).",
+        "html_structure": "\\frac{\\cos x}{\\sin x}=\\frac{u'}{{q_4_2_42_4_s3_i1}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نطبق القاعدة. الطريقة: \\( \\int\\frac{u'}{u}dx=\\ln|u| \\). السبب: قاعدة.",
+        "equation_template": "\\int\\frac{u'}{u}dx={input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "\\ln|u|",
+            "options": [
+              "\\ln|u'|",
+              "u^2",
+              "\\ln|u|",
+              "\\frac1u"
+            ],
+            "id": "q_4_2_42_4_s4_i1",
+            "correct_value": "\\ln|u|",
+            "allowed_keys": [
+              "\\ln|u'|",
+              "u^2",
+              "\\ln|u|",
+              "\\frac1u"
+            ],
+            "label": "القيمة 1",
+            "hint": "لوغاريتم المقام."
+          }
+        ],
+        "hint": "لوغاريتم المقام.",
+        "related_topics": [
+          "التكامل اللوغاريتمي"
+        ],
+        "step_id": "math345_4_2_42_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نطبق القاعدة. الطريقة: \\( \\int\\frac{u'}{u}dx=\\ln|u| \\). السبب: قاعدة.",
+        "think": "لوغاريتم المقام.",
+        "html_structure": "\\int\\frac{u'}{u}dx={q_4_2_42_4_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض. الطريقة: \\( u=\\sin x \\). السبب: للجواب.",
+        "equation_template": "\\ln|{input_1}|+c",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "\\sin x",
+            "options": [
+              "\\sin x",
+              "\\cos x",
+              "\\tan x",
+              "x"
+            ],
+            "id": "q_4_2_42_4_s5_i1",
+            "correct_value": "\\sin x",
+            "allowed_keys": [
+              "\\sin x",
+              "\\cos x",
+              "\\tan x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام."
+          }
+        ],
+        "hint": "المقام.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_2_42_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض. الطريقة: \\( u=\\sin x \\). السبب: للجواب.",
+        "think": "المقام.",
+        "html_structure": "\\ln|{q_4_2_42_4_s5_i1}|+c"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: \\( \\frac{u'}{u} \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\ln|\\sin x|=\\frac{{input_1}}{\\sin x}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "\\cos x",
+            "options": [
+              "1",
+              "\\cos x",
+              "\\sin x",
+              "-\\cos x"
+            ],
+            "id": "q_4_2_42_4_s6_i1",
+            "correct_value": "\\cos x",
+            "allowed_keys": [
+              "1",
+              "\\cos x",
+              "\\sin x",
+              "-\\cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\sin x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\sin x \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_2_42_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: \\( \\frac{u'}{u} \\). السبب: للتأكد.",
+        "think": "مشتقة \\( \\sin x \\).",
+        "html_structure": "\\frac{d}{dx}\\ln|\\sin x|=\\frac{{q_4_2_42_4_s6_i1}}{\\sin x}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعيد الكسر. الطريقة: \\( \\frac{\\cos x}{\\sin x}=\\cot x \\). السبب: للمطابقة.",
+        "equation_template": "\\frac{\\cos x}{\\sin x}={input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "\\cot x",
+            "options": [
+              "\\csc x",
+              "\\sec x",
+              "\\cot x",
+              "\\tan x"
+            ],
+            "id": "q_4_2_42_4_s7_i1",
+            "correct_value": "\\cot x",
+            "allowed_keys": [
+              "\\csc x",
+              "\\sec x",
+              "\\cot x",
+              "\\tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ظل التمام."
+          }
+        ],
+        "hint": "ظل التمام.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_2_42_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعيد الكسر. الطريقة: \\( \\frac{\\cos x}{\\sin x}=\\cot x \\). السبب: للمطابقة.",
+        "think": "ظل التمام.",
+        "html_structure": "\\frac{\\cos x}{\\sin x}={q_4_2_42_4_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: صيغة مكافئة. الطريقة: \\( \\ln|\\sin x|=-\\ln|\\csc x| \\). السبب: لأن \\( \\csc \\) مقلوب \\( \\sin \\).",
+        "equation_template": "\\ln|\\sin x|=-\\ln|{input_1}|",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "\\csc x",
+            "options": [
+              "\\csc x",
+              "\\cos x",
+              "\\cot x",
+              "\\sec x"
+            ],
+            "id": "q_4_2_42_4_s8_i1",
+            "correct_value": "\\csc x",
+            "allowed_keys": [
+              "\\csc x",
+              "\\cos x",
+              "\\cot x",
+              "\\sec x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مقلوب الجيب."
+          }
+        ],
+        "hint": "مقلوب الجيب.",
+        "related_topics": [
+          "النسب المثلثية"
+        ],
+        "step_id": "math345_4_2_42_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: صيغة مكافئة. الطريقة: \\( \\ln|\\sin x|=-\\ln|\\csc x| \\). السبب: لأن \\( \\csc \\) مقلوب \\( \\sin \\).",
+        "think": "مقلوب الجيب.",
+        "html_structure": "\\ln|\\sin x|=-\\ln|{q_4_2_42_4_s8_i1}|"
+      }
+    ]
+  }
+]

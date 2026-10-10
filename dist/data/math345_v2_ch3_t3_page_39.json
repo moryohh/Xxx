@@ -1,0 +1,1020 @@
+[
+  {
+    "id_number": "q14_p39",
+    "page_number": 39,
+    "question_number": "14",
+    "question_text": "تحقق من مبرهنة رول، ثم جد \\( c \\) إن أمكن: \\( f(x)=2\\sin x+\\cos 2x \\) حيث \\( x\\in[0,\\pi] \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_039_diag_1_drawing.png"
+    ],
+    "full_model_solution": "مستمرة وقابلة للاشتقاق لأن مجالها R. f(0)=1=f(π). f'(x)=2cos x-2sin2x=2cos x(1-2sin x). cos c=0 → c=π/2، sin c=1/2 → c=π/6, 5π/6.",
+    "source_file": "رياضيات 3/page_039_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 39
+    },
+    "chapter": 3,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_039_diag_1_drawing.png",
+    "title": "تحقق من مبرهنة رول، ثم جد \\( c \\) إن أمكن: \\( f(x)=2\\sin x+\\cos 2x \\) حيث \\( x\\in[0,\\pi] \\).",
+    "number": "14",
+    "model_solution": "مستمرة وقابلة للاشتقاق لأن مجالها R. f(0)=1=f(π). f'(x)=2cos x-2sin2x=2cos x(1-2sin x). cos c=0 → c=π/2، sin c=1/2 → c=π/6, 5π/6.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نتأكد من الشرط الأول لمبرهنة رول وهو الاستمرارية. الطريقة: الدالة مكوّنة من \\( \\sin x \\) و\\( \\cos x \\) ومجالها كل الأعداد الحقيقية \\( \\mathbb{R} \\)، فنحكم عليها على الفترة المغلقة \\( [0,\\pi] \\). السبب: دالتا الجيب وجيب التمام مستمرتان على \\( \\mathbb{R} \\)، وأي تركيب منهما كذلك.",
+        "equation_template": "\\text{الدالة} \\; {input_1} \\; \\text{على} \\; [0,\\pi]",
+        "inputs": [
+          {
+            "input_id": "step1_1",
+            "correct_answer": "مستمرة",
+            "options": [
+              "مستمرة",
+              "غير مستمرة",
+              "متزايدة",
+              "ثابتة"
+            ],
+            "id": "q_3_3_39_1_s1_i1",
+            "correct_value": "مستمرة",
+            "allowed_keys": [
+              "مستمرة",
+              "غير مستمرة",
+              "متزايدة",
+              "ثابتة"
+            ],
+            "label": "القيمة 1",
+            "hint": "مجال الدالة كل الأعداد الحقيقية، فاختر (مستمرة)."
+          }
+        ],
+        "hint": "مجال الدالة كل الأعداد الحقيقية، فاختر (مستمرة).",
+        "related_topics": [
+          "الاستمرارية"
+        ],
+        "step_id": "math345_3_3_39_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نتأكد من الشرط الأول لمبرهنة رول وهو الاستمرارية. الطريقة: الدالة مكوّنة من \\( \\sin x \\) و\\( \\cos x \\) ومجالها كل الأعداد الحقيقية \\( \\mathbb{R} \\)، فنحكم عليها على الفترة المغلقة \\( [0,\\pi] \\). السبب: دالتا الجيب وجيب التمام مستمرتان على \\( \\mathbb{R} \\)، وأي تركيب منهما كذلك.",
+        "think": "مجال الدالة كل الأعداد الحقيقية، فاختر (مستمرة).",
+        "html_structure": "\\text{الدالة} \\; {q_3_3_39_1_s1_i1} \\; \\text{على} \\; [0,\\pi]"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتأكد من الشرط الثاني وهو قابلية الاشتقاق. الطريقة: بما أن مجال الدالة \\( \\mathbb{R} \\) وكل حد فيها قابل للاشتقاق، نحكم على الفترة المفتوحة \\( (0,\\pi) \\). السبب: دوال الجيب وجيب التمام تُشتق عند كل نقطة.",
+        "equation_template": "\\text{الدالة} \\; {input_1} \\; \\text{على} \\; (0,\\pi)",
+        "inputs": [
+          {
+            "input_id": "step2_1",
+            "correct_answer": "قابلة للاشتقاق",
+            "options": [
+              "قابلة للاشتقاق",
+              "غير قابلة للاشتقاق",
+              "غير معرفة",
+              "ثابتة"
+            ],
+            "id": "q_3_3_39_1_s2_i1",
+            "correct_value": "قابلة للاشتقاق",
+            "allowed_keys": [
+              "قابلة للاشتقاق",
+              "غير قابلة للاشتقاق",
+              "غير معرفة",
+              "ثابتة"
+            ],
+            "label": "القيمة 1",
+            "hint": "مجالها \\( \\mathbb{R} \\) فهي تُشتق في كل نقطة، اختر (قابلة للاشتقاق)."
+          }
+        ],
+        "hint": "مجالها \\( \\mathbb{R} \\) فهي تُشتق في كل نقطة، اختر (قابلة للاشتقاق).",
+        "related_topics": [
+          "قابلية الاشتقاق"
+        ],
+        "step_id": "math345_3_3_39_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتأكد من الشرط الثاني وهو قابلية الاشتقاق. الطريقة: بما أن مجال الدالة \\( \\mathbb{R} \\) وكل حد فيها قابل للاشتقاق، نحكم على الفترة المفتوحة \\( (0,\\pi) \\). السبب: دوال الجيب وجيب التمام تُشتق عند كل نقطة.",
+        "think": "مجالها \\( \\mathbb{R} \\) فهي تُشتق في كل نقطة، اختر (قابلة للاشتقاق).",
+        "html_structure": "\\text{الدالة} \\; {q_3_3_39_1_s2_i1} \\; \\text{على} \\; (0,\\pi)"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب \\( f(0) \\). الطريقة: نعوض \\( 0 \\): \\( \\sin0=0 \\) و\\( \\cos0=1 \\). السبب: نقارنها بـ \\( f(\\pi) \\).",
+        "equation_template": "f(0) = 2\\sin 0 + \\cos 0 = {input_1} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "step3_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_3_39_1_s3_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times0=0 \\) ثم أضف \\( \\cos0 \\)."
+          },
+          {
+            "input_id": "step3_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_3_39_1_s3_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times0=0 \\) ثم أضف \\( \\cos0 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times0=0 \\) ثم أضف \\( \\cos0 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_3_39_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب \\( f(0) \\). الطريقة: نعوض \\( 0 \\): \\( \\sin0=0 \\) و\\( \\cos0=1 \\). السبب: نقارنها بـ \\( f(\\pi) \\).",
+        "think": "\\( 2\\times0=0 \\) ثم أضف \\( \\cos0 \\).",
+        "html_structure": "f(0) = 2\\sin 0 + \\cos 0 = {q_3_3_39_1_s3_i1} + {q_3_3_39_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب \\( f(\\pi) \\). الطريقة: \\( \\sin\\pi=0 \\) و\\( \\cos2\\pi=1 \\). السبب: الطرف الثاني.",
+        "equation_template": "f(\\pi) = 2\\sin \\pi + \\cos 2\\pi = {input_1} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_3_39_1_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\sin\\pi=0 \\) و\\( \\cos2\\pi=1 \\)."
+          },
+          {
+            "input_id": "step4_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_3_39_1_s4_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\sin\\pi=0 \\) و\\( \\cos2\\pi=1 \\)."
+          }
+        ],
+        "hint": "\\( \\sin\\pi=0 \\) و\\( \\cos2\\pi=1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_3_39_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب \\( f(\\pi) \\). الطريقة: \\( \\sin\\pi=0 \\) و\\( \\cos2\\pi=1 \\). السبب: الطرف الثاني.",
+        "think": "\\( \\sin\\pi=0 \\) و\\( \\cos2\\pi=1 \\).",
+        "html_structure": "f(\\pi) = 2\\sin \\pi + \\cos 2\\pi = {q_3_3_39_1_s4_i1} + {q_3_3_39_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نقارن القيمتين. الطريقة: كلتاهما \\( 1 \\). السبب: الشرط الثالث.",
+        "equation_template": "f(0) \\; {input_1} \\; f(\\pi)",
+        "inputs": [
+          {
+            "input_id": "step5_1",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "\\neq",
+              ">",
+              "<"
+            ],
+            "id": "q_3_3_39_1_s5_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "\\neq",
+              ">",
+              "<"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 \\) و\\( 1 \\) متساويان."
+          }
+        ],
+        "hint": "\\( 1 \\) و\\( 1 \\) متساويان.",
+        "related_topics": [
+          "مبرهنة رول"
+        ],
+        "step_id": "math345_3_3_39_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نقارن القيمتين. الطريقة: كلتاهما \\( 1 \\). السبب: الشرط الثالث.",
+        "think": "\\( 1 \\) و\\( 1 \\) متساويان.",
+        "html_structure": "f(0) \\; {q_3_3_39_1_s5_i1} \\; f(\\pi)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نشتق الدالة. الطريقة: مشتقة \\( 2\\sin x \\) هي \\( 2\\cos x \\)، ومشتقة \\( \\cos2x \\) هي \\( -\\sin2x \\) في \\( 2 \\). السبب: قاعدة السلسلة للحد الثاني.",
+        "equation_template": "f'(x) = {input_1}\\cos x - {input_2}\\sin 2x",
+        "inputs": [
+          {
+            "input_id": "step6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "id": "q_3_3_39_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعاملان كلاهما \\( 2 \\)."
+          },
+          {
+            "input_id": "step6_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "id": "q_3_3_39_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعاملان كلاهما \\( 2 \\)."
+          }
+        ],
+        "hint": "المعاملان كلاهما \\( 2 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_3_3_39_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نشتق الدالة. الطريقة: مشتقة \\( 2\\sin x \\) هي \\( 2\\cos x \\)، ومشتقة \\( \\cos2x \\) هي \\( -\\sin2x \\) في \\( 2 \\). السبب: قاعدة السلسلة للحد الثاني.",
+        "think": "المعاملان كلاهما \\( 2 \\).",
+        "html_structure": "f'(x) = {q_3_3_39_1_s6_i1}\\cos x - {q_3_3_39_1_s6_i2}\\sin 2x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نفتح \\( \\sin2c \\). الطريقة: \\( \\sin2c=2\\sin c\\cos c \\) فيصير الحد \\( 2\\times2\\sin c\\cos c \\). السبب: لنوحّد الدوال.",
+        "equation_template": "2\\cos c - {input_1}\\sin c\\cos c = 0",
+        "inputs": [
+          {
+            "input_id": "step7_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_3_3_39_1_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2 \\).",
+        "related_topics": [
+          "ضعف الزاوية"
+        ],
+        "step_id": "math345_3_3_39_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نفتح \\( \\sin2c \\). الطريقة: \\( \\sin2c=2\\sin c\\cos c \\) فيصير الحد \\( 2\\times2\\sin c\\cos c \\). السبب: لنوحّد الدوال.",
+        "think": "\\( 2\\times2 \\).",
+        "html_structure": "2\\cos c - {q_3_3_39_1_s7_i1}\\sin c\\cos c = 0"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نخرج العامل المشترك. الطريقة: المشترك \\( 2\\cos c \\) فيبقى \\( 1-2\\sin c \\). السبب: لنحصل على عاملين.",
+        "equation_template": "2\\cos c(1 - {input_1}\\sin c) = 0",
+        "inputs": [
+          {
+            "input_id": "step8_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "id": "q_3_3_39_1_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 4\\sin c\\cos c \\) على \\( 2\\cos c \\)."
+          }
+        ],
+        "hint": "اقسم \\( 4\\sin c\\cos c \\) على \\( 2\\cos c \\).",
+        "related_topics": [
+          "التحليل"
+        ],
+        "step_id": "math345_3_3_39_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نخرج العامل المشترك. الطريقة: المشترك \\( 2\\cos c \\) فيبقى \\( 1-2\\sin c \\). السبب: لنحصل على عاملين.",
+        "think": "اقسم \\( 4\\sin c\\cos c \\) على \\( 2\\cos c \\).",
+        "html_structure": "2\\cos c(1 - {q_3_3_39_1_s8_i1}\\sin c) = 0"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحل \\( \\cos c=0 \\) في \\( (0,\\pi) \\). الطريقة: جيب التمام صفر عند \\( \\frac{\\pi}{2} \\). السبب: من الدائرة المثلثية.",
+        "equation_template": "\\cos c = 0 \\Rightarrow c = \\frac{\\pi}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step9_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "id": "q_3_3_39_1_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 90^\\circ \\) تعادل \\( \\frac{\\pi}{2} \\)."
+          }
+        ],
+        "hint": "\\( 90^\\circ \\) تعادل \\( \\frac{\\pi}{2} \\).",
+        "related_topics": [
+          "حل المعادلات المثلثية"
+        ],
+        "step_id": "math345_3_3_39_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحل \\( \\cos c=0 \\) في \\( (0,\\pi) \\). الطريقة: جيب التمام صفر عند \\( \\frac{\\pi}{2} \\). السبب: من الدائرة المثلثية.",
+        "think": "\\( 90^\\circ \\) تعادل \\( \\frac{\\pi}{2} \\).",
+        "html_structure": "\\cos c = 0 \\Rightarrow c = \\frac{\\pi}{{q_3_3_39_1_s9_i1}}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحل \\( 1-2\\sin c=0 \\). الطريقة: \\( \\sin c=\\frac12 \\) والزاوية المعروفة \\( \\frac{\\pi}{6} \\). السبب: \\( \\sin30^\\circ=\\frac12 \\).",
+        "equation_template": "\\sin c = \\frac{1}{{input_1}} \\Rightarrow c = \\frac{\\pi}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step10_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "id": "q_3_3_39_1_s10_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 30^\\circ=\\frac{\\pi}{6} \\)."
+          },
+          {
+            "input_id": "step10_2",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "4",
+              "2"
+            ],
+            "id": "q_3_3_39_1_s10_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 30^\\circ=\\frac{\\pi}{6} \\)."
+          }
+        ],
+        "hint": "\\( 30^\\circ=\\frac{\\pi}{6} \\).",
+        "related_topics": [
+          "حل المعادلات المثلثية"
+        ],
+        "step_id": "math345_3_3_39_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحل \\( 1-2\\sin c=0 \\). الطريقة: \\( \\sin c=\\frac12 \\) والزاوية المعروفة \\( \\frac{\\pi}{6} \\). السبب: \\( \\sin30^\\circ=\\frac12 \\).",
+        "think": "\\( 30^\\circ=\\frac{\\pi}{6} \\).",
+        "html_structure": "\\sin c = \\frac{1}{{q_3_3_39_1_s10_i1}} \\Rightarrow c = \\frac{\\pi}{{q_3_3_39_1_s10_i2}}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجد الحل الثاني للجيب في الربع الثاني. الطريقة: \\( \\pi-\\frac{\\pi}{6}=\\frac{5\\pi}{6} \\). السبب: الجيب موجب في الربعين الأول والثاني.",
+        "equation_template": "c = \\pi - \\frac{\\pi}{6} = \\frac{{input_1}\\pi}{6}",
+        "inputs": [
+          {
+            "input_id": "step11_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "7",
+              "4",
+              "1"
+            ],
+            "id": "q_3_3_39_1_s11_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "7",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\pi=\\frac{6\\pi}{6} \\) ثم اطرح \\( 1 \\)."
+          }
+        ],
+        "hint": "\\( \\pi=\\frac{6\\pi}{6} \\) ثم اطرح \\( 1 \\).",
+        "related_topics": [
+          "الربعات المثلثية"
+        ],
+        "step_id": "math345_3_3_39_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجد الحل الثاني للجيب في الربع الثاني. الطريقة: \\( \\pi-\\frac{\\pi}{6}=\\frac{5\\pi}{6} \\). السبب: الجيب موجب في الربعين الأول والثاني.",
+        "think": "\\( \\pi=\\frac{6\\pi}{6} \\) ثم اطرح \\( 1 \\).",
+        "html_structure": "c = \\pi - \\frac{\\pi}{6} = \\frac{{q_3_3_39_1_s11_i1}\\pi}{6}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نتحقق من انتماء القيم للفترة. الطريقة: \\( \\frac{\\pi}{6}\\approx0.52 \\) و\\( \\frac{\\pi}{2}\\approx1.57 \\) و\\( \\frac{5\\pi}{6}\\approx2.62 \\) كلها بين \\( 0 \\) و\\( \\pi\\approx3.14 \\). السبب: رول يشترط انتماء \\( c \\) للفترة المفتوحة.",
+        "equation_template": "\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6} \\; {input_1} \\; (0,\\pi)",
+        "inputs": [
+          {
+            "input_id": "step12_1",
+            "correct_answer": "\\in",
+            "options": [
+              "\\in",
+              "\\notin",
+              "=",
+              "\\cup"
+            ],
+            "id": "q_3_3_39_1_s12_i1",
+            "correct_value": "\\in",
+            "allowed_keys": [
+              "\\in",
+              "\\notin",
+              "=",
+              "\\cup"
+            ],
+            "label": "القيمة 1",
+            "hint": "كلها أصغر من \\( \\pi \\) وأكبر من \\( 0 \\)."
+          }
+        ],
+        "hint": "كلها أصغر من \\( \\pi \\) وأكبر من \\( 0 \\).",
+        "related_topics": [
+          "مبرهنة رول"
+        ],
+        "step_id": "math345_3_3_39_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نتحقق من انتماء القيم للفترة. الطريقة: \\( \\frac{\\pi}{6}\\approx0.52 \\) و\\( \\frac{\\pi}{2}\\approx1.57 \\) و\\( \\frac{5\\pi}{6}\\approx2.62 \\) كلها بين \\( 0 \\) و\\( \\pi\\approx3.14 \\). السبب: رول يشترط انتماء \\( c \\) للفترة المفتوحة.",
+        "think": "كلها أصغر من \\( \\pi \\) وأكبر من \\( 0 \\).",
+        "html_structure": "\\frac{\\pi}{6}, \\frac{\\pi}{2}, \\frac{5\\pi}{6} \\; {q_3_3_39_1_s12_i1} \\; (0,\\pi)"
+      }
+    ]
+  },
+  {
+    "id_number": "q15_p39",
+    "page_number": 39,
+    "question_number": "15",
+    "question_text": "\\( f(x)=ax^2-4x+5 \\) دالة تحقق شروط مبرهنة رول على الفترة \\( [1,b] \\) وكانت \\( c=2 \\) هي القيمة التي تحقق نتيجة المبرهنة، جد قيمتي \\( a,b\\in\\mathbb{R} \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_039_diag_1_drawing.png"
+    ],
+    "full_model_solution": "f'(x)=2ax-4. f'(2)=0 → 4a=4 → a=1. f(1)=2. f(b)=f(1) → b²-4b+3=0 → b=3 (يهمل b=1).",
+    "source_file": "رياضيات 3/page_039_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 39
+    },
+    "chapter": 3,
+    "topic_index": 2,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_039_diag_1_drawing.png",
+    "title": "\\( f(x)=ax^2-4x+5 \\) دالة تحقق شروط مبرهنة رول على الفترة \\( [1,b] \\) وكانت \\( c=2 \\) هي القيمة التي تحقق نتيجة المبرهنة، جد قيمتي \\( a,b\\in\\mathbb{R} \\).",
+    "number": "15",
+    "model_solution": "f'(x)=2ax-4. f'(2)=0 → 4a=4 → a=1. f(1)=2. f(b)=f(1) → b²-4b+3=0 → b=3 (يهمل b=1).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفهم دور \\( c=2 \\) في المسألة. الطريقة: في مبرهنة رول القيمة \\( c \\) هي التي تجعل المشتقة صفراً، لذلك نكتب \\( f'(2)=0 \\). السبب: نتيجة رول: \\( f'(c)=0 \\).",
+        "equation_template": "f'(c) = 0 \\Rightarrow f'({input_1}) = 0",
+        "inputs": [
+          {
+            "input_id": "step1_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "0",
+              "4"
+            ],
+            "id": "q_3_3_39_2_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع قيمة \\( c \\) المعطاة."
+          }
+        ],
+        "hint": "ضع قيمة \\( c \\) المعطاة.",
+        "related_topics": [
+          "مبرهنة رول"
+        ],
+        "step_id": "math345_3_3_39_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفهم دور \\( c=2 \\) في المسألة. الطريقة: في مبرهنة رول القيمة \\( c \\) هي التي تجعل المشتقة صفراً، لذلك نكتب \\( f'(2)=0 \\). السبب: نتيجة رول: \\( f'(c)=0 \\).",
+        "think": "ضع قيمة \\( c \\) المعطاة.",
+        "html_structure": "f'(c) = 0 \\Rightarrow f'({q_3_3_39_2_s1_i1}) = 0"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق الدالة. الطريقة: مشتقة \\( ax^2 \\) هي \\( 2ax \\) ومشتقة \\( -4x \\) هي \\( -4 \\) والثابت يختفي. السبب: نحتاج المشتقة لإيجاد \\( a \\).",
+        "equation_template": "f'(x) = {input_1}ax - {input_2}",
+        "inputs": [
+          {
+            "input_id": "step2_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "a"
+            ],
+            "id": "q_3_3_39_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "a"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 2 \\) وانقصه بواحد."
+          },
+          {
+            "input_id": "step2_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "5",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s2_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "أنزل الأس \\( 2 \\) وانقصه بواحد."
+          }
+        ],
+        "hint": "أنزل الأس \\( 2 \\) وانقصه بواحد.",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_3_3_39_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق الدالة. الطريقة: مشتقة \\( ax^2 \\) هي \\( 2ax \\) ومشتقة \\( -4x \\) هي \\( -4 \\) والثابت يختفي. السبب: نحتاج المشتقة لإيجاد \\( a \\).",
+        "think": "أنزل الأس \\( 2 \\) وانقصه بواحد.",
+        "html_structure": "f'(x) = {q_3_3_39_2_s2_i1}ax - {q_3_3_39_2_s2_i2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعوض \\( x=2 \\) ونساوي بالصفر. الطريقة: \\( 2a(2)-4=0 \\) فنضرب \\( 2\\times2 \\) ونضيف \\( 4 \\) للطرفين. السبب: لنحصل على معادلة في \\( a \\).",
+        "equation_template": "2a({input_1}) - 4 = 0 \\Rightarrow {input_2}a = 4",
+        "inputs": [
+          {
+            "input_id": "step3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2=4 \\)."
+          },
+          {
+            "input_id": "step3_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "id": "q_3_3_39_2_s3_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times2=4 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2=4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_3_39_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعوض \\( x=2 \\) ونساوي بالصفر. الطريقة: \\( 2a(2)-4=0 \\) فنضرب \\( 2\\times2 \\) ونضيف \\( 4 \\) للطرفين. السبب: لنحصل على معادلة في \\( a \\).",
+        "think": "\\( 2\\times2=4 \\).",
+        "html_structure": "2a({q_3_3_39_2_s3_i1}) - 4 = 0 \\Rightarrow {q_3_3_39_2_s3_i2}a = 4"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد قيمة \\( a \\). الطريقة: نقسم الطرفين على \\( 4 \\). السبب: لنعزل \\( a \\).",
+        "equation_template": "a = \\frac{4}{{input_1}} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "id": "q_3_3_39_2_s4_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\div4 \\)."
+          },
+          {
+            "input_id": "step4_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s4_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4\\div4 \\)."
+          }
+        ],
+        "hint": "\\( 4\\div4 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_3_3_39_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد قيمة \\( a \\). الطريقة: نقسم الطرفين على \\( 4 \\). السبب: لنعزل \\( a \\).",
+        "think": "\\( 4\\div4 \\).",
+        "html_structure": "a = \\frac{4}{{q_3_3_39_2_s4_i1}} = {q_3_3_39_2_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب الدالة بعد معرفة \\( a \\). الطريقة: نضع \\( a=1 \\) في الدالة. السبب: لنحسب قيمها عند الطرفين.",
+        "equation_template": "f(x) = {input_1}x^2 - 4x + 5",
+        "inputs": [
+          {
+            "input_id": "step5_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "استعمل قيمة \\( a \\) التي وجدتها."
+          }
+        ],
+        "hint": "استعمل قيمة \\( a \\) التي وجدتها.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_3_39_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب الدالة بعد معرفة \\( a \\). الطريقة: نضع \\( a=1 \\) في الدالة. السبب: لنحسب قيمها عند الطرفين.",
+        "think": "استعمل قيمة \\( a \\) التي وجدتها.",
+        "html_structure": "f(x) = {q_3_3_39_2_s5_i1}x^2 - 4x + 5"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( f(1) \\) (الطرف الأول). الطريقة: \\( 1^2=1 \\) ثم \\( 1-4+5 \\). السبب: نحتاجها لشرط \\( f(a)=f(b) \\).",
+        "equation_template": "f(1) = (1)^2 - 4(1) + 5 = {input_1} - 4 + 5 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-4=-3 \\) ثم \\( -3+5 \\)."
+          },
+          {
+            "input_id": "step6_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "6",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "6",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1-4=-3 \\) ثم \\( -3+5 \\)."
+          }
+        ],
+        "hint": "\\( 1-4=-3 \\) ثم \\( -3+5 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_3_39_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( f(1) \\) (الطرف الأول). الطريقة: \\( 1^2=1 \\) ثم \\( 1-4+5 \\). السبب: نحتاجها لشرط \\( f(a)=f(b) \\).",
+        "think": "\\( 1-4=-3 \\) ثم \\( -3+5 \\).",
+        "html_structure": "f(1) = (1)^2 - 4(1) + 5 = {q_3_3_39_2_s6_i1} - 4 + 5 = {q_3_3_39_2_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب شرط رول \\( f(1)=f(b) \\). الطريقة: نعوض \\( x=b \\) في الدالة ونساويها بـ \\( 2 \\). السبب: الشرط الثالث لرول.",
+        "equation_template": "b^2 - 4b + 5 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "5",
+              "0"
+            ],
+            "id": "q_3_3_39_2_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "5",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرف الأيمن هو \\( f(1) \\) الذي حسبته."
+          }
+        ],
+        "hint": "الطرف الأيمن هو \\( f(1) \\) الذي حسبته.",
+        "related_topics": [
+          "مبرهنة رول"
+        ],
+        "step_id": "math345_3_3_39_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب شرط رول \\( f(1)=f(b) \\). الطريقة: نعوض \\( x=b \\) في الدالة ونساويها بـ \\( 2 \\). السبب: الشرط الثالث لرول.",
+        "think": "الطرف الأيمن هو \\( f(1) \\) الذي حسبته.",
+        "html_structure": "b^2 - 4b + 5 = {q_3_3_39_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: ننقل كل الحدود لطرف واحد. الطريقة: نطرح \\( 2 \\) من الطرفين: \\( 5-2 \\). السبب: لنحصل على معادلة من الدرجة الثانية.",
+        "equation_template": "b^2 - 4b + {input_1} = 0",
+        "inputs": [
+          {
+            "input_id": "step8_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "7",
+              "2",
+              "5"
+            ],
+            "id": "q_3_3_39_2_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "7",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5-2 \\)."
+          }
+        ],
+        "hint": "\\( 5-2 \\).",
+        "related_topics": [
+          "المعادلات التربيعية"
+        ],
+        "step_id": "math345_3_3_39_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: ننقل كل الحدود لطرف واحد. الطريقة: نطرح \\( 2 \\) من الطرفين: \\( 5-2 \\). السبب: لنحصل على معادلة من الدرجة الثانية.",
+        "think": "\\( 5-2 \\).",
+        "html_structure": "b^2 - 4b + {q_3_3_39_2_s8_i1} = 0"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحلل المعادلة. الطريقة: نبحث عن عددين حاصل ضربهما \\( 3 \\) ومجموعهما \\( 4 \\). السبب: للحصول على قيمتي \\( b \\).",
+        "equation_template": "(b - {input_1})(b - {input_2}) = 0",
+        "inputs": [
+          {
+            "input_id": "step9_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            "id": "q_3_3_39_2_s9_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "العددان \\( 3 \\) و\\( 1 \\)."
+          },
+          {
+            "input_id": "step9_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "id": "q_3_3_39_2_s9_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "العددان \\( 3 \\) و\\( 1 \\)."
+          }
+        ],
+        "hint": "العددان \\( 3 \\) و\\( 1 \\).",
+        "related_topics": [
+          "التحليل"
+        ],
+        "step_id": "math345_3_3_39_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحلل المعادلة. الطريقة: نبحث عن عددين حاصل ضربهما \\( 3 \\) ومجموعهما \\( 4 \\). السبب: للحصول على قيمتي \\( b \\).",
+        "think": "العددان \\( 3 \\) و\\( 1 \\).",
+        "html_structure": "(b - {q_3_3_39_2_s9_i1})(b - {q_3_3_39_2_s9_i2}) = 0"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نختار قيمة \\( b \\) المناسبة. الطريقة: الحلان \\( b=3 \\) و\\( b=1 \\). الفترة \\( [1,b] \\) تتطلب \\( b>1 \\)، فنهمل \\( b=1 \\). السبب: لأن الفترة لا تتكون إذا تساوى الطرفان.",
+        "equation_template": "b = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            "id": "q_3_3_39_2_s10_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اختر القيمة الأكبر من \\( 1 \\)."
+          }
+        ],
+        "hint": "اختر القيمة الأكبر من \\( 1 \\).",
+        "related_topics": [
+          "مبرهنة رول"
+        ],
+        "step_id": "math345_3_3_39_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نختار قيمة \\( b \\) المناسبة. الطريقة: الحلان \\( b=3 \\) و\\( b=1 \\). الفترة \\( [1,b] \\) تتطلب \\( b>1 \\)، فنهمل \\( b=1 \\). السبب: لأن الفترة لا تتكون إذا تساوى الطرفان.",
+        "think": "اختر القيمة الأكبر من \\( 1 \\).",
+        "html_structure": "b = {q_3_3_39_2_s10_i1}"
+      }
+    ]
+  }
+]

@@ -1,0 +1,584 @@
+[
+  {
+    "id_number": "q11_p36",
+    "page_number": 36,
+    "question_number": "11",
+    "question_text": "ابحث تحقق مبرهنة رول للدالة التالية وإن تحققت جد قيمة \\( c \\): \\( f(x) = 2x + \\frac{2}{x}, \\; x \\in [\\frac{1}{2}, 2] \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_036_diag_q11_table.png"
+    ],
+    "full_model_solution": "1) المقام x=0 ∉ [1/2,2] فمستمرة. 2) f'(x)=2-2/x^2 ومقامها x=0 ∉ (1/2,2) فقابلة للاشتقاق. 3) f(1/2)=f(2)=5. 4) 2-2/c^2=0 يعطي c=±1 والمقبول c=1.",
+    "source_file": "رياضيات 3/page_036.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 36
+    },
+    "chapter": 3,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_036_diag_q11_table.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_jz_1_sfhh_036_diag_q11_table.png",
+    "title": "ابحث تحقق مبرهنة رول للدالة التالية وإن تحققت جد قيمة \\( c \\): \\( f(x) = 2x + \\frac{2}{x}, \\; x \\in [\\frac{1}{2}, 2] \\)",
+    "number": "11",
+    "model_solution": "1) المقام x=0 ∉ [1/2,2] فمستمرة. 2) f'(x)=2-2/x^2 ومقامها x=0 ∉ (1/2,2) فقابلة للاشتقاق. 3) f(1/2)=f(2)=5. 4) 2-2/c^2=0 يعطي c=±1 والمقبول c=1.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفحص الاستمرارية: نبحث عن مقام الدالة. الطريقة: ساوِ المقام \\( x \\) بالصفر. السبب: النقطة التي يتصفر عندها المقام هي نقطة الانقطاع المحتملة.",
+        "equation_template": "x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_3_36_1_s1_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( x \\) فقط."
+          }
+        ],
+        "hint": "المقام هو \\( x \\) فقط.",
+        "related_topics": [
+          "الدالة النسبية"
+        ],
+        "step_id": "math345_3_3_36_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفحص الاستمرارية: نبحث عن مقام الدالة. الطريقة: ساوِ المقام \\( x \\) بالصفر. السبب: النقطة التي يتصفر عندها المقام هي نقطة الانقطاع المحتملة.",
+        "think": "المقام هو \\( x \\) فقط.",
+        "html_structure": "x = {q_3_3_36_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نختبر انتماء نقطة الانقطاع للفترة. الطريقة: قارن \\( 0 \\) بالفترة \\( [\\frac{1}{2},2] \\). السبب: إن لم تقع داخلها فالدالة مستمرة.",
+        "equation_template": "0 \\; {input_1} \\; [\\tfrac{1}{2},2] \\Rightarrow \\text{مستمرة}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "∉",
+            "options": [
+              "∉",
+              "∈",
+              "⊂",
+              "="
+            ],
+            "id": "q_3_3_36_1_s2_i1",
+            "correct_value": "∉",
+            "allowed_keys": [
+              "∉",
+              "∈",
+              "⊂",
+              "="
+            ],
+            "label": "القيمة 1",
+            "hint": "الصفر أصغر من \\( \\frac{1}{2} \\)."
+          }
+        ],
+        "hint": "الصفر أصغر من \\( \\frac{1}{2} \\).",
+        "related_topics": [
+          "الاستمرارية"
+        ],
+        "step_id": "math345_3_3_36_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نختبر انتماء نقطة الانقطاع للفترة. الطريقة: قارن \\( 0 \\) بالفترة \\( [\\frac{1}{2},2] \\). السبب: إن لم تقع داخلها فالدالة مستمرة.",
+        "think": "الصفر أصغر من \\( \\frac{1}{2} \\).",
+        "html_structure": "0 \\; {q_3_3_36_1_s2_i1} \\; [\\tfrac{1}{2},2] \\Rightarrow \\text{مستمرة}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق الدالة. الطريقة: اكتب \\( \\frac{2}{x}=2x^{-1} \\) ثم اشتق. السبب: لنفحص مقام المشتقة.",
+        "equation_template": "f'(x) = {input_1} - \\frac{{input_2}}{x^2}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "0",
+              "4"
+            ],
+            "id": "q_3_3_36_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 2x \\) هي \\( 2 \\) ومشتقة \\( 2x^{-1} \\) هي \\( -2x^{-2} \\)."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_36_1_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( 2x \\) هي \\( 2 \\) ومشتقة \\( 2x^{-1} \\) هي \\( -2x^{-2} \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 2x \\) هي \\( 2 \\) ومشتقة \\( 2x^{-1} \\) هي \\( -2x^{-2} \\).",
+        "related_topics": [
+          "اشتقاق الدالة النسبية"
+        ],
+        "step_id": "math345_3_3_36_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق الدالة. الطريقة: اكتب \\( \\frac{2}{x}=2x^{-1} \\) ثم اشتق. السبب: لنفحص مقام المشتقة.",
+        "think": "مشتقة \\( 2x \\) هي \\( 2 \\) ومشتقة \\( 2x^{-1} \\) هي \\( -2x^{-2} \\).",
+        "html_structure": "f'(x) = {q_3_3_36_1_s3_i1} - \\frac{{q_3_3_36_1_s3_i2}}{x^2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نفحص قابلية الاشتقاق. الطريقة: ساوِ مقام المشتقة \\( x^2 \\) بالصفر. السبب: إن لم يقع الجذر في الفترة المفتوحة فالدالة قابلة للاشتقاق.",
+        "equation_template": "x^2 = 0 \\Rightarrow x = {input_1} \\; {input_2} \\; (\\tfrac{1}{2},2)",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_3_36_1_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الصفر خارج الفترة."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "∉",
+            "options": [
+              "∉",
+              "∈",
+              "⊂",
+              "="
+            ],
+            "id": "q_3_3_36_1_s4_i2",
+            "correct_value": "∉",
+            "allowed_keys": [
+              "∉",
+              "∈",
+              "⊂",
+              "="
+            ],
+            "label": "القيمة 2",
+            "hint": "الصفر خارج الفترة."
+          }
+        ],
+        "hint": "الصفر خارج الفترة.",
+        "related_topics": [
+          "قابلية الاشتقاق"
+        ],
+        "step_id": "math345_3_3_36_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نفحص قابلية الاشتقاق. الطريقة: ساوِ مقام المشتقة \\( x^2 \\) بالصفر. السبب: إن لم يقع الجذر في الفترة المفتوحة فالدالة قابلة للاشتقاق.",
+        "think": "الصفر خارج الفترة.",
+        "html_structure": "x^2 = 0 \\Rightarrow x = {q_3_3_36_1_s4_i1} \\; {q_3_3_36_1_s4_i2} \\; (\\tfrac{1}{2},2)"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض الطرف الأول \\( x=\\frac12 \\). الطريقة: احسب \\( 2(\\frac12)=1 \\) و \\( \\frac{2}{1/2}=4 \\). السبب: القسمة على نصف تعني الضرب في \\( 2 \\).",
+        "equation_template": "f(\\tfrac{1}{2}) = 2(\\tfrac{1}{2}) + \\frac{2}{{input_1}} = 1 + {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_3_3_36_1_s5_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+4=5 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "1",
+              "2",
+              "8"
+            ],
+            "id": "q_3_3_36_1_s5_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "1",
+              "2",
+              "8"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+4=5 \\)."
+          },
+          {
+            "input_id": "step5_in3",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "id": "q_3_3_36_1_s5_i3",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 1+4=5 \\)."
+          }
+        ],
+        "hint": "\\( 1+4=5 \\).",
+        "related_topics": [
+          "التعويض في الدالة"
+        ],
+        "step_id": "math345_3_3_36_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض الطرف الأول \\( x=\\frac12 \\). الطريقة: احسب \\( 2(\\frac12)=1 \\) و \\( \\frac{2}{1/2}=4 \\). السبب: القسمة على نصف تعني الضرب في \\( 2 \\).",
+        "think": "\\( 1+4=5 \\).",
+        "html_structure": "f(\\tfrac{1}{2}) = 2(\\tfrac{1}{2}) + \\frac{2}{{q_3_3_36_1_s5_i1}} = 1 + {q_3_3_36_1_s5_i2} = {q_3_3_36_1_s5_i3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوض الطرف الثاني \\( x=2 \\). الطريقة: احسب \\( 2(2)=4 \\) و \\( \\frac22=1 \\). السبب: لنقارن بقيمة الطرف الأول.",
+        "equation_template": "f(2) = 2({input_1}) + \\frac{2}{{input_2}} = 4 + {input_3}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_36_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac22=1 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_36_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac22=1 \\)."
+          },
+          {
+            "input_id": "step6_in3",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "id": "q_3_3_36_1_s6_i3",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( \\frac22=1 \\)."
+          }
+        ],
+        "hint": "\\( \\frac22=1 \\).",
+        "related_topics": [
+          "التعويض في الدالة"
+        ],
+        "step_id": "math345_3_3_36_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوض الطرف الثاني \\( x=2 \\). الطريقة: احسب \\( 2(2)=4 \\) و \\( \\frac22=1 \\). السبب: لنقارن بقيمة الطرف الأول.",
+        "think": "\\( \\frac22=1 \\).",
+        "html_structure": "f(2) = 2({q_3_3_36_1_s6_i1}) + \\frac{2}{{q_3_3_36_1_s6_i2}} = 4 + {q_3_3_36_1_s6_i3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن القيمتين. الطريقة: \\( 4+1 \\) تساوي نفس ناتج الطرف الأول. السبب: الشرط الثالث متحقق.",
+        "equation_template": "f(\\tfrac{1}{2}) = f(2) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "id": "q_3_3_36_1_s7_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "4",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4+1=5 \\)."
+          }
+        ],
+        "hint": "\\( 4+1=5 \\).",
+        "related_topics": [
+          "شروط مبرهنة رول"
+        ],
+        "step_id": "math345_3_3_36_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن القيمتين. الطريقة: \\( 4+1 \\) تساوي نفس ناتج الطرف الأول. السبب: الشرط الثالث متحقق.",
+        "think": "\\( 4+1=5 \\).",
+        "html_structure": "f(\\tfrac{1}{2}) = f(2) = {q_3_3_36_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نضع \\( f'(c)=0 \\). الطريقة: انقل الكسر للطرف الآخر. السبب: لنعزل \\( c^2 \\).",
+        "equation_template": "2 - \\frac{2}{c^2} = 0 \\Rightarrow \\frac{2}{c^2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "4"
+            ],
+            "id": "q_3_3_36_1_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( \\frac{2}{c^2} \\) إلى الطرف الآخر."
+          }
+        ],
+        "hint": "انقل \\( \\frac{2}{c^2} \\) إلى الطرف الآخر.",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_3_3_36_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نضع \\( f'(c)=0 \\). الطريقة: انقل الكسر للطرف الآخر. السبب: لنعزل \\( c^2 \\).",
+        "think": "انقل \\( \\frac{2}{c^2} \\) إلى الطرف الآخر.",
+        "html_structure": "2 - \\frac{2}{c^2} = 0 \\Rightarrow \\frac{2}{c^2} = {q_3_3_36_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نعزل \\( c^2 \\). الطريقة: اضرب الطرفين في \\( c^2 \\) ثم اقسم على \\( 2 \\). السبب: نتخلص من المقام.",
+        "equation_template": "2c^2 = {input_1} \\Rightarrow c^2 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_36_1_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2c^2=2 \\) إذن \\( c^2=1 \\)."
+          },
+          {
+            "input_id": "step9_in2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "id": "q_3_3_36_1_s9_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2c^2=2 \\) إذن \\( c^2=1 \\)."
+          }
+        ],
+        "hint": "\\( 2c^2=2 \\) إذن \\( c^2=1 \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_3_3_36_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نعزل \\( c^2 \\). الطريقة: اضرب الطرفين في \\( c^2 \\) ثم اقسم على \\( 2 \\). السبب: نتخلص من المقام.",
+        "think": "\\( 2c^2=2 \\) إذن \\( c^2=1 \\).",
+        "html_structure": "2c^2 = {q_3_3_36_1_s9_i1} \\Rightarrow c^2 = {q_3_3_36_1_s9_i2}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نأخذ الجذر التربيعي. الطريقة: جذر \\( 1 \\) هو \\( \\pm 1 \\). السبب: لأن المربع يحققه عددان.",
+        "equation_template": "c = \\pm {input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "id": "q_3_3_36_1_s10_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر العدد \\( 1 \\) هو \\( 1 \\)."
+          }
+        ],
+        "hint": "جذر العدد \\( 1 \\) هو \\( 1 \\).",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_3_3_36_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نأخذ الجذر التربيعي. الطريقة: جذر \\( 1 \\) هو \\( \\pm 1 \\). السبب: لأن المربع يحققه عددان.",
+        "think": "جذر العدد \\( 1 \\) هو \\( 1 \\).",
+        "html_structure": "c = \\pm {q_3_3_36_1_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نختار القيمة المقبولة. الطريقة: \\( 1 \\) داخل \\( (\\frac12,2) \\) و \\( -1 \\) خارجها. السبب: المبرهنة تضمن \\( c \\) داخل الفترة المفتوحة.",
+        "equation_template": "c = {input_1} \\; \\text{مقبولة} \\; , \\; -1 \\; {input_2} \\; (\\tfrac{1}{2},2)",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "id": "q_3_3_36_1_s11_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمة موجبة بين \\( 0.5 \\) و \\( 2 \\) هي المقبولة."
+          },
+          {
+            "input_id": "step11_in2",
+            "correct_answer": "∉",
+            "options": [
+              "∉",
+              "∈",
+              "⊂",
+              "="
+            ],
+            "id": "q_3_3_36_1_s11_i2",
+            "correct_value": "∉",
+            "allowed_keys": [
+              "∉",
+              "∈",
+              "⊂",
+              "="
+            ],
+            "label": "القيمة 2",
+            "hint": "قيمة موجبة بين \\( 0.5 \\) و \\( 2 \\) هي المقبولة."
+          }
+        ],
+        "hint": "قيمة موجبة بين \\( 0.5 \\) و \\( 2 \\) هي المقبولة.",
+        "related_topics": [
+          "انتماء القيمة للفترة"
+        ],
+        "step_id": "math345_3_3_36_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نختار القيمة المقبولة. الطريقة: \\( 1 \\) داخل \\( (\\frac12,2) \\) و \\( -1 \\) خارجها. السبب: المبرهنة تضمن \\( c \\) داخل الفترة المفتوحة.",
+        "think": "قيمة موجبة بين \\( 0.5 \\) و \\( 2 \\) هي المقبولة.",
+        "html_structure": "c = {q_3_3_36_1_s11_i1} \\; \\text{مقبولة} \\; , \\; -1 \\; {q_3_3_36_1_s11_i2} \\; (\\tfrac{1}{2},2)"
+      }
+    ]
+  }
+]

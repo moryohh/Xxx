@@ -1,0 +1,278 @@
+[
+  {
+    "title": "اشتق وحدة الفاراد بالوحدات الأساسية (وحدات النظام العالمي SI). (وزاري)",
+    "steps": [
+      {
+        "step_id": "physics_1_14_1_step_1",
+        "title": "الخطوة ١",
+        "explanation": "الهدف: أن نكتب تعريف الفاراد. الطريقة: الفاراد هو كولوم لكل فولت. السبب: لأن \\( C = \\frac{Q}{\\Delta V} \\).",
+        "think": "الشحنة في البسط وفرق الجهد في المقام.",
+        "html_structure": "F = \\frac{{q_1_14_1_s1_i1}}{{q_1_14_1_s1_i2}}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s1_i1",
+            "correct_value": "C",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "C",
+              "V",
+              "J",
+              "N"
+            ],
+            "hint": "الشحنة في البسط وفرق الجهد في المقام."
+          },
+          {
+            "id": "q_1_14_1_s1_i2",
+            "correct_value": "V",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "V",
+              "C",
+              "J",
+              "N"
+            ],
+            "hint": "الشحنة في البسط وفرق الجهد في المقام."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_2",
+        "title": "الخطوة ٢",
+        "explanation": "الهدف: أن نعبر عن الفولت. الطريقة: الفولت جول لكل كولوم. السبب: لأن فرق الجهد = الطاقة ÷ الشحنة.",
+        "think": "الطاقة بالجول في البسط.",
+        "html_structure": "V = \\frac{{q_1_14_1_s2_i1}}{C}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s2_i1",
+            "correct_value": "J",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "J",
+              "N",
+              "A",
+              "s"
+            ],
+            "hint": "الطاقة بالجول في البسط."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_3",
+        "title": "الخطوة ٣",
+        "explanation": "الهدف: أن نعوض الفولت في الفاراد. الطريقة: \\( F = \\frac{C}{J/C} = \\frac{C \\cdot C}{J} \\). السبب: لأن القسمة على كسر تعني ضرب مقلوبه.",
+        "think": "بسط: \\( C \\cdot C \\)، مقام: \\( J \\).",
+        "html_structure": "F = \\frac{C \\cdot {q_1_14_1_s3_i1}}{{q_1_14_1_s3_i2}}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s3_i1",
+            "correct_value": "C",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "C",
+              "J",
+              "V",
+              "N"
+            ],
+            "hint": "بسط: \\( C \\cdot C \\)، مقام: \\( J \\)."
+          },
+          {
+            "id": "q_1_14_1_s3_i2",
+            "correct_value": "J",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "J",
+              "C",
+              "V",
+              "N"
+            ],
+            "hint": "بسط: \\( C \\cdot C \\)، مقام: \\( J \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_4",
+        "title": "الخطوة ٤",
+        "explanation": "الهدف: أن نعبر عن الكولوم بالوحدات الأساسية. الطريقة: الشحنة = تيار × زمن. السبب: لأن \\( Q = I \\cdot t \\).",
+        "think": "التيار بالأمبير.",
+        "html_structure": "C = {q_1_14_1_s4_i1} \\cdot s",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s4_i1",
+            "correct_value": "A",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "A",
+              "N",
+              "J",
+              "V"
+            ],
+            "hint": "التيار بالأمبير."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_5",
+        "title": "الخطوة ٥",
+        "explanation": "الهدف: أن نعبر عن الجول. الطريقة: الجول = نيوتن × متر. السبب: لأن الشغل = قوة × إزاحة.",
+        "think": "القوة بالنيوتن.",
+        "html_structure": "J = {q_1_14_1_s5_i1} \\cdot m",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s5_i1",
+            "correct_value": "N",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "N",
+              "A",
+              "C",
+              "V"
+            ],
+            "hint": "القوة بالنيوتن."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_6",
+        "title": "الخطوة ٦",
+        "explanation": "الهدف: أن نعوض الكولوم والجول. الطريقة: \\( F = \\frac{(A \\cdot s)^2}{N \\cdot m} = \\frac{A^2 s^2}{N \\cdot m} \\). السبب: لأن الكولوم مربع يربع معه كل من \\( A \\) و\\( s \\).",
+        "think": "المقام: نيوتن في متر.",
+        "html_structure": "F = \\frac{A^2 s^2}{{q_1_14_1_s6_i1} \\cdot m}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s6_i1",
+            "correct_value": "N",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "N",
+              "J",
+              "C",
+              "V"
+            ],
+            "hint": "المقام: نيوتن في متر."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_7",
+        "title": "الخطوة ٧",
+        "explanation": "الهدف: أن نعبر عن النيوتن. الطريقة: النيوتن = كتلة × تسارع. السبب: لأن \\( F = ma \\) والتسارع \\( \\frac{m}{s^2} \\).",
+        "think": "التسارع متر على ثانية مربعة.",
+        "html_structure": "N = kg \\cdot \\frac{m}{{q_1_14_1_s7_i1}}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s7_i1",
+            "correct_value": "s^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "s^2",
+              "s",
+              "m",
+              "kg"
+            ],
+            "hint": "التسارع متر على ثانية مربعة."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_8",
+        "title": "الخطوة ٨",
+        "explanation": "الهدف: أن نعوض النيوتن في المقام. الطريقة: المقام: \\( kg \\cdot \\frac{m}{s^2} \\cdot m \\). السبب: لنحصل على وحدات أساسية فقط.",
+        "think": "آخر عامل هو المتر.",
+        "html_structure": "F = \\frac{A^2 s^2}{kg \\cdot \\frac{m}{{q_1_14_1_s8_i1}} \\cdot {q_1_14_1_s8_i2}}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s8_i1",
+            "correct_value": "s^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "s^2",
+              "s",
+              "m",
+              "kg"
+            ],
+            "hint": "آخر عامل هو المتر."
+          },
+          {
+            "id": "q_1_14_1_s8_i2",
+            "correct_value": "m",
+            "label": "القيمة 2",
+            "allowed_keys": [
+              "m",
+              "s",
+              "kg",
+              "A"
+            ],
+            "hint": "آخر عامل هو المتر."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_9",
+        "title": "الخطوة ٩",
+        "explanation": "الهدف: أن نبسط المقام. الطريقة: \\( m \\cdot m = m^2 \\). السبب: لأن ضرب الوحدة في نفسها يرفع الأس.",
+        "think": "\\( 1 + 1 \\).",
+        "html_structure": "kg \\cdot \\frac{m^{{q_1_14_1_s9_i1}}}{s^2}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s9_i1",
+            "correct_value": "2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "hint": "\\( 1 + 1 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_10",
+        "title": "الخطوة ١٠",
+        "explanation": "الهدف: أن ننقل \\( s^2 \\) إلى البسط. الطريقة: \\( s^2 \\cdot s^2 = s^4 \\). السبب: لأن القسمة على \\( \\frac{1}{s^2} \\) ضرب في \\( s^2 \\).",
+        "think": "\\( 2 + 2 \\).",
+        "html_structure": "F = \\frac{A^2 s^{{q_1_14_1_s10_i1}}}{kg \\cdot m^2}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s10_i1",
+            "correct_value": "4",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "1"
+            ],
+            "hint": "\\( 2 + 2 \\)."
+          }
+        ]
+      },
+      {
+        "step_id": "physics_1_14_1_step_11",
+        "title": "الخطوة ١١",
+        "explanation": "الهدف: أن نكتب الجواب النهائي. الطريقة: المقام وحدة الكتلة في مربع المتر. السبب: لأن هذا هو الباقي في المقام.",
+        "think": "كيلوغرام ومتر مربع.",
+        "html_structure": "F = \\frac{A^2 s^4}{{q_1_14_1_s11_i1}}",
+        "inputs": [
+          {
+            "id": "q_1_14_1_s11_i1",
+            "correct_value": "kg \\cdot m^2",
+            "label": "القيمة 1",
+            "allowed_keys": [
+              "kg \\cdot m^2",
+              "kg \\cdot m",
+              "kg \\cdot m^3",
+              "kg \\cdot s^2"
+            ],
+            "hint": "كيلوغرام ومتر مربع."
+          }
+        ]
+      }
+    ],
+    "model_solution": "F = C/V | V = J/C | F = C²/J | C = A·s | J = N·m | N = kg·m/s² | F = A²·s⁴/(kg·m²)",
+    "number": "اشتق الفاراد",
+    "page_number": 42,
+    "image_url": null
+  }
+]

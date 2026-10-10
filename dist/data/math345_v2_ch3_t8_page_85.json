@@ -1,0 +1,709 @@
+[
+  {
+    "id_number": "q49_p85",
+    "page_number": 85,
+    "question_number": "49",
+    "question_text": "المستقيم \\( 3x-y=7 \\) يمس المنحنى \\( y=ax^2+bx+c \\) عند \\( (2,-1) \\) وكانت له نهاية عند \\( x=\\frac{1}{2} \\) جد قيم \\( a,b,c \\) وما نوع النهاية؟",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_085_graph_q49_drawing_byany.png"
+    ],
+    "full_model_solution": "\\( 4a+b=3,\\ a+b=0 \\) فـ \\( a=1,\\ b=-1 \\)، و\\( 4a+2b+c=-1 \\) فـ \\( c=-3 \\). \\( y''=2>0 \\) نهاية صغرى.",
+    "source_file": "رياضيات 3/page_085_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 85
+    },
+    "chapter": 3,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_2_sfhh_085_graph_q49_drawing_byany.png",
+    "title": "المستقيم \\( 3x-y=7 \\) يمس المنحنى \\( y=ax^2+bx+c \\) عند \\( (2,-1) \\) وكانت له نهاية عند \\( x=\\frac{1}{2} \\) جد قيم \\( a,b,c \\) وما نوع النهاية؟",
+    "number": "49",
+    "model_solution": "\\( 4a+b=3,\\ a+b=0 \\) فـ \\( a=1,\\ b=-1 \\)، و\\( 4a+2b+c=-1 \\) فـ \\( c=-3 \\). \\( y''=2>0 \\) نهاية صغرى.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نجد ميل المستقيم \\( 3x-y=7 \\). الطريقة: اعزل \\( y \\): \\( y=3x-7 \\). اكتب معامل \\( x \\) والثابت. السبب: لأن الميل هو معامل \\( x \\).",
+        "equation_template": "y={input_1}x-{input_2}",
+        "inputs": [
+          {
+            "input_id": "s1_a",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "7",
+              "-3",
+              "1"
+            ],
+            "id": "q_3_8_85_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "7",
+              "-3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( y \\) إلى اليمين و\\( 7 \\) إلى اليسار."
+          },
+          {
+            "input_id": "s1_b",
+            "correct_answer": "7",
+            "options": [
+              "7",
+              "3",
+              "-7",
+              "1"
+            ],
+            "id": "q_3_8_85_1_s1_i2",
+            "correct_value": "7",
+            "allowed_keys": [
+              "7",
+              "3",
+              "-7",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل \\( y \\) إلى اليمين و\\( 7 \\) إلى اليسار."
+          }
+        ],
+        "hint": "انقل \\( y \\) إلى اليمين و\\( 7 \\) إلى اليسار.",
+        "related_topics": [
+          "ميل المستقيم"
+        ],
+        "step_id": "math345_3_8_85_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نجد ميل المستقيم \\( 3x-y=7 \\). الطريقة: اعزل \\( y \\): \\( y=3x-7 \\). اكتب معامل \\( x \\) والثابت. السبب: لأن الميل هو معامل \\( x \\).",
+        "think": "انقل \\( y \\) إلى اليمين و\\( 7 \\) إلى اليسار.",
+        "html_structure": "y={q_3_8_85_1_s1_i1}x-{q_3_8_85_1_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نسجل قيمة الميل. الطريقة: الميل هو معامل \\( x \\). السبب: لأن مماس المنحنى له هذا الميل عند \\( x=2 \\).",
+        "equation_template": "m={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_m",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "7",
+              "-7"
+            ],
+            "id": "q_3_8_85_1_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "7",
+              "-7"
+            ],
+            "label": "القيمة 1",
+            "hint": "معامل \\( x \\) هو \\( 3 \\)."
+          }
+        ],
+        "hint": "معامل \\( x \\) هو \\( 3 \\).",
+        "related_topics": [
+          "ميل المستقيم"
+        ],
+        "step_id": "math345_3_8_85_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نسجل قيمة الميل. الطريقة: الميل هو معامل \\( x \\). السبب: لأن مماس المنحنى له هذا الميل عند \\( x=2 \\).",
+        "think": "معامل \\( x \\) هو \\( 3 \\).",
+        "html_structure": "m={q_3_8_85_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق المنحنى \\( y=ax^2+bx+c \\). الطريقة: اشتق كل حد. السبب: لأن المشتقة هي ميل المماس.",
+        "equation_template": "y'={input_1}ax+{input_2}",
+        "inputs": [
+          {
+            "input_id": "s3_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "a"
+            ],
+            "id": "q_3_8_85_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "a"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( ax^2\\to2ax \\) و\\( bx\\to b \\) والثابت صفر."
+          },
+          {
+            "input_id": "s3_b",
+            "correct_answer": "b",
+            "options": [
+              "b",
+              "c",
+              "1",
+              "2b"
+            ],
+            "id": "q_3_8_85_1_s3_i2",
+            "correct_value": "b",
+            "allowed_keys": [
+              "b",
+              "c",
+              "1",
+              "2b"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( ax^2\\to2ax \\) و\\( bx\\to b \\) والثابت صفر."
+          }
+        ],
+        "hint": "\\( ax^2\\to2ax \\) و\\( bx\\to b \\) والثابت صفر.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_85_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق المنحنى \\( y=ax^2+bx+c \\). الطريقة: اشتق كل حد. السبب: لأن المشتقة هي ميل المماس.",
+        "think": "\\( ax^2\\to2ax \\) و\\( bx\\to b \\) والثابت صفر.",
+        "html_structure": "y'={q_3_8_85_1_s3_i1}ax+{q_3_8_85_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نعوّض \\( x=2 \\) في المشتقة. الطريقة: ضع \\( 2 \\) مكان \\( x \\). السبب: لأن نقطة التماس لها \\( x=2 \\).",
+        "equation_template": "y'(2)=2a({input_1})+b",
+        "inputs": [
+          {
+            "input_id": "s4_x",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "-1"
+            ],
+            "id": "q_3_8_85_1_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( x \\) بـ \\( 2 \\)."
+          }
+        ],
+        "hint": "استبدل \\( x \\) بـ \\( 2 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_85_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نعوّض \\( x=2 \\) في المشتقة. الطريقة: ضع \\( 2 \\) مكان \\( x \\). السبب: لأن نقطة التماس لها \\( x=2 \\).",
+        "think": "استبدل \\( x \\) بـ \\( 2 \\).",
+        "html_structure": "y'(2)=2a({q_3_8_85_1_s4_i1})+b"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نساوي المشتقة عند \\( x=2 \\) بميل المستقيم. الطريقة: احسب \\( 2\\times2 \\) واكتب الناتج وقيمة الميل. السبب: لأن المماس يطابق المستقيم.",
+        "equation_template": "{input_1}a+b={input_2}\\ \\ (1)",
+        "inputs": [
+          {
+            "input_id": "s5_a",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "id": "q_3_8_85_1_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2=4 \\) والميل \\( 3 \\)."
+          },
+          {
+            "input_id": "s5_m",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "7",
+              "4"
+            ],
+            "id": "q_3_8_85_1_s5_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "7",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times2=4 \\) والميل \\( 3 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2=4 \\) والميل \\( 3 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_3_8_85_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نساوي المشتقة عند \\( x=2 \\) بميل المستقيم. الطريقة: احسب \\( 2\\times2 \\) واكتب الناتج وقيمة الميل. السبب: لأن المماس يطابق المستقيم.",
+        "think": "\\( 2\\times2=4 \\) والميل \\( 3 \\).",
+        "html_structure": "{q_3_8_85_1_s5_i1}a+b={q_3_8_85_1_s5_i2}\\ \\ (1)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نعوّض نقطة التماس \\( (2,-1) \\) في المنحنى. الطريقة: ضع \\( x=2 \\) و\\( y=-1 \\) في \\( y=ax^2+bx+c \\). السبب: لأن النقطة تقع على المنحنى.",
+        "equation_template": "a({input_1})^2+b({input_2})+c=-1",
+        "inputs": [
+          {
+            "input_id": "s6_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-1",
+              "4",
+              "1"
+            ],
+            "id": "q_3_8_85_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( x \\) بـ \\( 2 \\) في الموضعين."
+          },
+          {
+            "input_id": "s6_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-1",
+              "4",
+              "1"
+            ],
+            "id": "q_3_8_85_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "استبدل \\( x \\) بـ \\( 2 \\) في الموضعين."
+          }
+        ],
+        "hint": "استبدل \\( x \\) بـ \\( 2 \\) في الموضعين.",
+        "related_topics": [
+          "تعويض نقطة"
+        ],
+        "step_id": "math345_3_8_85_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نعوّض نقطة التماس \\( (2,-1) \\) في المنحنى. الطريقة: ضع \\( x=2 \\) و\\( y=-1 \\) في \\( y=ax^2+bx+c \\). السبب: لأن النقطة تقع على المنحنى.",
+        "think": "استبدل \\( x \\) بـ \\( 2 \\) في الموضعين.",
+        "html_structure": "a({q_3_8_85_1_s6_i1})^2+b({q_3_8_85_1_s6_i2})+c=-1"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نبسط المعادلة. الطريقة: احسب \\( 2^2 \\) واكتب معاملي \\( a \\) و\\( b \\). السبب: للحل الآني.",
+        "equation_template": "{input_1}a+{input_2}b+c=-1\\ \\ (2)",
+        "inputs": [
+          {
+            "input_id": "s7_a",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_3_8_85_1_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2^2=4 \\) و\\( b\\times2 \\)."
+          },
+          {
+            "input_id": "s7_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_8_85_1_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2^2=4 \\) و\\( b\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2^2=4 \\) و\\( b\\times2 \\).",
+        "related_topics": [
+          "تعويض نقطة"
+        ],
+        "step_id": "math345_3_8_85_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نبسط المعادلة. الطريقة: احسب \\( 2^2 \\) واكتب معاملي \\( a \\) و\\( b \\). السبب: للحل الآني.",
+        "think": "\\( 2^2=4 \\) و\\( b\\times2 \\).",
+        "html_structure": "{q_3_8_85_1_s7_i1}a+{q_3_8_85_1_s7_i2}b+c=-1\\ \\ (2)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستخدم وجود نهاية عند \\( x=\\frac{1}{2} \\) أي أن \\( y'=0 \\) هناك. الطريقة: عوّض \\( \\frac{1}{2} \\) في \\( 2ax+b \\): \\( 2a\\times\\frac{1}{2}=a \\) فتصبح \\( a+b \\). السبب: لأن المشتقة تنعدم عند النهاية المحلية.",
+        "equation_template": "a+b={input_1}\\ \\ (3)",
+        "inputs": [
+          {
+            "input_id": "s8_v",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "3",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_8_85_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "3",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times\\frac{1}{2}=1 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times\\frac{1}{2}=1 \\).",
+        "related_topics": [
+          "النهاية المحلية"
+        ],
+        "step_id": "math345_3_8_85_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستخدم وجود نهاية عند \\( x=\\frac{1}{2} \\) أي أن \\( y'=0 \\) هناك. الطريقة: عوّض \\( \\frac{1}{2} \\) في \\( 2ax+b \\): \\( 2a\\times\\frac{1}{2}=a \\) فتصبح \\( a+b \\). السبب: لأن المشتقة تنعدم عند النهاية المحلية.",
+        "think": "\\( 2\\times\\frac{1}{2}=1 \\).",
+        "html_structure": "a+b={q_3_8_85_1_s8_i1}\\ \\ (3)"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نعبر عن \\( b \\) بدلالة \\( a \\). الطريقة: من \\( a+b=0 \\) انقل \\( a \\). السبب: لنعوضها في (1).",
+        "equation_template": "b=-{input_1}",
+        "inputs": [
+          {
+            "input_id": "s9_v",
+            "correct_answer": "a",
+            "options": [
+              "a",
+              "b",
+              "1",
+              "c"
+            ],
+            "id": "q_3_8_85_1_s9_i1",
+            "correct_value": "a",
+            "allowed_keys": [
+              "a",
+              "b",
+              "1",
+              "c"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( a \\) للطرف الثاني."
+          }
+        ],
+        "hint": "انقل \\( a \\) للطرف الثاني.",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_85_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نعبر عن \\( b \\) بدلالة \\( a \\). الطريقة: من \\( a+b=0 \\) انقل \\( a \\). السبب: لنعوضها في (1).",
+        "think": "انقل \\( a \\) للطرف الثاني.",
+        "html_structure": "b=-{q_3_8_85_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نعوّض \\( b=-a \\) في المعادلة (1). الطريقة: \\( 4a+(-a)=3 \\) ثم اجمع. السبب: لنحصل على مجهول واحد.",
+        "equation_template": "{input_1}a=3\\Rightarrow a={input_2}",
+        "inputs": [
+          {
+            "input_id": "s10_c",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "4",
+              "1"
+            ],
+            "id": "q_3_8_85_1_s10_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4-1=3 \\) ثم \\( 3\\div3=1 \\)."
+          },
+          {
+            "input_id": "s10_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "-1",
+              "0"
+            ],
+            "id": "q_3_8_85_1_s10_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "-1",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4-1=3 \\) ثم \\( 3\\div3=1 \\)."
+          }
+        ],
+        "hint": "\\( 4-1=3 \\) ثم \\( 3\\div3=1 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_85_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نعوّض \\( b=-a \\) في المعادلة (1). الطريقة: \\( 4a+(-a)=3 \\) ثم اجمع. السبب: لنحصل على مجهول واحد.",
+        "think": "\\( 4-1=3 \\) ثم \\( 3\\div3=1 \\).",
+        "html_structure": "{q_3_8_85_1_s10_i1}a=3\\Rightarrow a={q_3_8_85_1_s10_i2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجد \\( b \\). الطريقة: عوّض \\( a=1 \\) في \\( b=-a \\). السبب: لأن \\( b=-a \\).",
+        "equation_template": "b=-({input_1})={input_2}",
+        "inputs": [
+          {
+            "input_id": "s11_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "3",
+              "2"
+            ],
+            "id": "q_3_8_85_1_s11_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1 \\)."
+          },
+          {
+            "input_id": "s11_b",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_3_8_85_1_s11_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -1 \\)."
+          }
+        ],
+        "hint": "\\( -1 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_85_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجد \\( b \\). الطريقة: عوّض \\( a=1 \\) في \\( b=-a \\). السبب: لأن \\( b=-a \\).",
+        "think": "\\( -1 \\).",
+        "html_structure": "b=-({q_3_8_85_1_s11_i1})={q_3_8_85_1_s11_i2}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نجد \\( c \\) من المعادلة (2). الطريقة: عوّض \\( a=1 \\) و\\( b=-1 \\): \\( 4(1)+2(-1)+c=-1 \\). السبب: هذه آخر قيمة مجهولة.",
+        "equation_template": "{input_1}+c=-1\\Rightarrow c={input_2}",
+        "inputs": [
+          {
+            "input_id": "s12_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "6",
+              "4",
+              "-2"
+            ],
+            "id": "q_3_8_85_1_s12_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "6",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4-2=2 \\) ثم \\( c=-1-2 \\)."
+          },
+          {
+            "input_id": "s12_c",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "id": "q_3_8_85_1_s12_i2",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4-2=2 \\) ثم \\( c=-1-2 \\)."
+          }
+        ],
+        "hint": "\\( 4-2=2 \\) ثم \\( c=-1-2 \\).",
+        "related_topics": [
+          "حل المعادلات الآنية"
+        ],
+        "step_id": "math345_3_8_85_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نجد \\( c \\) من المعادلة (2). الطريقة: عوّض \\( a=1 \\) و\\( b=-1 \\): \\( 4(1)+2(-1)+c=-1 \\). السبب: هذه آخر قيمة مجهولة.",
+        "think": "\\( 4-2=2 \\) ثم \\( c=-1-2 \\).",
+        "html_structure": "{q_3_8_85_1_s12_i1}+c=-1\\Rightarrow c={q_3_8_85_1_s12_i2}"
+      },
+      {
+        "step_number": 13,
+        "step_explanation": "الهدف: نحسب المشتقة الثانية لنحدد نوع النهاية. الطريقة: اشتق \\( y'=2ax+b \\). السبب: لأن إشارة \\( y'' \\) تحدد النوع.",
+        "equation_template": "y''=2a=2({input_1})={input_2}",
+        "inputs": [
+          {
+            "input_id": "s13_a",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "3"
+            ],
+            "id": "q_3_8_85_1_s13_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times1=2 \\)."
+          },
+          {
+            "input_id": "s13_v",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "id": "q_3_8_85_1_s13_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2\\times1=2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times1=2 \\).",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_3_8_85_1_step_13",
+        "title": "الخطوة 13",
+        "explanation": "الهدف: نحسب المشتقة الثانية لنحدد نوع النهاية. الطريقة: اشتق \\( y'=2ax+b \\). السبب: لأن إشارة \\( y'' \\) تحدد النوع.",
+        "think": "\\( 2\\times1=2 \\).",
+        "html_structure": "y''=2a=2({q_3_8_85_1_s13_i1})={q_3_8_85_1_s13_i2}"
+      },
+      {
+        "step_number": 14,
+        "step_explanation": "الهدف: نحدد نوع النهاية. الطريقة: الناتج \\( 2 \\) موجب. السبب: لأن الموجب في اختبار المشتقة الثانية يعني صغرى.",
+        "equation_template": "y''>0\\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "s14_t",
+            "correct_answer": "صغرى",
+            "options": [
+              "صغرى",
+              "عظمى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "id": "q_3_8_85_1_s14_i1",
+            "correct_value": "صغرى",
+            "allowed_keys": [
+              "صغرى",
+              "عظمى",
+              "انقلاب",
+              "فاشل"
+            ],
+            "label": "القيمة 1",
+            "hint": "موجب يعني صغرى."
+          }
+        ],
+        "hint": "موجب يعني صغرى.",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_8_85_1_step_14",
+        "title": "الخطوة 14",
+        "explanation": "الهدف: نحدد نوع النهاية. الطريقة: الناتج \\( 2 \\) موجب. السبب: لأن الموجب في اختبار المشتقة الثانية يعني صغرى.",
+        "think": "موجب يعني صغرى.",
+        "html_structure": "y''>0\\Rightarrow {q_3_8_85_1_s14_i1}"
+      }
+    ]
+  }
+]

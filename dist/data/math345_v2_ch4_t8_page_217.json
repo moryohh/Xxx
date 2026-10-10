@@ -1,0 +1,1711 @@
+[
+  {
+    "id_number": "q2_p217",
+    "page_number": 217,
+    "question_number": "س2",
+    "question_text": "إذا كانت \\( f(x)=3x-x^2 \\) حيث \\( f:[0,4]\\to\\mathbb{R} \\)، أوجد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) باستخدام أربع تجزئات منتظمة.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_077_diag_q2_table_table.png"
+    ],
+    "full_model_solution": "f'=3-2x=0 → x=1.5 (داخل [1,2]) . [0,1]: m=0,M=2 . [1,2]: m=2,M=2.25 . [2,3]: m=0,M=2 . [3,4]: m=-4,M=0 . L=-2 ، U=6.25",
+    "source_file": "رياضيلت 4/page_077.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 77,
+      "pdf_page_number": 217,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_077_diag_q2_table_table.png",
+    "title": "إذا كانت \\( f(x)=3x-x^2 \\) حيث \\( f:[0,4]\\to\\mathbb{R} \\)، أوجد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) باستخدام أربع تجزئات منتظمة.",
+    "number": "س2",
+    "model_solution": "f'=3-2x=0 → x=1.5 (داخل [1,2]) . [0,1]: m=0,M=2 . [1,2]: m=2,M=2.25 . [2,3]: m=0,M=2 . [3,4]: m=-4,M=0 . L=-2 ، U=6.25",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نبدأ باشتقاق الدالة \\( f(x)=3x-x^2 \\) لأنها قطع مكافئ وليست خطاً مستقيماً. الهدف: إيجاد المشتقة. الطريقة: مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\). السبب: لنعرف أين تتغير الدالة من متزايدة إلى متناقصة.",
+        "equation_template": "f'(x) = {input_1} - {input_2}x",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "6"
+            ],
+            "id": "q_4_8_217_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "id": "q_4_8_217_1_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_8_217_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نبدأ باشتقاق الدالة \\( f(x)=3x-x^2 \\) لأنها قطع مكافئ وليست خطاً مستقيماً. الهدف: إيجاد المشتقة. الطريقة: مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\). السبب: لنعرف أين تتغير الدالة من متزايدة إلى متناقصة.",
+        "think": "مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\).",
+        "html_structure": "f'(x) = {q_4_8_217_1_s1_i1} - {q_4_8_217_1_s1_i2}x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نجد النقطة الحرجة. الهدف: حل \\( f'(x)=0 \\). الطريقة: \\( 3-2x=0 \\) فنحصل على \\( x=\\frac{3}{2}=1.5 \\). السبب: عندها تكون القيمة العظمى للقطع، وهي تقع داخل الفترة \\( [1,2] \\) وبالتالي هذه الفترة تحتاج معاملة خاصة.",
+        "equation_template": "3 - 2x = 0 \\Rightarrow x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "1.5",
+            "options": [
+              "0.5",
+              "2",
+              "1.5",
+              "3"
+            ],
+            "id": "q_4_8_217_1_s2_i1",
+            "correct_value": "1.5",
+            "allowed_keys": [
+              "0.5",
+              "2",
+              "1.5",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( 2x \\) للطرف الآخر ثم قسم \\( 3 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "انقل \\( 2x \\) للطرف الآخر ثم قسم \\( 3 \\) على \\( 2 \\).",
+        "related_topics": [
+          "القيم الحرجة"
+        ],
+        "step_id": "math345_4_8_217_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نجد النقطة الحرجة. الهدف: حل \\( f'(x)=0 \\). الطريقة: \\( 3-2x=0 \\) فنحصل على \\( x=\\frac{3}{2}=1.5 \\). السبب: عندها تكون القيمة العظمى للقطع، وهي تقع داخل الفترة \\( [1,2] \\) وبالتالي هذه الفترة تحتاج معاملة خاصة.",
+        "think": "انقل \\( 2x \\) للطرف الآخر ثم قسم \\( 3 \\) على \\( 2 \\).",
+        "html_structure": "3 - 2x = 0 \\Rightarrow x = {q_4_8_217_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نقسم \\( [0,4] \\) إلى أربع فترات متساوية. الهدف: إيجاد \\( h \\). الطريقة: \\( \\frac{4-0}{4} \\). السبب: الفترات \\( [0,1],[1,2],[2,3],[3,4] \\).",
+        "equation_template": "h = \\frac{4 - 0}{{input_1}} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "4",
+            "options": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "id": "q_4_8_217_1_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم طول الفترة \\( 4 \\) على عدد الفترات \\( 4 \\)."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "1",
+            "options": [
+              "4",
+              "2",
+              "0.5",
+              "1"
+            ],
+            "id": "q_4_8_217_1_s3_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "4",
+              "2",
+              "0.5",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "اقسم طول الفترة \\( 4 \\) على عدد الفترات \\( 4 \\)."
+          }
+        ],
+        "hint": "اقسم طول الفترة \\( 4 \\) على عدد الفترات \\( 4 \\).",
+        "related_topics": [
+          "التجزئة المنتظمة"
+        ],
+        "step_id": "math345_4_8_217_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نقسم \\( [0,4] \\) إلى أربع فترات متساوية. الهدف: إيجاد \\( h \\). الطريقة: \\( \\frac{4-0}{4} \\). السبب: الفترات \\( [0,1],[1,2],[2,3],[3,4] \\).",
+        "think": "اقسم طول الفترة \\( 4 \\) على عدد الفترات \\( 4 \\).",
+        "html_structure": "h = \\frac{4 - 0}{{q_4_8_217_1_s3_i1}} = {q_4_8_217_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نحسب قيم الدالة عند النقاط \\( 0,1,2 \\).",
+        "equation_template": "f(0) = {input_1}, \\quad f(1) = 3 - 1 = {input_2}, \\quad f(2) = 6 - 4 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "0",
+            "options": [
+              "-1",
+              "0",
+              "1",
+              "3"
+            ],
+            "id": "q_4_8_217_1_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( f(0)=0 \\) ثم \\( 3(1)-1 \\) ثم \\( 3(2)-4 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "id": "q_4_8_217_1_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( f(0)=0 \\) ثم \\( 3(1)-1 \\) ثم \\( 3(2)-4 \\)."
+          },
+          {
+            "input_id": "step4_in3",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "id": "q_4_8_217_1_s4_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "0"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( f(0)=0 \\) ثم \\( 3(1)-1 \\) ثم \\( 3(2)-4 \\)."
+          }
+        ],
+        "hint": "\\( f(0)=0 \\) ثم \\( 3(1)-1 \\) ثم \\( 3(2)-4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_217_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نحسب قيم الدالة عند النقاط \\( 0,1,2 \\).",
+        "think": "\\( f(0)=0 \\) ثم \\( 3(1)-1 \\) ثم \\( 3(2)-4 \\).",
+        "html_structure": "f(0) = {q_4_8_217_1_s4_i1}, \\quad f(1) = 3 - 1 = {q_4_8_217_1_s4_i2}, \\quad f(2) = 6 - 4 = {q_4_8_217_1_s4_i3}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب قيم الدالة عند \\( x=3 \\) و \\( x=4 \\) وعند النقطة الحرجة \\( x=1.5 \\).",
+        "equation_template": "f(3) = 9 - 9 = {input_1}, \\; f(4) = 12 - 16 = {input_2}, \\; f(1.5) = 4.5 - 2.25 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "0",
+            "options": [
+              "-9",
+              "0",
+              "3",
+              "9"
+            ],
+            "id": "q_4_8_217_1_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "-9",
+              "0",
+              "3",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3(3)-9 \\) ثم \\( 3(4)-16 \\) ثم \\( 3(1.5)-1.5^2 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "-4",
+            "options": [
+              "4",
+              "-4",
+              "-1",
+              "28"
+            ],
+            "id": "q_4_8_217_1_s5_i2",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "4",
+              "-4",
+              "-1",
+              "28"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3(3)-9 \\) ثم \\( 3(4)-16 \\) ثم \\( 3(1.5)-1.5^2 \\)."
+          },
+          {
+            "input_id": "step5_in3",
+            "correct_answer": "2.25",
+            "options": [
+              "1.5",
+              "6.75",
+              "2.25",
+              "4.5"
+            ],
+            "id": "q_4_8_217_1_s5_i3",
+            "correct_value": "2.25",
+            "allowed_keys": [
+              "1.5",
+              "6.75",
+              "2.25",
+              "4.5"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 3(3)-9 \\) ثم \\( 3(4)-16 \\) ثم \\( 3(1.5)-1.5^2 \\)."
+          }
+        ],
+        "hint": "\\( 3(3)-9 \\) ثم \\( 3(4)-16 \\) ثم \\( 3(1.5)-1.5^2 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_217_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب قيم الدالة عند \\( x=3 \\) و \\( x=4 \\) وعند النقطة الحرجة \\( x=1.5 \\).",
+        "think": "\\( 3(3)-9 \\) ثم \\( 3(4)-16 \\) ثم \\( 3(1.5)-1.5^2 \\).",
+        "html_structure": "f(3) = 9 - 9 = {q_4_8_217_1_s5_i1}, \\; f(4) = 12 - 16 = {q_4_8_217_1_s5_i2}, \\; f(1.5) = 4.5 - 2.25 = {q_4_8_217_1_s5_i3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نكتب القيم الصغرى \\( m_i \\). الفترة \\( [0,1] \\) تصاعدية فأصغرها عند اليسار \\( 0 \\). الفترة \\( [1,2] \\) فيها قمة فأصغر قيمة عند أحد الطرفين (\\( f(1) \\) و \\( f(2) \\) كلاهما \\( 2 \\)). الفترة \\( [2,3] \\) تنازلية فأصغرها عند اليمين. الفترة \\( [3,4] \\) تنازلية أيضاً.",
+        "equation_template": "m_1 = {input_1}, \\; m_2 = {input_2}, \\; m_3 = {input_3}, \\; m_4 = {input_4}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "0",
+            "options": [
+              "1",
+              "-4",
+              "0",
+              "2"
+            ],
+            "id": "q_4_8_217_1_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "1",
+              "-4",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( m_1=f(0) \\) و \\( m_2=f(1)=f(2) \\) و \\( m_3=f(3) \\) و \\( m_4=f(4) \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "2",
+            "options": [
+              "0",
+              "2",
+              "4",
+              "3"
+            ],
+            "id": "q_4_8_217_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "0",
+              "2",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( m_1=f(0) \\) و \\( m_2=f(1)=f(2) \\) و \\( m_3=f(3) \\) و \\( m_4=f(4) \\)."
+          },
+          {
+            "input_id": "step6_in3",
+            "correct_answer": "0",
+            "options": [
+              "3",
+              "-4",
+              "2",
+              "0"
+            ],
+            "id": "q_4_8_217_1_s6_i3",
+            "correct_value": "0",
+            "allowed_keys": [
+              "3",
+              "-4",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( m_1=f(0) \\) و \\( m_2=f(1)=f(2) \\) و \\( m_3=f(3) \\) و \\( m_4=f(4) \\)."
+          },
+          {
+            "input_id": "step6_in4",
+            "correct_answer": "-4",
+            "options": [
+              "-1",
+              "0",
+              "-4",
+              "4"
+            ],
+            "id": "q_4_8_217_1_s6_i4",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "-4",
+              "4"
+            ],
+            "label": "القيمة 4",
+            "hint": "\\( m_1=f(0) \\) و \\( m_2=f(1)=f(2) \\) و \\( m_3=f(3) \\) و \\( m_4=f(4) \\)."
+          }
+        ],
+        "hint": "\\( m_1=f(0) \\) و \\( m_2=f(1)=f(2) \\) و \\( m_3=f(3) \\) و \\( m_4=f(4) \\).",
+        "related_topics": [
+          "المجموع الأدنى"
+        ],
+        "step_id": "math345_4_8_217_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نكتب القيم الصغرى \\( m_i \\). الفترة \\( [0,1] \\) تصاعدية فأصغرها عند اليسار \\( 0 \\). الفترة \\( [1,2] \\) فيها قمة فأصغر قيمة عند أحد الطرفين (\\( f(1) \\) و \\( f(2) \\) كلاهما \\( 2 \\)). الفترة \\( [2,3] \\) تنازلية فأصغرها عند اليمين. الفترة \\( [3,4] \\) تنازلية أيضاً.",
+        "think": "\\( m_1=f(0) \\) و \\( m_2=f(1)=f(2) \\) و \\( m_3=f(3) \\) و \\( m_4=f(4) \\).",
+        "html_structure": "m_1 = {q_4_8_217_1_s6_i1}, \\; m_2 = {q_4_8_217_1_s6_i2}, \\; m_3 = {q_4_8_217_1_s6_i3}, \\; m_4 = {q_4_8_217_1_s6_i4}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نكتب القيم العظمى \\( M_i \\). في \\( [1,2] \\) العظمى هي القمة \\( f(1.5) \\).",
+        "equation_template": "M_1 = {input_1}, \\; M_2 = {input_2}, \\; M_3 = {input_3}, \\; M_4 = {input_4}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "3",
+              "1"
+            ],
+            "id": "q_4_8_217_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( M_1=f(1) \\) و \\( M_2=f(1.5) \\) و \\( M_3=f(2) \\) و \\( M_4=f(3) \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "2.25",
+            "options": [
+              "2",
+              "4",
+              "2.25",
+              "3"
+            ],
+            "id": "q_4_8_217_1_s7_i2",
+            "correct_value": "2.25",
+            "allowed_keys": [
+              "2",
+              "4",
+              "2.25",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( M_1=f(1) \\) و \\( M_2=f(1.5) \\) و \\( M_3=f(2) \\) و \\( M_4=f(3) \\)."
+          },
+          {
+            "input_id": "step7_in3",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_4_8_217_1_s7_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( M_1=f(1) \\) و \\( M_2=f(1.5) \\) و \\( M_3=f(2) \\) و \\( M_4=f(3) \\)."
+          },
+          {
+            "input_id": "step7_in4",
+            "correct_answer": "0",
+            "options": [
+              "2",
+              "0",
+              "3",
+              "-4"
+            ],
+            "id": "q_4_8_217_1_s7_i4",
+            "correct_value": "0",
+            "allowed_keys": [
+              "2",
+              "0",
+              "3",
+              "-4"
+            ],
+            "label": "القيمة 4",
+            "hint": "\\( M_1=f(1) \\) و \\( M_2=f(1.5) \\) و \\( M_3=f(2) \\) و \\( M_4=f(3) \\)."
+          }
+        ],
+        "hint": "\\( M_1=f(1) \\) و \\( M_2=f(1.5) \\) و \\( M_3=f(2) \\) و \\( M_4=f(3) \\).",
+        "related_topics": [
+          "المجموع الأعلى"
+        ],
+        "step_id": "math345_4_8_217_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نكتب القيم العظمى \\( M_i \\). في \\( [1,2] \\) العظمى هي القمة \\( f(1.5) \\).",
+        "think": "\\( M_1=f(1) \\) و \\( M_2=f(1.5) \\) و \\( M_3=f(2) \\) و \\( M_4=f(3) \\).",
+        "html_structure": "M_1 = {q_4_8_217_1_s7_i1}, \\; M_2 = {q_4_8_217_1_s7_i2}, \\; M_3 = {q_4_8_217_1_s7_i3}, \\; M_4 = {q_4_8_217_1_s7_i4}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نحسب المجموع الأدنى. بما أن \\( h=1 \\) نجمع \\( m_i \\) مباشرة.",
+        "equation_template": "L = 0 + 2 + 0 + (-4) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "-2",
+            "options": [
+              "2",
+              "-2",
+              "6",
+              "-6"
+            ],
+            "id": "q_4_8_217_1_s8_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "6",
+              "-6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0+2+0=2 \\) ثم اطرح \\( 4 \\)."
+          }
+        ],
+        "hint": "\\( 0+2+0=2 \\) ثم اطرح \\( 4 \\).",
+        "related_topics": [
+          "مجموع ريمان الأدنى"
+        ],
+        "step_id": "math345_4_8_217_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نحسب المجموع الأدنى. بما أن \\( h=1 \\) نجمع \\( m_i \\) مباشرة.",
+        "think": "\\( 0+2+0=2 \\) ثم اطرح \\( 4 \\).",
+        "html_structure": "L = 0 + 2 + 0 + (-4) = {q_4_8_217_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "نحسب المجموع الأعلى.",
+        "equation_template": "U = 2 + 2.25 + 2 + 0 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "6.25",
+            "options": [
+              "6.25",
+              "6",
+              "4.25",
+              "8.25"
+            ],
+            "id": "q_4_8_217_1_s9_i1",
+            "correct_value": "6.25",
+            "allowed_keys": [
+              "6.25",
+              "6",
+              "4.25",
+              "8.25"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2+2.25=4.25 \\) ثم \\( 4.25+2 \\)."
+          }
+        ],
+        "hint": "\\( 2+2.25=4.25 \\) ثم \\( 4.25+2 \\).",
+        "related_topics": [
+          "مجموع ريمان الأعلى"
+        ],
+        "step_id": "math345_4_8_217_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "نحسب المجموع الأعلى.",
+        "think": "\\( 2+2.25=4.25 \\) ثم \\( 4.25+2 \\).",
+        "html_structure": "U = 2 + 2.25 + 2 + 0 = {q_4_8_217_1_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p217",
+    "page_number": 217,
+    "question_number": "س3",
+    "question_text": "إذا كانت \\( f(x)=x-3 \\) حيث \\( f:[-2,1]\\to\\mathbb{R} \\)، أوجد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) مقسماً الفترة إلى ثلاث فترات جزئية منتظمة.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_077_diag_q3_table_table.png"
+    ],
+    "full_model_solution": "f متزايدة (f'=1) . h=1 . m=-5,-4,-3 ، M=-4,-3,-2 . L=-12 ، U=-9",
+    "source_file": "رياضيلت 4/page_077.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 77,
+      "pdf_page_number": 217,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_077_diag_q3_table_table.png",
+    "title": "إذا كانت \\( f(x)=x-3 \\) حيث \\( f:[-2,1]\\to\\mathbb{R} \\)، أوجد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) مقسماً الفترة إلى ثلاث فترات جزئية منتظمة.",
+    "number": "س3",
+    "model_solution": "f متزايدة (f'=1) . h=1 . m=-5,-4,-3 ، M=-4,-3,-2 . L=-12 ، U=-9",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نشتق الدالة \\( f(x)=x-3 \\) لنعرف اتجاهها. الطريقة: مشتقة \\( x \\) هي \\( 1 \\). السبب: المشتقة موجبة فالدالة متزايدة (أصغر قيمة عند اليسار وأكبر عند اليمين).",
+        "equation_template": "f'(x) = {input_1} > 0",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "1",
+            "options": [
+              "-1",
+              "0",
+              "3",
+              "1"
+            ],
+            "id": "q_4_8_217_2_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "-1",
+              "0",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\).",
+        "related_topics": [
+          "الدالة المتزايدة"
+        ],
+        "step_id": "math345_4_8_217_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نشتق الدالة \\( f(x)=x-3 \\) لنعرف اتجاهها. الطريقة: مشتقة \\( x \\) هي \\( 1 \\). السبب: المشتقة موجبة فالدالة متزايدة (أصغر قيمة عند اليسار وأكبر عند اليمين).",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\).",
+        "html_structure": "f'(x) = {q_4_8_217_2_s1_i1} > 0"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نقسم \\( [-2,1] \\) إلى ثلاث فترات متساوية. الهدف: \\( h \\).",
+        "equation_template": "h = \\frac{1 - (-2)}{3} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "1",
+            "options": [
+              "3",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_8_217_2_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "3",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-(-2)=3 \\) ثم قسم على \\( 3 \\)."
+          }
+        ],
+        "hint": "\\( 1-(-2)=3 \\) ثم قسم على \\( 3 \\).",
+        "related_topics": [
+          "التجزئة المنتظمة"
+        ],
+        "step_id": "math345_4_8_217_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نقسم \\( [-2,1] \\) إلى ثلاث فترات متساوية. الهدف: \\( h \\).",
+        "think": "\\( 1-(-2)=3 \\) ثم قسم على \\( 3 \\).",
+        "html_structure": "h = \\frac{1 - (-2)}{3} = {q_4_8_217_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نكتب نقاط التجزئة بإضافة \\( h=1 \\) كل مرة بدءاً من \\( -2 \\).",
+        "equation_template": "x_0 = -2, \\; x_1 = {input_1}, \\; x_2 = {input_2}, \\; x_3 = 1",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "-1",
+            "options": [
+              "0",
+              "-2",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_8_217_2_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "0",
+              "-2",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2+1=-1 \\) ثم \\( -1+1=0 \\)."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "0",
+            "options": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "id": "q_4_8_217_2_s3_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "2",
+              "-1",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2+1=-1 \\) ثم \\( -1+1=0 \\)."
+          }
+        ],
+        "hint": "\\( -2+1=-1 \\) ثم \\( -1+1=0 \\).",
+        "related_topics": [
+          "نقاط التجزئة"
+        ],
+        "step_id": "math345_4_8_217_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نكتب نقاط التجزئة بإضافة \\( h=1 \\) كل مرة بدءاً من \\( -2 \\).",
+        "think": "\\( -2+1=-1 \\) ثم \\( -1+1=0 \\).",
+        "html_structure": "x_0 = -2, \\; x_1 = {q_4_8_217_2_s3_i1}, \\; x_2 = {q_4_8_217_2_s3_i2}, \\; x_3 = 1"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نحسب قيم الدالة عند أول نقطتين.",
+        "equation_template": "f(-2) = -2 - 3 = {input_1}, \\quad f(-1) = -1 - 3 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "-5",
+            "options": [
+              "5",
+              "-5",
+              "-1",
+              "-3"
+            ],
+            "id": "q_4_8_217_2_s4_i1",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "5",
+              "-5",
+              "-1",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2-3 \\) ثم \\( -1-3 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "-4",
+            "options": [
+              "-6",
+              "4",
+              "-4",
+              "-2"
+            ],
+            "id": "q_4_8_217_2_s4_i2",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-6",
+              "4",
+              "-4",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2-3 \\) ثم \\( -1-3 \\)."
+          }
+        ],
+        "hint": "\\( -2-3 \\) ثم \\( -1-3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_217_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نحسب قيم الدالة عند أول نقطتين.",
+        "think": "\\( -2-3 \\) ثم \\( -1-3 \\).",
+        "html_structure": "f(-2) = -2 - 3 = {q_4_8_217_2_s4_i1}, \\quad f(-1) = -1 - 3 = {q_4_8_217_2_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب قيم الدالة عند النقطتين الأخيرتين.",
+        "equation_template": "f(0) = {input_1}, \\quad f(1) = 1 - 3 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "-3",
+            "options": [
+              "0",
+              "3",
+              "-1",
+              "-3"
+            ],
+            "id": "q_4_8_217_2_s5_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "0",
+              "3",
+              "-1",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 0-3 \\) ثم \\( 1-3 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "4",
+              "-4",
+              "2"
+            ],
+            "id": "q_4_8_217_2_s5_i2",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "4",
+              "-4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 0-3 \\) ثم \\( 1-3 \\)."
+          }
+        ],
+        "hint": "\\( 0-3 \\) ثم \\( 1-3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_217_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب قيم الدالة عند النقطتين الأخيرتين.",
+        "think": "\\( 0-3 \\) ثم \\( 1-3 \\).",
+        "html_structure": "f(0) = {q_4_8_217_2_s5_i1}, \\quad f(1) = 1 - 3 = {q_4_8_217_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نكتب \\( m_i \\) (الأطراف اليسرى \\( -2,-1,0 \\)).",
+        "equation_template": "m_1 = {input_1}, \\; m_2 = {input_2}, \\; m_3 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "-5",
+            "options": [
+              "-4",
+              "-2",
+              "-5",
+              "-3"
+            ],
+            "id": "q_4_8_217_2_s6_i1",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "-4",
+              "-2",
+              "-5",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( f(-2) \\) ثم \\( f(-1) \\) ثم \\( f(0) \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "-4",
+            "options": [
+              "-5",
+              "-3",
+              "-2",
+              "-4"
+            ],
+            "id": "q_4_8_217_2_s6_i2",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-5",
+              "-3",
+              "-2",
+              "-4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( f(-2) \\) ثم \\( f(-1) \\) ثم \\( f(0) \\)."
+          },
+          {
+            "input_id": "step6_in3",
+            "correct_answer": "-3",
+            "options": [
+              "-2",
+              "-3",
+              "-5",
+              "-4"
+            ],
+            "id": "q_4_8_217_2_s6_i3",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-2",
+              "-3",
+              "-5",
+              "-4"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( f(-2) \\) ثم \\( f(-1) \\) ثم \\( f(0) \\)."
+          }
+        ],
+        "hint": "\\( f(-2) \\) ثم \\( f(-1) \\) ثم \\( f(0) \\).",
+        "related_topics": [
+          "المجموع الأدنى"
+        ],
+        "step_id": "math345_4_8_217_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نكتب \\( m_i \\) (الأطراف اليسرى \\( -2,-1,0 \\)).",
+        "think": "\\( f(-2) \\) ثم \\( f(-1) \\) ثم \\( f(0) \\).",
+        "html_structure": "m_1 = {q_4_8_217_2_s6_i1}, \\; m_2 = {q_4_8_217_2_s6_i2}, \\; m_3 = {q_4_8_217_2_s6_i3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نكتب \\( M_i \\) (الأطراف اليمنى \\( -1,0,1 \\)).",
+        "equation_template": "M_1 = {input_1}, \\; M_2 = {input_2}, \\; M_3 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "-4",
+            "options": [
+              "-3",
+              "-2",
+              "-4",
+              "-5"
+            ],
+            "id": "q_4_8_217_2_s7_i1",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-3",
+              "-2",
+              "-4",
+              "-5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( f(-1) \\) ثم \\( f(0) \\) ثم \\( f(1) \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "-3",
+            "options": [
+              "-2",
+              "-3",
+              "-5",
+              "-4"
+            ],
+            "id": "q_4_8_217_2_s7_i2",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-2",
+              "-3",
+              "-5",
+              "-4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( f(-1) \\) ثم \\( f(0) \\) ثم \\( f(1) \\)."
+          },
+          {
+            "input_id": "step7_in3",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "-4",
+              "-3",
+              "-1"
+            ],
+            "id": "q_4_8_217_2_s7_i3",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "-4",
+              "-3",
+              "-1"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( f(-1) \\) ثم \\( f(0) \\) ثم \\( f(1) \\)."
+          }
+        ],
+        "hint": "\\( f(-1) \\) ثم \\( f(0) \\) ثم \\( f(1) \\).",
+        "related_topics": [
+          "المجموع الأعلى"
+        ],
+        "step_id": "math345_4_8_217_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نكتب \\( M_i \\) (الأطراف اليمنى \\( -1,0,1 \\)).",
+        "think": "\\( f(-1) \\) ثم \\( f(0) \\) ثم \\( f(1) \\).",
+        "html_structure": "M_1 = {q_4_8_217_2_s7_i1}, \\; M_2 = {q_4_8_217_2_s7_i2}, \\; M_3 = {q_4_8_217_2_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نحسب المجموع الأدنى. بما أن \\( h=1 \\) نجمع مباشرة.",
+        "equation_template": "L = (-5) + (-4) + (-3) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "-12",
+            "options": [
+              "-9",
+              "-6",
+              "-12",
+              "12"
+            ],
+            "id": "q_4_8_217_2_s8_i1",
+            "correct_value": "-12",
+            "allowed_keys": [
+              "-9",
+              "-6",
+              "-12",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 5+4+3 \\) وأعطه إشارة سالبة."
+          }
+        ],
+        "hint": "اجمع \\( 5+4+3 \\) وأعطه إشارة سالبة.",
+        "related_topics": [
+          "مجموع ريمان الأدنى"
+        ],
+        "step_id": "math345_4_8_217_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نحسب المجموع الأدنى. بما أن \\( h=1 \\) نجمع مباشرة.",
+        "think": "اجمع \\( 5+4+3 \\) وأعطه إشارة سالبة.",
+        "html_structure": "L = (-5) + (-4) + (-3) = {q_4_8_217_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "نحسب المجموع الأعلى.",
+        "equation_template": "U = (-4) + (-3) + (-2) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "-9",
+            "options": [
+              "-9",
+              "9",
+              "-12",
+              "-6"
+            ],
+            "id": "q_4_8_217_2_s9_i1",
+            "correct_value": "-9",
+            "allowed_keys": [
+              "-9",
+              "9",
+              "-12",
+              "-6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 4+3+2 \\) وأعطه إشارة سالبة."
+          }
+        ],
+        "hint": "اجمع \\( 4+3+2 \\) وأعطه إشارة سالبة.",
+        "related_topics": [
+          "مجموع ريمان الأعلى"
+        ],
+        "step_id": "math345_4_8_217_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "نحسب المجموع الأعلى.",
+        "think": "اجمع \\( 4+3+2 \\) وأعطه إشارة سالبة.",
+        "html_structure": "U = (-4) + (-3) + (-2) = {q_4_8_217_2_s9_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_p217",
+    "page_number": 217,
+    "question_number": "س4",
+    "question_text": "إذا كانت \\( f(x)=4x-x^2 \\) حيث \\( f:[1,5]\\to\\mathbb{R} \\)، أوجد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) إذا كان \\( \\sigma=\\{1,2,3,5\\} \\).",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_077_diag_q4_table_table.png"
+    ],
+    "full_model_solution": "f'=4-2x=0 → x=2 (طرف فترتين) . h=1,1,2 . m=3,3,-5 ، M=4,4,3 . L=3+3-10=-4 ، U=4+4+6=14",
+    "source_file": "رياضيلت 4/page_077.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 77,
+      "pdf_page_number": 217,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_077_diag_q4_table_table.png",
+    "title": "إذا كانت \\( f(x)=4x-x^2 \\) حيث \\( f:[1,5]\\to\\mathbb{R} \\)، أوجد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) إذا كان \\( \\sigma=\\{1,2,3,5\\} \\).",
+    "number": "س4",
+    "model_solution": "f'=4-2x=0 → x=2 (طرف فترتين) . h=1,1,2 . m=3,3,-5 ، M=4,4,3 . L=3+3-10=-4 ، U=4+4+6=14",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نشتق \\( f(x)=4x-x^2 \\). الهدف: إيجاد المشتقة. الطريقة: مشتقة \\( 4x \\) هي \\( 4 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\). السبب: لنعرف اتجاه الدالة.",
+        "equation_template": "f'(x) = {input_1} - {input_2}x",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "4",
+            "options": [
+              "6",
+              "4",
+              "1",
+              "2"
+            ],
+            "id": "q_4_8_217_3_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "6",
+              "4",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 4x \\) هي \\( 4 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\)."
+          },
+          {
+            "input_id": "step1_in2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "0",
+              "4",
+              "2"
+            ],
+            "id": "q_4_8_217_3_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "0",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( 4x \\) هي \\( 4 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 4x \\) هي \\( 4 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_8_217_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نشتق \\( f(x)=4x-x^2 \\). الهدف: إيجاد المشتقة. الطريقة: مشتقة \\( 4x \\) هي \\( 4 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\). السبب: لنعرف اتجاه الدالة.",
+        "think": "مشتقة \\( 4x \\) هي \\( 4 \\) ومشتقة \\( x^2 \\) هي \\( 2x \\).",
+        "html_structure": "f'(x) = {q_4_8_217_3_s1_i1} - {q_4_8_217_3_s1_i2}x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نجد النقطة الحرجة. الهدف: \\( f'(x)=0 \\). الطريقة: \\( 4-2x=0 \\). السبب: عندها تتحول الدالة من متزايدة إلى متناقصة.",
+        "equation_template": "4 - 2x = 0 \\Rightarrow x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "1",
+              "0",
+              "2"
+            ],
+            "id": "q_4_8_217_3_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "1",
+              "0",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( 2x \\) ثم قسم \\( 4 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "انقل \\( 2x \\) ثم قسم \\( 4 \\) على \\( 2 \\).",
+        "related_topics": [
+          "القيم الحرجة"
+        ],
+        "step_id": "math345_4_8_217_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نجد النقطة الحرجة. الهدف: \\( f'(x)=0 \\). الطريقة: \\( 4-2x=0 \\). السبب: عندها تتحول الدالة من متزايدة إلى متناقصة.",
+        "think": "انقل \\( 2x \\) ثم قسم \\( 4 \\) على \\( 2 \\).",
+        "html_structure": "4 - 2x = 0 \\Rightarrow x = {q_4_8_217_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نحدد اتجاه الدالة على فترات التجزئة. \\( x=2 \\) هي طرف فترتين، فلا تقع داخل أي فترة. الهدف: معرفة الاتجاه على كل فترة. السبب: الدالة متزايدة قبل \\( 2 \\) ومتناقصة بعده.",
+        "equation_template": "f \\text{ متزايدة على } [1,{input_1}] \\text{ ومتناقصة على } [{input_2},5]",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "id": "q_4_8_217_3_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "النقطة الحرجة هي \\( 2 \\) في الموضعين."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "2",
+            "options": [
+              "5",
+              "3",
+              "1",
+              "2"
+            ],
+            "id": "q_4_8_217_3_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "5",
+              "3",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "النقطة الحرجة هي \\( 2 \\) في الموضعين."
+          }
+        ],
+        "hint": "النقطة الحرجة هي \\( 2 \\) في الموضعين.",
+        "related_topics": [
+          "الدالة المتزايدة والمتناقصة"
+        ],
+        "step_id": "math345_4_8_217_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نحدد اتجاه الدالة على فترات التجزئة. \\( x=2 \\) هي طرف فترتين، فلا تقع داخل أي فترة. الهدف: معرفة الاتجاه على كل فترة. السبب: الدالة متزايدة قبل \\( 2 \\) ومتناقصة بعده.",
+        "think": "النقطة الحرجة هي \\( 2 \\) في الموضعين.",
+        "html_structure": "f \\text{ متزايدة على } [1,{q_4_8_217_3_s3_i1}] \\text{ ومتناقصة على } [{q_4_8_217_3_s3_i2},5]"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نحسب أطوال الفترات \\( [1,2] \\) و \\( [2,3] \\) و \\( [3,5] \\).",
+        "equation_template": "h_1 = {input_1}, \\quad h_2 = {input_2}, \\quad h_3 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "1",
+            "options": [
+              "2",
+              "0",
+              "3",
+              "1"
+            ],
+            "id": "q_4_8_217_3_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "2",
+              "0",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2-1 \\) ثم \\( 3-2 \\) ثم \\( 5-3 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "1",
+            "options": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "id": "q_4_8_217_3_s4_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2-1 \\) ثم \\( 3-2 \\) ثم \\( 5-3 \\)."
+          },
+          {
+            "input_id": "step4_in3",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "id": "q_4_8_217_3_s4_i3",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "1",
+              "4",
+              "2"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 2-1 \\) ثم \\( 3-2 \\) ثم \\( 5-3 \\)."
+          }
+        ],
+        "hint": "\\( 2-1 \\) ثم \\( 3-2 \\) ثم \\( 5-3 \\).",
+        "related_topics": [
+          "طول الفترة"
+        ],
+        "step_id": "math345_4_8_217_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نحسب أطوال الفترات \\( [1,2] \\) و \\( [2,3] \\) و \\( [3,5] \\).",
+        "think": "\\( 2-1 \\) ثم \\( 3-2 \\) ثم \\( 5-3 \\).",
+        "html_structure": "h_1 = {q_4_8_217_3_s4_i1}, \\quad h_2 = {q_4_8_217_3_s4_i2}, \\quad h_3 = {q_4_8_217_3_s4_i3}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب قيم الدالة عند \\( x=1 \\) و \\( x=2 \\).",
+        "equation_template": "f(1) = 4 - 1 = {input_1}, \\quad f(2) = 8 - 4 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "3",
+            "options": [
+              "5",
+              "4",
+              "1",
+              "3"
+            ],
+            "id": "q_4_8_217_3_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "5",
+              "4",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4(1)-1 \\) ثم \\( 4(2)-4 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "4",
+            "options": [
+              "3",
+              "4",
+              "2",
+              "5"
+            ],
+            "id": "q_4_8_217_3_s5_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4(1)-1 \\) ثم \\( 4(2)-4 \\)."
+          }
+        ],
+        "hint": "\\( 4(1)-1 \\) ثم \\( 4(2)-4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_217_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب قيم الدالة عند \\( x=1 \\) و \\( x=2 \\).",
+        "think": "\\( 4(1)-1 \\) ثم \\( 4(2)-4 \\).",
+        "html_structure": "f(1) = 4 - 1 = {q_4_8_217_3_s5_i1}, \\quad f(2) = 8 - 4 = {q_4_8_217_3_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نحسب قيم الدالة عند \\( x=3 \\) و \\( x=5 \\).",
+        "equation_template": "f(3) = 12 - 9 = {input_1}, \\quad f(5) = 20 - 25 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "-3",
+              "9",
+              "12"
+            ],
+            "id": "q_4_8_217_3_s6_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "-3",
+              "9",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4(3)-9 \\) ثم \\( 4(5)-25 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "-5",
+            "options": [
+              "-5",
+              "-1",
+              "25",
+              "5"
+            ],
+            "id": "q_4_8_217_3_s6_i2",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "-5",
+              "-1",
+              "25",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4(3)-9 \\) ثم \\( 4(5)-25 \\)."
+          }
+        ],
+        "hint": "\\( 4(3)-9 \\) ثم \\( 4(5)-25 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_217_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نحسب قيم الدالة عند \\( x=3 \\) و \\( x=5 \\).",
+        "think": "\\( 4(3)-9 \\) ثم \\( 4(5)-25 \\).",
+        "html_structure": "f(3) = 12 - 9 = {q_4_8_217_3_s6_i1}, \\quad f(5) = 20 - 25 = {q_4_8_217_3_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نكتب \\( m_i \\). الفترة \\( [1,2] \\) متزايدة فالأصغر عند اليسار. الفترتان \\( [2,3] \\) و \\( [3,5] \\) متناقصتان فالأصغر عند اليمين.",
+        "equation_template": "m_1 = {input_1}, \\quad m_2 = {input_2}, \\quad m_3 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "3",
+            "options": [
+              "-5",
+              "3",
+              "1",
+              "4"
+            ],
+            "id": "q_4_8_217_3_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "-5",
+              "3",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( m_1=f(1) \\) و \\( m_2=f(3) \\) و \\( m_3=f(5) \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "3",
+            "options": [
+              "-5",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_8_217_3_s7_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "-5",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( m_1=f(1) \\) و \\( m_2=f(3) \\) و \\( m_3=f(5) \\)."
+          },
+          {
+            "input_id": "step7_in3",
+            "correct_answer": "-5",
+            "options": [
+              "4",
+              "-5",
+              "3",
+              "5"
+            ],
+            "id": "q_4_8_217_3_s7_i3",
+            "correct_value": "-5",
+            "allowed_keys": [
+              "4",
+              "-5",
+              "3",
+              "5"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( m_1=f(1) \\) و \\( m_2=f(3) \\) و \\( m_3=f(5) \\)."
+          }
+        ],
+        "hint": "\\( m_1=f(1) \\) و \\( m_2=f(3) \\) و \\( m_3=f(5) \\).",
+        "related_topics": [
+          "المجموع الأدنى"
+        ],
+        "step_id": "math345_4_8_217_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نكتب \\( m_i \\). الفترة \\( [1,2] \\) متزايدة فالأصغر عند اليسار. الفترتان \\( [2,3] \\) و \\( [3,5] \\) متناقصتان فالأصغر عند اليمين.",
+        "think": "\\( m_1=f(1) \\) و \\( m_2=f(3) \\) و \\( m_3=f(5) \\).",
+        "html_structure": "m_1 = {q_4_8_217_3_s7_i1}, \\quad m_2 = {q_4_8_217_3_s7_i2}, \\quad m_3 = {q_4_8_217_3_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نكتب \\( M_i \\). الفترة \\( [1,2] \\) متزايدة فالأكبر عند اليمين \\( f(2) \\). الفترتان المتناقصتان الأكبر عند اليسار.",
+        "equation_template": "M_1 = {input_1}, \\quad M_2 = {input_2}, \\quad M_3 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "4",
+            "options": [
+              "-5",
+              "4",
+              "2",
+              "3"
+            ],
+            "id": "q_4_8_217_3_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "-5",
+              "4",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( M_1=f(2) \\) و \\( M_2=f(2) \\) و \\( M_3=f(3) \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "-5",
+              "3"
+            ],
+            "id": "q_4_8_217_3_s8_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "-5",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( M_1=f(2) \\) و \\( M_2=f(2) \\) و \\( M_3=f(3) \\)."
+          },
+          {
+            "input_id": "step8_in3",
+            "correct_answer": "3",
+            "options": [
+              "-5",
+              "4",
+              "5",
+              "3"
+            ],
+            "id": "q_4_8_217_3_s8_i3",
+            "correct_value": "3",
+            "allowed_keys": [
+              "-5",
+              "4",
+              "5",
+              "3"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( M_1=f(2) \\) و \\( M_2=f(2) \\) و \\( M_3=f(3) \\)."
+          }
+        ],
+        "hint": "\\( M_1=f(2) \\) و \\( M_2=f(2) \\) و \\( M_3=f(3) \\).",
+        "related_topics": [
+          "المجموع الأعلى"
+        ],
+        "step_id": "math345_4_8_217_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نكتب \\( M_i \\). الفترة \\( [1,2] \\) متزايدة فالأكبر عند اليمين \\( f(2) \\). الفترتان المتناقصتان الأكبر عند اليسار.",
+        "think": "\\( M_1=f(2) \\) و \\( M_2=f(2) \\) و \\( M_3=f(3) \\).",
+        "html_structure": "M_1 = {q_4_8_217_3_s8_i1}, \\quad M_2 = {q_4_8_217_3_s8_i2}, \\quad M_3 = {q_4_8_217_3_s8_i3}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "نحسب المجموع الأدنى \\( L \\). الفترة الأخيرة طولها \\( 2 \\).",
+        "equation_template": "L = 3(1) + 3(1) + (-5)({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "2",
+              "5",
+              "1"
+            ],
+            "id": "q_4_8_217_3_s9_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "2",
+              "5",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3+3-10 \\)."
+          },
+          {
+            "input_id": "step9_in2",
+            "correct_answer": "-4",
+            "options": [
+              "4",
+              "-10",
+              "-4",
+              "6"
+            ],
+            "id": "q_4_8_217_3_s9_i2",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "4",
+              "-10",
+              "-4",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3+3-10 \\)."
+          }
+        ],
+        "hint": "\\( 3+3-10 \\).",
+        "related_topics": [
+          "مجموع ريمان الأدنى"
+        ],
+        "step_id": "math345_4_8_217_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "نحسب المجموع الأدنى \\( L \\). الفترة الأخيرة طولها \\( 2 \\).",
+        "think": "\\( 3+3-10 \\).",
+        "html_structure": "L = 3(1) + 3(1) + (-5)({q_4_8_217_3_s9_i1}) = {q_4_8_217_3_s9_i2}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "نحسب المجموع الأعلى \\( U \\).",
+        "equation_template": "U = 4(1) + 4(1) + 3({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "5"
+            ],
+            "id": "q_4_8_217_3_s10_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4+4+6 \\)."
+          },
+          {
+            "input_id": "step10_in2",
+            "correct_answer": "14",
+            "options": [
+              "16",
+              "8",
+              "14",
+              "11"
+            ],
+            "id": "q_4_8_217_3_s10_i2",
+            "correct_value": "14",
+            "allowed_keys": [
+              "16",
+              "8",
+              "14",
+              "11"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 4+4+6 \\)."
+          }
+        ],
+        "hint": "\\( 4+4+6 \\).",
+        "related_topics": [
+          "مجموع ريمان الأعلى"
+        ],
+        "step_id": "math345_4_8_217_3_step_10",
+        "title": "الخطوة 10",
+        "explanation": "نحسب المجموع الأعلى \\( U \\).",
+        "think": "\\( 4+4+6 \\).",
+        "html_structure": "U = 4(1) + 4(1) + 3({q_4_8_217_3_s10_i1}) = {q_4_8_217_3_s10_i2}"
+      }
+    ]
+  }
+]

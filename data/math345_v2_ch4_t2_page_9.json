@@ -1,0 +1,1950 @@
+[
+  {
+    "id_number": "q7_p9",
+    "page_number": 9,
+    "question_number": "7",
+    "question_text": "جد \\( \\int \\frac{y^4-y}{y^2+y+1}\\,dy \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y⁴-y = y(y³-1) = y(y-1)(y²+y+1)، نختصر (y²+y+1): ∫(y²-y)dy = y³/3 - y²/2 + c",
+    "source_file": "رياضيلت 4/page_009_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 9
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_009_interactive.json"
+    ],
+    "title": "جد \\( \\int \\frac{y^4-y}{y^2+y+1}\\,dy \\)",
+    "number": "7",
+    "model_solution": "y⁴-y = y(y³-1) = y(y-1)(y²+y+1)، نختصر (y²+y+1): ∫(y²-y)dy = y³/3 - y²/2 + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: إخراج عامل مشترك من البسط. الطريقة: \\( y^4 - y = y(y^3 - 1) \\). السبب: لنصل إلى فرق مكعبين.",
+        "equation_template": "y^4 - y = y(y^{{input_1}} - {input_2})",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s1_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "id": "q_4_2_9_1_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أخرج \\( y \\) من الحدين فيبقى \\( y^3 \\) و\\( 1 \\)."
+          },
+          {
+            "input_id": "q7_p9_s1_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "y"
+            ],
+            "id": "q_4_2_9_1_s1_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "y"
+            ],
+            "label": "القيمة 2",
+            "hint": "أخرج \\( y \\) من الحدين فيبقى \\( y^3 \\) و\\( 1 \\)."
+          }
+        ],
+        "hint": "أخرج \\( y \\) من الحدين فيبقى \\( y^3 \\) و\\( 1 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_9_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: إخراج عامل مشترك من البسط. الطريقة: \\( y^4 - y = y(y^3 - 1) \\). السبب: لنصل إلى فرق مكعبين.",
+        "think": "أخرج \\( y \\) من الحدين فيبقى \\( y^3 \\) و\\( 1 \\).",
+        "html_structure": "y^4 - y = y(y^{{q_4_2_9_1_s1_i1}} - {q_4_2_9_1_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: تحليل فرق المكعبين. الطريقة: \\( y^3-1^3 = (y-1)(y^2+y+1) \\): الحد الأوسط \\( y \\times 1 \\) والأخير \\( 1^2 \\). السبب: لأن العامل \\( y^2+y+1 \\) موجود في المقام.",
+        "equation_template": "y^3 - 1 = (y - 1)(y^2 + {input_1} + {input_2})",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s2_1",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "2y",
+              "1",
+              "y^2"
+            ],
+            "id": "q_4_2_9_1_s2_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "2y",
+              "1",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجذر التكعيبي لـ \\( y^3 \\) هو \\( y \\) ولـ \\( 1 \\) هو \\( 1 \\)."
+          },
+          {
+            "input_id": "q7_p9_s2_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "y",
+              "2",
+              "-1"
+            ],
+            "id": "q_4_2_9_1_s2_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "y",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الجذر التكعيبي لـ \\( y^3 \\) هو \\( y \\) ولـ \\( 1 \\) هو \\( 1 \\)."
+          }
+        ],
+        "hint": "الجذر التكعيبي لـ \\( y^3 \\) هو \\( y \\) ولـ \\( 1 \\) هو \\( 1 \\).",
+        "related_topics": [
+          "فرق مكعبين"
+        ],
+        "step_id": "math345_4_2_9_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: تحليل فرق المكعبين. الطريقة: \\( y^3-1^3 = (y-1)(y^2+y+1) \\): الحد الأوسط \\( y \\times 1 \\) والأخير \\( 1^2 \\). السبب: لأن العامل \\( y^2+y+1 \\) موجود في المقام.",
+        "think": "الجذر التكعيبي لـ \\( y^3 \\) هو \\( y \\) ولـ \\( 1 \\) هو \\( 1 \\).",
+        "html_structure": "y^3 - 1 = (y - 1)(y^2 + {q_4_2_9_1_s2_i1} + {q_4_2_9_1_s2_i2})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: الاختصار. الطريقة: نشطب \\( y^2+y+1 \\) من البسط والمقام. السبب: لتبقى كثيرة حدود.",
+        "equation_template": "\\frac{y(y-1)(y^2+y+1)}{{input_1}} = y({input_2})",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s3_1",
+            "correct_answer": "y^2+y+1",
+            "options": [
+              "y^2+y+1",
+              "y-1",
+              "y",
+              "y^2-1"
+            ],
+            "id": "q_4_2_9_1_s3_i1",
+            "correct_value": "y^2+y+1",
+            "allowed_keys": [
+              "y^2+y+1",
+              "y-1",
+              "y",
+              "y^2-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( y^2+y+1 \\) والباقي \\( y-1 \\)."
+          },
+          {
+            "input_id": "q7_p9_s3_2",
+            "correct_answer": "y-1",
+            "options": [
+              "y-1",
+              "y+1",
+              "y^2+y+1",
+              "y"
+            ],
+            "id": "q_4_2_9_1_s3_i2",
+            "correct_value": "y-1",
+            "allowed_keys": [
+              "y-1",
+              "y+1",
+              "y^2+y+1",
+              "y"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام هو \\( y^2+y+1 \\) والباقي \\( y-1 \\)."
+          }
+        ],
+        "hint": "المقام هو \\( y^2+y+1 \\) والباقي \\( y-1 \\).",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_2_9_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: الاختصار. الطريقة: نشطب \\( y^2+y+1 \\) من البسط والمقام. السبب: لتبقى كثيرة حدود.",
+        "think": "المقام هو \\( y^2+y+1 \\) والباقي \\( y-1 \\).",
+        "html_structure": "\\frac{y(y-1)(y^2+y+1)}{{q_4_2_9_1_s3_i1}} = y({q_4_2_9_1_s3_i2})"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: فتح الضرب. الطريقة: نوزع \\( y \\) على \\( (y-1) \\). السبب: لنكامل حدوداً بسيطة.",
+        "equation_template": "y(y-1) = y^{{input_1}} - {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s4_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_9_1_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( y \\times y = y^2 \\) و\\( y \\times 1 = y \\)."
+          },
+          {
+            "input_id": "q7_p9_s4_2",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "1",
+              "y^2",
+              "2y"
+            ],
+            "id": "q_4_2_9_1_s4_i2",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "1",
+              "y^2",
+              "2y"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( y \\times y = y^2 \\) و\\( y \\times 1 = y \\)."
+          }
+        ],
+        "hint": "\\( y \\times y = y^2 \\) و\\( y \\times 1 = y \\).",
+        "related_topics": [
+          "التوزيع"
+        ],
+        "step_id": "math345_4_2_9_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: فتح الضرب. الطريقة: نوزع \\( y \\) على \\( (y-1) \\). السبب: لنكامل حدوداً بسيطة.",
+        "think": "\\( y \\times y = y^2 \\) و\\( y \\times 1 = y \\).",
+        "html_structure": "y(y-1) = y^{{q_4_2_9_1_s4_i1}} - {q_4_2_9_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: تكامل \\( y^2 \\). الطريقة: نرفع الأس بواحد ونقسم على الأس الجديد. السبب: قاعدة القوة",
+        "equation_template": "\\int y^2dy = \\frac{y^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s5_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_9_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2+1=3 \\)."
+          },
+          {
+            "input_id": "q7_p9_s5_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_9_1_s5_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2+1=3 \\)."
+          }
+        ],
+        "hint": "\\( 2+1=3 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_9_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: تكامل \\( y^2 \\). الطريقة: نرفع الأس بواحد ونقسم على الأس الجديد. السبب: قاعدة القوة",
+        "think": "\\( 2+1=3 \\).",
+        "html_structure": "\\int y^2dy = \\frac{y^{{q_4_2_9_1_s5_i1}}}{{q_4_2_9_1_s5_i2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل \\( y \\). الطريقة: الأس \\( 2 \\) والمقام \\( 2 \\). السبب: قاعدة القوة",
+        "equation_template": "\\int y\\,dy = \\frac{y^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_9_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "q7_p9_s6_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_9_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "\\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_9_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل \\( y \\). الطريقة: الأس \\( 2 \\) والمقام \\( 2 \\). السبب: قاعدة القوة",
+        "think": "\\( 1+1=2 \\).",
+        "html_structure": "\\int y\\,dy = \\frac{y^{{q_4_2_9_1_s6_i1}}}{{q_4_2_9_1_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: كتابة الجواب. الطريقة: نجمع الناتجين مع \\( c \\). السبب: تكامل غير محدد.",
+        "equation_template": "\\frac{y^3}{{input_1}} - \\frac{y^2}{{input_2}} + {input_3}",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s7_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "id": "q_4_2_9_1_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام يساوي الأس الجديد."
+          },
+          {
+            "input_id": "q7_p9_s7_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "id": "q_4_2_9_1_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام يساوي الأس الجديد."
+          },
+          {
+            "input_id": "q7_p9_s7_3",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "y"
+            ],
+            "id": "q_4_2_9_1_s7_i3",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "y"
+            ],
+            "label": "القيمة 3",
+            "hint": "المقام يساوي الأس الجديد."
+          }
+        ],
+        "hint": "المقام يساوي الأس الجديد.",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_9_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: كتابة الجواب. الطريقة: نجمع الناتجين مع \\( c \\). السبب: تكامل غير محدد.",
+        "think": "المقام يساوي الأس الجديد.",
+        "html_structure": "\\frac{y^3}{{q_4_2_9_1_s7_i1}} - \\frac{y^2}{{q_4_2_9_1_s7_i2}} + {q_4_2_9_1_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التحقق. الطريقة: نشتق الناتج. السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dy}\\left(\\frac{y^3}{3}-\\frac{y^2}{2}\\right) = y^{{input_1}} - {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s8_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "0"
+            ],
+            "id": "q_4_2_9_1_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\frac{y^3}{3} \\) هي \\( y^2 \\)."
+          },
+          {
+            "input_id": "q7_p9_s8_2",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "1",
+              "y^2",
+              "2y"
+            ],
+            "id": "q_4_2_9_1_s8_i2",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "1",
+              "y^2",
+              "2y"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( \\frac{y^3}{3} \\) هي \\( y^2 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\frac{y^3}{3} \\) هي \\( y^2 \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_9_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التحقق. الطريقة: نشتق الناتج. السبب: للتأكد.",
+        "think": "مشتقة \\( \\frac{y^3}{3} \\) هي \\( y^2 \\).",
+        "html_structure": "\\frac{d}{dy}\\left(\\frac{y^3}{3}-\\frac{y^2}{2}\\right) = y^{{q_4_2_9_1_s8_i1}} - {q_4_2_9_1_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: إعادة التركيب للتأكد. الطريقة: \\( y^2 - y = y(y-1) \\) وهي الدالة بعد الاختصار. السبب: فالحل يطابق الدالة.",
+        "equation_template": "y^2 - y = y({input_1})",
+        "inputs": [
+          {
+            "input_id": "q7_p9_s9_1",
+            "correct_answer": "y-1",
+            "options": [
+              "y-1",
+              "y+1",
+              "y",
+              "1"
+            ],
+            "id": "q_4_2_9_1_s9_i1",
+            "correct_value": "y-1",
+            "allowed_keys": [
+              "y-1",
+              "y+1",
+              "y",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أخرج \\( y \\) من الحدين."
+          }
+        ],
+        "hint": "أخرج \\( y \\) من الحدين.",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_9_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: إعادة التركيب للتأكد. الطريقة: \\( y^2 - y = y(y-1) \\) وهي الدالة بعد الاختصار. السبب: فالحل يطابق الدالة.",
+        "think": "أخرج \\( y \\) من الحدين.",
+        "html_structure": "y^2 - y = y({q_4_2_9_1_s9_i1})"
+      }
+    ]
+  },
+  {
+    "id_number": "q8_p9",
+    "page_number": 9,
+    "question_number": "8",
+    "question_text": "جد \\( \\int \\frac{x-5\\sqrt{x}+6}{x-3\\sqrt{x}}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "البسط (√x-3)(√x-2) والمقام √x(√x-3) ⇒ (√x-2)/√x = 1-2x^(-1/2) ⇒ x - 4√x + c وتساوي (√x-2)² + c' لأن (√x-2)² = x-4√x+4",
+    "source_file": "رياضيلت 4/page_009_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 9
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_009_interactive.json"
+    ],
+    "title": "جد \\( \\int \\frac{x-5\\sqrt{x}+6}{x-3\\sqrt{x}}\\,dx \\)",
+    "number": "8",
+    "model_solution": "البسط (√x-3)(√x-2) والمقام √x(√x-3) ⇒ (√x-2)/√x = 1-2x^(-1/2) ⇒ x - 4√x + c وتساوي (√x-2)² + c' لأن (√x-2)² = x-4√x+4",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: تحليل البسط. الطريقة: نعتبر \\( x = (\\sqrt{x})^2 \\) فيصبح البسط ثلاثياً: \\( (\\sqrt{x})^2 - 5\\sqrt{x} + 6 \\). نبحث عن عددين حاصل ضربهما \\( 6 \\) ومجموعهما \\( 5 \\). السبب: لنحصل على عامل يتكرر في المقام.",
+        "equation_template": "x - 5\\sqrt{x} + 6 = (\\sqrt{x} - {input_1})(\\sqrt{x} - {input_2})",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s1_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "6",
+              "5"
+            ],
+            "id": "q_4_2_9_2_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "6",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "العددان هما \\( 3 \\) و\\( 2 \\) لأن \\( 3 \\times 2 = 6 \\) و\\( 3+2=5 \\)."
+          },
+          {
+            "input_id": "q8_p9_s1_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "6",
+              "4"
+            ],
+            "id": "q_4_2_9_2_s1_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "6",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "العددان هما \\( 3 \\) و\\( 2 \\) لأن \\( 3 \\times 2 = 6 \\) و\\( 3+2=5 \\)."
+          }
+        ],
+        "hint": "العددان هما \\( 3 \\) و\\( 2 \\) لأن \\( 3 \\times 2 = 6 \\) و\\( 3+2=5 \\).",
+        "related_topics": [
+          "التحليل إلى عوامل"
+        ],
+        "step_id": "math345_4_2_9_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: تحليل البسط. الطريقة: نعتبر \\( x = (\\sqrt{x})^2 \\) فيصبح البسط ثلاثياً: \\( (\\sqrt{x})^2 - 5\\sqrt{x} + 6 \\). نبحث عن عددين حاصل ضربهما \\( 6 \\) ومجموعهما \\( 5 \\). السبب: لنحصل على عامل يتكرر في المقام.",
+        "think": "العددان هما \\( 3 \\) و\\( 2 \\) لأن \\( 3 \\times 2 = 6 \\) و\\( 3+2=5 \\).",
+        "html_structure": "x - 5\\sqrt{x} + 6 = (\\sqrt{x} - {q_4_2_9_2_s1_i1})(\\sqrt{x} - {q_4_2_9_2_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: إخراج عامل من المقام. الطريقة: \\( x - 3\\sqrt{x} = \\sqrt{x}\\cdot\\sqrt{x} - 3\\sqrt{x} \\) فنخرج \\( \\sqrt{x} \\). السبب: لنكشف العامل المشترك.",
+        "equation_template": "x - 3\\sqrt{x} = \\sqrt{x}(\\sqrt{x} - {input_1})",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s2_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_4_2_9_2_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "بعد إخراج \\( \\sqrt{x} \\) يبقى \\( \\sqrt{x} \\) و\\( -3 \\)."
+          }
+        ],
+        "hint": "بعد إخراج \\( \\sqrt{x} \\) يبقى \\( \\sqrt{x} \\) و\\( -3 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_9_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: إخراج عامل من المقام. الطريقة: \\( x - 3\\sqrt{x} = \\sqrt{x}\\cdot\\sqrt{x} - 3\\sqrt{x} \\) فنخرج \\( \\sqrt{x} \\). السبب: لنكشف العامل المشترك.",
+        "think": "بعد إخراج \\( \\sqrt{x} \\) يبقى \\( \\sqrt{x} \\) و\\( -3 \\).",
+        "html_structure": "x - 3\\sqrt{x} = \\sqrt{x}(\\sqrt{x} - {q_4_2_9_2_s2_i1})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: الاختصار. الطريقة: نشطب \\( \\sqrt{x}-3 \\) من البسط والمقام. السبب: لتبسيط الكسر.",
+        "equation_template": "\\frac{(\\sqrt{x}-3)(\\sqrt{x}-2)}{\\sqrt{x}(\\sqrt{x}-3)} = \\frac{\\sqrt{x} - {input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "id": "q_4_2_9_2_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "يبقى \\( \\sqrt{x}-2 \\) في البسط و\\( \\sqrt{x} \\) في المقام."
+          },
+          {
+            "input_id": "q8_p9_s3_2",
+            "correct_answer": "√x",
+            "options": [
+              "√x",
+              "x",
+              "√x - 3",
+              "2"
+            ],
+            "id": "q_4_2_9_2_s3_i2",
+            "correct_value": "√x",
+            "allowed_keys": [
+              "√x",
+              "x",
+              "√x - 3",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "يبقى \\( \\sqrt{x}-2 \\) في البسط و\\( \\sqrt{x} \\) في المقام."
+          }
+        ],
+        "hint": "يبقى \\( \\sqrt{x}-2 \\) في البسط و\\( \\sqrt{x} \\) في المقام.",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_2_9_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: الاختصار. الطريقة: نشطب \\( \\sqrt{x}-3 \\) من البسط والمقام. السبب: لتبسيط الكسر.",
+        "think": "يبقى \\( \\sqrt{x}-2 \\) في البسط و\\( \\sqrt{x} \\) في المقام.",
+        "html_structure": "\\frac{(\\sqrt{x}-3)(\\sqrt{x}-2)}{\\sqrt{x}(\\sqrt{x}-3)} = \\frac{\\sqrt{x} - {q_4_2_9_2_s3_i1}}{{q_4_2_9_2_s3_i2}}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: توزيع المقام على البسط. الطريقة: نقسم كل حد في البسط على \\( \\sqrt{x} \\). السبب: لنحصل على حدود قابلة للتكامل.",
+        "equation_template": "\\frac{\\sqrt{x}-2}{\\sqrt{x}} = 1 - \\frac{{input_1}}{\\sqrt{x}}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s4_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "id": "q_4_2_9_2_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{\\sqrt{x}}{\\sqrt{x}} = 1 \\) و\\( \\frac{-2}{\\sqrt{x}} \\) تبقى."
+          }
+        ],
+        "hint": "\\( \\frac{\\sqrt{x}}{\\sqrt{x}} = 1 \\) و\\( \\frac{-2}{\\sqrt{x}} \\) تبقى.",
+        "related_topics": [
+          "تجزئة الكسر"
+        ],
+        "step_id": "math345_4_2_9_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: توزيع المقام على البسط. الطريقة: نقسم كل حد في البسط على \\( \\sqrt{x} \\). السبب: لنحصل على حدود قابلة للتكامل.",
+        "think": "\\( \\frac{\\sqrt{x}}{\\sqrt{x}} = 1 \\) و\\( \\frac{-2}{\\sqrt{x}} \\) تبقى.",
+        "html_structure": "\\frac{\\sqrt{x}-2}{\\sqrt{x}} = 1 - \\frac{{q_4_2_9_2_s4_i1}}{\\sqrt{x}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: تحويل الكسر إلى أس. الطريقة: \\( \\frac{1}{\\sqrt{x}} = x^{-1/2} \\). السبب: لنطبق قاعدة القوة.",
+        "equation_template": "\\frac{2}{\\sqrt{x}} = 2x^{\\frac{{input_1}}{2}}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s5_1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-2",
+              "2"
+            ],
+            "id": "q_4_2_9_2_s5_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "نقل الجذر للبسط يعكس إشارة الأس \\( \\frac12 \\)."
+          }
+        ],
+        "hint": "نقل الجذر للبسط يعكس إشارة الأس \\( \\frac12 \\).",
+        "related_topics": [
+          "الأسس الكسرية"
+        ],
+        "step_id": "math345_4_2_9_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: تحويل الكسر إلى أس. الطريقة: \\( \\frac{1}{\\sqrt{x}} = x^{-1/2} \\). السبب: لنطبق قاعدة القوة.",
+        "think": "نقل الجذر للبسط يعكس إشارة الأس \\( \\frac12 \\).",
+        "html_structure": "\\frac{2}{\\sqrt{x}} = 2x^{\\frac{{q_4_2_9_2_s5_i1}}{2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل \\( 1 \\). الطريقة: تكامل العدد \\( 1 \\) هو \\( x \\). السبب: لأن مشتقة \\( x \\) هي \\( 1 \\).",
+        "equation_template": "\\int 1\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s6_1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "1",
+              "x^2",
+              "0"
+            ],
+            "id": "q_4_2_9_2_s6_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "1",
+              "x^2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب المتغير \\( x \\)."
+          }
+        ],
+        "hint": "اكتب المتغير \\( x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_9_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل \\( 1 \\). الطريقة: تكامل العدد \\( 1 \\) هو \\( x \\). السبب: لأن مشتقة \\( x \\) هي \\( 1 \\).",
+        "think": "اكتب المتغير \\( x \\).",
+        "html_structure": "\\int 1\\,dx = {q_4_2_9_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: تكامل \\( 2x^{-1/2} \\). الطريقة: الأس الجديد \\( \\frac12 \\) ونقسم على \\( \\frac12 \\) أي نضرب في \\( 2 \\). السبب: قاعدة القوة",
+        "equation_template": "\\int 2x^{-\\frac12}dx = \\frac{2x^{\\frac{{input_1}}{2}}}{\\frac{{input_2}}{2}} = {input_3}\\sqrt{x}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s7_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "3"
+            ],
+            "id": "q_4_2_9_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2 \\times 2 = 4 \\)."
+          },
+          {
+            "input_id": "q8_p9_s7_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "-1",
+              "2",
+              "3"
+            ],
+            "id": "q_4_2_9_2_s7_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "-1",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2 \\times 2 = 4 \\)."
+          },
+          {
+            "input_id": "q8_p9_s7_3",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_4_2_9_2_s7_i3",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 2 \\times 2 = 4 \\)."
+          }
+        ],
+        "hint": "\\( 2 \\times 2 = 4 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_9_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: تكامل \\( 2x^{-1/2} \\). الطريقة: الأس الجديد \\( \\frac12 \\) ونقسم على \\( \\frac12 \\) أي نضرب في \\( 2 \\). السبب: قاعدة القوة",
+        "think": "\\( 2 \\times 2 = 4 \\).",
+        "html_structure": "\\int 2x^{-\\frac12}dx = \\frac{2x^{\\frac{{q_4_2_9_2_s7_i1}}{2}}}{\\frac{{q_4_2_9_2_s7_i2}}{2}} = {q_4_2_9_2_s7_i3}\\sqrt{x}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: كتابة الجواب. الطريقة: نطرح الناتج الثاني من الأول مع \\( c \\). السبب: تكامل غير محدد.",
+        "equation_template": "x - {input_1}\\sqrt{x} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s8_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "id": "q_4_2_9_2_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل هو الناتج السابق \\( 4 \\)."
+          },
+          {
+            "input_id": "q8_p9_s8_2",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_9_2_s8_i2",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعامل هو الناتج السابق \\( 4 \\)."
+          }
+        ],
+        "hint": "المعامل هو الناتج السابق \\( 4 \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_9_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: كتابة الجواب. الطريقة: نطرح الناتج الثاني من الأول مع \\( c \\). السبب: تكامل غير محدد.",
+        "think": "المعامل هو الناتج السابق \\( 4 \\).",
+        "html_structure": "x - {q_4_2_9_2_s8_i1}\\sqrt{x} + {q_4_2_9_2_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: مقارنة الجواب بصيغة الكتاب. الطريقة: \\( (\\sqrt{x}-2)^2 = x - 4\\sqrt{x} + 4 \\)، وهو يختلف عن جوابنا بثابت فقط. السبب: الثابت يدخل في \\( c \\)، فالصيغتان صحيحتان.",
+        "equation_template": "(\\sqrt{x}-2)^2 = x - 4\\sqrt{x} + {input_1}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s9_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_4_2_9_2_s9_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "مربع \\( 2 \\)."
+          }
+        ],
+        "hint": "مربع \\( 2 \\).",
+        "related_topics": [
+          "مربع الفرق"
+        ],
+        "step_id": "math345_4_2_9_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: مقارنة الجواب بصيغة الكتاب. الطريقة: \\( (\\sqrt{x}-2)^2 = x - 4\\sqrt{x} + 4 \\)، وهو يختلف عن جوابنا بثابت فقط. السبب: الثابت يدخل في \\( c \\)، فالصيغتان صحيحتان.",
+        "think": "مربع \\( 2 \\).",
+        "html_structure": "(\\sqrt{x}-2)^2 = x - 4\\sqrt{x} + {q_4_2_9_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: التحقق بالاشتقاق. الطريقة: مشتقة \\( x \\) هي \\( 1 \\)، ومشتقة \\( -4\\sqrt{x} \\) هي \\( -\\frac{4}{2\\sqrt{x}} \\). السبب: للتأكد من الصحة.",
+        "equation_template": "\\frac{d}{dx}(x - 4\\sqrt{x}) = 1 - \\frac{{input_1}}{\\sqrt{x}}",
+        "inputs": [
+          {
+            "input_id": "q8_p9_s10_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "id": "q_4_2_9_2_s10_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{4}{2} = 2 \\)."
+          }
+        ],
+        "hint": "\\( \\frac{4}{2} = 2 \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_9_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: التحقق بالاشتقاق. الطريقة: مشتقة \\( x \\) هي \\( 1 \\)، ومشتقة \\( -4\\sqrt{x} \\) هي \\( -\\frac{4}{2\\sqrt{x}} \\). السبب: للتأكد من الصحة.",
+        "think": "\\( \\frac{4}{2} = 2 \\).",
+        "html_structure": "\\frac{d}{dx}(x - 4\\sqrt{x}) = 1 - \\frac{{q_4_2_9_2_s10_i1}}{\\sqrt{x}}"
+      }
+    ]
+  },
+  {
+    "id_number": "q9_p9",
+    "page_number": 9,
+    "question_number": "9",
+    "question_text": "جد \\( \\int \\frac{x^3-x^2+3x-3}{x^2+3}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "x²(x-1)+3(x-1) = (x-1)(x²+3) فنختصر: ∫(x-1)dx = x²/2 - x + c",
+    "source_file": "رياضيلت 4/page_009_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 9
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_009_interactive.json"
+    ],
+    "title": "جد \\( \\int \\frac{x^3-x^2+3x-3}{x^2+3}\\,dx \\)",
+    "number": "9",
+    "model_solution": "x²(x-1)+3(x-1) = (x-1)(x²+3) فنختصر: ∫(x-1)dx = x²/2 - x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: تجميع حدود البسط. الطريقة: نقسم الحدود الأربعة إلى مجموعتين: الأولى فيها \\( x^3 \\) و\\( -x^2 \\) والثانية \\( 3x \\) و\\( -3 \\). السبب: لنخرج عاملاً مشتركاً من كل مجموعة.",
+        "equation_template": "x^3 - x^2 + 3x - 3 = (x^3 - x^2) + ({input_1}x - {input_2})",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s1_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "-3"
+            ],
+            "id": "q_4_2_9_3_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( 3x \\) و\\( 3 \\) كما هما إلى القوس الثاني."
+          },
+          {
+            "input_id": "q9_p9_s1_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "-3"
+            ],
+            "id": "q_4_2_9_3_s1_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "-3"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل \\( 3x \\) و\\( 3 \\) كما هما إلى القوس الثاني."
+          }
+        ],
+        "hint": "انقل \\( 3x \\) و\\( 3 \\) كما هما إلى القوس الثاني.",
+        "related_topics": [
+          "التحليل بالتجميع"
+        ],
+        "step_id": "math345_4_2_9_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: تجميع حدود البسط. الطريقة: نقسم الحدود الأربعة إلى مجموعتين: الأولى فيها \\( x^3 \\) و\\( -x^2 \\) والثانية \\( 3x \\) و\\( -3 \\). السبب: لنخرج عاملاً مشتركاً من كل مجموعة.",
+        "think": "انقل \\( 3x \\) و\\( 3 \\) كما هما إلى القوس الثاني.",
+        "html_structure": "x^3 - x^2 + 3x - 3 = (x^3 - x^2) + ({q_4_2_9_3_s1_i1}x - {q_4_2_9_3_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: إخراج عامل من المجموعة الأولى. الطريقة: العامل المشترك الأكبر هو \\( x^2 \\). السبب: لنحصل على \\( (x-1) \\).",
+        "equation_template": "x^3 - x^2 = x^{{input_1}}(x - 1)",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s2_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_9_3_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "أخرج \\( x^2 \\) فيبقى \\( x \\) و\\( -1 \\)."
+          }
+        ],
+        "hint": "أخرج \\( x^2 \\) فيبقى \\( x \\) و\\( -1 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_9_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: إخراج عامل من المجموعة الأولى. الطريقة: العامل المشترك الأكبر هو \\( x^2 \\). السبب: لنحصل على \\( (x-1) \\).",
+        "think": "أخرج \\( x^2 \\) فيبقى \\( x \\) و\\( -1 \\).",
+        "html_structure": "x^3 - x^2 = x^{{q_4_2_9_3_s2_i1}}(x - 1)"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: إخراج عامل من المجموعة الثانية. الطريقة: العامل المشترك هو \\( 3 \\). السبب: لنحصل على \\( (x-1) \\) نفسه.",
+        "equation_template": "3x - 3 = {input_1}(x - 1)",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s3_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "x",
+              "-3"
+            ],
+            "id": "q_4_2_9_3_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "x",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم الحدين على \\( 3 \\)."
+          }
+        ],
+        "hint": "اقسم الحدين على \\( 3 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_9_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: إخراج عامل من المجموعة الثانية. الطريقة: العامل المشترك هو \\( 3 \\). السبب: لنحصل على \\( (x-1) \\) نفسه.",
+        "think": "اقسم الحدين على \\( 3 \\).",
+        "html_structure": "3x - 3 = {q_4_2_9_3_s3_i1}(x - 1)"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: إخراج القوس المشترك. الطريقة: المجموعتان فيهما \\( (x-1) \\) فنخرجه. السبب: لنكمل التحليل.",
+        "equation_template": "x^2(x-1) + 3(x-1) = (x - 1)({input_1})",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s4_1",
+            "correct_answer": "x^2+3",
+            "options": [
+              "x^2+3",
+              "x^2-3",
+              "x+3",
+              "x^2"
+            ],
+            "id": "q_4_2_9_3_s4_i1",
+            "correct_value": "x^2+3",
+            "allowed_keys": [
+              "x^2+3",
+              "x^2-3",
+              "x+3",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما تبقى هو \\( x^2 \\) و\\( 3 \\)."
+          }
+        ],
+        "hint": "ما تبقى هو \\( x^2 \\) و\\( 3 \\).",
+        "related_topics": [
+          "التحليل إلى عوامل"
+        ],
+        "step_id": "math345_4_2_9_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: إخراج القوس المشترك. الطريقة: المجموعتان فيهما \\( (x-1) \\) فنخرجه. السبب: لنكمل التحليل.",
+        "think": "ما تبقى هو \\( x^2 \\) و\\( 3 \\).",
+        "html_structure": "x^2(x-1) + 3(x-1) = (x - 1)({q_4_2_9_3_s4_i1})"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: الاختصار. الطريقة: نشطب \\( x^2+3 \\) من البسط والمقام. السبب: لتبقى كثيرة حدود بسيطة.",
+        "equation_template": "\\frac{(x-1)(x^2+3)}{{input_1}} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s5_1",
+            "correct_answer": "x^2+3",
+            "options": [
+              "x^2+3",
+              "x-1",
+              "x^2",
+              "x+3"
+            ],
+            "id": "q_4_2_9_3_s5_i1",
+            "correct_value": "x^2+3",
+            "allowed_keys": [
+              "x^2+3",
+              "x-1",
+              "x^2",
+              "x+3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( x^2+3 \\) والباقي \\( x-1 \\)."
+          },
+          {
+            "input_id": "q9_p9_s5_2",
+            "correct_answer": "x-1",
+            "options": [
+              "x-1",
+              "x+1",
+              "x^2+3",
+              "x"
+            ],
+            "id": "q_4_2_9_3_s5_i2",
+            "correct_value": "x-1",
+            "allowed_keys": [
+              "x-1",
+              "x+1",
+              "x^2+3",
+              "x"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام هو \\( x^2+3 \\) والباقي \\( x-1 \\)."
+          }
+        ],
+        "hint": "المقام هو \\( x^2+3 \\) والباقي \\( x-1 \\).",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_2_9_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: الاختصار. الطريقة: نشطب \\( x^2+3 \\) من البسط والمقام. السبب: لتبقى كثيرة حدود بسيطة.",
+        "think": "المقام هو \\( x^2+3 \\) والباقي \\( x-1 \\).",
+        "html_structure": "\\frac{(x-1)(x^2+3)}{{q_4_2_9_3_s5_i1}} = {q_4_2_9_3_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل \\( x \\). الطريقة: الأس \\( 2 \\) والمقام \\( 2 \\). السبب: قاعدة القوة",
+        "equation_template": "\\int x\\,dx = \\frac{x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_9_3_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1=2 \\)."
+          },
+          {
+            "input_id": "q9_p9_s6_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_9_3_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1=2 \\)."
+          }
+        ],
+        "hint": "\\( 1+1=2 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_9_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل \\( x \\). الطريقة: الأس \\( 2 \\) والمقام \\( 2 \\). السبب: قاعدة القوة",
+        "think": "\\( 1+1=2 \\).",
+        "html_structure": "\\int x\\,dx = \\frac{x^{{q_4_2_9_3_s6_i1}}}{{q_4_2_9_3_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: تكامل \\( -1 \\). الطريقة: تكامل الثابت \\( -1 \\) هو \\( -x \\). السبب: لأن مشتقة \\( -x \\) هي \\( -1 \\).",
+        "equation_template": "\\int -1\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s7_1",
+            "correct_answer": "-x",
+            "options": [
+              "-x",
+              "x",
+              "-1",
+              "1"
+            ],
+            "id": "q_4_2_9_3_s7_i1",
+            "correct_value": "-x",
+            "allowed_keys": [
+              "-x",
+              "x",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( -x \\)."
+          }
+        ],
+        "hint": "اكتب \\( -x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_9_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: تكامل \\( -1 \\). الطريقة: تكامل الثابت \\( -1 \\) هو \\( -x \\). السبب: لأن مشتقة \\( -x \\) هي \\( -1 \\).",
+        "think": "اكتب \\( -x \\).",
+        "html_structure": "\\int -1\\,dx = {q_4_2_9_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: كتابة الجواب. الطريقة: نجمع الناتجين مع \\( c \\). السبب: تكامل غير محدد.",
+        "equation_template": "\\frac{x^2}{{input_1}} - x + {input_2}",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s8_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_2_9_3_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام \\( 2 \\) ثم \\( c \\)."
+          },
+          {
+            "input_id": "q9_p9_s8_2",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_9_3_s8_i2",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام \\( 2 \\) ثم \\( c \\)."
+          }
+        ],
+        "hint": "المقام \\( 2 \\) ثم \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_9_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: كتابة الجواب. الطريقة: نجمع الناتجين مع \\( c \\). السبب: تكامل غير محدد.",
+        "think": "المقام \\( 2 \\) ثم \\( c \\).",
+        "html_structure": "\\frac{x^2}{{q_4_2_9_3_s8_i1}} - x + {q_4_2_9_3_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: التحقق. الطريقة: نشتق \\( \\frac{x^2}{2} - x \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac{x^2}{2}-x\\right) = {input_1} - {input_2}",
+        "inputs": [
+          {
+            "input_id": "q9_p9_s9_1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "2x",
+              "1",
+              "x^2"
+            ],
+            "id": "q_4_2_9_3_s9_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "2x",
+              "1",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\frac{x^2}{2} \\) هي \\( x \\)."
+          },
+          {
+            "input_id": "q9_p9_s9_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "x",
+              "2",
+              "0"
+            ],
+            "id": "q_4_2_9_3_s9_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "x",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( \\frac{x^2}{2} \\) هي \\( x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\frac{x^2}{2} \\) هي \\( x \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_9_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: التحقق. الطريقة: نشتق \\( \\frac{x^2}{2} - x \\). السبب: للتأكد.",
+        "think": "مشتقة \\( \\frac{x^2}{2} \\) هي \\( x \\).",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac{x^2}{2}-x\\right) = {q_4_2_9_3_s9_i1} - {q_4_2_9_3_s9_i2}"
+      }
+    ]
+  },
+  {
+    "id_number": "q10_p9",
+    "page_number": 9,
+    "question_number": "10",
+    "question_text": "احسب \\( \\int \\frac{(2x^2-3)^2-9}{x^2}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "full_model_solution": "(4x⁴-12x²+9-9)/x² = x²(4x²-12)/x² = 4x²-12 ⇒ 4x³/3 - 12x + c",
+    "source_file": "رياضيلت 4/page_009_interactive(1).json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 9
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_009_diag_1_drawing.png",
+    "alternate_sources": [
+      "رياضيلت 4/page_009_interactive.json"
+    ],
+    "title": "احسب \\( \\int \\frac{(2x^2-3)^2-9}{x^2}\\,dx \\)",
+    "number": "10",
+    "model_solution": "(4x⁴-12x²+9-9)/x² = x²(4x²-12)/x² = 4x²-12 ⇒ 4x³/3 - 12x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: فتح المربع. الطريقة: \\( (2x^2-3)^2 = (2x^2)^2 - 2(2x^2)(3) + 9 \\). السبب: للتخلص من الأس.",
+        "equation_template": "(2x^2-3)^2 = {input_1}x^4 - {input_2}x^2 + 9",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s1_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "6",
+              "8"
+            ],
+            "id": "q_4_2_9_4_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "6",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2^2 = 4 \\) و\\( 2 \\times 2 \\times 3 = 12 \\)."
+          },
+          {
+            "input_id": "q10_p9_s1_2",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "6",
+              "9",
+              "3"
+            ],
+            "id": "q_4_2_9_4_s1_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "6",
+              "9",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2^2 = 4 \\) و\\( 2 \\times 2 \\times 3 = 12 \\)."
+          }
+        ],
+        "hint": "\\( 2^2 = 4 \\) و\\( 2 \\times 2 \\times 3 = 12 \\).",
+        "related_topics": [
+          "مربع الفرق"
+        ],
+        "step_id": "math345_4_2_9_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: فتح المربع. الطريقة: \\( (2x^2-3)^2 = (2x^2)^2 - 2(2x^2)(3) + 9 \\). السبب: للتخلص من الأس.",
+        "think": "\\( 2^2 = 4 \\) و\\( 2 \\times 2 \\times 3 = 12 \\).",
+        "html_structure": "(2x^2-3)^2 = {q_4_2_9_4_s1_i1}x^4 - {q_4_2_9_4_s1_i2}x^2 + 9"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: طرح \\( 9 \\). الطريقة: \\( +9 - 9 = 0 \\). السبب: يبسط البسط.",
+        "equation_template": "4x^4 - 12x^2 + 9 - 9 = 4x^4 - {input_1}x^2",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s2_1",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "9",
+              "3",
+              "21"
+            ],
+            "id": "q_4_2_9_4_s2_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "9",
+              "3",
+              "21"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقمان \\( 9 \\) يلغيان بعضهما."
+          }
+        ],
+        "hint": "الرقمان \\( 9 \\) يلغيان بعضهما.",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_2_9_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: طرح \\( 9 \\). الطريقة: \\( +9 - 9 = 0 \\). السبب: يبسط البسط.",
+        "think": "الرقمان \\( 9 \\) يلغيان بعضهما.",
+        "html_structure": "4x^4 - 12x^2 + 9 - 9 = 4x^4 - {q_4_2_9_4_s2_i1}x^2"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: إخراج \\( x^2 \\). الطريقة: العامل المشترك في \\( 4x^4 \\) و\\( -12x^2 \\) هو \\( x^2 \\). السبب: لنختصر مع المقام.",
+        "equation_template": "4x^4 - 12x^2 = x^2({input_1}x^2 - {input_2})",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s3_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "12",
+              "3"
+            ],
+            "id": "q_4_2_9_4_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "12",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم كل حد على \\( x^2 \\)."
+          },
+          {
+            "input_id": "q10_p9_s3_2",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "4",
+              "6",
+              "3"
+            ],
+            "id": "q_4_2_9_4_s3_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "4",
+              "6",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "اقسم كل حد على \\( x^2 \\)."
+          }
+        ],
+        "hint": "اقسم كل حد على \\( x^2 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_9_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: إخراج \\( x^2 \\). الطريقة: العامل المشترك في \\( 4x^4 \\) و\\( -12x^2 \\) هو \\( x^2 \\). السبب: لنختصر مع المقام.",
+        "think": "اقسم كل حد على \\( x^2 \\).",
+        "html_structure": "4x^4 - 12x^2 = x^2({q_4_2_9_4_s3_i1}x^2 - {q_4_2_9_4_s3_i2})"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: الاختصار. الطريقة: نشطب \\( x^2 \\) من البسط والمقام. السبب: لتبقى كثيرة حدود.",
+        "equation_template": "\\frac{x^2(4x^2-12)}{{input_1}} = 4x^2 - 12",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s4_1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "x",
+              "4x^2",
+              "12"
+            ],
+            "id": "q_4_2_9_4_s4_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "x",
+              "4x^2",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( x^2 \\)."
+          }
+        ],
+        "hint": "المقام هو \\( x^2 \\).",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_2_9_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: الاختصار. الطريقة: نشطب \\( x^2 \\) من البسط والمقام. السبب: لتبقى كثيرة حدود.",
+        "think": "المقام هو \\( x^2 \\).",
+        "html_structure": "\\frac{x^2(4x^2-12)}{{q_4_2_9_4_s4_i1}} = 4x^2 - 12"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: تكامل \\( 4x^2 \\). الطريقة: نرفع الأس إلى \\( 3 \\) ونقسم على \\( 3 \\). السبب: قاعدة القوة",
+        "equation_template": "\\int 4x^2dx = \\frac{4x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s5_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_9_4_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2+1=3 \\)."
+          },
+          {
+            "input_id": "q10_p9_s5_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_9_4_s5_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2+1=3 \\)."
+          }
+        ],
+        "hint": "\\( 2+1=3 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_9_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: تكامل \\( 4x^2 \\). الطريقة: نرفع الأس إلى \\( 3 \\) ونقسم على \\( 3 \\). السبب: قاعدة القوة",
+        "think": "\\( 2+1=3 \\).",
+        "html_structure": "\\int 4x^2dx = \\frac{4x^{{q_4_2_9_4_s5_i1}}}{{q_4_2_9_4_s5_i2}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل \\( -12 \\). الطريقة: تكامل الثابت هو \\( -12x \\). السبب: لأن مشتقة \\( -12x \\) هي \\( -12 \\).",
+        "equation_template": "\\int -12\\,dx = -{input_1}x",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s6_1",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "6",
+              "3",
+              "1"
+            ],
+            "id": "q_4_2_9_4_s6_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "6",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( 12 \\)."
+          }
+        ],
+        "hint": "اكتب \\( 12 \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_9_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل \\( -12 \\). الطريقة: تكامل الثابت هو \\( -12x \\). السبب: لأن مشتقة \\( -12x \\) هي \\( -12 \\).",
+        "think": "اكتب \\( 12 \\).",
+        "html_structure": "\\int -12\\,dx = -{q_4_2_9_4_s6_i1}x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: كتابة الجواب. الطريقة: نجمع النتائج مع \\( c \\). السبب: تكامل غير محدد.",
+        "equation_template": "\\frac{4x^3}{{input_1}} - {input_2}x + {input_3}",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s7_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "id": "q_4_2_9_4_s7_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام \\( 3 \\) ثم \\( 12 \\) ثم \\( c \\)."
+          },
+          {
+            "input_id": "q10_p9_s7_2",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "6",
+              "4",
+              "3"
+            ],
+            "id": "q_4_2_9_4_s7_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "6",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام \\( 3 \\) ثم \\( 12 \\) ثم \\( c \\)."
+          },
+          {
+            "input_id": "q10_p9_s7_3",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_9_4_s7_i3",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 3",
+            "hint": "المقام \\( 3 \\) ثم \\( 12 \\) ثم \\( c \\)."
+          }
+        ],
+        "hint": "المقام \\( 3 \\) ثم \\( 12 \\) ثم \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_9_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: كتابة الجواب. الطريقة: نجمع النتائج مع \\( c \\). السبب: تكامل غير محدد.",
+        "think": "المقام \\( 3 \\) ثم \\( 12 \\) ثم \\( c \\).",
+        "html_structure": "\\frac{4x^3}{{q_4_2_9_4_s7_i1}} - {q_4_2_9_4_s7_i2}x + {q_4_2_9_4_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: ملاحظة المجال. الطريقة: الدالة الأصلية فيها \\( x^2 \\) في المقام، فلا تُعرَّف عند \\( x=0 \\). السبب: لنعرف أين يصح الحل.",
+        "equation_template": "x \\neq {input_1}",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s8_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_2_9_4_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام \\( x^2 \\) يساوي صفراً عند \\( 0 \\)."
+          }
+        ],
+        "hint": "المقام \\( x^2 \\) يساوي صفراً عند \\( 0 \\).",
+        "related_topics": [
+          "مجال الدالة"
+        ],
+        "step_id": "math345_4_2_9_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: ملاحظة المجال. الطريقة: الدالة الأصلية فيها \\( x^2 \\) في المقام، فلا تُعرَّف عند \\( x=0 \\). السبب: لنعرف أين يصح الحل.",
+        "think": "المقام \\( x^2 \\) يساوي صفراً عند \\( 0 \\).",
+        "html_structure": "x \\neq {q_4_2_9_4_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: التحقق. الطريقة: نشتق \\( \\frac{4x^3}{3} - 12x \\). السبب: للتأكد.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac{4x^3}{3}-12x\\right) = {input_1}x^2 - {input_2}",
+        "inputs": [
+          {
+            "input_id": "q10_p9_s9_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "12",
+              "3",
+              "2"
+            ],
+            "id": "q_4_2_9_4_s9_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "12",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{4 \\times 3}{3} = 4 \\)."
+          },
+          {
+            "input_id": "q10_p9_s9_2",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "4",
+              "3",
+              "1"
+            ],
+            "id": "q_4_2_9_4_s9_i2",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "4",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac{4 \\times 3}{3} = 4 \\)."
+          }
+        ],
+        "hint": "\\( \\frac{4 \\times 3}{3} = 4 \\).",
+        "related_topics": [
+          "التحقق بالاشتقاق"
+        ],
+        "step_id": "math345_4_2_9_4_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: التحقق. الطريقة: نشتق \\( \\frac{4x^3}{3} - 12x \\). السبب: للتأكد.",
+        "think": "\\( \\frac{4 \\times 3}{3} = 4 \\).",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac{4x^3}{3}-12x\\right) = {q_4_2_9_4_s9_i1}x^2 - {q_4_2_9_4_s9_i2}"
+      }
+    ]
+  }
+]

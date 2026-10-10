@@ -304,6 +304,11 @@ function InlineBoard({ anchorRef, onHint, onHelp, step }) {
   </section>
 }
 
+function QuestionImages({ problem }) {
+  const images = [...new Set([...(problem.image_urls || []), problem.image_url, problem.diagram_url].filter(value => typeof value === "string" && value))]
+  return images.length ? <div className="question-images">{images.map((url,index) => <img key={url} src={url} alt={`رسم السؤال ${index+1}`} loading="lazy" />)}</div> : null
+}
+
 function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts, setHearts }) {
   const [questions,setQuestions]=useState([]), [questionIndex,setQuestionIndex]=useState(0), [answers,setAnswers]=useState({}), [activeId,setActiveId]=useState(null), [choice,setChoice]=useState(null)
   const boardRef=useRef(null)
@@ -329,7 +334,7 @@ function Solver({ chapter, file, onFileChange, onBack, apples, setApples, hearts
   const chapterFiles=chapter.topics.flatMap(t=>t.files).map(fileInfo)
   return <main className="solver"><aside><button onClick={onBack}><ArrowRight/>المواضيع</button></aside>
     <div className="solution-shell"><div className="solver-nav"><label>المحتوى<select value={file} onChange={e=>onFileChange(e.target.value)}>{chapterFiles.map(item=><option key={item.file} value={item.file}>{item.label}</option>)}</select></label>{questions.length>1&&<label>السؤال<select value={questionIndex} onChange={e=>{setQuestionIndex(+e.target.value);setAnswers({})}}>{questions.map((q,i)=><option key={i} value={i}>السؤال {q.number||i+1} من {questions.length}</option>)}</select></label>}<div className="progress"><span style={{width:`${progress}%`}}/><b>{progress}%</b></div></div>
-    <section className="solution"><div className="problem-card"><h1><MathText>{problem.title}</MathText></h1>{problem.image_url&&<img src={problem.image_url}/>}</div>{problem.steps.slice(0,activeIndex+1).map((step,i)=>{const done=step.inputs.every(x=>answers[x.id]);return <div className={`solution-step ${done?'done':''}`} key={step.step_id}><h3>{step.title}</h3>{!done&&<p><MathText>{step.explanation}</MathText></p>}<Equation step={step} answers={answers} activeId={activeId} onBlank={open} solved={done}/>{i===activeIndex&&<InlineBoard key={step.step_id} step={step} anchorRef={boardRef} onHint={boardHint} onHelp={help}/>}</div>})}</section>
+    <section className="solution"><div className="problem-card"><h1><MathText>{problem.title}</MathText></h1><QuestionImages problem={problem}/></div>{problem.steps.slice(0,activeIndex+1).map((step,i)=>{const done=step.inputs.every(x=>answers[x.id]);return <div className={`solution-step ${done?'done':''}`} key={step.step_id}><h3>{step.title}</h3>{!done&&<p><MathText>{step.explanation}</MathText></p>}<Equation step={step} answers={answers} activeId={activeId} onBlank={open} solved={done}/>{i===activeIndex&&<InlineBoard key={step.step_id} step={step} anchorRef={boardRef} onHint={boardHint} onHelp={help}/>}</div>})}</section>
     {progress===100&&<div className="complete"><strong>أحسنت! أتممت الحل بنجاح 🎉</strong></div>}</div>
     <Choices input={choice} onChoose={choose} onClose={()=>setChoice(null)}/>
   </main>
@@ -341,3 +346,4 @@ export default function App(){
   const home=()=>{setView('subjects');setSubject(null);setChapter(null);setFile(null)}
   return <><Header {...{apples,hearts}} onHome={home}/>{view==='subjects'&&<SubjectPicker onChoose={chooseSubject}/>} {view==='chapters'&&subject&&<Chapters curriculum={curriculum} subject={subject} onOpen={ch=>{setChapter(ch);setView('topics')}}/>}{view==='topics'&&<Topics chapter={chapter} onBack={()=>setView('chapters')} onOpen={f=>{setFile(f);setView('solver')}}/>}{view==='solver'&&<Solver {...{chapter,file,apples,setApples,hearts,setHearts}} onFileChange={setFile} onBack={()=>setView('topics')}/>}</>
 }
+

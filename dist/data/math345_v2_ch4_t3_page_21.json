@@ -1,0 +1,632 @@
+[
+  {
+    "id_number": "q6_p21",
+    "page_number": 21,
+    "question_number": "6",
+    "question_text": "احسب \\( \\int_{0}^{\\pi/4} \\sec^2 x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png"
+    ],
+    "full_model_solution": "[tan x] من 0 إلى π/4 = tan(π/4) − tan 0 = 1 − 0 = 1",
+    "source_file": "رياضيلت 4/part2_page_021_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 21,
+      "pdf_page_number": 161
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png",
+    "title": "احسب \\( \\int_{0}^{\\pi/4} \\sec^2 x\\,dx \\)",
+    "number": "6",
+    "model_solution": "[tan x] من 0 إلى π/4 = tan(π/4) − tan 0 = 1 − 0 = 1",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعرف تكامل \\( \\sec^2 x \\). الطريقة: من جدول التكامل نجد أن تكامل \\( \\sec^2 x \\) هو \\( \\tan x \\). السبب: لأن مشتقة \\( \\tan x \\) هي \\( \\sec^2 x \\).",
+        "equation_template": "\\int \\sec^2 x\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "tan x",
+            "options": [
+              "tan x",
+              "sec x",
+              "-cot x",
+              "cot x"
+            ],
+            "id": "q_4_3_21_1_s1_i1",
+            "correct_value": "tan x",
+            "allowed_keys": [
+              "tan x",
+              "sec x",
+              "-cot x",
+              "cot x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة التي مشتقتها \\( \\sec^2 x \\) هي \\( \\tan x \\)."
+          }
+        ],
+        "hint": "الدالة التي مشتقتها \\( \\sec^2 x \\) هي \\( \\tan x \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_3_21_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعرف تكامل \\( \\sec^2 x \\). الطريقة: من جدول التكامل نجد أن تكامل \\( \\sec^2 x \\) هو \\( \\tan x \\). السبب: لأن مشتقة \\( \\tan x \\) هي \\( \\sec^2 x \\).",
+        "think": "الدالة التي مشتقتها \\( \\sec^2 x \\) هي \\( \\tan x \\).",
+        "html_structure": "\\int \\sec^2 x\\,dx = {q_4_3_21_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نفهم لماذا لا نضع \\( c \\) في التكامل المحدد. الطريقة: إذا وضعنا \\( c \\) فسيظهر مرة موجبة عند الحد الأعلى ومرة سالبة عند الحد الأدنى فيحذف نفسه. السبب: \\( c - c = 0 \\).",
+        "equation_template": "(F(b)+c) - (F(a)+c) = F(b) - F(a) + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "c",
+              "2c",
+              "1"
+            ],
+            "id": "q_4_3_21_1_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "c",
+              "2c",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( c - c \\)."
+          }
+        ],
+        "hint": "احسب \\( c - c \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_21_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نفهم لماذا لا نضع \\( c \\) في التكامل المحدد. الطريقة: إذا وضعنا \\( c \\) فسيظهر مرة موجبة عند الحد الأعلى ومرة سالبة عند الحد الأدنى فيحذف نفسه. السبب: \\( c - c = 0 \\).",
+        "think": "احسب \\( c - c \\).",
+        "html_structure": "(F(b)+c) - (F(a)+c) = F(b) - F(a) + {q_4_3_21_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نكتب صيغة التكامل المحدد بأرقام سؤالنا. الطريقة: نعوض الحد الأعلى \\( \\frac{\\pi}{4} \\) ثم نطرح تعويض الحد الأدنى. السبب: التكامل المحدد يساوي \\( F(b)-F(a) \\).",
+        "equation_template": "\\left[\\tan x\\right]_{0}^{\\pi/4} = \\tan\\left(\\frac{\\pi}{4}\\right) - \\tan({input_1})",
+        "inputs": [
+          {
+            "input_id": "step3_lo",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "π/4",
+              "1",
+              "π"
+            ],
+            "id": "q_4_3_21_1_s3_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "π/4",
+              "1",
+              "π"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأدنى للتكامل مكتوب أسفل علامة التكامل في السؤال وهو \\( 0 \\)."
+          }
+        ],
+        "hint": "الحد الأدنى للتكامل مكتوب أسفل علامة التكامل في السؤال وهو \\( 0 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_21_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نكتب صيغة التكامل المحدد بأرقام سؤالنا. الطريقة: نعوض الحد الأعلى \\( \\frac{\\pi}{4} \\) ثم نطرح تعويض الحد الأدنى. السبب: التكامل المحدد يساوي \\( F(b)-F(a) \\).",
+        "think": "الحد الأدنى للتكامل مكتوب أسفل علامة التكامل في السؤال وهو \\( 0 \\).",
+        "html_structure": "\\left[\\tan x\\right]_{0}^{\\pi/4} = \\tan\\left(\\frac{\\pi}{4}\\right) - \\tan({q_4_3_21_1_s3_i1})"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحول الزاوية من راديان إلى درجات. الطريقة: \\( \\pi \\) تساوي \\( 180^\\circ \\) فنقسم \\( 180 \\) على \\( 4 \\). السبب: قيم النسب المثلثية نحفظها بالدرجات.",
+        "equation_template": "\\frac{\\pi}{4} = {input_1}^\\circ",
+        "inputs": [
+          {
+            "input_id": "step4_deg",
+            "correct_answer": "45",
+            "options": [
+              "45",
+              "90",
+              "30",
+              "60"
+            ],
+            "id": "q_4_3_21_1_s4_i1",
+            "correct_value": "45",
+            "allowed_keys": [
+              "45",
+              "90",
+              "30",
+              "60"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( 180 \\div 4 \\)."
+          }
+        ],
+        "hint": "احسب \\( 180 \\div 4 \\).",
+        "related_topics": [
+          "الراديان والدرجات"
+        ],
+        "step_id": "math345_4_3_21_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحول الزاوية من راديان إلى درجات. الطريقة: \\( \\pi \\) تساوي \\( 180^\\circ \\) فنقسم \\( 180 \\) على \\( 4 \\). السبب: قيم النسب المثلثية نحفظها بالدرجات.",
+        "think": "احسب \\( 180 \\div 4 \\).",
+        "html_structure": "\\frac{\\pi}{4} = {q_4_3_21_1_s4_i1}^\\circ"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب \\( \\tan 45^\\circ \\). الطريقة: ظل الزاوية هو الجيب مقسوماً على جيب التمام، وعند \\( 45^\\circ \\) كلاهما \\( \\frac{\\sqrt{2}}{2} \\) فالقسمة تعطي \\( 1 \\). السبب: عندما يتساوى البسط والمقام يكون الناتج \\( 1 \\).",
+        "equation_template": "\\tan 45^\\circ = \\frac{\\sqrt{2}/2}{\\sqrt{2}/2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_t1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "√2",
+              "1/2"
+            ],
+            "id": "q_4_3_21_1_s5_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "√2",
+              "1/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم عدداً على نفسه."
+          }
+        ],
+        "hint": "اقسم عدداً على نفسه.",
+        "related_topics": [
+          "قيم النسب المثلثية"
+        ],
+        "step_id": "math345_4_3_21_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب \\( \\tan 45^\\circ \\). الطريقة: ظل الزاوية هو الجيب مقسوماً على جيب التمام، وعند \\( 45^\\circ \\) كلاهما \\( \\frac{\\sqrt{2}}{2} \\) فالقسمة تعطي \\( 1 \\). السبب: عندما يتساوى البسط والمقام يكون الناتج \\( 1 \\).",
+        "think": "اقسم عدداً على نفسه.",
+        "html_structure": "\\tan 45^\\circ = \\frac{\\sqrt{2}/2}{\\sqrt{2}/2} = {q_4_3_21_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( \\tan 0 \\). الطريقة: \\( \\sin 0 = 0 \\) و \\( \\cos 0 = 1 \\) فنقسم \\( 0 \\) على \\( 1 \\). السبب: لنحصل على قيمة الدالة عند الحد الأدنى.",
+        "equation_template": "\\tan 0 = \\frac{0}{1} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_t0",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "-1",
+              "غير معرف"
+            ],
+            "id": "q_4_3_21_1_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "-1",
+              "غير معرف"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم الصفر على \\( 1 \\)."
+          }
+        ],
+        "hint": "اقسم الصفر على \\( 1 \\).",
+        "related_topics": [
+          "قيم النسب المثلثية"
+        ],
+        "step_id": "math345_4_3_21_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( \\tan 0 \\). الطريقة: \\( \\sin 0 = 0 \\) و \\( \\cos 0 = 1 \\) فنقسم \\( 0 \\) على \\( 1 \\). السبب: لنحصل على قيمة الدالة عند الحد الأدنى.",
+        "think": "اقسم الصفر على \\( 1 \\).",
+        "html_structure": "\\tan 0 = \\frac{0}{1} = {q_4_3_21_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجري الطرح النهائي. الطريقة: نطرح قيمة الحد الأدنى من قيمة الحد الأعلى: \\( 1-0 \\). السبب: التكامل المحدد هو \\( F(b)-F(a) \\).",
+        "equation_template": "1 - 0 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_res",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_3_21_1_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 0 \\) من \\( 1 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 0 \\) من \\( 1 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_21_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجري الطرح النهائي. الطريقة: نطرح قيمة الحد الأدنى من قيمة الحد الأعلى: \\( 1-0 \\). السبب: التكامل المحدد هو \\( F(b)-F(a) \\).",
+        "think": "اطرح \\( 0 \\) من \\( 1 \\).",
+        "html_structure": "1 - 0 = {q_4_3_21_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق \\( \\tan x \\) فنحصل على الدالة التي كاملناها. السبب: التكامل والتفاضل عمليتان متعاكستان.",
+        "equation_template": "\\frac{d}{dx}\\tan x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_v",
+            "correct_answer": "sec^2 x",
+            "options": [
+              "sec^2 x",
+              "-csc^2 x",
+              "sec x tan x",
+              "cos x"
+            ],
+            "id": "q_4_3_21_1_s8_i1",
+            "correct_value": "sec^2 x",
+            "allowed_keys": [
+              "sec^2 x",
+              "-csc^2 x",
+              "sec x tan x",
+              "cos x"
+            ],
+            "label": "القيمة 1",
+            "hint": "من جدول مشتقات الدوال المثلثية مشتقة \\( \\tan x \\)."
+          }
+        ],
+        "hint": "من جدول مشتقات الدوال المثلثية مشتقة \\( \\tan x \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_3_21_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق \\( \\tan x \\) فنحصل على الدالة التي كاملناها. السبب: التكامل والتفاضل عمليتان متعاكستان.",
+        "think": "من جدول مشتقات الدوال المثلثية مشتقة \\( \\tan x \\).",
+        "html_structure": "\\frac{d}{dx}\\tan x = {q_4_3_21_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q7_p21",
+    "page_number": 21,
+    "question_number": "7",
+    "question_text": "جد قيمة \\( \\int_{0}^{\\pi/3} \\sec x\\tan x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png"
+    ],
+    "full_model_solution": "[sec x] من 0 إلى π/3 = sec(π/3) − sec 0 = 2 − 1 = 1",
+    "source_file": "رياضيلت 4/part2_page_021_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 21,
+      "pdf_page_number": 161
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png",
+    "title": "جد قيمة \\( \\int_{0}^{\\pi/3} \\sec x\\tan x\\,dx \\)",
+    "number": "7",
+    "model_solution": "[sec x] من 0 إلى π/3 = sec(π/3) − sec 0 = 2 − 1 = 1",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نعرف تكامل \\( \\sec x \\tan x \\). الطريقة: من جدول التكامل: تكامل \\( \\sec x \\tan x \\) هو \\( \\sec x \\). السبب: لأن مشتقة \\( \\sec x \\) هي \\( \\sec x \\tan x \\).",
+        "equation_template": "\\int \\sec x\\tan x\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "sec x",
+            "options": [
+              "sec x",
+              "tan x",
+              "-csc x",
+              "sec^2 x"
+            ],
+            "id": "q_4_3_21_2_s1_i1",
+            "correct_value": "sec x",
+            "allowed_keys": [
+              "sec x",
+              "tan x",
+              "-csc x",
+              "sec^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة التي مشتقتها \\( \\sec x \\tan x \\) هي \\( \\sec x \\)."
+          }
+        ],
+        "hint": "الدالة التي مشتقتها \\( \\sec x \\tan x \\) هي \\( \\sec x \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_3_21_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نعرف تكامل \\( \\sec x \\tan x \\). الطريقة: من جدول التكامل: تكامل \\( \\sec x \\tan x \\) هو \\( \\sec x \\). السبب: لأن مشتقة \\( \\sec x \\) هي \\( \\sec x \\tan x \\).",
+        "think": "الدالة التي مشتقتها \\( \\sec x \\tan x \\) هي \\( \\sec x \\).",
+        "html_structure": "\\int \\sec x\\tan x\\,dx = {q_4_3_21_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكتب صيغة التكامل المحدد. الطريقة: نعوض الحد الأعلى \\( \\frac{\\pi}{3} \\) ثم نطرح تعويض الحد الأدنى. السبب: التكامل المحدد يساوي \\( F(b)-F(a) \\) (ولا نحتاج \\( c \\) لأنه يحذف نفسه).",
+        "equation_template": "\\left[\\sec x\\right]_{0}^{\\pi/3} = \\sec\\left(\\frac{\\pi}{3}\\right) - \\sec({input_1})",
+        "inputs": [
+          {
+            "input_id": "step2_lo",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "π/3",
+              "1",
+              "π"
+            ],
+            "id": "q_4_3_21_2_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "π/3",
+              "1",
+              "π"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأدنى مكتوب أسفل علامة التكامل وهو \\( 0 \\)."
+          }
+        ],
+        "hint": "الحد الأدنى مكتوب أسفل علامة التكامل وهو \\( 0 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_21_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكتب صيغة التكامل المحدد. الطريقة: نعوض الحد الأعلى \\( \\frac{\\pi}{3} \\) ثم نطرح تعويض الحد الأدنى. السبب: التكامل المحدد يساوي \\( F(b)-F(a) \\) (ولا نحتاج \\( c \\) لأنه يحذف نفسه).",
+        "think": "الحد الأدنى مكتوب أسفل علامة التكامل وهو \\( 0 \\).",
+        "html_structure": "\\left[\\sec x\\right]_{0}^{\\pi/3} = \\sec\\left(\\frac{\\pi}{3}\\right) - \\sec({q_4_3_21_2_s2_i1})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحول الزاوية إلى درجات. الطريقة: \\( \\pi=180^\\circ \\) فنقسم \\( 180 \\) على \\( 3 \\). السبب: لحفظ قيم النسب المثلثية بالدرجات.",
+        "equation_template": "\\frac{\\pi}{3} = {input_1}^\\circ",
+        "inputs": [
+          {
+            "input_id": "step3_deg",
+            "correct_answer": "60",
+            "options": [
+              "60",
+              "30",
+              "45",
+              "90"
+            ],
+            "id": "q_4_3_21_2_s3_i1",
+            "correct_value": "60",
+            "allowed_keys": [
+              "60",
+              "30",
+              "45",
+              "90"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( 180 \\div 3 \\)."
+          }
+        ],
+        "hint": "احسب \\( 180 \\div 3 \\).",
+        "related_topics": [
+          "الراديان والدرجات"
+        ],
+        "step_id": "math345_4_3_21_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحول الزاوية إلى درجات. الطريقة: \\( \\pi=180^\\circ \\) فنقسم \\( 180 \\) على \\( 3 \\). السبب: لحفظ قيم النسب المثلثية بالدرجات.",
+        "think": "احسب \\( 180 \\div 3 \\).",
+        "html_structure": "\\frac{\\pi}{3} = {q_4_3_21_2_s3_i1}^\\circ"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب القاطع بدلالة جيب التمام. الطريقة: \\( \\sec x = \\frac{1}{\\cos x} \\) و \\( \\cos 60^\\circ = \\frac{1}{2} \\). السبب: القاطع هو مقلوب جيب التمام.",
+        "equation_template": "\\sec 60^\\circ = \\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step4_c",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "√3/2",
+              "√2/2",
+              "1"
+            ],
+            "id": "q_4_3_21_2_s4_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "√3/2",
+              "√2/2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمة \\( \\cos 60^\\circ \\) هي نصف."
+          }
+        ],
+        "hint": "قيمة \\( \\cos 60^\\circ \\) هي نصف.",
+        "related_topics": [
+          "قيم النسب المثلثية"
+        ],
+        "step_id": "math345_4_3_21_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب القاطع بدلالة جيب التمام. الطريقة: \\( \\sec x = \\frac{1}{\\cos x} \\) و \\( \\cos 60^\\circ = \\frac{1}{2} \\). السبب: القاطع هو مقلوب جيب التمام.",
+        "think": "قيمة \\( \\cos 60^\\circ \\) هي نصف.",
+        "html_structure": "\\sec 60^\\circ = \\frac{1}{{q_4_3_21_2_s4_i1}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب قيمة القاطع. الطريقة: \\( \\frac{1}{\\frac{1}{2}} \\) يعني \\( 1 \\) مضروبة في مقلوب النصف أي \\( 2 \\). السبب: القسمة على كسر تعني الضرب في مقلوبه.",
+        "equation_template": "\\frac{1}{1/2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_s",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1/2",
+              "1",
+              "3"
+            ],
+            "id": "q_4_3_21_2_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1/2",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "مقلوب \\( \\frac{1}{2} \\) هو \\( 2 \\)."
+          }
+        ],
+        "hint": "مقلوب \\( \\frac{1}{2} \\) هو \\( 2 \\).",
+        "related_topics": [
+          "القسمة على كسر"
+        ],
+        "step_id": "math345_4_3_21_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب قيمة القاطع. الطريقة: \\( \\frac{1}{\\frac{1}{2}} \\) يعني \\( 1 \\) مضروبة في مقلوب النصف أي \\( 2 \\). السبب: القسمة على كسر تعني الضرب في مقلوبه.",
+        "think": "مقلوب \\( \\frac{1}{2} \\) هو \\( 2 \\).",
+        "html_structure": "\\frac{1}{1/2} = {q_4_3_21_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب \\( \\sec 0 \\). الطريقة: \\( \\cos 0 = 1 \\) فيكون \\( \\sec 0 = \\frac{1}{1} = 1 \\). السبب: لنحصل على قيمة الدالة عند الحد الأدنى.",
+        "equation_template": "\\sec 0 = \\frac{1}{\\cos 0} = \\frac{1}{{input_1}} = 1",
+        "inputs": [
+          {
+            "input_id": "step6_s0",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "id": "q_4_3_21_2_s6_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "-1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمة \\( \\cos 0 \\) هي \\( 1 \\)."
+          }
+        ],
+        "hint": "قيمة \\( \\cos 0 \\) هي \\( 1 \\).",
+        "related_topics": [
+          "قيم النسب المثلثية"
+        ],
+        "step_id": "math345_4_3_21_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب \\( \\sec 0 \\). الطريقة: \\( \\cos 0 = 1 \\) فيكون \\( \\sec 0 = \\frac{1}{1} = 1 \\). السبب: لنحصل على قيمة الدالة عند الحد الأدنى.",
+        "think": "قيمة \\( \\cos 0 \\) هي \\( 1 \\).",
+        "html_structure": "\\sec 0 = \\frac{1}{\\cos 0} = \\frac{1}{{q_4_3_21_2_s6_i1}} = 1"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجري الطرح النهائي. الطريقة: نطرح قيمة الحد الأدنى \\( 1 \\) من قيمة الحد الأعلى \\( 2 \\). السبب: التكامل المحدد هو \\( F(b)-F(a) \\).",
+        "equation_template": "2 - 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_res",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "id": "q_4_3_21_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 1 \\) من \\( 2 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 1 \\) من \\( 2 \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_21_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجري الطرح النهائي. الطريقة: نطرح قيمة الحد الأدنى \\( 1 \\) من قيمة الحد الأعلى \\( 2 \\). السبب: التكامل المحدد هو \\( F(b)-F(a) \\).",
+        "think": "اطرح \\( 1 \\) من \\( 2 \\).",
+        "html_structure": "2 - 1 = {q_4_3_21_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق \\( \\sec x \\) فنحصل على الدالة التي كاملناها. السبب: التكامل والتفاضل عمليتان متعاكستان.",
+        "equation_template": "\\frac{d}{dx}\\sec x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_v",
+            "correct_answer": "sec x tan x",
+            "options": [
+              "sec x tan x",
+              "sec^2 x",
+              "-csc x cot x",
+              "tan x"
+            ],
+            "id": "q_4_3_21_2_s8_i1",
+            "correct_value": "sec x tan x",
+            "allowed_keys": [
+              "sec x tan x",
+              "sec^2 x",
+              "-csc x cot x",
+              "tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "من جدول مشتقات الدوال المثلثية مشتقة \\( \\sec x \\)."
+          }
+        ],
+        "hint": "من جدول مشتقات الدوال المثلثية مشتقة \\( \\sec x \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_3_21_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق \\( \\sec x \\) فنحصل على الدالة التي كاملناها. السبب: التكامل والتفاضل عمليتان متعاكستان.",
+        "think": "من جدول مشتقات الدوال المثلثية مشتقة \\( \\sec x \\).",
+        "html_structure": "\\frac{d}{dx}\\sec x = {q_4_3_21_2_s8_i1}"
+      }
+    ]
+  }
+]

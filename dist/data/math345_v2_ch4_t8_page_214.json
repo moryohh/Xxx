@@ -1,0 +1,453 @@
+[
+  {
+    "id_number": "q1_p214",
+    "page_number": 214,
+    "question_number": "سؤال",
+    "question_text": "أوجد قيمة تقريبية لمساحة المنطقة \\( A \\) حيث \\( A=\\{(x,y): 1\\le x\\le4,\\ y=x^2+1\\} \\)",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_074_diag_1_drawing_byany.png"
+    ],
+    "full_model_solution": "f متزايدة . عرض=3 . A₁=3×f(1)=3×2=6 ، Ā₁=3×f(4)=3×17=51 . A=(6+51)/2=28.5 unit²",
+    "source_file": "رياضيلت 4/page_074.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 74,
+      "pdf_page_number": 214,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_074_diag_1_drawing_byany.png",
+    "title": "أوجد قيمة تقريبية لمساحة المنطقة \\( A \\) حيث \\( A=\\{(x,y): 1\\le x\\le4,\\ y=x^2+1\\} \\)",
+    "number": "سؤال",
+    "model_solution": "f متزايدة . عرض=3 . A₁=3×f(1)=3×2=6 ، Ā₁=3×f(4)=3×17=51 . A=(6+51)/2=28.5 unit²",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نبدأ بدراسة الدالة \\( y=x^2+1 \\) على \\( [1,4] \\). الهدف: معرفة اتجاهها. الطريقة: المشتقة \\( 2x \\) موجبة على الفترة. السبب: متزايدة فأصغر ارتفاع عند \\( x=1 \\) وأكبر ارتفاع عند \\( x=4 \\).",
+        "equation_template": "f'(x) = {input_1}x > 0",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_8_214_1_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( 1 \\) صفر."
+          }
+        ],
+        "hint": "مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( 1 \\) صفر.",
+        "related_topics": [
+          "الدالة المتزايدة"
+        ],
+        "step_id": "math345_4_8_214_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نبدأ بدراسة الدالة \\( y=x^2+1 \\) على \\( [1,4] \\). الهدف: معرفة اتجاهها. الطريقة: المشتقة \\( 2x \\) موجبة على الفترة. السبب: متزايدة فأصغر ارتفاع عند \\( x=1 \\) وأكبر ارتفاع عند \\( x=4 \\).",
+        "think": "مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( 1 \\) صفر.",
+        "html_structure": "f'(x) = {q_4_8_214_1_s1_i1}x > 0"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نحسب عرض المستطيلين. الهدف: طول الفترة. الطريقة: \\( 4-1 \\). السبب: كلاهما يمتد على كل الفترة.",
+        "equation_template": "\\text{العرض} = 4 - 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "3",
+            "options": [
+              "4",
+              "2",
+              "5",
+              "3"
+            ],
+            "id": "q_4_8_214_1_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "4",
+              "2",
+              "5",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 1 \\) من \\( 4 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 1 \\) من \\( 4 \\).",
+        "related_topics": [
+          "طول الفترة"
+        ],
+        "step_id": "math345_4_8_214_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نحسب عرض المستطيلين. الهدف: طول الفترة. الطريقة: \\( 4-1 \\). السبب: كلاهما يمتد على كل الفترة.",
+        "think": "اطرح \\( 1 \\) من \\( 4 \\).",
+        "html_structure": "\\text{العرض} = 4 - 1 = {q_4_8_214_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نحسب ارتفاع المستطيل الداخلي (الأصغر). الطريقة: \\( f(1)=1^2+1 \\).",
+        "equation_template": "f(1) = 1^2 + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "5"
+            ],
+            "id": "q_4_8_214_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1\\times1+1 \\)."
+          }
+        ],
+        "hint": "\\( 1\\times1+1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_214_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نحسب ارتفاع المستطيل الداخلي (الأصغر). الطريقة: \\( f(1)=1^2+1 \\).",
+        "think": "\\( 1\\times1+1 \\).",
+        "html_structure": "f(1) = 1^2 + 1 = {q_4_8_214_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نحسب ارتفاع المستطيل الخارجي (الأكبر). الطريقة: \\( f(4)=4^2+1 \\).",
+        "equation_template": "f(4) = 4^2 + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "17",
+            "options": [
+              "15",
+              "16",
+              "17",
+              "9"
+            ],
+            "id": "q_4_8_214_1_s4_i1",
+            "correct_value": "17",
+            "allowed_keys": [
+              "15",
+              "16",
+              "17",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 4\\times4=16 \\) ثم أضف \\( 1 \\)."
+          }
+        ],
+        "hint": "\\( 4\\times4=16 \\) ثم أضف \\( 1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_214_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نحسب ارتفاع المستطيل الخارجي (الأكبر). الطريقة: \\( f(4)=4^2+1 \\).",
+        "think": "\\( 4\\times4=16 \\) ثم أضف \\( 1 \\).",
+        "html_structure": "f(4) = 4^2 + 1 = {q_4_8_214_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب مساحة المستطيل الداخلي \\( A_1 \\) (أقل من المساحة الحقيقية). الطريقة: العرض \\( \\times \\) الارتفاع.",
+        "equation_template": "A_1 = {input_1} \\times {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "id": "q_4_8_214_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "4",
+              "3",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 3\\times2 \\)."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "17"
+            ],
+            "id": "q_4_8_214_1_s5_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "17"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( 3\\times2 \\)."
+          },
+          {
+            "input_id": "step5_in3",
+            "correct_answer": "6",
+            "options": [
+              "9",
+              "8",
+              "6",
+              "5"
+            ],
+            "id": "q_4_8_214_1_s5_i3",
+            "correct_value": "6",
+            "allowed_keys": [
+              "9",
+              "8",
+              "6",
+              "5"
+            ],
+            "label": "القيمة 3",
+            "hint": "اضرب \\( 3\\times2 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 3\\times2 \\).",
+        "related_topics": [
+          "مساحة المستطيل"
+        ],
+        "step_id": "math345_4_8_214_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب مساحة المستطيل الداخلي \\( A_1 \\) (أقل من المساحة الحقيقية). الطريقة: العرض \\( \\times \\) الارتفاع.",
+        "think": "اضرب \\( 3\\times2 \\).",
+        "html_structure": "A_1 = {q_4_8_214_1_s5_i1} \\times {q_4_8_214_1_s5_i2} = {q_4_8_214_1_s5_i3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نحسب مساحة المستطيل الخارجي \\( \\bar{A_1} \\) (أكبر من المساحة الحقيقية).",
+        "equation_template": "\\bar{A_1} = {input_1} \\times {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "id": "q_4_8_214_1_s6_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 3\\times17 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "17",
+            "options": [
+              "17",
+              "9",
+              "16",
+              "2"
+            ],
+            "id": "q_4_8_214_1_s6_i2",
+            "correct_value": "17",
+            "allowed_keys": [
+              "17",
+              "9",
+              "16",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( 3\\times17 \\)."
+          },
+          {
+            "input_id": "step6_in3",
+            "correct_answer": "51",
+            "options": [
+              "34",
+              "68",
+              "51",
+              "48"
+            ],
+            "id": "q_4_8_214_1_s6_i3",
+            "correct_value": "51",
+            "allowed_keys": [
+              "34",
+              "68",
+              "51",
+              "48"
+            ],
+            "label": "القيمة 3",
+            "hint": "اضرب \\( 3\\times17 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 3\\times17 \\).",
+        "related_topics": [
+          "مساحة المستطيل"
+        ],
+        "step_id": "math345_4_8_214_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نحسب مساحة المستطيل الخارجي \\( \\bar{A_1} \\) (أكبر من المساحة الحقيقية).",
+        "think": "اضرب \\( 3\\times17 \\).",
+        "html_structure": "\\bar{A_1} = {q_4_8_214_1_s6_i1} \\times {q_4_8_214_1_s6_i2} = {q_4_8_214_1_s6_i3}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نجمع المساحتين. السبب: لأخذ المتوسط بعد ذلك.",
+        "equation_template": "A_1 + \\bar{A_1} = 6 + 51 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "57",
+            "options": [
+              "45",
+              "47",
+              "59",
+              "57"
+            ],
+            "id": "q_4_8_214_1_s7_i1",
+            "correct_value": "57",
+            "allowed_keys": [
+              "45",
+              "47",
+              "59",
+              "57"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 6+51 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 6+51 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_4_8_214_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نجمع المساحتين. السبب: لأخذ المتوسط بعد ذلك.",
+        "think": "اجمع \\( 6+51 \\).",
+        "html_structure": "A_1 + \\bar{A_1} = 6 + 51 = {q_4_8_214_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "نأخذ المتوسط. الهدف: \\( A=\\frac{A_1+\\bar{A_1}}{2} \\). السبب: المساحة الحقيقية بين المساحتين فنقدّرها بمنتصفهما.",
+        "equation_template": "A = \\frac{{input_1}}{2} = {input_2} \\text{ unit}^2",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "57",
+            "options": [
+              "51",
+              "57",
+              "114",
+              "6"
+            ],
+            "id": "q_4_8_214_1_s8_i1",
+            "correct_value": "57",
+            "allowed_keys": [
+              "51",
+              "57",
+              "114",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 57 \\) على \\( 2 \\)."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "28.5",
+            "options": [
+              "27",
+              "29",
+              "28.5",
+              "57"
+            ],
+            "id": "q_4_8_214_1_s8_i2",
+            "correct_value": "28.5",
+            "allowed_keys": [
+              "27",
+              "29",
+              "28.5",
+              "57"
+            ],
+            "label": "القيمة 2",
+            "hint": "اقسم \\( 57 \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "اقسم \\( 57 \\) على \\( 2 \\).",
+        "related_topics": [
+          "المساحة التقريبية"
+        ],
+        "step_id": "math345_4_8_214_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "نأخذ المتوسط. الهدف: \\( A=\\frac{A_1+\\bar{A_1}}{2} \\). السبب: المساحة الحقيقية بين المساحتين فنقدّرها بمنتصفهما.",
+        "think": "اقسم \\( 57 \\) على \\( 2 \\).",
+        "html_structure": "A = \\frac{{q_4_8_214_1_s8_i1}}{2} = {q_4_8_214_1_s8_i2} \\text{ unit}^2"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "مراجعة: المساحة الدقيقة \\( =\\left[\\frac{x^3}{3}+x\\right]_1^4 \\) فنقارنها بالتقريب.",
+        "equation_template": "\\frac{64 - 1}{3} + (4 - 1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "24",
+            "options": [
+              "21",
+              "24",
+              "27",
+              "28.5"
+            ],
+            "id": "q_4_8_214_1_s9_i1",
+            "correct_value": "24",
+            "allowed_keys": [
+              "21",
+              "24",
+              "27",
+              "28.5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{63}{3}=21 \\) ثم أضف \\( 3 \\)."
+          }
+        ],
+        "hint": "\\( \\frac{63}{3}=21 \\) ثم أضف \\( 3 \\).",
+        "related_topics": [
+          "مراجعة النتيجة"
+        ],
+        "step_id": "math345_4_8_214_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "مراجعة: المساحة الدقيقة \\( =\\left[\\frac{x^3}{3}+x\\right]_1^4 \\) فنقارنها بالتقريب.",
+        "think": "\\( \\frac{63}{3}=21 \\) ثم أضف \\( 3 \\).",
+        "html_structure": "\\frac{64 - 1}{3} + (4 - 1) = {q_4_8_214_1_s9_i1}"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1103 @@
+[
+  {
+    "id_number": "q1_p4",
+    "page_number": 4,
+    "question_number": "1",
+    "question_text": "جد \\( \\int (x^2+1)^3 \\cdot 2x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png"
+    ],
+    "full_model_solution": "(x²+1)⁴/4 + c",
+    "source_file": "رياضيلت 4/part2_page_004_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 4,
+      "pdf_page_number": 144
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png",
+    "title": "جد \\( \\int (x^2+1)^3 \\cdot 2x\\,dx \\)",
+    "number": "1",
+    "model_solution": "(x²+1)⁴/4 + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد القوس. الطريقة: ننظر إلى القوس المرفوع للأس \\( 3 \\) فنجد أن الداخل هو \\( x^2+1 \\). السبب: هذا هو القوس الذي سنطبق عليه القاعدة.",
+        "equation_template": "u = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_u",
+            "correct_answer": "x^2+1",
+            "options": [
+              "x^2+1",
+              "x^2-1",
+              "x+1",
+              "2x"
+            ],
+            "id": "q_4_2_4_1_s1_i1",
+            "correct_value": "x^2+1",
+            "allowed_keys": [
+              "x^2+1",
+              "x^2-1",
+              "x+1",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ ما داخل القوس المرفوع للأس \\( 3 \\)."
+          }
+        ],
+        "hint": "انسخ ما داخل القوس المرفوع للأس \\( 3 \\).",
+        "related_topics": [
+          "تكامل قوس مرفوع لأس"
+        ],
+        "step_id": "math345_4_2_4_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد القوس. الطريقة: ننظر إلى القوس المرفوع للأس \\( 3 \\) فنجد أن الداخل هو \\( x^2+1 \\). السبب: هذا هو القوس الذي سنطبق عليه القاعدة.",
+        "think": "انسخ ما داخل القوس المرفوع للأس \\( 3 \\).",
+        "html_structure": "u = {q_4_2_4_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد أس القوس. الطريقة: العدد الصغير فوق القوس هو \\( 3 \\). السبب: سنزيده بواحد ثم نقسم عليه.",
+        "equation_template": "n = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_n",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_4_1_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الصغير أعلى القوس هو \\( 3 \\)."
+          }
+        ],
+        "hint": "الرقم الصغير أعلى القوس هو \\( 3 \\).",
+        "related_topics": [
+          "أس القوس"
+        ],
+        "step_id": "math345_4_2_4_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد أس القوس. الطريقة: العدد الصغير فوق القوس هو \\( 3 \\). السبب: سنزيده بواحد ثم نقسم عليه.",
+        "think": "الرقم الصغير أعلى القوس هو \\( 3 \\).",
+        "html_structure": "n = {q_4_2_4_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق ما داخل القوس. الطريقة: مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( 1 \\) هي صفر فيبقى \\( 2x \\). السبب: يجب أن نعرف هل المشتقة موجودة خارج القوس.",
+        "equation_template": "(x^2+1)' = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_4_1_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 2 \\) أمام \\( x \\) وانقص الأس بواحد، والعدد \\( 1 \\) يختفي."
+          }
+        ],
+        "hint": "أنزل الأس \\( 2 \\) أمام \\( x \\) وانقص الأس بواحد، والعدد \\( 1 \\) يختفي.",
+        "related_topics": [
+          "اشتقاق القوى"
+        ],
+        "step_id": "math345_4_2_4_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق ما داخل القوس. الطريقة: مشتقة \\( x^2 \\) هي \\( 2x \\) ومشتقة \\( 1 \\) هي صفر فيبقى \\( 2x \\). السبب: يجب أن نعرف هل المشتقة موجودة خارج القوس.",
+        "think": "أنزل الأس \\( 2 \\) أمام \\( x \\) وانقص الأس بواحد، والعدد \\( 1 \\) يختفي.",
+        "html_structure": "(x^2+1)' = {q_4_2_4_1_s3_i1}x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نقارن المشتقة بما هو مضروب خارج القوس. الطريقة: خارج القوس نجد العامل \\( 2x \\) وهو يطابق المشتقة التي وجدناها. السبب: لأن المشتقة موجودة بالفعل فلا نحتاج لضرب وقسمة.",
+        "equation_template": "(x^2+1)' = {input_1} = 2x",
+        "inputs": [
+          {
+            "input_id": "step4_m",
+            "correct_answer": "2x",
+            "options": [
+              "2x",
+              "x",
+              "2",
+              "x^2"
+            ],
+            "id": "q_4_2_4_1_s4_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "2",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب المشتقة كاملة التي حسبتها في الخطوة السابقة."
+          }
+        ],
+        "hint": "اكتب المشتقة كاملة التي حسبتها في الخطوة السابقة.",
+        "related_topics": [
+          "توفر المشتقة"
+        ],
+        "step_id": "math345_4_2_4_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نقارن المشتقة بما هو مضروب خارج القوس. الطريقة: خارج القوس نجد العامل \\( 2x \\) وهو يطابق المشتقة التي وجدناها. السبب: لأن المشتقة موجودة بالفعل فلا نحتاج لضرب وقسمة.",
+        "think": "اكتب المشتقة كاملة التي حسبتها في الخطوة السابقة.",
+        "html_structure": "(x^2+1)' = {q_4_2_4_1_s4_i1} = 2x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضيف واحداً للأس. الطريقة: نهمل المشتقة \\( 2x \\) ونحسب \\( 3+1 \\). السبب: هذا ما تنص عليه القاعدة عندما تكون المشتقة موجودة.",
+        "equation_template": "n + 1 = 3 + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_n1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "id": "q_4_2_4_1_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 3 + 1 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 3 + 1 \\).",
+        "related_topics": [
+          "قاعدة القوس"
+        ],
+        "step_id": "math345_4_2_4_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضيف واحداً للأس. الطريقة: نهمل المشتقة \\( 2x \\) ونحسب \\( 3+1 \\). السبب: هذا ما تنص عليه القاعدة عندما تكون المشتقة موجودة.",
+        "think": "اجمع \\( 3 + 1 \\).",
+        "html_structure": "n + 1 = 3 + 1 = {q_4_2_4_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقسم على الأس الجديد. الطريقة: نكتب القوس مرفوعاً للأس الجديد \\( 4 \\) ونقسم على نفس الرقم \\( 4 \\). السبب: هكذا نرجع للدالة الأصلية عند الاشتقاق.",
+        "equation_template": "\\frac{(x^2+1)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step6_top",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_4_2_4_1_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 4 \\) في الأس وكرره في المقام."
+          },
+          {
+            "input_id": "step6_bot",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_4_2_4_1_s6_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 4 \\) في الأس وكرره في المقام."
+          }
+        ],
+        "hint": "ضع \\( 4 \\) في الأس وكرره في المقام.",
+        "related_topics": [
+          "القسمة على الأس الجديد"
+        ],
+        "step_id": "math345_4_2_4_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقسم على الأس الجديد. الطريقة: نكتب القوس مرفوعاً للأس الجديد \\( 4 \\) ونقسم على نفس الرقم \\( 4 \\). السبب: هكذا نرجع للدالة الأصلية عند الاشتقاق.",
+        "think": "ضع \\( 4 \\) في الأس وكرره في المقام.",
+        "html_structure": "\\frac{(x^2+1)^{{q_4_2_4_1_s6_i1}}}{{q_4_2_4_1_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: كتابة الجواب النهائي. الطريقة: نضيف ثابت التكامل \\( c \\) للناتج. السبب: التكامل غير المحدد يحتاج \\( c \\).",
+        "equation_template": "\\int (x^2+1)^3\\cdot 2x\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step7_fin",
+            "correct_answer": "(x^2+1)^4/4",
+            "options": [
+              "(x^2+1)^4/4",
+              "(x^2+1)^3/3",
+              "(x^2+1)^4",
+              "(x^2+1)^4/2x"
+            ],
+            "id": "q_4_2_4_1_s7_i1",
+            "correct_value": "(x^2+1)^4/4",
+            "allowed_keys": [
+              "(x^2+1)^4/4",
+              "(x^2+1)^3/3",
+              "(x^2+1)^4",
+              "(x^2+1)^4/2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب الكسر الذي كوّنته في الخطوة السابقة ثم \\( + c \\)."
+          }
+        ],
+        "hint": "اكتب الكسر الذي كوّنته في الخطوة السابقة ثم \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_4_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: كتابة الجواب النهائي. الطريقة: نضيف ثابت التكامل \\( c \\) للناتج. السبب: التكامل غير المحدد يحتاج \\( c \\).",
+        "think": "اكتب الكسر الذي كوّنته في الخطوة السابقة ثم \\( + c \\).",
+        "html_structure": "\\int (x^2+1)^3\\cdot 2x\\,dx = {q_4_2_4_1_s7_i1} + c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{(x^2+1)^4}{4} \\): ننزل الأس \\( 4 \\) ونقسم على \\( 4 \\) ثم نضرب في مشتقة الداخل \\( 2x \\). السبب: إذا رجعنا لـ \\( (x^2+1)^3\\cdot 2x \\) فالجواب صحيح.",
+        "equation_template": "\\frac{{input_1}(x^2+1)^{{input_2}}\\cdot 2x}{4} = (x^2+1)^3\\cdot 2x",
+        "inputs": [
+          {
+            "input_id": "step8_v1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_4_1_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 4 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 3 \\)."
+          },
+          {
+            "input_id": "step8_v2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "4",
+              "2",
+              "5"
+            ],
+            "id": "q_4_2_4_1_s8_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "أنزل الأس \\( 4 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 3 \\)."
+          }
+        ],
+        "hint": "أنزل الأس \\( 4 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 3 \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_4_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{(x^2+1)^4}{4} \\): ننزل الأس \\( 4 \\) ونقسم على \\( 4 \\) ثم نضرب في مشتقة الداخل \\( 2x \\). السبب: إذا رجعنا لـ \\( (x^2+1)^3\\cdot 2x \\) فالجواب صحيح.",
+        "think": "أنزل الأس \\( 4 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 3 \\).",
+        "html_structure": "\\frac{{q_4_2_4_1_s8_i1}(x^2+1)^{{q_4_2_4_1_s8_i2}}\\cdot 2x}{4} = (x^2+1)^3\\cdot 2x"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p4",
+    "page_number": 4,
+    "question_number": "2",
+    "question_text": "جد \\( \\int 3(1+3x)^5\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png"
+    ],
+    "full_model_solution": "(1+3x)⁶/6 + c",
+    "source_file": "رياضيلت 4/part2_page_004_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 4,
+      "pdf_page_number": 144
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png",
+    "title": "جد \\( \\int 3(1+3x)^5\\,dx \\)",
+    "number": "2",
+    "model_solution": "(1+3x)⁶/6 + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد القوس. الطريقة: القوس المرفوع للأس \\( 5 \\) هو \\( 1+3x \\). السبب: سنطبق عليه القاعدة.",
+        "equation_template": "u = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_u",
+            "correct_answer": "1+3x",
+            "options": [
+              "1+3x",
+              "1-3x",
+              "3x",
+              "1+x"
+            ],
+            "id": "q_4_2_4_2_s1_i1",
+            "correct_value": "1+3x",
+            "allowed_keys": [
+              "1+3x",
+              "1-3x",
+              "3x",
+              "1+x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ ما داخل القوس."
+          }
+        ],
+        "hint": "انسخ ما داخل القوس.",
+        "related_topics": [
+          "تكامل قوس مرفوع لأس"
+        ],
+        "step_id": "math345_4_2_4_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد القوس. الطريقة: القوس المرفوع للأس \\( 5 \\) هو \\( 1+3x \\). السبب: سنطبق عليه القاعدة.",
+        "think": "انسخ ما داخل القوس.",
+        "html_structure": "u = {q_4_2_4_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد أس القوس. الطريقة: العدد الصغير فوق القوس هو \\( 5 \\). السبب: سنزيده بواحد.",
+        "equation_template": "n = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_n",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "6",
+              "4",
+              "3"
+            ],
+            "id": "q_4_2_4_2_s2_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "6",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الصغير أعلى القوس هو \\( 5 \\)."
+          }
+        ],
+        "hint": "الرقم الصغير أعلى القوس هو \\( 5 \\).",
+        "related_topics": [
+          "أس القوس"
+        ],
+        "step_id": "math345_4_2_4_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد أس القوس. الطريقة: العدد الصغير فوق القوس هو \\( 5 \\). السبب: سنزيده بواحد.",
+        "think": "الرقم الصغير أعلى القوس هو \\( 5 \\).",
+        "html_structure": "n = {q_4_2_4_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق ما داخل القوس. الطريقة: مشتقة \\( 1 \\) صفر ومشتقة \\( 3x \\) هي \\( 3 \\). السبب: نريد معرفة هل المشتقة موجودة خارج القوس.",
+        "equation_template": "(1+3x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "0",
+              "3x"
+            ],
+            "id": "q_4_2_4_2_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "0",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت \\( 1 \\) يختفي، و \\( 3x \\) مشتقتها العدد الذي أمام \\( x \\)."
+          }
+        ],
+        "hint": "الثابت \\( 1 \\) يختفي، و \\( 3x \\) مشتقتها العدد الذي أمام \\( x \\).",
+        "related_topics": [
+          "اشتقاق كثيرة حدود"
+        ],
+        "step_id": "math345_4_2_4_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق ما داخل القوس. الطريقة: مشتقة \\( 1 \\) صفر ومشتقة \\( 3x \\) هي \\( 3 \\). السبب: نريد معرفة هل المشتقة موجودة خارج القوس.",
+        "think": "الثابت \\( 1 \\) يختفي، و \\( 3x \\) مشتقتها العدد الذي أمام \\( x \\).",
+        "html_structure": "(1+3x)' = {q_4_2_4_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نقارن المشتقة بالعدد المضروب خارج القوس. الطريقة: العدد \\( 3 \\) خارج القوس يطابق المشتقة \\( 3 \\). السبب: المشتقة موجودة فلا حاجة لضرب وقسمة.",
+        "equation_template": "(1+3x)' = {input_1} = 3",
+        "inputs": [
+          {
+            "input_id": "step4_m",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "5",
+              "6"
+            ],
+            "id": "q_4_2_4_2_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "5",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب المشتقة التي وجدتها في الخطوة السابقة."
+          }
+        ],
+        "hint": "اكتب المشتقة التي وجدتها في الخطوة السابقة.",
+        "related_topics": [
+          "توفر المشتقة"
+        ],
+        "step_id": "math345_4_2_4_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نقارن المشتقة بالعدد المضروب خارج القوس. الطريقة: العدد \\( 3 \\) خارج القوس يطابق المشتقة \\( 3 \\). السبب: المشتقة موجودة فلا حاجة لضرب وقسمة.",
+        "think": "اكتب المشتقة التي وجدتها في الخطوة السابقة.",
+        "html_structure": "(1+3x)' = {q_4_2_4_2_s4_i1} = 3"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضيف واحداً للأس. الطريقة: نهمل \\( 3 \\) ونحسب \\( 5+1 \\). السبب: هذا ما تقوله القاعدة.",
+        "equation_template": "n + 1 = 5 + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_n1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "4",
+              "5",
+              "8"
+            ],
+            "id": "q_4_2_4_2_s5_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "4",
+              "5",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 5 + 1 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 5 + 1 \\).",
+        "related_topics": [
+          "قاعدة القوس"
+        ],
+        "step_id": "math345_4_2_4_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضيف واحداً للأس. الطريقة: نهمل \\( 3 \\) ونحسب \\( 5+1 \\). السبب: هذا ما تقوله القاعدة.",
+        "think": "اجمع \\( 5 + 1 \\).",
+        "html_structure": "n + 1 = 5 + 1 = {q_4_2_4_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقسم على الأس الجديد. الطريقة: نكتب \\( (1+3x) \\) بالأس \\( 6 \\) ونقسم على \\( 6 \\). السبب: لنعكس عملية الاشتقاق.",
+        "equation_template": "\\frac{(1+3x)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step6_top",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "5",
+              "3",
+              "4"
+            ],
+            "id": "q_4_2_4_2_s6_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "5",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 6 \\) في الأس وكرره في المقام."
+          },
+          {
+            "input_id": "step6_bot",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "5",
+              "3",
+              "4"
+            ],
+            "id": "q_4_2_4_2_s6_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "5",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 6 \\) في الأس وكرره في المقام."
+          }
+        ],
+        "hint": "ضع \\( 6 \\) في الأس وكرره في المقام.",
+        "related_topics": [
+          "القسمة على الأس الجديد"
+        ],
+        "step_id": "math345_4_2_4_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقسم على الأس الجديد. الطريقة: نكتب \\( (1+3x) \\) بالأس \\( 6 \\) ونقسم على \\( 6 \\). السبب: لنعكس عملية الاشتقاق.",
+        "think": "ضع \\( 6 \\) في الأس وكرره في المقام.",
+        "html_structure": "\\frac{(1+3x)^{{q_4_2_4_2_s6_i1}}}{{q_4_2_4_2_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: كتابة الجواب النهائي. الطريقة: نضيف \\( c \\) للناتج. السبب: ثابت التكامل ضروري في التكامل غير المحدد.",
+        "equation_template": "\\int 3(1+3x)^5\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step7_fin",
+            "correct_answer": "(1+3x)^6/6",
+            "options": [
+              "(1+3x)^6/6",
+              "(1+3x)^5/5",
+              "(1+3x)^6",
+              "3(1+3x)^6/6"
+            ],
+            "id": "q_4_2_4_2_s7_i1",
+            "correct_value": "(1+3x)^6/6",
+            "allowed_keys": [
+              "(1+3x)^6/6",
+              "(1+3x)^5/5",
+              "(1+3x)^6",
+              "3(1+3x)^6/6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب الكسر الذي كوّنته ثم \\( + c \\)."
+          }
+        ],
+        "hint": "اكتب الكسر الذي كوّنته ثم \\( + c \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_4_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: كتابة الجواب النهائي. الطريقة: نضيف \\( c \\) للناتج. السبب: ثابت التكامل ضروري في التكامل غير المحدد.",
+        "think": "اكتب الكسر الذي كوّنته ثم \\( + c \\).",
+        "html_structure": "\\int 3(1+3x)^5\\,dx = {q_4_2_4_2_s7_i1} + c"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{(1+3x)^6}{6} \\): ننزل الأس \\( 6 \\) ونقسم على \\( 6 \\) ثم نضرب بمشتقة الداخل \\( 3 \\). السبب: لنرجع إلى \\( 3(1+3x)^5 \\).",
+        "equation_template": "\\frac{{input_1}(1+3x)^{{input_2}}\\cdot 3}{6} = 3(1+3x)^5",
+        "inputs": [
+          {
+            "input_id": "step8_v1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "5",
+              "3",
+              "1"
+            ],
+            "id": "q_4_2_4_2_s8_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "5",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل الأس \\( 6 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 5 \\)."
+          },
+          {
+            "input_id": "step8_v2",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "6",
+              "4",
+              "3"
+            ],
+            "id": "q_4_2_4_2_s8_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "6",
+              "4",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "أنزل الأس \\( 6 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 5 \\)."
+          }
+        ],
+        "hint": "أنزل الأس \\( 6 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 5 \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_4_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{(1+3x)^6}{6} \\): ننزل الأس \\( 6 \\) ونقسم على \\( 6 \\) ثم نضرب بمشتقة الداخل \\( 3 \\). السبب: لنرجع إلى \\( 3(1+3x)^5 \\).",
+        "think": "أنزل الأس \\( 6 \\) أمام القوس وانقص الأس بواحد ليصبح \\( 5 \\).",
+        "html_structure": "\\frac{{q_4_2_4_2_s8_i1}(1+3x)^{{q_4_2_4_2_s8_i2}}\\cdot 3}{6} = 3(1+3x)^5"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p4",
+    "page_number": 4,
+    "question_number": "3",
+    "question_text": "جد \\( \\int (3x+1)^3\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png"
+    ],
+    "full_model_solution": "(1/12)(3x+1)⁴ + c",
+    "source_file": "رياضيلت 4/part2_page_004_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 4,
+      "pdf_page_number": 144
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_004_diag_integration_formula_diagram.png",
+    "title": "جد \\( \\int (3x+1)^3\\,dx \\)",
+    "number": "3",
+    "model_solution": "(1/12)(3x+1)⁴ + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد القوس. الطريقة: القوس المرفوع للأس \\( 3 \\) هو \\( 3x+1 \\). السبب: سنطبق عليه القاعدة.",
+        "equation_template": "u = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_u",
+            "correct_answer": "3x+1",
+            "options": [
+              "3x+1",
+              "3x-1",
+              "3x",
+              "x+1"
+            ],
+            "id": "q_4_2_4_3_s1_i1",
+            "correct_value": "3x+1",
+            "allowed_keys": [
+              "3x+1",
+              "3x-1",
+              "3x",
+              "x+1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ ما داخل القوس."
+          }
+        ],
+        "hint": "انسخ ما داخل القوس.",
+        "related_topics": [
+          "تكامل قوس مرفوع لأس"
+        ],
+        "step_id": "math345_4_2_4_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد القوس. الطريقة: القوس المرفوع للأس \\( 3 \\) هو \\( 3x+1 \\). السبب: سنطبق عليه القاعدة.",
+        "think": "انسخ ما داخل القوس.",
+        "html_structure": "u = {q_4_2_4_3_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد أس القوس. الطريقة: العدد الصغير فوق القوس هو \\( 3 \\). السبب: سنزيده بواحد.",
+        "equation_template": "n = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_n",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_4_3_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "4",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم الصغير أعلى القوس هو \\( 3 \\)."
+          }
+        ],
+        "hint": "الرقم الصغير أعلى القوس هو \\( 3 \\).",
+        "related_topics": [
+          "أس القوس"
+        ],
+        "step_id": "math345_4_2_4_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد أس القوس. الطريقة: العدد الصغير فوق القوس هو \\( 3 \\). السبب: سنزيده بواحد.",
+        "think": "الرقم الصغير أعلى القوس هو \\( 3 \\).",
+        "html_structure": "n = {q_4_2_4_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق ما داخل القوس. الطريقة: مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( 1 \\) صفر. السبب: لنعرف هل المشتقة موجودة خارج القوس.",
+        "equation_template": "(3x+1)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_d",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "0",
+              "3x"
+            ],
+            "id": "q_4_2_4_3_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "0",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "العدد المضروب في \\( x \\) هو المشتقة."
+          }
+        ],
+        "hint": "العدد المضروب في \\( x \\) هو المشتقة.",
+        "related_topics": [
+          "اشتقاق كثيرة حدود"
+        ],
+        "step_id": "math345_4_2_4_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق ما داخل القوس. الطريقة: مشتقة \\( 3x \\) هي \\( 3 \\) ومشتقة \\( 1 \\) صفر. السبب: لنعرف هل المشتقة موجودة خارج القوس.",
+        "think": "العدد المضروب في \\( x \\) هو المشتقة.",
+        "html_structure": "(3x+1)' = {q_4_2_4_3_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: توفير المشتقة المفقودة. الطريقة: المشتقة \\( 3 \\) غير موجودة خارج القوس، فنضرب داخل التكامل في \\( 3 \\) ونضرب خارجه في \\( \\frac{1}{3} \\). السبب: ضرب العدد في \\( 3 \\) ثم في \\( \\frac{1}{3} \\) لا يغير قيمته، لكنه يوفر المشتقة.",
+        "equation_template": "\\frac{1}{3}\\int {input_1}(3x+1)^3\\,dx",
+        "inputs": [
+          {
+            "input_id": "step4_fac",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "1/3",
+              "x"
+            ],
+            "id": "q_4_2_4_3_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "1/3",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع داخل التكامل نفس العدد الذي وجدته كمشتقة."
+          }
+        ],
+        "hint": "ضع داخل التكامل نفس العدد الذي وجدته كمشتقة.",
+        "related_topics": [
+          "توفير المشتقة"
+        ],
+        "step_id": "math345_4_2_4_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: توفير المشتقة المفقودة. الطريقة: المشتقة \\( 3 \\) غير موجودة خارج القوس، فنضرب داخل التكامل في \\( 3 \\) ونضرب خارجه في \\( \\frac{1}{3} \\). السبب: ضرب العدد في \\( 3 \\) ثم في \\( \\frac{1}{3} \\) لا يغير قيمته، لكنه يوفر المشتقة.",
+        "think": "ضع داخل التكامل نفس العدد الذي وجدته كمشتقة.",
+        "html_structure": "\\frac{1}{3}\\int {q_4_2_4_3_s4_i1}(3x+1)^3\\,dx"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضيف واحداً للأس. الطريقة: بعد توفر المشتقة نهملها ونحسب \\( 3+1 \\). السبب: هذه خطوة القاعدة.",
+        "equation_template": "n + 1 = 3 + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_n1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "id": "q_4_2_4_3_s5_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( 3 + 1 \\)."
+          }
+        ],
+        "hint": "اجمع \\( 3 + 1 \\).",
+        "related_topics": [
+          "قاعدة القوس"
+        ],
+        "step_id": "math345_4_2_4_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضيف واحداً للأس. الطريقة: بعد توفر المشتقة نهملها ونحسب \\( 3+1 \\). السبب: هذه خطوة القاعدة.",
+        "think": "اجمع \\( 3 + 1 \\).",
+        "html_structure": "n + 1 = 3 + 1 = {q_4_2_4_3_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقسم على الأس الجديد. الطريقة: نكتب \\( \\frac{1}{3} \\) أمام الكسر \\( \\frac{(3x+1)^4}{4} \\). السبب: لأن \\( \\frac{1}{3} \\) ما زال خارج التكامل.",
+        "equation_template": "\\frac{1}{3}\\cdot\\frac{(3x+1)^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step6_top",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "2",
+              "6"
+            ],
+            "id": "q_4_2_4_3_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "2",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع \\( 4 \\) في الأس وكرره في المقام."
+          },
+          {
+            "input_id": "step6_bot",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "12",
+              "6"
+            ],
+            "id": "q_4_2_4_3_s6_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "12",
+              "6"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع \\( 4 \\) في الأس وكرره في المقام."
+          }
+        ],
+        "hint": "ضع \\( 4 \\) في الأس وكرره في المقام.",
+        "related_topics": [
+          "القسمة على الأس الجديد"
+        ],
+        "step_id": "math345_4_2_4_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقسم على الأس الجديد. الطريقة: نكتب \\( \\frac{1}{3} \\) أمام الكسر \\( \\frac{(3x+1)^4}{4} \\). السبب: لأن \\( \\frac{1}{3} \\) ما زال خارج التكامل.",
+        "think": "ضع \\( 4 \\) في الأس وكرره في المقام.",
+        "html_structure": "\\frac{1}{3}\\cdot\\frac{(3x+1)^{{q_4_2_4_3_s6_i1}}}{{q_4_2_4_3_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: ضرب الكسرين الخارجيين. الطريقة: \\( \\frac{1}{3}\\times\\frac{1}{4} \\): نضرب المقامين \\( 3\\times 4 \\). السبب: لنحصل على معامل واحد مبسط.",
+        "equation_template": "\\frac{1}{3}\\times\\frac{1}{4} = \\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step7_den",
+            "correct_answer": "12",
+            "options": [
+              "12",
+              "7",
+              "1",
+              "6"
+            ],
+            "id": "q_4_2_4_3_s7_i1",
+            "correct_value": "12",
+            "allowed_keys": [
+              "12",
+              "7",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 3 \\times 4 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 3 \\times 4 \\).",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_4_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: ضرب الكسرين الخارجيين. الطريقة: \\( \\frac{1}{3}\\times\\frac{1}{4} \\): نضرب المقامين \\( 3\\times 4 \\). السبب: لنحصل على معامل واحد مبسط.",
+        "think": "اضرب \\( 3 \\times 4 \\).",
+        "html_structure": "\\frac{1}{3}\\times\\frac{1}{4} = \\frac{1}{{q_4_2_4_3_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: كتابة الجواب النهائي. الطريقة: نضع المعامل \\( \\frac{1}{12} \\) أمام \\( (3x+1)^4 \\) ونضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "equation_template": "\\int (3x+1)^3\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step8_fin",
+            "correct_answer": "(1/12)(3x+1)^4",
+            "options": [
+              "(1/12)(3x+1)^4",
+              "(1/4)(3x+1)^4",
+              "(1/3)(3x+1)^4",
+              "(1/12)(3x+1)^3"
+            ],
+            "id": "q_4_2_4_3_s8_i1",
+            "correct_value": "(1/12)(3x+1)^4",
+            "allowed_keys": [
+              "(1/12)(3x+1)^4",
+              "(1/4)(3x+1)^4",
+              "(1/3)(3x+1)^4",
+              "(1/12)(3x+1)^3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( \\frac{1}{12} \\) ثم \\( (3x+1)^4 \\)."
+          }
+        ],
+        "hint": "اكتب \\( \\frac{1}{12} \\) ثم \\( (3x+1)^4 \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_4_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: كتابة الجواب النهائي. الطريقة: نضع المعامل \\( \\frac{1}{12} \\) أمام \\( (3x+1)^4 \\) ونضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "think": "اكتب \\( \\frac{1}{12} \\) ثم \\( (3x+1)^4 \\).",
+        "html_structure": "\\int (3x+1)^3\\,dx = {q_4_2_4_3_s8_i1} + c"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{1}{12}(3x+1)^4 \\): ننزل الأس \\( 4 \\) وننقصه فيصبح \\( 3 \\) ثم نضرب في مشتقة الداخل \\( 3 \\). السبب: الناتج \\( \\frac{12}{12}(3x+1)^3 \\) يساوي السؤال الأصلي.",
+        "equation_template": "\\frac{1}{12}\\cdot{input_1}\\cdot(3x+1)^3\\cdot{input_2}",
+        "inputs": [
+          {
+            "input_id": "step9_v1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "3",
+              "12",
+              "1"
+            ],
+            "id": "q_4_2_4_3_s9_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "3",
+              "12",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الأس \\( 4 \\) في الفراغ الأول ومشتقة الداخل \\( 3 \\) في الفراغ الثاني."
+          },
+          {
+            "input_id": "step9_v2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "4",
+              "12",
+              "1"
+            ],
+            "id": "q_4_2_4_3_s9_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "4",
+              "12",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "ضع الأس \\( 4 \\) في الفراغ الأول ومشتقة الداخل \\( 3 \\) في الفراغ الثاني."
+          }
+        ],
+        "hint": "ضع الأس \\( 4 \\) في الفراغ الأول ومشتقة الداخل \\( 3 \\) في الفراغ الثاني.",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_4_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac{1}{12}(3x+1)^4 \\): ننزل الأس \\( 4 \\) وننقصه فيصبح \\( 3 \\) ثم نضرب في مشتقة الداخل \\( 3 \\). السبب: الناتج \\( \\frac{12}{12}(3x+1)^3 \\) يساوي السؤال الأصلي.",
+        "think": "ضع الأس \\( 4 \\) في الفراغ الأول ومشتقة الداخل \\( 3 \\) في الفراغ الثاني.",
+        "html_structure": "\\frac{1}{12}\\cdot{q_4_2_4_3_s9_i1}\\cdot(3x+1)^3\\cdot{q_4_2_4_3_s9_i2}"
+      }
+    ]
+  }
+]

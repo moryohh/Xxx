@@ -1,0 +1,1342 @@
+[
+  {
+    "id_number": "q16_p24",
+    "page_number": 24,
+    "question_number": "16",
+    "question_text": "جد \\( \\int \\sin^2 3x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "full_model_solution": "x/2 - (1/12) sin 6x + c",
+    "source_file": "رياضيلت 4/part2_page_024_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 24,
+      "pdf_page_number": 164
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png",
+    "title": "جد \\( \\int \\sin^2 3x\\,dx \\)",
+    "number": "16",
+    "model_solution": "x/2 - (1/12) sin 6x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\sin^2 3x \\)، فنستخدم قانون ضعف الزاوية: \\( \\sin^2\\theta = \\frac{1}{2} - \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( 3x \\) تتضاعف فتصبح \\( 6x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "equation_template": "\\sin^2 3x = \\frac{1}{2} {input_1} \\frac{1}{2}\\cos({input_2})",
+        "inputs": [
+          {
+            "input_id": "step1_sg",
+            "correct_answer": "-",
+            "options": [
+              "-",
+              "+",
+              "\\times",
+              "\\div"
+            ],
+            "id": "q_4_2_24_1_s1_i1",
+            "correct_value": "-",
+            "allowed_keys": [
+              "-",
+              "+",
+              "\\times",
+              "\\div"
+            ],
+            "label": "القيمة 1",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 3 \\) في \\( 2 \\)."
+          },
+          {
+            "input_id": "step1_ang",
+            "correct_answer": "6x",
+            "options": [
+              "6x",
+              "3x",
+              "9x",
+              "12x"
+            ],
+            "id": "q_4_2_24_1_s1_i2",
+            "correct_value": "6x",
+            "allowed_keys": [
+              "6x",
+              "3x",
+              "9x",
+              "12x"
+            ],
+            "label": "القيمة 2",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 3 \\) في \\( 2 \\)."
+          }
+        ],
+        "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 3 \\) في \\( 2 \\).",
+        "related_topics": [
+          "قوانين ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_24_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\sin^2 3x \\)، فنستخدم قانون ضعف الزاوية: \\( \\sin^2\\theta = \\frac{1}{2} - \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( 3x \\) تتضاعف فتصبح \\( 6x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "think": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 3 \\) في \\( 2 \\).",
+        "html_structure": "\\sin^2 3x = \\frac{1}{2} {q_4_2_24_1_s1_i1} \\frac{1}{2}\\cos({q_4_2_24_1_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "equation_template": "\\int \\frac{1}{2}\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c1",
+            "correct_answer": "x/2",
+            "options": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "id": "q_4_2_24_1_s2_i1",
+            "correct_value": "x/2",
+            "allowed_keys": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\)."
+          }
+        ],
+        "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_24_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "think": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "html_structure": "\\int \\frac{1}{2}\\,dx = {q_4_2_24_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 6x \\) فنحصل على \\( 6 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "equation_template": "(6x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_dd",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "1",
+              "12"
+            ],
+            "id": "q_4_2_24_1_s3_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "1",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "related_topics": [
+          "اشتقاق الزاوية"
+        ],
+        "step_id": "math345_4_2_24_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 6x \\) فنحصل على \\( 6 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "think": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "html_structure": "(6x)' = {q_4_2_24_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل \\( \\cos 6x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 6 \\). السبب: لأن اشتقاق \\( \\sin 6x \\) يعطي \\( 6\\cos 6x \\) فنقسم على \\( 6 \\) لنعوض الضرب الزائد.",
+        "equation_template": "\\int\\cos 6x\\,dx = \\frac{1}{{input_1}}\\sin 6x",
+        "inputs": [
+          {
+            "input_id": "step4_dv",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "12"
+            ],
+            "id": "q_4_2_24_1_s4_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو مشتقة الزاوية \\( 6x \\) التي وجدناها قبل قليل."
+          }
+        ],
+        "hint": "المقام هو مشتقة الزاوية \\( 6x \\) التي وجدناها قبل قليل.",
+        "related_topics": [
+          "تكامل جيب التمام"
+        ],
+        "step_id": "math345_4_2_24_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل \\( \\cos 6x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 6 \\). السبب: لأن اشتقاق \\( \\sin 6x \\) يعطي \\( 6\\cos 6x \\) فنقسم على \\( 6 \\) لنعوض الضرب الزائد.",
+        "think": "المقام هو مشتقة الزاوية \\( 6x \\) التي وجدناها قبل قليل.",
+        "html_structure": "\\int\\cos 6x\\,dx = \\frac{1}{{q_4_2_24_1_s4_i1}}\\sin 6x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضرب المعامل \\( -\\frac{1}{2} \\) في \\( \\frac{1}{6} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 6 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 6x \\) في الجواب.",
+        "equation_template": "-\\frac{1}{2}\\times\\frac{1}{6} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_cf",
+            "correct_answer": "-1/12",
+            "options": [
+              "-1/12",
+              "1/12",
+              "1/6",
+              "-12"
+            ],
+            "id": "q_4_2_24_1_s5_i1",
+            "correct_value": "-1/12",
+            "allowed_keys": [
+              "-1/12",
+              "1/12",
+              "1/6",
+              "-12"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times 6 = 12 \\) في المقام، وضع الإشارة المناسبة أمام الكسر."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times 6 = 12 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_24_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضرب المعامل \\( -\\frac{1}{2} \\) في \\( \\frac{1}{6} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 6 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 6x \\) في الجواب.",
+        "think": "اضرب \\( 2\\times 6 = 12 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "html_structure": "-\\frac{1}{2}\\times\\frac{1}{6} = {q_4_2_24_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "equation_template": "\\int \\sin^2 3x\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step6_fin",
+            "correct_answer": "x/2 - (1/12) sin 6x",
+            "options": [
+              "x/2 - (1/12) sin 6x",
+              "x/2 + (1/12) sin 6x",
+              "x/2 - (1/12) cos 6x",
+              "x - (1/12) sin 6x"
+            ],
+            "id": "q_4_2_24_1_s6_i1",
+            "correct_value": "x/2 - (1/12) sin 6x",
+            "allowed_keys": [
+              "x/2 - (1/12) sin 6x",
+              "x/2 + (1/12) sin 6x",
+              "x/2 - (1/12) cos 6x",
+              "x - (1/12) sin 6x"
+            ],
+            "label": "القيمة 1",
+            "hint": "جمع \\( \\frac{x}{2} \\) مع \\( - \\frac{1}{12} \\sin 6x \\) كما حسبنا."
+          }
+        ],
+        "hint": "جمع \\( \\frac{x}{2} \\) مع \\( - \\frac{1}{12} \\sin 6x \\) كما حسبنا.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_24_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "think": "جمع \\( \\frac{x}{2} \\) مع \\( - \\frac{1}{12} \\sin 6x \\) كما حسبنا.",
+        "html_structure": "\\int \\sin^2 3x\\,dx = {q_4_2_24_1_s6_i1} + c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( -\\frac{1}{12}\\sin 6x \\): ننزل الزاوية المضاعفة \\( 6 \\) ونضربها في المعامل فنحصل على \\( -\\frac{1}{2}\\cos 6x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "equation_template": "-\\frac{1}{12} \\times {input_1}\\cos 6x = -\\frac{1}{2}\\cos 6x",
+        "inputs": [
+          {
+            "input_id": "step7_v",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "12"
+            ],
+            "id": "q_4_2_24_1_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة الزاوية \\( 6x \\) في الفراغ."
+          }
+        ],
+        "hint": "ضع مشتقة الزاوية \\( 6x \\) في الفراغ.",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_24_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( -\\frac{1}{12}\\sin 6x \\): ننزل الزاوية المضاعفة \\( 6 \\) ونضربها في المعامل فنحصل على \\( -\\frac{1}{2}\\cos 6x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "think": "ضع مشتقة الزاوية \\( 6x \\) في الفراغ.",
+        "html_structure": "-\\frac{1}{12} \\times {q_4_2_24_1_s7_i1}\\cos 6x = -\\frac{1}{2}\\cos 6x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} - \\frac{1}{2}\\cos 6x \\). السبب: وهذا يساوي \\( \\sin^2 3x \\) حسب قانون ضعف الزاوية.",
+        "equation_template": "\\frac{1}{2} - {input_1}\\cos 6x = \\sin^2 3x",
+        "inputs": [
+          {
+            "input_id": "step8_h",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "id": "q_4_2_24_1_s8_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد."
+          }
+        ],
+        "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "related_topics": [
+          "المراجعة"
+        ],
+        "step_id": "math345_4_2_24_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} - \\frac{1}{2}\\cos 6x \\). السبب: وهذا يساوي \\( \\sin^2 3x \\) حسب قانون ضعف الزاوية.",
+        "think": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "html_structure": "\\frac{1}{2} - {q_4_2_24_1_s8_i1}\\cos 6x = \\sin^2 3x"
+      }
+    ]
+  },
+  {
+    "id_number": "q17_p24",
+    "page_number": 24,
+    "question_number": "17",
+    "question_text": "جد \\( \\int \\sin^2 8x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "full_model_solution": "x/2 - (1/32) sin 16x + c",
+    "source_file": "رياضيلت 4/part2_page_024_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 24,
+      "pdf_page_number": 164
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png",
+    "title": "جد \\( \\int \\sin^2 8x\\,dx \\)",
+    "number": "17",
+    "model_solution": "x/2 - (1/32) sin 16x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\sin^2 8x \\)، فنستخدم قانون ضعف الزاوية: \\( \\sin^2\\theta = \\frac{1}{2} - \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( 8x \\) تتضاعف فتصبح \\( 16x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "equation_template": "\\sin^2 8x = \\frac{1}{2} {input_1} \\frac{1}{2}\\cos({input_2})",
+        "inputs": [
+          {
+            "input_id": "step1_sg",
+            "correct_answer": "-",
+            "options": [
+              "-",
+              "+",
+              "\\times",
+              "\\div"
+            ],
+            "id": "q_4_2_24_2_s1_i1",
+            "correct_value": "-",
+            "allowed_keys": [
+              "-",
+              "+",
+              "\\times",
+              "\\div"
+            ],
+            "label": "القيمة 1",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 8 \\) في \\( 2 \\)."
+          },
+          {
+            "input_id": "step1_ang",
+            "correct_answer": "16x",
+            "options": [
+              "16x",
+              "8x",
+              "24x",
+              "32x"
+            ],
+            "id": "q_4_2_24_2_s1_i2",
+            "correct_value": "16x",
+            "allowed_keys": [
+              "16x",
+              "8x",
+              "24x",
+              "32x"
+            ],
+            "label": "القيمة 2",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 8 \\) في \\( 2 \\)."
+          }
+        ],
+        "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 8 \\) في \\( 2 \\).",
+        "related_topics": [
+          "قوانين ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_24_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\sin^2 8x \\)، فنستخدم قانون ضعف الزاوية: \\( \\sin^2\\theta = \\frac{1}{2} - \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( 8x \\) تتضاعف فتصبح \\( 16x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "think": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 8 \\) في \\( 2 \\).",
+        "html_structure": "\\sin^2 8x = \\frac{1}{2} {q_4_2_24_2_s1_i1} \\frac{1}{2}\\cos({q_4_2_24_2_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "equation_template": "\\int \\frac{1}{2}\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c1",
+            "correct_answer": "x/2",
+            "options": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "id": "q_4_2_24_2_s2_i1",
+            "correct_value": "x/2",
+            "allowed_keys": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\)."
+          }
+        ],
+        "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_24_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "think": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "html_structure": "\\int \\frac{1}{2}\\,dx = {q_4_2_24_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 16x \\) فنحصل على \\( 16 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "equation_template": "(16x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_dd",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "8",
+              "1",
+              "32"
+            ],
+            "id": "q_4_2_24_2_s3_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "8",
+              "1",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "related_topics": [
+          "اشتقاق الزاوية"
+        ],
+        "step_id": "math345_4_2_24_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 16x \\) فنحصل على \\( 16 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "think": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "html_structure": "(16x)' = {q_4_2_24_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل \\( \\cos 16x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 16 \\). السبب: لأن اشتقاق \\( \\sin 16x \\) يعطي \\( 16\\cos 16x \\) فنقسم على \\( 16 \\) لنعوض الضرب الزائد.",
+        "equation_template": "\\int\\cos 16x\\,dx = \\frac{1}{{input_1}}\\sin 16x",
+        "inputs": [
+          {
+            "input_id": "step4_dv",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "8",
+              "2",
+              "32"
+            ],
+            "id": "q_4_2_24_2_s4_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "8",
+              "2",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو مشتقة الزاوية \\( 16x \\) التي وجدناها قبل قليل."
+          }
+        ],
+        "hint": "المقام هو مشتقة الزاوية \\( 16x \\) التي وجدناها قبل قليل.",
+        "related_topics": [
+          "تكامل جيب التمام"
+        ],
+        "step_id": "math345_4_2_24_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل \\( \\cos 16x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 16 \\). السبب: لأن اشتقاق \\( \\sin 16x \\) يعطي \\( 16\\cos 16x \\) فنقسم على \\( 16 \\) لنعوض الضرب الزائد.",
+        "think": "المقام هو مشتقة الزاوية \\( 16x \\) التي وجدناها قبل قليل.",
+        "html_structure": "\\int\\cos 16x\\,dx = \\frac{1}{{q_4_2_24_2_s4_i1}}\\sin 16x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضرب المعامل \\( -\\frac{1}{2} \\) في \\( \\frac{1}{16} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 16 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 16x \\) في الجواب.",
+        "equation_template": "-\\frac{1}{2}\\times\\frac{1}{16} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_cf",
+            "correct_answer": "-1/32",
+            "options": [
+              "-1/32",
+              "1/32",
+              "1/16",
+              "-32"
+            ],
+            "id": "q_4_2_24_2_s5_i1",
+            "correct_value": "-1/32",
+            "allowed_keys": [
+              "-1/32",
+              "1/32",
+              "1/16",
+              "-32"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times 16 = 32 \\) في المقام، وضع الإشارة المناسبة أمام الكسر."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times 16 = 32 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_24_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضرب المعامل \\( -\\frac{1}{2} \\) في \\( \\frac{1}{16} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 16 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 16x \\) في الجواب.",
+        "think": "اضرب \\( 2\\times 16 = 32 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "html_structure": "-\\frac{1}{2}\\times\\frac{1}{16} = {q_4_2_24_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "equation_template": "\\int \\sin^2 8x\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step6_fin",
+            "correct_answer": "x/2 - (1/32) sin 16x",
+            "options": [
+              "x/2 - (1/32) sin 16x",
+              "x/2 + (1/32) sin 16x",
+              "x/2 - (1/32) cos 16x",
+              "x - (1/32) sin 16x"
+            ],
+            "id": "q_4_2_24_2_s6_i1",
+            "correct_value": "x/2 - (1/32) sin 16x",
+            "allowed_keys": [
+              "x/2 - (1/32) sin 16x",
+              "x/2 + (1/32) sin 16x",
+              "x/2 - (1/32) cos 16x",
+              "x - (1/32) sin 16x"
+            ],
+            "label": "القيمة 1",
+            "hint": "جمع \\( \\frac{x}{2} \\) مع \\( - \\frac{1}{32} \\sin 16x \\) كما حسبنا."
+          }
+        ],
+        "hint": "جمع \\( \\frac{x}{2} \\) مع \\( - \\frac{1}{32} \\sin 16x \\) كما حسبنا.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_24_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "think": "جمع \\( \\frac{x}{2} \\) مع \\( - \\frac{1}{32} \\sin 16x \\) كما حسبنا.",
+        "html_structure": "\\int \\sin^2 8x\\,dx = {q_4_2_24_2_s6_i1} + c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( -\\frac{1}{32}\\sin 16x \\): ننزل الزاوية المضاعفة \\( 16 \\) ونضربها في المعامل فنحصل على \\( -\\frac{1}{2}\\cos 16x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "equation_template": "-\\frac{1}{32} \\times {input_1}\\cos 16x = -\\frac{1}{2}\\cos 16x",
+        "inputs": [
+          {
+            "input_id": "step7_v",
+            "correct_answer": "16",
+            "options": [
+              "16",
+              "8",
+              "2",
+              "32"
+            ],
+            "id": "q_4_2_24_2_s7_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "16",
+              "8",
+              "2",
+              "32"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة الزاوية \\( 16x \\) في الفراغ."
+          }
+        ],
+        "hint": "ضع مشتقة الزاوية \\( 16x \\) في الفراغ.",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_24_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( -\\frac{1}{32}\\sin 16x \\): ننزل الزاوية المضاعفة \\( 16 \\) ونضربها في المعامل فنحصل على \\( -\\frac{1}{2}\\cos 16x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "think": "ضع مشتقة الزاوية \\( 16x \\) في الفراغ.",
+        "html_structure": "-\\frac{1}{32} \\times {q_4_2_24_2_s7_i1}\\cos 16x = -\\frac{1}{2}\\cos 16x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} - \\frac{1}{2}\\cos 16x \\). السبب: وهذا يساوي \\( \\sin^2 8x \\) حسب قانون ضعف الزاوية.",
+        "equation_template": "\\frac{1}{2} - {input_1}\\cos 16x = \\sin^2 8x",
+        "inputs": [
+          {
+            "input_id": "step8_h",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "id": "q_4_2_24_2_s8_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد."
+          }
+        ],
+        "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "related_topics": [
+          "المراجعة"
+        ],
+        "step_id": "math345_4_2_24_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} - \\frac{1}{2}\\cos 16x \\). السبب: وهذا يساوي \\( \\sin^2 8x \\) حسب قانون ضعف الزاوية.",
+        "think": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "html_structure": "\\frac{1}{2} - {q_4_2_24_2_s8_i1}\\cos 16x = \\sin^2 8x"
+      }
+    ]
+  },
+  {
+    "id_number": "q18_p24",
+    "page_number": 24,
+    "question_number": "18",
+    "question_text": "جد \\( \\int \\cos^2 x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "full_model_solution": "x/2 + (1/4) sin 2x + c",
+    "source_file": "رياضيلت 4/part2_page_024_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 24,
+      "pdf_page_number": 164
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png",
+    "title": "جد \\( \\int \\cos^2 x\\,dx \\)",
+    "number": "18",
+    "model_solution": "x/2 + (1/4) sin 2x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\cos^2 x \\)، فنستخدم قانون ضعف الزاوية: \\( \\cos^2\\theta = \\frac{1}{2} + \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( x \\) تتضاعف فتصبح \\( 2x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "equation_template": "\\cos^2 x = \\frac{1}{2} {input_1} \\frac{1}{2}\\cos({input_2})",
+        "inputs": [
+          {
+            "input_id": "step1_sg",
+            "correct_answer": "+",
+            "options": [
+              "+",
+              "-",
+              "\\times",
+              "\\div"
+            ],
+            "id": "q_4_2_24_3_s1_i1",
+            "correct_value": "+",
+            "allowed_keys": [
+              "+",
+              "-",
+              "\\times",
+              "\\div"
+            ],
+            "label": "القيمة 1",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 1 \\) في \\( 2 \\)."
+          },
+          {
+            "input_id": "step1_ang",
+            "correct_answer": "2x",
+            "options": [
+              "2x",
+              "x",
+              "3x",
+              "4x"
+            ],
+            "id": "q_4_2_24_3_s1_i2",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2x",
+              "x",
+              "3x",
+              "4x"
+            ],
+            "label": "القيمة 2",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 1 \\) في \\( 2 \\)."
+          }
+        ],
+        "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 1 \\) في \\( 2 \\).",
+        "related_topics": [
+          "قوانين ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_24_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\cos^2 x \\)، فنستخدم قانون ضعف الزاوية: \\( \\cos^2\\theta = \\frac{1}{2} + \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( x \\) تتضاعف فتصبح \\( 2x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "think": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 1 \\) في \\( 2 \\).",
+        "html_structure": "\\cos^2 x = \\frac{1}{2} {q_4_2_24_3_s1_i1} \\frac{1}{2}\\cos({q_4_2_24_3_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "equation_template": "\\int \\frac{1}{2}\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c1",
+            "correct_answer": "x/2",
+            "options": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "id": "q_4_2_24_3_s2_i1",
+            "correct_value": "x/2",
+            "allowed_keys": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\)."
+          }
+        ],
+        "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_24_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "think": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "html_structure": "\\int \\frac{1}{2}\\,dx = {q_4_2_24_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 2x \\) فنحصل على \\( 2 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "equation_template": "(2x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_dd",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "id": "q_4_2_24_3_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "related_topics": [
+          "اشتقاق الزاوية"
+        ],
+        "step_id": "math345_4_2_24_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 2x \\) فنحصل على \\( 2 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "think": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "html_structure": "(2x)' = {q_4_2_24_3_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل \\( \\cos 2x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 2 \\). السبب: لأن اشتقاق \\( \\sin 2x \\) يعطي \\( 2\\cos 2x \\) فنقسم على \\( 2 \\) لنعوض الضرب الزائد.",
+        "equation_template": "\\int\\cos 2x\\,dx = \\frac{1}{{input_1}}\\sin 2x",
+        "inputs": [
+          {
+            "input_id": "step4_dv",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "id": "q_4_2_24_3_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو مشتقة الزاوية \\( 2x \\) التي وجدناها قبل قليل."
+          }
+        ],
+        "hint": "المقام هو مشتقة الزاوية \\( 2x \\) التي وجدناها قبل قليل.",
+        "related_topics": [
+          "تكامل جيب التمام"
+        ],
+        "step_id": "math345_4_2_24_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل \\( \\cos 2x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 2 \\). السبب: لأن اشتقاق \\( \\sin 2x \\) يعطي \\( 2\\cos 2x \\) فنقسم على \\( 2 \\) لنعوض الضرب الزائد.",
+        "think": "المقام هو مشتقة الزاوية \\( 2x \\) التي وجدناها قبل قليل.",
+        "html_structure": "\\int\\cos 2x\\,dx = \\frac{1}{{q_4_2_24_3_s4_i1}}\\sin 2x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضرب المعامل \\( \\frac{1}{2} \\) في \\( \\frac{1}{2} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 2 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 2x \\) في الجواب.",
+        "equation_template": "\\frac{1}{2}\\times\\frac{1}{2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_cf",
+            "correct_answer": "1/4",
+            "options": [
+              "1/4",
+              "-1/4",
+              "1/2",
+              "4"
+            ],
+            "id": "q_4_2_24_3_s5_i1",
+            "correct_value": "1/4",
+            "allowed_keys": [
+              "1/4",
+              "-1/4",
+              "1/2",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times 2 = 4 \\) في المقام، وضع الإشارة المناسبة أمام الكسر."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times 2 = 4 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_24_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضرب المعامل \\( \\frac{1}{2} \\) في \\( \\frac{1}{2} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 2 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 2x \\) في الجواب.",
+        "think": "اضرب \\( 2\\times 2 = 4 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "html_structure": "\\frac{1}{2}\\times\\frac{1}{2} = {q_4_2_24_3_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "equation_template": "\\int \\cos^2 x\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step6_fin",
+            "correct_answer": "x/2 + (1/4) sin 2x",
+            "options": [
+              "x/2 + (1/4) sin 2x",
+              "x/2 - (1/4) sin 2x",
+              "x/2 + (1/4) cos 2x",
+              "x + (1/4) sin 2x"
+            ],
+            "id": "q_4_2_24_3_s6_i1",
+            "correct_value": "x/2 + (1/4) sin 2x",
+            "allowed_keys": [
+              "x/2 + (1/4) sin 2x",
+              "x/2 - (1/4) sin 2x",
+              "x/2 + (1/4) cos 2x",
+              "x + (1/4) sin 2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "جمع \\( \\frac{x}{2} \\) مع \\( + \\frac{1}{4} \\sin 2x \\) كما حسبنا."
+          }
+        ],
+        "hint": "جمع \\( \\frac{x}{2} \\) مع \\( + \\frac{1}{4} \\sin 2x \\) كما حسبنا.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_24_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "think": "جمع \\( \\frac{x}{2} \\) مع \\( + \\frac{1}{4} \\sin 2x \\) كما حسبنا.",
+        "html_structure": "\\int \\cos^2 x\\,dx = {q_4_2_24_3_s6_i1} + c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( \\frac{1}{4}\\sin 2x \\): ننزل الزاوية المضاعفة \\( 2 \\) ونضربها في المعامل فنحصل على \\( \\frac{1}{2}\\cos 2x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "equation_template": "\\frac{1}{4} \\times {input_1}\\cos 2x = \\frac{1}{2}\\cos 2x",
+        "inputs": [
+          {
+            "input_id": "step7_v",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "id": "q_4_2_24_3_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة الزاوية \\( 2x \\) في الفراغ."
+          }
+        ],
+        "hint": "ضع مشتقة الزاوية \\( 2x \\) في الفراغ.",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_24_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( \\frac{1}{4}\\sin 2x \\): ننزل الزاوية المضاعفة \\( 2 \\) ونضربها في المعامل فنحصل على \\( \\frac{1}{2}\\cos 2x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "think": "ضع مشتقة الزاوية \\( 2x \\) في الفراغ.",
+        "html_structure": "\\frac{1}{4} \\times {q_4_2_24_3_s7_i1}\\cos 2x = \\frac{1}{2}\\cos 2x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} + \\frac{1}{2}\\cos 2x \\). السبب: وهذا يساوي \\( \\cos^2 x \\) حسب قانون ضعف الزاوية.",
+        "equation_template": "\\frac{1}{2} + {input_1}\\cos 2x = \\cos^2 x",
+        "inputs": [
+          {
+            "input_id": "step8_h",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "id": "q_4_2_24_3_s8_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد."
+          }
+        ],
+        "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "related_topics": [
+          "المراجعة"
+        ],
+        "step_id": "math345_4_2_24_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} + \\frac{1}{2}\\cos 2x \\). السبب: وهذا يساوي \\( \\cos^2 x \\) حسب قانون ضعف الزاوية.",
+        "think": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "html_structure": "\\frac{1}{2} + {q_4_2_24_3_s8_i1}\\cos 2x = \\cos^2 x"
+      }
+    ]
+  },
+  {
+    "id_number": "q19_p24",
+    "page_number": 24,
+    "question_number": "19",
+    "question_text": "جد \\( \\int \\cos^2 2x\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "full_model_solution": "x/2 + (1/8) sin 4x + c",
+    "source_file": "رياضيلت 4/part2_page_024_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 24,
+      "pdf_page_number": 164
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_024_diag_1_diagram.png",
+    "title": "جد \\( \\int \\cos^2 2x\\,dx \\)",
+    "number": "19",
+    "model_solution": "x/2 + (1/8) sin 4x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\cos^2 2x \\)، فنستخدم قانون ضعف الزاوية: \\( \\cos^2\\theta = \\frac{1}{2} + \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( 2x \\) تتضاعف فتصبح \\( 4x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "equation_template": "\\cos^2 2x = \\frac{1}{2} {input_1} \\frac{1}{2}\\cos({input_2})",
+        "inputs": [
+          {
+            "input_id": "step1_sg",
+            "correct_answer": "+",
+            "options": [
+              "+",
+              "-",
+              "\\times",
+              "\\div"
+            ],
+            "id": "q_4_2_24_4_s1_i1",
+            "correct_value": "+",
+            "allowed_keys": [
+              "+",
+              "-",
+              "\\times",
+              "\\div"
+            ],
+            "label": "القيمة 1",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 2 \\) في \\( 2 \\)."
+          },
+          {
+            "input_id": "step1_ang",
+            "correct_answer": "4x",
+            "options": [
+              "4x",
+              "2x",
+              "6x",
+              "8x"
+            ],
+            "id": "q_4_2_24_4_s1_i2",
+            "correct_value": "4x",
+            "allowed_keys": [
+              "4x",
+              "2x",
+              "6x",
+              "8x"
+            ],
+            "label": "القيمة 2",
+            "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 2 \\) في \\( 2 \\)."
+          }
+        ],
+        "hint": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 2 \\) في \\( 2 \\).",
+        "related_topics": [
+          "قوانين ضعف الزاوية"
+        ],
+        "step_id": "math345_4_2_24_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نتخلص من التربيع. الطريقة: لا يوجد تكامل مباشر لـ \\( \\cos^2 2x \\)، فنستخدم قانون ضعف الزاوية: \\( \\cos^2\\theta = \\frac{1}{2} + \\frac{1}{2}\\cos 2\\theta \\)، وهنا الزاوية \\( 2x \\) تتضاعف فتصبح \\( 4x \\). السبب: القانون يحول التربيع إلى \\( \\cos \\) بزاوية مضاعفة يمكن تكاملها.",
+        "think": "إشارة الجيب سالبة وإشارة جيب التمام موجبة في هذا القانون، والزاوية تضاعفها بضرب \\( 2 \\) في \\( 2 \\).",
+        "html_structure": "\\cos^2 2x = \\frac{1}{2} {q_4_2_24_4_s1_i1} \\frac{1}{2}\\cos({q_4_2_24_4_s1_i2})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "equation_template": "\\int \\frac{1}{2}\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c1",
+            "correct_answer": "x/2",
+            "options": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "id": "q_4_2_24_4_s2_i1",
+            "correct_value": "x/2",
+            "allowed_keys": [
+              "x/2",
+              "x",
+              "1/2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\)."
+          }
+        ],
+        "hint": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "related_topics": [
+          "تكامل الثابت"
+        ],
+        "step_id": "math345_4_2_24_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكامل الحد الأول \\( \\frac{1}{2} \\). الطريقة: تكامل الثابت يساوي الثابت مضروباً في \\( x \\) فنحصل على \\( \\frac{1}{2}x \\). السبب: قاعدة تكامل الثابت.",
+        "think": "اضرب \\( \\frac{1}{2} \\) في \\( x \\).",
+        "html_structure": "\\int \\frac{1}{2}\\,dx = {q_4_2_24_4_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 4x \\) فنحصل على \\( 4 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "equation_template": "(4x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_dd",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_4_2_24_4_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "related_topics": [
+          "اشتقاق الزاوية"
+        ],
+        "step_id": "math345_4_2_24_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد مشتقة الزاوية داخل \\( \\cos \\). الطريقة: نشتق \\( 4x \\) فنحصل على \\( 4 \\). السبب: تكامل \\( \\cos \\) يحتاج أن تكون مشتقة الزاوية موجودة، وإن لم تكن فنقسم على قيمتها.",
+        "think": "مشتقة \\( kx \\) هي العدد \\( k \\) نفسه، فاكتب العدد المضروب في \\( x \\).",
+        "html_structure": "(4x)' = {q_4_2_24_4_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكامل \\( \\cos 4x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 4 \\). السبب: لأن اشتقاق \\( \\sin 4x \\) يعطي \\( 4\\cos 4x \\) فنقسم على \\( 4 \\) لنعوض الضرب الزائد.",
+        "equation_template": "\\int\\cos 4x\\,dx = \\frac{1}{{input_1}}\\sin 4x",
+        "inputs": [
+          {
+            "input_id": "step4_dv",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "-4"
+            ],
+            "id": "q_4_2_24_4_s4_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "-4"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو مشتقة الزاوية \\( 4x \\) التي وجدناها قبل قليل."
+          }
+        ],
+        "hint": "المقام هو مشتقة الزاوية \\( 4x \\) التي وجدناها قبل قليل.",
+        "related_topics": [
+          "تكامل جيب التمام"
+        ],
+        "step_id": "math345_4_2_24_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكامل \\( \\cos 4x \\). الطريقة: تكامل \\( \\cos \\) هو \\( \\sin \\) بنفس الزاوية، ونقسم على مشتقة الزاوية \\( 4 \\). السبب: لأن اشتقاق \\( \\sin 4x \\) يعطي \\( 4\\cos 4x \\) فنقسم على \\( 4 \\) لنعوض الضرب الزائد.",
+        "think": "المقام هو مشتقة الزاوية \\( 4x \\) التي وجدناها قبل قليل.",
+        "html_structure": "\\int\\cos 4x\\,dx = \\frac{1}{{q_4_2_24_4_s4_i1}}\\sin 4x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نضرب المعامل \\( \\frac{1}{2} \\) في \\( \\frac{1}{4} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 4 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 4x \\) في الجواب.",
+        "equation_template": "\\frac{1}{2}\\times\\frac{1}{4} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_cf",
+            "correct_answer": "1/8",
+            "options": [
+              "1/8",
+              "-1/8",
+              "1/4",
+              "8"
+            ],
+            "id": "q_4_2_24_4_s5_i1",
+            "correct_value": "1/8",
+            "allowed_keys": [
+              "1/8",
+              "-1/8",
+              "1/4",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times 4 = 8 \\) في المقام، وضع الإشارة المناسبة أمام الكسر."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times 4 = 8 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_24_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نضرب المعامل \\( \\frac{1}{2} \\) في \\( \\frac{1}{4} \\). الطريقة: نضرب البسطين معاً والمقامين معاً: \\( 2\\times 4 \\) في المقام، مع الحفاظ على الإشارة. السبب: لنحصل على معامل \\( \\sin 4x \\) في الجواب.",
+        "think": "اضرب \\( 2\\times 4 = 8 \\) في المقام، وضع الإشارة المناسبة أمام الكسر.",
+        "html_structure": "\\frac{1}{2}\\times\\frac{1}{4} = {q_4_2_24_4_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "equation_template": "\\int \\cos^2 2x\\,dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step6_fin",
+            "correct_answer": "x/2 + (1/8) sin 4x",
+            "options": [
+              "x/2 + (1/8) sin 4x",
+              "x/2 - (1/8) sin 4x",
+              "x/2 + (1/8) cos 4x",
+              "x + (1/8) sin 4x"
+            ],
+            "id": "q_4_2_24_4_s6_i1",
+            "correct_value": "x/2 + (1/8) sin 4x",
+            "allowed_keys": [
+              "x/2 + (1/8) sin 4x",
+              "x/2 - (1/8) sin 4x",
+              "x/2 + (1/8) cos 4x",
+              "x + (1/8) sin 4x"
+            ],
+            "label": "القيمة 1",
+            "hint": "جمع \\( \\frac{x}{2} \\) مع \\( + \\frac{1}{8} \\sin 4x \\) كما حسبنا."
+          }
+        ],
+        "hint": "جمع \\( \\frac{x}{2} \\) مع \\( + \\frac{1}{8} \\sin 4x \\) كما حسبنا.",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_24_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الجواب النهائي. الطريقة: نجمع \\( \\frac{x}{2} \\) مع الحد المحسوب ثم نضيف \\( c \\). السبب: هذا هو التكامل غير المحدد.",
+        "think": "جمع \\( \\frac{x}{2} \\) مع \\( + \\frac{1}{8} \\sin 4x \\) كما حسبنا.",
+        "html_structure": "\\int \\cos^2 2x\\,dx = {q_4_2_24_4_s6_i1} + c"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( \\frac{1}{8}\\sin 4x \\): ننزل الزاوية المضاعفة \\( 4 \\) ونضربها في المعامل فنحصل على \\( \\frac{1}{2}\\cos 4x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "equation_template": "\\frac{1}{8} \\times {input_1}\\cos 4x = \\frac{1}{2}\\cos 4x",
+        "inputs": [
+          {
+            "input_id": "step7_v",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "8",
+              "-4"
+            ],
+            "id": "q_4_2_24_4_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "8",
+              "-4"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة الزاوية \\( 4x \\) في الفراغ."
+          }
+        ],
+        "hint": "ضع مشتقة الزاوية \\( 4x \\) في الفراغ.",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_24_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق الحد \\( \\frac{1}{8}\\sin 4x \\): ننزل الزاوية المضاعفة \\( 4 \\) ونضربها في المعامل فنحصل على \\( \\frac{1}{2}\\cos 4x \\). السبب: لنتأكد أن الجواب صحيح.",
+        "think": "ضع مشتقة الزاوية \\( 4x \\) في الفراغ.",
+        "html_structure": "\\frac{1}{8} \\times {q_4_2_24_4_s7_i1}\\cos 4x = \\frac{1}{2}\\cos 4x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} + \\frac{1}{2}\\cos 4x \\). السبب: وهذا يساوي \\( \\cos^2 2x \\) حسب قانون ضعف الزاوية.",
+        "equation_template": "\\frac{1}{2} + {input_1}\\cos 4x = \\cos^2 2x",
+        "inputs": [
+          {
+            "input_id": "step8_h",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "id": "q_4_2_24_4_s8_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "1",
+              "2",
+              "1/4"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد."
+          }
+        ],
+        "hint": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "related_topics": [
+          "المراجعة"
+        ],
+        "step_id": "math345_4_2_24_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نربط الاشتقاق بالسؤال. الطريقة: مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\) وإذا أضفناها لمشتقة الحد الثاني حصلنا على \\( \\frac{1}{2} + \\frac{1}{2}\\cos 4x \\). السبب: وهذا يساوي \\( \\cos^2 2x \\) حسب قانون ضعف الزاوية.",
+        "think": "مشتقة \\( \\frac{x}{2} \\) هي \\( \\frac{1}{2} \\)، ومعامل \\( \\cos \\) الذي حسبناه في الخطوة السابقة هو نفس العدد.",
+        "html_structure": "\\frac{1}{2} + {q_4_2_24_4_s8_i1}\\cos 4x = \\cos^2 2x"
+      }
+    ]
+  }
+]

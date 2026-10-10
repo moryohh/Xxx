@@ -1,0 +1,1322 @@
+[
+  {
+    "id_number": "q7_p3",
+    "page_number": 3,
+    "question_number": "7",
+    "question_text": "بين أن \\( y = ae^{-x} \\) حل للمعادلة التفاضلية \\( y' + y = 0 \\) حيث \\( a \\in \\mathbb{R} \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=−ae^(−x) ⇒ y'+y=0",
+    "source_file": "رياضيات5/part3_page_003_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 3,
+      "pdf_page_number": 225
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png",
+    "title": "بين أن \\( y = ae^{-x} \\) حل للمعادلة التفاضلية \\( y' + y = 0 \\) حيث \\( a \\in \\mathbb{R} \\)",
+    "number": "7",
+    "model_solution": "y'=−ae^(−x) ⇒ y'+y=0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق الأس \\( -x \\). الطريقة: مشتقة \\( -x \\) هي \\( -1 \\). السبب: لأن مشتقة \\( e^u \\) تضرب في مشتقة \\( u \\).",
+        "equation_template": "(-x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "id": "q_5_2_3_1_s1_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( x \\) هي \\( 1 \\) وأمامها سالب."
+          }
+        ],
+        "hint": "مشتقة \\( x \\) هي \\( 1 \\) وأمامها سالب.",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_3_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق الأس \\( -x \\). الطريقة: مشتقة \\( -x \\) هي \\( -1 \\). السبب: لأن مشتقة \\( e^u \\) تضرب في مشتقة \\( u \\).",
+        "think": "مشتقة \\( x \\) هي \\( 1 \\) وأمامها سالب.",
+        "html_structure": "(-x)' = {q_5_2_3_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق \\( e^{-x} \\). الطريقة: مشتقة \\( e^u \\) هي \\( e^u \\) مضروبة في مشتقة \\( u \\)، فنضرب في \\( -1 \\). السبب: هذه قاعدة اشتقاق الدالة الأسية.",
+        "equation_template": "(e^{-x})' = {input_1}e^{-x}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "id": "q_5_2_3_1_s2_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( e^{-x} \\) في مشتقة الأس."
+          }
+        ],
+        "hint": "اضرب \\( e^{-x} \\) في مشتقة الأس.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية"
+        ],
+        "step_id": "math345_5_2_3_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق \\( e^{-x} \\). الطريقة: مشتقة \\( e^u \\) هي \\( e^u \\) مضروبة في مشتقة \\( u \\)، فنضرب في \\( -1 \\). السبب: هذه قاعدة اشتقاق الدالة الأسية.",
+        "think": "اضرب \\( e^{-x} \\) في مشتقة الأس.",
+        "html_structure": "(e^{-x})' = {q_5_2_3_1_s2_i1}e^{-x}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق \\( y = ae^{-x} \\). الطريقة: \\( a \\) ثابت فيبقى كما هو، ونضرب في \\( -e^{-x} \\). السبب: الثابت يخرج خارج الاشتقاق.",
+        "equation_template": "y' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "-ae^-x",
+            "options": [
+              "-ae^-x",
+              "ae^-x",
+              "-e^-x",
+              "-axe^-x"
+            ],
+            "id": "q_5_2_3_1_s3_i1",
+            "correct_value": "-ae^-x",
+            "allowed_keys": [
+              "-ae^-x",
+              "ae^-x",
+              "-e^-x",
+              "-axe^-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( a \\) في \\( -e^{-x} \\)."
+          }
+        ],
+        "hint": "اضرب \\( a \\) في \\( -e^{-x} \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية"
+        ],
+        "step_id": "math345_5_2_3_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق \\( y = ae^{-x} \\). الطريقة: \\( a \\) ثابت فيبقى كما هو، ونضرب في \\( -e^{-x} \\). السبب: الثابت يخرج خارج الاشتقاق.",
+        "think": "اضرب \\( a \\) في \\( -e^{-x} \\).",
+        "html_structure": "y' = {q_5_2_3_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نعوض في الطرف الأيسر \\( y' + y \\). الطريقة: نضع \\( -ae^{-x} \\) مكان \\( y' \\) و \\( ae^{-x} \\) مكان \\( y \\). السبب: لنحسب الطرف الأيسر.",
+        "equation_template": "y' + y = (-ae^{-x}) + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "ae^-x",
+            "options": [
+              "ae^-x",
+              "-ae^-x",
+              "e^-x",
+              "a"
+            ],
+            "id": "q_5_2_3_1_s4_i1",
+            "correct_value": "ae^-x",
+            "allowed_keys": [
+              "ae^-x",
+              "-ae^-x",
+              "e^-x",
+              "a"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( y \\) كما في السؤال."
+          }
+        ],
+        "hint": "اكتب \\( y \\) كما في السؤال.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_3_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نعوض في الطرف الأيسر \\( y' + y \\). الطريقة: نضع \\( -ae^{-x} \\) مكان \\( y' \\) و \\( ae^{-x} \\) مكان \\( y \\). السبب: لنحسب الطرف الأيسر.",
+        "think": "اكتب \\( y \\) كما في السؤال.",
+        "html_structure": "y' + y = (-ae^{-x}) + {q_5_2_3_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نبسط الجمع. الطريقة: \\( -ae^{-x} + ae^{-x} \\) متقابلان. السبب: الحدان متقابلان فمجموعهما صفر.",
+        "equation_template": "-ae^{-x} + ae^{-x} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2ae^-x",
+              "-1"
+            ],
+            "id": "q_5_2_3_1_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2ae^-x",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أي حد مع عكسه يعطي صفراً."
+          }
+        ],
+        "hint": "أي حد مع عكسه يعطي صفراً.",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_3_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نبسط الجمع. الطريقة: \\( -ae^{-x} + ae^{-x} \\) متقابلان. السبب: الحدان متقابلان فمجموعهما صفر.",
+        "think": "أي حد مع عكسه يعطي صفراً.",
+        "html_structure": "-ae^{-x} + ae^{-x} = {q_5_2_3_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب الطرف الأيمن. الطريقة: الطرف الأيمن للمعادلة \\( y' + y = 0 \\) هو \\( 0 \\). السبب: لنقارنه.",
+        "equation_template": "\\text{RHS} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_f",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "a",
+              "-1"
+            ],
+            "id": "q_5_2_3_1_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "a",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ ما بعد علامة المساواة."
+          }
+        ],
+        "hint": "انسخ ما بعد علامة المساواة.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_3_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب الطرف الأيمن. الطريقة: الطرف الأيمن للمعادلة \\( y' + y = 0 \\) هو \\( 0 \\). السبب: لنقارنه.",
+        "think": "انسخ ما بعد علامة المساواة.",
+        "html_structure": "\\text{RHS} = {q_5_2_3_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب الفرق بين الطرفين. الطريقة: الفرق صفر مهما كانت قيمة \\( a \\). السبب: لأن \\( a \\) عدد حقيقي اختياري.",
+        "equation_template": "\\text{LHS} - \\text{RHS} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_g",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "a",
+              "-1"
+            ],
+            "id": "q_5_2_3_1_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "a",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اطرح \\( 0 \\) من \\( 0 \\)."
+          }
+        ],
+        "hint": "اطرح \\( 0 \\) من \\( 0 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_3_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب الفرق بين الطرفين. الطريقة: الفرق صفر مهما كانت قيمة \\( a \\). السبب: لأن \\( a \\) عدد حقيقي اختياري.",
+        "think": "اطرح \\( 0 \\) من \\( 0 \\).",
+        "html_structure": "\\text{LHS} - \\text{RHS} = {q_5_2_3_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت لكل \\( a \\in \\mathbb{R} \\). السبب: هذا هو البرهان.",
+        "equation_template": "y = ae^{-x} \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_3_1_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أن العلاقة حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أن العلاقة حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_3_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت لكل \\( a \\in \\mathbb{R} \\). السبب: هذا هو البرهان.",
+        "think": "تحقق المعادلة يعني أن العلاقة حل.",
+        "html_structure": "y = ae^{-x} \\Rightarrow {q_5_2_3_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q5_p3",
+    "page_number": 3,
+    "question_number": "5",
+    "question_text": "برهن أن \\( S = 8\\cos 3t + 6\\sin 3t \\) حل للمعادلة التفاضلية \\( \\frac{d^2s}{dt^2} + 9s = 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "full_model_solution": "s'=−24sin3t+18cos3t ، s''=−72cos3t−54sin3t ⇒ s''+9s=0",
+    "source_file": "رياضيات5/part3_page_003_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 3,
+      "pdf_page_number": 225
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png",
+    "title": "برهن أن \\( S = 8\\cos 3t + 6\\sin 3t \\) حل للمعادلة التفاضلية \\( \\frac{d^2s}{dt^2} + 9s = 0 \\)",
+    "number": "5",
+    "model_solution": "s'=−24sin3t+18cos3t ، s''=−72cos3t−54sin3t ⇒ s''+9s=0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( 8\\cos 3t \\). الطريقة: مشتقة \\( \\cos 3t \\) هي \\( -3\\sin 3t \\)، فنحسب \\( 8\\times(-3) \\). السبب: نحتاج \\( \\frac{ds}{dt} \\) ثم المشتقة الثانية.",
+        "equation_template": "(8\\cos 3t)' = {input_1}\\sin 3t",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "-24",
+            "options": [
+              "-24",
+              "24",
+              "-8",
+              "-3"
+            ],
+            "id": "q_5_2_3_2_s1_i1",
+            "correct_value": "-24",
+            "allowed_keys": [
+              "-24",
+              "24",
+              "-8",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 8 \\) في \\( -3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 8 \\) في \\( -3 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_3_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( 8\\cos 3t \\). الطريقة: مشتقة \\( \\cos 3t \\) هي \\( -3\\sin 3t \\)، فنحسب \\( 8\\times(-3) \\). السبب: نحتاج \\( \\frac{ds}{dt} \\) ثم المشتقة الثانية.",
+        "think": "اضرب \\( 8 \\) في \\( -3 \\).",
+        "html_structure": "(8\\cos 3t)' = {q_5_2_3_2_s1_i1}\\sin 3t"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق \\( 6\\sin 3t \\). الطريقة: مشتقة \\( \\sin 3t \\) هي \\( 3\\cos 3t \\)، فنحسب \\( 6\\times 3 \\). السبب: نكمل المشتقة الأولى.",
+        "equation_template": "(6\\sin 3t)' = {input_1}\\cos 3t",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "18",
+            "options": [
+              "18",
+              "-18",
+              "6",
+              "3"
+            ],
+            "id": "q_5_2_3_2_s2_i1",
+            "correct_value": "18",
+            "allowed_keys": [
+              "18",
+              "-18",
+              "6",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 6 \\) في \\( 3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 6 \\) في \\( 3 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_3_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق \\( 6\\sin 3t \\). الطريقة: مشتقة \\( \\sin 3t \\) هي \\( 3\\cos 3t \\)، فنحسب \\( 6\\times 3 \\). السبب: نكمل المشتقة الأولى.",
+        "think": "اضرب \\( 6 \\) في \\( 3 \\).",
+        "html_structure": "(6\\sin 3t)' = {q_5_2_3_2_s2_i1}\\cos 3t"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق \\( -24\\sin 3t \\) مرة ثانية. الطريقة: مشتقة \\( \\sin 3t \\) هي \\( 3\\cos 3t \\)، فنحسب \\( -24\\times 3 \\). السبب: نحتاج المشتقة الثانية.",
+        "equation_template": "(-24\\sin 3t)' = {input_1}\\cos 3t",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "-72",
+            "options": [
+              "-72",
+              "72",
+              "-24",
+              "-8"
+            ],
+            "id": "q_5_2_3_2_s3_i1",
+            "correct_value": "-72",
+            "allowed_keys": [
+              "-72",
+              "72",
+              "-24",
+              "-8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( -24 \\) في \\( 3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( -24 \\) في \\( 3 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_3_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق \\( -24\\sin 3t \\) مرة ثانية. الطريقة: مشتقة \\( \\sin 3t \\) هي \\( 3\\cos 3t \\)، فنحسب \\( -24\\times 3 \\). السبب: نحتاج المشتقة الثانية.",
+        "think": "اضرب \\( -24 \\) في \\( 3 \\).",
+        "html_structure": "(-24\\sin 3t)' = {q_5_2_3_2_s3_i1}\\cos 3t"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق \\( 18\\cos 3t \\) مرة ثانية. الطريقة: مشتقة \\( \\cos 3t \\) هي \\( -3\\sin 3t \\)، فنحسب \\( 18\\times(-3) \\). السبب: نكمل المشتقة الثانية.",
+        "equation_template": "(18\\cos 3t)' = {input_1}\\sin 3t",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "-54",
+            "options": [
+              "-54",
+              "54",
+              "-18",
+              "-6"
+            ],
+            "id": "q_5_2_3_2_s4_i1",
+            "correct_value": "-54",
+            "allowed_keys": [
+              "-54",
+              "54",
+              "-18",
+              "-6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 18 \\) في \\( -3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 18 \\) في \\( -3 \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_5_2_3_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق \\( 18\\cos 3t \\) مرة ثانية. الطريقة: مشتقة \\( \\cos 3t \\) هي \\( -3\\sin 3t \\)، فنحسب \\( 18\\times(-3) \\). السبب: نكمل المشتقة الثانية.",
+        "think": "اضرب \\( 18 \\) في \\( -3 \\).",
+        "html_structure": "(18\\cos 3t)' = {q_5_2_3_2_s4_i1}\\sin 3t"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب \\( 9s \\). الطريقة: نضرب كل حد في \\( 9 \\): \\( 9\\times8 \\) و \\( 9\\times6 \\). السبب: لأن المعادلة فيها \\( 9s \\).",
+        "equation_template": "9s = {input_1}\\cos 3t + {input_2}\\sin 3t",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "72",
+            "options": [
+              "72",
+              "17",
+              "8",
+              "54"
+            ],
+            "id": "q_5_2_3_2_s5_i1",
+            "correct_value": "72",
+            "allowed_keys": [
+              "72",
+              "17",
+              "8",
+              "54"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 9\\times8 \\) ثم \\( 9\\times6 \\)."
+          },
+          {
+            "input_id": "step5_f",
+            "correct_answer": "54",
+            "options": [
+              "54",
+              "15",
+              "6",
+              "72"
+            ],
+            "id": "q_5_2_3_2_s5_i2",
+            "correct_value": "54",
+            "allowed_keys": [
+              "54",
+              "15",
+              "6",
+              "72"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( 9\\times8 \\) ثم \\( 9\\times6 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 9\\times8 \\) ثم \\( 9\\times6 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_2_3_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب \\( 9s \\). الطريقة: نضرب كل حد في \\( 9 \\): \\( 9\\times8 \\) و \\( 9\\times6 \\). السبب: لأن المعادلة فيها \\( 9s \\).",
+        "think": "اضرب \\( 9\\times8 \\) ثم \\( 9\\times6 \\).",
+        "html_structure": "9s = {q_5_2_3_2_s5_i1}\\cos 3t + {q_5_2_3_2_s5_i2}\\sin 3t"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نجمع \\( s'' + 9s \\). الطريقة: \\( s'' = -72\\cos3t - 54\\sin3t \\)، فنجمع معاملات \\( \\cos \\) ثم معاملات \\( \\sin \\). السبب: لنرى هل الناتج صفر.",
+        "equation_template": "(-72 + 72)\\cos 3t + (-54 + 54)\\sin 3t = {input_1}\\cos 3t + {input_2}\\sin 3t",
+        "inputs": [
+          {
+            "input_id": "step6_g",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "144",
+              "-72"
+            ],
+            "id": "q_5_2_3_2_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "144",
+              "-72"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -72+72=0 \\) و \\( -54+54=0 \\)."
+          },
+          {
+            "input_id": "step6_h",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "108",
+              "-54"
+            ],
+            "id": "q_5_2_3_2_s6_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "108",
+              "-54"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -72+72=0 \\) و \\( -54+54=0 \\)."
+          }
+        ],
+        "hint": "\\( -72+72=0 \\) و \\( -54+54=0 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_3_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجمع \\( s'' + 9s \\). الطريقة: \\( s'' = -72\\cos3t - 54\\sin3t \\)، فنجمع معاملات \\( \\cos \\) ثم معاملات \\( \\sin \\). السبب: لنرى هل الناتج صفر.",
+        "think": "\\( -72+72=0 \\) و \\( -54+54=0 \\).",
+        "html_structure": "(-72 + 72)\\cos 3t + (-54 + 54)\\sin 3t = {q_5_2_3_2_s6_i1}\\cos 3t + {q_5_2_3_2_s6_i2}\\sin 3t"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب الناتج النهائي. الطريقة: \\( 0\\cdot\\cos3t + 0\\cdot\\sin3t = 0 \\). السبب: هذا يساوي الطرف الأيمن.",
+        "equation_template": "0\\cdot\\cos 3t + 0\\cdot\\sin 3t = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_i",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "cos 3t",
+              "-1"
+            ],
+            "id": "q_5_2_3_2_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "cos 3t",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "أي دالة مضروبة في صفر تعطي صفراً."
+          }
+        ],
+        "hint": "أي دالة مضروبة في صفر تعطي صفراً.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_3_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب الناتج النهائي. الطريقة: \\( 0\\cdot\\cos3t + 0\\cdot\\sin3t = 0 \\). السبب: هذا يساوي الطرف الأيمن.",
+        "think": "أي دالة مضروبة في صفر تعطي صفراً.",
+        "html_structure": "0\\cdot\\cos 3t + 0\\cdot\\sin 3t = {q_5_2_3_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: الطرفان متساويان. السبب: هذا هو البرهان.",
+        "equation_template": "S = 8\\cos 3t + 6\\sin 3t \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_3_2_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_3_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: الطرفان متساويان. السبب: هذا هو البرهان.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "S = 8\\cos 3t + 6\\sin 3t \\Rightarrow {q_5_2_3_2_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q8_p3",
+    "page_number": 3,
+    "question_number": "8",
+    "question_text": "بين أن \\( y = e^{2x} + e^{-3x} \\) حل للمعادلة التفاضلية \\( y'' + y' - 6y = 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=2e^(2x)−3e^(−3x) ، y''=4e^(2x)+9e^(−3x) ⇒ المجموع 0",
+    "source_file": "رياضيات5/part3_page_003_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 3,
+      "pdf_page_number": 225
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png",
+    "title": "بين أن \\( y = e^{2x} + e^{-3x} \\) حل للمعادلة التفاضلية \\( y'' + y' - 6y = 0 \\)",
+    "number": "8",
+    "model_solution": "y'=2e^(2x)−3e^(−3x) ، y''=4e^(2x)+9e^(−3x) ⇒ المجموع 0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( e^{2x} \\). الطريقة: مشتقة \\( e^{2x} \\) هي \\( e^{2x} \\) مضروبة في مشتقة الأس \\( 2 \\). السبب: قاعدة اشتقاق الدالة الأسية.",
+        "equation_template": "(e^{2x})' = {input_1}e^{2x}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "x"
+            ],
+            "id": "q_5_2_3_3_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 2x \\) هي \\( 2 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 2x \\) هي \\( 2 \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية"
+        ],
+        "step_id": "math345_5_2_3_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( e^{2x} \\). الطريقة: مشتقة \\( e^{2x} \\) هي \\( e^{2x} \\) مضروبة في مشتقة الأس \\( 2 \\). السبب: قاعدة اشتقاق الدالة الأسية.",
+        "think": "مشتقة \\( 2x \\) هي \\( 2 \\).",
+        "html_structure": "(e^{2x})' = {q_5_2_3_3_s1_i1}e^{2x}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق \\( e^{-3x} \\). الطريقة: مشتقة \\( e^{-3x} \\) هي \\( e^{-3x} \\) مضروبة في مشتقة الأس \\( -3 \\). السبب: قاعدة اشتقاق الدالة الأسية.",
+        "equation_template": "(e^{-3x})' = {input_1}e^{-3x}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "3",
+              "1",
+              "-1"
+            ],
+            "id": "q_5_2_3_3_s2_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( -3x \\) هي \\( -3 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( -3x \\) هي \\( -3 \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية"
+        ],
+        "step_id": "math345_5_2_3_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق \\( e^{-3x} \\). الطريقة: مشتقة \\( e^{-3x} \\) هي \\( e^{-3x} \\) مضروبة في مشتقة الأس \\( -3 \\). السبب: قاعدة اشتقاق الدالة الأسية.",
+        "think": "مشتقة \\( -3x \\) هي \\( -3 \\).",
+        "html_structure": "(e^{-3x})' = {q_5_2_3_3_s2_i1}e^{-3x}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق \\( 2e^{2x} \\) مرة ثانية. الطريقة: نضرب \\( 2 \\) في \\( 2 \\). السبب: نريد \\( y'' \\).",
+        "equation_template": "(2e^{2x})' = {input_1}e^{2x}",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "id": "q_5_2_3_3_s3_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2\\times2 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2\\times2 \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية"
+        ],
+        "step_id": "math345_5_2_3_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق \\( 2e^{2x} \\) مرة ثانية. الطريقة: نضرب \\( 2 \\) في \\( 2 \\). السبب: نريد \\( y'' \\).",
+        "think": "اضرب \\( 2\\times2 \\).",
+        "html_structure": "(2e^{2x})' = {q_5_2_3_3_s3_i1}e^{2x}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق \\( -3e^{-3x} \\) مرة ثانية. الطريقة: نضرب \\( -3 \\) في \\( -3 \\) فتصبح موجبة. السبب: حاصل ضرب سالبين موجب.",
+        "equation_template": "(-3e^{-3x})' = {input_1}e^{-3x}",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "9",
+            "options": [
+              "9",
+              "-9",
+              "3",
+              "-3"
+            ],
+            "id": "q_5_2_3_3_s4_i1",
+            "correct_value": "9",
+            "allowed_keys": [
+              "9",
+              "-9",
+              "3",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( -3\\times-3 \\)."
+          }
+        ],
+        "hint": "اضرب \\( -3\\times-3 \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية"
+        ],
+        "step_id": "math345_5_2_3_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق \\( -3e^{-3x} \\) مرة ثانية. الطريقة: نضرب \\( -3 \\) في \\( -3 \\) فتصبح موجبة. السبب: حاصل ضرب سالبين موجب.",
+        "think": "اضرب \\( -3\\times-3 \\).",
+        "html_structure": "(-3e^{-3x})' = {q_5_2_3_3_s4_i1}e^{-3x}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب \\( -6y \\). الطريقة: نضرب كل حد من \\( y = e^{2x}+e^{-3x} \\) في \\( -6 \\). السبب: لأن المعادلة فيها \\( -6y \\).",
+        "equation_template": "-6y = {input_1}e^{2x} + {input_2}e^{-3x}",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "-3",
+              "1"
+            ],
+            "id": "q_5_2_3_3_s5_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "-3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( -6 \\) في معامل كل حد وهو \\( 1 \\)."
+          },
+          {
+            "input_id": "step5_f",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "-3",
+              "1"
+            ],
+            "id": "q_5_2_3_3_s5_i2",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "-3",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "اضرب \\( -6 \\) في معامل كل حد وهو \\( 1 \\)."
+          }
+        ],
+        "hint": "اضرب \\( -6 \\) في معامل كل حد وهو \\( 1 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_2_3_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب \\( -6y \\). الطريقة: نضرب كل حد من \\( y = e^{2x}+e^{-3x} \\) في \\( -6 \\). السبب: لأن المعادلة فيها \\( -6y \\).",
+        "think": "اضرب \\( -6 \\) في معامل كل حد وهو \\( 1 \\).",
+        "html_structure": "-6y = {q_5_2_3_3_s5_i1}e^{2x} + {q_5_2_3_3_s5_i2}e^{-3x}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نجمع معاملات \\( e^{2x} \\). الطريقة: نأخذ من \\( y'' \\) العدد \\( 4 \\)، ومن \\( y' \\) العدد \\( 2 \\)، ومن \\( -6y \\) العدد \\( -6 \\). السبب: لنرى هل المجموع صفر.",
+        "equation_template": "4 + 2 - 6 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_g",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "12",
+              "-12",
+              "6"
+            ],
+            "id": "q_5_2_3_3_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "12",
+              "-12",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( 4+2 \\) ثم اطرح \\( 6 \\)."
+          }
+        ],
+        "hint": "احسب \\( 4+2 \\) ثم اطرح \\( 6 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_3_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجمع معاملات \\( e^{2x} \\). الطريقة: نأخذ من \\( y'' \\) العدد \\( 4 \\)، ومن \\( y' \\) العدد \\( 2 \\)، ومن \\( -6y \\) العدد \\( -6 \\). السبب: لنرى هل المجموع صفر.",
+        "think": "احسب \\( 4+2 \\) ثم اطرح \\( 6 \\).",
+        "html_structure": "4 + 2 - 6 = {q_5_2_3_3_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نجمع معاملات \\( e^{-3x} \\). الطريقة: نأخذ \\( 9 \\) من \\( y'' \\) و \\( -3 \\) من \\( y' \\) و \\( -6 \\) من \\( -6y \\). السبب: لنرى هل المجموع صفر.",
+        "equation_template": "9 - 3 - 6 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_h",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "12",
+              "-12",
+              "6"
+            ],
+            "id": "q_5_2_3_3_s7_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "12",
+              "-12",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( 9-3 \\) ثم اطرح \\( 6 \\)."
+          }
+        ],
+        "hint": "احسب \\( 9-3 \\) ثم اطرح \\( 6 \\).",
+        "related_topics": [
+          "الجمع"
+        ],
+        "step_id": "math345_5_2_3_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نجمع معاملات \\( e^{-3x} \\). الطريقة: نأخذ \\( 9 \\) من \\( y'' \\) و \\( -3 \\) من \\( y' \\) و \\( -6 \\) من \\( -6y \\). السبب: لنرى هل المجموع صفر.",
+        "think": "احسب \\( 9-3 \\) ثم اطرح \\( 6 \\).",
+        "html_structure": "9 - 3 - 6 = {q_5_2_3_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: الطرف الأيسر \\( 0\\cdot e^{2x} + 0\\cdot e^{-3x} = 0 \\) يساوي الأيمن. السبب: المعادلة تحققت.",
+        "equation_template": "y = e^{2x} + e^{-3x} \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_3_3_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_3_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: الطرف الأيسر \\( 0\\cdot e^{2x} + 0\\cdot e^{-3x} = 0 \\) يساوي الأيمن. السبب: المعادلة تحققت.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "y = e^{2x} + e^{-3x} \\Rightarrow {q_5_2_3_3_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q6_p3",
+    "page_number": 3,
+    "question_number": "6",
+    "question_text": "هل \\( y = \\tan x \\) حل للمعادلة \\( y'' = 2y(1+y^2) \\)؟",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "full_model_solution": "y'=sec²x ، y''=2sec²x tan x = 2(1+y²)y ⇒ حل",
+    "source_file": "رياضيات5/part3_page_003_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 3,
+      "pdf_page_number": 225
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_003_diag_1_drawing.png",
+    "title": "هل \\( y = \\tan x \\) حل للمعادلة \\( y'' = 2y(1+y^2) \\)؟",
+    "number": "6",
+    "model_solution": "y'=sec²x ، y''=2sec²x tan x = 2(1+y²)y ⇒ حل",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق \\( y = \\tan x \\). الطريقة: مشتقة \\( \\tan x \\) هي \\( \\sec^2 x \\). السبب: نحتاج \\( y'' \\).",
+        "equation_template": "y' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "sec^2 x",
+            "options": [
+              "sec^2 x",
+              "-csc^2 x",
+              "sec x tan x",
+              "cot x"
+            ],
+            "id": "q_5_2_3_4_s1_i1",
+            "correct_value": "sec^2 x",
+            "allowed_keys": [
+              "sec^2 x",
+              "-csc^2 x",
+              "sec x tan x",
+              "cot x"
+            ],
+            "label": "القيمة 1",
+            "hint": "من جدول المشتقات: مشتقة \\( \\tan x \\)."
+          }
+        ],
+        "hint": "من جدول المشتقات: مشتقة \\( \\tan x \\).",
+        "related_topics": [
+          "مشتقات الدوال المثلثية"
+        ],
+        "step_id": "math345_5_2_3_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق \\( y = \\tan x \\). الطريقة: مشتقة \\( \\tan x \\) هي \\( \\sec^2 x \\). السبب: نحتاج \\( y'' \\).",
+        "think": "من جدول المشتقات: مشتقة \\( \\tan x \\).",
+        "html_structure": "y' = {q_5_2_3_4_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق \\( \\sec^2 x \\). الطريقة: نكتبها \\( (\\sec x)^2 \\) وننزل الأس \\( 2 \\) ثم نضرب في مشتقة \\( \\sec x \\) وهي \\( \\sec x \\tan x \\). السبب: قاعدة القوس المرفوع لأس.",
+        "equation_template": "y'' = 2\\sec x \\cdot {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "sec x tan x",
+            "options": [
+              "sec x tan x",
+              "sec^2 x",
+              "-sec x tan x",
+              "tan x"
+            ],
+            "id": "q_5_2_3_4_s2_i1",
+            "correct_value": "sec x tan x",
+            "allowed_keys": [
+              "sec x tan x",
+              "sec^2 x",
+              "-sec x tan x",
+              "tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\sec x \\) هي \\( \\sec x \\tan x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\sec x \\) هي \\( \\sec x \\tan x \\).",
+        "related_topics": [
+          "قاعدة اشتقاق القوس"
+        ],
+        "step_id": "math345_5_2_3_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق \\( \\sec^2 x \\). الطريقة: نكتبها \\( (\\sec x)^2 \\) وننزل الأس \\( 2 \\) ثم نضرب في مشتقة \\( \\sec x \\) وهي \\( \\sec x \\tan x \\). السبب: قاعدة القوس المرفوع لأس.",
+        "think": "مشتقة \\( \\sec x \\) هي \\( \\sec x \\tan x \\).",
+        "html_structure": "y'' = 2\\sec x \\cdot {q_5_2_3_4_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نبسط الضرب. الطريقة: \\( \\sec x \\times \\sec x = \\sec^2 x \\). السبب: نجمع الأسس.",
+        "equation_template": "2\\sec x\\cdot\\sec x\\tan x = 2\\,{input_1}\\tan x",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "sec^2 x",
+            "options": [
+              "sec^2 x",
+              "sec x",
+              "sec^3 x",
+              "tan^2 x"
+            ],
+            "id": "q_5_2_3_4_s3_i1",
+            "correct_value": "sec^2 x",
+            "allowed_keys": [
+              "sec^2 x",
+              "sec x",
+              "sec^3 x",
+              "tan^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( \\sec x \\) في \\( \\sec x \\)."
+          }
+        ],
+        "hint": "اضرب \\( \\sec x \\) في \\( \\sec x \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "math345_5_2_3_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نبسط الضرب. الطريقة: \\( \\sec x \\times \\sec x = \\sec^2 x \\). السبب: نجمع الأسس.",
+        "think": "اضرب \\( \\sec x \\) في \\( \\sec x \\).",
+        "html_structure": "2\\sec x\\cdot\\sec x\\tan x = 2\\,{q_5_2_3_4_s3_i1}\\tan x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نستخدم المتطابقة \\( \\sec^2 x = 1 + \\tan^2 x \\). الطريقة: نستبدل \\( \\sec^2 x \\) بـ \\( 1 + \\tan^2 x \\). السبب: لنكتب كل شيء بدلالة \\( \\tan x \\).",
+        "equation_template": "\\sec^2 x = 1 + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "tan^2 x",
+            "options": [
+              "tan^2 x",
+              "cot^2 x",
+              "tan x",
+              "sin^2 x"
+            ],
+            "id": "q_5_2_3_4_s4_i1",
+            "correct_value": "tan^2 x",
+            "allowed_keys": [
+              "tan^2 x",
+              "cot^2 x",
+              "tan x",
+              "sin^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 \\) زائد مربع الظل يساوي مربع القاطع."
+          }
+        ],
+        "hint": "\\( 1 \\) زائد مربع الظل يساوي مربع القاطع.",
+        "related_topics": [
+          "المتطابقات المثلثية"
+        ],
+        "step_id": "math345_5_2_3_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نستخدم المتطابقة \\( \\sec^2 x = 1 + \\tan^2 x \\). الطريقة: نستبدل \\( \\sec^2 x \\) بـ \\( 1 + \\tan^2 x \\). السبب: لنكتب كل شيء بدلالة \\( \\tan x \\).",
+        "think": "\\( 1 \\) زائد مربع الظل يساوي مربع القاطع.",
+        "html_structure": "\\sec^2 x = 1 + {q_5_2_3_4_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعوض \\( y = \\tan x \\). الطريقة: بما أن \\( \\tan x = y \\) فإن \\( \\tan^2 x = y^2 \\). السبب: لنكتب الناتج بدلالة \\( y \\).",
+        "equation_template": "1 + \\tan^2 x = 1 + {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "y^2",
+            "options": [
+              "y^2",
+              "y",
+              "2y",
+              "y^3"
+            ],
+            "id": "q_5_2_3_4_s5_i1",
+            "correct_value": "y^2",
+            "allowed_keys": [
+              "y^2",
+              "y",
+              "2y",
+              "y^3"
+            ],
+            "label": "القيمة 1",
+            "hint": "ربّع \\( y \\)."
+          }
+        ],
+        "hint": "ربّع \\( y \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_3_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعوض \\( y = \\tan x \\). الطريقة: بما أن \\( \\tan x = y \\) فإن \\( \\tan^2 x = y^2 \\). السبب: لنكتب الناتج بدلالة \\( y \\).",
+        "think": "ربّع \\( y \\).",
+        "html_structure": "1 + \\tan^2 x = 1 + {q_5_2_3_4_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب \\( y'' \\) بدلالة \\( y \\). الطريقة: \\( y'' = 2(1+y^2)\\tan x \\) و \\( \\tan x = y \\). السبب: لنقارنه بالطرف الأيمن.",
+        "equation_template": "y'' = 2(1+y^2){input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_f",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "y^2",
+              "1",
+              "tan x + 1"
+            ],
+            "id": "q_5_2_3_4_s6_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "y^2",
+              "1",
+              "tan x + 1"
+            ],
+            "label": "القيمة 1",
+            "hint": "استبدل \\( \\tan x \\) بالمتغير \\( y \\)."
+          }
+        ],
+        "hint": "استبدل \\( \\tan x \\) بالمتغير \\( y \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_3_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب \\( y'' \\) بدلالة \\( y \\). الطريقة: \\( y'' = 2(1+y^2)\\tan x \\) و \\( \\tan x = y \\). السبب: لنقارنه بالطرف الأيمن.",
+        "think": "استبدل \\( \\tan x \\) بالمتغير \\( y \\).",
+        "html_structure": "y'' = 2(1+y^2){q_5_2_3_4_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن. الطريقة: الطرف الأيمن في السؤال \\( 2y(1+y^2) \\) وهو نفس ما وجدناه. السبب: لنتأكد من التحقق.",
+        "equation_template": "y'' \\;\\; {input_1} \\;\\; 2y(1+y^2)",
+        "inputs": [
+          {
+            "input_id": "step7_cmp",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_3_4_s7_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "التعبيران متطابقان فاختر المساواة."
+          }
+        ],
+        "hint": "التعبيران متطابقان فاختر المساواة.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_3_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن. الطريقة: الطرف الأيمن في السؤال \\( 2y(1+y^2) \\) وهو نفس ما وجدناه. السبب: لنتأكد من التحقق.",
+        "think": "التعبيران متطابقان فاختر المساواة.",
+        "html_structure": "y'' \\;\\; {q_5_2_3_4_s7_i1} \\;\\; 2y(1+y^2)"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. السبب: تعريف الحل.",
+        "equation_template": "y = \\tan x \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_3_4_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_3_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. السبب: تعريف الحل.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "y = \\tan x \\Rightarrow {q_5_2_3_4_s8_i1}"
+      }
+    ]
+  }
+]

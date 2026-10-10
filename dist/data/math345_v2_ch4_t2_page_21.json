@@ -1,0 +1,413 @@
+[
+  {
+    "id_number": "q5_p21",
+    "page_number": 21,
+    "question_number": "5",
+    "question_text": "احسب \\( \\int (\\cos x + x^{-2})\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png"
+    ],
+    "full_model_solution": "sin x − 1/x + c",
+    "source_file": "رياضيلت 4/part2_page_021_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 21,
+      "pdf_page_number": 161
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_021_diag_1_drawing.png",
+    "title": "احسب \\( \\int (\\cos x + x^{-2})\\,dx \\)",
+    "number": "5",
+    "model_solution": "sin x − 1/x + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نوزع التكامل على الحدين. الطريقة: تكامل المجموع يساوي مجموع تكاملي الحدين، فنكتب كل حد داخل تكامل منفصل. السبب: لأن لكل حد قاعدة تكامل مختلفة.",
+        "equation_template": "\\int (\\cos x + x^{-2})dx = \\int {input_1}\\,dx + \\int {input_2}\\,dx",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "cos x",
+            "options": [
+              "cos x",
+              "sin x",
+              "-sin x",
+              "x"
+            ],
+            "id": "q_4_2_21_1_s1_i1",
+            "correct_value": "cos x",
+            "allowed_keys": [
+              "cos x",
+              "sin x",
+              "-sin x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الحد الأول \\( \\cos x \\) في الفراغ الأول، والحد الثاني \\( x^{-2} \\) في الفراغ الثاني."
+          },
+          {
+            "input_id": "step1_b",
+            "correct_answer": "x^-2",
+            "options": [
+              "x^-2",
+              "x^2",
+              "x^-1",
+              "-2x"
+            ],
+            "id": "q_4_2_21_1_s1_i2",
+            "correct_value": "x^-2",
+            "allowed_keys": [
+              "x^-2",
+              "x^2",
+              "x^-1",
+              "-2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "انسخ الحد الأول \\( \\cos x \\) في الفراغ الأول، والحد الثاني \\( x^{-2} \\) في الفراغ الثاني."
+          }
+        ],
+        "hint": "انسخ الحد الأول \\( \\cos x \\) في الفراغ الأول، والحد الثاني \\( x^{-2} \\) في الفراغ الثاني.",
+        "related_topics": [
+          "تكامل مجموع دوال"
+        ],
+        "step_id": "math345_4_2_21_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نوزع التكامل على الحدين. الطريقة: تكامل المجموع يساوي مجموع تكاملي الحدين، فنكتب كل حد داخل تكامل منفصل. السبب: لأن لكل حد قاعدة تكامل مختلفة.",
+        "think": "انسخ الحد الأول \\( \\cos x \\) في الفراغ الأول، والحد الثاني \\( x^{-2} \\) في الفراغ الثاني.",
+        "html_structure": "\\int (\\cos x + x^{-2})dx = \\int {q_4_2_21_1_s1_i1}\\,dx + \\int {q_4_2_21_1_s1_i2}\\,dx"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نكامل \\( \\cos x \\). الطريقة: نبحث في جدول التكامل فنجد أن تكامل \\( \\cos x \\) هو \\( \\sin x \\). السبب: لأن مشتقة \\( \\sin x \\) هي \\( \\cos x \\).",
+        "equation_template": "\\int \\cos x\\,dx = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_c",
+            "correct_answer": "sin x",
+            "options": [
+              "sin x",
+              "-sin x",
+              "cos x",
+              "tan x"
+            ],
+            "id": "q_4_2_21_1_s2_i1",
+            "correct_value": "sin x",
+            "allowed_keys": [
+              "sin x",
+              "-sin x",
+              "cos x",
+              "tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الدالة التي مشتقتها \\( \\cos x \\) هي \\( \\sin x \\) وليست \\( -\\sin x \\)."
+          }
+        ],
+        "hint": "الدالة التي مشتقتها \\( \\cos x \\) هي \\( \\sin x \\) وليست \\( -\\sin x \\).",
+        "related_topics": [
+          "تكامل الدوال المثلثية"
+        ],
+        "step_id": "math345_4_2_21_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نكامل \\( \\cos x \\). الطريقة: نبحث في جدول التكامل فنجد أن تكامل \\( \\cos x \\) هو \\( \\sin x \\). السبب: لأن مشتقة \\( \\sin x \\) هي \\( \\cos x \\).",
+        "think": "الدالة التي مشتقتها \\( \\cos x \\) هي \\( \\sin x \\) وليست \\( -\\sin x \\).",
+        "html_structure": "\\int \\cos x\\,dx = {q_4_2_21_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نريد حساب الأس الجديد للحد \\( x^{-2} \\). الطريقة: الأس الحالي هو \\( -2 \\)، فنضيف إليه \\( 1 \\) ونحسب الناتج (إذا كان الأس كسراً نكتب \\( 1 \\) بنفس المقام ثم نجمع). السبب: قاعدة تكامل القوى ترفع الأس دائماً بمقدار واحد.",
+        "equation_template": "(-2) + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_t_newexp",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "-2",
+              "1",
+              "-3"
+            ],
+            "id": "q_4_2_21_1_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "-2",
+              "1",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( -2 + 1 \\)."
+          }
+        ],
+        "hint": "احسب \\( -2 + 1 \\).",
+        "related_topics": [
+          "تكامل x^n"
+        ],
+        "step_id": "math345_4_2_21_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نريد حساب الأس الجديد للحد \\( x^{-2} \\). الطريقة: الأس الحالي هو \\( -2 \\)، فنضيف إليه \\( 1 \\) ونحسب الناتج (إذا كان الأس كسراً نكتب \\( 1 \\) بنفس المقام ثم نجمع). السبب: قاعدة تكامل القوى ترفع الأس دائماً بمقدار واحد.",
+        "think": "احسب \\( -2 + 1 \\).",
+        "html_structure": "(-2) + 1 = {q_4_2_21_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد مقلوب الأس الجديد \\( -1 \\). الطريقة: القسمة على \\( -1 \\) تعني الضرب في مقلوبه، فنكتب \\( 1 \\) على \\( -1 \\) (وإذا كان كسراً نقلب بسطه ومقامه). السبب: هكذا نتجنب القسمة على كسر ونحولها إلى ضرب أسهل.",
+        "equation_template": "\\frac{1}{-1} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_t_recip",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "id": "q_4_2_21_1_s4_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقلب العدد \\( -1 \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه)."
+          }
+        ],
+        "hint": "اقلب العدد \\( -1 \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه).",
+        "related_topics": [
+          "المقلوب"
+        ],
+        "step_id": "math345_4_2_21_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد مقلوب الأس الجديد \\( -1 \\). الطريقة: القسمة على \\( -1 \\) تعني الضرب في مقلوبه، فنكتب \\( 1 \\) على \\( -1 \\) (وإذا كان كسراً نقلب بسطه ومقامه). السبب: هكذا نتجنب القسمة على كسر ونحولها إلى ضرب أسهل.",
+        "think": "اقلب العدد \\( -1 \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه).",
+        "html_structure": "\\frac{1}{-1} = {q_4_2_21_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب معامل الحد بعد التكامل. الطريقة: نضرب المعامل الأصلي \\( 1 \\) في المقلوب \\( -1 \\) (البسط في البسط والمقام في المقام ثم نختصر). السبب: قاعدة التكامل تقسم على الأس الجديد، أي تضرب المعامل في مقلوبه.",
+        "equation_template": "1 \\times -1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_t_coef",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "id": "q_4_2_21_1_s5_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "0",
+              "-2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 1 \\times -1 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج."
+          }
+        ],
+        "hint": "اضرب \\( 1 \\times -1 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_2_21_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب معامل الحد بعد التكامل. الطريقة: نضرب المعامل الأصلي \\( 1 \\) في المقلوب \\( -1 \\) (البسط في البسط والمقام في المقام ثم نختصر). السبب: قاعدة التكامل تقسم على الأس الجديد، أي تضرب المعامل في مقلوبه.",
+        "think": "اضرب \\( 1 \\times -1 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج.",
+        "html_structure": "1 \\times -1 = {q_4_2_21_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب ناتج الحد الثاني. الطريقة: نضع المعامل \\( -1 \\) أمام \\( x \\) بالأس \\( -1 \\). السبب: هذا ما حسبناه من الخطوات الثلاث السابقة.",
+        "equation_template": "\\int x^{-2}dx = {input_1}x^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step6_wc",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-2",
+              "0"
+            ],
+            "id": "q_4_2_21_1_s6_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( -1 \\) والأس الجديد \\( -1 \\)."
+          },
+          {
+            "input_id": "step6_we",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-2",
+              "0"
+            ],
+            "id": "q_4_2_21_1_s6_i2",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-2",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعامل \\( -1 \\) والأس الجديد \\( -1 \\)."
+          }
+        ],
+        "hint": "المعامل \\( -1 \\) والأس الجديد \\( -1 \\).",
+        "related_topics": [
+          "كتابة الناتج"
+        ],
+        "step_id": "math345_4_2_21_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب ناتج الحد الثاني. الطريقة: نضع المعامل \\( -1 \\) أمام \\( x \\) بالأس \\( -1 \\). السبب: هذا ما حسبناه من الخطوات الثلاث السابقة.",
+        "think": "المعامل \\( -1 \\) والأس الجديد \\( -1 \\).",
+        "html_structure": "\\int x^{-2}dx = {q_4_2_21_1_s6_i1}x^{{q_4_2_21_1_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نكتب الحد بدون أس سالب. الطريقة: ننقل \\( x \\) إلى المقام فيصبح الأس موجباً: \\( -x^{-1} = -\\frac{1}{x} \\). السبب: كما كتب الكتاب.",
+        "equation_template": "-x^{-1} = -\\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step7_r",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "x^2",
+              "1",
+              "-x"
+            ],
+            "id": "q_4_2_21_1_s7_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "x^2",
+              "1",
+              "-x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو المتغير نفسه \\( x \\) بالأس \\( 1 \\)."
+          }
+        ],
+        "hint": "المقام هو المتغير نفسه \\( x \\) بالأس \\( 1 \\).",
+        "related_topics": [
+          "الأسس السالبة"
+        ],
+        "step_id": "math345_4_2_21_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نكتب الحد بدون أس سالب. الطريقة: ننقل \\( x \\) إلى المقام فيصبح الأس موجباً: \\( -x^{-1} = -\\frac{1}{x} \\). السبب: كما كتب الكتاب.",
+        "think": "المقام هو المتغير نفسه \\( x \\) بالأس \\( 1 \\).",
+        "html_structure": "-x^{-1} = -\\frac{1}{{q_4_2_21_1_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نجمع الناتجين. الطريقة: نكتب \\( \\sin x \\) ثم نطرح \\( \\frac{1}{x} \\) ونضيف \\( c \\). السبب: هذا هو التكامل غير المحدد للدالة.",
+        "equation_template": "\\int(\\cos x + x^{-2})dx = {input_1} + c",
+        "inputs": [
+          {
+            "input_id": "step8_f",
+            "correct_answer": "sin x - 1/x",
+            "options": [
+              "sin x - 1/x",
+              "sin x + 1/x",
+              "-sin x - 1/x",
+              "sin x - 1/x^2"
+            ],
+            "id": "q_4_2_21_1_s8_i1",
+            "correct_value": "sin x - 1/x",
+            "allowed_keys": [
+              "sin x - 1/x",
+              "sin x + 1/x",
+              "-sin x - 1/x",
+              "sin x - 1/x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( \\sin x \\) مع \\( -\\frac{1}{x} \\)."
+          }
+        ],
+        "hint": "اجمع \\( \\sin x \\) مع \\( -\\frac{1}{x} \\).",
+        "related_topics": [
+          "الجواب النهائي"
+        ],
+        "step_id": "math345_4_2_21_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نجمع الناتجين. الطريقة: نكتب \\( \\sin x \\) ثم نطرح \\( \\frac{1}{x} \\) ونضيف \\( c \\). السبب: هذا هو التكامل غير المحدد للدالة.",
+        "think": "اجمع \\( \\sin x \\) مع \\( -\\frac{1}{x} \\).",
+        "html_structure": "\\int(\\cos x + x^{-2})dx = {q_4_2_21_1_s8_i1} + c"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق كل حد من الجواب: مشتقة \\( \\sin x \\) و مشتقة \\( -x^{-1} \\). السبب: يجب أن نرجع إلى \\( \\cos x + x^{-2} \\).",
+        "equation_template": "\\frac{d}{dx}(\\sin x) = {input_1} , \\frac{d}{dx}(-x^{-1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step9_v1",
+            "correct_answer": "cos x",
+            "options": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "tan x"
+            ],
+            "id": "q_4_2_21_1_s9_i1",
+            "correct_value": "cos x",
+            "allowed_keys": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\)، ومشتقة \\( -x^{-1} \\) نضرب \\( -1 \\) في \\( -1 \\) فيصبح موجباً \\( x^{-2} \\)."
+          },
+          {
+            "input_id": "step9_v2",
+            "correct_answer": "x^-2",
+            "options": [
+              "x^-2",
+              "-x^-2",
+              "x^-1",
+              "-x^-1"
+            ],
+            "id": "q_4_2_21_1_s9_i2",
+            "correct_value": "x^-2",
+            "allowed_keys": [
+              "x^-2",
+              "-x^-2",
+              "x^-1",
+              "-x^-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\)، ومشتقة \\( -x^{-1} \\) نضرب \\( -1 \\) في \\( -1 \\) فيصبح موجباً \\( x^{-2} \\)."
+          }
+        ],
+        "hint": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\)، ومشتقة \\( -x^{-1} \\) نضرب \\( -1 \\) في \\( -1 \\) فيصبح موجباً \\( x^{-2} \\).",
+        "related_topics": [
+          "الاشتقاق"
+        ],
+        "step_id": "math345_4_2_21_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نتحقق بالاشتقاق. الطريقة: نشتق كل حد من الجواب: مشتقة \\( \\sin x \\) و مشتقة \\( -x^{-1} \\). السبب: يجب أن نرجع إلى \\( \\cos x + x^{-2} \\).",
+        "think": "مشتقة \\( \\sin x \\) هي \\( \\cos x \\)، ومشتقة \\( -x^{-1} \\) نضرب \\( -1 \\) في \\( -1 \\) فيصبح موجباً \\( x^{-2} \\).",
+        "html_structure": "\\frac{d}{dx}(\\sin x) = {q_4_2_21_1_s9_i1} , \\frac{d}{dx}(-x^{-1}) = {q_4_2_21_1_s9_i2}"
+      }
+    ]
+  }
+]

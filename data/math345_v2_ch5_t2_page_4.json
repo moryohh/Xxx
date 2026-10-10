@@ -1,0 +1,656 @@
+[
+  {
+    "id_number": "q9_p4",
+    "page_number": 4,
+    "question_number": "9",
+    "question_text": "هل \\( y^2 = 3x^2 + x^3 \\) حل للمعادلة التفاضلية \\( yy'' + (y')^2 - 3x = 5 \\)؟",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_q9_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_general_concept_diagram.png"
+    ],
+    "full_model_solution": "اشتقاق مرتين: (y')²+yy''=3+3x ⇒ yy''+(y')²−3x=3 ≠ 5 ⇒ ليست حلاً",
+    "source_file": "رياضيات5/part3_page_004_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 4,
+      "pdf_page_number": 226
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_q9_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_general_concept_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_q9_diagram.png",
+    "title": "هل \\( y^2 = 3x^2 + x^3 \\) حل للمعادلة التفاضلية \\( yy'' + (y')^2 - 3x = 5 \\)؟",
+    "number": "9",
+    "model_solution": "اشتقاق مرتين: (y')²+yy''=3+3x ⇒ yy''+(y')²−3x=3 ≠ 5 ⇒ ليست حلاً",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد نوع العلاقة. الطريقة: العلاقة \\( y^2 = 3x^2 + x^3 \\) فيها \\( y^2 \\) وليست \\( y \\) وحدها، إذن هي علاقة ضمنية. السبب: في العلاقات الضمنية نشتق العلاقة نفسها ونقارن الناتج بالمعادلة، ولا نعوض فيها.",
+        "equation_template": "y^2 : {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "علاقة ضمنية",
+            "options": [
+              "علاقة ضمنية",
+              "علاقة صريحة",
+              "دالة خطية",
+              "ثابت"
+            ],
+            "id": "q_5_2_4_1_s1_i1",
+            "correct_value": "علاقة ضمنية",
+            "allowed_keys": [
+              "علاقة ضمنية",
+              "علاقة صريحة",
+              "دالة خطية",
+              "ثابت"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما دام \\( y \\) مربعة فالعلاقة ضمنية."
+          }
+        ],
+        "hint": "ما دام \\( y \\) مربعة فالعلاقة ضمنية.",
+        "related_topics": [
+          "الاشتقاق الضمني"
+        ],
+        "step_id": "math345_5_2_4_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد نوع العلاقة. الطريقة: العلاقة \\( y^2 = 3x^2 + x^3 \\) فيها \\( y^2 \\) وليست \\( y \\) وحدها، إذن هي علاقة ضمنية. السبب: في العلاقات الضمنية نشتق العلاقة نفسها ونقارن الناتج بالمعادلة، ولا نعوض فيها.",
+        "think": "ما دام \\( y \\) مربعة فالعلاقة ضمنية.",
+        "html_structure": "y^2 : {q_5_2_4_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نشتق العلاقة مرة أولى. الطريقة: نشتق \\( y^2 \\) فنحصل على \\( 2yy' \\)، ونشتق \\( 3x^2 \\) فنحصل على \\( 6x \\)، ونشتق \\( x^3 \\) فنحصل على \\( 3x^2 \\). السبب: كل مشتقة لـ \\( y \\) تضرب في \\( y' \\).",
+        "equation_template": "2yy' = {input_1}x + 3x^2",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "id": "q_5_2_4_1_s2_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "2",
+              "9"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x^2 \\) هي \\( 6x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x^2 \\) هي \\( 6x \\).",
+        "related_topics": [
+          "الاشتقاق الضمني"
+        ],
+        "step_id": "math345_5_2_4_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نشتق العلاقة مرة أولى. الطريقة: نشتق \\( y^2 \\) فنحصل على \\( 2yy' \\)، ونشتق \\( 3x^2 \\) فنحصل على \\( 6x \\)، ونشتق \\( x^3 \\) فنحصل على \\( 3x^2 \\). السبب: كل مشتقة لـ \\( y \\) تضرب في \\( y' \\).",
+        "think": "مشتقة \\( 3x^2 \\) هي \\( 6x \\).",
+        "html_structure": "2yy' = {q_5_2_4_1_s2_i1}x + 3x^2"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق الطرف الأيسر مرة ثانية. الطريقة: نشتق \\( 2yy' \\) بقاعدة الضرب: \\( 2y'\\cdot y' + 2y\\cdot y'' \\). السبب: المعادلة التفاضلية فيها \\( y'' \\).",
+        "equation_template": "2(y')^2 + 2y\\,{input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "y''",
+            "options": [
+              "y''",
+              "y'",
+              "y",
+              "y'''"
+            ],
+            "id": "q_5_2_4_1_s3_i1",
+            "correct_value": "y''",
+            "allowed_keys": [
+              "y''",
+              "y'",
+              "y",
+              "y'''"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( y' \\) هي \\( y'' \\)."
+          }
+        ],
+        "hint": "مشتقة \\( y' \\) هي \\( y'' \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_5_2_4_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق الطرف الأيسر مرة ثانية. الطريقة: نشتق \\( 2yy' \\) بقاعدة الضرب: \\( 2y'\\cdot y' + 2y\\cdot y'' \\). السبب: المعادلة التفاضلية فيها \\( y'' \\).",
+        "think": "مشتقة \\( y' \\) هي \\( y'' \\).",
+        "html_structure": "2(y')^2 + 2y\\,{q_5_2_4_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق الطرف الأيمن مرة ثانية. الطريقة: نشتق \\( 6x + 3x^2 \\): مشتقة \\( 6x \\) هي \\( 6 \\) ومشتقة \\( 3x^2 \\) هي \\( 6x \\). السبب: لنكمل الاشتقاق الثاني.",
+        "equation_template": "{input_1} + 6x",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "3",
+              "0",
+              "12"
+            ],
+            "id": "q_5_2_4_1_s4_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "3",
+              "0",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 6x \\) هي \\( 6 \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 6x \\) هي \\( 6 \\).",
+        "related_topics": [
+          "قاعدة اشتقاق الأسس"
+        ],
+        "step_id": "math345_5_2_4_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق الطرف الأيمن مرة ثانية. الطريقة: نشتق \\( 6x + 3x^2 \\): مشتقة \\( 6x \\) هي \\( 6 \\) ومشتقة \\( 3x^2 \\) هي \\( 6x \\). السبب: لنكمل الاشتقاق الثاني.",
+        "think": "مشتقة \\( 6x \\) هي \\( 6 \\).",
+        "html_structure": "{q_5_2_4_1_s4_i1} + 6x"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نقسم المعادلة على 2. الطريقة: نقسم كل حد على \\( 2 \\): \\( (y')^2 + yy'' = 3 + 3x \\). السبب: لنبسط.",
+        "equation_template": "(y')^2 + yy'' = {input_1} + {input_2}x",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "6",
+              "2",
+              "1"
+            ],
+            "id": "q_5_2_4_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "6",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم \\( 6 \\) على \\( 2 \\) وقسّم \\( 6x \\) على \\( 2 \\)."
+          },
+          {
+            "input_id": "step5_f",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "6",
+              "2",
+              "1"
+            ],
+            "id": "q_5_2_4_1_s5_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "6",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "قسّم \\( 6 \\) على \\( 2 \\) وقسّم \\( 6x \\) على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم \\( 6 \\) على \\( 2 \\) وقسّم \\( 6x \\) على \\( 2 \\).",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_5_2_4_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نقسم المعادلة على 2. الطريقة: نقسم كل حد على \\( 2 \\): \\( (y')^2 + yy'' = 3 + 3x \\). السبب: لنبسط.",
+        "think": "قسّم \\( 6 \\) على \\( 2 \\) وقسّم \\( 6x \\) على \\( 2 \\).",
+        "html_structure": "(y')^2 + yy'' = {q_5_2_4_1_s5_i1} + {q_5_2_4_1_s5_i2}x"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكوّن الطرف الأيسر من المعادلة التفاضلية. الطريقة: المطلوب \\( yy'' + (y')^2 - 3x \\)؛ نعوض \\( (y')^2 + yy'' = 3+3x \\) ثم نطرح \\( 3x \\). السبب: لنحسب قيمته.",
+        "equation_template": "yy'' + (y')^2 - 3x = 3 + 3x - 3x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_g",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "0",
+              "6"
+            ],
+            "id": "q_5_2_4_1_s6_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "0",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3x - 3x = 0 \\) فيبقى الثابت \\( 3 \\)."
+          }
+        ],
+        "hint": "\\( 3x - 3x = 0 \\) فيبقى الثابت \\( 3 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_5_2_4_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكوّن الطرف الأيسر من المعادلة التفاضلية. الطريقة: المطلوب \\( yy'' + (y')^2 - 3x \\)؛ نعوض \\( (y')^2 + yy'' = 3+3x \\) ثم نطرح \\( 3x \\). السبب: لنحسب قيمته.",
+        "think": "\\( 3x - 3x = 0 \\) فيبقى الثابت \\( 3 \\).",
+        "html_structure": "yy'' + (y')^2 - 3x = 3 + 3x - 3x = {q_5_2_4_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن بالطرف الأيمن للمعادلة. الطريقة: الطرف الأيمن في السؤال هو \\( 5 \\) والذي وجدناه \\( 3 \\). السبب: إذا اختلفا فالعلاقة لا تحقق المعادلة.",
+        "equation_template": "3 \\;\\; {input_1} \\;\\; 5",
+        "inputs": [
+          {
+            "input_id": "step7_cmp",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_4_1_s7_i1",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "=",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3 \\) لا تساوي \\( 5 \\)."
+          }
+        ],
+        "hint": "\\( 3 \\) لا تساوي \\( 5 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_4_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن بالطرف الأيمن للمعادلة. الطريقة: الطرف الأيمن في السؤال هو \\( 5 \\) والذي وجدناه \\( 3 \\). السبب: إذا اختلفا فالعلاقة لا تحقق المعادلة.",
+        "think": "\\( 3 \\) لا تساوي \\( 5 \\).",
+        "html_structure": "3 \\;\\; {q_5_2_4_1_s7_i1} \\;\\; 5"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: بما أن \\( 3 \\neq 5 \\) فالعلاقة ليست حلاً. (ملاحظة: النص المستخرج كتب المعادلة بالمشتقة الأولى فقط، والصحيح حسب الحل المطبوع أنها \\( yy'' + (y')^2 - 3x = 5 \\).) السبب: الحل يجب أن يحقق المعادلة.",
+        "equation_template": "y^2 = 3x^2 + x^3 \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "ليس حلاً للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_4_1_s8_i1",
+            "correct_value": "ليس حلاً للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "عدم التساوي يعني أنها ليست حلاً."
+          }
+        ],
+        "hint": "عدم التساوي يعني أنها ليست حلاً.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_4_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: بما أن \\( 3 \\neq 5 \\) فالعلاقة ليست حلاً. (ملاحظة: النص المستخرج كتب المعادلة بالمشتقة الأولى فقط، والصحيح حسب الحل المطبوع أنها \\( yy'' + (y')^2 - 3x = 5 \\).) السبب: الحل يجب أن يحقق المعادلة.",
+        "think": "عدم التساوي يعني أنها ليست حلاً.",
+        "html_structure": "y^2 = 3x^2 + x^3 \\Rightarrow {q_5_2_4_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q10_p4",
+    "page_number": 4,
+    "question_number": "10",
+    "question_text": "بين أن \\( \\ln y^2 = x + a \\) حل للمعادلة التفاضلية \\( 2y' - y = 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_q10_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_general_concept_diagram.png"
+    ],
+    "full_model_solution": "2ln y = x+a ⇒ 2y'/y = 1 ⇒ 2y' = y ⇒ 2y'−y=0",
+    "source_file": "رياضيات5/part3_page_004_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 4,
+      "pdf_page_number": 226
+    },
+    "chapter": 5,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_q10_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_general_concept_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_004_diag_q10_diagram.png",
+    "title": "بين أن \\( \\ln y^2 = x + a \\) حل للمعادلة التفاضلية \\( 2y' - y = 0 \\)",
+    "number": "10",
+    "model_solution": "2ln y = x+a ⇒ 2y'/y = 1 ⇒ 2y' = y ⇒ 2y'−y=0",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد نوع العلاقة. الطريقة: العلاقة \\( \\ln y^2 = x + a \\) فيها \\( \\ln y^2 \\) وليست \\( y \\) وحدها، إذن هي علاقة ضمنية. السبب: نشتق العلاقة نفسها ونقارنها بالمعادلة.",
+        "equation_template": "\\ln y^2 : {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "علاقة ضمنية",
+            "options": [
+              "علاقة ضمنية",
+              "علاقة صريحة",
+              "دالة خطية",
+              "ثابت"
+            ],
+            "id": "q_5_2_4_2_s1_i1",
+            "correct_value": "علاقة ضمنية",
+            "allowed_keys": [
+              "علاقة ضمنية",
+              "علاقة صريحة",
+              "دالة خطية",
+              "ثابت"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما دامت \\( y \\) داخل \\( \\ln \\) ومربعة فالعلاقة ضمنية."
+          }
+        ],
+        "hint": "ما دامت \\( y \\) داخل \\( \\ln \\) ومربعة فالعلاقة ضمنية.",
+        "related_topics": [
+          "الاشتقاق الضمني"
+        ],
+        "step_id": "math345_5_2_4_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد نوع العلاقة. الطريقة: العلاقة \\( \\ln y^2 = x + a \\) فيها \\( \\ln y^2 \\) وليست \\( y \\) وحدها، إذن هي علاقة ضمنية. السبب: نشتق العلاقة نفسها ونقارنها بالمعادلة.",
+        "think": "ما دامت \\( y \\) داخل \\( \\ln \\) ومربعة فالعلاقة ضمنية.",
+        "html_structure": "\\ln y^2 : {q_5_2_4_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبسط \\( \\ln y^2 \\) قبل الاشتقاق. الطريقة: قانون اللوغاريتم ينقل الأس \\( 2 \\) إلى الأمام: \\( \\ln y^2 = 2\\ln y \\). السبب: لنسهّل الاشتقاق.",
+        "equation_template": "\\ln y^2 = {input_1}\\ln y",
+        "inputs": [
+          {
+            "input_id": "step2_b",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "y",
+              "0"
+            ],
+            "id": "q_5_2_4_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "y",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل الأس \\( 2 \\) أمام \\( \\ln \\)."
+          }
+        ],
+        "hint": "انقل الأس \\( 2 \\) أمام \\( \\ln \\).",
+        "related_topics": [
+          "قوانين اللوغاريتم"
+        ],
+        "step_id": "math345_5_2_4_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبسط \\( \\ln y^2 \\) قبل الاشتقاق. الطريقة: قانون اللوغاريتم ينقل الأس \\( 2 \\) إلى الأمام: \\( \\ln y^2 = 2\\ln y \\). السبب: لنسهّل الاشتقاق.",
+        "think": "انقل الأس \\( 2 \\) أمام \\( \\ln \\).",
+        "html_structure": "\\ln y^2 = {q_5_2_4_2_s2_i1}\\ln y"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نشتق الطرف الأيسر \\( 2\\ln y \\). الطريقة: مشتقة \\( \\ln y \\) هي \\( \\frac{1}{y} \\) مضروبة في \\( y' \\)، فنضرب كل ذلك في \\( 2 \\). السبب: كل مشتقة لـ \\( y \\) تضرب في \\( y' \\).",
+        "equation_template": "(2\\ln y)' = \\frac{{input_1}}{y}y'",
+        "inputs": [
+          {
+            "input_id": "step3_c",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "y",
+              "0"
+            ],
+            "id": "q_5_2_4_2_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "y",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( 2 \\) يبقى في البسط."
+          }
+        ],
+        "hint": "المعامل \\( 2 \\) يبقى في البسط.",
+        "related_topics": [
+          "اشتقاق اللوغاريتم"
+        ],
+        "step_id": "math345_5_2_4_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نشتق الطرف الأيسر \\( 2\\ln y \\). الطريقة: مشتقة \\( \\ln y \\) هي \\( \\frac{1}{y} \\) مضروبة في \\( y' \\)، فنضرب كل ذلك في \\( 2 \\). السبب: كل مشتقة لـ \\( y \\) تضرب في \\( y' \\).",
+        "think": "المعامل \\( 2 \\) يبقى في البسط.",
+        "html_structure": "(2\\ln y)' = \\frac{{q_5_2_4_2_s3_i1}}{y}y'"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نشتق الطرف الأيمن \\( x + a \\). الطريقة: مشتقة \\( x \\) هي \\( 1 \\) ومشتقة \\( a \\) (ثابت) صفر. السبب: الثابت مشتقته صفر.",
+        "equation_template": "(x + a)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_d",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "a",
+              "2"
+            ],
+            "id": "q_5_2_4_2_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "a",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 + 0 \\)."
+          }
+        ],
+        "hint": "\\( 1 + 0 \\).",
+        "related_topics": [
+          "اشتقاق الثوابت"
+        ],
+        "step_id": "math345_5_2_4_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نشتق الطرف الأيمن \\( x + a \\). الطريقة: مشتقة \\( x \\) هي \\( 1 \\) ومشتقة \\( a \\) (ثابت) صفر. السبب: الثابت مشتقته صفر.",
+        "think": "\\( 1 + 0 \\).",
+        "html_structure": "(x + a)' = {q_5_2_4_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب العلاقة بعد الاشتقاق. الطريقة: \\( \\frac{2}{y}y' = 1 \\)؛ نضرب الطرفين في \\( y \\) للتخلص من المقام فتصبح \\( 2y' = y \\). السبب: لنقارنها بالمعادلة التفاضلية.",
+        "equation_template": "2y' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_e",
+            "correct_answer": "y",
+            "options": [
+              "y",
+              "1",
+              "2y",
+              "y^2"
+            ],
+            "id": "q_5_2_4_2_s5_i1",
+            "correct_value": "y",
+            "allowed_keys": [
+              "y",
+              "1",
+              "2y",
+              "y^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب الطرف الأيمن \\( 1 \\) في \\( y \\)."
+          }
+        ],
+        "hint": "اضرب الطرف الأيمن \\( 1 \\) في \\( y \\).",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_5_2_4_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب العلاقة بعد الاشتقاق. الطريقة: \\( \\frac{2}{y}y' = 1 \\)؛ نضرب الطرفين في \\( y \\) للتخلص من المقام فتصبح \\( 2y' = y \\). السبب: لنقارنها بالمعادلة التفاضلية.",
+        "think": "اضرب الطرف الأيمن \\( 1 \\) في \\( y \\).",
+        "html_structure": "2y' = {q_5_2_4_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: ننقل الحدود لطرف واحد. الطريقة: نطرح \\( y \\) من الطرفين فتصبح \\( 2y' - y = 0 \\). السبب: لنحصل على صورة المعادلة التفاضلية.",
+        "equation_template": "2y' - y = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step6_f",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "y",
+              "-1"
+            ],
+            "id": "q_5_2_4_2_s6_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "y",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "طرح \\( y \\) من \\( y \\) يعطي صفراً."
+          }
+        ],
+        "hint": "طرح \\( y \\) من \\( y \\) يعطي صفراً.",
+        "related_topics": [
+          "حل المعادلات"
+        ],
+        "step_id": "math345_5_2_4_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: ننقل الحدود لطرف واحد. الطريقة: نطرح \\( y \\) من الطرفين فتصبح \\( 2y' - y = 0 \\). السبب: لنحصل على صورة المعادلة التفاضلية.",
+        "think": "طرح \\( y \\) من \\( y \\) يعطي صفراً.",
+        "html_structure": "2y' - y = {q_5_2_4_2_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقارن بالمعادلة التفاضلية. الطريقة: المعادلة المطلوبة \\( 2y' - y = 0 \\) وهي نفس ما وجدناه. السبب: لنتأكد من التحقق.",
+        "equation_template": "2y' - y \\;\\; {input_1} \\;\\; 0",
+        "inputs": [
+          {
+            "input_id": "step7_cmp",
+            "correct_answer": "=",
+            "options": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "id": "q_5_2_4_2_s7_i1",
+            "correct_value": "=",
+            "allowed_keys": [
+              "=",
+              "≠",
+              "<",
+              ">"
+            ],
+            "label": "القيمة 1",
+            "hint": "الطرفان متساويان."
+          }
+        ],
+        "hint": "الطرفان متساويان.",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_5_2_4_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقارن بالمعادلة التفاضلية. الطريقة: المعادلة المطلوبة \\( 2y' - y = 0 \\) وهي نفس ما وجدناه. السبب: لنتأكد من التحقق.",
+        "think": "الطرفان متساويان.",
+        "html_structure": "2y' - y \\;\\; {q_5_2_4_2_s7_i1} \\;\\; 0"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. (ملاحظة: نفترض \\( y>0 \\) عند كتابة \\( \\ln y \\)؛ وفي الحالة العامة \\( \\ln|y| \\) يعطي نفس المشتقة \\( \\frac{y'}{y} \\).) السبب: هذا هو البرهان.",
+        "equation_template": "\\ln y^2 = x + a \\Rightarrow {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_res",
+            "correct_answer": "حل للمعادلة",
+            "options": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "id": "q_5_2_4_2_s8_i1",
+            "correct_value": "حل للمعادلة",
+            "allowed_keys": [
+              "حل للمعادلة",
+              "ليس حلاً للمعادلة",
+              "حل في حالات خاصة فقط",
+              "لا يمكن الحكم"
+            ],
+            "label": "القيمة 1",
+            "hint": "تحقق المعادلة يعني أنها حل."
+          }
+        ],
+        "hint": "تحقق المعادلة يعني أنها حل.",
+        "related_topics": [
+          "حل المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_2_4_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نستنتج. الطريقة: المعادلة تحققت. (ملاحظة: نفترض \\( y>0 \\) عند كتابة \\( \\ln y \\)؛ وفي الحالة العامة \\( \\ln|y| \\) يعطي نفس المشتقة \\( \\frac{y'}{y} \\).) السبب: هذا هو البرهان.",
+        "think": "تحقق المعادلة يعني أنها حل.",
+        "html_structure": "\\ln y^2 = x + a \\Rightarrow {q_5_2_4_2_s8_i1}"
+      }
+    ]
+  }
+]

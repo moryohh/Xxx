@@ -1,0 +1,672 @@
+[
+  {
+    "id_number": "qex1_p1",
+    "page_number": 1,
+    "question_number": "مثال 1",
+    "question_text": "جد رتبة ودرجة المعادلة التفاضلية \\( x^2\\left(\\frac{dy}{dx}\\right)^4 + \\left(\\frac{d^3y}{dx^3}\\right)^2 + 2\\frac{d^2y}{dx^2} = 0 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_001_example_1_diagram.png"
+    ],
+    "full_model_solution": "أعلى مشتقة d³y/dx³ ⇒ الرتبة 3 ، وقوتها 2 ⇒ الدرجة 2",
+    "source_file": "رياضيات5/part3_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 223
+    },
+    "chapter": 5,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_001_example_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_001_example_1_diagram.png",
+    "title": "جد رتبة ودرجة المعادلة التفاضلية \\( x^2\\left(\\frac{dy}{dx}\\right)^4 + \\left(\\frac{d^3y}{dx^3}\\right)^2 + 2\\frac{d^2y}{dx^2} = 0 \\)",
+    "number": "مثال 1",
+    "model_solution": "أعلى مشتقة d³y/dx³ ⇒ الرتبة 3 ، وقوتها 2 ⇒ الدرجة 2",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد رتبة الحد الأول الذي فيه المشتقة الأولى. الطريقة: نكتب عدد المرات التي اشتققنا فيها \\( y \\) في الحد \\( \\left(\\frac{dy}{dx}\\right)^4 \\)؛ المشتقة الأولى تعني مرة اشتقاق واحدة. السبب: رتبة كل مشتقة تساوي عدد مرات الاشتقاق، ونحتاجها لنعرف أعلى مشتقة.",
+        "equation_template": "\\left(\\frac{dy}{dx}\\right)^4 \\Rightarrow \\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_o1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "id": "q_5_1_1_1_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "4",
+              "2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac{dy}{dx} \\) اشتقاق واحد فقط، والأس \\( 4 \\) لا علاقة له بالرتبة."
+          }
+        ],
+        "hint": "\\( \\frac{dy}{dx} \\) اشتقاق واحد فقط، والأس \\( 4 \\) لا علاقة له بالرتبة.",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد رتبة الحد الأول الذي فيه المشتقة الأولى. الطريقة: نكتب عدد المرات التي اشتققنا فيها \\( y \\) في الحد \\( \\left(\\frac{dy}{dx}\\right)^4 \\)؛ المشتقة الأولى تعني مرة اشتقاق واحدة. السبب: رتبة كل مشتقة تساوي عدد مرات الاشتقاق، ونحتاجها لنعرف أعلى مشتقة.",
+        "think": "\\( \\frac{dy}{dx} \\) اشتقاق واحد فقط، والأس \\( 4 \\) لا علاقة له بالرتبة.",
+        "html_structure": "\\left(\\frac{dy}{dx}\\right)^4 \\Rightarrow \\text{order} = {q_5_1_1_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد رتبة الحد الذي فيه \\( \\frac{d^2y}{dx^2} \\). الطريقة: نقرأ الرقم الصغير فوق \\( d \\) في البسط وهو \\( 2 \\). السبب: الرقم فوق \\( d \\) في البسط يخبرنا بعدد الاشتقاقات.",
+        "equation_template": "\\frac{d^2y}{dx^2} \\Rightarrow \\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_o2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_1_1_1_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقرأ الرقم الذي فوق \\( d \\) في البسط."
+          }
+        ],
+        "hint": "اقرأ الرقم الذي فوق \\( d \\) في البسط.",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد رتبة الحد الذي فيه \\( \\frac{d^2y}{dx^2} \\). الطريقة: نقرأ الرقم الصغير فوق \\( d \\) في البسط وهو \\( 2 \\). السبب: الرقم فوق \\( d \\) في البسط يخبرنا بعدد الاشتقاقات.",
+        "think": "اقرأ الرقم الذي فوق \\( d \\) في البسط.",
+        "html_structure": "\\frac{d^2y}{dx^2} \\Rightarrow \\text{order} = {q_5_1_1_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحدد رتبة الحد \\( \\left(\\frac{d^3y}{dx^3}\\right)^2 \\). الطريقة: الرقم فوق \\( d \\) في البسط هو \\( 3 \\) (أما الأس \\( 2 \\) خارج القوس فلا يدخل في الرتبة). السبب: الرتبة تتعلق بعدد الاشتقاقات فقط وليس بقوة المشتقة.",
+        "equation_template": "\\left(\\frac{d^3y}{dx^3}\\right)^2 \\Rightarrow \\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_o3",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "id": "q_5_1_1_1_s3_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "6"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقرأ الرقم فوق \\( d \\) داخل القوس، ولا تنظر إلى الأس خارجه."
+          }
+        ],
+        "hint": "اقرأ الرقم فوق \\( d \\) داخل القوس، ولا تنظر إلى الأس خارجه.",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحدد رتبة الحد \\( \\left(\\frac{d^3y}{dx^3}\\right)^2 \\). الطريقة: الرقم فوق \\( d \\) في البسط هو \\( 3 \\) (أما الأس \\( 2 \\) خارج القوس فلا يدخل في الرتبة). السبب: الرتبة تتعلق بعدد الاشتقاقات فقط وليس بقوة المشتقة.",
+        "think": "اقرأ الرقم فوق \\( d \\) داخل القوس، ولا تنظر إلى الأس خارجه.",
+        "html_structure": "\\left(\\frac{d^3y}{dx^3}\\right)^2 \\Rightarrow \\text{order} = {q_5_1_1_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نختار أعلى مشتقة في المعادلة. الطريقة: نقارن الرتب التي وجدناها: \\( 1 \\) و \\( 2 \\) و \\( 3 \\) ونختار الحد صاحب أكبر رتبة. السبب: المرتبة تعرّف بأنها رتبة أعلى مشتقة.",
+        "equation_template": "\\text{highest derivative} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_hi",
+            "correct_answer": "d^3y/dx^3",
+            "options": [
+              "d^3y/dx^3",
+              "dy/dx",
+              "d^2y/dx^2",
+              "y"
+            ],
+            "id": "q_5_1_1_1_s4_i1",
+            "correct_value": "d^3y/dx^3",
+            "allowed_keys": [
+              "d^3y/dx^3",
+              "dy/dx",
+              "d^2y/dx^2",
+              "y"
+            ],
+            "label": "القيمة 1",
+            "hint": "أكبر رقم بين \\( 1 \\) و \\( 2 \\) و \\( 3 \\) هو \\( 3 \\)، فاختر المشتقة التي رتبتها \\( 3 \\)."
+          }
+        ],
+        "hint": "أكبر رقم بين \\( 1 \\) و \\( 2 \\) و \\( 3 \\) هو \\( 3 \\)، فاختر المشتقة التي رتبتها \\( 3 \\).",
+        "related_topics": [
+          "أعلى مشتقة"
+        ],
+        "step_id": "math345_5_1_1_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نختار أعلى مشتقة في المعادلة. الطريقة: نقارن الرتب التي وجدناها: \\( 1 \\) و \\( 2 \\) و \\( 3 \\) ونختار الحد صاحب أكبر رتبة. السبب: المرتبة تعرّف بأنها رتبة أعلى مشتقة.",
+        "think": "أكبر رقم بين \\( 1 \\) و \\( 2 \\) و \\( 3 \\) هو \\( 3 \\)، فاختر المشتقة التي رتبتها \\( 3 \\).",
+        "html_structure": "\\text{highest derivative} = {q_5_1_1_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب رتبة المعادلة. الطريقة: رتبة المعادلة تساوي رتبة أعلى مشتقة التي وجدناها. السبب: هذا هو تعريف المرتبة.",
+        "equation_template": "\\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_ord",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_5_1_1_1_s5_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع رتبة المشتقة \\( \\frac{d^3y}{dx^3} \\)."
+          }
+        ],
+        "hint": "ضع رتبة المشتقة \\( \\frac{d^3y}{dx^3} \\).",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب رتبة المعادلة. الطريقة: رتبة المعادلة تساوي رتبة أعلى مشتقة التي وجدناها. السبب: هذا هو تعريف المرتبة.",
+        "think": "ضع رتبة المشتقة \\( \\frac{d^3y}{dx^3} \\).",
+        "html_structure": "\\text{order} = {q_5_1_1_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نتنبه إلى الفخ: القوة \\( 4 \\) أكبر قوة في المعادلة. الطريقة: القوة \\( 4 \\) موجودة على \\( \\frac{dy}{dx} \\) وليست على أعلى مشتقة، لذلك نكتبها فقط لنستبعدها. السبب: الدرجة تُؤخذ من قوة أعلى مشتقة فقط.",
+        "equation_template": "\\text{power of } \\frac{dy}{dx} = {input_1} \\text{ (ignored)}",
+        "inputs": [
+          {
+            "input_id": "step6_trap",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "3"
+            ],
+            "id": "q_5_1_1_1_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى الأس خارج القوس الذي يحيط بـ \\( \\frac{dy}{dx} \\)."
+          }
+        ],
+        "hint": "انظر إلى الأس خارج القوس الذي يحيط بـ \\( \\frac{dy}{dx} \\).",
+        "related_topics": [
+          "درجة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نتنبه إلى الفخ: القوة \\( 4 \\) أكبر قوة في المعادلة. الطريقة: القوة \\( 4 \\) موجودة على \\( \\frac{dy}{dx} \\) وليست على أعلى مشتقة، لذلك نكتبها فقط لنستبعدها. السبب: الدرجة تُؤخذ من قوة أعلى مشتقة فقط.",
+        "think": "انظر إلى الأس خارج القوس الذي يحيط بـ \\( \\frac{dy}{dx} \\).",
+        "html_structure": "\\text{power of } \\frac{dy}{dx} = {q_5_1_1_1_s6_i1} \\text{ (ignored)}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقرأ قوة أعلى مشتقة. الطريقة: أعلى مشتقة \\( \\frac{d^3y}{dx^3} \\) محاطة بقوس أسه \\( 2 \\). السبب: هذه القوة هي الدرجة.",
+        "equation_template": "\\left(\\frac{d^3y}{dx^3}\\right)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step7_pw",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "id": "q_5_1_1_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس خارج القوس الذي يحيط بـ \\( \\frac{d^3y}{dx^3} \\)."
+          }
+        ],
+        "hint": "الأس خارج القوس الذي يحيط بـ \\( \\frac{d^3y}{dx^3} \\).",
+        "related_topics": [
+          "درجة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقرأ قوة أعلى مشتقة. الطريقة: أعلى مشتقة \\( \\frac{d^3y}{dx^3} \\) محاطة بقوس أسه \\( 2 \\). السبب: هذه القوة هي الدرجة.",
+        "think": "الأس خارج القوس الذي يحيط بـ \\( \\frac{d^3y}{dx^3} \\).",
+        "html_structure": "\\left(\\frac{d^3y}{dx^3}\\right)^{{q_5_1_1_1_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الرتبة والدرجة معاً. الطريقة: الرتبة \\( 3 \\) والدرجة هي القوة التي وجدناها \\( 2 \\). السبب: هذا هو الجواب النهائي.",
+        "equation_template": "\\text{order} = {input_1} \\quad , \\quad \\text{degree} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step8_fo",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "id": "q_5_1_1_1_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "2",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرتبة من الخطوة الخامسة، والدرجة من الخطوة السابعة."
+          },
+          {
+            "input_id": "step8_fd",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "id": "q_5_1_1_1_s8_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "3",
+              "4",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "الرتبة من الخطوة الخامسة، والدرجة من الخطوة السابعة."
+          }
+        ],
+        "hint": "الرتبة من الخطوة الخامسة، والدرجة من الخطوة السابعة.",
+        "related_topics": [
+          "رتبة ودرجة المعادلة"
+        ],
+        "step_id": "math345_5_1_1_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الرتبة والدرجة معاً. الطريقة: الرتبة \\( 3 \\) والدرجة هي القوة التي وجدناها \\( 2 \\). السبب: هذا هو الجواب النهائي.",
+        "think": "الرتبة من الخطوة الخامسة، والدرجة من الخطوة السابعة.",
+        "html_structure": "\\text{order} = {q_5_1_1_1_s8_i1} \\quad , \\quad \\text{degree} = {q_5_1_1_1_s8_i2}"
+      }
+    ]
+  },
+  {
+    "id_number": "qex2_p1",
+    "page_number": 1,
+    "question_number": "مثال 2",
+    "question_text": "جد رتبة ودرجة المعادلة التفاضلية \\( y'' = (y')^2 - 1 \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_001_example_2_diagram.png"
+    ],
+    "full_model_solution": "أعلى مشتقة y'' ⇒ الرتبة 2 ، وقوتها 1 ⇒ الدرجة 1",
+    "source_file": "رياضيات5/part3_page_001_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 1,
+      "pdf_page_number": 223
+    },
+    "chapter": 5,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_001_example_2_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_3_s_221_ela_286_jz_1_sfhh_001_example_2_diagram.png",
+    "title": "جد رتبة ودرجة المعادلة التفاضلية \\( y'' = (y')^2 - 1 \\)",
+    "number": "مثال 2",
+    "model_solution": "أعلى مشتقة y'' ⇒ الرتبة 2 ، وقوتها 1 ⇒ الدرجة 1",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد رتبة \\( y'' \\). الطريقة: العلامتان \\( '' \\) تعنيان اشتقاقين. السبب: عدد الشرطات يساوي عدد الاشتقاقات.",
+        "equation_template": "y'' \\Rightarrow \\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step1_o1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_1_1_2_s1_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "عُدّ الشرطات فوق \\( y \\)."
+          }
+        ],
+        "hint": "عُدّ الشرطات فوق \\( y \\).",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد رتبة \\( y'' \\). الطريقة: العلامتان \\( '' \\) تعنيان اشتقاقين. السبب: عدد الشرطات يساوي عدد الاشتقاقات.",
+        "think": "عُدّ الشرطات فوق \\( y \\).",
+        "html_structure": "y'' \\Rightarrow \\text{order} = {q_5_1_1_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحدد رتبة \\( y' \\). الطريقة: الشرطة الواحدة تعني اشتقاقاً واحداً. السبب: لنقارنها برتبة \\( y'' \\).",
+        "equation_template": "y' \\Rightarrow \\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_o2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "id": "q_5_1_1_2_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "عُدّ الشرطات فوق \\( y \\)."
+          }
+        ],
+        "hint": "عُدّ الشرطات فوق \\( y \\).",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحدد رتبة \\( y' \\). الطريقة: الشرطة الواحدة تعني اشتقاقاً واحداً. السبب: لنقارنها برتبة \\( y'' \\).",
+        "think": "عُدّ الشرطات فوق \\( y \\).",
+        "html_structure": "y' \\Rightarrow \\text{order} = {q_5_1_1_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نختار أعلى مشتقة في المعادلة. الطريقة: نقارن رتبتي \\( y'' \\) و \\( y' \\) وهما \\( 2 \\) و \\( 1 \\)، ونختار الأكبر. السبب: المرتبة هي رتبة أعلى مشتقة.",
+        "equation_template": "\\text{highest derivative} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_hi",
+            "correct_answer": "y''",
+            "options": [
+              "y''",
+              "y'",
+              "y",
+              "y'''"
+            ],
+            "id": "q_5_1_1_2_s3_i1",
+            "correct_value": "y''",
+            "allowed_keys": [
+              "y''",
+              "y'",
+              "y",
+              "y'''"
+            ],
+            "label": "القيمة 1",
+            "hint": "اختر المشتقة التي رتبتها \\( 2 \\)."
+          }
+        ],
+        "hint": "اختر المشتقة التي رتبتها \\( 2 \\).",
+        "related_topics": [
+          "أعلى مشتقة"
+        ],
+        "step_id": "math345_5_1_1_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نختار أعلى مشتقة في المعادلة. الطريقة: نقارن رتبتي \\( y'' \\) و \\( y' \\) وهما \\( 2 \\) و \\( 1 \\)، ونختار الأكبر. السبب: المرتبة هي رتبة أعلى مشتقة.",
+        "think": "اختر المشتقة التي رتبتها \\( 2 \\).",
+        "html_structure": "\\text{highest derivative} = {q_5_1_1_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب رتبة المعادلة. الطريقة: أعلى مشتقة هي \\( y'' \\) ورتبتها \\( 2 \\). السبب: الرتبة هي رتبة أعلى مشتقة.",
+        "equation_template": "\\text{order} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_ord",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_1_1_2_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اختر الأكبر بين \\( 2 \\) و \\( 1 \\)."
+          }
+        ],
+        "hint": "اختر الأكبر بين \\( 2 \\) و \\( 1 \\).",
+        "related_topics": [
+          "رتبة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب رتبة المعادلة. الطريقة: أعلى مشتقة هي \\( y'' \\) ورتبتها \\( 2 \\). السبب: الرتبة هي رتبة أعلى مشتقة.",
+        "think": "اختر الأكبر بين \\( 2 \\) و \\( 1 \\).",
+        "html_structure": "\\text{order} = {q_5_1_1_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: ننقل كل الحدود إلى طرف واحد لنرى قوة كل مشتقة بوضوح. الطريقة: ننقل \\( (y')^2 \\) و \\( -1 \\) إلى الطرف الأيسر فتصبح المعادلة \\( y'' - (y')^2 + 1 = 0 \\). السبب: هكذا تظهر قوة المشتقات واضحة.",
+        "equation_template": "y'' - (y')^{{input_1}} + 1 = 0",
+        "inputs": [
+          {
+            "input_id": "step5_mv",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_1_1_2_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "قوة \\( y' \\) كما في السؤال هي \\( 2 \\)."
+          }
+        ],
+        "hint": "قوة \\( y' \\) كما في السؤال هي \\( 2 \\).",
+        "related_topics": [
+          "درجة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: ننقل كل الحدود إلى طرف واحد لنرى قوة كل مشتقة بوضوح. الطريقة: ننقل \\( (y')^2 \\) و \\( -1 \\) إلى الطرف الأيسر فتصبح المعادلة \\( y'' - (y')^2 + 1 = 0 \\). السبب: هكذا تظهر قوة المشتقات واضحة.",
+        "think": "قوة \\( y' \\) كما في السؤال هي \\( 2 \\).",
+        "html_structure": "y'' - (y')^{{q_5_1_1_2_s5_i1}} + 1 = 0"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: ننتبه إلى الفخ: \\( (y')^2 \\) فيها قوة \\( 2 \\). الطريقة: هذه القوة على \\( y' \\) وهي ليست أعلى مشتقة، فنستبعدها. السبب: الدرجة تُؤخذ من أعلى مشتقة فقط.",
+        "equation_template": "\\text{power of } y' = {input_1} \\text{ (ignored)}",
+        "inputs": [
+          {
+            "input_id": "step6_trap",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_1_1_2_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر إلى قوة \\( y' \\) في المعادلة."
+          }
+        ],
+        "hint": "انظر إلى قوة \\( y' \\) في المعادلة.",
+        "related_topics": [
+          "درجة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: ننتبه إلى الفخ: \\( (y')^2 \\) فيها قوة \\( 2 \\). الطريقة: هذه القوة على \\( y' \\) وهي ليست أعلى مشتقة، فنستبعدها. السبب: الدرجة تُؤخذ من أعلى مشتقة فقط.",
+        "think": "انظر إلى قوة \\( y' \\) في المعادلة.",
+        "html_structure": "\\text{power of } y' = {q_5_1_1_2_s6_i1} \\text{ (ignored)}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نقرأ قوة أعلى مشتقة \\( y'' \\). الطريقة: \\( y'' \\) ظاهرة بدون أي أس، فأسها المخفي \\( 1 \\). السبب: أي حد بلا أس ظاهر أسه \\( 1 \\).",
+        "equation_template": "(y'')^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step7_pw",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "id": "q_5_1_1_2_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس المخفي هو \\( 1 \\)."
+          }
+        ],
+        "hint": "الأس المخفي هو \\( 1 \\).",
+        "related_topics": [
+          "درجة المعادلة التفاضلية"
+        ],
+        "step_id": "math345_5_1_1_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نقرأ قوة أعلى مشتقة \\( y'' \\). الطريقة: \\( y'' \\) ظاهرة بدون أي أس، فأسها المخفي \\( 1 \\). السبب: أي حد بلا أس ظاهر أسه \\( 1 \\).",
+        "think": "الأس المخفي هو \\( 1 \\).",
+        "html_structure": "(y'')^{{q_5_1_1_2_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكتب الرتبة والدرجة. الطريقة: الرتبة \\( 2 \\) والدرجة \\( 1 \\). السبب: هذا هو الجواب النهائي.",
+        "equation_template": "\\text{order} = {input_1} \\quad , \\quad \\text{degree} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step8_fo",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_5_1_1_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرتبة من الخطوة الثالثة والدرجة من الخطوة السادسة."
+          },
+          {
+            "input_id": "step8_fd",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "id": "q_5_1_1_2_s8_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "الرتبة من الخطوة الثالثة والدرجة من الخطوة السادسة."
+          }
+        ],
+        "hint": "الرتبة من الخطوة الثالثة والدرجة من الخطوة السادسة.",
+        "related_topics": [
+          "رتبة ودرجة المعادلة"
+        ],
+        "step_id": "math345_5_1_1_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكتب الرتبة والدرجة. الطريقة: الرتبة \\( 2 \\) والدرجة \\( 1 \\). السبب: هذا هو الجواب النهائي.",
+        "think": "الرتبة من الخطوة الثالثة والدرجة من الخطوة السادسة.",
+        "html_structure": "\\text{order} = {q_5_1_1_2_s8_i1} \\quad , \\quad \\text{degree} = {q_5_1_1_2_s8_i2}"
+      }
+    ]
+  }
+]

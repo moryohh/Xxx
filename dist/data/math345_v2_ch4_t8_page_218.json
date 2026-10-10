@@ -1,0 +1,742 @@
+[
+  {
+    "id_number": "q5_p218",
+    "page_number": 218,
+    "question_number": "5",
+    "question_text": "جد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) للدالة \\( f:[1,4]\\to\\mathbb{R} \\) حيث \\( f(x)=3x^2+2x \\) (a) \\( \\sigma=\\{1,2,4\\} \\) (b) باستخدام ثلاث تجزئات متساوية.",
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_078_diag_q5_a_table.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_078_diag_q5_b_table.png"
+    ],
+    "full_model_solution": "f'=6x+2=0 → x=-1/3 ∉ [1,4] . (a) h=1,2 ، m=5,16 ، M=16,56 → L=37 ، U=128 . (b) h=1 ، m=5,16,33 ، M=16,33,56 → L=54 ، U=105",
+    "source_file": "رياضيلت 4/page_078.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "file_page_number": 78,
+      "pdf_page_number": 218,
+      "part_number": 2,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_2_ص_139_إلى_220.pdf"
+    },
+    "chapter": 4,
+    "topic_index": 7,
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_2_sfhh_078_diag_q5_a_table.png",
+    "title": "جد \\( L(\\sigma,f) \\) و \\( U(\\sigma,f) \\) للدالة \\( f:[1,4]\\to\\mathbb{R} \\) حيث \\( f(x)=3x^2+2x \\) (a) \\( \\sigma=\\{1,2,4\\} \\) (b) باستخدام ثلاث تجزئات متساوية.",
+    "number": "5",
+    "model_solution": "f'=6x+2=0 → x=-1/3 ∉ [1,4] . (a) h=1,2 ، m=5,16 ، M=16,56 → L=37 ، U=128 . (b) h=1 ، m=5,16,33 ، M=16,33,56 → L=54 ، U=105",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "نشتق الدالة \\( f(x)=3x^2+2x \\) لنعرف اتجاهها. الطريقة: مشتقة \\( 3x^2 \\) هي \\( 6x \\) ومشتقة \\( 2x \\) هي \\( 2 \\). السبب: لنتأكد من وجود نقطة حرجة داخل الفترة أم لا.",
+        "equation_template": "f'(x) = {input_1}x + 2",
+        "inputs": [
+          {
+            "input_id": "step1_in1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "2",
+              "3",
+              "12"
+            ],
+            "id": "q_4_8_218_1_s1_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "2",
+              "3",
+              "12"
+            ],
+            "label": "القيمة 1",
+            "hint": "نزّل الأس \\( 2 \\) واضربه في \\( 3 \\)."
+          }
+        ],
+        "hint": "نزّل الأس \\( 2 \\) واضربه في \\( 3 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_8_218_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "نشتق الدالة \\( f(x)=3x^2+2x \\) لنعرف اتجاهها. الطريقة: مشتقة \\( 3x^2 \\) هي \\( 6x \\) ومشتقة \\( 2x \\) هي \\( 2 \\). السبب: لنتأكد من وجود نقطة حرجة داخل الفترة أم لا.",
+        "think": "نزّل الأس \\( 2 \\) واضربه في \\( 3 \\).",
+        "html_structure": "f'(x) = {q_4_8_218_1_s1_i1}x + 2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "نحل \\( f'(x)=0 \\). الطريقة: \\( 6x+2=0 \\) فيكون \\( x=-\\frac{2}{6}=-\\frac{1}{3} \\). السبب: هذه القيمة سالبة وتقع خارج \\( [1,4] \\) فلا توجد نقطة حرجة، والدالة متزايدة على الفترة كلها.",
+        "equation_template": "6x + 2 = 0 \\Rightarrow x = -\\frac{{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step2_in1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "3",
+              "6",
+              "2"
+            ],
+            "id": "q_4_8_218_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "3",
+              "6",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( 2 \\) إلى الطرف الأيمن ثم قسّم \\( -2 \\) على \\( 6 \\) وبسّط."
+          },
+          {
+            "input_id": "step2_in2",
+            "correct_answer": "3",
+            "options": [
+              "1",
+              "2",
+              "6",
+              "3"
+            ],
+            "id": "q_4_8_218_1_s2_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "1",
+              "2",
+              "6",
+              "3"
+            ],
+            "label": "القيمة 2",
+            "hint": "انقل \\( 2 \\) إلى الطرف الأيمن ثم قسّم \\( -2 \\) على \\( 6 \\) وبسّط."
+          }
+        ],
+        "hint": "انقل \\( 2 \\) إلى الطرف الأيمن ثم قسّم \\( -2 \\) على \\( 6 \\) وبسّط.",
+        "related_topics": [
+          "القيم الحرجة"
+        ],
+        "step_id": "math345_4_8_218_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "نحل \\( f'(x)=0 \\). الطريقة: \\( 6x+2=0 \\) فيكون \\( x=-\\frac{2}{6}=-\\frac{1}{3} \\). السبب: هذه القيمة سالبة وتقع خارج \\( [1,4] \\) فلا توجد نقطة حرجة، والدالة متزايدة على الفترة كلها.",
+        "think": "انقل \\( 2 \\) إلى الطرف الأيمن ثم قسّم \\( -2 \\) على \\( 6 \\) وبسّط.",
+        "html_structure": "6x + 2 = 0 \\Rightarrow x = -\\frac{{q_4_8_218_1_s2_i1}}{{q_4_8_218_1_s2_i2}}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "نبدأ بالفرع (a) مع \\( \\sigma=\\{1,2,4\\} \\). نحسب أطوال الفترتين \\( [1,2] \\) و \\( [2,4] \\).",
+        "equation_template": "h_1 = {input_1}, \\quad h_2 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step3_in1",
+            "correct_answer": "1",
+            "options": [
+              "0",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_4_8_218_1_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "0",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2-1 \\) ثم \\( 4-2 \\)."
+          },
+          {
+            "input_id": "step3_in2",
+            "correct_answer": "2",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "id": "q_4_8_218_1_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2-1 \\) ثم \\( 4-2 \\)."
+          }
+        ],
+        "hint": "\\( 2-1 \\) ثم \\( 4-2 \\).",
+        "related_topics": [
+          "طول الفترة"
+        ],
+        "step_id": "math345_4_8_218_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "نبدأ بالفرع (a) مع \\( \\sigma=\\{1,2,4\\} \\). نحسب أطوال الفترتين \\( [1,2] \\) و \\( [2,4] \\).",
+        "think": "\\( 2-1 \\) ثم \\( 4-2 \\).",
+        "html_structure": "h_1 = {q_4_8_218_1_s3_i1}, \\quad h_2 = {q_4_8_218_1_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "نحسب قيم الدالة عند \\( x=1 \\) و \\( x=2 \\).",
+        "equation_template": "f(1) = 3(1) + 2(1) = {input_1}, \\quad f(2) = 3(4) + 2(2) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step4_in1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "6",
+              "3",
+              "1"
+            ],
+            "id": "q_4_8_218_1_s4_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "6",
+              "3",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3+2 \\) ثم \\( 12+4 \\)."
+          },
+          {
+            "input_id": "step4_in2",
+            "correct_answer": "16",
+            "options": [
+              "12",
+              "10",
+              "14",
+              "16"
+            ],
+            "id": "q_4_8_218_1_s4_i2",
+            "correct_value": "16",
+            "allowed_keys": [
+              "12",
+              "10",
+              "14",
+              "16"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3+2 \\) ثم \\( 12+4 \\)."
+          }
+        ],
+        "hint": "\\( 3+2 \\) ثم \\( 12+4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_218_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "نحسب قيم الدالة عند \\( x=1 \\) و \\( x=2 \\).",
+        "think": "\\( 3+2 \\) ثم \\( 12+4 \\).",
+        "html_structure": "f(1) = 3(1) + 2(1) = {q_4_8_218_1_s4_i1}, \\quad f(2) = 3(4) + 2(2) = {q_4_8_218_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "نحسب قيمة الدالة عند \\( x=4 \\).",
+        "equation_template": "f(4) = 3(16) + 2(4) = {input_1} + {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step5_in1",
+            "correct_answer": "48",
+            "options": [
+              "64",
+              "12",
+              "16",
+              "48"
+            ],
+            "id": "q_4_8_218_1_s5_i1",
+            "correct_value": "48",
+            "allowed_keys": [
+              "64",
+              "12",
+              "16",
+              "48"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times16=48 \\) و \\( 2\\times4=8 \\) ثم اجمع."
+          },
+          {
+            "input_id": "step5_in2",
+            "correct_answer": "8",
+            "options": [
+              "4",
+              "16",
+              "8",
+              "2"
+            ],
+            "id": "q_4_8_218_1_s5_i2",
+            "correct_value": "8",
+            "allowed_keys": [
+              "4",
+              "16",
+              "8",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times16=48 \\) و \\( 2\\times4=8 \\) ثم اجمع."
+          },
+          {
+            "input_id": "step5_in3",
+            "correct_answer": "56",
+            "options": [
+              "24",
+              "52",
+              "56",
+              "64"
+            ],
+            "id": "q_4_8_218_1_s5_i3",
+            "correct_value": "56",
+            "allowed_keys": [
+              "24",
+              "52",
+              "56",
+              "64"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 3\\times16=48 \\) و \\( 2\\times4=8 \\) ثم اجمع."
+          }
+        ],
+        "hint": "\\( 3\\times16=48 \\) و \\( 2\\times4=8 \\) ثم اجمع.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_218_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "نحسب قيمة الدالة عند \\( x=4 \\).",
+        "think": "\\( 3\\times16=48 \\) و \\( 2\\times4=8 \\) ثم اجمع.",
+        "html_structure": "f(4) = 3(16) + 2(4) = {q_4_8_218_1_s5_i1} + {q_4_8_218_1_s5_i2} = {q_4_8_218_1_s5_i3}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "نحسب المجموع الأدنى (الأطراف اليسرى \\( m_1=f(1)=5 \\) و \\( m_2=f(2)=16 \\)) والفترة الثانية طولها \\( 2 \\).",
+        "equation_template": "L = 5(1) + 16({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step6_in1",
+            "correct_answer": "2",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "3"
+            ],
+            "id": "q_4_8_218_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5+16\\times2=5+32 \\)."
+          },
+          {
+            "input_id": "step6_in2",
+            "correct_answer": "37",
+            "options": [
+              "37",
+              "21",
+              "32",
+              "42"
+            ],
+            "id": "q_4_8_218_1_s6_i2",
+            "correct_value": "37",
+            "allowed_keys": [
+              "37",
+              "21",
+              "32",
+              "42"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 5+16\\times2=5+32 \\)."
+          }
+        ],
+        "hint": "\\( 5+16\\times2=5+32 \\).",
+        "related_topics": [
+          "مجموع ريمان الأدنى"
+        ],
+        "step_id": "math345_4_8_218_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "نحسب المجموع الأدنى (الأطراف اليسرى \\( m_1=f(1)=5 \\) و \\( m_2=f(2)=16 \\)) والفترة الثانية طولها \\( 2 \\).",
+        "think": "\\( 5+16\\times2=5+32 \\).",
+        "html_structure": "L = 5(1) + 16({q_4_8_218_1_s6_i1}) = {q_4_8_218_1_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "نحسب المجموع الأعلى (الأطراف اليمنى \\( M_1=f(2)=16 \\) و \\( M_2=f(4)=56 \\)).",
+        "equation_template": "U = 16(1) + 56({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step7_in1",
+            "correct_answer": "2",
+            "options": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "id": "q_4_8_218_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "3",
+              "4",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 16+56\\times2=16+112 \\)."
+          },
+          {
+            "input_id": "step7_in2",
+            "correct_answer": "128",
+            "options": [
+              "112",
+              "128",
+              "144",
+              "72"
+            ],
+            "id": "q_4_8_218_1_s7_i2",
+            "correct_value": "128",
+            "allowed_keys": [
+              "112",
+              "128",
+              "144",
+              "72"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 16+56\\times2=16+112 \\)."
+          }
+        ],
+        "hint": "\\( 16+56\\times2=16+112 \\).",
+        "related_topics": [
+          "مجموع ريمان الأعلى"
+        ],
+        "step_id": "math345_4_8_218_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "نحسب المجموع الأعلى (الأطراف اليمنى \\( M_1=f(2)=16 \\) و \\( M_2=f(4)=56 \\)).",
+        "think": "\\( 16+56\\times2=16+112 \\).",
+        "html_structure": "U = 16(1) + 56({q_4_8_218_1_s7_i1}) = {q_4_8_218_1_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "ننتقل للفرع (b): ثلاث تجزئات متساوية. الهدف: إيجاد \\( h \\). الطريقة: \\( \\frac{4-1}{3} \\) فتكون الفترات \\( [1,2],[2,3],[3,4] \\).",
+        "equation_template": "h = \\frac{4 - 1}{{input_1}} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step8_in1",
+            "correct_answer": "3",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "id": "q_4_8_218_1_s8_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقسم \\( 3 \\) على عدد الفترات."
+          },
+          {
+            "input_id": "step8_in2",
+            "correct_answer": "1",
+            "options": [
+              "3",
+              "0.5",
+              "1",
+              "2"
+            ],
+            "id": "q_4_8_218_1_s8_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "3",
+              "0.5",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "اقسم \\( 3 \\) على عدد الفترات."
+          }
+        ],
+        "hint": "اقسم \\( 3 \\) على عدد الفترات.",
+        "related_topics": [
+          "التجزئة المنتظمة"
+        ],
+        "step_id": "math345_4_8_218_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "ننتقل للفرع (b): ثلاث تجزئات متساوية. الهدف: إيجاد \\( h \\). الطريقة: \\( \\frac{4-1}{3} \\) فتكون الفترات \\( [1,2],[2,3],[3,4] \\).",
+        "think": "اقسم \\( 3 \\) على عدد الفترات.",
+        "html_structure": "h = \\frac{4 - 1}{{q_4_8_218_1_s8_i1}} = {q_4_8_218_1_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "نحسب \\( f(3) \\) فهي قيمة جديدة لم نحسبها في الفرع (a).",
+        "equation_template": "f(3) = 3(9) + 2(3) = {input_1} + {input_2} = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step9_in1",
+            "correct_answer": "27",
+            "options": [
+              "12",
+              "18",
+              "9",
+              "27"
+            ],
+            "id": "q_4_8_218_1_s9_i1",
+            "correct_value": "27",
+            "allowed_keys": [
+              "12",
+              "18",
+              "9",
+              "27"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\times9=27 \\) و \\( 2\\times3=6 \\) ثم اجمع."
+          },
+          {
+            "input_id": "step9_in2",
+            "correct_answer": "6",
+            "options": [
+              "9",
+              "3",
+              "6",
+              "5"
+            ],
+            "id": "q_4_8_218_1_s9_i2",
+            "correct_value": "6",
+            "allowed_keys": [
+              "9",
+              "3",
+              "6",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 3\\times9=27 \\) و \\( 2\\times3=6 \\) ثم اجمع."
+          },
+          {
+            "input_id": "step9_in3",
+            "correct_answer": "33",
+            "options": [
+              "30",
+              "33",
+              "36",
+              "21"
+            ],
+            "id": "q_4_8_218_1_s9_i3",
+            "correct_value": "33",
+            "allowed_keys": [
+              "30",
+              "33",
+              "36",
+              "21"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( 3\\times9=27 \\) و \\( 2\\times3=6 \\) ثم اجمع."
+          }
+        ],
+        "hint": "\\( 3\\times9=27 \\) و \\( 2\\times3=6 \\) ثم اجمع.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_8_218_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "نحسب \\( f(3) \\) فهي قيمة جديدة لم نحسبها في الفرع (a).",
+        "think": "\\( 3\\times9=27 \\) و \\( 2\\times3=6 \\) ثم اجمع.",
+        "html_structure": "f(3) = 3(9) + 2(3) = {q_4_8_218_1_s9_i1} + {q_4_8_218_1_s9_i2} = {q_4_8_218_1_s9_i3}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "نكتب القيم الصغرى (الأطراف اليسرى \\( 1,2,3 \\)) بعد أن حسبنا \\( f(1)=5 \\) و \\( f(2)=16 \\).",
+        "equation_template": "m_1 = 5, \\quad m_2 = {input_1}, \\quad m_3 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step10_in1",
+            "correct_answer": "16",
+            "options": [
+              "5",
+              "56",
+              "33",
+              "16"
+            ],
+            "id": "q_4_8_218_1_s10_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "5",
+              "56",
+              "33",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( m_2=f(2) \\) و \\( m_3=f(3) \\)."
+          },
+          {
+            "input_id": "step10_in2",
+            "correct_answer": "33",
+            "options": [
+              "56",
+              "16",
+              "5",
+              "33"
+            ],
+            "id": "q_4_8_218_1_s10_i2",
+            "correct_value": "33",
+            "allowed_keys": [
+              "56",
+              "16",
+              "5",
+              "33"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( m_2=f(2) \\) و \\( m_3=f(3) \\)."
+          }
+        ],
+        "hint": "\\( m_2=f(2) \\) و \\( m_3=f(3) \\).",
+        "related_topics": [
+          "المجموع الأدنى"
+        ],
+        "step_id": "math345_4_8_218_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "نكتب القيم الصغرى (الأطراف اليسرى \\( 1,2,3 \\)) بعد أن حسبنا \\( f(1)=5 \\) و \\( f(2)=16 \\).",
+        "think": "\\( m_2=f(2) \\) و \\( m_3=f(3) \\).",
+        "html_structure": "m_1 = 5, \\quad m_2 = {q_4_8_218_1_s10_i1}, \\quad m_3 = {q_4_8_218_1_s10_i2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "نكتب القيم العظمى (الأطراف اليمنى \\( 2,3,4 \\)).",
+        "equation_template": "M_1 = {input_1}, \\quad M_2 = {input_2}, \\quad M_3 = {input_3}",
+        "inputs": [
+          {
+            "input_id": "step11_in1",
+            "correct_answer": "16",
+            "options": [
+              "5",
+              "33",
+              "56",
+              "16"
+            ],
+            "id": "q_4_8_218_1_s11_i1",
+            "correct_value": "16",
+            "allowed_keys": [
+              "5",
+              "33",
+              "56",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( f(2) \\) ثم \\( f(3) \\) ثم \\( f(4) \\)."
+          },
+          {
+            "input_id": "step11_in2",
+            "correct_answer": "33",
+            "options": [
+              "33",
+              "16",
+              "5",
+              "56"
+            ],
+            "id": "q_4_8_218_1_s11_i2",
+            "correct_value": "33",
+            "allowed_keys": [
+              "33",
+              "16",
+              "5",
+              "56"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( f(2) \\) ثم \\( f(3) \\) ثم \\( f(4) \\)."
+          },
+          {
+            "input_id": "step11_in3",
+            "correct_answer": "56",
+            "options": [
+              "56",
+              "16",
+              "32",
+              "33"
+            ],
+            "id": "q_4_8_218_1_s11_i3",
+            "correct_value": "56",
+            "allowed_keys": [
+              "56",
+              "16",
+              "32",
+              "33"
+            ],
+            "label": "القيمة 3",
+            "hint": "\\( f(2) \\) ثم \\( f(3) \\) ثم \\( f(4) \\)."
+          }
+        ],
+        "hint": "\\( f(2) \\) ثم \\( f(3) \\) ثم \\( f(4) \\).",
+        "related_topics": [
+          "المجموع الأعلى"
+        ],
+        "step_id": "math345_4_8_218_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "نكتب القيم العظمى (الأطراف اليمنى \\( 2,3,4 \\)).",
+        "think": "\\( f(2) \\) ثم \\( f(3) \\) ثم \\( f(4) \\).",
+        "html_structure": "M_1 = {q_4_8_218_1_s11_i1}, \\quad M_2 = {q_4_8_218_1_s11_i2}, \\quad M_3 = {q_4_8_218_1_s11_i3}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "نحسب المجموعين في الفرع (b). بما أن \\( h=1 \\) نجمع مباشرة.",
+        "equation_template": "L = 5+16+33 = {input_1}, \\quad U = 16+33+56 = {input_2}",
+        "inputs": [
+          {
+            "input_id": "step12_in1",
+            "correct_answer": "54",
+            "options": [
+              "54",
+              "64",
+              "38",
+              "49"
+            ],
+            "id": "q_4_8_218_1_s12_i1",
+            "correct_value": "54",
+            "allowed_keys": [
+              "54",
+              "64",
+              "38",
+              "49"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 5+16+33 \\) ثم \\( 16+33+56 \\)."
+          },
+          {
+            "input_id": "step12_in2",
+            "correct_answer": "105",
+            "options": [
+              "110",
+              "89",
+              "98",
+              "105"
+            ],
+            "id": "q_4_8_218_1_s12_i2",
+            "correct_value": "105",
+            "allowed_keys": [
+              "110",
+              "89",
+              "98",
+              "105"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 5+16+33 \\) ثم \\( 16+33+56 \\)."
+          }
+        ],
+        "hint": "\\( 5+16+33 \\) ثم \\( 16+33+56 \\).",
+        "related_topics": [
+          "مجموع ريمان"
+        ],
+        "step_id": "math345_4_8_218_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "نحسب المجموعين في الفرع (b). بما أن \\( h=1 \\) نجمع مباشرة.",
+        "think": "\\( 5+16+33 \\) ثم \\( 16+33+56 \\).",
+        "html_structure": "L = 5+16+33 = {q_4_8_218_1_s12_i1}, \\quad U = 16+33+56 = {q_4_8_218_1_s12_i2}"
+      }
+    ]
+  }
+]

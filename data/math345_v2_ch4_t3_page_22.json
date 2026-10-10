@@ -1,0 +1,445 @@
+[
+  {
+    "id_number": "q11_p22",
+    "page_number": 22,
+    "question_number": "11",
+    "question_text": "احسب \\( \\int_{\\pi/6}^{\\pi/2} \\frac{\\cos x}{\\sqrt{\\sin x}}\\,dx \\)",
+    "images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_022_diag_table_1_table.png"
+    ],
+    "full_model_solution": "F(x)=2√(sin x) ، F(π/2)−F(π/6)=2−√2",
+    "source_file": "رياضيلت 4/part2_page_022_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 22,
+      "pdf_page_number": 162
+    },
+    "chapter": 4,
+    "topic_index": 2,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_022_diag_table_1_table.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_022_diag_table_1_table.png",
+    "title": "احسب \\( \\int_{\\pi/6}^{\\pi/2} \\frac{\\cos x}{\\sqrt{\\sin x}}\\,dx \\)",
+    "number": "11",
+    "model_solution": "F(x)=2√(sin x) ، F(π/2)−F(π/6)=2−√2",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحول الجذر في المقام إلى أس. الطريقة: \\( \\sqrt{\\sin x}=(\\sin x)^{\\frac{1}{2}} \\) وبنقله للبسط تنعكس إشارة الأس فيصبح \\( -\\frac{1}{2} \\). السبب: لنتمكن من تطبيق قاعدة القوس المرفوع لأس.",
+        "equation_template": "\\frac{\\cos x}{\\sqrt{\\sin x}} = \\cos x\\,(\\sin x)^{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "step1_a",
+            "correct_answer": "-1/2",
+            "options": [
+              "-1/2",
+              "1/2",
+              "-2",
+              "-3/2"
+            ],
+            "id": "q_4_3_22_1_s1_i1",
+            "correct_value": "-1/2",
+            "allowed_keys": [
+              "-1/2",
+              "1/2",
+              "-2",
+              "-3/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس الأصلي \\( \\frac{1}{2} \\) لكن بإشارة سالب لأن الجذر كان في المقام."
+          }
+        ],
+        "hint": "الأس الأصلي \\( \\frac{1}{2} \\) لكن بإشارة سالب لأن الجذر كان في المقام.",
+        "related_topics": [
+          "الجذور والأسس"
+        ],
+        "step_id": "math345_4_3_22_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحول الجذر في المقام إلى أس. الطريقة: \\( \\sqrt{\\sin x}=(\\sin x)^{\\frac{1}{2}} \\) وبنقله للبسط تنعكس إشارة الأس فيصبح \\( -\\frac{1}{2} \\). السبب: لنتمكن من تطبيق قاعدة القوس المرفوع لأس.",
+        "think": "الأس الأصلي \\( \\frac{1}{2} \\) لكن بإشارة سالب لأن الجذر كان في المقام.",
+        "html_structure": "\\frac{\\cos x}{\\sqrt{\\sin x}} = \\cos x\\,(\\sin x)^{{q_4_3_22_1_s1_i1}}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نتحقق من وجود المشتقة. الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\) وهي موجودة خارج القوس. السبب: فنكامل مباشرة.",
+        "equation_template": "(\\sin x)' = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step2_d",
+            "correct_answer": "cos x",
+            "options": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "tan x"
+            ],
+            "id": "q_4_3_22_1_s2_i1",
+            "correct_value": "cos x",
+            "allowed_keys": [
+              "cos x",
+              "-cos x",
+              "sin x",
+              "tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "من جدول المشتقات: مشتقة \\( \\sin x \\)."
+          }
+        ],
+        "hint": "من جدول المشتقات: مشتقة \\( \\sin x \\).",
+        "related_topics": [
+          "مشتقات الدوال المثلثية"
+        ],
+        "step_id": "math345_4_3_22_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نتحقق من وجود المشتقة. الطريقة: مشتقة \\( \\sin x \\) هي \\( \\cos x \\) وهي موجودة خارج القوس. السبب: فنكامل مباشرة.",
+        "think": "من جدول المشتقات: مشتقة \\( \\sin x \\).",
+        "html_structure": "(\\sin x)' = {q_4_3_22_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نريد حساب الأس الجديد للحد \\( (\\sin x)^{-\\frac{1}{2}} \\). الطريقة: الأس الحالي هو \\( -\\frac{1}{2} \\)، فنضيف إليه \\( 1 \\) ونحسب الناتج (إذا كان الأس كسراً نكتب \\( 1 \\) بنفس المقام ثم نجمع). السبب: قاعدة تكامل القوى ترفع الأس دائماً بمقدار واحد.",
+        "equation_template": "(-\\frac{1}{2}) + 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step3_t_newexp",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "-1/2",
+              "-3/2",
+              "2"
+            ],
+            "id": "q_4_3_22_1_s3_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "-1/2",
+              "-3/2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( -\\frac{1}{2} + 1 \\). وبما أن الأس كسر فحوّل \\( 1 \\) إلى كسر له نفس المقام ثم اجمع البسطين فقط."
+          }
+        ],
+        "hint": "احسب \\( -\\frac{1}{2} + 1 \\). وبما أن الأس كسر فحوّل \\( 1 \\) إلى كسر له نفس المقام ثم اجمع البسطين فقط.",
+        "related_topics": [
+          "تكامل x^n"
+        ],
+        "step_id": "math345_4_3_22_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نريد حساب الأس الجديد للحد \\( (\\sin x)^{-\\frac{1}{2}} \\). الطريقة: الأس الحالي هو \\( -\\frac{1}{2} \\)، فنضيف إليه \\( 1 \\) ونحسب الناتج (إذا كان الأس كسراً نكتب \\( 1 \\) بنفس المقام ثم نجمع). السبب: قاعدة تكامل القوى ترفع الأس دائماً بمقدار واحد.",
+        "think": "احسب \\( -\\frac{1}{2} + 1 \\). وبما أن الأس كسر فحوّل \\( 1 \\) إلى كسر له نفس المقام ثم اجمع البسطين فقط.",
+        "html_structure": "(-\\frac{1}{2}) + 1 = {q_4_3_22_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نجد مقلوب الأس الجديد \\( \\frac{1}{2} \\). الطريقة: القسمة على \\( \\frac{1}{2} \\) تعني الضرب في مقلوبه، فنكتب \\( 1 \\) على \\( \\frac{1}{2} \\) (وإذا كان كسراً نقلب بسطه ومقامه). السبب: هكذا نتجنب القسمة على كسر ونحولها إلى ضرب أسهل.",
+        "equation_template": "\\frac{1}{\\frac{1}{2}} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step4_t_recip",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1/2",
+              "-2",
+              "3"
+            ],
+            "id": "q_4_3_22_1_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1/2",
+              "-2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "اقلب العدد \\( \\frac{1}{2} \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه)."
+          }
+        ],
+        "hint": "اقلب العدد \\( \\frac{1}{2} \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه).",
+        "related_topics": [
+          "المقلوب"
+        ],
+        "step_id": "math345_4_3_22_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نجد مقلوب الأس الجديد \\( \\frac{1}{2} \\). الطريقة: القسمة على \\( \\frac{1}{2} \\) تعني الضرب في مقلوبه، فنكتب \\( 1 \\) على \\( \\frac{1}{2} \\) (وإذا كان كسراً نقلب بسطه ومقامه). السبب: هكذا نتجنب القسمة على كسر ونحولها إلى ضرب أسهل.",
+        "think": "اقلب العدد \\( \\frac{1}{2} \\): ضع \\( 1 \\) في البسط والعدد نفسه في المقام (وإن كان كسراً بدّل بسطه بمقامه).",
+        "html_structure": "\\frac{1}{\\frac{1}{2}} = {q_4_3_22_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب معامل الحد بعد التكامل. الطريقة: نضرب المعامل الأصلي \\( 1 \\) في المقلوب \\( 2 \\) (البسط في البسط والمقام في المقام ثم نختصر). السبب: قاعدة التكامل تقسم على الأس الجديد، أي تضرب المعامل في مقلوبه.",
+        "equation_template": "1 \\times 2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step5_t_coef",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "1/2"
+            ],
+            "id": "q_4_3_22_1_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "1/2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 1 \\times 2 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج."
+          }
+        ],
+        "hint": "اضرب \\( 1 \\times 2 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج.",
+        "related_topics": [
+          "ضرب الكسور"
+        ],
+        "step_id": "math345_4_3_22_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب معامل الحد بعد التكامل. الطريقة: نضرب المعامل الأصلي \\( 1 \\) في المقلوب \\( 2 \\) (البسط في البسط والمقام في المقام ثم نختصر). السبب: قاعدة التكامل تقسم على الأس الجديد، أي تضرب المعامل في مقلوبه.",
+        "think": "اضرب \\( 1 \\times 2 \\): البسط في البسط والمقام في المقام ثم اختصر الناتج.",
+        "html_structure": "1 \\times 2 = {q_4_3_22_1_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نكتب \\( F(x) \\) قبل التعويض. الطريقة: المعامل \\( 2 \\) أمام \\( \\sin x \\) بالأس \\( \\frac{1}{2} \\) (بدون \\( c \\)). السبب: في التكامل المحدد يحذف \\( c \\) نفسه.",
+        "equation_template": "F(x) = {input_1}(\\sin x)^{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "step6_Fc",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1/2",
+              "-2",
+              "3"
+            ],
+            "id": "q_4_3_22_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1/2",
+              "-2",
+              "3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( 2 \\) والأس \\( \\frac{1}{2} \\)."
+          },
+          {
+            "input_id": "step6_Fe",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "-1/2",
+              "2",
+              "3/2"
+            ],
+            "id": "q_4_3_22_1_s6_i2",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "-1/2",
+              "2",
+              "3/2"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعامل \\( 2 \\) والأس \\( \\frac{1}{2} \\)."
+          }
+        ],
+        "hint": "المعامل \\( 2 \\) والأس \\( \\frac{1}{2} \\).",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_22_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نكتب \\( F(x) \\) قبل التعويض. الطريقة: المعامل \\( 2 \\) أمام \\( \\sin x \\) بالأس \\( \\frac{1}{2} \\) (بدون \\( c \\)). السبب: في التكامل المحدد يحذف \\( c \\) نفسه.",
+        "think": "المعامل \\( 2 \\) والأس \\( \\frac{1}{2} \\).",
+        "html_structure": "F(x) = {q_4_3_22_1_s6_i1}(\\sin x)^{{q_4_3_22_1_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوض الحد الأعلى \\( \\frac{\\pi}{2} \\). الطريقة: \\( \\frac{\\pi}{2}=90^\\circ \\) و \\( \\sin 90^\\circ = 1 \\). السبب: لحساب \\( F(\\frac{\\pi}{2}) \\).",
+        "equation_template": "\\sin\\frac{\\pi}{2} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step7_s1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "1/2",
+              "-1"
+            ],
+            "id": "q_4_3_22_1_s7_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "1/2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب الزاوية القائمة يساوي \\( 1 \\)."
+          }
+        ],
+        "hint": "جيب الزاوية القائمة يساوي \\( 1 \\).",
+        "related_topics": [
+          "قيم النسب المثلثية"
+        ],
+        "step_id": "math345_4_3_22_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوض الحد الأعلى \\( \\frac{\\pi}{2} \\). الطريقة: \\( \\frac{\\pi}{2}=90^\\circ \\) و \\( \\sin 90^\\circ = 1 \\). السبب: لحساب \\( F(\\frac{\\pi}{2}) \\).",
+        "think": "جيب الزاوية القائمة يساوي \\( 1 \\).",
+        "html_structure": "\\sin\\frac{\\pi}{2} = {q_4_3_22_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب \\( F(\\frac{\\pi}{2}) \\). الطريقة: \\( 2\\sqrt{1} = 2\\times 1 \\). السبب: جذر \\( 1 \\) هو \\( 1 \\).",
+        "equation_template": "F\\left(\\frac{\\pi}{2}\\right) = 2\\sqrt{1} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step8_f1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "4",
+              "√2"
+            ],
+            "id": "q_4_3_22_1_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "4",
+              "√2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اضرب \\( 2 \\) في \\( 1 \\)."
+          }
+        ],
+        "hint": "اضرب \\( 2 \\) في \\( 1 \\).",
+        "related_topics": [
+          "الأسس الكسرية"
+        ],
+        "step_id": "math345_4_3_22_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب \\( F(\\frac{\\pi}{2}) \\). الطريقة: \\( 2\\sqrt{1} = 2\\times 1 \\). السبب: جذر \\( 1 \\) هو \\( 1 \\).",
+        "think": "اضرب \\( 2 \\) في \\( 1 \\).",
+        "html_structure": "F\\left(\\frac{\\pi}{2}\\right) = 2\\sqrt{1} = {q_4_3_22_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نعوض الحد الأدنى \\( \\frac{\\pi}{6} \\). الطريقة: \\( \\frac{\\pi}{6}=30^\\circ \\) و \\( \\sin 30^\\circ \\) تساوي نصفاً. السبب: لحساب \\( F(\\frac{\\pi}{6}) \\).",
+        "equation_template": "\\sin\\frac{\\pi}{6} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step9_s2",
+            "correct_answer": "1/2",
+            "options": [
+              "1/2",
+              "√3/2",
+              "√2/2",
+              "1"
+            ],
+            "id": "q_4_3_22_1_s9_i1",
+            "correct_value": "1/2",
+            "allowed_keys": [
+              "1/2",
+              "√3/2",
+              "√2/2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جيب \\( 30^\\circ \\) يساوي نصفاً."
+          }
+        ],
+        "hint": "جيب \\( 30^\\circ \\) يساوي نصفاً.",
+        "related_topics": [
+          "قيم النسب المثلثية"
+        ],
+        "step_id": "math345_4_3_22_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نعوض الحد الأدنى \\( \\frac{\\pi}{6} \\). الطريقة: \\( \\frac{\\pi}{6}=30^\\circ \\) و \\( \\sin 30^\\circ \\) تساوي نصفاً. السبب: لحساب \\( F(\\frac{\\pi}{6}) \\).",
+        "think": "جيب \\( 30^\\circ \\) يساوي نصفاً.",
+        "html_structure": "\\sin\\frac{\\pi}{6} = {q_4_3_22_1_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نحسب \\( F(\\frac{\\pi}{6}) \\). الطريقة: \\( 2\\sqrt{\\frac{1}{2}} = \\frac{2}{\\sqrt{2}} \\) ثم نقسم \\( 2 \\) على \\( \\sqrt{2} \\) فنحصل على \\( \\sqrt{2} \\). السبب: \\( 2 = \\sqrt{2}\\times\\sqrt{2} \\) فيختصر أحد الجذرين.",
+        "equation_template": "2\\sqrt{\\frac{1}{2}} = \\frac{2}{\\sqrt{2}} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "step10_f2",
+            "correct_answer": "√2",
+            "options": [
+              "√2",
+              "2",
+              "1",
+              "2√2"
+            ],
+            "id": "q_4_3_22_1_s10_i1",
+            "correct_value": "√2",
+            "allowed_keys": [
+              "√2",
+              "2",
+              "1",
+              "2√2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب \\( 2 \\) على شكل \\( \\sqrt{2}\\times\\sqrt{2} \\) ثم اختصر."
+          }
+        ],
+        "hint": "اكتب \\( 2 \\) على شكل \\( \\sqrt{2}\\times\\sqrt{2} \\) ثم اختصر.",
+        "related_topics": [
+          "تبسيط الجذور"
+        ],
+        "step_id": "math345_4_3_22_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نحسب \\( F(\\frac{\\pi}{6}) \\). الطريقة: \\( 2\\sqrt{\\frac{1}{2}} = \\frac{2}{\\sqrt{2}} \\) ثم نقسم \\( 2 \\) على \\( \\sqrt{2} \\) فنحصل على \\( \\sqrt{2} \\). السبب: \\( 2 = \\sqrt{2}\\times\\sqrt{2} \\) فيختصر أحد الجذرين.",
+        "think": "اكتب \\( 2 \\) على شكل \\( \\sqrt{2}\\times\\sqrt{2} \\) ثم اختصر.",
+        "html_structure": "2\\sqrt{\\frac{1}{2}} = \\frac{2}{\\sqrt{2}} = {q_4_3_22_1_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجري الطرح النهائي. الطريقة: \\( F(\\frac{\\pi}{2})-F(\\frac{\\pi}{6}) = 2-\\sqrt{2} \\). السبب: التكامل المحدد هو \\( F(b)-F(a) \\).",
+        "equation_template": "2 - {input_1} = 2 - \\sqrt{2}",
+        "inputs": [
+          {
+            "input_id": "step11_res",
+            "correct_answer": "√2",
+            "options": [
+              "√2",
+              "2",
+              "1",
+              "2√2"
+            ],
+            "id": "q_4_3_22_1_s11_i1",
+            "correct_value": "√2",
+            "allowed_keys": [
+              "√2",
+              "2",
+              "1",
+              "2√2"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب قيمة \\( F(\\frac{\\pi}{6}) \\) التي حسبتها."
+          }
+        ],
+        "hint": "اكتب قيمة \\( F(\\frac{\\pi}{6}) \\) التي حسبتها.",
+        "related_topics": [
+          "التكامل المحدد"
+        ],
+        "step_id": "math345_4_3_22_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجري الطرح النهائي. الطريقة: \\( F(\\frac{\\pi}{2})-F(\\frac{\\pi}{6}) = 2-\\sqrt{2} \\). السبب: التكامل المحدد هو \\( F(b)-F(a) \\).",
+        "think": "اكتب قيمة \\( F(\\frac{\\pi}{6}) \\) التي حسبتها.",
+        "html_structure": "2 - {q_4_3_22_1_s11_i1} = 2 - \\sqrt{2}"
+      }
+    ]
+  }
+]

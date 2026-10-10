@@ -1,0 +1,2028 @@
+[
+  {
+    "id_number": "q1_p37",
+    "page_number": 37,
+    "question_number": "1",
+    "question_text": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=e^{\\tan x} \\)",
+    "question_images": [
+      {
+        "id": "formula_1",
+        "type": "شكل توضيحي",
+        "desc": "مخطط توضيحي لقاعدة اشتقاق الدالة الأسية الطبيعية e",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+      }
+    ],
+    "full_model_solution": "y'=\\sec^2x\\cdot e^{\\tan x}",
+    "source_file": "رياضيلت 4/p037_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 37,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png",
+    "title": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=e^{\\tan x} \\)",
+    "number": "1",
+    "model_solution": "y'=\\sec^2x\\cdot e^{\\tan x}",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنتذكر قاعدة اشتقاق \\( e \\) مرفوعة لدالة. الطريقة: إذا كان \\( y=e^{f(x)} \\) فإن المشتقة هي مشتقة الأس \\( f'(x) \\) مضروبة في \\( e \\) بنفس الأس بدون تغيير. أكمل الجزء الناقص. السبب: لأن \\( e^x \\) لا تتغير عند الاشتقاق، ويبقى فقط ضرب مشتقة الأس بقاعدة السلسلة.",
+        "equation_template": "y=e^{f(x)}\\Rightarrow y'=f'(x)\\cdot {input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "e^{f(x)}",
+            "options": [
+              "\\ln f(x)",
+              "e^{f(x)}",
+              "f(x)e^{f(x)}",
+              "e^{f'(x)}"
+            ],
+            "id": "q_4_1_37_1_s1_i1",
+            "correct_value": "e^{f(x)}",
+            "allowed_keys": [
+              "\\ln f(x)",
+              "e^{f(x)}",
+              "f(x)e^{f(x)}",
+              "e^{f'(x)}"
+            ],
+            "label": "القيمة 1",
+            "hint": "بعد \\( f'(x) \\) ضع \\( e \\) مرفوعة للأس \\( f(x) \\) كما هي تماماً."
+          }
+        ],
+        "hint": "بعد \\( f'(x) \\) ضع \\( e \\) مرفوعة للأس \\( f(x) \\) كما هي تماماً.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنتذكر قاعدة اشتقاق \\( e \\) مرفوعة لدالة. الطريقة: إذا كان \\( y=e^{f(x)} \\) فإن المشتقة هي مشتقة الأس \\( f'(x) \\) مضروبة في \\( e \\) بنفس الأس بدون تغيير. أكمل الجزء الناقص. السبب: لأن \\( e^x \\) لا تتغير عند الاشتقاق، ويبقى فقط ضرب مشتقة الأس بقاعدة السلسلة.",
+        "think": "بعد \\( f'(x) \\) ضع \\( e \\) مرفوعة للأس \\( f(x) \\) كما هي تماماً.",
+        "html_structure": "y=e^{f(x)}\\Rightarrow y'=f'(x)\\cdot {q_4_1_37_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنحدد الأس \\( f(x) \\). الطريقة: الأس هو كل ما فوق \\( e \\) في الدالة. اكتبه. السبب: لأننا سنشتقه في الخطوة التالية.",
+        "equation_template": "f(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "\\tan x",
+            "options": [
+              "e^{\\tan x}",
+              "\\tan x",
+              "x",
+              "\\sec^2 x"
+            ],
+            "id": "q_4_1_37_1_s2_i1",
+            "correct_value": "\\tan x",
+            "allowed_keys": [
+              "e^{\\tan x}",
+              "\\tan x",
+              "x",
+              "\\sec^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انظر ما يقع فوق \\( e \\) فتجده \\( \\tan x \\)."
+          }
+        ],
+        "hint": "انظر ما يقع فوق \\( e \\) فتجده \\( \\tan x \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنحدد الأس \\( f(x) \\). الطريقة: الأس هو كل ما فوق \\( e \\) في الدالة. اكتبه. السبب: لأننا سنشتقه في الخطوة التالية.",
+        "think": "انظر ما يقع فوق \\( e \\) فتجده \\( \\tan x \\).",
+        "html_structure": "f(x)={q_4_1_37_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنشتق الأس. الطريقة: مشتقة \\( \\tan x \\) هي مربع القاطع \\( \\sec^2x \\). السبب: قاعدة مشتقة الظل.",
+        "equation_template": "f'(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "\\sec^2 x",
+            "options": [
+              "\\sec^2 x",
+              "\\tan^2 x",
+              "-\\csc^2 x",
+              "\\sec x\\tan x"
+            ],
+            "id": "q_4_1_37_1_s3_i1",
+            "correct_value": "\\sec^2 x",
+            "allowed_keys": [
+              "\\sec^2 x",
+              "\\tan^2 x",
+              "-\\csc^2 x",
+              "\\sec x\\tan x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة الظل هي \\( \\sec^2x \\) بإشارة موجبة."
+          }
+        ],
+        "hint": "مشتقة الظل هي \\( \\sec^2x \\) بإشارة موجبة.",
+        "related_topics": [
+          "مشتقة الدوال المثلثية"
+        ],
+        "step_id": "math345_4_1_37_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق الأس. الطريقة: مشتقة \\( \\tan x \\) هي مربع القاطع \\( \\sec^2x \\). السبب: قاعدة مشتقة الظل.",
+        "think": "مشتقة الظل هي \\( \\sec^2x \\) بإشارة موجبة.",
+        "html_structure": "f'(x)={q_4_1_37_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنكتب الجزء الأسي بلا تغيير. الطريقة: نترك \\( e \\) وأسها \\( \\tan x \\) كما هما. السبب: لأن \\( e^{f(x)} \\) لا تتغير عند الاشتقاق.",
+        "equation_template": "e^{f(x)}=e^{input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "\\tan x",
+            "options": [
+              "\\cot x",
+              "\\sec^2 x",
+              "\\tan x",
+              "x"
+            ],
+            "id": "q_4_1_37_1_s4_i1",
+            "correct_value": "\\tan x",
+            "allowed_keys": [
+              "\\cot x",
+              "\\sec^2 x",
+              "\\tan x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الأس الأصلي نفسه."
+          }
+        ],
+        "hint": "انسخ الأس الأصلي نفسه.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنكتب الجزء الأسي بلا تغيير. الطريقة: نترك \\( e \\) وأسها \\( \\tan x \\) كما هما. السبب: لأن \\( e^{f(x)} \\) لا تتغير عند الاشتقاق.",
+        "think": "انسخ الأس الأصلي نفسه.",
+        "html_structure": "e^{f(x)}=e^{q_4_1_37_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنضرب مشتقة الأس في الجزء الأسي. الطريقة: نكتب \\( f'(x) \\) أولاً ثم نضرب في \\( e \\) بالأس نفسه. السبب: هذه قاعدة السلسلة.",
+        "equation_template": "y'={input_1}\\times e^{\\tan x}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "\\sec^2 x",
+            "options": [
+              "1",
+              "\\sec^2 x",
+              "\\tan x",
+              "-\\sec^2 x"
+            ],
+            "id": "q_4_1_37_1_s5_i1",
+            "correct_value": "\\sec^2 x",
+            "allowed_keys": [
+              "1",
+              "\\sec^2 x",
+              "\\tan x",
+              "-\\sec^2 x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع الناتج الذي وجدته من اشتقاق \\( \\tan x \\)."
+          }
+        ],
+        "hint": "ضع الناتج الذي وجدته من اشتقاق \\( \\tan x \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنضرب مشتقة الأس في الجزء الأسي. الطريقة: نكتب \\( f'(x) \\) أولاً ثم نضرب في \\( e \\) بالأس نفسه. السبب: هذه قاعدة السلسلة.",
+        "think": "ضع الناتج الذي وجدته من اشتقاق \\( \\tan x \\).",
+        "html_structure": "y'={q_4_1_37_1_s5_i1}\\times e^{\\tan x}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنتحقق من الأس في الجواب. الطريقة: الأس في الجواب يجب أن يبقى مثل الأصلي تماماً. السبب: لنتجنب خطأ اشتقاق الأس.",
+        "equation_template": "y'=\\sec^2 x\\cdot e^{input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "\\tan x",
+            "options": [
+              "\\sec^2 x",
+              "1",
+              "\\tan x",
+              "\\cot x"
+            ],
+            "id": "q_4_1_37_1_s6_i1",
+            "correct_value": "\\tan x",
+            "allowed_keys": [
+              "\\sec^2 x",
+              "1",
+              "\\tan x",
+              "\\cot x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس لم يتغير: \\( \\tan x \\)."
+          }
+        ],
+        "hint": "الأس لم يتغير: \\( \\tan x \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنتحقق من الأس في الجواب. الطريقة: الأس في الجواب يجب أن يبقى مثل الأصلي تماماً. السبب: لنتجنب خطأ اشتقاق الأس.",
+        "think": "الأس لم يتغير: \\( \\tan x \\).",
+        "html_structure": "y'=\\sec^2 x\\cdot e^{q_4_1_37_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنراجع القاعدة العامة بالتعويض. الطريقة: \\( \\frac{d}{dx}e^{u}=e^{u}\\cdot\\frac{du}{dx} \\) مع \\( u=\\tan x \\). السبب: للتأكد من أن الجواب يطابق القاعدة.",
+        "equation_template": "\\frac{d}{dx}e^{u}=e^{u}\\cdot{input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\frac{du}{dx}",
+            "options": [
+              "\\ln u",
+              "\\frac{du}{dx}",
+              "e^{u}",
+              "u"
+            ],
+            "id": "q_4_1_37_1_s7_i1",
+            "correct_value": "\\frac{du}{dx}",
+            "allowed_keys": [
+              "\\ln u",
+              "\\frac{du}{dx}",
+              "e^{u}",
+              "u"
+            ],
+            "label": "القيمة 1",
+            "hint": "الجزء الناقص هو مشتقة \\( u \\)."
+          }
+        ],
+        "hint": "الجزء الناقص هو مشتقة \\( u \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنراجع القاعدة العامة بالتعويض. الطريقة: \\( \\frac{d}{dx}e^{u}=e^{u}\\cdot\\frac{du}{dx} \\) مع \\( u=\\tan x \\). السبب: للتأكد من أن الجواب يطابق القاعدة.",
+        "think": "الجزء الناقص هو مشتقة \\( u \\).",
+        "html_structure": "\\frac{d}{dx}e^{u}=e^{u}\\cdot{q_4_1_37_1_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنكتب الجواب النهائي. الطريقة: نرتب الحدود: \\( \\sec^2x \\) ثم \\( e^{\\tan x} \\). السبب: هذا هو الشكل النهائي للمشتقة.",
+        "equation_template": "y'={input_1}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "\\sec^2x\\,e^{\\tan x}",
+            "options": [
+              "e^{\\sec^2 x}",
+              "\\sec^2x\\,e^{\\tan x}",
+              "\\sec^2x\\,e^{\\sec^2 x}",
+              "\\tan x\\,e^{\\tan x}"
+            ],
+            "id": "q_4_1_37_1_s8_i1",
+            "correct_value": "\\sec^2x\\,e^{\\tan x}",
+            "allowed_keys": [
+              "e^{\\sec^2 x}",
+              "\\sec^2x\\,e^{\\tan x}",
+              "\\sec^2x\\,e^{\\sec^2 x}",
+              "\\tan x\\,e^{\\tan x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع الجزأين اللذين وجدتهما معاً."
+          }
+        ],
+        "hint": "اجمع الجزأين اللذين وجدتهما معاً.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنكتب الجواب النهائي. الطريقة: نرتب الحدود: \\( \\sec^2x \\) ثم \\( e^{\\tan x} \\). السبب: هذا هو الشكل النهائي للمشتقة.",
+        "think": "اجمع الجزأين اللذين وجدتهما معاً.",
+        "html_structure": "y'={q_4_1_37_1_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q2_p37",
+    "page_number": 37,
+    "question_number": "2",
+    "question_text": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=e^{-5x^2+3x+5} \\)",
+    "question_images": [
+      {
+        "id": "formula_1",
+        "type": "شكل توضيحي",
+        "desc": "مخطط توضيحي لقاعدة اشتقاق الدالة الأسية الطبيعية e",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+      }
+    ],
+    "full_model_solution": "y'=(-10x+3)e^{-5x^2+3x+5}",
+    "source_file": "رياضيلت 4/p037_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 37,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png",
+    "title": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=e^{-5x^2+3x+5} \\)",
+    "number": "2",
+    "model_solution": "y'=(-10x+3)e^{-5x^2+3x+5}",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنتذكر قاعدة اشتقاق \\( e \\) مرفوعة لدالة. الطريقة: إذا كان \\( y=e^{f(x)} \\) فإن المشتقة هي مشتقة الأس \\( f'(x) \\) مضروبة في \\( e \\) بنفس الأس بدون تغيير. أكمل الجزء الناقص. السبب: لأن \\( e^x \\) لا تتغير عند الاشتقاق، ويبقى فقط ضرب مشتقة الأس بقاعدة السلسلة.",
+        "equation_template": "y=e^{f(x)}\\Rightarrow y'=f'(x)\\cdot {input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "e^{f(x)}",
+            "options": [
+              "e^{f'(x)}",
+              "e^{f(x)}",
+              "f(x)e^{f(x)}",
+              "\\ln f(x)"
+            ],
+            "id": "q_4_1_37_2_s1_i1",
+            "correct_value": "e^{f(x)}",
+            "allowed_keys": [
+              "e^{f'(x)}",
+              "e^{f(x)}",
+              "f(x)e^{f(x)}",
+              "\\ln f(x)"
+            ],
+            "label": "القيمة 1",
+            "hint": "بعد \\( f'(x) \\) ضع \\( e \\) مرفوعة للأس \\( f(x) \\) كما هي تماماً."
+          }
+        ],
+        "hint": "بعد \\( f'(x) \\) ضع \\( e \\) مرفوعة للأس \\( f(x) \\) كما هي تماماً.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنتذكر قاعدة اشتقاق \\( e \\) مرفوعة لدالة. الطريقة: إذا كان \\( y=e^{f(x)} \\) فإن المشتقة هي مشتقة الأس \\( f'(x) \\) مضروبة في \\( e \\) بنفس الأس بدون تغيير. أكمل الجزء الناقص. السبب: لأن \\( e^x \\) لا تتغير عند الاشتقاق، ويبقى فقط ضرب مشتقة الأس بقاعدة السلسلة.",
+        "think": "بعد \\( f'(x) \\) ضع \\( e \\) مرفوعة للأس \\( f(x) \\) كما هي تماماً.",
+        "html_structure": "y=e^{f(x)}\\Rightarrow y'=f'(x)\\cdot {q_4_1_37_2_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنحدد الأس. الطريقة: الأس هو كثيرة الحدود فوق \\( e \\). السبب: سنشتقه حداً حداً.",
+        "equation_template": "f(x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "-5x^2+3x+5",
+            "options": [
+              "e^{-5x^2}",
+              "-10x+3",
+              "5x^2+3x-5",
+              "-5x^2+3x+5"
+            ],
+            "id": "q_4_1_37_2_s2_i1",
+            "correct_value": "-5x^2+3x+5",
+            "allowed_keys": [
+              "e^{-5x^2}",
+              "-10x+3",
+              "5x^2+3x-5",
+              "-5x^2+3x+5"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ كل ما فوق \\( e \\)."
+          }
+        ],
+        "hint": "انسخ كل ما فوق \\( e \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنحدد الأس. الطريقة: الأس هو كثيرة الحدود فوق \\( e \\). السبب: سنشتقه حداً حداً.",
+        "think": "انسخ كل ما فوق \\( e \\).",
+        "html_structure": "f(x)={q_4_1_37_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنشتق الحد الأول \\( -5x^2 \\). الطريقة: ننزل القوة \\( 2 \\) ونضربها في \\( -5 \\) وننقص القوة بواحد. السبب: قاعدة القوة.",
+        "equation_template": "\\frac{d}{dx}(-5x^2)=-{input_1}x",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "10",
+            "options": [
+              "10",
+              "3",
+              "5",
+              "25"
+            ],
+            "id": "q_4_1_37_2_s3_i1",
+            "correct_value": "10",
+            "allowed_keys": [
+              "10",
+              "3",
+              "5",
+              "25"
+            ],
+            "label": "القيمة 1",
+            "hint": "احسب \\( 5\\times2 \\)."
+          }
+        ],
+        "hint": "احسب \\( 5\\times2 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق الحد الأول \\( -5x^2 \\). الطريقة: ننزل القوة \\( 2 \\) ونضربها في \\( -5 \\) وننقص القوة بواحد. السبب: قاعدة القوة.",
+        "think": "احسب \\( 5\\times2 \\).",
+        "html_structure": "\\frac{d}{dx}(-5x^2)=-{q_4_1_37_2_s3_i1}x"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنشتق الحد الثاني \\( 3x \\). الطريقة: مشتقة \\( x \\) تساوي \\( 1 \\) فنبقي المعامل. السبب: قاعدة مشتقة الحد الخطي.",
+        "equation_template": "\\frac{d}{dx}(3x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "3",
+            "options": [
+              "0",
+              "3",
+              "1",
+              "3x"
+            ],
+            "id": "q_4_1_37_2_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "0",
+              "3",
+              "1",
+              "3x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( 3 \\) يبقى كما هو."
+          }
+        ],
+        "hint": "المعامل \\( 3 \\) يبقى كما هو.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنشتق الحد الثاني \\( 3x \\). الطريقة: مشتقة \\( x \\) تساوي \\( 1 \\) فنبقي المعامل. السبب: قاعدة مشتقة الحد الخطي.",
+        "think": "المعامل \\( 3 \\) يبقى كما هو.",
+        "html_structure": "\\frac{d}{dx}(3x)={q_4_1_37_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنشتق الثابت \\( 5 \\). الطريقة: مشتقة العدد الثابت صفر. السبب: لأن الثابت لا يتغير.",
+        "equation_template": "\\frac{d}{dx}(5)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "0",
+            "options": [
+              "x",
+              "1",
+              "0",
+              "5"
+            ],
+            "id": "q_4_1_37_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "x",
+              "1",
+              "0",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت يختفي."
+          }
+        ],
+        "hint": "الثابت يختفي.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنشتق الثابت \\( 5 \\). الطريقة: مشتقة العدد الثابت صفر. السبب: لأن الثابت لا يتغير.",
+        "think": "الثابت يختفي.",
+        "html_structure": "\\frac{d}{dx}(5)={q_4_1_37_2_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنجمع المشتقات لنحصل على \\( f'(x) \\). الطريقة: نجمع \\( -10x \\) مع \\( 3 \\) مع \\( 0 \\). السبب: لأن مشتقة المجموع مجموع المشتقات.",
+        "equation_template": "f'(x)={input_1}x+{input_2}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "-10",
+            "options": [
+              "-3",
+              "-5",
+              "10",
+              "-10"
+            ],
+            "id": "q_4_1_37_2_s6_i1",
+            "correct_value": "-10",
+            "allowed_keys": [
+              "-3",
+              "-5",
+              "10",
+              "-10"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل \\( -10 \\) ثم الثابت \\( 3 \\)."
+          },
+          {
+            "input_id": "s6_i2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "-3",
+              "5"
+            ],
+            "id": "q_4_1_37_2_s6_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "-3",
+              "5"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعامل \\( -10 \\) ثم الثابت \\( 3 \\)."
+          }
+        ],
+        "hint": "المعامل \\( -10 \\) ثم الثابت \\( 3 \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنجمع المشتقات لنحصل على \\( f'(x) \\). الطريقة: نجمع \\( -10x \\) مع \\( 3 \\) مع \\( 0 \\). السبب: لأن مشتقة المجموع مجموع المشتقات.",
+        "think": "المعامل \\( -10 \\) ثم الثابت \\( 3 \\).",
+        "html_structure": "f'(x)={q_4_1_37_2_s6_i1}x+{q_4_1_37_2_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنكتب الجزء الأسي كما هو. الطريقة: ننسخ \\( e \\) وأسها الأصلي. السبب: لأن الأس لا يتغير في \\( e^{f} \\).",
+        "equation_template": "e^{f(x)}=e^{input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "-5x^2+3x+5",
+            "options": [
+              "-10x+3",
+              "-5x^2+3x",
+              "5x^2-3x-5",
+              "-5x^2+3x+5"
+            ],
+            "id": "q_4_1_37_2_s7_i1",
+            "correct_value": "-5x^2+3x+5",
+            "allowed_keys": [
+              "-10x+3",
+              "-5x^2+3x",
+              "5x^2-3x-5",
+              "-5x^2+3x+5"
+            ],
+            "label": "القيمة 1",
+            "hint": "انسخ الأس الأصلي."
+          }
+        ],
+        "hint": "انسخ الأس الأصلي.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنكتب الجزء الأسي كما هو. الطريقة: ننسخ \\( e \\) وأسها الأصلي. السبب: لأن الأس لا يتغير في \\( e^{f} \\).",
+        "think": "انسخ الأس الأصلي.",
+        "html_structure": "e^{f(x)}=e^{q_4_1_37_2_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنضرب ونكتب الجواب النهائي. الطريقة: نضع \\( f'(x) \\) في قوس ونضرب في الجزء الأسي. السبب: قاعدة السلسلة.",
+        "equation_template": "y'=({input_1}x+{input_2})\\,e^{-5x^2+3x+5}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "-10",
+            "options": [
+              "-5",
+              "10",
+              "-10",
+              "-3"
+            ],
+            "id": "q_4_1_37_2_s8_i1",
+            "correct_value": "-10",
+            "allowed_keys": [
+              "-5",
+              "10",
+              "-10",
+              "-3"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعاملان هما نفسا ما وجدته في \\( f'(x) \\)."
+          },
+          {
+            "input_id": "s8_i2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "0",
+              "-3"
+            ],
+            "id": "q_4_1_37_2_s8_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "0",
+              "-3"
+            ],
+            "label": "القيمة 2",
+            "hint": "المعاملان هما نفسا ما وجدته في \\( f'(x) \\)."
+          }
+        ],
+        "hint": "المعاملان هما نفسا ما وجدته في \\( f'(x) \\).",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنضرب ونكتب الجواب النهائي. الطريقة: نضع \\( f'(x) \\) في قوس ونضرب في الجزء الأسي. السبب: قاعدة السلسلة.",
+        "think": "المعاملان هما نفسا ما وجدته في \\( f'(x) \\).",
+        "html_structure": "y'=({q_4_1_37_2_s8_i1}x+{q_4_1_37_2_s8_i2})\\,e^{-5x^2+3x+5}"
+      }
+    ]
+  },
+  {
+    "id_number": "q3_p37",
+    "page_number": 37,
+    "question_number": "3",
+    "question_text": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=x^2e^x \\)",
+    "question_images": [
+      {
+        "id": "formula_1",
+        "type": "شكل توضيحي",
+        "desc": "مخطط توضيحي لقاعدة اشتقاق الدالة الأسية الطبيعية e",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+      }
+    ],
+    "full_model_solution": "y'=x^2e^x+2xe^x",
+    "source_file": "رياضيلت 4/p037_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 37,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png",
+    "title": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=x^2e^x \\)",
+    "number": "3",
+    "model_solution": "y'=x^2e^x+2xe^x",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنحدد الدالتين المضروبتين. الطريقة: الدالة حاصل ضرب: الأولى \\( u \\) والثانية \\( v \\). السبب: لأننا سنستخدم قاعدة اشتقاق الضرب.",
+        "equation_template": "u={input_1},\\quad v={input_2}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "x^2",
+            "options": [
+              "e^x",
+              "x^2",
+              "2x",
+              "x"
+            ],
+            "id": "q_4_1_37_3_s1_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "e^x",
+              "x^2",
+              "2x",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأولى هي الحدودية والثانية هي الأسية."
+          },
+          {
+            "input_id": "s1_i2",
+            "correct_answer": "e^x",
+            "options": [
+              "xe^x",
+              "x^2",
+              "e",
+              "e^x"
+            ],
+            "id": "q_4_1_37_3_s1_i2",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "xe^x",
+              "x^2",
+              "e",
+              "e^x"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأولى هي الحدودية والثانية هي الأسية."
+          }
+        ],
+        "hint": "الأولى هي الحدودية والثانية هي الأسية.",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنحدد الدالتين المضروبتين. الطريقة: الدالة حاصل ضرب: الأولى \\( u \\) والثانية \\( v \\). السبب: لأننا سنستخدم قاعدة اشتقاق الضرب.",
+        "think": "الأولى هي الحدودية والثانية هي الأسية.",
+        "html_structure": "u={q_4_1_37_3_s1_i1},\\quad v={q_4_1_37_3_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنكتب قاعدة اشتقاق الضرب. الطريقة: مشتقة الأولى في الثانية زائد الأولى في مشتقة الثانية. السبب: لأن كلا الدالتين تتغيران.",
+        "equation_template": "y'=u'v+{input_1}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "uv'",
+            "options": [
+              "uv'",
+              "u'+v'",
+              "u'v'",
+              "uv"
+            ],
+            "id": "q_4_1_37_3_s2_i1",
+            "correct_value": "uv'",
+            "allowed_keys": [
+              "uv'",
+              "u'+v'",
+              "u'v'",
+              "uv"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثاني فيه \\( u \\) بدون مشتقة و\\( v \\) مشتقة."
+          }
+        ],
+        "hint": "الحد الثاني فيه \\( u \\) بدون مشتقة و\\( v \\) مشتقة.",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنكتب قاعدة اشتقاق الضرب. الطريقة: مشتقة الأولى في الثانية زائد الأولى في مشتقة الثانية. السبب: لأن كلا الدالتين تتغيران.",
+        "think": "الحد الثاني فيه \\( u \\) بدون مشتقة و\\( v \\) مشتقة.",
+        "html_structure": "y'=u'v+{q_4_1_37_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنشتق \\( u \\). الطريقة: نزيل القوة \\( 2 \\) أمام \\( x \\) وننقصها بواحد. السبب: قاعدة القوة.",
+        "equation_template": "u'={input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "2x",
+            "options": [
+              "x^2",
+              "x",
+              "2x",
+              "2"
+            ],
+            "id": "q_4_1_37_3_s3_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "x^2",
+              "x",
+              "2x",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "أنزل \\( 2 \\) أمام \\( x \\)."
+          }
+        ],
+        "hint": "أنزل \\( 2 \\) أمام \\( x \\).",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق \\( u \\). الطريقة: نزيل القوة \\( 2 \\) أمام \\( x \\) وننقصها بواحد. السبب: قاعدة القوة.",
+        "think": "أنزل \\( 2 \\) أمام \\( x \\).",
+        "html_structure": "u'={q_4_1_37_3_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنشتق \\( v \\). الطريقة: مشتقة \\( e^x \\) هي نفسها. السبب: لأن الأس \\( x \\) مشتقته \\( 1 \\).",
+        "equation_template": "v'={input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "e^x",
+            "options": [
+              "1",
+              "xe^x",
+              "e^{x-1}",
+              "e^x"
+            ],
+            "id": "q_4_1_37_3_s4_i1",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "1",
+              "xe^x",
+              "e^{x-1}",
+              "e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "لا تتغير."
+          }
+        ],
+        "hint": "لا تتغير.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنشتق \\( v \\). الطريقة: مشتقة \\( e^x \\) هي نفسها. السبب: لأن الأس \\( x \\) مشتقته \\( 1 \\).",
+        "think": "لا تتغير.",
+        "html_structure": "v'={q_4_1_37_3_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنحسب الحد الأول \\( u'v \\). الطريقة: نضرب \\( 2x \\) في \\( e^x \\). السبب: هذا الحد الأول من القاعدة.",
+        "equation_template": "u'v={input_1}\\cdot e^x",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "2x",
+            "options": [
+              "x",
+              "2x",
+              "x^2",
+              "2"
+            ],
+            "id": "q_4_1_37_3_s5_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "x",
+              "2x",
+              "x^2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة \\( u \\)."
+          }
+        ],
+        "hint": "ضع مشتقة \\( u \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنحسب الحد الأول \\( u'v \\). الطريقة: نضرب \\( 2x \\) في \\( e^x \\). السبب: هذا الحد الأول من القاعدة.",
+        "think": "ضع مشتقة \\( u \\).",
+        "html_structure": "u'v={q_4_1_37_3_s5_i1}\\cdot e^x"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنحسب الحد الثاني \\( uv' \\). الطريقة: نضرب \\( x^2 \\) في \\( e^x \\). السبب: هذا الحد الثاني.",
+        "equation_template": "uv'=x^2\\cdot{input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "e^x",
+            "options": [
+              "2x",
+              "1",
+              "e^x",
+              "xe^x"
+            ],
+            "id": "q_4_1_37_3_s6_i1",
+            "correct_value": "e^x",
+            "allowed_keys": [
+              "2x",
+              "1",
+              "e^x",
+              "xe^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة \\( v \\) وهي نفسها."
+          }
+        ],
+        "hint": "ضع مشتقة \\( v \\) وهي نفسها.",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنحسب الحد الثاني \\( uv' \\). الطريقة: نضرب \\( x^2 \\) في \\( e^x \\). السبب: هذا الحد الثاني.",
+        "think": "ضع مشتقة \\( v \\) وهي نفسها.",
+        "html_structure": "uv'=x^2\\cdot{q_4_1_37_3_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنجمع الحدين. الطريقة: نكتب مشتقة الأول ثم نجمع الثاني. السبب: لإنهاء قاعدة الضرب.",
+        "equation_template": "y'=2xe^x+{input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "x^2e^x",
+            "options": [
+              "2xe^x",
+              "xe^x",
+              "x^2e^x",
+              "x^2"
+            ],
+            "id": "q_4_1_37_3_s7_i1",
+            "correct_value": "x^2e^x",
+            "allowed_keys": [
+              "2xe^x",
+              "xe^x",
+              "x^2e^x",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثاني \\( x^2e^x \\)."
+          }
+        ],
+        "hint": "الحد الثاني \\( x^2e^x \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنجمع الحدين. الطريقة: نكتب مشتقة الأول ثم نجمع الثاني. السبب: لإنهاء قاعدة الضرب.",
+        "think": "الحد الثاني \\( x^2e^x \\).",
+        "html_structure": "y'=2xe^x+{q_4_1_37_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنخرج العامل المشترك (اختياري). الطريقة: نخرج \\( e^x \\) كعامل مشترك. السبب: لنكتب الجواب بشكل مرتب.",
+        "equation_template": "y'=e^x({input_1}+2x)",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "x^2",
+            "options": [
+              "x^2",
+              "2x",
+              "x",
+              "e^x"
+            ],
+            "id": "q_4_1_37_3_s8_i1",
+            "correct_value": "x^2",
+            "allowed_keys": [
+              "x^2",
+              "2x",
+              "x",
+              "e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "داخل القوس يبقى \\( x^2 \\) و\\( 2x \\)."
+          }
+        ],
+        "hint": "داخل القوس يبقى \\( x^2 \\) و\\( 2x \\).",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_1_37_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنخرج العامل المشترك (اختياري). الطريقة: نخرج \\( e^x \\) كعامل مشترك. السبب: لنكتب الجواب بشكل مرتب.",
+        "think": "داخل القوس يبقى \\( x^2 \\) و\\( 2x \\).",
+        "html_structure": "y'=e^x({q_4_1_37_3_s8_i1}+2x)"
+      }
+    ]
+  },
+  {
+    "id_number": "q4_p37",
+    "page_number": 37,
+    "question_number": "4",
+    "question_text": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=e^{x^2}\\ln 2x \\)",
+    "question_images": [
+      {
+        "id": "formula_1",
+        "type": "شكل توضيحي",
+        "desc": "مخطط توضيحي لقاعدة اشتقاق الدالة الأسية الطبيعية e",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+      }
+    ],
+    "full_model_solution": "y'=\\frac{e^{x^2}}{x}+2xe^{x^2}\\ln 2x",
+    "source_file": "رياضيلت 4/p037_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 37,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png",
+    "title": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=e^{x^2}\\ln 2x \\)",
+    "number": "4",
+    "model_solution": "y'=\\frac{e^{x^2}}{x}+2xe^{x^2}\\ln 2x",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنحدد الدالتين. الطريقة: الأولى \\( e^{x^2} \\) والثانية \\( \\ln 2x \\). السبب: قاعدة الضرب.",
+        "equation_template": "u={input_1},\\quad v={input_2}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "e^{x^2}",
+            "options": [
+              "e^x",
+              "e^{2x}",
+              "e^{x^2}",
+              "x^2"
+            ],
+            "id": "q_4_1_37_4_s1_i1",
+            "correct_value": "e^{x^2}",
+            "allowed_keys": [
+              "e^x",
+              "e^{2x}",
+              "e^{x^2}",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأولى أسية والثانية لوغاريتمية."
+          },
+          {
+            "input_id": "s1_i2",
+            "correct_answer": "\\ln 2x",
+            "options": [
+              "2x",
+              "\\frac1x",
+              "\\ln 2x",
+              "\\ln x"
+            ],
+            "id": "q_4_1_37_4_s1_i2",
+            "correct_value": "\\ln 2x",
+            "allowed_keys": [
+              "2x",
+              "\\frac1x",
+              "\\ln 2x",
+              "\\ln x"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأولى أسية والثانية لوغاريتمية."
+          }
+        ],
+        "hint": "الأولى أسية والثانية لوغاريتمية.",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_4_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنحدد الدالتين. الطريقة: الأولى \\( e^{x^2} \\) والثانية \\( \\ln 2x \\). السبب: قاعدة الضرب.",
+        "think": "الأولى أسية والثانية لوغاريتمية.",
+        "html_structure": "u={q_4_1_37_4_s1_i1},\\quad v={q_4_1_37_4_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنكتب قاعدة الضرب. الطريقة: \\( y'=u'v+uv' \\). السبب: لنشتق كل جزء.",
+        "equation_template": "y'={input_1}+uv'",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "u'v",
+            "options": [
+              "uv",
+              "u+v",
+              "u'v'",
+              "u'v"
+            ],
+            "id": "q_4_1_37_4_s2_i1",
+            "correct_value": "u'v",
+            "allowed_keys": [
+              "uv",
+              "u+v",
+              "u'v'",
+              "u'v"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأول مشتقة \\( u \\) ضرب \\( v \\)."
+          }
+        ],
+        "hint": "الحد الأول مشتقة \\( u \\) ضرب \\( v \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_4_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنكتب قاعدة الضرب. الطريقة: \\( y'=u'v+uv' \\). السبب: لنشتق كل جزء.",
+        "think": "الحد الأول مشتقة \\( u \\) ضرب \\( v \\).",
+        "html_structure": "y'={q_4_1_37_4_s2_i1}+uv'"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنشتق \\( u=e^{x^2} \\). الطريقة: مشتقة الأس \\( x^2 \\) هي \\( 2x \\). السبب: قاعدة \\( e^{f} \\).",
+        "equation_template": "u'={input_1}\\cdot e^{x^2}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "2x",
+            "options": [
+              "2",
+              "x",
+              "x^2",
+              "2x"
+            ],
+            "id": "q_4_1_37_4_s3_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2",
+              "x",
+              "x^2",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشتق \\( x^2 \\)."
+          }
+        ],
+        "hint": "اشتق \\( x^2 \\).",
+        "related_topics": [
+          "المشتقة الأسية"
+        ],
+        "step_id": "math345_4_1_37_4_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق \\( u=e^{x^2} \\). الطريقة: مشتقة الأس \\( x^2 \\) هي \\( 2x \\). السبب: قاعدة \\( e^{f} \\).",
+        "think": "اشتق \\( x^2 \\).",
+        "html_structure": "u'={q_4_1_37_4_s3_i1}\\cdot e^{x^2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنشتق \\( v=\\ln 2x \\). الطريقة: مشتقة \\( \\ln f \\) هي \\( \\frac{f'}{f} \\)، ومشتقة \\( 2x \\) هي \\( 2 \\). السبب: قاعدة اللوغاريتم.",
+        "equation_template": "v'=\\frac{{input_1}}{2x}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "2",
+            "options": [
+              "x",
+              "2",
+              "1",
+              "2x"
+            ],
+            "id": "q_4_1_37_4_s4_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "x",
+              "2",
+              "1",
+              "2x"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط مشتقة \\( 2x \\)."
+          }
+        ],
+        "hint": "البسط مشتقة \\( 2x \\).",
+        "related_topics": [
+          "مشتقة اللوغاريتم"
+        ],
+        "step_id": "math345_4_1_37_4_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنشتق \\( v=\\ln 2x \\). الطريقة: مشتقة \\( \\ln f \\) هي \\( \\frac{f'}{f} \\)، ومشتقة \\( 2x \\) هي \\( 2 \\). السبب: قاعدة اللوغاريتم.",
+        "think": "البسط مشتقة \\( 2x \\).",
+        "html_structure": "v'=\\frac{{q_4_1_37_4_s4_i1}}{2x}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنبسط \\( v' \\). الطريقة: نختصر \\( 2 \\) من البسط والمقام. السبب: لأن \\( \\frac{2}{2x}=\\frac1x \\).",
+        "equation_template": "\\frac{2}{2x}=\\frac{1}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "x",
+            "options": [
+              "2x",
+              "2",
+              "1",
+              "x"
+            ],
+            "id": "q_4_1_37_4_s5_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "2x",
+              "2",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "اشطب \\( 2 \\) في الأعلى والأسفل."
+          }
+        ],
+        "hint": "اشطب \\( 2 \\) في الأعلى والأسفل.",
+        "related_topics": [
+          "اختصار الكسور"
+        ],
+        "step_id": "math345_4_1_37_4_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنبسط \\( v' \\). الطريقة: نختصر \\( 2 \\) من البسط والمقام. السبب: لأن \\( \\frac{2}{2x}=\\frac1x \\).",
+        "think": "اشطب \\( 2 \\) في الأعلى والأسفل.",
+        "html_structure": "\\frac{2}{2x}=\\frac{1}{{q_4_1_37_4_s5_i1}}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنحسب الحد الأول \\( u'v \\). الطريقة: نضرب \\( 2x e^{x^2} \\) في \\( \\ln 2x \\). السبب: الحد الأول.",
+        "equation_template": "u'v={input_1}e^{x^2}\\ln 2x",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "2x",
+            "options": [
+              "2",
+              "2x",
+              "x",
+              "x^2"
+            ],
+            "id": "q_4_1_37_4_s6_i1",
+            "correct_value": "2x",
+            "allowed_keys": [
+              "2",
+              "2x",
+              "x",
+              "x^2"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة الأس."
+          }
+        ],
+        "hint": "ضع مشتقة الأس.",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_4_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنحسب الحد الأول \\( u'v \\). الطريقة: نضرب \\( 2x e^{x^2} \\) في \\( \\ln 2x \\). السبب: الحد الأول.",
+        "think": "ضع مشتقة الأس.",
+        "html_structure": "u'v={q_4_1_37_4_s6_i1}e^{x^2}\\ln 2x"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنحسب الحد الثاني \\( uv' \\). الطريقة: نضرب \\( e^{x^2} \\) في \\( \\frac{1}{x} \\). السبب: الحد الثاني.",
+        "equation_template": "uv'=\\frac{e^{x^2}}{{input_1}}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "2",
+              "2x",
+              "1"
+            ],
+            "id": "q_4_1_37_4_s7_i1",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "2",
+              "2x",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( x \\)."
+          }
+        ],
+        "hint": "المقام هو \\( x \\).",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_4_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنحسب الحد الثاني \\( uv' \\). الطريقة: نضرب \\( e^{x^2} \\) في \\( \\frac{1}{x} \\). السبب: الحد الثاني.",
+        "think": "المقام هو \\( x \\).",
+        "html_structure": "uv'=\\frac{e^{x^2}}{{q_4_1_37_4_s7_i1}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنكتب الجواب. الطريقة: نجمع الحدين. السبب: النتيجة النهائية.",
+        "equation_template": "y'={input_1}+2xe^{x^2}\\ln 2x",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "\\frac{e^{x^2}}{x}",
+            "options": [
+              "\\frac{e^{x^2}}{2x}",
+              "e^{x^2}x",
+              "\\frac{x}{e^{x^2}}",
+              "\\frac{e^{x^2}}{x}"
+            ],
+            "id": "q_4_1_37_4_s8_i1",
+            "correct_value": "\\frac{e^{x^2}}{x}",
+            "allowed_keys": [
+              "\\frac{e^{x^2}}{2x}",
+              "e^{x^2}x",
+              "\\frac{x}{e^{x^2}}",
+              "\\frac{e^{x^2}}{x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثاني من الخطوة السابقة."
+          }
+        ],
+        "hint": "الحد الثاني من الخطوة السابقة.",
+        "related_topics": [
+          "قاعدة الضرب"
+        ],
+        "step_id": "math345_4_1_37_4_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنكتب الجواب. الطريقة: نجمع الحدين. السبب: النتيجة النهائية.",
+        "think": "الحد الثاني من الخطوة السابقة.",
+        "html_structure": "y'={q_4_1_37_4_s8_i1}+2xe^{x^2}\\ln 2x"
+      }
+    ]
+  },
+  {
+    "id_number": "q5_p37",
+    "page_number": 37,
+    "question_number": "5",
+    "question_text": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=\\cos(e^{\\pi x}) \\)",
+    "question_images": [
+      {
+        "id": "formula_1",
+        "type": "شكل توضيحي",
+        "desc": "مخطط توضيحي لقاعدة اشتقاق الدالة الأسية الطبيعية e",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+      }
+    ],
+    "full_model_solution": "y'=-\\pi e^{\\pi x}\\sin(e^{\\pi x})",
+    "source_file": "رياضيلت 4/p037_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 37,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png",
+    "title": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=\\cos(e^{\\pi x}) \\)",
+    "number": "5",
+    "model_solution": "y'=-\\pi e^{\\pi x}\\sin(e^{\\pi x})",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنحدد الدالة الداخلية. الطريقة: \\( y=\\cos u \\) حيث \\( u \\) ما داخل القوس. السبب: لنستخدم قاعدة السلسلة.",
+        "equation_template": "y=\\cos(u),\\quad u={input_1}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "e^{\\pi x}",
+            "options": [
+              "\\cos x",
+              "e^{x}",
+              "e^{\\pi x}",
+              "\\pi x"
+            ],
+            "id": "q_4_1_37_5_s1_i1",
+            "correct_value": "e^{\\pi x}",
+            "allowed_keys": [
+              "\\cos x",
+              "e^{x}",
+              "e^{\\pi x}",
+              "\\pi x"
+            ],
+            "label": "القيمة 1",
+            "hint": "ما داخل \\( \\cos \\)."
+          }
+        ],
+        "hint": "ما داخل \\( \\cos \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_4_1_37_5_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنحدد الدالة الداخلية. الطريقة: \\( y=\\cos u \\) حيث \\( u \\) ما داخل القوس. السبب: لنستخدم قاعدة السلسلة.",
+        "think": "ما داخل \\( \\cos \\).",
+        "html_structure": "y=\\cos(u),\\quad u={q_4_1_37_5_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنشتق الدالة الخارجية. الطريقة: مشتقة \\( \\cos u \\) هي سالب الجيب مضروبة في \\( u' \\). السبب: قاعدة جيب التمام.",
+        "equation_template": "\\frac{d}{dx}\\cos u={input_1}\\cdot u'",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "-\\sin u",
+            "options": [
+              "\\sin u",
+              "\\cos u",
+              "-\\cos u",
+              "-\\sin u"
+            ],
+            "id": "q_4_1_37_5_s2_i1",
+            "correct_value": "-\\sin u",
+            "allowed_keys": [
+              "\\sin u",
+              "\\cos u",
+              "-\\cos u",
+              "-\\sin u"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب \\( \\sin \\)."
+          }
+        ],
+        "hint": "سالب \\( \\sin \\).",
+        "related_topics": [
+          "مشتقة الدوال المثلثية"
+        ],
+        "step_id": "math345_4_1_37_5_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنشتق الدالة الخارجية. الطريقة: مشتقة \\( \\cos u \\) هي سالب الجيب مضروبة في \\( u' \\). السبب: قاعدة جيب التمام.",
+        "think": "سالب \\( \\sin \\).",
+        "html_structure": "\\frac{d}{dx}\\cos u={q_4_1_37_5_s2_i1}\\cdot u'"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنشتق الأس \\( \\pi x \\). الطريقة: \\( \\pi \\) عدد ثابت، فمشتقة \\( \\pi x \\) هي \\( \\pi \\). السبب: مشتقة ثابت × \\( x \\).",
+        "equation_template": "\\frac{d}{dx}(\\pi x)={input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "\\pi",
+            "options": [
+              "\\pi x",
+              "0",
+              "1",
+              "\\pi"
+            ],
+            "id": "q_4_1_37_5_s3_i1",
+            "correct_value": "\\pi",
+            "allowed_keys": [
+              "\\pi x",
+              "0",
+              "1",
+              "\\pi"
+            ],
+            "label": "القيمة 1",
+            "hint": "المعامل هو \\( \\pi \\) نفسه."
+          }
+        ],
+        "hint": "المعامل هو \\( \\pi \\) نفسه.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_5_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق الأس \\( \\pi x \\). الطريقة: \\( \\pi \\) عدد ثابت، فمشتقة \\( \\pi x \\) هي \\( \\pi \\). السبب: مشتقة ثابت × \\( x \\).",
+        "think": "المعامل هو \\( \\pi \\) نفسه.",
+        "html_structure": "\\frac{d}{dx}(\\pi x)={q_4_1_37_5_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنشتق \\( u=e^{\\pi x} \\). الطريقة: نضرب مشتقة الأس في \\( e^{\\pi x} \\). السبب: قاعدة \\( e^{f} \\).",
+        "equation_template": "u'={input_1}\\,e^{\\pi x}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "\\pi",
+            "options": [
+              "1",
+              "\\pi x",
+              "\\pi",
+              "e"
+            ],
+            "id": "q_4_1_37_5_s4_i1",
+            "correct_value": "\\pi",
+            "allowed_keys": [
+              "1",
+              "\\pi x",
+              "\\pi",
+              "e"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع مشتقة الأس."
+          }
+        ],
+        "hint": "ضع مشتقة الأس.",
+        "related_topics": [
+          "اشتقاق الدالة الأسية e"
+        ],
+        "step_id": "math345_4_1_37_5_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنشتق \\( u=e^{\\pi x} \\). الطريقة: نضرب مشتقة الأس في \\( e^{\\pi x} \\). السبب: قاعدة \\( e^{f} \\).",
+        "think": "ضع مشتقة الأس.",
+        "html_structure": "u'={q_4_1_37_5_s4_i1}\\,e^{\\pi x}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنعوّض في الدالة الخارجية. الطريقة: نكتب \\( -\\sin \\) ثم \\( u \\) داخل القوس. السبب: للحفاظ على الدالة الداخلية.",
+        "equation_template": "y'=-\\sin({input_1})\\cdot u'",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "e^{\\pi x}",
+            "options": [
+              "e^{\\pi x}",
+              "\\pi x",
+              "\\pi e^{\\pi x}",
+              "x"
+            ],
+            "id": "q_4_1_37_5_s5_i1",
+            "correct_value": "e^{\\pi x}",
+            "allowed_keys": [
+              "e^{\\pi x}",
+              "\\pi x",
+              "\\pi e^{\\pi x}",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "داخل الجيب ضع \\( u \\) نفسها."
+          }
+        ],
+        "hint": "داخل الجيب ضع \\( u \\) نفسها.",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_4_1_37_5_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنعوّض في الدالة الخارجية. الطريقة: نكتب \\( -\\sin \\) ثم \\( u \\) داخل القوس. السبب: للحفاظ على الدالة الداخلية.",
+        "think": "داخل الجيب ضع \\( u \\) نفسها.",
+        "html_structure": "y'=-\\sin({q_4_1_37_5_s5_i1})\\cdot u'"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنعوّض \\( u' \\). الطريقة: نضرب في \\( \\pi e^{\\pi x} \\). السبب: قاعدة السلسلة.",
+        "equation_template": "y'=-\\sin(e^{\\pi x})\\cdot{input_1}",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "\\pi e^{\\pi x}",
+            "options": [
+              "\\pi e^{\\pi x}",
+              "e^{\\pi x}",
+              "\\pi",
+              "\\pi x e^{\\pi x}"
+            ],
+            "id": "q_4_1_37_5_s6_i1",
+            "correct_value": "\\pi e^{\\pi x}",
+            "allowed_keys": [
+              "\\pi e^{\\pi x}",
+              "e^{\\pi x}",
+              "\\pi",
+              "\\pi x e^{\\pi x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "ضع ما وجدته من \\( u' \\)."
+          }
+        ],
+        "hint": "ضع ما وجدته من \\( u' \\).",
+        "related_topics": [
+          "قاعدة السلسلة"
+        ],
+        "step_id": "math345_4_1_37_5_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنعوّض \\( u' \\). الطريقة: نضرب في \\( \\pi e^{\\pi x} \\). السبب: قاعدة السلسلة.",
+        "think": "ضع ما وجدته من \\( u' \\).",
+        "html_structure": "y'=-\\sin(e^{\\pi x})\\cdot{q_4_1_37_5_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنرتب الحدود. الطريقة: نخرج \\( \\pi \\) أمام الجواب. السبب: لترتيب الشكل.",
+        "equation_template": "y'=-{input_1}\\,e^{\\pi x}\\sin(e^{\\pi x})",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "\\pi",
+            "options": [
+              "\\pi",
+              "x",
+              "e",
+              "1"
+            ],
+            "id": "q_4_1_37_5_s7_i1",
+            "correct_value": "\\pi",
+            "allowed_keys": [
+              "\\pi",
+              "x",
+              "e",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت الأول \\( \\pi \\)."
+          }
+        ],
+        "hint": "الثابت الأول \\( \\pi \\).",
+        "related_topics": [
+          "التبسيط"
+        ],
+        "step_id": "math345_4_1_37_5_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنرتب الحدود. الطريقة: نخرج \\( \\pi \\) أمام الجواب. السبب: لترتيب الشكل.",
+        "think": "الثابت الأول \\( \\pi \\).",
+        "html_structure": "y'=-{q_4_1_37_5_s7_i1}\\,e^{\\pi x}\\sin(e^{\\pi x})"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنتأكد أن \\( \\pi \\) لم تُشتق. الطريقة: مشتقة \\( \\pi \\) صفر لأنه ثابت. السبب: لنتجنب خطأ شائع.",
+        "equation_template": "\\frac{d}{dx}\\pi={input_1}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "0",
+            "options": [
+              "\\pi",
+              "x",
+              "1",
+              "0"
+            ],
+            "id": "q_4_1_37_5_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "\\pi",
+              "x",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الثابت لا يتغير."
+          }
+        ],
+        "hint": "الثابت لا يتغير.",
+        "related_topics": [
+          "المشتقة"
+        ],
+        "step_id": "math345_4_1_37_5_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنتأكد أن \\( \\pi \\) لم تُشتق. الطريقة: مشتقة \\( \\pi \\) صفر لأنه ثابت. السبب: لنتجنب خطأ شائع.",
+        "think": "الثابت لا يتغير.",
+        "html_structure": "\\frac{d}{dx}\\pi={q_4_1_37_5_s8_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q6_p37",
+    "page_number": 37,
+    "question_number": "6",
+    "question_text": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=\\frac{e^x+e^{-x}}{e^x-e^{-x}} \\)",
+    "question_images": [
+      {
+        "id": "formula_1",
+        "type": "شكل توضيحي",
+        "desc": "مخطط توضيحي لقاعدة اشتقاق الدالة الأسية الطبيعية e",
+        "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+      }
+    ],
+    "full_model_solution": "y'=\\frac{-4}{(e^x-e^{-x})^2}",
+    "source_file": "رياضيلت 4/p037_steps.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 37,
+      "part_number": 1,
+      "part_title": "الجزء 1 (صفحات 1 - 47)"
+    },
+    "chapter": 4,
+    "topic_index": 0,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_037_formula_1_diagram.png",
+    "title": "جد \\( \\frac{dy}{dx} \\) للدالة \\( y=\\frac{e^x+e^{-x}}{e^x-e^{-x}} \\)",
+    "number": "6",
+    "model_solution": "y'=\\frac{-4}{(e^x-e^{-x})^2}",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: سنحدد البسط والمقام. الطريقة: البسط \\( u \\) والمقام \\( v \\). السبب: لنطبق قاعدة القسمة.",
+        "equation_template": "u={input_1},\\quad v=e^x-e^{-x}",
+        "inputs": [
+          {
+            "input_id": "s1_i1",
+            "correct_answer": "e^x+e^{-x}",
+            "options": [
+              "e^x",
+              "e^x+e^{-x}",
+              "e^{-x}",
+              "e^x-e^{-x}"
+            ],
+            "id": "q_4_1_37_6_s1_i1",
+            "correct_value": "e^x+e^{-x}",
+            "allowed_keys": [
+              "e^x",
+              "e^x+e^{-x}",
+              "e^{-x}",
+              "e^x-e^{-x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "البسط فيه علامة جمع."
+          }
+        ],
+        "hint": "البسط فيه علامة جمع.",
+        "related_topics": [
+          "قاعدة القسمة"
+        ],
+        "step_id": "math345_4_1_37_6_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: سنحدد البسط والمقام. الطريقة: البسط \\( u \\) والمقام \\( v \\). السبب: لنطبق قاعدة القسمة.",
+        "think": "البسط فيه علامة جمع.",
+        "html_structure": "u={q_4_1_37_6_s1_i1},\\quad v=e^x-e^{-x}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: سنكتب قاعدة القسمة. الطريقة: \\( y'=\\frac{u'v-uv'}{v^2} \\). السبب: لأن الدالة كسر.",
+        "equation_template": "y'=\\frac{u'v-{input_1}}{v^2}",
+        "inputs": [
+          {
+            "input_id": "s2_i1",
+            "correct_answer": "uv'",
+            "options": [
+              "u'+v'",
+              "uv'",
+              "u'v'",
+              "uv"
+            ],
+            "id": "q_4_1_37_6_s2_i1",
+            "correct_value": "uv'",
+            "allowed_keys": [
+              "u'+v'",
+              "uv'",
+              "u'v'",
+              "uv"
+            ],
+            "label": "القيمة 1",
+            "hint": "المطروح هو \\( u \\) في مشتقة \\( v \\)."
+          }
+        ],
+        "hint": "المطروح هو \\( u \\) في مشتقة \\( v \\).",
+        "related_topics": [
+          "قاعدة القسمة"
+        ],
+        "step_id": "math345_4_1_37_6_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: سنكتب قاعدة القسمة. الطريقة: \\( y'=\\frac{u'v-uv'}{v^2} \\). السبب: لأن الدالة كسر.",
+        "think": "المطروح هو \\( u \\) في مشتقة \\( v \\).",
+        "html_structure": "y'=\\frac{u'v-{q_4_1_37_6_s2_i1}}{v^2}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: سنشتق البسط. الطريقة: مشتقة \\( e^{-x} \\) هي \\( -e^{-x} \\). السبب: قاعدة \\( e^{f} \\) مع \\( f=-x \\).",
+        "equation_template": "u'=e^x-{input_1}",
+        "inputs": [
+          {
+            "input_id": "s3_i1",
+            "correct_answer": "e^{-x}",
+            "options": [
+              "-e^{-x}",
+              "0",
+              "e^{-x}",
+              "e^x"
+            ],
+            "id": "q_4_1_37_6_s3_i1",
+            "correct_value": "e^{-x}",
+            "allowed_keys": [
+              "-e^{-x}",
+              "0",
+              "e^{-x}",
+              "e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( e^{-x} \\) سالبة، فتظهر إشارة \\( - \\)."
+          }
+        ],
+        "hint": "مشتقة \\( e^{-x} \\) سالبة، فتظهر إشارة \\( - \\).",
+        "related_topics": [
+          "المشتقة الأسية"
+        ],
+        "step_id": "math345_4_1_37_6_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: سنشتق البسط. الطريقة: مشتقة \\( e^{-x} \\) هي \\( -e^{-x} \\). السبب: قاعدة \\( e^{f} \\) مع \\( f=-x \\).",
+        "think": "مشتقة \\( e^{-x} \\) سالبة، فتظهر إشارة \\( - \\).",
+        "html_structure": "u'=e^x-{q_4_1_37_6_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: سنشتق المقام. الطريقة: مشتقة \\( -e^{-x} \\) هي \\( +e^{-x} \\). السبب: إشارتان سالبتان تعطيان موجباً.",
+        "equation_template": "v'=e^x+{input_1}",
+        "inputs": [
+          {
+            "input_id": "s4_i1",
+            "correct_answer": "e^{-x}",
+            "options": [
+              "e^x",
+              "0",
+              "e^{-x}",
+              "-e^{-x}"
+            ],
+            "id": "q_4_1_37_6_s4_i1",
+            "correct_value": "e^{-x}",
+            "allowed_keys": [
+              "e^x",
+              "0",
+              "e^{-x}",
+              "-e^{-x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "سالب في سالب موجب."
+          }
+        ],
+        "hint": "سالب في سالب موجب.",
+        "related_topics": [
+          "المشتقة الأسية"
+        ],
+        "step_id": "math345_4_1_37_6_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: سنشتق المقام. الطريقة: مشتقة \\( -e^{-x} \\) هي \\( +e^{-x} \\). السبب: إشارتان سالبتان تعطيان موجباً.",
+        "think": "سالب في سالب موجب.",
+        "html_structure": "v'=e^x+{q_4_1_37_6_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: سنحسب \\( u'v \\). الطريقة: \\( u' \\) و\\( v \\) متساويان فنحصل على مربع. السبب: لأن \\( u'=v \\).",
+        "equation_template": "u'v=(e^x-e^{-x})({input_1})=(e^x-e^{-x})^2",
+        "inputs": [
+          {
+            "input_id": "s5_i1",
+            "correct_answer": "e^x-e^{-x}",
+            "options": [
+              "e^x-e^{-x}",
+              "e^x",
+              "e^{-x}",
+              "e^x+e^{-x}"
+            ],
+            "id": "q_4_1_37_6_s5_i1",
+            "correct_value": "e^x-e^{-x}",
+            "allowed_keys": [
+              "e^x-e^{-x}",
+              "e^x",
+              "e^{-x}",
+              "e^x+e^{-x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوس الثاني نفس \\( v \\)."
+          }
+        ],
+        "hint": "القوس الثاني نفس \\( v \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_1_37_6_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: سنحسب \\( u'v \\). الطريقة: \\( u' \\) و\\( v \\) متساويان فنحصل على مربع. السبب: لأن \\( u'=v \\).",
+        "think": "القوس الثاني نفس \\( v \\).",
+        "html_structure": "u'v=(e^x-e^{-x})({q_4_1_37_6_s5_i1})=(e^x-e^{-x})^2"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: سنحسب \\( uv' \\). الطريقة: \\( u \\) و\\( v' \\) متساويان فنحصل على مربع. السبب: لأن \\( v'=u \\).",
+        "equation_template": "uv'=(e^x+e^{-x})({input_1})=(e^x+e^{-x})^2",
+        "inputs": [
+          {
+            "input_id": "s6_i1",
+            "correct_answer": "e^x+e^{-x}",
+            "options": [
+              "e^x",
+              "e^x+e^{-x}",
+              "e^x-e^{-x}",
+              "e^{-x}"
+            ],
+            "id": "q_4_1_37_6_s6_i1",
+            "correct_value": "e^x+e^{-x}",
+            "allowed_keys": [
+              "e^x",
+              "e^x+e^{-x}",
+              "e^x-e^{-x}",
+              "e^{-x}"
+            ],
+            "label": "القيمة 1",
+            "hint": "القوس الثاني نفس \\( u \\)."
+          }
+        ],
+        "hint": "القوس الثاني نفس \\( u \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_4_1_37_6_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: سنحسب \\( uv' \\). الطريقة: \\( u \\) و\\( v' \\) متساويان فنحصل على مربع. السبب: لأن \\( v'=u \\).",
+        "think": "القوس الثاني نفس \\( u \\).",
+        "html_structure": "uv'=(e^x+e^{-x})({q_4_1_37_6_s6_i1})=(e^x+e^{-x})^2"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: سنطرح المربعين. الطريقة: \\( (a-b)^2-(a+b)^2=-4ab \\) مع \\( a=e^x \\) و\\( b=e^{-x} \\). السبب: لأن الحدود \\( a^2 \\) و\\( b^2 \\) تُلغى.",
+        "equation_template": "(e^x-e^{-x})^2-(e^x+e^{-x})^2=-4\\cdot e^x\\cdot{input_1}",
+        "inputs": [
+          {
+            "input_id": "s7_i1",
+            "correct_answer": "e^{-x}",
+            "options": [
+              "e^{-x}",
+              "1",
+              "-e^{-x}",
+              "e^x"
+            ],
+            "id": "q_4_1_37_6_s7_i1",
+            "correct_value": "e^{-x}",
+            "allowed_keys": [
+              "e^{-x}",
+              "1",
+              "-e^{-x}",
+              "e^x"
+            ],
+            "label": "القيمة 1",
+            "hint": "المضروب الثاني \\( e^{-x} \\)."
+          }
+        ],
+        "hint": "المضروب الثاني \\( e^{-x} \\).",
+        "related_topics": [
+          "جبر"
+        ],
+        "step_id": "math345_4_1_37_6_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: سنطرح المربعين. الطريقة: \\( (a-b)^2-(a+b)^2=-4ab \\) مع \\( a=e^x \\) و\\( b=e^{-x} \\). السبب: لأن الحدود \\( a^2 \\) و\\( b^2 \\) تُلغى.",
+        "think": "المضروب الثاني \\( e^{-x} \\).",
+        "html_structure": "(e^x-e^{-x})^2-(e^x+e^{-x})^2=-4\\cdot e^x\\cdot{q_4_1_37_6_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: سنبسط \\( e^x\\cdot e^{-x} \\) ونكتب الجواب. الطريقة: عند ضرب الأسس نجمعها: \\( x+(-x)=0 \\) فنحصل على \\( e^0=1 \\). السبب: لنبسط البسط.",
+        "equation_template": "e^x\\cdot e^{-x}={input_1}\\Rightarrow y'=\\frac{{input_2}}{(e^x-e^{-x})^2}",
+        "inputs": [
+          {
+            "input_id": "s8_i1",
+            "correct_answer": "1",
+            "options": [
+              "e",
+              "1",
+              "2",
+              "0"
+            ],
+            "id": "q_4_1_37_6_s8_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "e",
+              "1",
+              "2",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الناتج الأول \\( 1 \\)، والبسط \\( -4\\times1 \\)."
+          },
+          {
+            "input_id": "s8_i2",
+            "correct_answer": "-4",
+            "options": [
+              "-4",
+              "4",
+              "-1",
+              "-2"
+            ],
+            "id": "q_4_1_37_6_s8_i2",
+            "correct_value": "-4",
+            "allowed_keys": [
+              "-4",
+              "4",
+              "-1",
+              "-2"
+            ],
+            "label": "القيمة 2",
+            "hint": "الناتج الأول \\( 1 \\)، والبسط \\( -4\\times1 \\)."
+          }
+        ],
+        "hint": "الناتج الأول \\( 1 \\)، والبسط \\( -4\\times1 \\).",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_4_1_37_6_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: سنبسط \\( e^x\\cdot e^{-x} \\) ونكتب الجواب. الطريقة: عند ضرب الأسس نجمعها: \\( x+(-x)=0 \\) فنحصل على \\( e^0=1 \\). السبب: لنبسط البسط.",
+        "think": "الناتج الأول \\( 1 \\)، والبسط \\( -4\\times1 \\).",
+        "html_structure": "e^x\\cdot e^{-x}={q_4_1_37_6_s8_i1}\\Rightarrow y'=\\frac{{q_4_1_37_6_s8_i2}}{(e^x-e^{-x})^2}"
+      }
+    ]
+  }
+]

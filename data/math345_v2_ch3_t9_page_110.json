@@ -1,0 +1,1646 @@
+[
+  {
+    "id_number": "q7A_p110",
+    "page_number": 110,
+    "question_number": "7 (أولاً إلى رابعاً)",
+    "question_text": "استخدم معلوماتك بالتفاضل ارسم منحنى الدالة \\( f(x) = (x + 2)(x - 1)^2 \\) — الجزء الأول: المجال والتقاطع والتناظر والمحاذيات.",
+    "question_images": [
+      {
+        "id": "diag_q7_table",
+        "type": "جدول",
+        "desc": "جدول يوضح نقاط الإحداثيات (x, y) الخاصة بالدالة لرسم المنحني",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png"
+      },
+      {
+        "id": "diag_q7_graph",
+        "type": "مخطط بياني",
+        "desc": "الرسم البياني لمنحنى الدالة f(x) مع تحديد نقاط التقاطع والنهايات ونقطة الانقلاب",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_graph_chart.png"
+      },
+      {
+        "id": "diag_q7_signs",
+        "type": "شكل توضيحي",
+        "desc": "خط أعداد يوضح مناطق التقعر والتحدب للمشتقة الثانية f''(x)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_diagram.png"
+      },
+      {
+        "id": "diag_q7_signs_2",
+        "type": "شكل توضيحي",
+        "desc": "خط أعداد يوضح مناطق التزايد والتناقص للمشتقة الأولى f'(x)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_2_diagram.png"
+      }
+    ],
+    "full_model_solution": "المجال R. مع السينات x=-2,1. مع الصادات f(0)=2. f(-x)=-x^3+3x+2 لا تساوي f(x) ولا -f(x) فلا تناظر. لا محاذيات.",
+    "source_file": "رياضيات 3/page_110_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 110,
+      "pdf_page_number": 112,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_graph_chart.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_2_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png",
+    "title": "استخدم معلوماتك بالتفاضل ارسم منحنى الدالة \\( f(x) = (x + 2)(x - 1)^2 \\) — الجزء الأول: المجال والتقاطع والتناظر والمحاذيات.",
+    "number": "7 (أولاً إلى رابعاً)",
+    "model_solution": "المجال R. مع السينات x=-2,1. مع الصادات f(0)=2. f(-x)=-x^3+3x+2 لا تساوي f(x) ولا -f(x) فلا تناظر. لا محاذيات.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحدد المجال. الطريقة: الدالة حاصل ضرب أقواس، أي كثيرة حدود. السبب: فهي معرّفة لكل الأعداد.",
+        "equation_template": "المجال = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step1_1",
+            "correct_answer": "R",
+            "options": [
+              "R",
+              "R/{1}",
+              "R/{-2}",
+              "[0,∞)"
+            ],
+            "id": "q_3_9_110_1_s1_i1",
+            "correct_value": "R",
+            "allowed_keys": [
+              "R",
+              "R/{1}",
+              "R/{-2}",
+              "[0,∞)"
+            ],
+            "label": "القيمة 1",
+            "hint": "لا يوجد مقام فاختر كل الأعداد الحقيقية."
+          }
+        ],
+        "hint": "لا يوجد مقام فاختر كل الأعداد الحقيقية.",
+        "related_topics": [
+          "المجال"
+        ],
+        "step_id": "math345_3_9_110_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحدد المجال. الطريقة: الدالة حاصل ضرب أقواس، أي كثيرة حدود. السبب: فهي معرّفة لكل الأعداد.",
+        "think": "لا يوجد مقام فاختر كل الأعداد الحقيقية.",
+        "html_structure": "المجال = {q_3_9_110_1_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبدأ بالتقاطع مع السينات. الطريقة: نضع \\( y=0 \\). السبب: لأن \\( y \\) على المحور صفر.",
+        "equation_template": "(x+2)(x-1)^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step2_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_1_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكتب صفراً."
+          }
+        ],
+        "hint": "اكتب صفراً.",
+        "related_topics": [
+          "التقاطع مع محور السينات"
+        ],
+        "step_id": "math345_3_9_110_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبدأ بالتقاطع مع السينات. الطريقة: نضع \\( y=0 \\). السبب: لأن \\( y \\) على المحور صفر.",
+        "think": "اكتب صفراً.",
+        "html_structure": "(x+2)(x-1)^2 = {q_3_9_110_1_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحل القوس الأول. الطريقة: ساوِ \\( x+2 \\) بالصفر وانقل \\( 2 \\). السبب: لأن حاصل الضرب صفر إذا كان عامل منه صفراً.",
+        "equation_template": "x + 2 = 0 \\Rightarrow x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step3_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_1_s3_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( +2 \\) فيصبح \\( -2 \\)."
+          }
+        ],
+        "hint": "انقل \\( +2 \\) فيصبح \\( -2 \\).",
+        "related_topics": [
+          "حل معادلة خطية"
+        ],
+        "step_id": "math345_3_9_110_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحل القوس الأول. الطريقة: ساوِ \\( x+2 \\) بالصفر وانقل \\( 2 \\). السبب: لأن حاصل الضرب صفر إذا كان عامل منه صفراً.",
+        "think": "انقل \\( +2 \\) فيصبح \\( -2 \\).",
+        "html_structure": "x + 2 = 0 \\Rightarrow x = {q_3_9_110_1_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحل القوس الثاني. الطريقة: ساوِ \\( (x-1)^2=0 \\) فنأخذ الجذر ثم ننقل \\( 1 \\). السبب: لأن مربع العدد صفر فقط إذا كان العدد صفراً.",
+        "equation_template": "x - 1 = 0 \\Rightarrow x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step4_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_1_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "انقل \\( -1 \\) فيصبح \\( +1 \\)."
+          }
+        ],
+        "hint": "انقل \\( -1 \\) فيصبح \\( +1 \\).",
+        "related_topics": [
+          "حل معادلة خطية"
+        ],
+        "step_id": "math345_3_9_110_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحل القوس الثاني. الطريقة: ساوِ \\( (x-1)^2=0 \\) فنأخذ الجذر ثم ننقل \\( 1 \\). السبب: لأن مربع العدد صفر فقط إذا كان العدد صفراً.",
+        "think": "انقل \\( -1 \\) فيصبح \\( +1 \\).",
+        "html_structure": "x - 1 = 0 \\Rightarrow x = {q_3_9_110_1_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نكتب النقاط مع السينات. الطريقة: لكل \\( x \\) نضع \\( y=0 \\). السبب: لأنها على محور السينات.",
+        "equation_template": "({input_1},0) , ({input_2},0)",
+        "inputs": [
+          {
+            "input_id": "q7A_step5_1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_1_s5_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "القيمتان من الخطوتين السابقتين."
+          },
+          {
+            "input_id": "q7A_step5_2",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_1_s5_i2",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "القيمتان من الخطوتين السابقتين."
+          }
+        ],
+        "hint": "القيمتان من الخطوتين السابقتين.",
+        "related_topics": [
+          "كتابة النقاط"
+        ],
+        "step_id": "math345_3_9_110_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نكتب النقاط مع السينات. الطريقة: لكل \\( x \\) نضع \\( y=0 \\). السبب: لأنها على محور السينات.",
+        "think": "القيمتان من الخطوتين السابقتين.",
+        "html_structure": "({q_3_9_110_1_s5_i1},0) , ({q_3_9_110_1_s5_i2},0)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نجد التقاطع مع الصادات. الطريقة: عوّض \\( x=0 \\): \\( (0+2)(0-1)^2 \\). السبب: لأن \\( x=0 \\) على المحور.",
+        "equation_template": "(0+2)(0-1)^2 = 2 \\times 1 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_110_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( (-1)^2=1 \\) ثم \\( 2\\times1 \\)."
+          }
+        ],
+        "hint": "\\( (-1)^2=1 \\) ثم \\( 2\\times1 \\).",
+        "related_topics": [
+          "التقاطع مع محور الصادات"
+        ],
+        "step_id": "math345_3_9_110_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجد التقاطع مع الصادات. الطريقة: عوّض \\( x=0 \\): \\( (0+2)(0-1)^2 \\). السبب: لأن \\( x=0 \\) على المحور.",
+        "think": "\\( (-1)^2=1 \\) ثم \\( 2\\times1 \\).",
+        "html_structure": "(0+2)(0-1)^2 = 2 \\times 1 = {q_3_9_110_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نفك مربع القوس لنفحص التناظر. الطريقة: \\( (x-1)^2 = x^2 - 2x + 1 \\). السبب: لنحصل على دالة مفتوحة.",
+        "equation_template": "(x-1)^2 = x^2 - {input_1}x + 1",
+        "inputs": [
+          {
+            "input_id": "q7A_step7_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_110_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الأوسط ضعف \\( 1\\cdot x \\)."
+          }
+        ],
+        "hint": "الحد الأوسط ضعف \\( 1\\cdot x \\).",
+        "related_topics": [
+          "فك المربع"
+        ],
+        "step_id": "math345_3_9_110_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نفك مربع القوس لنفحص التناظر. الطريقة: \\( (x-1)^2 = x^2 - 2x + 1 \\). السبب: لنحصل على دالة مفتوحة.",
+        "think": "الحد الأوسط ضعف \\( 1\\cdot x \\).",
+        "html_structure": "(x-1)^2 = x^2 - {q_3_9_110_1_s7_i1}x + 1"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نضرب في \\( (x+2) \\). الطريقة: وزع \\( x \\) و \\( 2 \\) على الأقواس ثم اجمع المتشابه. السبب: لنكتب الدالة بصيغة كثيرة حدود.",
+        "equation_template": "f(x) = x^3 + {input_1}x^2 - {input_2}x + 2",
+        "inputs": [
+          {
+            "input_id": "q7A_step8_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_1_s8_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2x^2+2x^2=0 \\) و \\( x-4x=-3x \\)."
+          },
+          {
+            "input_id": "q7A_step8_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_1_s8_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2x^2+2x^2=0 \\) و \\( x-4x=-3x \\)."
+          }
+        ],
+        "hint": "\\( -2x^2+2x^2=0 \\) و \\( x-4x=-3x \\).",
+        "related_topics": [
+          "ضرب الأقواس"
+        ],
+        "step_id": "math345_3_9_110_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نضرب في \\( (x+2) \\). الطريقة: وزع \\( x \\) و \\( 2 \\) على الأقواس ثم اجمع المتشابه. السبب: لنكتب الدالة بصيغة كثيرة حدود.",
+        "think": "\\( -2x^2+2x^2=0 \\) و \\( x-4x=-3x \\).",
+        "html_structure": "f(x) = x^3 + {q_3_9_110_1_s8_i1}x^2 - {q_3_9_110_1_s8_i2}x + 2"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نحسب \\( f(-x) \\). الطريقة: استبدل \\( x \\) بـ \\( -x \\) في \\( x^3-3x+2 \\). السبب: لاختبار التناظر.",
+        "equation_template": "f(-x) = -x^3 + {input_1}x + 2",
+        "inputs": [
+          {
+            "input_id": "q7A_step9_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_1_s9_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -3(-x)=+3x \\)."
+          }
+        ],
+        "hint": "\\( -3(-x)=+3x \\).",
+        "related_topics": [
+          "التناظر"
+        ],
+        "step_id": "math345_3_9_110_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نحسب \\( f(-x) \\). الطريقة: استبدل \\( x \\) بـ \\( -x \\) في \\( x^3-3x+2 \\). السبب: لاختبار التناظر.",
+        "think": "\\( -3(-x)=+3x \\).",
+        "html_structure": "f(-x) = -x^3 + {q_3_9_110_1_s9_i1}x + 2"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نقارن الشرطين. الطريقة: قارن \\( f(-x) \\) مع \\( f(x) \\) ومع \\( -f(x)=-x^3+3x-2 \\). السبب: لأن الحد الثابت يختلف.",
+        "equation_template": "f(-x) {input_1} f(x) , f(-x) {input_2} -f(x)",
+        "inputs": [
+          {
+            "input_id": "q7A_step10_1",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "<",
+              ">",
+              "="
+            ],
+            "id": "q_3_9_110_1_s10_i1",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "<",
+              ">",
+              "="
+            ],
+            "label": "القيمة 1",
+            "hint": "الحد الثابت \\( +2 \\) لا يطابق \\( -2 \\)."
+          },
+          {
+            "input_id": "q7A_step10_2",
+            "correct_answer": "≠",
+            "options": [
+              "≠",
+              "<",
+              ">",
+              "="
+            ],
+            "id": "q_3_9_110_1_s10_i2",
+            "correct_value": "≠",
+            "allowed_keys": [
+              "≠",
+              "<",
+              ">",
+              "="
+            ],
+            "label": "القيمة 2",
+            "hint": "الحد الثابت \\( +2 \\) لا يطابق \\( -2 \\)."
+          }
+        ],
+        "hint": "الحد الثابت \\( +2 \\) لا يطابق \\( -2 \\).",
+        "related_topics": [
+          "شرطا التناظر"
+        ],
+        "step_id": "math345_3_9_110_1_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نقارن الشرطين. الطريقة: قارن \\( f(-x) \\) مع \\( f(x) \\) ومع \\( -f(x)=-x^3+3x-2 \\). السبب: لأن الحد الثابت يختلف.",
+        "think": "الحد الثابت \\( +2 \\) لا يطابق \\( -2 \\).",
+        "html_structure": "f(-x) {q_3_9_110_1_s10_i1} f(x) , f(-x) {q_3_9_110_1_s10_i2} -f(x)"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نكتب الاستنتاج. الطريقة: لم يتحقق أي شرط. السبب: لأن التناظر يحتاج شرطاً منهما.",
+        "equation_template": "النتيجة: {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step11_1",
+            "correct_answer": "لا يوجد تناظر",
+            "options": [
+              "لا يوجد تناظر",
+              "محور الصادات",
+              "محور السينات",
+              "نقطة الأصل"
+            ],
+            "id": "q_3_9_110_1_s11_i1",
+            "correct_value": "لا يوجد تناظر",
+            "allowed_keys": [
+              "لا يوجد تناظر",
+              "محور الصادات",
+              "محور السينات",
+              "نقطة الأصل"
+            ],
+            "label": "القيمة 1",
+            "hint": "الشرطان فشلا."
+          }
+        ],
+        "hint": "الشرطان فشلا.",
+        "related_topics": [
+          "الاستنتاج"
+        ],
+        "step_id": "math345_3_9_110_1_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نكتب الاستنتاج. الطريقة: لم يتحقق أي شرط. السبب: لأن التناظر يحتاج شرطاً منهما.",
+        "think": "الشرطان فشلا.",
+        "html_structure": "النتيجة: {q_3_9_110_1_s11_i1}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نفحص المحاذيات. الطريقة: نتأكد من نوع الدالة. السبب: المحاذيات للدوال النسبية فقط.",
+        "equation_template": "لا توجد محاذيات لأن الدالة {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7A_step12_1",
+            "correct_answer": "كثيرة حدود",
+            "options": [
+              "كثيرة حدود",
+              "كسرية",
+              "جذرية",
+              "لوغاريتمية"
+            ],
+            "id": "q_3_9_110_1_s12_i1",
+            "correct_value": "كثيرة حدود",
+            "allowed_keys": [
+              "كثيرة حدود",
+              "كسرية",
+              "جذرية",
+              "لوغاريتمية"
+            ],
+            "label": "القيمة 1",
+            "hint": "لا يوجد مقام."
+          }
+        ],
+        "hint": "لا يوجد مقام.",
+        "related_topics": [
+          "المحاذيات"
+        ],
+        "step_id": "math345_3_9_110_1_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نفحص المحاذيات. الطريقة: نتأكد من نوع الدالة. السبب: المحاذيات للدوال النسبية فقط.",
+        "think": "لا يوجد مقام.",
+        "html_structure": "لا توجد محاذيات لأن الدالة {q_3_9_110_1_s12_i1}"
+      }
+    ]
+  },
+  {
+    "id_number": "q7B_p110",
+    "page_number": 110,
+    "question_number": "7 (خامساً)",
+    "question_text": "استخدم معلوماتك بالتفاضل ارسم منحنى الدالة \\( f(x) = (x + 2)(x - 1)^2 \\) — الجزء الثاني: النهايات العظمى والصغرى.",
+    "question_images": [
+      {
+        "id": "diag_q7_table",
+        "type": "جدول",
+        "desc": "جدول يوضح نقاط الإحداثيات (x, y) الخاصة بالدالة لرسم المنحني",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png"
+      },
+      {
+        "id": "diag_q7_graph",
+        "type": "مخطط بياني",
+        "desc": "الرسم البياني لمنحنى الدالة f(x) مع تحديد نقاط التقاطع والنهايات ونقطة الانقلاب",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_graph_chart.png"
+      },
+      {
+        "id": "diag_q7_signs",
+        "type": "شكل توضيحي",
+        "desc": "خط أعداد يوضح مناطق التقعر والتحدب للمشتقة الثانية f''(x)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_diagram.png"
+      },
+      {
+        "id": "diag_q7_signs_2",
+        "type": "شكل توضيحي",
+        "desc": "خط أعداد يوضح مناطق التزايد والتناقص للمشتقة الأولى f'(x)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_2_diagram.png"
+      }
+    ],
+    "full_model_solution": "f(x)=x^3-3x+2، f'(x)=3x^2-3=0 → x=±1. f(1)=0 نهاية صغرى، f(-1)=4 نهاية عظمى. متزايدة في x<-1 و x>1.",
+    "source_file": "رياضيات 3/page_110_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 110,
+      "pdf_page_number": 112,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_graph_chart.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_2_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png",
+    "title": "استخدم معلوماتك بالتفاضل ارسم منحنى الدالة \\( f(x) = (x + 2)(x - 1)^2 \\) — الجزء الثاني: النهايات العظمى والصغرى.",
+    "number": "7 (خامساً)",
+    "model_solution": "f(x)=x^3-3x+2، f'(x)=3x^2-3=0 → x=±1. f(1)=0 نهاية صغرى، f(-1)=4 نهاية عظمى. متزايدة في x<-1 و x>1.",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نشتق الدالة. الطريقة: من \\( f(x)=x^3-3x+2 \\): \\( x^3 \\) تصبح \\( 3x^2 \\) و \\( -3x \\) تصبح \\( -3 \\). السبب: لاستخراج النقاط الحرجة.",
+        "equation_template": "f'(x) = {input_1}x^2 - {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7B_step1_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s1_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "انزل الأس \\( 3 \\) أمام \\( x \\)."
+          },
+          {
+            "input_id": "q7B_step1_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s1_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "انزل الأس \\( 3 \\) أمام \\( x \\)."
+          }
+        ],
+        "hint": "انزل الأس \\( 3 \\) أمام \\( x \\).",
+        "related_topics": [
+          "المشتقة الأولى"
+        ],
+        "step_id": "math345_3_9_110_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نشتق الدالة. الطريقة: من \\( f(x)=x^3-3x+2 \\): \\( x^3 \\) تصبح \\( 3x^2 \\) و \\( -3x \\) تصبح \\( -3 \\). السبب: لاستخراج النقاط الحرجة.",
+        "think": "انزل الأس \\( 3 \\) أمام \\( x \\).",
+        "html_structure": "f'(x) = {q_3_9_110_2_s1_i1}x^2 - {q_3_9_110_2_s1_i2}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي بالصفر. الطريقة: انقل \\( -3 \\) للطرف الآخر. السبب: لنجد قيم \\( x \\).",
+        "equation_template": "3x^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7B_step2_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s2_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -3 \\) تنتقل موجبة."
+          }
+        ],
+        "hint": "\\( -3 \\) تنتقل موجبة.",
+        "related_topics": [
+          "النقاط الحرجة"
+        ],
+        "step_id": "math345_3_9_110_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي بالصفر. الطريقة: انقل \\( -3 \\) للطرف الآخر. السبب: لنجد قيم \\( x \\).",
+        "think": "\\( -3 \\) تنتقل موجبة.",
+        "html_structure": "3x^2 = {q_3_9_110_2_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: اقسم على \\( 3 \\). السبب: لنتخلص من المعامل.",
+        "equation_template": "x^2 = \\frac{3}{3} = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7B_step3_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_2_s3_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 3\\div3 \\)."
+          }
+        ],
+        "hint": "\\( 3\\div3 \\).",
+        "related_topics": [
+          "القسمة"
+        ],
+        "step_id": "math345_3_9_110_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعزل \\( x^2 \\). الطريقة: اقسم على \\( 3 \\). السبب: لنتخلص من المعامل.",
+        "think": "\\( 3\\div3 \\).",
+        "html_structure": "x^2 = \\frac{3}{3} = {q_3_9_110_2_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نأخذ الجذر. الطريقة: جذر \\( 1 \\) مع الإشارتين. السبب: لأن المربعين \\( 1 \\).",
+        "equation_template": "x = \\pm {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7B_step4_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_2_s4_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر الواحد."
+          }
+        ],
+        "hint": "جذر الواحد.",
+        "related_topics": [
+          "الجذر التربيعي"
+        ],
+        "step_id": "math345_3_9_110_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نأخذ الجذر. الطريقة: جذر \\( 1 \\) مع الإشارتين. السبب: لأن المربعين \\( 1 \\).",
+        "think": "جذر الواحد.",
+        "html_structure": "x = \\pm {q_3_9_110_2_s4_i1}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نجد \\( f(1) \\). الطريقة: عوّض في الصيغة المجزأة \\( (x+2)(x-1)^2 \\). السبب: أسهل في الحساب.",
+        "equation_template": "(1+2)(1-1)^2 = 3 \\times {input_1} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7B_step5_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_2_s5_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-1=0 \\) فالضرب صفر."
+          },
+          {
+            "input_id": "q7B_step5_2",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_2_s5_i2",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1-1=0 \\) فالضرب صفر."
+          }
+        ],
+        "hint": "\\( 1-1=0 \\) فالضرب صفر.",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_9_110_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نجد \\( f(1) \\). الطريقة: عوّض في الصيغة المجزأة \\( (x+2)(x-1)^2 \\). السبب: أسهل في الحساب.",
+        "think": "\\( 1-1=0 \\) فالضرب صفر.",
+        "html_structure": "(1+2)(1-1)^2 = 3 \\times {q_3_9_110_2_s5_i1} = {q_3_9_110_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نجد \\( f(-1) \\). الطريقة: عوّض \\( x=-1 \\). السبب: لنكتب النقطة الثانية.",
+        "equation_template": "(-1+2)(-1-1)^2 = 1 \\times {input_1} = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7B_step6_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s6_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( (-2)^2=4 \\)."
+          },
+          {
+            "input_id": "q7B_step6_2",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s6_i2",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( (-2)^2=4 \\)."
+          }
+        ],
+        "hint": "\\( (-2)^2=4 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_9_110_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نجد \\( f(-1) \\). الطريقة: عوّض \\( x=-1 \\). السبب: لنكتب النقطة الثانية.",
+        "think": "\\( (-2)^2=4 \\).",
+        "html_structure": "(-1+2)(-1-1)^2 = 1 \\times {q_3_9_110_2_s6_i1} = {q_3_9_110_2_s6_i2}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نشتق مرة ثانية. الطريقة: نشتق \\( 3x^2-3 \\). السبب: لتحديد نوع النقطة.",
+        "equation_template": "f''(x) = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "q7B_step7_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x^2 \\) هي \\( 6x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x^2 \\) هي \\( 6x \\).",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_3_9_110_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نشتق مرة ثانية. الطريقة: نشتق \\( 3x^2-3 \\). السبب: لتحديد نوع النقطة.",
+        "think": "مشتقة \\( 3x^2 \\) هي \\( 6x \\).",
+        "html_structure": "f''(x) = {q_3_9_110_2_s7_i1}x"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نختبر \\( x=1 \\). الطريقة: عوّض في \\( 6x \\). السبب: موجبة تعني صغرى.",
+        "equation_template": "f''(1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7B_step8_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s8_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6\\times1 \\)."
+          }
+        ],
+        "hint": "\\( 6\\times1 \\).",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_9_110_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نختبر \\( x=1 \\). الطريقة: عوّض في \\( 6x \\). السبب: موجبة تعني صغرى.",
+        "think": "\\( 6\\times1 \\).",
+        "html_structure": "f''(1) = {q_3_9_110_2_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نختبر \\( x=-1 \\). الطريقة: عوّض في \\( 6x \\). السبب: سالبة تعني عظمى.",
+        "equation_template": "f''(-1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7B_step9_1",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s9_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6\\times(-1) \\)."
+          }
+        ],
+        "hint": "\\( 6\\times(-1) \\).",
+        "related_topics": [
+          "اختبار المشتقة الثانية"
+        ],
+        "step_id": "math345_3_9_110_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نختبر \\( x=-1 \\). الطريقة: عوّض في \\( 6x \\). السبب: سالبة تعني عظمى.",
+        "think": "\\( 6\\times(-1) \\).",
+        "html_structure": "f''(-1) = {q_3_9_110_2_s9_i1}"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نصنف النقطتين. الطريقة: موجبة عند \\( 1 \\) وسالبة عند \\( -1 \\). السبب: الإشارة تحدد النوع.",
+        "equation_template": "(1,0) نهاية {input_1} ، (-1,4) نهاية {input_2}",
+        "inputs": [
+          {
+            "input_id": "q7B_step10_1",
+            "correct_answer": "صغرى",
+            "options": [
+              "صغرى",
+              "عظمى",
+              "انقلاب",
+              "لا شيء"
+            ],
+            "id": "q_3_9_110_2_s10_i1",
+            "correct_value": "صغرى",
+            "allowed_keys": [
+              "صغرى",
+              "عظمى",
+              "انقلاب",
+              "لا شيء"
+            ],
+            "label": "القيمة 1",
+            "hint": "موجب صغرى وسالب عظمى."
+          },
+          {
+            "input_id": "q7B_step10_2",
+            "correct_answer": "عظمى",
+            "options": [
+              "عظمى",
+              "صغرى",
+              "انقلاب",
+              "لا شيء"
+            ],
+            "id": "q_3_9_110_2_s10_i2",
+            "correct_value": "عظمى",
+            "allowed_keys": [
+              "عظمى",
+              "صغرى",
+              "انقلاب",
+              "لا شيء"
+            ],
+            "label": "القيمة 2",
+            "hint": "موجب صغرى وسالب عظمى."
+          }
+        ],
+        "hint": "موجب صغرى وسالب عظمى.",
+        "related_topics": [
+          "النهايات"
+        ],
+        "step_id": "math345_3_9_110_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نصنف النقطتين. الطريقة: موجبة عند \\( 1 \\) وسالبة عند \\( -1 \\). السبب: الإشارة تحدد النوع.",
+        "think": "موجب صغرى وسالب عظمى.",
+        "html_structure": "(1,0) نهاية {q_3_9_110_2_s10_i1} ، (-1,4) نهاية {q_3_9_110_2_s10_i2}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نحدد التزايد. الطريقة: عوّض \\( x=2 \\) في \\( f' \\): \\( 3(4)-3=9 \\). السبب: موجبة تعني تزايد.",
+        "equation_template": "f'(2) = 12 - 3 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7B_step11_1",
+            "correct_answer": "9",
+            "options": [
+              "9",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_2_s11_i1",
+            "correct_value": "9",
+            "allowed_keys": [
+              "9",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 12-3 \\)."
+          }
+        ],
+        "hint": "\\( 12-3 \\).",
+        "related_topics": [
+          "التزايد"
+        ],
+        "step_id": "math345_3_9_110_2_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نحدد التزايد. الطريقة: عوّض \\( x=2 \\) في \\( f' \\): \\( 3(4)-3=9 \\). السبب: موجبة تعني تزايد.",
+        "think": "\\( 12-3 \\).",
+        "html_structure": "f'(2) = 12 - 3 = {q_3_9_110_2_s11_i1}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نكتب فترات التزايد. الطريقة: موجبة بعد \\( 1 \\) وقبل \\( -1 \\). السبب: لأن المشتقة تغيّر إشارتها عند النقطتين.",
+        "equation_template": "متزايدة في (-∞ , -1) وفي ({input_1} , ∞)",
+        "inputs": [
+          {
+            "input_id": "q7B_step12_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_2_s12_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "بداية الفترة اليمنى هي النقطة الحرجة الموجبة."
+          }
+        ],
+        "hint": "بداية الفترة اليمنى هي النقطة الحرجة الموجبة.",
+        "related_topics": [
+          "التزايد والتناقص"
+        ],
+        "step_id": "math345_3_9_110_2_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نكتب فترات التزايد. الطريقة: موجبة بعد \\( 1 \\) وقبل \\( -1 \\). السبب: لأن المشتقة تغيّر إشارتها عند النقطتين.",
+        "think": "بداية الفترة اليمنى هي النقطة الحرجة الموجبة.",
+        "html_structure": "متزايدة في (-∞ , -1) وفي ({q_3_9_110_2_s12_i1} , ∞)"
+      }
+    ]
+  },
+  {
+    "id_number": "q7C_p110",
+    "page_number": 110,
+    "question_number": "7 (سادساً وسابعاً)",
+    "question_text": "استخدم معلوماتك بالتفاضل ارسم منحنى الدالة \\( f(x) = (x + 2)(x - 1)^2 \\) — الجزء الثالث: التقعر والتحدب ونقطة الانقلاب والجدول.",
+    "question_images": [
+      {
+        "id": "diag_q7_table",
+        "type": "جدول",
+        "desc": "جدول يوضح نقاط الإحداثيات (x, y) الخاصة بالدالة لرسم المنحني",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png"
+      },
+      {
+        "id": "diag_q7_graph",
+        "type": "مخطط بياني",
+        "desc": "الرسم البياني لمنحنى الدالة f(x) مع تحديد نقاط التقاطع والنهايات ونقطة الانقلاب",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_graph_chart.png"
+      },
+      {
+        "id": "diag_q7_signs",
+        "type": "شكل توضيحي",
+        "desc": "خط أعداد يوضح مناطق التقعر والتحدب للمشتقة الثانية f''(x)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_diagram.png"
+      },
+      {
+        "id": "diag_q7_signs_2",
+        "type": "شكل توضيحي",
+        "desc": "خط أعداد يوضح مناطق التزايد والتناقص للمشتقة الأولى f'(x)",
+        "url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_2_diagram.png"
+      }
+    ],
+    "full_model_solution": "f''(x)=6x=0 → x=0، f(0)=2 فنقطة الانقلاب (0,2). تحدب عندما x<0، وتقعر عندما x>0. نقاط الجدول: (2,4)، (-3,-16).",
+    "source_file": "رياضيات 3/page_110_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_id": null,
+      "page_number": 110,
+      "pdf_page_number": 112,
+      "part_number": 3,
+      "source_document": "الرياضيات_حيدر_وليد_الجزء_الثاني_السادس_العلمي_2027_ميهوك_جزء_1_ص_1_إلى_138.pdf"
+    },
+    "chapter": 3,
+    "topic_index": 8,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_graph_chart.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_diagram.png",
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_signs_2_diagram.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_1_s_1_ela_138_jz_3_sfhh_110_diag_q7_table_table.png",
+    "title": "استخدم معلوماتك بالتفاضل ارسم منحنى الدالة \\( f(x) = (x + 2)(x - 1)^2 \\) — الجزء الثالث: التقعر والتحدب ونقطة الانقلاب والجدول.",
+    "number": "7 (سادساً وسابعاً)",
+    "model_solution": "f''(x)=6x=0 → x=0، f(0)=2 فنقطة الانقلاب (0,2). تحدب عندما x<0، وتقعر عندما x>0. نقاط الجدول: (2,4)، (-3,-16).",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نكتب المشتقة الثانية. الطريقة: من \\( f'(x)=3x^2-3 \\) نشتق. السبب: الانقلاب من \\( f'' \\).",
+        "equation_template": "f''(x) = {input_1}x",
+        "inputs": [
+          {
+            "input_id": "q7C_step1_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_3_s1_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "مشتقة \\( 3x^2 \\) هي \\( 6x \\)."
+          }
+        ],
+        "hint": "مشتقة \\( 3x^2 \\) هي \\( 6x \\).",
+        "related_topics": [
+          "المشتقة الثانية"
+        ],
+        "step_id": "math345_3_9_110_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نكتب المشتقة الثانية. الطريقة: من \\( f'(x)=3x^2-3 \\) نشتق. السبب: الانقلاب من \\( f'' \\).",
+        "think": "مشتقة \\( 3x^2 \\) هي \\( 6x \\).",
+        "html_structure": "f''(x) = {q_3_9_110_3_s1_i1}x"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نساوي بالصفر. الطريقة: \\( 6x=0 \\) فنقسم على \\( 6 \\). السبب: لنجد نقطة الانقلاب.",
+        "equation_template": "x = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7C_step2_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_3_s2_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "صفر على ستة صفر."
+          }
+        ],
+        "hint": "صفر على ستة صفر.",
+        "related_topics": [
+          "نقاط الانقلاب"
+        ],
+        "step_id": "math345_3_9_110_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نساوي بالصفر. الطريقة: \\( 6x=0 \\) فنقسم على \\( 6 \\). السبب: لنجد نقطة الانقلاب.",
+        "think": "صفر على ستة صفر.",
+        "html_structure": "x = {q_3_9_110_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نجد \\( y \\) عند \\( x=0 \\). الطريقة: عوّض في \\( (x+2)(x-1)^2 \\). السبب: لنكتب النقطة.",
+        "equation_template": "f(0) = (0+2)(0-1)^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7C_step3_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_110_3_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times1 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times1 \\).",
+        "related_topics": [
+          "التعويض"
+        ],
+        "step_id": "math345_3_9_110_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نجد \\( y \\) عند \\( x=0 \\). الطريقة: عوّض في \\( (x+2)(x-1)^2 \\). السبب: لنكتب النقطة.",
+        "think": "\\( 2\\times1 \\).",
+        "html_structure": "f(0) = (0+2)(0-1)^2 = {q_3_9_110_3_s3_i1}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نكتب نقطة الانقلاب. الطريقة: نضع \\( x \\) و \\( y \\). السبب: لتحديد الموقع.",
+        "equation_template": "({input_1} , {input_2})",
+        "inputs": [
+          {
+            "input_id": "q7C_step4_1",
+            "correct_answer": "0",
+            "options": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_3_s4_i1",
+            "correct_value": "0",
+            "allowed_keys": [
+              "0",
+              "1",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( x=0 \\) و \\( y=2 \\)."
+          },
+          {
+            "input_id": "q7C_step4_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "id": "q_3_9_110_3_s4_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( x=0 \\) و \\( y=2 \\)."
+          }
+        ],
+        "hint": "\\( x=0 \\) و \\( y=2 \\).",
+        "related_topics": [
+          "نقطة الانقلاب"
+        ],
+        "step_id": "math345_3_9_110_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نكتب نقطة الانقلاب. الطريقة: نضع \\( x \\) و \\( y \\). السبب: لتحديد الموقع.",
+        "think": "\\( x=0 \\) و \\( y=2 \\).",
+        "html_structure": "({q_3_9_110_3_s4_i1} , {q_3_9_110_3_s4_i2})"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نختبر \\( x=-1 \\). الطريقة: عوّض في \\( 6x \\). السبب: لنعرف إشارة اليسار.",
+        "equation_template": "f''(-1) = 6(-1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7C_step5_1",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_3_s5_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6\\times(-1) \\)."
+          }
+        ],
+        "hint": "\\( 6\\times(-1) \\).",
+        "related_topics": [
+          "اختبار الإشارة"
+        ],
+        "step_id": "math345_3_9_110_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نختبر \\( x=-1 \\). الطريقة: عوّض في \\( 6x \\). السبب: لنعرف إشارة اليسار.",
+        "think": "\\( 6\\times(-1) \\).",
+        "html_structure": "f''(-1) = 6(-1) = {q_3_9_110_3_s5_i1}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحدد النوع على اليسار. الطريقة: سالبة تعني تحدباً. السبب: لأن \\( f''<0 \\) تعني تحدباً.",
+        "equation_template": "f''(-1) {input_1} 0",
+        "inputs": [
+          {
+            "input_id": "q7C_step6_1",
+            "correct_answer": "<",
+            "options": [
+              "<",
+              ">",
+              "=",
+              "≠"
+            ],
+            "id": "q_3_9_110_3_s6_i1",
+            "correct_value": "<",
+            "allowed_keys": [
+              "<",
+              ">",
+              "=",
+              "≠"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -6 \\) أصغر من صفر."
+          }
+        ],
+        "hint": "\\( -6 \\) أصغر من صفر.",
+        "related_topics": [
+          "التحدب"
+        ],
+        "step_id": "math345_3_9_110_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحدد النوع على اليسار. الطريقة: سالبة تعني تحدباً. السبب: لأن \\( f''<0 \\) تعني تحدباً.",
+        "think": "\\( -6 \\) أصغر من صفر.",
+        "html_structure": "f''(-1) {q_3_9_110_3_s6_i1} 0"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نختبر \\( x=1 \\). الطريقة: عوّض في \\( 6x \\). السبب: لنعرف إشارة اليمين.",
+        "equation_template": "f''(1) = 6(1) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7C_step7_1",
+            "correct_answer": "6",
+            "options": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_3_s7_i1",
+            "correct_value": "6",
+            "allowed_keys": [
+              "6",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6\\times1 \\)."
+          }
+        ],
+        "hint": "\\( 6\\times1 \\).",
+        "related_topics": [
+          "اختبار الإشارة"
+        ],
+        "step_id": "math345_3_9_110_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نختبر \\( x=1 \\). الطريقة: عوّض في \\( 6x \\). السبب: لنعرف إشارة اليمين.",
+        "think": "\\( 6\\times1 \\).",
+        "html_structure": "f''(1) = 6(1) = {q_3_9_110_3_s7_i1}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحدد النوع على اليمين. الطريقة: موجبة تعني تقعراً. السبب: لأن \\( f''>0 \\).",
+        "equation_template": "f''(1) {input_1} 0",
+        "inputs": [
+          {
+            "input_id": "q7C_step8_1",
+            "correct_answer": ">",
+            "options": [
+              ">",
+              "<",
+              "=",
+              "≠"
+            ],
+            "id": "q_3_9_110_3_s8_i1",
+            "correct_value": ">",
+            "allowed_keys": [
+              ">",
+              "<",
+              "=",
+              "≠"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 6 \\) أكبر من صفر."
+          }
+        ],
+        "hint": "\\( 6 \\) أكبر من صفر.",
+        "related_topics": [
+          "التقعر"
+        ],
+        "step_id": "math345_3_9_110_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحدد النوع على اليمين. الطريقة: موجبة تعني تقعراً. السبب: لأن \\( f''>0 \\).",
+        "think": "\\( 6 \\) أكبر من صفر.",
+        "html_structure": "f''(1) {q_3_9_110_3_s8_i1} 0"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نكتب فترة التقعر. الطريقة: اليمين هو \\( x \\) الأكبر من صفر. السبب: لأن اختبار \\( x=1 \\) موجب.",
+        "equation_template": "تقعر عندما x {input_1} 0",
+        "inputs": [
+          {
+            "input_id": "q7C_step9_1",
+            "correct_answer": ">",
+            "options": [
+              ">",
+              "<",
+              "=",
+              "≠"
+            ],
+            "id": "q_3_9_110_3_s9_i1",
+            "correct_value": ">",
+            "allowed_keys": [
+              ">",
+              "<",
+              "=",
+              "≠"
+            ],
+            "label": "القيمة 1",
+            "hint": "اكبر من صفر."
+          }
+        ],
+        "hint": "اكبر من صفر.",
+        "related_topics": [
+          "التقعر"
+        ],
+        "step_id": "math345_3_9_110_3_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكتب فترة التقعر. الطريقة: اليمين هو \\( x \\) الأكبر من صفر. السبب: لأن اختبار \\( x=1 \\) موجب.",
+        "think": "اكبر من صفر.",
+        "html_structure": "تقعر عندما x {q_3_9_110_3_s9_i1} 0"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نجد نقطة للجدول عند \\( x=2 \\). الطريقة: عوّض في \\( (x+2)(x-1)^2 \\). السبب: لنرسم بدقة.",
+        "equation_template": "(2+2)(2-1)^2 = 4 \\times {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7C_step10_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "id": "q_3_9_110_3_s10_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "0",
+              "2",
+              "-1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2-1=1 \\) ثم المربع \\( 1 \\)."
+          }
+        ],
+        "hint": "\\( 2-1=1 \\) ثم المربع \\( 1 \\).",
+        "related_topics": [
+          "جدول القيم"
+        ],
+        "step_id": "math345_3_9_110_3_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نجد نقطة للجدول عند \\( x=2 \\). الطريقة: عوّض في \\( (x+2)(x-1)^2 \\). السبب: لنرسم بدقة.",
+        "think": "\\( 2-1=1 \\) ثم المربع \\( 1 \\).",
+        "html_structure": "(2+2)(2-1)^2 = 4 \\times {q_3_9_110_3_s10_i1}"
+      },
+      {
+        "step_number": 11,
+        "step_explanation": "الهدف: نجد نقطة عند \\( x=-3 \\). الطريقة: عوّض \\( x=-3 \\): \\( (-1)(-4)^2 \\). السبب: لنرى سلوك اليسار.",
+        "equation_template": "f(-3) = (-1) \\times 16 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q7C_step11_1",
+            "correct_answer": "-16",
+            "options": [
+              "-16",
+              "16",
+              "-4",
+              "4"
+            ],
+            "id": "q_3_9_110_3_s11_i1",
+            "correct_value": "-16",
+            "allowed_keys": [
+              "-16",
+              "16",
+              "-4",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( (-4)^2=16 \\) ثم اضرب في \\( -1 \\)."
+          }
+        ],
+        "hint": "\\( (-4)^2=16 \\) ثم اضرب في \\( -1 \\).",
+        "related_topics": [
+          "جدول القيم"
+        ],
+        "step_id": "math345_3_9_110_3_step_11",
+        "title": "الخطوة 11",
+        "explanation": "الهدف: نجد نقطة عند \\( x=-3 \\). الطريقة: عوّض \\( x=-3 \\): \\( (-1)(-4)^2 \\). السبب: لنرى سلوك اليسار.",
+        "think": "\\( (-4)^2=16 \\) ثم اضرب في \\( -1 \\).",
+        "html_structure": "f(-3) = (-1) \\times 16 = {q_3_9_110_3_s11_i1}"
+      },
+      {
+        "step_number": 12,
+        "step_explanation": "الهدف: نجمع النقاط. الطريقة: اكتب النقاط الأهم. السبب: لرسم المنحنى.",
+        "equation_template": "(-2,0),(1,0),(0,2),(2,{input_1}),(-3,{input_2})",
+        "inputs": [
+          {
+            "input_id": "q7C_step12_1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "id": "q_3_9_110_3_s12_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "0",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمتا الخطوتين السابقتين."
+          },
+          {
+            "input_id": "q7C_step12_2",
+            "correct_answer": "-16",
+            "options": [
+              "-16",
+              "16",
+              "-4",
+              "4"
+            ],
+            "id": "q_3_9_110_3_s12_i2",
+            "correct_value": "-16",
+            "allowed_keys": [
+              "-16",
+              "16",
+              "-4",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "قيمتا الخطوتين السابقتين."
+          }
+        ],
+        "hint": "قيمتا الخطوتين السابقتين.",
+        "related_topics": [
+          "جدول القيم"
+        ],
+        "step_id": "math345_3_9_110_3_step_12",
+        "title": "الخطوة 12",
+        "explanation": "الهدف: نجمع النقاط. الطريقة: اكتب النقاط الأهم. السبب: لرسم المنحنى.",
+        "think": "قيمتا الخطوتين السابقتين.",
+        "html_structure": "(-2,0),(1,0),(0,2),(2,{q_3_9_110_3_s12_i1}),(-3,{q_3_9_110_3_s12_i2})"
+      }
+    ]
+  }
+]

@@ -1,0 +1,456 @@
+[
+  {
+    "id_number": "q6_p8",
+    "page_number": 8,
+    "question_number": "6",
+    "question_text": "جد \\( \\int \\frac{x^2-x}{\\sqrt{x}-1}\\,dx \\)",
+    "question_images": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_008_diag_q6_drawing.png"
+    ],
+    "full_model_solution": "x²-x = x(x-1) = x(√x-1)(√x+1) نختصر (√x-1): ∫(x^(3/2)+x)dx = 2/5 x^(5/2) + x²/2 + c",
+    "source_file": "رياضيلت 4/page_008_interactive.json",
+    "source_page_metadata": {
+      "lesson_id": null,
+      "page_number": 8
+    },
+    "chapter": 4,
+    "topic_index": 1,
+    "image_urls": [
+      "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_008_diag_q6_drawing.png"
+    ],
+    "image_url": "https://xutqrhwqrodzmbdlgqsg.supabase.co/storage/v1/object/public/exam-diagrams/prompt_extracted_diagrams/almath_hydr_wlyd_aljz_althany_alsadq_alaalmy_2027_myhwk_jz_2_s_139_ela_220_jz_1_sfhh_008_diag_q6_drawing.png",
+    "title": "جد \\( \\int \\frac{x^2-x}{\\sqrt{x}-1}\\,dx \\)",
+    "number": "6",
+    "model_solution": "x²-x = x(x-1) = x(√x-1)(√x+1) نختصر (√x-1): ∫(x^(3/2)+x)dx = 2/5 x^(5/2) + x²/2 + c",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: إخراج عامل مشترك من البسط. الطريقة: \\( x^2 - x = x(x - 1) \\). السبب: لنستطيع تحليله أكثر.",
+        "equation_template": "x^2 - x = x(x - {input_1})",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s1_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "x"
+            ],
+            "id": "q_4_2_8_1_s1_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "أخرج \\( x \\) فيبقى \\( x \\) و\\( -1 \\)."
+          }
+        ],
+        "hint": "أخرج \\( x \\) فيبقى \\( x \\) و\\( -1 \\).",
+        "related_topics": [
+          "العامل المشترك"
+        ],
+        "step_id": "math345_4_2_8_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: إخراج عامل مشترك من البسط. الطريقة: \\( x^2 - x = x(x - 1) \\). السبب: لنستطيع تحليله أكثر.",
+        "think": "أخرج \\( x \\) فيبقى \\( x \\) و\\( -1 \\).",
+        "html_structure": "x^2 - x = x(x - {q_4_2_8_1_s1_i1})"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: تحليل \\( x-1 \\). الطريقة: \\( x = (\\sqrt{x})^2 \\) و\\( 1 = 1^2 \\)، فهو فرق بين مربعين. السبب: لنحصل على العامل \\( \\sqrt{x}-1 \\).",
+        "equation_template": "x - 1 = (\\sqrt{x})^2 - 1^2 = (\\sqrt{x} - 1)(\\sqrt{x} + {input_1})",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s2_1",
+            "correct_answer": "1",
+            "options": [
+              "1",
+              "2",
+              "0",
+              "x"
+            ],
+            "id": "q_4_2_8_1_s2_i1",
+            "correct_value": "1",
+            "allowed_keys": [
+              "1",
+              "2",
+              "0",
+              "x"
+            ],
+            "label": "القيمة 1",
+            "hint": "جذر \\( x \\) هو \\( \\sqrt{x} \\) وجذر \\( 1 \\) هو \\( 1 \\)."
+          }
+        ],
+        "hint": "جذر \\( x \\) هو \\( \\sqrt{x} \\) وجذر \\( 1 \\) هو \\( 1 \\).",
+        "related_topics": [
+          "فرق مربعين"
+        ],
+        "step_id": "math345_4_2_8_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: تحليل \\( x-1 \\). الطريقة: \\( x = (\\sqrt{x})^2 \\) و\\( 1 = 1^2 \\)، فهو فرق بين مربعين. السبب: لنحصل على العامل \\( \\sqrt{x}-1 \\).",
+        "think": "جذر \\( x \\) هو \\( \\sqrt{x} \\) وجذر \\( 1 \\) هو \\( 1 \\).",
+        "html_structure": "x - 1 = (\\sqrt{x})^2 - 1^2 = (\\sqrt{x} - 1)(\\sqrt{x} + {q_4_2_8_1_s2_i1})"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: الاختصار. الطريقة: نحذف \\( \\sqrt{x}-1 \\) من البسط والمقام (مع \\( x \\ge 0 \\), \\( x \\ne 1 \\)). السبب: لنحصل على دالة سهلة التكامل.",
+        "equation_template": "\\frac{x(\\sqrt{x}-1)(\\sqrt{x}+1)}{{input_1}} = x({input_2})",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s3_1",
+            "correct_answer": "√x - 1",
+            "options": [
+              "√x - 1",
+              "√x + 1",
+              "x - 1",
+              "x + 1"
+            ],
+            "id": "q_4_2_8_1_s3_i1",
+            "correct_value": "√x - 1",
+            "allowed_keys": [
+              "√x - 1",
+              "√x + 1",
+              "x - 1",
+              "x + 1"
+            ],
+            "label": "القيمة 1",
+            "hint": "المقام هو \\( \\sqrt{x}-1 \\) والباقي \\( \\sqrt{x}+1 \\)."
+          },
+          {
+            "input_id": "q6_p8_s3_2",
+            "correct_answer": "√x + 1",
+            "options": [
+              "√x + 1",
+              "√x - 1",
+              "x + 1",
+              "x - 1"
+            ],
+            "id": "q_4_2_8_1_s3_i2",
+            "correct_value": "√x + 1",
+            "allowed_keys": [
+              "√x + 1",
+              "√x - 1",
+              "x + 1",
+              "x - 1"
+            ],
+            "label": "القيمة 2",
+            "hint": "المقام هو \\( \\sqrt{x}-1 \\) والباقي \\( \\sqrt{x}+1 \\)."
+          }
+        ],
+        "hint": "المقام هو \\( \\sqrt{x}-1 \\) والباقي \\( \\sqrt{x}+1 \\).",
+        "related_topics": [
+          "الاختصار"
+        ],
+        "step_id": "math345_4_2_8_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: الاختصار. الطريقة: نحذف \\( \\sqrt{x}-1 \\) من البسط والمقام (مع \\( x \\ge 0 \\), \\( x \\ne 1 \\)). السبب: لنحصل على دالة سهلة التكامل.",
+        "think": "المقام هو \\( \\sqrt{x}-1 \\) والباقي \\( \\sqrt{x}+1 \\).",
+        "html_structure": "\\frac{x(\\sqrt{x}-1)(\\sqrt{x}+1)}{{q_4_2_8_1_s3_i1}} = x({q_4_2_8_1_s3_i2})"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: توزيع \\( x \\). الطريقة: \\( x \\cdot x^{1/2} = x^{3/2} \\) و\\( x \\cdot 1 = x \\). السبب: عند ضرب القوى نجمع الأسس.",
+        "equation_template": "x(\\sqrt{x}+1) = x^{\\frac{{input_1}}{2}} + {input_2}",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s4_1",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "1",
+              "2",
+              "5"
+            ],
+            "id": "q_4_2_8_1_s4_i1",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "1",
+              "2",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1 + \\frac12 = \\frac32 \\)."
+          },
+          {
+            "input_id": "q6_p8_s4_2",
+            "correct_answer": "x",
+            "options": [
+              "x",
+              "1",
+              "x^2",
+              "2x"
+            ],
+            "id": "q_4_2_8_1_s4_i2",
+            "correct_value": "x",
+            "allowed_keys": [
+              "x",
+              "1",
+              "x^2",
+              "2x"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1 + \\frac12 = \\frac32 \\)."
+          }
+        ],
+        "hint": "\\( 1 + \\frac12 = \\frac32 \\).",
+        "related_topics": [
+          "قوانين الأسس"
+        ],
+        "step_id": "math345_4_2_8_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: توزيع \\( x \\). الطريقة: \\( x \\cdot x^{1/2} = x^{3/2} \\) و\\( x \\cdot 1 = x \\). السبب: عند ضرب القوى نجمع الأسس.",
+        "think": "\\( 1 + \\frac12 = \\frac32 \\).",
+        "html_structure": "x(\\sqrt{x}+1) = x^{\\frac{{q_4_2_8_1_s4_i1}}{2}} + {q_4_2_8_1_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: تكامل \\( x^{3/2} \\). الطريقة: الأس \\( \\frac52 \\) ونقسم عليه. السبب: قاعدة القوة.",
+        "equation_template": "\\int x^{\\frac32}dx = \\frac{x^{\\frac{{input_1}}{2}}}{\\frac{{input_2}}{2}} = \\frac25x^{\\frac52}",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s5_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_8_1_s5_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac32 + 1 = \\frac52 \\)."
+          },
+          {
+            "input_id": "q6_p8_s5_2",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "1",
+              "4"
+            ],
+            "id": "q_4_2_8_1_s5_i2",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "1",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac32 + 1 = \\frac52 \\)."
+          }
+        ],
+        "hint": "\\( \\frac32 + 1 = \\frac52 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_8_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: تكامل \\( x^{3/2} \\). الطريقة: الأس \\( \\frac52 \\) ونقسم عليه. السبب: قاعدة القوة.",
+        "think": "\\( \\frac32 + 1 = \\frac52 \\).",
+        "html_structure": "\\int x^{\\frac32}dx = \\frac{x^{\\frac{{q_4_2_8_1_s5_i1}}{2}}}{\\frac{{q_4_2_8_1_s5_i2}}{2}} = \\frac25x^{\\frac52}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: تكامل \\( x \\). الطريقة: الأس \\( 2 \\) ونقسم على \\( 2 \\). السبب: قاعدة القوة.",
+        "equation_template": "\\int x\\,dx = \\frac{x^{{input_1}}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s6_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_8_1_s6_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1 \\)."
+          },
+          {
+            "input_id": "q6_p8_s6_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_8_1_s6_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1 \\)."
+          }
+        ],
+        "hint": "\\( 1+1 \\).",
+        "related_topics": [
+          "قاعدة القوة"
+        ],
+        "step_id": "math345_4_2_8_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: تكامل \\( x \\). الطريقة: الأس \\( 2 \\) ونقسم على \\( 2 \\). السبب: قاعدة القوة.",
+        "think": "\\( 1+1 \\).",
+        "html_structure": "\\int x\\,dx = \\frac{x^{{q_4_2_8_1_s6_i1}}}{{q_4_2_8_1_s6_i2}}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: كتابة الجواب. الطريقة: نجمع الحدين ونضيف \\( c \\). السبب: تكامل غير محدد.",
+        "equation_template": "\\frac25x^{\\frac52} + \\frac{x^{{input_1}}}{{input_2}} + {input_3}",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s7_1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_8_1_s7_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\) ثم \\( c \\)."
+          },
+          {
+            "input_id": "q6_p8_s7_2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "id": "q_4_2_8_1_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "3",
+              "0"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\) ثم \\( c \\)."
+          },
+          {
+            "input_id": "q6_p8_s7_3",
+            "correct_answer": "c",
+            "options": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "id": "q_4_2_8_1_s7_i3",
+            "correct_value": "c",
+            "allowed_keys": [
+              "c",
+              "0",
+              "1",
+              "x"
+            ],
+            "label": "القيمة 3",
+            "hint": "الأس \\( 2 \\) والمقام \\( 2 \\) ثم \\( c \\)."
+          }
+        ],
+        "hint": "الأس \\( 2 \\) والمقام \\( 2 \\) ثم \\( c \\).",
+        "related_topics": [
+          "ثابت التكامل"
+        ],
+        "step_id": "math345_4_2_8_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: كتابة الجواب. الطريقة: نجمع الحدين ونضيف \\( c \\). السبب: تكامل غير محدد.",
+        "think": "الأس \\( 2 \\) والمقام \\( 2 \\) ثم \\( c \\).",
+        "html_structure": "\\frac25x^{\\frac52} + \\frac{x^{{q_4_2_8_1_s7_i1}}}{{q_4_2_8_1_s7_i2}} + {q_4_2_8_1_s7_i3}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac25x^{5/2} \\): ننزل \\( \\frac52 \\) وننقص الأس إلى \\( \\frac32 \\). السبب: للتأكد من صحة الجواب.",
+        "equation_template": "\\frac{d}{dx}\\left(\\frac25x^{\\frac52}\\right) = \\frac25\\cdot\\frac{{input_1}}{2}x^{\\frac{{input_2}}{2}} = x^{\\frac32}",
+        "inputs": [
+          {
+            "input_id": "q6_p8_s8_1",
+            "correct_answer": "5",
+            "options": [
+              "5",
+              "3",
+              "2",
+              "1"
+            ],
+            "id": "q_4_2_8_1_s8_i1",
+            "correct_value": "5",
+            "allowed_keys": [
+              "5",
+              "3",
+              "2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( \\frac25 \\times \\frac52 = 1 \\)."
+          },
+          {
+            "input_id": "q6_p8_s8_2",
+            "correct_answer": "3",
+            "options": [
+              "3",
+              "5",
+              "1",
+              "2"
+            ],
+            "id": "q_4_2_8_1_s8_i2",
+            "correct_value": "3",
+            "allowed_keys": [
+              "3",
+              "5",
+              "1",
+              "2"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( \\frac25 \\times \\frac52 = 1 \\)."
+          }
+        ],
+        "hint": "\\( \\frac25 \\times \\frac52 = 1 \\).",
+        "related_topics": [
+          "التحقق"
+        ],
+        "step_id": "math345_4_2_8_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: التحقق بالاشتقاق. الطريقة: نشتق \\( \\frac25x^{5/2} \\): ننزل \\( \\frac52 \\) وننقص الأس إلى \\( \\frac32 \\). السبب: للتأكد من صحة الجواب.",
+        "think": "\\( \\frac25 \\times \\frac52 = 1 \\).",
+        "html_structure": "\\frac{d}{dx}\\left(\\frac25x^{\\frac52}\\right) = \\frac25\\cdot\\frac{{q_4_2_8_1_s8_i1}}{2}x^{\\frac{{q_4_2_8_1_s8_i2}}{2}} = x^{\\frac32}"
+      }
+    ]
+  }
+]
