@@ -1,0 +1,1205 @@
+[
+  {
+    "id_number": "q2_p20",
+    "page_number": 20,
+    "question_number": "2",
+    "question_text": "أثبت أن: \\( \\frac{1}{(1+2i)^2}+\\frac{1}{(1-2i)^2}=-\\frac{6}{25} \\) (2017 الدور الأول)",
+    "diagram": null,
+    "full_model_solution": "\\( (1+2i)^2=-3+4i \\) و \\( (1-2i)^2=-3-4i \\) فالمجموع \\( \\frac{(-3-4i)+(-3+4i)}{9+16}=-\\frac{6}{25} \\).",
+    "title": "أثبت أن: \\( \\frac{1}{(1+2i)^2}+\\frac{1}{(1-2i)^2}=-\\frac{6}{25} \\) (2017 الدور الأول)",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نفك \\( (1+2i)^2 \\). الطريقة: \\( 1+4i+4i^2 \\). السبب: مربع الحدانية.",
+        "equation_template": "(1+2i)^2 = 1+{input_1}i+4i^2",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s1_i1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "1",
+              "-4"
+            ],
+            "id": "q_ch1v2_1_20_1_s1_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "1",
+              "-4"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times1\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times1\\times2 \\).",
+        "related_topics": [
+          "مربع الحدانية"
+        ],
+        "step_id": "ch1v2_1_20_1_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نفك \\( (1+2i)^2 \\). الطريقة: \\( 1+4i+4i^2 \\). السبب: مربع الحدانية.",
+        "think": "\\( 2\\times1\\times2 \\).",
+        "html_structure": "(1+2i)^2 = 1+{q_ch1v2_1_20_1_s1_i1}i+4i^2"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبسّط الناتج. الطريقة: \\( 1+4i-4 \\). السبب: \\( 4i^2=-4 \\).",
+        "equation_template": "1+4i-4 = {input_1}+4i",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s2_i1",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "3",
+              "-5",
+              "5"
+            ],
+            "id": "q_ch1v2_1_20_1_s2_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-5",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-4 \\)."
+          }
+        ],
+        "hint": "\\( 1-4 \\).",
+        "related_topics": [
+          "قوى العدد التخيلي i"
+        ],
+        "step_id": "ch1v2_1_20_1_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبسّط الناتج. الطريقة: \\( 1+4i-4 \\). السبب: \\( 4i^2=-4 \\).",
+        "think": "\\( 1-4 \\).",
+        "html_structure": "1+4i-4 = {q_ch1v2_1_20_1_s2_i1}+4i"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نفك \\( (1-2i)^2 \\). الطريقة: \\( 1-4i+4i^2=1-4i-4 \\). السبب: نفس الخطوات.",
+        "equation_template": "(1-2i)^2 = {input_1}-4i",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s3_i1",
+            "correct_answer": "-3",
+            "options": [
+              "-3",
+              "3",
+              "-5",
+              "5"
+            ],
+            "id": "q_ch1v2_1_20_1_s3_i1",
+            "correct_value": "-3",
+            "allowed_keys": [
+              "-3",
+              "3",
+              "-5",
+              "5"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-4 \\)."
+          }
+        ],
+        "hint": "\\( 1-4 \\).",
+        "related_topics": [
+          "مربع الحدانية"
+        ],
+        "step_id": "ch1v2_1_20_1_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نفك \\( (1-2i)^2 \\). الطريقة: \\( 1-4i+4i^2=1-4i-4 \\). السبب: نفس الخطوات.",
+        "think": "\\( 1-4 \\).",
+        "html_structure": "(1-2i)^2 = {q_ch1v2_1_20_1_s3_i1}-4i"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نعيد كتابة الكسرين. الطريقة: نضع القيمتين في المقامين. السبب: لنجمعهما.",
+        "equation_template": "\\frac{1}{{input_1}}+\\frac{1}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s4_i1",
+            "correct_answer": "-3+4i",
+            "options": [
+              "-3+4i",
+              "-3-4i",
+              "3+4i",
+              "5+4i"
+            ],
+            "id": "q_ch1v2_1_20_1_s4_i1",
+            "correct_value": "-3+4i",
+            "allowed_keys": [
+              "-3+4i",
+              "-3-4i",
+              "3+4i",
+              "5+4i"
+            ],
+            "label": "القيمة 1",
+            "hint": "الأول للقوس \\( (1+2i) \\) والثاني \\( (1-2i) \\)."
+          },
+          {
+            "input_id": "q2_p20_s4_i2",
+            "correct_answer": "-3-4i",
+            "options": [
+              "-3-4i",
+              "-3+4i",
+              "3-4i",
+              "5-4i"
+            ],
+            "id": "q_ch1v2_1_20_1_s4_i2",
+            "correct_value": "-3-4i",
+            "allowed_keys": [
+              "-3-4i",
+              "-3+4i",
+              "3-4i",
+              "5-4i"
+            ],
+            "label": "القيمة 2",
+            "hint": "الأول للقوس \\( (1+2i) \\) والثاني \\( (1-2i) \\)."
+          }
+        ],
+        "hint": "الأول للقوس \\( (1+2i) \\) والثاني \\( (1-2i) \\).",
+        "related_topics": [
+          "العدد المركب"
+        ],
+        "step_id": "ch1v2_1_20_1_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نعيد كتابة الكسرين. الطريقة: نضع القيمتين في المقامين. السبب: لنجمعهما.",
+        "think": "الأول للقوس \\( (1+2i) \\) والثاني \\( (1-2i) \\).",
+        "html_structure": "\\frac{1}{{q_ch1v2_1_20_1_s4_i1}}+\\frac{1}{{q_ch1v2_1_20_1_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نوحد المقامات. الطريقة: نضرب بسط كل كسر في مقام الآخر. السبب: لنجمع.",
+        "equation_template": "\\frac{(-3-4i)+({input_1})}{(-3+4i)(-3-4i)}",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s5_i1",
+            "correct_answer": "-3+4i",
+            "options": [
+              "-3+4i",
+              "-3-4i",
+              "3+4i",
+              "4i"
+            ],
+            "id": "q_ch1v2_1_20_1_s5_i1",
+            "correct_value": "-3+4i",
+            "allowed_keys": [
+              "-3+4i",
+              "-3-4i",
+              "3+4i",
+              "4i"
+            ],
+            "label": "القيمة 1",
+            "hint": "بسط الأول هو مقام الثاني وبالعكس."
+          }
+        ],
+        "hint": "بسط الأول هو مقام الثاني وبالعكس.",
+        "related_topics": [
+          "توحيد المقامات"
+        ],
+        "step_id": "ch1v2_1_20_1_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نوحد المقامات. الطريقة: نضرب بسط كل كسر في مقام الآخر. السبب: لنجمع.",
+        "think": "بسط الأول هو مقام الثاني وبالعكس.",
+        "html_structure": "\\frac{(-3-4i)+({q_ch1v2_1_20_1_s5_i1})}{(-3+4i)(-3-4i)}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نحسب البسط. الطريقة: \\( -3-4i-3+4i \\). السبب: \\( -4i \\) و \\( +4i \\) يلغيان.",
+        "equation_template": "-3-4i-3+4i = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s6_i1",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "0",
+              "-8i"
+            ],
+            "id": "q_ch1v2_1_20_1_s6_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "0",
+              "-8i"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( -3 \\) و \\( -3 \\)."
+          }
+        ],
+        "hint": "اجمع \\( -3 \\) و \\( -3 \\).",
+        "related_topics": [
+          "جمع الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_1_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نحسب البسط. الطريقة: \\( -3-4i-3+4i \\). السبب: \\( -4i \\) و \\( +4i \\) يلغيان.",
+        "think": "اجمع \\( -3 \\) و \\( -3 \\).",
+        "html_structure": "-3-4i-3+4i = {q_ch1v2_1_20_1_s6_i1}"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نحسب المقام. الطريقة: \\( (-3)^2+4^2 \\). السبب: ضرب العدد بمرافقه.",
+        "equation_template": "(-3)^2+{input_1}^2",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s7_i1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "3",
+              "16"
+            ],
+            "id": "q_ch1v2_1_20_1_s7_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "3",
+              "16"
+            ],
+            "label": "القيمة 1",
+            "hint": "الرقم بجانب \\( i \\) هو \\( 4 \\)."
+          }
+        ],
+        "hint": "الرقم بجانب \\( i \\) هو \\( 4 \\).",
+        "related_topics": [
+          "ضرب الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_1_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نحسب المقام. الطريقة: \\( (-3)^2+4^2 \\). السبب: ضرب العدد بمرافقه.",
+        "think": "الرقم بجانب \\( i \\) هو \\( 4 \\).",
+        "html_structure": "(-3)^2+{q_ch1v2_1_20_1_s7_i1}^2"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نجمع. الطريقة: \\( 9+16 \\). السبب: قيمة المقام.",
+        "equation_template": "9+16 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s8_i1",
+            "correct_answer": "25",
+            "options": [
+              "25",
+              "7",
+              "24",
+              "13"
+            ],
+            "id": "q_ch1v2_1_20_1_s8_i1",
+            "correct_value": "25",
+            "allowed_keys": [
+              "25",
+              "7",
+              "24",
+              "13"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع."
+          }
+        ],
+        "hint": "اجمع.",
+        "related_topics": [
+          "جمع الأعداد"
+        ],
+        "step_id": "ch1v2_1_20_1_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نجمع. الطريقة: \\( 9+16 \\). السبب: قيمة المقام.",
+        "think": "اجمع.",
+        "html_structure": "9+16 = {q_ch1v2_1_20_1_s8_i1}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نكتب الناتج. الطريقة: \\( -\\frac{6}{25} \\). السبب: تحقق المطلوب.",
+        "equation_template": "\\frac{{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q2_p20_s9_i1",
+            "correct_answer": "-6",
+            "options": [
+              "-6",
+              "6",
+              "-8",
+              "0"
+            ],
+            "id": "q_ch1v2_1_20_1_s9_i1",
+            "correct_value": "-6",
+            "allowed_keys": [
+              "-6",
+              "6",
+              "-8",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -6 \\) على \\( 25 \\)."
+          },
+          {
+            "input_id": "q2_p20_s9_i2",
+            "correct_answer": "25",
+            "options": [
+              "25",
+              "7",
+              "5",
+              "9"
+            ],
+            "id": "q_ch1v2_1_20_1_s9_i2",
+            "correct_value": "25",
+            "allowed_keys": [
+              "25",
+              "7",
+              "5",
+              "9"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -6 \\) على \\( 25 \\)."
+          }
+        ],
+        "hint": "\\( -6 \\) على \\( 25 \\).",
+        "related_topics": [
+          "البرهان"
+        ],
+        "step_id": "ch1v2_1_20_1_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نكتب الناتج. الطريقة: \\( -\\frac{6}{25} \\). السبب: تحقق المطلوب.",
+        "think": "\\( -6 \\) على \\( 25 \\).",
+        "html_structure": "\\frac{{q_ch1v2_1_20_1_s9_i1}}{{q_ch1v2_1_20_1_s9_i2}}"
+      }
+    ],
+    "number": "2",
+    "page_id": 20,
+    "source_file": "page_20_interactive.json",
+    "image_urls": [],
+    "image_url": null,
+    "model_solution": "\\( (1+2i)^2=-3+4i \\) و \\( (1-2i)^2=-3-4i \\) فالمجموع \\( \\frac{(-3-4i)+(-3+4i)}{9+16}=-\\frac{6}{25} \\)."
+  },
+  {
+    "id_number": "q3_p20",
+    "page_number": 20,
+    "question_number": "3",
+    "question_text": "أثبت أن: \\( \\frac{(1-i)^2}{1+i}+\\frac{(1+i)^2}{1-i}=-2 \\) (2012 دور ثالث)",
+    "diagram": null,
+    "full_model_solution": "\\( (1-i)^2=-2i \\) و \\( (1+i)^2=2i \\). \\( \\frac{-2i}{1+i}=-1-i \\) و \\( \\frac{2i}{1-i}=-1+i \\). المجموع \\( -2 \\).",
+    "title": "أثبت أن: \\( \\frac{(1-i)^2}{1+i}+\\frac{(1+i)^2}{1-i}=-2 \\) (2012 دور ثالث)",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نبسّط \\( (1-i)^2 \\). الطريقة: \\( 1-2i+i^2=1-2i-1 \\). السبب: مربع الحدانية.",
+        "equation_template": "(1-i)^2 = {input_1}i",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s1_i1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "0",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_2_s1_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1-1=0 \\) ويبقى \\( -2i \\)."
+          }
+        ],
+        "hint": "\\( 1-1=0 \\) ويبقى \\( -2i \\).",
+        "related_topics": [
+          "مربع الحدانية"
+        ],
+        "step_id": "ch1v2_1_20_2_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نبسّط \\( (1-i)^2 \\). الطريقة: \\( 1-2i+i^2=1-2i-1 \\). السبب: مربع الحدانية.",
+        "think": "\\( 1-1=0 \\) ويبقى \\( -2i \\).",
+        "html_structure": "(1-i)^2 = {q_ch1v2_1_20_2_s1_i1}i"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نبسّط \\( (1+i)^2 \\). الطريقة: \\( 1+2i+i^2=2i \\). السبب: نفس الخطوة.",
+        "equation_template": "(1+i)^2 = {input_1}i",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s2_i1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "0",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_2_s2_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "0",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "يبقى \\( 2i \\)."
+          }
+        ],
+        "hint": "يبقى \\( 2i \\).",
+        "related_topics": [
+          "مربع الحدانية"
+        ],
+        "step_id": "ch1v2_1_20_2_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نبسّط \\( (1+i)^2 \\). الطريقة: \\( 1+2i+i^2=2i \\). السبب: نفس الخطوة.",
+        "think": "يبقى \\( 2i \\).",
+        "html_structure": "(1+i)^2 = {q_ch1v2_1_20_2_s2_i1}i"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نعيد كتابة المقدار. الطريقة: نضع \\( -2i \\) و \\( 2i \\) في البسطين. السبب: لنبسط كل كسر.",
+        "equation_template": "\\frac{-2i}{1+i}+\\frac{{input_1}i}{1-i}",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s3_i1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "id": "q_ch1v2_1_20_2_s3_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "بسط الثاني هو \\( (1+i)^2 \\)."
+          }
+        ],
+        "hint": "بسط الثاني هو \\( (1+i)^2 \\).",
+        "related_topics": [
+          "العدد المركب"
+        ],
+        "step_id": "ch1v2_1_20_2_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نعيد كتابة المقدار. الطريقة: نضع \\( -2i \\) و \\( 2i \\) في البسطين. السبب: لنبسط كل كسر.",
+        "think": "بسط الثاني هو \\( (1+i)^2 \\).",
+        "html_structure": "\\frac{-2i}{1+i}+\\frac{{q_ch1v2_1_20_2_s3_i1}i}{1-i}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نضرب الكسر الأول في مرافق مقامه. الطريقة: مرافق \\( 1+i \\) هو \\( 1-i \\). السبب: للتخلص من \\( i \\).",
+        "equation_template": "\\frac{-2i}{1+i}\\times\\frac{{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s4_i1",
+            "correct_answer": "1-i",
+            "options": [
+              "1-i",
+              "1+i",
+              "-1+i",
+              "-1-i"
+            ],
+            "id": "q_ch1v2_1_20_2_s4_i1",
+            "correct_value": "1-i",
+            "allowed_keys": [
+              "1-i",
+              "1+i",
+              "-1+i",
+              "-1-i"
+            ],
+            "label": "القيمة 1",
+            "hint": "غيّر الموجب إلى سالب."
+          },
+          {
+            "input_id": "q3_p20_s4_i2",
+            "correct_answer": "1-i",
+            "options": [
+              "1-i",
+              "1+i",
+              "-1+i",
+              "-1-i"
+            ],
+            "id": "q_ch1v2_1_20_2_s4_i2",
+            "correct_value": "1-i",
+            "allowed_keys": [
+              "1-i",
+              "1+i",
+              "-1+i",
+              "-1-i"
+            ],
+            "label": "القيمة 2",
+            "hint": "غيّر الموجب إلى سالب."
+          }
+        ],
+        "hint": "غيّر الموجب إلى سالب.",
+        "related_topics": [
+          "مرافق العدد المركب"
+        ],
+        "step_id": "ch1v2_1_20_2_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نضرب الكسر الأول في مرافق مقامه. الطريقة: مرافق \\( 1+i \\) هو \\( 1-i \\). السبب: للتخلص من \\( i \\).",
+        "think": "غيّر الموجب إلى سالب.",
+        "html_structure": "\\frac{-2i}{1+i}\\times\\frac{{q_ch1v2_1_20_2_s4_i1}}{{q_ch1v2_1_20_2_s4_i2}}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نحسب البسط \\( -2i(1-i) \\). الطريقة: \\( -2i+2i^2 \\). السبب: التوزيع.",
+        "equation_template": "-2i(1-i) = -2i+{input_1}i^2 = -2i-{input_2}",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s5_i1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "id": "q_ch1v2_1_20_2_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -2\\times-1=2 \\) و \\( 2i^2=-2 \\)."
+          },
+          {
+            "input_id": "q3_p20_s5_i2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "id": "q_ch1v2_1_20_2_s5_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( -2\\times-1=2 \\) و \\( 2i^2=-2 \\)."
+          }
+        ],
+        "hint": "\\( -2\\times-1=2 \\) و \\( 2i^2=-2 \\).",
+        "related_topics": [
+          "ضرب الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_2_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نحسب البسط \\( -2i(1-i) \\). الطريقة: \\( -2i+2i^2 \\). السبب: التوزيع.",
+        "think": "\\( -2\\times-1=2 \\) و \\( 2i^2=-2 \\).",
+        "html_structure": "-2i(1-i) = -2i+{q_ch1v2_1_20_2_s5_i1}i^2 = -2i-{q_ch1v2_1_20_2_s5_i2}"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نقسم على المقام \\( 2 \\). الطريقة: \\( \\frac{-2i-2}{2} \\). السبب: \\( 1^2+1^2=2 \\).",
+        "equation_template": "\\frac{-2i-2}{2} = {input_1} - i",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s6_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-2",
+              "2"
+            ],
+            "id": "q_ch1v2_1_20_2_s6_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم كل حد على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم كل حد على \\( 2 \\).",
+        "related_topics": [
+          "قسمة الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_2_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نقسم على المقام \\( 2 \\). الطريقة: \\( \\frac{-2i-2}{2} \\). السبب: \\( 1^2+1^2=2 \\).",
+        "think": "قسّم كل حد على \\( 2 \\).",
+        "html_structure": "\\frac{-2i-2}{2} = {q_ch1v2_1_20_2_s6_i1} - i"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نضرب الكسر الثاني في مرافق مقامه. الطريقة: مرافق \\( 1-i \\) هو \\( 1+i \\). السبب: للتخلص من \\( i \\).",
+        "equation_template": "\\frac{2i}{1-i}\\times\\frac{{input_1}}{{input_2}}",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s7_i1",
+            "correct_answer": "1+i",
+            "options": [
+              "1+i",
+              "1-i",
+              "-1+i",
+              "-1-i"
+            ],
+            "id": "q_ch1v2_1_20_2_s7_i1",
+            "correct_value": "1+i",
+            "allowed_keys": [
+              "1+i",
+              "1-i",
+              "-1+i",
+              "-1-i"
+            ],
+            "label": "القيمة 1",
+            "hint": "غيّر السالب إلى موجب."
+          },
+          {
+            "input_id": "q3_p20_s7_i2",
+            "correct_answer": "1+i",
+            "options": [
+              "1+i",
+              "1-i",
+              "-1+i",
+              "-1-i"
+            ],
+            "id": "q_ch1v2_1_20_2_s7_i2",
+            "correct_value": "1+i",
+            "allowed_keys": [
+              "1+i",
+              "1-i",
+              "-1+i",
+              "-1-i"
+            ],
+            "label": "القيمة 2",
+            "hint": "غيّر السالب إلى موجب."
+          }
+        ],
+        "hint": "غيّر السالب إلى موجب.",
+        "related_topics": [
+          "مرافق العدد المركب"
+        ],
+        "step_id": "ch1v2_1_20_2_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نضرب الكسر الثاني في مرافق مقامه. الطريقة: مرافق \\( 1-i \\) هو \\( 1+i \\). السبب: للتخلص من \\( i \\).",
+        "think": "غيّر السالب إلى موجب.",
+        "html_structure": "\\frac{2i}{1-i}\\times\\frac{{q_ch1v2_1_20_2_s7_i1}}{{q_ch1v2_1_20_2_s7_i2}}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نحسب البسط \\( 2i(1+i) \\). الطريقة: \\( 2i+2i^2 \\). السبب: التوزيع.",
+        "equation_template": "2i(1+i) = 2i+{input_1}i^2 = 2i-{input_2}",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s8_i1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "id": "q_ch1v2_1_20_2_s8_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "-2",
+              "1",
+              "0"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2i\\times i=2i^2=-2 \\)."
+          },
+          {
+            "input_id": "q3_p20_s8_i2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "id": "q_ch1v2_1_20_2_s8_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "1",
+              "-2",
+              "4"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 2i\\times i=2i^2=-2 \\)."
+          }
+        ],
+        "hint": "\\( 2i\\times i=2i^2=-2 \\).",
+        "related_topics": [
+          "ضرب الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_2_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نحسب البسط \\( 2i(1+i) \\). الطريقة: \\( 2i+2i^2 \\). السبب: التوزيع.",
+        "think": "\\( 2i\\times i=2i^2=-2 \\).",
+        "html_structure": "2i(1+i) = 2i+{q_ch1v2_1_20_2_s8_i1}i^2 = 2i-{q_ch1v2_1_20_2_s8_i2}"
+      },
+      {
+        "step_number": 9,
+        "step_explanation": "الهدف: نقسم على \\( 2 \\). الطريقة: \\( \\frac{2i-2}{2} \\). السبب: المقام \\( 2 \\).",
+        "equation_template": "\\frac{2i-2}{2} = {input_1} + i",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s9_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "-2",
+              "2"
+            ],
+            "id": "q_ch1v2_1_20_2_s9_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "-2",
+              "2"
+            ],
+            "label": "القيمة 1",
+            "hint": "قسّم كل حد على \\( 2 \\)."
+          }
+        ],
+        "hint": "قسّم كل حد على \\( 2 \\).",
+        "related_topics": [
+          "قسمة الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_2_step_9",
+        "title": "الخطوة 9",
+        "explanation": "الهدف: نقسم على \\( 2 \\). الطريقة: \\( \\frac{2i-2}{2} \\). السبب: المقام \\( 2 \\).",
+        "think": "قسّم كل حد على \\( 2 \\).",
+        "html_structure": "\\frac{2i-2}{2} = {q_ch1v2_1_20_2_s9_i1} + i"
+      },
+      {
+        "step_number": 10,
+        "step_explanation": "الهدف: نجمع الناتجين. الطريقة: \\( (-1-i)+(-1+i) \\). السبب: \\( -i \\) و \\( +i \\) يلغيان.",
+        "equation_template": "(-1-i)+(-1+i) = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q3_p20_s10_i1",
+            "correct_answer": "-2",
+            "options": [
+              "-2",
+              "2",
+              "0",
+              "-2i"
+            ],
+            "id": "q_ch1v2_1_20_2_s10_i1",
+            "correct_value": "-2",
+            "allowed_keys": [
+              "-2",
+              "2",
+              "0",
+              "-2i"
+            ],
+            "label": "القيمة 1",
+            "hint": "اجمع \\( -1 \\) مع \\( -1 \\)."
+          }
+        ],
+        "hint": "اجمع \\( -1 \\) مع \\( -1 \\).",
+        "related_topics": [
+          "جمع الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_2_step_10",
+        "title": "الخطوة 10",
+        "explanation": "الهدف: نجمع الناتجين. الطريقة: \\( (-1-i)+(-1+i) \\). السبب: \\( -i \\) و \\( +i \\) يلغيان.",
+        "think": "اجمع \\( -1 \\) مع \\( -1 \\).",
+        "html_structure": "(-1-i)+(-1+i) = {q_ch1v2_1_20_2_s10_i1}"
+      }
+    ],
+    "number": "3",
+    "page_id": 20,
+    "source_file": "page_20_interactive.json",
+    "image_urls": [],
+    "image_url": null,
+    "model_solution": "\\( (1-i)^2=-2i \\) و \\( (1+i)^2=2i \\). \\( \\frac{-2i}{1+i}=-1-i \\) و \\( \\frac{2i}{1-i}=-1+i \\). المجموع \\( -2 \\)."
+  },
+  {
+    "id_number": "q4_p20",
+    "page_number": 20,
+    "question_number": "4",
+    "question_text": "أثبت أن: \\( (1-i)(1-i^2)(1-i^3)=4 \\) (2013 دور أول)",
+    "diagram": null,
+    "full_model_solution": "\\( i^2=-1 \\) و \\( i^3=-i \\) فنحصل على \\( (1-i)(2)(1+i)=2(1-i^2)=2\\times2=4 \\).",
+    "title": "أثبت أن: \\( (1-i)(1-i^2)(1-i^3)=4 \\) (2013 دور أول)",
+    "steps": [
+      {
+        "step_number": 1,
+        "step_explanation": "الهدف: نحسب \\( i^2 \\). الطريقة: نتذكر التعريف. السبب: لنعوضه.",
+        "equation_template": "i^2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s1_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "i",
+              "-i"
+            ],
+            "id": "q_ch1v2_1_20_3_s1_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "i",
+              "-i"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( i^2 \\) تساوي \\( -1 \\)."
+          }
+        ],
+        "hint": "\\( i^2 \\) تساوي \\( -1 \\).",
+        "related_topics": [
+          "قوى العدد التخيلي i"
+        ],
+        "step_id": "ch1v2_1_20_3_step_1",
+        "title": "الخطوة 1",
+        "explanation": "الهدف: نحسب \\( i^2 \\). الطريقة: نتذكر التعريف. السبب: لنعوضه.",
+        "think": "\\( i^2 \\) تساوي \\( -1 \\).",
+        "html_structure": "i^2 = {q_ch1v2_1_20_3_s1_i1}"
+      },
+      {
+        "step_number": 2,
+        "step_explanation": "الهدف: نحسب \\( i^3 \\). الطريقة: \\( i^3=i^2\\times i \\). السبب: نستعمل \\( i^2=-1 \\).",
+        "equation_template": "i^3 = i^2\\times i = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s2_i1",
+            "correct_answer": "-i",
+            "options": [
+              "-i",
+              "i",
+              "-1",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_3_s2_i1",
+            "correct_value": "-i",
+            "allowed_keys": [
+              "-i",
+              "i",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -1\\times i \\)."
+          }
+        ],
+        "hint": "\\( -1\\times i \\).",
+        "related_topics": [
+          "قوى العدد التخيلي i"
+        ],
+        "step_id": "ch1v2_1_20_3_step_2",
+        "title": "الخطوة 2",
+        "explanation": "الهدف: نحسب \\( i^3 \\). الطريقة: \\( i^3=i^2\\times i \\). السبب: نستعمل \\( i^2=-1 \\).",
+        "think": "\\( -1\\times i \\).",
+        "html_structure": "i^3 = i^2\\times i = {q_ch1v2_1_20_3_s2_i1}"
+      },
+      {
+        "step_number": 3,
+        "step_explanation": "الهدف: نحسب \\( 1-i^2 \\). الطريقة: \\( 1-(-1) \\). السبب: طرح السالب جمع.",
+        "equation_template": "1-i^2 = 1-({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s3_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "i",
+              "-i"
+            ],
+            "id": "q_ch1v2_1_20_3_s3_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "i",
+              "-i"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1 \\)."
+          },
+          {
+            "input_id": "q4_p20_s3_i2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_3_s3_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1 \\)."
+          }
+        ],
+        "hint": "\\( 1+1 \\).",
+        "related_topics": [
+          "قوى العدد التخيلي i"
+        ],
+        "step_id": "ch1v2_1_20_3_step_3",
+        "title": "الخطوة 3",
+        "explanation": "الهدف: نحسب \\( 1-i^2 \\). الطريقة: \\( 1-(-1) \\). السبب: طرح السالب جمع.",
+        "think": "\\( 1+1 \\).",
+        "html_structure": "1-i^2 = 1-({q_ch1v2_1_20_3_s3_i1}) = {q_ch1v2_1_20_3_s3_i2}"
+      },
+      {
+        "step_number": 4,
+        "step_explanation": "الهدف: نحسب \\( 1-i^3 \\). الطريقة: \\( 1-(-i) \\). السبب: طرح السالب جمع.",
+        "equation_template": "1-i^3 = 1-({input_1}) = 1+{input_2}",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s4_i1",
+            "correct_answer": "-i",
+            "options": [
+              "-i",
+              "i",
+              "-1",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_3_s4_i1",
+            "correct_value": "-i",
+            "allowed_keys": [
+              "-i",
+              "i",
+              "-1",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+i \\)."
+          },
+          {
+            "input_id": "q4_p20_s4_i2",
+            "correct_answer": "i",
+            "options": [
+              "i",
+              "-i",
+              "1",
+              "-1"
+            ],
+            "id": "q_ch1v2_1_20_3_s4_i2",
+            "correct_value": "i",
+            "allowed_keys": [
+              "i",
+              "-i",
+              "1",
+              "-1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+i \\)."
+          }
+        ],
+        "hint": "\\( 1+i \\).",
+        "related_topics": [
+          "قوى العدد التخيلي i"
+        ],
+        "step_id": "ch1v2_1_20_3_step_4",
+        "title": "الخطوة 4",
+        "explanation": "الهدف: نحسب \\( 1-i^3 \\). الطريقة: \\( 1-(-i) \\). السبب: طرح السالب جمع.",
+        "think": "\\( 1+i \\).",
+        "html_structure": "1-i^3 = 1-({q_ch1v2_1_20_3_s4_i1}) = 1+{q_ch1v2_1_20_3_s4_i2}"
+      },
+      {
+        "step_number": 5,
+        "step_explanation": "الهدف: نعيد كتابة المقدار. الطريقة: نضع القيم في الأقواس. السبب: لنسهل الضرب.",
+        "equation_template": "(1-i)\\times{input_1}\\times(1+i)",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s5_i1",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_3_s5_i1",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 1",
+            "hint": "قيمة \\( 1-i^2 \\)."
+          }
+        ],
+        "hint": "قيمة \\( 1-i^2 \\).",
+        "related_topics": [
+          "العدد المركب"
+        ],
+        "step_id": "ch1v2_1_20_3_step_5",
+        "title": "الخطوة 5",
+        "explanation": "الهدف: نعيد كتابة المقدار. الطريقة: نضع القيم في الأقواس. السبب: لنسهل الضرب.",
+        "think": "قيمة \\( 1-i^2 \\).",
+        "html_structure": "(1-i)\\times{q_ch1v2_1_20_3_s5_i1}\\times(1+i)"
+      },
+      {
+        "step_number": 6,
+        "step_explanation": "الهدف: نضرب \\( (1-i)(1+i) \\). الطريقة: هو ضرب عدد في مرافقه: \\( 1^2-i^2 \\). السبب: الحدان الأوسطان يلغيان.",
+        "equation_template": "(1-i)(1+i) = 1^2 - {input_1}^2",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s6_i1",
+            "correct_answer": "i",
+            "options": [
+              "i",
+              "1",
+              "-i",
+              "2i"
+            ],
+            "id": "q_ch1v2_1_20_3_s6_i1",
+            "correct_value": "i",
+            "allowed_keys": [
+              "i",
+              "1",
+              "-i",
+              "2i"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( -i \\) و \\( +i \\) يلغيان."
+          }
+        ],
+        "hint": "\\( -i \\) و \\( +i \\) يلغيان.",
+        "related_topics": [
+          "ضرب الأعداد المركبة"
+        ],
+        "step_id": "ch1v2_1_20_3_step_6",
+        "title": "الخطوة 6",
+        "explanation": "الهدف: نضرب \\( (1-i)(1+i) \\). الطريقة: هو ضرب عدد في مرافقه: \\( 1^2-i^2 \\). السبب: الحدان الأوسطان يلغيان.",
+        "think": "\\( -i \\) و \\( +i \\) يلغيان.",
+        "html_structure": "(1-i)(1+i) = 1^2 - {q_ch1v2_1_20_3_s6_i1}^2"
+      },
+      {
+        "step_number": 7,
+        "step_explanation": "الهدف: نعوّض \\( i^2 \\). الطريقة: \\( 1-(-1) \\). السبب: لنحصل على عدد حقيقي.",
+        "equation_template": "1-i^2 = 1-({input_1}) = {input_2}",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s7_i1",
+            "correct_answer": "-1",
+            "options": [
+              "-1",
+              "1",
+              "i",
+              "-i"
+            ],
+            "id": "q_ch1v2_1_20_3_s7_i1",
+            "correct_value": "-1",
+            "allowed_keys": [
+              "-1",
+              "1",
+              "i",
+              "-i"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 1+1 \\)."
+          },
+          {
+            "input_id": "q4_p20_s7_i2",
+            "correct_answer": "2",
+            "options": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "id": "q_ch1v2_1_20_3_s7_i2",
+            "correct_value": "2",
+            "allowed_keys": [
+              "2",
+              "0",
+              "-2",
+              "1"
+            ],
+            "label": "القيمة 2",
+            "hint": "\\( 1+1 \\)."
+          }
+        ],
+        "hint": "\\( 1+1 \\).",
+        "related_topics": [
+          "قوى العدد التخيلي i"
+        ],
+        "step_id": "ch1v2_1_20_3_step_7",
+        "title": "الخطوة 7",
+        "explanation": "الهدف: نعوّض \\( i^2 \\). الطريقة: \\( 1-(-1) \\). السبب: لنحصل على عدد حقيقي.",
+        "think": "\\( 1+1 \\).",
+        "html_structure": "1-i^2 = 1-({q_ch1v2_1_20_3_s7_i1}) = {q_ch1v2_1_20_3_s7_i2}"
+      },
+      {
+        "step_number": 8,
+        "step_explanation": "الهدف: نكمل الضرب. الطريقة: \\( 2\\times2 \\). السبب: العامل \\( 2 \\) يضرب الناتج.",
+        "equation_template": "2\\times2 = {input_1}",
+        "inputs": [
+          {
+            "input_id": "q4_p20_s8_i1",
+            "correct_answer": "4",
+            "options": [
+              "4",
+              "2",
+              "0",
+              "8"
+            ],
+            "id": "q_ch1v2_1_20_3_s8_i1",
+            "correct_value": "4",
+            "allowed_keys": [
+              "4",
+              "2",
+              "0",
+              "8"
+            ],
+            "label": "القيمة 1",
+            "hint": "\\( 2\\times2 \\)."
+          }
+        ],
+        "hint": "\\( 2\\times2 \\).",
+        "related_topics": [
+          "الضرب"
+        ],
+        "step_id": "ch1v2_1_20_3_step_8",
+        "title": "الخطوة 8",
+        "explanation": "الهدف: نكمل الضرب. الطريقة: \\( 2\\times2 \\). السبب: العامل \\( 2 \\) يضرب الناتج.",
+        "think": "\\( 2\\times2 \\).",
+        "html_structure": "2\\times2 = {q_ch1v2_1_20_3_s8_i1}"
+      }
+    ],
+    "number": "4",
+    "page_id": 20,
+    "source_file": "page_20_interactive.json",
+    "image_urls": [],
+    "image_url": null,
+    "model_solution": "\\( i^2=-1 \\) و \\( i^3=-i \\) فنحصل على \\( (1-i)(2)(1+i)=2(1-i^2)=2\\times2=4 \\)."
+  }
+]

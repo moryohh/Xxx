@@ -8,53 +8,153 @@
       {
         "name": "توسيع مجموعة الأعداد الحقيقية وقوى i",
         "files": [
-          "page_4_ch1_t1.json",
-          "page_5_ch1_t1.json",
-          "page_6_ch1_t1.json"
+          {
+            "file": "math_ch1_v2_page_4_t1.json",
+            "label": "صفحة 4"
+          },
+          {
+            "file": "math_ch1_v2_page_5_t1.json",
+            "label": "صفحة 5"
+          },
+          {
+            "file": "math_ch1_v2_page_6_t1.json",
+            "label": "صفحة 6"
+          }
         ]
       },
       {
         "name": "العمليات على الأعداد المركبة",
         "files": [
-          "page_7_ch1_t2.json",
-          "page_8_ch1_t2.json",
-          "page_9_ch1_t2.json",
-          "page_10_ch1_t2.json",
-          "page_11_ch1_t2.json",
-          "page_12_ch1_t2.json",
-          "page_13_ch1_t2.json",
-          "page_15_ch1_t2.json"
+          {
+            "file": "math_ch1_v2_page_7_t2.json",
+            "label": "صفحة 7"
+          },
+          {
+            "file": "math_ch1_v2_page_8_t2.json",
+            "label": "صفحة 8"
+          },
+          {
+            "file": "math_ch1_v2_page_9_t2.json",
+            "label": "صفحة 9"
+          },
+          {
+            "file": "math_ch1_v2_page_10_t2.json",
+            "label": "صفحة 10"
+          },
+          {
+            "file": "math_ch1_v2_page_11_t2.json",
+            "label": "صفحة 11"
+          },
+          {
+            "file": "math_ch1_v2_page_12_t2.json",
+            "label": "صفحة 12"
+          },
+          {
+            "file": "math_ch1_v2_page_13_t2.json",
+            "label": "صفحة 13"
+          },
+          {
+            "file": "math_ch1_v2_page_23_t2.json",
+            "label": "صفحة 23"
+          }
         ]
       },
       {
         "name": "المرافق والقسمة في الأعداد المركبة",
         "files": [
-          "page_16_ch1_t3.json",
-          "page_17_ch1_t3.json",
-          "page_18_ch1_t3.json",
-          "page_19_ch1_t3.json",
-          "page_20_ch1_t3.json",
-          "page_21_ch1_t3.json",
-          "page_22_ch1_t3.json"
+          {
+            "file": "math_ch1_v2_page_15_t3.json",
+            "label": "صفحة 15"
+          },
+          {
+            "file": "math_ch1_v2_page_16_t3.json",
+            "label": "صفحة 16"
+          },
+          {
+            "file": "math_ch1_v2_page_17_t3.json",
+            "label": "صفحة 17"
+          },
+          {
+            "file": "math_ch1_v2_page_18_t3.json",
+            "label": "صفحة 18"
+          },
+          {
+            "file": "math_ch1_v2_page_19_t3.json",
+            "label": "صفحة 19"
+          },
+          {
+            "file": "math_ch1_v2_page_20_t3.json",
+            "label": "صفحة 20"
+          },
+          {
+            "file": "math_ch1_v2_page_21_t3.json",
+            "label": "صفحة 21"
+          },
+          {
+            "file": "math_ch1_v2_page_22_t3.json",
+            "label": "صفحة 22"
+          }
         ]
       },
       {
         "name": "قيم المتغيرات الحقيقية في المعادلات المركبة",
         "files": [
-          "page_23_ch1_t4.json",
-          "page_24_ch1_t4.json",
-          "page_25_ch1_t4.json",
-          "page_26_ch1_t4.json",
-          "page_27_ch1_t4.json",
-          "page_28_ch1_t4.json",
-          "page_29_ch1_t4.json",
-          "page_30_ch1_t4.json",
-          "page_31_ch1_t4.json",
-          "page_32_ch1_t4.json",
-          "page_33_ch1_t4.json",
-          "page_34_ch1_t4.json",
-          "page_35_ch1_t4.json",
-          "page_36_ch1_t4.json"
+          {
+            "file": "math_ch1_v2_page_23_t4.json",
+            "label": "صفحة 23"
+          },
+          {
+            "file": "math_ch1_v2_page_24_t4.json",
+            "label": "صفحة 24"
+          },
+          {
+            "file": "math_ch1_v2_page_25_t4.json",
+            "label": "صفحة 25"
+          },
+          {
+            "file": "math_ch1_v2_page_26_t4.json",
+            "label": "صفحة 26"
+          },
+          {
+            "file": "math_ch1_v2_page_27_t4.json",
+            "label": "صفحة 27"
+          },
+          {
+            "file": "math_ch1_v2_page_28_t4.json",
+            "label": "صفحة 28"
+          },
+          {
+            "file": "math_ch1_v2_page_29_t4.json",
+            "label": "صفحة 29"
+          },
+          {
+            "file": "math_ch1_v2_page_30_t4.json",
+            "label": "صفحة 30"
+          },
+          {
+            "file": "math_ch1_v2_page_31_t4.json",
+            "label": "صفحة 31"
+          },
+          {
+            "file": "math_ch1_v2_page_32_t4.json",
+            "label": "صفحة 32"
+          },
+          {
+            "file": "math_ch1_v2_page_33_t4.json",
+            "label": "صفحة 33"
+          },
+          {
+            "file": "math_ch1_v2_page_34_t4.json",
+            "label": "صفحة 34"
+          },
+          {
+            "file": "math_ch1_v2_page_35_t4.json",
+            "label": "صفحة 35"
+          },
+          {
+            "file": "math_ch1_v2_page_36_t4.json",
+            "label": "صفحة 36"
+          }
         ]
       },
       {
